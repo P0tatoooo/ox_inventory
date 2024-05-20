@@ -4,42 +4,42 @@ return {
 			label = 'TAR 21',
 			weight = 3180,
 			durability = 0.3,
-			clipname = {'extendedarclip','arclip'},
+			clip = {'extendedarclip','arclip'},
 		},
 
 		['WEAPON_APPISTOL'] = {
 			label = 'Pistol Perforant',
 			weight = 1220,
 			durability = 0.5,
-			clipname = {'extendedapppistolclip','apppistolclip'},
+			clip = {'extendedapppistolclip','apppistolclip'},
 		},
 
 		['WEAPON_ASSAULTRIFLE'] = {
 			label = 'AK-47',
 			weight = 3470,
 			durability = 0.3,
-			clipname = {'drumarclip','extendedarclip','arclip'},
+			clip = {'drumarclip','extendedarclip','arclip'},
 		},
 
 		['WEAPON_ASSAULTRIFLE_MK2'] = {
 			label = 'AK-47 MK2',
 			weight = 3300,
 			durability = 0.3,
-			clipname = {'extendedarclip','arclip'},
+			clip = {'extendedarclip','arclip'},
 		},
 
 		['WEAPON_ASSAULTSHOTGUN'] = {
 			label = 'Striker-12',
 			weight = 3100,
 			durability = 1,
-			clipname = {'extendedassaultshotgunclip','assaultshotgunclip'},
+			clip = {'extendedassaultshotgunclip','assaultshotgunclip'},
 		},
 
 		['WEAPON_ASSAULTSMG'] = {
 			label = 'P90',
 			weight = 2850,
 			durability = 0.3,
-			clipname = {'extendedassaultsmgclip','assaultsmgclip'},
+			clip = {'extendedassaultsmgclip','assaultsmgclip'},
 		},
 
 		['WEAPON_BALL'] = {
@@ -70,14 +70,14 @@ return {
 			label = 'QBZ-95',
 			weight = 2900,
 			durability = 0.3,
-			clipname = {'extendedarclip','arclip'},
+			clip = {'extendedarclip','arclip'},
 		},
 
 		['WEAPON_BULLPUPRIFLE_MK2'] = {
 			label = 'QBZ-95 MK2',
 			weight = 2900,
 			durability = 0.3,
-			clipname = {'extendedarclip','arclip'},
+			clip = {'extendedarclip','arclip'},
 		},
 
 		['WEAPON_BULLPUPSHOTGUN'] = {
@@ -97,42 +97,42 @@ return {
 			label = 'M4',
 			weight = 3100,
 			durability = 0.3,
-			clipname = {'drumarclip','extendedarclip','arclip'},
+			clip = {'drumarclip','extendedarclip','arclip'},
 		},
 
 		['WEAPON_CARBINERIFLE_MK2'] = {
 			label = 'M4 MK2',
 			weight = 3000,
 			durability = 0.3,
-			clipname = {'extendedarclip','arclip'},
+			clip = {'extendedarclip','arclip'},
 		},
 
 		['WEAPON_COMBATMG'] = {
 			label = 'Mitrailleuse de Combat',
 			weight = 10000,
 			durability = 0.3,
-			clipname = {'extendedcombatmgclip','combatmgclip'},
+			clip = {'extendedcombatmgclip','combatmgclip'},
 		},
 
 		['WEAPON_COMBATMG_MK2'] = {
 			label = 'Mitrailleuse de Combat MK2',
 			weight = 10500,
 			durability = 0.3,
-			clipname = {'extendedcombatmgclip','combatmgclip'},
+			clip = {'extendedcombatmgclip','combatmgclip'},
 		},
 
 		['WEAPON_COMBATPDW'] = {
 			label = 'ADP de combat',
 			weight = 2700,
 			durability = 0.3,
-			clipname = {'drumpdwclip','extendedpdwclip','pdwclip'},
+			clip = {'drumpdwclip','extendedpdwclip','pdwclip'},
 		},
 
 		['WEAPON_COMBATPISTOL'] = {
 			label = 'Glock',
 			weight = 970,
 			durability = 0.5,
-			clipname = {'extendedcombatpistolclip','combatpistolclip'},
+			clip = {'extendedcombatpistolclip','combatpistolclip'},
 		},
 
 		['WEAPON_COMBATSHOTGUN'] = {
@@ -146,7 +146,7 @@ return {
 			label = 'AK-U',
 			weight = 2700,
 			durability = 0.3,
-			clipname = {'drumarclip','extendedarclip','arclip'},
+			clip = {'drumarclip','extendedarclip','arclip'},
 		},
 
 		['WEAPON_CROWBAR'] = {
@@ -229,7 +229,7 @@ return {
 			label = 'M1928A1 Thompson',
 			weight = 4900,
 			durability = 0.3,
-			clipname = {'extendedgusenbergclip','gusenbergclip'},
+			clip = {'extendedgusenbergclip','gusenbergclip'},
 		},
 
 		['WEAPON_HAMMER'] = {
@@ -248,7 +248,7 @@ return {
 			label = 'FN SCAR',
 			weight = 2750,
 			durability = 0.3,
-            clipname = {'extendedarclip','arclip'},
+            clip = {'extendedarclip','arclip'},
 		},
 
 		['WEAPON_HAZARDCAN'] = {
@@ -260,28 +260,28 @@ return {
 			label = 'Pistolet Lourd',
 			weight = 1100,
 			durability = 0.5,
-			clipname = {'extendedheavypistolclip','heavypistolclip'},
+			clip = {'extendedheavypistolclip','heavypistolclip'},
 		},
 
 		['WEAPON_HEAVYSHOTGUN'] = {
 			label = 'S12K',
 			weight = 3600,
 			durability = 1,
-			clipname = {'drumheavyshotgunclip','extendedheavyshotgunclip'},
+			clip = {'drumheavyshotgunclip','extendedheavyshotgunclip'},
 		},
 
 		['WEAPON_HEAVYSNIPER'] = {
 			label = 'Barrett M82',
 			weight = 14000,
 			durability = 1,
-			clipname = {'heavysniperclip'},
+			clip = {'heavysniperclip'},
 		},
 
 		['WEAPON_HEAVYSNIPER_MK2'] = {
 			label = 'Barrett M82 MK2',
 			weight = 10432,
 			durability = 1,
-			clipname = {'extendedheavysniperclip','heavysniperclip'},
+			clip = {'extendedheavysniperclip','heavysniperclip'},
 		},
 
 		['WEAPON_KNIFE'] = {
@@ -306,7 +306,7 @@ return {
 			label = 'TEC-9',
 			weight = 1400,
 			durability = 0.3,
-			clipname = {'drummachinepistolclip','extendedmachinepistolclip','machinepistolclip'},
+			clip = {'drummachinepistolclip','extendedmachinepistolclip','machinepistolclip'},
 		},
 
 		['WEAPON_MARKSMANPISTOL'] = {
@@ -320,28 +320,28 @@ return {
 			label = 'Fusil Marksman',
 			weight = 7500,
 			durability = 1,
-			clipname = {'extendedmarksmansniperclip','marksmansniperclip'},
+			clip = {'extendedmarksmansniperclip','marksmansniperclip'},
 		},
 
 		['WEAPON_MARKSMANRIFLE_MK2'] = {
 			label = 'Fusil Marksman MK2',
 			weight = 4000,
 			durability = 1,
-			clipname = {'extendedmarksmansniperclip','marksmansniperclip'},
+			clip = {'extendedmarksmansniperclip','marksmansniperclip'},
 		},
 
 		['WEAPON_MG'] = {
 			label = 'Mitrailleuse',
 			weight = 9000,
 			durability = 0.3,
-			clipname = {'extendedmgclip','mgclip'},
+			clip = {'extendedmgclip','mgclip'},
 		},
 
 		['WEAPON_MICROSMG'] = {
 			label = 'UZI',
 			weight = 4000,
 			durability = 0.3,
-			clipname = {'extendedmicrosmgclip','microsmgclip'},
+			clip = {'extendedmicrosmgclip','microsmgclip'},
 		},
 
 		['WEAPON_MILITARYRIFLE'] = {
@@ -355,7 +355,7 @@ return {
 			label = 'Skorpion',
 			weight = 2770,
 			durability = 0.3,
-			clipname = {'extendedminismgclip','minismgclip'},
+			clip = {'extendedminismgclip','minismgclip'},
 		},
 
 		['WEAPON_MOLOTOV'] = {
@@ -405,21 +405,21 @@ return {
 			label = 'berretta',
 			weight = 970,
 			durability = 0.5,
-            clipname = {'extendedpistolclip','pistolclip'},
+            clip = {'extendedpistolclip','pistolclip'},
 		},
 
 		['WEAPON_PISTOL50'] = {
 			label = 'Desert Eagle',
 			weight = 2000,
 			durability = 0.5,
-			clipname = {'extendedpistol50clip','pistol50clip'},
+			clip = {'extendedpistol50clip','pistol50clip'},
 		},
 
 		['WEAPON_PISTOL_MK2'] = {
 			label = 'Pistol MK2',
 			weight = 970,
 			durability = 0.5,
-			clipname = {'extendedpistolclip','pistolclip'},
+			clip = {'extendedpistolclip','pistolclip'},
 		},
 
 		['WEAPON_POOLCUE'] = {
@@ -473,14 +473,14 @@ return {
 			label = 'MP5',
 			weight = 3084,
 			durability = 0.3,
-			clipname = {'drumsmgclip','extendedsmgclip','smgclip'},
+			clip = {'drumsmgclip','extendedsmgclip','smgclip'},
 		},
 
 		['WEAPON_SMG_MK2'] = {
 			label = 'MP5 Mk2',
 			weight = 2700,
 			durability = 0.3,
-			clipname = {'extendedsmgclip','smgclip'},
+			clip = {'extendedsmgclip','smgclip'},
 		},
 
 		['WEAPON_SMOKEGRENADE'] = {
@@ -493,7 +493,7 @@ return {
 			label = 'Sniper',
 			weight = 6500,
 			durability = 1,
-			clipname = {'sniperclip'},
+			clip = {'sniperclip'},
 		},
 
 		['WEAPON_SNOWBALL'] = {
@@ -506,28 +506,28 @@ return {
 			label = 'Pistolet sns',
 			weight = 465,
 			durability = 0.5,
-			clipname = {'extendedsnspistolclip','snspistolclip'},
+			clip = {'extendedsnspistolclip','snspistolclip'},
 		},
 
 		['WEAPON_SNSPISTOL_MK2'] = {
 			label = 'Lanceur Paintball',
 			weight = 465,
 			durability = 0.5,
-            clipname = {'paintballgunclip'},
+            clip = {'paintballgunclip'},
 		},
 
 		['WEAPON_SPECIALCARBINE'] = {
 			label = 'G36',
 			weight = 3000,
 			durability = 0.3,
-			clipname = {'drumarclip','extendedarclip','arclip'},
+			clip = {'drumarclip','extendedarclip','arclip'},
 		},
 
 		['WEAPON_SPECIALCARBINE_MK2'] = {
 			label = 'G36 MK2',
 			weight = 3370,
 			durability = 0.3,
-			clipname = {'extendedarclip','arclip'},
+			clip = {'extendedarclip','arclip'},
 		},
 
 		['WEAPON_STICKYBOMB'] = {
@@ -566,7 +566,7 @@ return {
 			label = 'Pistolet Vintage',
 			weight = 100,
 			durability = 0.5,
-			clipname = {'extendedvintagepistolclip','vintagepistolclip'},
+			clip = {'extendedvintagepistolclip','vintagepistolclip'},
 		},
 
 		['WEAPON_WRENCH'] = {
@@ -645,7 +645,7 @@ return {
 			label = 'M16',
 			weight = 3400,
 			durability = 0.3,
-			clipname = {'extendedarclip','arclip'}
+			clip = {'extendedarclip','arclip'}
 		},
 
         ['WEAPON_COMPACTLAUNCHER'] = {
@@ -716,7 +716,7 @@ return {
 			weight = 1500,
 			durability = 0.5,
 			ammoname = 'pistolammo',
-            clipname = {'extendedtecpistolclip','tecpistolclip'}
+            clip = {'extendedtecpistolclip','tecpistolclip'}
 		},
 
         ['WEAPON_CERAMICPISTOL'] = {
@@ -724,7 +724,7 @@ return {
 			weight = 700,
 			durability = 0.5,
 			ammoname = 'pistolammo',
-            clipname = {'extendedceramicpistolclip','ceramicpistolclip'}
+            clip = {'extendedceramicpistolclip','ceramicpistolclip'}
 		},
 
         ----------------------------------

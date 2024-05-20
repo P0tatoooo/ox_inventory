@@ -261,7 +261,7 @@ function client.openInventory(inv, data)
         if inv == 'player' then
             Utils.PlayAnim(0, 'mp_common', 'givetake1_a', 8.0, 1.0, 2000, 50, 0.0, 0, 0, 0)
         elseif inv ~= 'trunk' then
-            Utils.PlayAnim(0, 'pickup_object', 'putdown_low', 5.0, 1.5, 1000, 48, 0.0, 0, 0, 0)
+            --Utils.PlayAnim(0, 'pickup_object', 'putdown_low', 5.0, 1.5, 1000, 48, 0.0, 0, 0, 0)
         end
     end
 
@@ -313,11 +313,43 @@ function client.openInventory(inv, data)
         end)
     end
 
+    CreatePedScreen()
+
     return true
 end
 
 RegisterNetEvent('ox_inventory:openInventory', client.openInventory)
 exports('openInventory', client.openInventory)
+
+function CreatePedScreen()
+    ActivateFrontendMenu(`FE_MENU_VERSION_EMPTY_NO_BACKGROUND`, false, -1)
+    Citizen.Wait(50)
+    N_0x98215325a695e78a(false) --Hide pause menu mouse
+
+    clonedPed = ClonePed(PlayerPedId(), 0, false, false)
+
+    local x, y, z = table.unpack(GetEntityCoords(clonedPed))
+    SetEntityCoords(clonedPed, x, y, z + 5.5)
+    FreezeEntityPosition(clonedPed, true)
+    N_0x4668d80430d6c299(clonedPed)
+
+    GivePedToPauseMenu(clonedPed, 1)
+    RequestScaleformMovie("PAUSE_MP_MENU_PLAYER_MODEL")
+    ReplaceHudColourWithRgba(117, 0, 0, 0, 0)
+    SetBlockingOfNonTemporaryEvents(clonedPed, true)
+    SetPauseMenuPedLighting(true)
+    SetPauseMenuPedSleepState(true)
+
+    ReleaseControlOfFrontend()
+end
+
+function DeletePedScreen()
+    if DoesEntityExist(clonedPed) then
+        DeleteEntity(clonedPed)
+    end
+    SetFrontendActive(false)
+    ReplaceHudColourWithRgba(117, 0, 0, 0, 186)
+end
 
 RegisterNetEvent('ox_inventory:forceOpenInventory', function(left, right)
 	if source == '' then return end
@@ -903,7 +935,6 @@ local function registerCommands()
 		defaultKey = 'r',
 		onPressed = function(self)
 			if not currentWeapon or not canUseItem(true) then return end
-
 			if currentWeapon.ammo or currentWeapon.clip then
 				if currentWeapon.metadata.durability > 0 then
                     local slotId
@@ -1296,6 +1327,7 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 			description = v.description,
 			buttons = buttons,
 			ammoName = v.ammoname,
+            clip = v.clip,
 			image = v.client?.image
 		}
 	end
@@ -1698,6 +1730,7 @@ RegisterNUICallback('removeComponent', function(data, cb)
                                 clipToGive = clipToGive .. 'empty'
                                 ammoToGive = currentWeapon.metadata.ammo
                             end
+                            print(k, clipToGive, ammoToGive)
                             success = lib.callback.await('ox_inventory:updateWeapon', false, 'component', k, nil, nil, clipToGive, ammoToGive)
                             if success then
                                 SetPedAmmo(playerPed, currentWeapon.hash, 0)

@@ -247,12 +247,12 @@ local function GenerateSerial(text)
 end
 
 local function setItemDurability(item, metadata)
-	local degrade = item.degrade
+	local degrade = item?.degrade
 
 	if degrade then
 		metadata.durability = os.time()+(degrade * 60)
 		metadata.degrade = degrade
-	elseif item.durability then
+	elseif item?.durability then
 		metadata.durability = 100
 	end
 
@@ -277,7 +277,7 @@ function Items.Metadata(inv, item, metadata, count)
 	if item.weapon then
 		if type(metadata) ~= 'table' then metadata = {} end
 		if not metadata.durability then metadata.durability = 100 end
-		if not metadata.ammo and item.ammoname then metadata.ammo = 0 end
+		if not metadata.ammo and (item.ammoname or item.clip) then metadata.ammo = 0 end
 		if not metadata.components then metadata.components = {} end
 
 		if metadata.registered ~= false and (metadata.ammo or item.name == 'WEAPON_STUNGUN') then

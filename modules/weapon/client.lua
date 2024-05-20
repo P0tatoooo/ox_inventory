@@ -82,6 +82,7 @@ function Weapon.Equip(item, data, noWeaponAnim)
 
 	item.hash = data.hash
 	item.ammo = data.ammoname
+    item.clip = data.clip
 	item.melee = GetWeaponDamageType(data.hash) == 2 and 0
 	item.timer = 0
 	item.throwable = data.throwable

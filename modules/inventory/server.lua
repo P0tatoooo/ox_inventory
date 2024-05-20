@@ -420,7 +420,7 @@ end
 ---@param item table
 ---@param slot table
 function Inventory.SlotWeight(item, slot, ignoreCount)
-	local weight = ignoreCount and item.weight or item.weight * (slot.count or 1)
+	local weight = ignoreCount and item.weight or (item.weight or 0) * (slot.count or 1)
 
 	if not slot.metadata then slot.metadata = {} end
 
@@ -2450,7 +2450,7 @@ RegisterServerEvent('ox_inventory:giveItem', function(slot, target, count)
 	end
 end)
 
-local function updateWeapon(source, action, value, slot, specialAmmo)
+local function updateWeapon(source, action, value, slot, specialAmmo, clipinweapon, ammoinweapon)
 	local inventory = Inventories[source]
 
 	if not inventory then return end
@@ -2566,8 +2566,8 @@ end
 
 lib.callback.register('ox_inventory:updateWeapon', updateWeapon)
 
-RegisterNetEvent('ox_inventory:updateWeapon', function(action, value, slot, specialAmmo)
-	updateWeapon(source, action, value, slot, specialAmmo)
+RegisterNetEvent('ox_inventory:updateWeapon', function(action, value, slot, specialAmmo, clipinweapon, ammoinweapon)
+	updateWeapon(source, action, value, slot, specialAmmo, clipinweapon, ammoinweapon)
 end)
 
 lib.callback.register('ox_inventory:removeAmmoFromWeapon', function(source, slot)
