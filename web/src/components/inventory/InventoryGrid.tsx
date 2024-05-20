@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import { Inventory } from '../../typings';
-import WeightBar from '../utils/WeightBar';
-import InventorySlot from './InventorySlot';
-import InventoryContext from './InventoryContext';
-import { getTotalWeight } from '../../helpers';
-import { createPortal } from 'react-dom';
-
-const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
-  const weight = React.useMemo(
-    () => (inventory.maxWeight !== undefined ? Math.floor(getTotalWeight(inventory.items)*1000)/1000 : 0),
-    [inventory.maxWeight, inventory.items]
-  );
-
-  return (
-    <>
-      <div className="inventory-grid-wrapper">
-=======
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Inventory } from '../../typings';
 import WeightBar from '../utils/WeightBar';
@@ -45,7 +26,6 @@ const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
   return (
     <>
       <div className="inventory-grid-wrapper" style={{ pointerEvents: isBusy ? 'none' : 'auto' }}>
->>>>>>> main
         <div>
           <div className="inventory-grid-header-wrapper">
             <p>{inventory.label}</p>
@@ -57,14 +37,6 @@ const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
           </div>
           <WeightBar percent={inventory.maxWeight ? (weight / inventory.maxWeight) * 100 : 0} />
         </div>
-<<<<<<< HEAD
-        <div className="inventory-grid-container">
-          <>
-            {inventory.items.map((item) => (
-              <InventorySlot key={`${inventory.type}-${inventory.id}-${item.slot}`} item={item} inventory={inventory} />
-            ))}
-            {inventory.type === 'player' && createPortal(<InventoryContext />, document.body)}
-=======
         <div className="inventory-grid-container" ref={containerRef}>
           <>
             {inventory.items.slice(0, (page + 1) * PAGE_SIZE).map((item, index) => (
@@ -77,7 +49,6 @@ const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
                 inventoryId={inventory.id}
               />
             ))}
->>>>>>> main
           </>
         </div>
       </div>

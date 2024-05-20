@@ -2,12 +2,8 @@ $mainColor: #22232c;
 $textColor: #c1c2c5;
 $mainFont: Roboto;
 
-<<<<<<< HEAD
-$seconaryColor: rgba(12, 12, 12, 0.4);
-=======
 $secondaryColor: rgba(12, 12, 12, 0.4);
 $secondaryColorHighlight: #33343F;
->>>>>>> main
 $secondaryColorLight: rgba(0, 0, 0, 0.5);
 $secondaryColorDark: rgba(12, 12, 12, 0.8);
 
@@ -54,13 +50,6 @@ input[type='number']::-webkit-outer-spin-button {
   appearance: none;
 }
 
-<<<<<<< HEAD
-.MuiMenuItem-root > div > p {
-  padding: 0 !important;
-}
-
-.MuiMenu-list {
-=======
 .app-wrapper {
   height: 100%;
   width: 100%;
@@ -68,7 +57,6 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .context-menu-list {
->>>>>>> main
   min-width: 200px;
   background-color: $mainColor;
   color: $textColor;
@@ -76,14 +64,6 @@ input[type='number']::-webkit-outer-spin-button {
   border-color: rgba(0, 0, 0, 0.2);
   border-style: inset;
   border-width: 1px;
-<<<<<<< HEAD
-  font-size: 16px !important;
-}
-
-.MuiMenuItem-gutters {
-  padding: 4px 16px !important;
-  font-size: 16px !important;
-=======
   border-radius: 4px;
   outline: none;
   display: flex;
@@ -107,7 +87,6 @@ input[type='number']::-webkit-outer-spin-button {
     background-color: $secondaryColorHighlight;
     cursor: pointer;
   }
->>>>>>> main
 }
 
 .tooltip-description {
@@ -167,11 +146,7 @@ button:active {
     outline: none;
     border: none;
     color: #fff;
-<<<<<<< HEAD
-    background-color: $seconaryColor;
-=======
     background-color: $secondaryColor;
->>>>>>> main
     &:focus-within {
       background-color: $secondaryColorDark;
     }
@@ -180,11 +155,7 @@ button:active {
   .inventory-control-button {
     font-size: 14px;
     color: #fff;
-<<<<<<< HEAD
-    background-color: $seconaryColor;
-=======
     background-color: $secondaryColor;
->>>>>>> main
     transition: 200ms;
     padding: 12px 8px;
     border-radius: 2.5%;
@@ -200,11 +171,6 @@ button:active {
 }
 
 .useful-controls-dialog {
-<<<<<<< HEAD
-  font-size: 18px;
-}
-
-=======
   background-color: $mainColor;
   position: absolute;
   top: 50%;
@@ -246,33 +212,23 @@ button:active {
   }
 }
 
->>>>>>> main
 .useful-controls-content-wrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-<<<<<<< HEAD
-=======
 .divider {
   width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.12);
 }
 
->>>>>>> main
 .useful-controls-button {
   position: absolute !important;
   bottom: 25px;
   right: 25px;
   transition: 200ms !important;
-<<<<<<< HEAD
-  border-radius: 5% !important;
-  background-color: $seconaryColor !important;
-  &:hover {
-    background-color: $secondaryColorDark !important;
-=======
   border: none;
   color: white;
   width: 52px;
@@ -286,7 +242,6 @@ button:active {
   &:hover {
     background-color: $secondaryColorDark !important;
     cursor: pointer;
->>>>>>> main
   }
 }
 
@@ -299,24 +254,7 @@ button:active {
 }
 
 // Dialog is used fro useful controls window
-<<<<<<< HEAD
-.MuiDialogContent-root {
-  background-color: $mainColor;
-  color: $textColor;
-}
 
-.MuiDialogTitle-root {
-  background-color: $mainColor;
-  color: $textColor;
-}
-
-.MuiDialogActions-root {
-  background-color: $mainColor;
-  color: $textColor;
-}
-=======
-
->>>>>>> main
 
 // inventory grids
 .inventory-grid-wrapper {
@@ -344,11 +282,7 @@ button:active {
 
 // inventory slots
 .inventory-slot {
-<<<<<<< HEAD
-  background-color: $seconaryColor;
-=======
   background-color: $secondaryColor;
->>>>>>> main
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 2.5%;
@@ -449,25 +383,6 @@ button:active {
   }
 }
 
-<<<<<<< HEAD
-// slot tooltip
-.MuiTooltip-tooltip {
-  background-color: $mainColor !important;
-  min-width: 200px !important;
-  color: $textColor !important;
-  font-family: $mainFont !important;
-  border-radius: 4px !important;
-  border-color: rgba(0, 0, 0, 0.2) !important;
-  border-style: inset !important;
-  border-width: 1px !important;
-}
-
-.tooltip-wrapper {
-  display: flex;
-  flex-direction: column;
-  p {
-    font-size: 14px;
-=======
 
 .tooltip-wrapper {
   pointer-events: none;
@@ -485,7 +400,6 @@ button:active {
   border-width: 1px;
   p {
     font-size: 12px;
->>>>>>> main
     font-weight: 400;
   }
 }
@@ -570,11 +484,7 @@ button:active {
 .item-notification-action-box {
   width: 100%;
   color: $textColor;
-<<<<<<< HEAD
-  background-color: $seconaryColor;
-=======
   background-color: $secondaryColor;
->>>>>>> main
   text-transform: uppercase;
   text-align: center;
   border-top-left-radius: 0.25vh;
@@ -606,8 +516,6 @@ button:active {
   border-radius: 5%;
   overflow: hidden;
 }
-<<<<<<< HEAD
-=======
 
 .transition-fade-enter {
   opacity: 0;
@@ -644,4 +552,3 @@ button:active {
   transform: translateY(200px);
   transition: all 200ms;
 }
->>>>>>> main

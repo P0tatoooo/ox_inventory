@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-local playerDropped = ...
-local Inventory = require 'modules.inventory.server'
-local Items = require 'modules.items.server'
-
-AddEventHandler('esx:playerDropped', playerDropped)
-=======
 local Inventory = require 'modules.inventory.server'
 local Items = require 'modules.items.server'
 
 AddEventHandler('esx:playerDropped', server.playerDropped)
->>>>>>> main
 
 AddEventHandler('esx:setJob', function(source, job, lastJob)
 	local inventory = Inventory(source)
@@ -40,12 +32,7 @@ server.accounts.black_money = 0
 ---@diagnostic disable-next-line: duplicate-set-field
 function server.setPlayerData(player)
 	local groups = {
-<<<<<<< HEAD
-		[player.job.name] = player.job.grade,
-        [player.faction.name] = player.faction.grade
-=======
 		[player.job.name] = player.job.grade
->>>>>>> main
 	}
 
 	return {
@@ -133,12 +120,6 @@ function server.isPlayerBoss(playerId)
 	return xPlayer.job.grade_name == 'boss'
 end
 
-<<<<<<< HEAD
---[[MySQL.ready(function()
-	MySQL.insert('INSERT IGNORE INTO `licenses` (`type`, `label`) VALUES (?, ?)', { 'weapon', 'Weapon License'})
-end)]]
-=======
 MySQL.ready(function()
 	MySQL.insert('INSERT IGNORE INTO `licenses` (`type`, `label`) VALUES (?, ?)', { 'weapon', 'Weapon License'})
 end)
->>>>>>> main

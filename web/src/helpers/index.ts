@@ -1,20 +1,11 @@
-<<<<<<< HEAD
-//import { Items } from "../store/items";
-import { Inventory, State, Slot, SlotWithItem, InventoryType, ItemData } from '../typings';
-=======
 import { Inventory, InventoryType, ItemData, Slot, SlotWithItem, State } from '../typings';
->>>>>>> main
 import { isEqual } from 'lodash';
 import { store } from '../store';
 import { Items } from '../store/items';
 import { imagepath } from '../store/imagepath';
 import { fetchNui } from '../utils/fetchNui';
 
-<<<<<<< HEAD
-export const canPurchaseItem = (item: Slot, inventory: Inventory) => {
-=======
 export const canPurchaseItem = (item: Slot, inventory: { type: Inventory['type']; groups: Inventory['groups'] }) => {
->>>>>>> main
   if (inventory.type !== 'shop' || !isSlotWithItem(item)) return true;
 
   if (item.count !== undefined && item.count === 0) return false;
@@ -57,10 +48,6 @@ export const canPurchaseItem = (item: Slot, inventory: { type: Inventory['type']
   }
 };
 
-<<<<<<< HEAD
-// I hate this
-=======
->>>>>>> main
 export const canCraftItem = (item: Slot, inventoryType: string) => {
   if (!isSlotWithItem(item) || inventoryType !== 'crafting') return true;
   if (!item.ingredients) return true;
@@ -69,17 +56,10 @@ export const canCraftItem = (item: Slot, inventoryType: string) => {
 
   const remainingItems = ingredientItems.filter((ingredient) => {
     const [item, count] = [ingredient[0], ingredient[1]];
-<<<<<<< HEAD
-
-    if (count >= 1) {
-      // @ts-ignore
-      if (Items[item] && Items[item].count >= count) return false;
-=======
     const globalItem = Items[item];
 
     if (count >= 1) {
       if (globalItem && globalItem.count >= count) return false;
->>>>>>> main
     }
 
     const hasItem = leftInventory.items.find((playerItem) => {
@@ -170,11 +150,7 @@ export const getItemUrl = (item: string | SlotWithItem) => {
     if (metadata?.image) return `${imagepath}/${metadata.image}.png`;
   }
 
-<<<<<<< HEAD
-  const itemName = isObj ? item.name as string : item;
-=======
   const itemName = isObj ? (item.name as string) : item;
->>>>>>> main
   const itemData = Items[itemName];
 
   if (!itemData) return `${imagepath}/${itemName}.png`;

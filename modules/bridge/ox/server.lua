@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-local playerDropped = ...
-local Inventory = require 'modules.inventory.server'
-
-AddEventHandler('ox:playerLogout', playerDropped)
-
-AddEventHandler('ox:setGroup', function(source, name, grade)
-	local inventory = Inventory(source)
-	if not inventory then return end
-=======
 if not lib.checkDependency('ox_core', '0.21.3', true) then return end
 
 local Ox = require '@ox_core.lib.init' --[[@as OxServer]]
@@ -21,15 +11,10 @@ AddEventHandler('ox:setGroup', function(source, name, grade)
 
 	if not inventory then return end
 
->>>>>>> main
 	inventory.player.groups[name] = grade
 end)
 
 ---@diagnostic disable-next-line: duplicate-set-field
-<<<<<<< HEAD
-function server.hasLicense(inv, name)
-	local player = Ox.GetPlayer(inv.id)
-=======
 function server.setPlayerData(player)
     player.groups = Ox.GetPlayer(player.source)?.getGroups()
     return player
@@ -41,7 +26,6 @@ function server.hasLicense(inv, name)
 
     if not player then return end
 
->>>>>>> main
 	return player.getLicense(name)
 end
 
@@ -49,12 +33,9 @@ end
 function server.buyLicense(inv, license)
 	local player = Ox.GetPlayer(inv.id)
 
-<<<<<<< HEAD
-=======
     if not player then return end
 
 
->>>>>>> main
 	if player.getLicense(license.name) then
 		return false, 'already_have'
 	elseif Inventory.GetItem(inv, 'money', false, true) < license.price then
@@ -76,10 +57,7 @@ end
 
 ---@param entityId number
 ---@return number | string
-<<<<<<< HEAD
-=======
 ---@diagnostic disable-next-line: duplicate-set-field
->>>>>>> main
 function server.getOwnedVehicleId(entityId)
     return Ox.GetVehicle(entityId)?.id
 end

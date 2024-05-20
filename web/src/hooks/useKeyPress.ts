@@ -1,29 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-
-export const useKeyPress = (targetKey: KeyboardEvent['key']) => {
-  const [keyPressed, setKeyPressed] = React.useState(false);
-
-  const downHandler = React.useCallback(
-    ({ key }: KeyboardEvent) => {
-      if (key === targetKey) {
-        setKeyPressed(true);
-      }
-    },
-    [targetKey]
-  );
-
-  const upHandler = React.useCallback(
-    ({ key }: KeyboardEvent) => {
-      if (key === targetKey) {
-        setKeyPressed(false);
-      }
-    },
-    [targetKey]
-  );
-
-  React.useEffect(() => {
-=======
 import { useCallback, useEffect, useState } from 'react';
 
 export const useKeyPress = (targetKey: KeyboardEvent['key']) => {
@@ -43,7 +17,6 @@ export const useKeyPress = (targetKey: KeyboardEvent['key']) => {
   const upHandler = keyToggler(false);
 
   useEffect(() => {
->>>>>>> main
     window.addEventListener('keydown', downHandler);
     window.addEventListener('keyup', upHandler);
 

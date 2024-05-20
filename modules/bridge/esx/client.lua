@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-local onLogout = ...
-
-=======
->>>>>>> main
 local ESX = setmetatable({}, {
 	__index = function(self, index)
 		local obj = exports.es_extended:getSharedObject()
@@ -25,11 +20,7 @@ function client.setPlayerStatus(values)
 	end
 end
 
-<<<<<<< HEAD
-RegisterNetEvent('esx:onPlayerLogout', onLogout)
-=======
 RegisterNetEvent('esx:onPlayerLogout', client.onLogout)
->>>>>>> main
 
 AddEventHandler('esx:setPlayerData', function(key, value)
 	if not PlayerData.loaded or GetInvokingResource() ~= 'es_extended' then return end

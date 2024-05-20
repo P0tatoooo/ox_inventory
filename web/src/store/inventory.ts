@@ -1,15 +1,5 @@
 import { createSlice, current, isFulfilled, isPending, isRejected, PayloadAction } from '@reduxjs/toolkit';
 import type { RootState } from '.';
-<<<<<<< HEAD
-import { Slot, State } from '../typings';
-import {
-  setupInventoryReducer,
-  refreshSlotsReducer,
-  stackSlotsReducer,
-  swapSlotsReducer,
-  moveSlotsReducer,
-} from '../reducers';
-=======
 import {
   moveSlotsReducer,
   refreshSlotsReducer,
@@ -18,7 +8,6 @@ import {
   swapSlotsReducer,
 } from '../reducers';
 import { State } from '../typings';
->>>>>>> main
 
 const initialState: State = {
   leftInventory: {
@@ -36,10 +25,6 @@ const initialState: State = {
     items: [],
   },
   additionalMetadata: new Array(),
-<<<<<<< HEAD
-  contextMenu: { coords: null },
-=======
->>>>>>> main
   itemAmount: 0,
   shiftPressed: false,
   isBusy: false,
@@ -54,15 +39,6 @@ export const inventorySlice = createSlice({
     setupInventory: setupInventoryReducer,
     moveSlots: moveSlotsReducer,
     refreshSlots: refreshSlotsReducer,
-<<<<<<< HEAD
-    setContextMenu: (
-      state,
-      action: PayloadAction<{ coords: { mouseX: number; mouseY: number } | null; item?: Slot }>
-    ) => {
-      state.contextMenu = action.payload;
-    },
-=======
->>>>>>> main
     setAdditionalMetadata: (state, action: PayloadAction<Array<{ metadata: string; value: string }>>) => {
       const metadata = [];
 
@@ -111,10 +87,6 @@ export const inventorySlice = createSlice({
 
 export const {
   setAdditionalMetadata,
-<<<<<<< HEAD
-  setContextMenu,
-=======
->>>>>>> main
   setItemAmount,
   setShiftPressed,
   setupInventory,
