@@ -63,6 +63,10 @@ return {
 		}
 	},
 
+	['black_money'] = {
+		label = 'Dirty Money',
+	},
+
 	['burger'] = {
 		label = 'Burger',
 		weight = 220,
@@ -75,20 +79,45 @@ return {
 		},
 	},
 
-	['cola'] = {
-		label = 'eCola',
+	['sprunk'] = {
+		label = 'Sprunk',
 		weight = 350,
 		client = {
 			status = { thirst = 200000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = `prop_ecola_can`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
-			notification = 'You quenched your thirst with cola'
+			notification = 'You quenched your thirst with a sprunk'
+		}
+	},
+
+	['parachute'] = {
+		label = 'Parachute',
+		weight = 8000,
+		stack = false,
+		client = {
+			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+			usetime = 1500
 		}
 	},
 
 	['garbage'] = {
 		label = 'Garbage',
+	},
+
+	['paperbag'] = {
+		label = 'Paper Bag',
+		weight = 1,
+		stack = false,
+		close = false,
+		consume = 0
+	},
+
+	['identification'] = {
+		label = 'Identification',
+		client = {
+			image = 'card_id.png'
+		}
 	},
 
 	['panties'] = {

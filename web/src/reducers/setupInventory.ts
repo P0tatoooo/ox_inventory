@@ -24,7 +24,11 @@ export const setupInventoryReducer: CaseReducer<
         if (!item.name) return item;
 
         if (typeof Items[item.name] === 'undefined') {
+<<<<<<< HEAD
           getItemData(item.name)
+=======
+          getItemData(item.name);
+>>>>>>> main
         }
 
         item.durability = itemDurability(item.metadata, curTime);
@@ -43,7 +47,11 @@ export const setupInventoryReducer: CaseReducer<
         if (!item.name) return item;
 
         if (typeof Items[item.name] === 'undefined') {
+<<<<<<< HEAD
           getItemData(item.name)
+=======
+          getItemData(item.name);
+>>>>>>> main
         }
 
         item.durability = itemDurability(item.metadata, curTime);
@@ -51,6 +59,11 @@ export const setupInventoryReducer: CaseReducer<
       }),
     };
 
+<<<<<<< HEAD
   if (rightInventory?.type === 'admin') state.isBusy = true;
   else state.isBusy = false;
+=======
+  state.shiftPressed = false;
+  state.isBusy = false;
+>>>>>>> main
 };

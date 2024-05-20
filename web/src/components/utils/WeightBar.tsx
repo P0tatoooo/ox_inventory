@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React from 'react';
+=======
+import React, { useMemo } from 'react';
+>>>>>>> main
 
 const colorChannelMixer = (colorChannelA: number, colorChannelB: number, amountToMix: number) => {
   let channelA = colorChannelA * amountToMix;
@@ -21,7 +25,11 @@ const COLORS = {
 };
 
 const WeightBar: React.FC<{ percent: number; durability?: boolean }> = ({ percent, durability }) => {
+<<<<<<< HEAD
   const color = React.useMemo(
+=======
+  const color = useMemo(
+>>>>>>> main
     () =>
       durability
         ? percent < 50

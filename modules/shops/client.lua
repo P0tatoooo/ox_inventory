@@ -4,12 +4,13 @@ local shopTypes = {}
 local shops = {}
 local createBlip = require 'modules.utils.client'.CreateBlip
 
-for shopType, shopData in pairs(data('shops') --[[@as table<string, OxShop>]]) do
+for shopType, shopData in pairs(lib.load('data.shops') --[[@as table<string, OxShop>]]) do
 	local shop = {
 		name = shopData.name,
 		groups = shopData.groups or shopData.jobs,
 		blip = shopData.blip,
 		label = shopData.label,
+        icon = shopData.icon
 	}
 
 	if shared.target then
@@ -25,20 +26,6 @@ for shopType, shopData in pairs(data('shops') --[[@as table<string, OxShop>]]) d
 	if blip then
 		blip.name = ('ox_shop_%s'):format(shopType)
 		AddTextEntry(blip.name, shop.name or shopType)
-	end
-end
-
----@param point CPoint
-local function nearbyShop(point)
-	---@diagnostic disable-next-line: param-type-mismatch
-
-    if not string.match(point.type, 'Illegal') then
-	    DrawMarker(2, point.coords.x, point.coords.y, point.coords.z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2, 0.15, 30, 150, 30, 222, false, false, 0, true, false, false, false)
-    end
-
-	if point.isClosest and point.currentDistance < 1.2 and IsControlJustReleased(0, 38) then
-        print(point.invId, point.type)
-		client.openInventory('shop', { id = point.invId, type = point.type })
 	end
 end
 
@@ -114,6 +101,8 @@ local function wipeShops()
 
 	table.wipe(shops)
 end
+
+local markerColour = { 30, 150, 30 }
 
 local function refreshShops()
 	wipeShops()
@@ -193,6 +182,7 @@ local function refreshShops()
 			end
 		elseif shop.locations then
 			if not hasShopAccess(shop) then goto skipLoop end
+            local shopPrompt = { icon = 'fas fa-shopping-basket' }
 
 			for i = 1, #shop.locations do
 				local coords = shop.locations[i]
@@ -204,7 +194,12 @@ local function refreshShops()
 					inv = 'shop',
 					invId = i,
 					type = type,
-					nearby = nearbyShop,
+                    marker = markerColour,
+                    prompt = {
+                        options = shop.icon and { icon = shop.icon } or shopPrompt,
+                        message = ('**%s**  \n%s'):format(label, locale('interact_prompt', GetControlInstructionalButton(0, 38, true):sub(3)))
+                    },
+					nearby = Utils.nearbyMarker,
 					blip = blip and createBlip(blip, coords)
 				})
 			end

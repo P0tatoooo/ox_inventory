@@ -3,11 +3,18 @@ import { getItemUrl, isSlotWithItem } from '../../helpers';
 import useNuiEvent from '../../hooks/useNuiEvent';
 import { Items } from '../../store/items';
 import WeightBar from '../utils/WeightBar';
+<<<<<<< HEAD
 import { Slide } from '@mui/material';
 import { useAppSelector } from '../../store';
 import { selectLeftInventory } from '../../store/inventory';
 import { imagepath } from '../../store/imagepath';
 import { SlotWithItem } from '../../typings';
+=======
+import { useAppSelector } from '../../store';
+import { selectLeftInventory } from '../../store/inventory';
+import { SlotWithItem } from '../../typings';
+import SlideUp from '../utils/transitions/SlideUp';
+>>>>>>> main
 
 const InventoryHotbar: React.FC = () => {
   const [hotbarVisible, setHotbarVisible] = useState(false);
@@ -26,7 +33,11 @@ const InventoryHotbar: React.FC = () => {
   });
 
   return (
+<<<<<<< HEAD
     <Slide in={hotbarVisible} direction="up" unmountOnExit>
+=======
+    <SlideUp in={hotbarVisible}>
+>>>>>>> main
       <div className="hotbar-container">
         {items.map((item) => (
           <div
@@ -68,7 +79,11 @@ const InventoryHotbar: React.FC = () => {
           </div>
         ))}
       </div>
+<<<<<<< HEAD
     </Slide>
+=======
+    </SlideUp>
+>>>>>>> main
   );
 };
 

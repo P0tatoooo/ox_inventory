@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 local onLogout = ...
 
 RegisterNetEvent('ox:playerLogout', onLogout)
@@ -5,10 +6,23 @@ RegisterNetEvent('ox:playerLogout', onLogout)
 RegisterNetEvent('ox:setGroup', function(name, grade)
 	PlayerData.groups[name] = grade
 	OnPlayerData('groups')
+=======
+if not lib.checkDependency('ox_core', '0.21.3', true) then return end
+
+local Ox = require '@ox_core.lib.init' --[[@as OxClient]]
+local player = Ox.GetPlayer()
+
+RegisterNetEvent('ox:playerLogout', client.onLogout)
+
+RegisterNetEvent('ox:setGroup', function(name, grade)
+    PlayerData.groups[name] = grade
+    OnPlayerData('groups')
+>>>>>>> main
 end)
 
 ---@diagnostic disable-next-line: duplicate-set-field
 function client.setPlayerStatus(values)
+<<<<<<< HEAD
 	for name, value in pairs(values) do
 		-- Thanks to having status values setup out of 1000000 (matching esx_status's standard)
 		-- we need to awkwardly change the value
@@ -24,4 +38,21 @@ function client.setPlayerStatus(values)
 		---@diagnostic disable-next-line: undefined-global
 		player.addStatus(name, value)
 	end
+=======
+    for name, value in pairs(values) do
+        -- Thanks to having status values setup out of 1000000 (matching esx_status's standard)
+        -- we need to awkwardly change the value
+        if value > 100 or value < -100 then
+            -- Hunger and thirst start at 0 and go up to 100 as you get hungry/thirsty (inverse of ESX)
+            if (name == 'hunger' or name == 'thirst') then
+                value = -value
+            end
+
+            value = value * 0.0001
+        end
+
+        ---@diagnostic disable-next-line: undefined-global
+        player.addStatus(name, value)
+    end
+>>>>>>> main
 end

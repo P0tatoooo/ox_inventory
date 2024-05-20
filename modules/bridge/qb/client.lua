@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 local onLogout, Weapon = ...
+=======
+>>>>>>> main
 local QBCore = exports['qb-core']:GetCoreObject()
 local Inventory = require 'modules.inventory.client'
 local Weapon = require 'modules.weapon.client'
 
+<<<<<<< HEAD
 RegisterNetEvent('QBCore:Client:OnPlayerUnload', onLogout)
+=======
+RegisterNetEvent('QBCore:Client:OnPlayerUnload', client.onLogout)
+>>>>>>> main
 
 RegisterNetEvent('QBCore:Player:SetPlayerData', function(data)
 	if source == '' or not PlayerData.loaded then return end
@@ -62,19 +69,31 @@ end
 local function hasItem(items, amount)
     amount = amount or 1
 
+<<<<<<< HEAD
     local count = Inventory.Search('count', items)
 
     if type(items) == 'table' and type(count) == 'table' then
         for _, v in pairs(count) do
             if v < amount then
+=======
+    if type(items) == 'table' then
+        for _, v in pairs(items) do
+            if Inventory.GetItemCount(v) < amount then
+>>>>>>> main
                 return false
             end
         end
 
         return true
+<<<<<<< HEAD
     end
 
     return count >= amount
+=======
+    else
+        return Inventory.GetItemCount(items) >= amount
+    end
+>>>>>>> main
 end
 
 AddStateBagChangeHandler('inv_busy', ('player:%s'):format(cache.serverId), function(_, _, value)

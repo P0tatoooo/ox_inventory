@@ -1,5 +1,9 @@
 import { CaseReducer, PayloadAction } from '@reduxjs/toolkit';
 import { itemDurability } from '../helpers';
+<<<<<<< HEAD
+=======
+import { inventorySlice } from '../store/inventory';
+>>>>>>> main
 import { Items } from '../store/items';
 import { InventoryType, Slot, State } from '../typings';
 
@@ -9,6 +13,10 @@ interface Payload {
   items?: ItemsPayload | ItemsPayload[];
   itemCount?: Record<string, number>;
   weightData?: { inventoryId: string; maxWeight: number };
+<<<<<<< HEAD
+=======
+  slotsData?: { inventoryId: string; slots: number };
+>>>>>>> main
 }
 
 export const refreshSlotsReducer: CaseReducer<State, PayloadAction<Payload>> = (state, action) => {
@@ -64,4 +72,30 @@ export const refreshSlotsReducer: CaseReducer<State, PayloadAction<Payload>> = (
 
     state[inv].maxWeight = inventoryMaxWeight;
   }
+<<<<<<< HEAD
+=======
+
+  if (action.payload.slotsData) {
+    const { inventoryId } = action.payload.slotsData;
+    const { slots } = action.payload.slotsData;
+
+    const inv =
+      inventoryId === state.leftInventory.id
+        ? 'leftInventory'
+        : inventoryId === state.rightInventory.id
+        ? 'rightInventory'
+        : null;
+
+    if (!inv) return;
+
+    state[inv].slots = slots;
+    inventorySlice.caseReducers.setupInventory(state, {
+      type: 'setupInventory',
+      payload: {
+        leftInventory: inv === 'leftInventory' ? state[inv] : undefined,
+        rightInventory: inv === 'rightInventory' ? state[inv] : undefined,
+      },
+    });
+  }
+>>>>>>> main
 };

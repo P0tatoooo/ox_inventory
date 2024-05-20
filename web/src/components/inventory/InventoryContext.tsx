@@ -6,11 +6,17 @@ import { fetchNui } from '../../utils/fetchNui';
 import { Locale } from '../../store/locale';
 import { isSlotWithItem } from '../../helpers';
 import { setClipboard } from '../../utils/setClipboard';
+<<<<<<< HEAD
 import { Divider, Menu, MenuItem } from '@mui/material';
 import { useAppDispatch, useAppSelector } from '../../store';
 import { setContextMenu } from '../../store/inventory';
 import React from 'react';
 import { NestedMenuItem } from 'mui-nested-menu';
+=======
+import { useAppSelector } from '../../store';
+import React from 'react';
+import { Menu, MenuItem } from '../utils/menu/Menu';
+>>>>>>> main
 
 interface DataProps {
   action: string;
@@ -38,15 +44,23 @@ interface ButtonWithIndex extends Button {
 interface GroupedButtons extends Array<Group> {}
 
 const InventoryContext: React.FC = () => {
+<<<<<<< HEAD
   const contextMenu = useAppSelector((state) => state.inventory.contextMenu);
   const item = contextMenu.item;
   const dispatch = useAppDispatch();
+=======
+  const contextMenu = useAppSelector((state) => state.contextMenu);
+  const item = contextMenu.item;
+>>>>>>> main
 
   const handleClick = (data: DataProps) => {
     if (!item) return;
 
+<<<<<<< HEAD
     dispatch(setContextMenu({ coords: null }));
 
+=======
+>>>>>>> main
     switch (data && data.action) {
       case 'use':
         onUse({ name: item.name, slot: item.slot });
@@ -92,6 +106,7 @@ const InventoryContext: React.FC = () => {
       }
       return groups;
     }, []);
+<<<<<<< HEAD
   }
 
   return (
@@ -133,11 +148,43 @@ const InventoryContext: React.FC = () => {
           </NestedMenuItem>
         )}
         {((item && item.name && Items[item.name]?.buttons?.length) || 0) > 0 && <Divider />}
+=======
+  };
+
+  return (
+    <>
+      <Menu>
+        <MenuItem onClick={() => handleClick({ action: 'use' })} label={Locale.ui_use || 'Use'} />
+        <MenuItem onClick={() => handleClick({ action: 'give' })} label={Locale.ui_give || 'Give'} />
+        <MenuItem onClick={() => handleClick({ action: 'drop' })} label={Locale.ui_drop || 'Drop'} />
+        {item && item.metadata?.ammo > 0 && (
+          <MenuItem onClick={() => handleClick({ action: 'removeAmmo' })} label={Locale.ui_remove_ammo} />
+        )}
+        {item && item.metadata?.serial && (
+          <MenuItem
+            onClick={() => handleClick({ action: 'copy', serial: item.metadata?.serial })}
+            label={Locale.ui_copy}
+          />
+        )}
+        {item && item.metadata?.components && item.metadata?.components.length > 0 && (
+          <Menu label={Locale.ui_removeattachments}>
+            {item &&
+              item.metadata?.components.map((component: string, index: number) => (
+                <MenuItem
+                  key={index}
+                  onClick={() => handleClick({ action: 'remove', component, slot: item.slot })}
+                  label={Items[component]?.label || ''}
+                />
+              ))}
+          </Menu>
+        )}
+>>>>>>> main
         {((item && item.name && Items[item.name]?.buttons?.length) || 0) > 0 && (
           <>
             {item &&
               item.name &&
               groupButtons(Items[item.name]?.buttons).map((group: Group, index: number) => (
+<<<<<<< HEAD
                 <div key={index}>
                   {group.groupName ? (
                     <NestedMenuItem parentMenuOpen={!!contextMenu} label={group.groupName}>
@@ -155,6 +202,29 @@ const InventoryContext: React.FC = () => {
                     ))
                   )}
                 </div>
+=======
+                <React.Fragment key={index}>
+                  {group.groupName ? (
+                    <Menu label={group.groupName}>
+                      {group.buttons.map((button: Button) => (
+                        <MenuItem
+                          key={button.index}
+                          onClick={() => handleClick({ action: 'custom', id: button.index })}
+                          label={button.label}
+                        />
+                      ))}
+                    </Menu>
+                  ) : (
+                    group.buttons.map((button: Button) => (
+                      <MenuItem
+                        key={button.index}
+                        onClick={() => handleClick({ action: 'custom', id: button.index })}
+                        label={button.label}
+                      />
+                    ))
+                  )}
+                </React.Fragment>
+>>>>>>> main
               ))}
           </>
         )}

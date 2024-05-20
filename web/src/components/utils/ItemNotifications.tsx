@@ -1,13 +1,24 @@
+<<<<<<< HEAD
 import React from 'react';
 import { createPortal } from 'react-dom';
 import { TransitionGroup } from 'react-transition-group';
 import useNuiEvent from '../../hooks/useNuiEvent';
 import { Fade } from '@mui/material';
+=======
+import React, { useContext } from 'react';
+import { createPortal } from 'react-dom';
+import { TransitionGroup } from 'react-transition-group';
+import useNuiEvent from '../../hooks/useNuiEvent';
+>>>>>>> main
 import useQueue from '../../hooks/useQueue';
 import { Locale } from '../../store/locale';
 import { getItemUrl } from '../../helpers';
 import { SlotWithItem } from '../../typings';
 import { Items } from '../../store/items';
+<<<<<<< HEAD
+=======
+import Fade from './transitions/Fade';
+>>>>>>> main
 
 interface ItemNotificationProps {
   item: SlotWithItem;
@@ -19,7 +30,11 @@ export const ItemNotificationsContext = React.createContext<{
 } | null>(null);
 
 export const useItemNotifications = () => {
+<<<<<<< HEAD
   const itemNotificationsContext = React.useContext(ItemNotificationsContext);
+=======
+  const itemNotificationsContext = useContext(ItemNotificationsContext);
+>>>>>>> main
   if (!itemNotificationsContext) throw new Error(`ItemNotificationsContext undefined`);
   return itemNotificationsContext;
 };
