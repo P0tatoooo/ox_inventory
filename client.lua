@@ -1730,7 +1730,6 @@ RegisterNUICallback('removeComponent', function(data, cb)
                                 clipToGive = clipToGive .. 'empty'
                                 ammoToGive = currentWeapon.metadata.ammo
                             end
-                            print(k, clipToGive, ammoToGive)
                             success = lib.callback.await('ox_inventory:updateWeapon', false, 'component', k, nil, nil, clipToGive, ammoToGive)
                             if success then
                                 SetPedAmmo(playerPed, currentWeapon.hash, 0)
