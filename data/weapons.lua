@@ -2194,7 +2194,15 @@ return {
 					weight = 280,
 					client = {
 							component = {`COMPONENT_SMG_CLIP_03`},
-					}
+					},
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 
 

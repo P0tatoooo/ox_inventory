@@ -58,7 +58,12 @@ local function setupPlayer(Player)
 	end)
 
 	QBCore.Functions.AddPlayerMethod(Player.PlayerData.source, "GetItemByName", function(itemName)
-		return setItemCompatibilityProps(Inventory.GetSlotWithItem(Player.PlayerData.source, itemName))
+        local result = setItemCompatibilityProps(Inventory.GetSlotWithItem(Player.PlayerData.source, itemName))
+        if result then
+		    return result
+        else
+            return {amount = 0, label = Items()[itemName]?.label or "N/A"}
+        end
 	end)
 
 	QBCore.Functions.AddPlayerMethod(Player.PlayerData.source, "GetItemsByName", function(itemName)

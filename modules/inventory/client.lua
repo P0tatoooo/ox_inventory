@@ -88,6 +88,8 @@ function Inventory.OpenTrunk(entity)
     end
 end
 
+exports('OpenTrunk', Inventory.OpenTrunk)
+
 if shared.target then
 	exports.ox_target:addModel(Inventory.Dumpsters, {
         icon = 'fas fa-dumpster',

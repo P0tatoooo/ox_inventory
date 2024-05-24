@@ -472,8 +472,7 @@ lib.addCommand({'additem', 'giveitem'}, {
 	params = {
 		{ name = 'target', type = 'playerId', help = 'The player to receive the item' },
 		{ name = 'item', type = 'string', help = 'The name of the item' },
-		{ name = 'count', type = 'number', help = 'The amount of the item to give', optional = true },
-		{ name = 'type', help = 'Sets the "type" metadata to the value', optional = true },
+		{ name = 'count', type = 'number', help = 'The amount of the item to give', optional = true }
 	},
 	restricted = 'group.admin',
 }, function(source, args)
@@ -482,7 +481,13 @@ lib.addCommand({'additem', 'giveitem'}, {
 	if item then
 		local inventory = Inventory(args.target) --[[@as OxInventory]]
 		local count = args.count or 1
-		local success, response = Inventory.AddItem(inventory, item.name, count, args.type and { type = tonumber(args.type) or args.type })
+
+        local metadata
+        if item.clip then
+            metadata = {ammoname = item.ammoname, maxammo = item.ammocount, ammocount = item.ammocount}
+        end
+
+		local success, response = Inventory.AddItem(inventory, item.name, count, metadata)
 
 		if not success then
 			return Citizen.Trace(('Failed to give %sx %s to player %s (%s)'):format(count, item.name, args.target, response))

@@ -381,22 +381,6 @@ return {
 		degrade = 4320
 	},
 
-	['apppistolclipempty'] = {
-		label = 'chargeur p-a vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['arclipempty'] = {
-		label = 'chargeur fusil assaut vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
 	['argent_sale'] = {
 		label = 'argent sale',
 		weight = 1,
@@ -408,22 +392,6 @@ return {
 	['assaultrifle'] = {
 		label = 'fusil d\'assault désarmé',
 		weight = 3000,
-		stack = true,
-		close = true,
-
-	},
-
-	['assaultshotgunclipempty'] = {
-		label = 'chargeur uts-15 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['assaultsmgclipempty'] = {
-		label = 'chargeur p90 vide',
-		weight = 150,
 		stack = true,
 		close = true,
 
@@ -1406,7 +1374,6 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
-
 	},
 
 	['chickenburgermenu'] = {
@@ -1414,7 +1381,17 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 200000, thirst = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['chickenburger'] = {
@@ -1537,14 +1514,6 @@ return {
 		degrade = 4320
 	},
 
-	['combatmgclipempty'] = {
-		label = 'chargeur m249 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
 	['combatpdw'] = {
 		label = 'adp de combat désarmé',
 		weight = 3000,
@@ -1556,14 +1525,6 @@ return {
 	['combatpistol'] = {
 		label = 'pistolet de combat désarmé',
 		weight = 1500,
-		stack = true,
-		close = true,
-
-	},
-
-	['combatpistolclipempty'] = {
-		label = 'chargeur pistolet combat vide',
-		weight = 150,
 		stack = true,
 		close = true,
 
@@ -1841,46 +1802,6 @@ return {
 
 	},
 
-	['drumarclipempty'] = {
-		label = 'chargeur tambour fusil assaut vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['drumheavyshotgunclipempty'] = {
-		label = 'chargeur tambour s12k vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['drummachinepistolclipempty'] = {
-		label = 'chargeur tambour tec-9 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['drumpdwclipempty'] = {
-		label = 'chargeur tambour adp vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['drumsmgclipempty'] = {
-		label = 'chargeur tambour mp5 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
 	['egg'] = {
 		label = 'oeuf',
 		weight = 100,
@@ -1924,174 +1845,6 @@ return {
 	['ephedrine'] = {
 		label = 'Éphédrine',
 		weight = 1,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedapppistolclipempty'] = {
-		label = 'chargeur amélioré p-a vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedarclipempty'] = {
-		label = 'chargeur amélioré fusil assaut vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedassaultshotgunclipempty'] = {
-		label = 'chargeur amélioré uts-15 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedassaultsmgclipempty'] = {
-		label = 'chargeur amélioré p90 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedcombatmgclipempty'] = {
-		label = 'chargeur amélioré m249 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedcombatpistolclipempty'] = {
-		label = 'chargeur amélioré pistolet combat vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedgusenbergclipempty'] = {
-		label = 'chargeur amélioré thompson vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedheavypistolclipempty'] = {
-		label = 'chargeur amélioré pistolet lourd vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedheavyshotgunclipempty'] = {
-		label = 'chargeur amélioré s12k vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedheavysniperclipempty'] = {
-		label = 'chargeur amélioré barrett m82 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedmachinepistolclipempty'] = {
-		label = 'chargeur amélioré tec-9 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedmarksmansniperclipempty'] = {
-		label = 'chargeur amélioré m39 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedmgclipempty'] = {
-		label = 'chargeur amélioré rpd vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedmicrosmgclipempty'] = {
-		label = 'chargeur amélioré uzi vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedminismgclipempty'] = {
-		label = 'chargeur amélioré skorpion vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedpdwclipempty'] = {
-		label = 'chargeur amélioré adp vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedpistol50clipempty'] = {
-		label = 'chargeur amélioré pistolet cal .50 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedpistolclipempty'] = {
-		label = 'chargeur amélioré pistolet vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedsmgclipempty'] = {
-		label = 'chargeur amélioré mp5 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedsnspistolclipempty'] = {
-		label = 'chargeur amélioré pistolet sns vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['extendedvintagepistolclipempty'] = {
-		label = 'chargeur amélioré pistolet vintage vide',
-		weight = 150,
 		stack = true,
 		close = true,
 
@@ -2265,14 +2018,6 @@ return {
 
 	},
 
-	['grandemotorskit'] = {
-		label = 'kit de réparation grande motors',
-		weight = 100,
-		stack = true,
-		close = true,
-
-	},
-
 	['grand_cru'] = {
 		label = 'grand cru',
 		weight = 750,
@@ -2305,14 +2050,6 @@ return {
 
 	},
 
-	['gusenbergclipempty'] = {
-		label = 'chargeur thompson vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
 	['gyoza'] = {
 		label = 'gyoza maison',
 		weight = 100,
@@ -2340,22 +2077,6 @@ return {
 	['harleydavidson'] = {
 		label = 'harley davidson',
 		weight = 750,
-		stack = true,
-		close = true,
-
-	},
-
-	['heavypistolclipempty'] = {
-		label = 'chargeur pistolet lourd vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['heavysniperclipempty'] = {
-		label = 'chargeur barrett m82 vide',
-		weight = 150,
 		stack = true,
 		close = true,
 
@@ -2562,7 +2283,7 @@ return {
 	},
 
 	['iron'] = {
-		label = 'fer',
+		label = 'Fer',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -2793,14 +2514,6 @@ return {
 
 	},
 
-	['machinepistolclipempty'] = {
-		label = 'chargeur tec-9 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
 	['magasincompoarme'] = {
 		label = 'magasins d\'arme',
 		weight = 300,
@@ -2822,7 +2535,17 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 200000, thirst = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['cigarette'] = {
@@ -2844,14 +2567,6 @@ return {
 	['marijuana'] = {
 		label = 'cannabis',
 		weight = 100,
-		stack = true,
-		close = true,
-
-	},
-
-	['marksmansniperclipempty'] = {
-		label = 'chargeur m39 vide',
-		weight = 150,
 		stack = true,
 		close = true,
 
@@ -2937,25 +2652,9 @@ return {
 
 	},
 
-	['mgclipempty'] = {
-		label = 'chargeur rpd vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
 	['microsmg'] = {
 		label = 'micro smg désarmé',
 		weight = 1500,
-		stack = true,
-		close = true,
-
-	},
-
-	['microsmgclipempty'] = {
-		label = 'chargeur uzi vide',
-		weight = 150,
 		stack = true,
 		close = true,
 
@@ -2988,14 +2687,6 @@ return {
 	['minismg'] = {
 		label = 'mini smg désarmé',
 		weight = 1500,
-		stack = true,
-		close = true,
-
-	},
-
-	['minismgclipempty'] = {
-		label = 'chargeur skorpion vide',
-		weight = 150,
 		stack = true,
 		close = true,
 
@@ -3201,14 +2892,6 @@ return {
 		degrade = 4320
 	},
 
-	['pdwclipempty'] = {
-		label = 'chargeur adp vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
 	['pepper'] = {
 		label = 'piment',
 		weight = 100,
@@ -3284,22 +2967,6 @@ return {
 	['pistol50'] = {
 		label = 'pistolet calibre .50 désarmé',
 		weight = 1500,
-		stack = true,
-		close = true,
-
-	},
-
-	['pistol50clipempty'] = {
-		label = 'chargeur pistolet cal .50 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['pistolclipempty'] = {
-		label = 'chargeur pistolet vide',
-		weight = 150,
 		stack = true,
 		close = true,
 
@@ -3782,30 +3449,6 @@ return {
 
 	},
 
-	['smgclipempty'] = {
-		label = 'chargeur mp5 vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['sniperclipempty'] = {
-		label = 'chargeur aw-f vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
-	['snspistolclipempty'] = {
-		label = 'chargeur pistolet sns vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
 	['soja'] = {
 		label = 'soja',
 		weight = 100,
@@ -3937,7 +3580,17 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 200000, thirst = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['tabachblond'] = {
@@ -4105,7 +3758,17 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 200000, thirst = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['tequila'] = {
@@ -4236,14 +3899,6 @@ return {
 		degrade = 4320
 	},
 
-	['vintagepistolclipempty'] = {
-		label = 'chargeur pistolet vintage vide',
-		weight = 150,
-		stack = true,
-		close = true,
-
-	},
-
 	['vin_blanc'] = {
 		label = 'vin blanc',
 		weight = 120,
@@ -4337,7 +3992,17 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 200000, thirst = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['yakitori'] = {
@@ -4353,7 +4018,17 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 200000, thirst = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['bikeexhaust'] = {
@@ -4425,7 +4100,17 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 200000, thirst = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['chickenmenu'] = {
@@ -4433,7 +4118,17 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 200000, thirst = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['brunchmenu'] = {
@@ -4441,7 +4136,17 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 200000, thirst = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['sakuraloyaltycard'] = {
@@ -4649,7 +4354,17 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 200000, thirst = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
     ['fishburger'] = {
@@ -4665,7 +4380,17 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 200000, thirst = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['sugarcane'] = {
@@ -5028,17 +4753,6 @@ return {
 		}
 	},
 
-	["steel"] = {
-		label = "Steel",
-		weight = 100,
-		stack = true,
-		close = false,
-		description = "Nice piece of metal that you can probably use for something",
-		client = {
-			image = "steel.png",
-		}
-	},
-
 	["weed_brick"] = {
 		label = "Weed Brick",
 		weight = 1000,
@@ -5386,14 +5100,10 @@ return {
 	},
 
 	["repairkit"] = {
-		label = "Repairkit",
+		label = "Kit de Réparation",
 		weight = 2500,
 		stack = true,
-		close = true,
-		description = "A nice toolbox with stuff to repair your vehicle",
-		client = {
-			image = "repairkit.png",
-		}
+		close = false,
 	},
 
 	["weed_skunk"] = {
@@ -5624,17 +5334,6 @@ return {
 		description = "A filled evidence bag to see who committed the crime >:(",
 		client = {
 			image = "evidence.png",
-		}
-	},
-
-	["advancedrepairkit"] = {
-		label = "Advanced Repairkit",
-		weight = 4000,
-		stack = true,
-		close = true,
-		description = "A nice toolbox with stuff to repair your vehicle",
-		client = {
-			image = "advancedkit.png",
 		}
 	},
 
@@ -6973,6 +6672,577 @@ return {
 		description = "A perseus camo for a weapon",
 		client = {
 			image = "perseuscamo_attachment.png",
+		}
+	},
+
+    ["poster"] = {
+        label = "Poster",
+        weight = 360,
+    },
+
+    ["posterremover"] = {
+        label = "Raclette",
+        weight = 360,
+    },
+
+	["ironore"] = {
+		label = "Minerai de Fer",
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+
+    ["crackedironore"] = {
+		label = "Minerai de Fer Fissuré",
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+
+	["carbon"] = {
+		label = "Carbone",
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+
+	["drillbit"] = {
+		label = "Mèche de Perceuse",
+		weight = 10,
+		stack = true,
+		close = false,
+	},
+
+    ["pickaxe"] = {
+		label = "Pioche",
+		weight = 1000,
+		stack = true,
+		close = false,
+        consume = 0,
+	},
+
+    ["miningdrill"] = {
+		label = "Foreuse",
+		weight = 1000,
+		stack = true,
+		close = false,
+        consume = 0,
+	},
+
+	["mininglaser"] = {
+		label = "Foreuse Laser",
+		weight = 900,
+		stack = false,
+		close = false,
+        consume = 0,
+	},
+
+    ["steel"] = {
+		label = "Acier",
+		weight = 100,
+		stack = true,
+		close = false,
+	},
+
+	["uncut_emerald"] = {
+		label = "Uncut Emerald",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "A rough Emerald",
+		client = {
+			image = "uncut_emerald.png",
+		}
+	},
+
+	["sapphire_earring"] = {
+		label = "Sapphire Earrings",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "sapphire_earring.png",
+		}
+	},
+
+	["goldingot"] = {
+		label = "Gold Ingot",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "goldingot.png",
+		}
+	},
+
+	["emerald_ring_silver"] = {
+		label = "Emerald Ring Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "emerald_ring_silver.png",
+		}
+	},
+
+	["uncut_ruby"] = {
+		label = "Uncut Ruby",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "A rough Ruby",
+		client = {
+			image = "uncut_ruby.png",
+		}
+	},
+
+	["stone"] = {
+		label = "Stone",
+		weight = 2000,
+		stack = true,
+		close = false,
+		description = "Stone woo",
+		client = {
+			image = "stone.png",
+		}
+	},
+
+	["ruby_necklace_silver"] = {
+		label = "Ruby Necklace Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "ruby_necklace_silver.png",
+		}
+	},
+
+	["silverchain"] = {
+		label = "Silver Chain",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "silverchain.png",
+		}
+	},
+
+	["silverore"] = {
+		label = "Silver Ore",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Silver Ore",
+		client = {
+			image = "silverore.png",
+		}
+	},
+
+	["silverearring"] = {
+		label = "Silver Earrings",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "silver_earring.png",
+		}
+	},
+
+	["sapphire_ring_silver"] = {
+		label = "Sapphire Ring Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "sapphire_ring_silver.png",
+		}
+	},
+
+	["diamond_necklace_silver"] = {
+		label = "Diamond Necklace Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "diamond_necklace_silver.png",
+		}
+	},
+
+	["diamond_earring_silver"] = {
+		label = "Diamond Earrings Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "diamond_earring_silver.png",
+		}
+	},
+
+	["diamond_ring_silver"] = {
+		label = "Diamond Ring Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "diamond_ring_silver.png",
+		}
+	},
+
+	["emerald_necklace_silver"] = {
+		label = "Emerald Necklace Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "emerald_necklace_silver.png",
+		}
+	},
+
+	["copperore"] = {
+		label = "Copper Ore",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Copper, a base ore.",
+		client = {
+			image = "copperore.png",
+		}
+	},
+
+	["diamond_earring"] = {
+		label = "Diamond Earrings",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "diamond_earring.png",
+		}
+	},
+
+	["ruby_ring"] = {
+		label = "Ruby Ring",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "ruby_ring.png",
+		}
+	},
+
+	["can"] = {
+		label = "Empty Can",
+		weight = 10,
+		stack = true,
+		close = false,
+		description = "An empty can, good for recycling",
+		client = {
+			image = "can.png",
+		}
+	},
+
+	["bottle"] = {
+		label = "Empty Bottle",
+		weight = 10,
+		stack = true,
+		close = false,
+		description = "A glass bottle",
+		client = {
+			image = "bottle.png",
+		}
+	},
+
+	["ruby_earring_silver"] = {
+		label = "Ruby Earrings Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "ruby_earring_silver.png",
+		}
+	},
+
+	["emerald_earring"] = {
+		label = "Emerald Earrings",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "emerald_earring.png",
+		}
+	},
+
+	["sapphire_necklace_silver"] = {
+		label = "Sapphire Necklace Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "sapphire_necklace_silver.png",
+		}
+	},
+
+	["sapphire_necklace"] = {
+		label = "Sapphire Necklace",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "sapphire_necklace.png",
+		}
+	},
+
+	["ruby_necklace"] = {
+		label = "Ruby Necklace",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "ruby_necklace.png",
+		}
+	},
+
+	["goldore"] = {
+		label = "Gold Ore",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Gold Ore",
+		client = {
+			image = "goldore.png",
+		}
+	},
+
+	["silver_ring"] = {
+		label = "Silver Ring",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "silver_ring.png",
+		}
+	},
+
+	["emerald"] = {
+		label = "Emerald",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "A Emerald that shimmers",
+		client = {
+			image = "emerald.png",
+		}
+	},
+
+	["sapphire_earring_silver"] = {
+		label = "Sapphire Earrings Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "sapphire_earring_silver.png",
+		}
+	},
+
+	["ruby_ring_silver"] = {
+		label = "Ruby Ring Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "ruby_ring_silver.png",
+		}
+	},
+
+	["uncut_diamond"] = {
+		label = "Uncut Diamond",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "A rough Diamond",
+		client = {
+			image = "uncut_diamond.png",
+		}
+	},
+
+	["emerald_ring"] = {
+		label = "Emerald Ring",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "emerald_ring.png",
+		}
+	},
+
+	["uncut_sapphire"] = {
+		label = "Uncut Sapphire",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "A rough Sapphire",
+		client = {
+			image = "uncut_sapphire.png",
+		}
+	},
+
+	["goldearring"] = {
+		label = "Golden Earrings",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "gold_earring.png",
+		}
+	},
+
+	["ruby"] = {
+		label = "Ruby",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "A Ruby that shimmers",
+		client = {
+			image = "ruby.png",
+		}
+	},
+
+	["sapphire"] = {
+		label = "Sapphire",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "A Sapphire that shimmers",
+		client = {
+			image = "sapphire.png",
+		}
+	},
+
+	["silveringot"] = {
+		label = "Silver Ingot",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "silveringot.png",
+		}
+	},
+
+	["goldpan"] = {
+		label = "Gold Panning Tray",
+		weight = 10,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "goldpan.png",
+		}
+	},
+
+	["ruby_earring"] = {
+		label = "Ruby Earrings",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "ruby_earring.png",
+		}
+	},
+
+	["sapphire_ring"] = {
+		label = "Sapphire Ring",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "sapphire_ring.png",
+		}
+	},
+
+	["diamond_necklace"] = {
+		label = "Diamond Necklace",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "diamond_necklace.png",
+		}
+	},
+
+	["emerald_necklace"] = {
+		label = "Emerald Necklace",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "emerald_necklace.png",
+		}
+	},
+
+	["emerald_earring_silver"] = {
+		label = "Emerald Earrings Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "emerald_earring_silver.png",
+		}
+	},
+
+	["gold_ring"] = {
+		label = "Gold Ring",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "gold_ring.png",
+		}
+	},
+
+    ["carparts"] = {
+		label = "Pièces Détachées",
+		weight = 2000,
+		stack = true,
+		close = false,
+	},
+
+	["advancedrepairkit"] = {
+		label = "Advanced Repairkit",
+		weight = 4000,
+		stack = true,
+		close = true,
+		description = "A nice toolbox with stuff to repair your vehicle",
+		client = {
+			image = "advancedkit.png",
 		}
 	},
 }

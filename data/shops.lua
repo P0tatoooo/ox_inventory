@@ -130,17 +130,18 @@ return {
 		--[[blip = {
 			id = 110, colour = 84, scale = 0.8
 		},]] inventory = {
+            { name = 'empty_evidence_bag', price = 0, grade = 0},
             { name = 'sprayremover', price = 0, grade = 0},
             { name = 'WEAPON_RADARGUN', price = 0, grade = 1},
             { name = 'spikestrip', price = 0, grade = 1},
             { name = 'llammo', price = 0, grade = 3},
 
-            {name = 'combatpistolclip', price = 0, grade = 2},
-            {name = 'heavypistolclip', price = 0, grade = 2},
-            {name = 'smgclip', price = 0, grade = 2},
-            {name = 'extendedsmgclip', price = 0, grade = 2},
-            {name = 'arclip', price = 0, grade = 2},
-            {name = 'extendedarclip', price = 0, grade = 2},
+            {name = 'combatpistolclip', price = 0, grade = 2, metadata = {ammoname = 'pistolammo', maxammo = 12, ammocount = 12}},
+            {name = 'heavypistolclip', price = 0, grade = 2, metadata = {ammoname = 'pistolammo', maxammo = 18, ammocount = 18}},
+            {name = 'smgclip', price = 0, grade = 2, metadata = {ammoname = 'smgammo', maxammo = 30, ammocount = 30}},
+            {name = 'extendedsmgclip', price = 0, grade = 2, metadata = {ammoname = 'smgammo', maxammo = 60, ammocount = 60}},
+            {name = 'arclip', price = 0, grade = 2, metadata = {ammoname = 'arammo', maxammo = 30, ammocount = 30}},
+            {name = 'extendedarclip', price = 0, grade = 2, metadata = {ammoname = 'arammo', maxammo = 60, ammocount = 60}},
 
             {name = 'suppressor', price = 0, grade = 2},
             {name = 'grip', price = 0, grade = 2},
