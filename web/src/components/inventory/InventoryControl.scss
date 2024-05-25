@@ -1,0 +1,32 @@
+.inventory-control {
+  display: flex;
+
+  .inventory-control-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .inventory-control-input {
+    transition: 200ms;
+    padding: 16px 8px;
+    border-radius: 2.5%;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: var(--background-lighter-color);
+    &:focus-within {
+      background-color: var(--background-color);
+    }
+  }
+
+  .button {
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
