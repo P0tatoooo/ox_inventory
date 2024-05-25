@@ -1,0 +1,54 @@
+.tab-navigator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--background-lighter-color);;
+    border-radius: .25rem;
+
+    .button {
+        border-radius: 0;
+        border: 0;
+        background: transparent;
+        padding: 0.35rem 0.75rem;
+
+        &:hover{
+            border:0;
+        }
+
+        &:not(.tab-navigator__previous):not(.tab-navigator__next){
+            border-top: .3rem solid transparent;
+            border-bottom: .3rem solid transparent;
+            &.button--active {
+                border-bottom-color: var(--my-city-red);
+            }
+        }
+
+
+        &.tab-navigator__previous,
+        &.tab-navigator__next {
+            .keystroke {
+                margin:0;
+            }
+        }
+
+        &.tab-navigator__previous{
+            border-top-left-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+        }
+
+        &.tab-navigator__next{
+            border-top-right-radius: .25rem;
+            border-bottom-right-radius: .25rem;
+        }
+    }
+
+    &--expanded {
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+    }
+}

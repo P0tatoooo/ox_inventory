@@ -1,0 +1,18 @@
+.usefull-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: .8rem;
+  &__control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .15rem 0;
+    kbd {
+      display: block;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(black, .2)
+    }
+  }
+}
