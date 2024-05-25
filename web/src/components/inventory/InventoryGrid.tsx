@@ -39,7 +39,7 @@ const InventoryGrid: React.FC<{ inventory: Inventory, BelowComponent?: JSX.Eleme
 
   return (
     <div className="inventory-side-wrapper">
-      <Block className="inventory-block" title={inventory.label} footer={<FooterContent weight={weight} inventory={inventory}/>}>
+      <Block className="inventory-block" title={inventory.label} subTitle={<FooterContent weight={weight} inventory={inventory}/>}>
         <div className="inventory-grid-wrapper" style={{ pointerEvents: isBusy ? 'none' : 'auto' }}>
           <div className="inventory-grid-container" ref={containerRef}>
             <>

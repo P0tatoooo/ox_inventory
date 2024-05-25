@@ -18,6 +18,15 @@
         font-size: 1rem;
     }
 
+    &-sub-title {
+        background: var(--background-color);
+        text-align: center;
+        border-bottom: var(--border);
+        padding: .50rem;
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
+
     &-content {
         flex-grow:1;
         overflow: hidden;

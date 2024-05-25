@@ -3,12 +3,13 @@ import './Block.scss';
 
 type BlockProps = {
     title?: string;
+    subTitle?: JSX.Element | null;
     className?: string;
     overflowBody?: boolean;
     footer?: JSX.Element | null;
 } & PropsWithChildren;
 
-const Block = ({ title, className, footer = null, children, overflowBody = false }: BlockProps) => {
+const Block = ({ title, subTitle, className, footer = null, children, overflowBody = false }: BlockProps) => {
     const blockClasses = useMemo(
         () =>
             ['block', className, overflowBody && 'block--body-overflow'].filter(Boolean).join(' '),
@@ -24,6 +25,7 @@ const Block = ({ title, className, footer = null, children, overflowBody = false
         <div className={wrapperClasses}>
             <div className={blockClasses}>
                 {title && <div className="block-title">{title}</div>}
+                {subTitle && <div className="block-sub-title">{subTitle}</div>}
                 <div className="block-content">{children}</div>
                 {footer && <div className="block-footer">{footer}</div>}
             </div>
