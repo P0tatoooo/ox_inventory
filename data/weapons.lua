@@ -621,7 +621,7 @@ return {
 			durability = 0.05
 		},
         ['WEAPON_BEANBAG'] = {
-			label = 'Fusil à Pompe Non Léthal',
+			label = 'Fusil à Pompe Non Létal',
 			weight = 5000,
 			durability = 0.2,
 			ammoname = 'llammo'

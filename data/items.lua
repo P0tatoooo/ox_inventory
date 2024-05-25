@@ -4,7 +4,7 @@ return {
 		weight = 220,
 		degrade = 60,
 		client = {
-			status = { hunger = 200000 },
+			status = { hunger = 80 },
 			anim = 'eating',
 			prop = 'burger',
 			usetime = 2500,
@@ -71,7 +71,7 @@ return {
 		label = 'Burger',
 		weight = 220,
 		client = {
-			status = { hunger = 200000 },
+			status = { hunger = 80 },
 			anim = 'eating',
 			prop = 'burger',
 			usetime = 2500,
@@ -83,7 +83,7 @@ return {
 		label = 'Sprunk',
 		weight = 350,
 		client = {
-			status = { thirst = 200000 },
+			status = { thirst = 80 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
@@ -167,7 +167,7 @@ return {
 		label = 'Mustard',
 		weight = 500,
 		client = {
-			status = { hunger = 25000, thirst = 25000 },
+			status = { hunger = 80, thirst = 80 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_food_mustard`, pos = vec3(0.01, 0.0, -0.07), rot = vec3(1.0, 1.0, -1.5) },
 			usetime = 2500,
@@ -234,6 +234,16 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+            status = { thirst = 80},
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 
 	},
 
@@ -1383,7 +1393,7 @@ return {
 		close = true,
 		degrade = 4320,
         client = {
-            status = { hunger = 200000, thirst = 200000 },
+            status = { hunger = 80, thirst = 80 },
             anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
             prop = {
                 model = 'prop_cs_burger_01',
@@ -1759,7 +1769,17 @@ return {
 		weight = 500,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 80},
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['doors'] = {
@@ -2537,7 +2557,7 @@ return {
 		close = true,
 		degrade = 4320,
         client = {
-            status = { hunger = 200000, thirst = 200000 },
+            status = { hunger = 80, thirst = 80 },
             anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
             prop = {
                 model = 'prop_cs_burger_01',
@@ -3582,7 +3602,7 @@ return {
 		close = true,
 		degrade = 4320,
         client = {
-            status = { hunger = 200000, thirst = 200000 },
+            status = { hunger = 80, thirst = 80 },
             anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
             prop = {
                 model = 'prop_cs_burger_01',
@@ -3760,7 +3780,7 @@ return {
 		close = true,
 		degrade = 4320,
         client = {
-            status = { hunger = 200000, thirst = 200000 },
+            status = { hunger = 80, thirst = 80 },
             anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
             prop = {
                 model = 'prop_cs_burger_01',
@@ -3994,7 +4014,7 @@ return {
 		close = true,
 		degrade = 4320,
         client = {
-            status = { hunger = 200000, thirst = 200000 },
+            status = { hunger = 80, thirst = 80 },
             anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
             prop = {
                 model = 'prop_cs_burger_01',
@@ -4020,7 +4040,7 @@ return {
 		close = true,
 		degrade = 4320,
         client = {
-            status = { hunger = 200000, thirst = 200000 },
+            status = { hunger = 80, thirst = 80 },
             anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
             prop = {
                 model = 'prop_cs_burger_01',
@@ -4102,7 +4122,7 @@ return {
 		close = true,
 		degrade = 4320,
         client = {
-            status = { hunger = 200000, thirst = 200000 },
+            status = { hunger = 80, thirst = 80 },
             anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
             prop = {
                 model = 'prop_cs_burger_01',
@@ -4120,7 +4140,7 @@ return {
 		close = true,
 		degrade = 4320,
         client = {
-            status = { hunger = 200000, thirst = 200000 },
+            status = { hunger = 80, thirst = 80 },
             anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
             prop = {
                 model = 'prop_cs_burger_01',
@@ -4138,7 +4158,7 @@ return {
 		close = true,
 		degrade = 4320,
         client = {
-            status = { hunger = 200000, thirst = 200000 },
+            status = { hunger = 80, thirst = 80 },
             anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
             prop = {
                 model = 'prop_cs_burger_01',
@@ -4356,7 +4376,7 @@ return {
 		close = true,
 		degrade = 4320,
         client = {
-            status = { hunger = 200000, thirst = 200000 },
+            status = { hunger = 80, thirst = 80 },
             anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
             prop = {
                 model = 'prop_cs_burger_01',
@@ -4382,7 +4402,7 @@ return {
 		close = true,
 		degrade = 4320,
         client = {
-            status = { hunger = 200000, thirst = 200000 },
+            status = { hunger = 80, thirst = 80 },
             anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
             prop = {
                 model = 'prop_cs_burger_01',
@@ -7244,5 +7264,19 @@ return {
 		client = {
 			image = "advancedkit.png",
 		}
+	},
+
+    ['ironingot'] = {
+		label = 'Lingot de Fer',
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+    ['steelingot'] = {
+		label = 'Lingot d\'Acier',
+		weight = 1000,
+		stack = true,
+		close = true,
 	},
 }

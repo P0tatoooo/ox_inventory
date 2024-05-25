@@ -204,7 +204,7 @@ return {
 			id = 403, colour = 69, scale = 0.8
 		},]] inventory = {
 			{ name = 'medikit', price = 0 },
-			{ name = 'reskit', price = 0 }
+			{ name = 'bandage', price = 0 }
 		}, locations = {
 			vector3(311.7069, -564.1088, 43.28403),
             vector3(-259.36, 6326.99, 32.43),

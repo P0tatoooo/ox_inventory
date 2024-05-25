@@ -2512,7 +2512,7 @@ local function updateWeapon(source, action, value, slot, specialAmmo, clipinweap
 				if not Inventory.RemoveItem(inventory, weapon.name, 1, weapon.metadata, weapon.slot) then return end
 			elseif action == 'component' then
 				if type == 'number' then
-                    if string.match(weapon.metadata.components[value], 'clip') then
+                    if weapon.metadata.components[value] and string.match(weapon.metadata.components[value], 'clip') then
 
                         local clipItem = Items(clipinweapon)
                         local metadata = {ammoname = clipItem.ammoname, maxammo = clipItem.ammocount, ammocount = tostring(ammoinweapon)}
