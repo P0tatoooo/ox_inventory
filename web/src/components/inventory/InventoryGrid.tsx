@@ -26,12 +26,16 @@ const InventoryGrid: React.FC<{ inventory: Inventory, BelowComponent?: JSX.Eleme
     }
   }, [entry]);
 
+  const formatNumber = (num: number) => {
+    return num.toFixed(2);
+  }
+
   const FooterContent = ({inventory, weight}: {inventory: Inventory, weight: number}) => {
     return (
       <div className="inventory-weight-bar__container">
         <WeightBar percent={inventory.maxWeight ? (weight / inventory.maxWeight) * 100 : 0} />
         <div className="inventory-weight-bar__weight">
-          {weight / 1000}/{(inventory.maxWeight ?? 0) / 1000}kg
+          {formatNumber(weight / 1000)}/{formatNumber((inventory.maxWeight ?? 0) / 1000)}kg
         </div>
       </div>
     )
