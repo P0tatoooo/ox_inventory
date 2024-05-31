@@ -133,23 +133,10 @@ return {
 	},
 
 	['phone'] = {
-		label = 'Phone',
+		label = 'Téléphone',
 		weight = 190,
 		stack = false,
 		consume = 0,
-		client = {
-			add = function(total)
-				if total > 0 then
-					pcall(function() return exports.npwd:setPhoneDisabled(false) end)
-				end
-			end,
-
-			remove = function(total)
-				if total < 1 then
-					pcall(function() return exports.npwd:setPhoneDisabled(true) end)
-				end
-			end
-		}
 	},
 
 	['mastercard'] = {
@@ -213,15 +200,10 @@ return {
 	},
 
 	['lockpick'] = {
-		label = 'Lockpick',
+		label = 'Tournevis Multi-Fonctions',
 		weight = 160,
 		consume = 0,
-		client = {
-			anim = { dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@', clip = 'machinic_loop_mechandplayer' },
-			disable = { move = true, car = true, combat = true },
-			usetime = 5000,
-			cancel = true
-		}
+        stack = false
 	},
 
 	['money'] = {
@@ -4358,7 +4340,17 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 80, thirst = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
     ['cheeseburger'] = {
@@ -4889,14 +4881,10 @@ return {
 	},
 
 	["handcuffs"] = {
-		label = "Handcuffs",
+		label = "Menottes",
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "Comes in handy when people misbehave. Maybe it can be used for something else?",
-		client = {
-			image = "handcuffs.png",
-		}
 	},
 
 	["painkillers"] = {

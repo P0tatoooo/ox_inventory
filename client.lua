@@ -5,7 +5,7 @@ require 'modules.interface.client'
 
 local Utils = require 'modules.utils.client'
 local Weapon = require 'modules.weapon.client'
-local currentWeapon
+local currentWeapon, isReloading
 
 exports('getCurrentWeapon', function()
 	return currentWeapon
@@ -662,6 +662,8 @@ local function useSlot(slot, noAnim)
 					lib.callback.await('ox_inventory:updateWeapon', false, 'load', newAmmo, false, currentWeapon.metadata.specialAmmo)
 				end)
             elseif data.clip then
+                if isReloading then return end
+                isReloading = true
                 local components = data?.client?.component or nil
 				local componentType = data.type
 				local weaponComponents = PlayerData.inventory[currentWeapon.slot].metadata.components
@@ -677,7 +679,9 @@ local function useSlot(slot, noAnim)
                                 if HasPedGotWeaponComponent(playerPed, currentWeapon.hash, component) then
                                     local success = lib.callback.await('ox_inventory:updateWeapon', false, 'component', k, nil, nil, clipToGive, currentAmmo)
                                     if success then
-                                        RemoveWeaponComponentFromPed(playerPed, currentWeapon.hash, component)
+                                        SetTimeout(1000, function()
+                                            RemoveWeaponComponentFromPed(playerPed, currentWeapon.hash, component)
+                                        end)
                                     end
                                     break
                                 end
@@ -703,7 +707,9 @@ local function useSlot(slot, noAnim)
                                         local success = lib.callback.await('ox_inventory:updateWeapon', false, 'component', tostring(data.slot), currentWeapon.slot)
 
                                         if success then
-                                            GiveWeaponComponentToPed(playerPed, currentWeapon.hash, component)
+                                            SetTimeout(1500, function()
+                                                GiveWeaponComponentToPed(playerPed, currentWeapon.hash, component)
+                                            end)
                                         end
                                     end
                                 end)
@@ -724,17 +730,25 @@ local function useSlot(slot, noAnim)
                 else
                     AddAmmoToPed(playerPed, currentWeapon.hash, newAmmo)
                     Wait(100)
-                    MakePedReload(playerPed)
+                    if newAmmo == 0 then
+                        TaskReloadWeapon(playerPed, true)
+                    else
+                        MakePedReload(playerPed)
+                    end
 
-                    SetTimeout(100, function()
+                    --SetTimeout(100, function()
                         while IsPedReloading(playerPed) do
                             DisableControlAction(0, 22, true)
                             Wait(0)
                         end
-                    end)
+                    --end)
                 end
 
                 lib.callback.await('ox_inventory:updateWeapon', false, 'loadclip', newAmmo)
+
+                SetTimeout(500, function()
+                    isReloading = false
+                end)
 
 				--lib.notify({ id = 'component_invalid', type = 'error', description = locale('component_invalid', label) })
 			elseif data.component then
@@ -1452,7 +1466,6 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 				client.closeInventory()
 			else
 				playerCoords = GetEntityCoords(playerPed)
-
 				if currentInventory and not currentInventory.ignoreSecurityChecks then
 					if currentInventory.type == 'otherplayer' then
 						local id = GetPlayerFromServerId(currentInventory.id)
@@ -1466,7 +1479,7 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 							TaskTurnPedToFaceCoord(playerPed, pedCoords.x, pedCoords.y, pedCoords.z, 50)
 						end
 
-					elseif currentInventory.coords and (#(playerCoords - currentInventory.coords) > (currentInventory.distance or 2.0) or canOpenTarget(playerPed)) then
+					elseif currentInventory.coords and (#(playerCoords - currentInventory.coords) > (currentInventory.distance or 3.0) or canOpenTarget(playerPed)) then
 						client.closeInventory()
 						lib.notify({ id = 'inventory_lost_access', type = 'error', description = locale('inventory_lost_access') })
 					end
@@ -1541,7 +1554,7 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 				DisableControlAction(0, 36, true)
 			end
 
-			if usingItem or invOpen or IsPedCuffed(playerPed) then
+			if usingItem or invOpen then
 				DisablePlayerFiring(playerId, true)
 			end
 
@@ -1712,18 +1725,17 @@ RegisterNUICallback('removeComponent', function(data, cb)
             if HasPedGotWeaponComponent(playerPed, currentWeapon.hash, component) then
                 for k, v in pairs(itemSlot.metadata.components) do
                     if v == data.component then
-                        local success
+                        local success, clipToGive
                         if string.match(v, 'clip') then
-                            local clipToGive = v
-                            success = lib.callback.await('ox_inventory:updateWeapon', false, 'component', k, nil, nil, clipToGive, currentWeapon.metadata.ammo)
-                            if success then
-                                SetPedAmmo(playerPed, currentWeapon.hash, 0)
-                            end
-                        else
-                            success = lib.callback.await('ox_inventory:updateWeapon', false, 'component', k)
+                            clipToGive = v
                         end
 
+                        success = lib.callback.await('ox_inventory:updateWeapon', false, 'component', k, nil, nil, clipToGive, (clipToGive and currentWeapon.metadata.ammo) or nil)
+
                         if success then
+                            if string.match(v, 'clip') then
+                                SetPedAmmo(playerPed, currentWeapon.hash, 0)
+                            end
                             RemoveWeaponComponentFromPed(playerPed, currentWeapon.hash, component)
                         end
 
@@ -1736,13 +1748,20 @@ RegisterNUICallback('removeComponent', function(data, cb)
         if string.match(data.component, 'clip') then
             for k, v in pairs(itemSlot.metadata.components) do
                 if v == data.component then
-                    local clipToGive = data.component
-                    local ammoToGive = 0
-                    if currentWeapon.metadata.ammo ~= GetMaxAmmoInClip(playerPed, currentWeapon.hash, true) then
-                        clipToGive = clipToGive
-                        ammoToGive = currentWeapon.metadata.ammo
+                    local success, clipToGive
+                    if string.match(v, 'clip') then
+                        clipToGive = v
                     end
-                    success = lib.callback.await('ox_inventory:updateWeapon', false, 'component', k, nil, nil, clipToGive, ammoToGive)
+
+                    success = lib.callback.await('ox_inventory:updateWeapon', false, 'component', k, nil, nil, clipToGive, (clipToGive and currentWeapon.metadata.ammo) or nil)
+
+                    if success then
+                        if string.match(v, 'clip') then
+                            SetPedAmmo(playerPed, currentWeapon.hash, 0)
+                        end
+                        RemoveWeaponComponentFromPed(playerPed, currentWeapon.hash, component)
+                    end
+                    break
                 end
             end
         end

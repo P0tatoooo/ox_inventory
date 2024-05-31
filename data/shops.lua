@@ -34,17 +34,29 @@ return {
 			{ name = 'notebook', price = 1000 },
 			{ name = 'boombox', price = 1000 }
 		}, locations = {
-			vec3(25.7, -1347.3, 29.49),
-			vec3(-3038.71, 585.9, 7.9),
-			vec3(-3241.47, 1001.14, 12.83),
-			vec3(1728.66, 6414.16, 35.03),
-			vec3(1697.99, 4924.4, 42.06),
-			vec3(1961.48, 3739.96, 32.34),
-			vec3(547.79, 2671.79, 42.15),
-			vec3(2679.25, 3280.12, 55.24),
-			vec3(2557.94, 382.05, 108.62),
-			vec3(373.55, 325.56, 103.56),
-		}, targets = {
+			vec3(24.672529, -1347.903320, 28.482056),
+            vec3(-3038.426270, 584.795593, 6.897461),
+            vec3(-3241.674805, 999.942871, 11.817627),
+            vec3(1727.617554, 6414.645996, 34.025635),
+            vec3(1696.325317, 4923.455078, 41.052002),
+            vec3(1960.404419, 3739.476807, 31.329712),
+            vec3(548.967041, 2671.885742, 41.153076),
+            vec3(2678.545166, 3279.217529, 54.228516),
+            vec3(2557.819824, 380.861542, 107.608765),
+            vec3(372.448364, 325.846161, 102.553833),
+            vec3(-705.599976, -915.375854, 18.203613),
+            vec3(-47.432968, -1759.608765, 28.414673),
+            vec3(1165.516479, -324.408783, 68.197021),
+            vec3(-1818.553833, 793.239563, 137.062256),
+            vec3(-2966.017578, 390.909882, 14.041748),
+            vec3(1133.723022, -982.588989, 45.399292),
+            vec3(-1221.692261, -908.690125, 11.312134),
+            vec3(-1485.942871, -377.670319, 39.147949),
+            vec3(1165.898926, 2711.248291, 37.142822),
+            vec3(1392.567017, 3606.672607, 33.975098),
+            vec3(160.153854, 6641.129883, 30.689331),
+
+		}, --[[targets = {
 			{ loc = vec3(25.06, -1347.32, 29.5), length = 0.7, width = 0.5, heading = 0.0, minZ = 29.5, maxZ = 29.9, distance = 1.5 },
 			{ loc = vec3(-3039.18, 585.13, 7.91), length = 0.6, width = 0.5, heading = 15.0, minZ = 7.91, maxZ = 8.31, distance = 1.5 },
 			{ loc = vec3(-3242.2, 1000.58, 12.83), length = 0.6, width = 0.6, heading = 175.0, minZ = 12.83, maxZ = 13.23, distance = 1.5 },
@@ -55,7 +67,7 @@ return {
 			{ loc = vec3(2678.29, 3279.94, 55.24), length = 0.6, width = 0.5, heading = 330.0, minZ = 55.24, maxZ = 55.64, distance = 1.5 },
 			{ loc = vec3(2557.19, 381.4, 108.62), length = 0.6, width = 0.5, heading = 0.0, minZ = 108.62, maxZ = 109.02, distance = 1.5 },
 			{ loc = vec3(373.13, 326.29, 103.57), length = 0.6, width = 0.5, heading = 345.0, minZ = 103.57, maxZ = 103.97, distance = 1.5 },
-		}
+		}]]
 	},
 
 	Liquor = {
@@ -64,7 +76,16 @@ return {
 			id = 93, colour = 69, scale = 0.8
 		},]] inventory = {
 			{ name = 'donut', price = 100 },
-			{ name = 'water', price = 50 }
+			{ name = 'water', price = 50 },
+			{ name = 'football', price = 1000 },
+			{ name = 'basketball', price = 1000 },
+			{ name = 'rugby', price = 1000 },
+			{ name = 'baseball', price = 1000 },
+			{ name = 'skateboard', price = 1000 },
+			{ name = 'spray', price = 1000 },
+			{ name = 'notepad', price = 1000 },
+			{ name = 'notebook', price = 1000 },
+			{ name = 'boombox', price = 1000 }
 		}, locations = {
 			vec3(1135.808, -982.281, 46.415),
 			vec3(-1222.915, -906.983, 12.326),
@@ -74,12 +95,6 @@ return {
 			vec3(1392.562, 3604.684, 34.980),
 			vec3(-1393.409, -606.624, 30.319)
 		}, targets = {
-			{ loc = vec3(1134.9, -982.34, 46.41), length = 0.5, width = 0.5, heading = 96.0, minZ = 46.4, maxZ = 46.8, distance = 1.5 },
-			{ loc = vec3(-1222.33, -907.82, 12.43), length = 0.6, width = 0.5, heading = 32.7, minZ = 12.3, maxZ = 12.7, distance = 1.5 },
-			{ loc = vec3(-1486.67, -378.46, 40.26), length = 0.6, width = 0.5, heading = 133.77, minZ = 40.1, maxZ = 40.5, distance = 1.5 },
-			{ loc = vec3(-2967.0, 390.9, 15.14), length = 0.7, width = 0.5, heading = 85.23, minZ = 15.0, maxZ = 15.4, distance = 1.5 },
-			{ loc = vec3(1165.95, 2710.20, 38.26), length = 0.6, width = 0.5, heading = 178.84, minZ = 38.1, maxZ = 38.5, distance = 1.5 },
-			{ loc = vec3(1393.0, 3605.95, 35.11), length = 0.6, width = 0.6, heading = 200.0, minZ = 35.0, maxZ = 35.4, distance = 1.5 }
 		}
 	},
 
@@ -99,9 +114,9 @@ return {
 
 	Ammunation = {
 		name = 'Ammunation',
-		blip = {
+		--[[blip = {
 			id = 110, colour = 1, scale = 0.7
-		}, inventory = {
+		},]] inventory = {
             { name = 'WEAPON_FLASHLIGHT', price = 3000 },
 			{ name = 'WEAPON_BAT', price = 3000 },
             { name = 'WEAPON_POOLCUE', price = 3000 },
@@ -112,14 +127,14 @@ return {
             { name = 'WEAPON_HUNTINGRIFLE', price = 5000 },
             { name = 'WEAPON_FLARE', price = 5000 },
 		}, locations = {
-			vec3(810.25, -2157.60, 29.62),
-			vec3(1693.44, 3760.16, 34.71),
-			vec3(-330.24, 6083.88, 31.45),
-			vec3(252.63, -50.00, 69.94),
-			vec3(22.56, -1109.89, 29.80),
-			vec3(2567.69, 294.38, 108.73),
-			vec3(-1117.58, 2698.61, 18.55),
-			vec3(842.44, -1033.42, 28.19)
+			vec3(812.953857, -2155.239502, 29.616821),
+            vec3(1697.947266, 3757.397705, 34.688599),
+            vec3(-326.268127, 6081.323242, 31.453491),
+            vec3(246.936264, -51.362637, 69.938477),
+            vec3(18.553848, -1108.180176, 29.785400),
+            vec3(2564.835205, 298.813202, 108.726685),
+            vec3(-1112.610962, 2697.283447, 18.546509),
+            vec3(841.186829, -1028.967041, 28.184570),
 		}, targets = {
 		}
 	},
@@ -130,12 +145,17 @@ return {
 		--[[blip = {
 			id = 110, colour = 84, scale = 0.8
 		},]] inventory = {
-            { name = 'empty_evidence_bag', price = 0, grade = 0},
-            { name = 'sprayremover', price = 0, grade = 0},
-            { name = 'WEAPON_RADARGUN', price = 0, grade = 1},
-            { name = 'spikestrip', price = 0, grade = 1},
-            { name = 'llammo', price = 0, grade = 3},
+            {name = 'radio', price = 0, grade = 0},
+            {name = 'empty_evidence_bag', price = 0, grade = 0},
+            {name = 'sprayremover', price = 0, grade = 0},
+            {name = 'spikestrip', price = 0, grade = 1},
 
+            {name = 'suppressor', price = 0, grade = 2},
+            {name = 'grip', price = 0, grade = 2},
+            {name = 'flashlight', price = 0, grade = 2},
+            {name = 'scope', price = 0, grade = 2},
+
+            {name = 'llammo', price = 0, grade = 3},
             {name = 'combatpistolclip', price = 0, grade = 2, metadata = {ammoname = 'pistolammo', maxammo = 12, ammocount = 12}},
             {name = 'heavypistolclip', price = 0, grade = 2, metadata = {ammoname = 'pistolammo', maxammo = 18, ammocount = 18}},
             {name = 'smgclip', price = 0, grade = 2, metadata = {ammoname = 'smgammo', maxammo = 30, ammocount = 30}},
@@ -143,11 +163,7 @@ return {
             {name = 'arclip', price = 0, grade = 2, metadata = {ammoname = 'arammo', maxammo = 30, ammocount = 30}},
             {name = 'extendedarclip', price = 0, grade = 2, metadata = {ammoname = 'arammo', maxammo = 60, ammocount = 60}},
 
-            {name = 'suppressor', price = 0, grade = 2},
-            {name = 'grip', price = 0, grade = 2},
-            {name = 'flashlight', price = 0, grade = 2},
-            {name = 'scope', price = 0, grade = 2},
-
+            {name = 'WEAPON_RADARGUN', price = 0, grade = 1},
             {name = 'WEAPON_FLASHLIGHT', price = 0, grade = 0},
             {name = 'WEAPON_COLBATON', price = 0, grade = 0},
             {name = 'WEAPON_STUNGUN', price = 0, grade = 1},
@@ -156,15 +172,6 @@ return {
             {name = 'WEAPON_COMBATPISTOL', price = 0, grade = 2, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
             {name = 'WEAPON_BEANBAG', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
             {name = 'WEAPON_PUMPSHOTGUN', price = 0, grade = 7, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
-
-            {name = 'WEAPON_HEAVYPISTOL', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
-            {name = 'WEAPON_REVOLVER', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
-            {name = 'WEAPON_SMG', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
-            {name = 'WEAPON_CARBINERIFLE', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
-            {name = 'WEAPON_SMOKEGRENADE', price = 0, grade = 3},--, license = 'weapon'},
-            {name = 'WEAPON_SMOK2GRENADE', price = 0, grade = 3},--, license = 'weapon'},
-            {name = 'WEAPON_FLASHBANG', price = 0, grade = 3},--, license = 'weapon'},
-            {name = 'ziptie', price = 0, grade = 3},
 
             {name = 'bulletproof_lspd0', grade = 1, price = 0},
             {name = 'bulletproof_lspd1', grade = 2, price = 0},
@@ -176,6 +183,15 @@ return {
             {name = 'bulletproof_lspd7', grade = 2, price = 0},
             {name = 'bulletproof_lspd8', grade = 2, price = 0},
 
+            {name = 'WEAPON_HEAVYPISTOL', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
+            {name = 'WEAPON_SMG', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
+            {name = 'WEAPON_CARBINERIFLE', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
+            {name = 'WEAPON_SMOKEGRENADE', price = 0, grade = 3},--, license = 'weapon'},
+            {name = 'WEAPON_SMOK2GRENADE', price = 0, grade = 3},--, license = 'weapon'},
+            {name = 'WEAPON_FLASHBANG', price = 0, grade = 3},--, license = 'weapon'},
+            {name = 'ziptie', price = 0, grade = 3},
+
+            { name = 'airsoftball', price = 0, grade = 7},
             {name = 'WEAPON_AIRSOFTGLOCK20', price = 0, grade = 7},
             {name = 'WEAPON_AIRSOFTAK47', price = 0, grade = 7},
             {name = 'WEAPON_AIRSOFTG36C', price = 0, grade = 7},
@@ -203,7 +219,7 @@ return {
 		--[[blip = {
 			id = 403, colour = 69, scale = 0.8
 		},]] inventory = {
-			{ name = 'medikit', price = 0 },
+			{ name = 'firstaidkit', price = 0 },
 			{ name = 'bandage', price = 0 }
 		}, locations = {
 			vector3(311.7069, -564.1088, 43.28403),

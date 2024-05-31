@@ -474,7 +474,7 @@ lib.addCommand({'additem', 'giveitem'}, {
 		{ name = 'item', type = 'string', help = 'The name of the item' },
 		{ name = 'count', type = 'number', help = 'The amount of the item to give', optional = true }
 	},
-	restricted = 'group.admin',
+	restricted = 'qbcore.admin',
 }, function(source, args)
 	local item = Items(args.item)
 
@@ -509,7 +509,7 @@ lib.addCommand('removeitem', {
 		{ name = 'count', type = 'number', help = 'The amount of the item to take' },
 		{ name = 'type', help = 'Only remove items with a matching metadata "type"', optional = true },
 	},
-	restricted = 'group.admin',
+	restricted = 'qbcore.admin',
 }, function(source, args)
 	local item = Items(args.item)
 
@@ -537,7 +537,7 @@ lib.addCommand('setitem', {
 		{ name = 'count', type = 'number', help = 'The amount of items to set', optional = true },
 		{ name = 'type', help = 'Add or remove items with the metadata "type"', optional = true },
 	},
-	restricted = 'group.admin',
+	restricted = 'qbcore.admin',
 }, function(source, args)
 	local item = Items(args.item)
 
@@ -579,7 +579,7 @@ lib.addCommand('takeinv', {
 	params = {
 		{ name = 'target', type = 'playerId', help = 'The player to confiscate items from' },
 	},
-	restricted = 'group.admin',
+	restricted = 'qbcore.admin',
 }, function(source, args)
 	Inventory.Confiscate(args.target)
 end)
@@ -589,7 +589,7 @@ lib.addCommand({'restoreinv', 'returninv'}, {
 	params = {
 		{ name = 'target', type = 'playerId', help = 'The player to restore items to' },
 	},
-	restricted = 'group.admin',
+	restricted = 'qbcore.admin',
 }, function(source, args)
 	Inventory.Return(args.target)
 end)
@@ -599,7 +599,7 @@ lib.addCommand('clearinv', {
 	params = {
 		{ name = 'invId', help = 'The inventory to wipe items from' },
 	},
-	restricted = 'group.admin',
+	restricted = 'qbcore.admin',
 }, function(source, args)
 	Inventory.Clear(tonumber(args.invId) or args.invId == 'me' and source or args.invId)
 end)
@@ -609,7 +609,7 @@ lib.addCommand('saveinv', {
 	params = {
 		{ name = 'lock', help = 'Lock inventory access, until restart or saved without a lock', optional = true },
 	},
-	restricted = 'group.admin',
+	restricted = 'qbcore.admin',
 }, function(source, args)
 	Inventory.SaveInventories(args.lock == 'true', false)
 end)
@@ -619,7 +619,7 @@ lib.addCommand('viewinv', {
 	params = {
 		{ name = 'invId', help = 'The inventory to inspect' },
 	},
-	restricted = 'group.admin',
+	restricted = 'qbcore.admin',
 }, function(source, args)
 	Inventory.InspectInventory(source, tonumber(args.invId) or args.invId)
 end)
@@ -665,28 +665,6 @@ QBCore.Functions.CreateCallback('ox_inventory:getPlayerNames', function (source,
     cb(playersList)
 end)
 
-
-
-QBCore.Functions.CreateCallback('MyCity_Jobs:Ranch:AddCow', function (source, cb, data)
-    local xPlayer = QBCore.Functions.GetPlayer(source)
-
-    if xPlayer.PlayerData.job.name == 'ranch' then
-        inv = Inventory(data.id)
-        if not inv then
-            local vehicleData = Vehicles['trunk']['models'][data.model] or Vehicles['trunk'][data.class]
-            inv = Inventory.Create(data.id, data.plate, 'trunk', vehicleData[1], 0, vehicleData[2], false)
-        end
-
-        if exports.ox_inventory:CanCarryItem(data.id, 'cow', 1) then
-            exports.ox_inventory:AddItem(data.id, 'cow', 1)
-            cb(true)
-        else
-            TriggerClientEvent('QBCore:Notify', xPlayer.PlayerData.source, "La bétaillère est ~r~pleine")
-            cb(false)
-        end
-    end
-end)
-
 QBCore.Functions.CreateCallback('MyCity_CoreV2:Ranch:CheckTrunkItems', function (source, cb, data)
 	local xPlayer = QBCore.Functions.GetPlayer(source)
     inv = Inventory(data.id)
@@ -706,26 +684,11 @@ QBCore.Functions.CreateCallback('MyCity_CoreV2:Ranch:CheckTrunkItems', function 
     end
 end)
 
-RegisterNetEvent('MyCity_Jobs:AddFarmerItem')
-AddEventHandler('MyCity_Jobs:AddFarmerItem', function(data, item, amount)
-    local xPlayer = QBCore.Functions.GetPlayer(source)
-
-    if xPlayer.PlayerData.job.name == 'farmer' then
-        inv = Inventory(data.id)
-        if not inv then
-            local vehicleData = Vehicles['trunk']['models'][data.model] or Vehicles['trunk'][data.class]
-            inv = Inventory.Create(data.id, data.plate, 'trunk', vehicleData[1], 0, vehicleData[2], false)
-        end
-
-        exports.ox_inventory:AddItem(data.id, item, amount)
-    end
-end)
-
 RegisterNetEvent('esx_inventoryhud_trunk:emptyTrunk')
 AddEventHandler('esx_inventoryhud_trunk:emptyTrunk', function(data)
     local xPlayer = QBCore.Functions.GetPlayer(source)
 
-    if not xPlayer or (xPlayer.group == 'superadmin' or xPlayer.group == 'admin') then
+    if not xPlayer or QBCore.Functions.HasPermission(xPlayer.PlayerData.source, 'admin') then
         inv = Inventory(data.id)
         if not inv then
             local vehicleData = Vehicles['trunk']['models'][data.model] or Vehicles['trunk'][data.class]
@@ -740,144 +703,12 @@ RegisterNetEvent('MyCity_CoreV2:emptyTrunkWipe')
 AddEventHandler('MyCity_CoreV2:emptyTrunkWipe', function(plate)
     local xPlayer = QBCore.Functions.GetPlayer(source)
 
-    if not xPlayer or (xPlayer.group == 'superadmin' or xPlayer.group == 'admin') then
+    if not xPlayer or QBCore.Functions.HasPermission(xPlayer.PlayerData.source, 'admin') then
         inv = Inventory('trunk' .. plate)
         if inv then
             exports.ox_inventory:ClearInventory('trunk' .. plate)
         else
             local result = MySQL.query.await('DELETE FROM trunk_inventory WHERE plate = ?', {plate})
-        end
-    end
-end)
-
-local IllegalSellMenuPrices = {
-    {
-        battery = 20,
-        muffler = 72,
-        trunk = 120,
-        doors = 74,
-        engine = 204,
-        waterpump = 104,
-        oilpump = 96,
-        speakers = 66,
-        rims = 180,
-        subwoofer = 48,
-        steeringwheel = 40
-    },
-    {
-        watch = 400,
-        television = 2000,
-        telescope = 1000,
-        laptop = 2000,
-        painting = 1500,
-        coffeemachine = 500,
-        gamingconsole = 1000,
-        digitaltablet = 1000,
-        microwave = 500,
-    },
-    {
-        ring = 300,
-        bracelet = 400,
-        necklace = 500
-    },
-    {
-        stingray = 50,
-        shark_fin = 250
-    },
-    {
-        bikeengine = 1000,
-        bikeexhaust = 750,
-        bikerims = 500,
-        bikeairfilter = 250
-    },
-    {
-        pearl = 50,
-        turtle = 250
-    },
-}
-
-local vehiclesInTransaction = {}
-
-QBCore.Functions.CreateCallback('MyCity_CoreV2:IllegalSell:CheckTrunkItems', function (source, cb, data, index, coords)
-	local xPlayer = QBCore.Functions.GetPlayer(source)
-    local foundItems
-    inv = Inventory(data.id)
-    if not inv then
-        local vehicleData = Vehicles['trunk']['models'][data.model] or Vehicles['trunk'][data.class]
-        inv = Inventory.Create(data.id, data.plate, 'trunk', vehicleData[1], 0, vehicleData[2], false)
-    end
-
-    for k,v in pairs(IllegalSellMenuPrices[index]) do
-        local result = exports.ox_inventory:GetItem(data.id, k, nil, true)
-        if result > 0 then
-            foundItems = true
-            break
-        end
-    end
-
-    if foundItems then
-        if not vehiclesInTransaction[data.plate] then
-            vehiclesInTransaction[data.plate] = true
-            math.randomseed(os.time())
-            local random = math.random(1,100)
-
-            if random <= 20 then
-                local xPlayers = QBCore.Functions.GetPlayers()
-                for i = 1, #xPlayers do
-                    local xPlayer = QBCore.Functions.GetPlayer(xPlayers[i])
-                    if xPlayer.PlayerData.job.name == 'police' then
-                        TriggerClientEvent('MyCity_CoreV2:IllegalSell:NotifyPoliceCl', xPlayer.PlayerData.source, coords)
-                    end
-                end
-            end
-
-            cb(true)
-        else
-            TriggerClientEvent('QBCore:Notify', xPlayer.PlayerData.source, "Le contenu de ce véhicule est déja en cours de transaction")
-            cb(false)
-        end
-    else
-        TriggerClientEvent('QBCore:Notify', xPlayer.PlayerData.source, "Votre coffre ne contient rien d'intéressant")
-        cb(false)
-    end
-end)
-
-RegisterNetEvent('MyCity_CoreV2:IllegalSell:RemoveVehicleFromTransaction')
-AddEventHandler('MyCity_CoreV2:IllegalSell:RemoveVehicleFromTransaction', function(plate)
-    local xPlayer = QBCore.Functions.GetPlayer(source)
-    vehiclesInTransaction[plate] = nil
-end)
-
-RegisterNetEvent("MyCity_CoreV2:IllegalSell:Transaction")
-AddEventHandler("MyCity_CoreV2:IllegalSell:Transaction", function(plate, index)
-    local xPlayer = QBCore.Functions.GetPlayer(source)
-    local foundItems
-
-    inv = Inventory('trunk' .. plate)
-    if inv then
-        for k,v in pairs(IllegalSellMenuPrices[index]) do
-            local item = exports.ox_inventory:GetItem('trunk' .. plate, k, nil, false)
-
-            if item.count > 0 then
-                local rewardMoney = v * item.count
-                xPlayer.Functions.AddItem('black_money', rewardMoney)
-                TriggerClientEvent('QBCore:Notify', xPlayer.PlayerData.source, "Vous avez récupéré ~r~$" .. QBCore.Shared.Round(rewardMoney) .. "~s~ pour ~b~x" .. item.count .. " " .. item.label)
-                exports.ox_inventory:RemoveItem('trunk' .. plate, k, item.count)
-
-                if index == 1 then
-                    TriggerEvent('MyCity_Core:VenteCasse:Logs', 'Vente Casse', QBCore.Functions.GetPlayerName(source) .. ' a vendu x' .. item.count .. ' ' .. item.label .. ' pour $' .. QBCore.Shared.Round(rewardMoney), xPlayer.PlayerData.source)
-                elseif index == 2 then
-                    TriggerEvent('MyCity_Core:HouseRobberySell:Logs', 'Vente Cambriolages', QBCore.Functions.GetPlayerName(source) .. ' a vendu x' .. item.count .. ' ' .. item.label .. ' pour $' .. QBCore.Shared.Round(rewardMoney), xPlayer.PlayerData.source)
-                elseif index == 3 then
-                    TriggerEvent('MyCity_Core:Jewels:Logs', 'Vente Bijoux', QBCore.Functions.GetPlayerName(source) .. ' a vendu x' .. item.count .. ' ' .. item.label .. ' pour $' .. QBCore.Shared.Round(rewardMoney), xPlayer.PlayerData.source)
-                elseif index == 4 then
-                    TriggerEvent('MyCity_Core:IllegalFishingSell:Logs', 'Vente Pêche Illégale', QBCore.Functions.GetPlayerName(source) .. ' a vendu x' .. item.count .. ' ' .. item.label .. ' pour $' .. QBCore.Shared.Round(rewardMoney), xPlayer.PlayerData.source)
-                elseif index == 5 then
-                    TriggerEvent('MyCity_Core:IllegalBikeScrapyardSell:Logs', 'Vente Casse Moto', QBCore.Functions.GetPlayerName(source) .. ' a vendu x' .. item.count .. ' ' .. item.label .. ' pour $' .. QBCore.Shared.Round(rewardMoney), xPlayer.PlayerData.source)
-                elseif index == 6 then
-                    TriggerEvent('MyCity_Core:IllegalDivingSell:Logs', 'Vente Plongée Illégale', QBCore.Functions.GetPlayerName(source) .. ' a vendu x' .. item.count .. ' ' .. item.label .. ' pour $' .. QBCore.Shared.Round(rewardMoney), xPlayer.PlayerData.source)
-                end
-            end
         end
     end
 end)
