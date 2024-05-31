@@ -119,6 +119,23 @@ const InventorySlot: React.ForwardRefRenderFunction<HTMLDivElement, SlotProps> =
 
   const refs = useMergeRefs([connectRef, ref]);
 
+  const getQuantity = (item: Slot) => {
+    if(!item.count){
+      return '';
+    }
+
+    let suffix = 'x';
+    let prefix = '';
+    if(item.name === 'money'){
+      prefix = '$ '
+      suffix = ''
+    }
+
+    const quantity = item.count.toLocaleString('en-us', {}).replace(/,/g, ' ');
+
+    return prefix + quantity + suffix;
+  }
+
   return (
     <div
       ref={refs}
@@ -159,17 +176,21 @@ const InventorySlot: React.ForwardRefRenderFunction<HTMLDivElement, SlotProps> =
             {inventoryType === 'player' && item.slot <= 5 && <div className="inventory-slot-number">{item.slot}</div>}
             <div className="item-slot-info-wrapper">
               <p>
+                {getQuantity(item)}
+              </p>
+              <p>
                 {item.weight > 0
                   ? item.weight >= 1000
                     ? `${(item.weight / 1000).toLocaleString('en-us', {
-                        minimumFractionDigits: 2,
-                      })}kg `
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    })}kg `
                     : `${item.weight.toLocaleString('en-us', {
-                        minimumFractionDigits: 0,
-                      })}g `
+                      minimumFractionDigits: 0,
+                      maximumFractionDigits: 2,
+                    })}g `
                   : ''}
               </p>
-              <p>{item.count ? item.count.toLocaleString('en-us') + `x` : ''}</p>
             </div>
           </div>
           <div>

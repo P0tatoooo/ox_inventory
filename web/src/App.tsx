@@ -23,7 +23,7 @@ debugData([
         slots: 50,
         label: 'Bob Smith',
         weight: 3000,
-        maxWeight: 5000,
+        maxWeight: 50000,
         items: [
           {
             slot: 1,
@@ -56,6 +56,15 @@ debugData([
             metadata: {
               label: 'Russian Cream',
               imageurl: 'https://i.imgur.com/2xHhTTz.png',
+            },
+          },
+          {
+            slot: 7,
+            name: 'money',
+            weight: 39984,
+            count: 39984,
+            metadata: {
+              label: 'Argent',
             },
           },
         ],
