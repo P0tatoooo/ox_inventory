@@ -13,6 +13,7 @@ type ButtonProps = {
     type?: 'primary' | 'secondary';
     tooltipPosition?: 'bottom' | 'top' | 'left' | 'right';
     onClick?: () => void;
+    onHover?: () => void;
 } & PropsWithChildren;
 
 const Button = ({
@@ -20,6 +21,7 @@ const Button = ({
     block,
     isActive,
     onClick,
+    onHover,
     className,
     disabled,
     keystone,
@@ -57,6 +59,15 @@ const Button = ({
         onClick?.();
     };
 
+    const handleHover = (event?: any) => {
+        event?.stopPropagation();
+        event?.preventDefault();
+        if (disabled) {
+            return;
+        }
+        onHover?.();
+    };
+
     const tooltipConfiguration = useMemo(() => {
         if (!tooltip) {
             return {};
@@ -72,6 +83,7 @@ const Button = ({
             disabled={disabled}
             className={classes}
             onClick={handleClick}
+            onMouseEnter={handleHover}
             {...tooltipConfiguration}>
             {keystone && <Keystroke keystone={keystone} onPress={handleClick} />}
             {children}

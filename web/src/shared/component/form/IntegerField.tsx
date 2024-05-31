@@ -1,6 +1,7 @@
 import { Button } from '@/shared/component/Button.tsx';
 import { BiMinus, BiPlus } from 'react-icons/bi';
 import './IntegerField.scss';
+import { useState } from 'react';
 
 type IntegerFieldProps = {
     value: number;
@@ -15,6 +16,7 @@ const IntegerField = ({
     minValue = -Infinity,
     maxValue = Infinity
 }: IntegerFieldProps) => {
+    const [localValue, setLocalValue] = useState<number>(value);
     const updateValue = (newValue: number) => {
         if (newValue < minValue) {
             newValue = maxValue;
@@ -22,20 +24,21 @@ const IntegerField = ({
         if (newValue > maxValue) {
             newValue = minValue;
         }
+        setLocalValue(newValue);
         onChange(newValue);
     };
 
     return (
         <div className="integer-field">
-            <Button className="minus" onClick={() => updateValue(value - 1)}>
+            <Button className="minus" onClick={() => updateValue(localValue - 1)}>
                 <BiMinus />
             </Button>
             <input
                 type="number"
                 onChange={(e) => updateValue(parseInt(e.target.value))}
-                value={value}
+                value={localValue}
             />
-            <Button className="plus" onClick={() => updateValue(value + 1)}>
+            <Button className="plus" onClick={() => updateValue(localValue + 1)}>
                 <BiPlus />
             </Button>
         </div>
