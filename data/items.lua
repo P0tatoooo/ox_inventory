@@ -657,15 +657,18 @@ return {
 		label = 'blé',
 		weight = 130,
 		stack = true,
-
 	},
 
 	['bloodsample'] = {
 		label = 'Échantillon de sang',
 		weight = 125,
-		stack = true,
-		close = true,
+		stack = false,
+	},
 
+    ['bloodbag'] = {
+		label = 'Poche de sang',
+		weight = 1250,
+		stack = false,
 	},
 
 	['bluefin_tuna'] = {
@@ -4634,7 +4637,7 @@ return {
 	},
 
 	["empty_evidence_bag"] = {
-		label = "Empty Evidence Bag",
+		label = "Sac de Preuves Vide",
 		weight = 0,
 		stack = true,
 		close = false,
@@ -5335,11 +5338,10 @@ return {
 	},
 
 	["filled_evidence_bag"] = {
-		label = "Evidence Bag",
+		label = "Sac de Preuves",
 		weight = 200,
 		stack = false,
 		close = false,
-		description = "A filled evidence bag to see who committed the crime >:(",
 		client = {
 			image = "evidence.png",
 		}
@@ -5805,24 +5807,21 @@ return {
         close = true,
 	},
 
-
-
-
     ["shield"] = {
         label = "Police shield",
         weight = 8000,
         stack = false,
         consume = 0,
         client = {
-            export = "ND_Police.useShield",
+            export = "qb-policejob.useShield",
             add = function(total)
                 if total > 0 then
-                        pcall(function() return exports["ND_Police"]:hasShield(true) end)
+                        pcall(function() return exports["qb-policejob"]:hasShield(true) end)
                     end
                 end,
             remove = function(total)
                 if total < 1 then
-                    pcall(function() return exports["ND_Police"]:hasShield(false) end)
+                    pcall(function() return exports["qb-policejob"]:hasShield(false) end)
                 end
             end
         }
@@ -5837,9 +5836,6 @@ return {
     ["ziptie"] = {
         label = "Serflex",
         weight = 10,
-        client = {
-            export = "ND_Police.ziptie"
-        }
     },
 
 	['id_card'] = {
@@ -7266,5 +7262,45 @@ return {
 		weight = 1000,
 		stack = true,
 		close = true,
+	},
+
+    ['cone'] = {
+		label = 'Cône',
+		weight = 1000,
+		stack = true,
+		close = true,
+        client = {
+            export = "MyCity_CoreV2.placeProp"
+        }
+	},
+
+    ['barrier'] = {
+		label = 'Barrière',
+		weight = 1000,
+		stack = true,
+		close = true,
+        client = {
+            export = "MyCity_CoreV2.placeProp"
+        }
+	},
+
+    ['gazebotent'] = {
+		label = 'Tente Pliante',
+		weight = 1000,
+		stack = true,
+		close = true,
+        client = {
+            export = "MyCity_CoreV2.placeProp"
+        }
+	},
+
+    ['worklight'] = {
+		label = 'Lampe de Chantier',
+		weight = 1000,
+		stack = true,
+		close = true,
+        client = {
+            export = "MyCity_CoreV2.placeProp"
+        }
 	},
 }

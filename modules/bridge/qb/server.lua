@@ -150,7 +150,7 @@ end
 ---@diagnostic disable-next-line: duplicate-set-field
 function server.hasLicense(inv, license)
 	local player = server.GetPlayerFromId(inv.id)
-	return player and player.PlayerData.metadata.licences[license]
+	return player and player.PlayerData.metadata.licenses[license]
 end
 
 ---@diagnostic disable-next-line: duplicate-set-field
@@ -158,15 +158,15 @@ function server.buyLicense(inv, license)
 	local player = server.GetPlayerFromId(inv.id)
 	if not player then return end
 
-	if player.PlayerData.metadata.licences[license.name] then
+	if player.PlayerData.metadata.licenses[license.name] then
 		return false, 'already_have'
 	elseif Inventory.GetItem(inv, 'money', false, true) < license.price then
 		return false, 'can_not_afford'
 	end
 
 	Inventory.RemoveItem(inv, 'money', license.price)
-	player.PlayerData.metadata.licences[license.name] = true
-	player.Functions.SetMetaData('licences', player.PlayerData.metadata.licences)
+	player.PlayerData.metadata.licenses[license.name] = true
+	player.Functions.SetMetaData('licenses', player.PlayerData.metadata.licenses)
 
 	return true, 'have_purchased'
 end

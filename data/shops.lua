@@ -145,10 +145,18 @@ return {
 		--[[blip = {
 			id = 110, colour = 84, scale = 0.8
 		},]] inventory = {
+            {name = 'handcuffs', price = 0, grade = 0},
             {name = 'radio', price = 0, grade = 0},
-            {name = 'empty_evidence_bag', price = 0, grade = 0},
+            {name = 'binoculars', price = 0, grade = 0},
             {name = 'sprayremover', price = 0, grade = 0},
+            {name = 'posterremover', price = 0, grade = 0},
+            {name = 'empty_evidence_bag', price = 0, grade = 0},
+
             {name = 'spikestrip', price = 0, grade = 1},
+            { name = 'cone', price = 0, grade = 1},
+			{ name = 'barrier', price = 0, grade = 1},
+			{ name = 'gazebotent', price = 0, grade = 1},
+			{ name = 'worklight', price = 0, grade = 1},
 
             {name = 'suppressor', price = 0, grade = 2},
             {name = 'grip', price = 0, grade = 2},
@@ -220,7 +228,16 @@ return {
 			id = 403, colour = 69, scale = 0.8
 		},]] inventory = {
 			{ name = 'firstaidkit', price = 0 },
-			{ name = 'bandage', price = 0 }
+			{ name = 'bandage', price = 0 },
+			{ name = 'painkiller', price = 0 },
+			{ name = 'antiinflammatory', price = 0 },
+			{ name = 'antibiotic', price = 0 },
+			{ name = 'crutches', price = 0 },
+			{ name = 'wheelchair', price = 0 },
+			{ name = 'cone', price = 0 },
+			{ name = 'barrier', price = 0 },
+			{ name = 'gazebotent', price = 0 },
+			{ name = 'worklight', price = 0 },
 		}, locations = {
 			vector3(311.7069, -564.1088, 43.28403),
             vector3(-259.36, 6326.99, 32.43),
