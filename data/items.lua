@@ -4888,6 +4888,9 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+        client = {
+            export = "qb-policejob.cuffFromItem"
+        }
 	},
 
 	["painkillers"] = {
@@ -5765,7 +5768,10 @@ return {
     ["rope"] = {
 		label = "Corde",
 		weight = 100,
-		stack = true
+		stack = true,
+        client = {
+            export = "qb-policejob.cuffFromItem"
+        }
 	},
     ["headbag"] = {
 		label = "Sac tête",
@@ -5836,6 +5842,10 @@ return {
     ["ziptie"] = {
         label = "Serflex",
         weight = 10,
+        stack = true,
+        client = {
+            export = "qb-policejob.cuffFromItem"
+        }
     },
 
 	['id_card'] = {
