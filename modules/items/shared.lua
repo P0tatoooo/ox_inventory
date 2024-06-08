@@ -86,6 +86,7 @@ for type, data in pairs(lib.load('data.weapons')) do
 			v.stack = v.throwable and true or false
 			v.durability = v.durability or 0.05
 			v.weapon = true
+            v.degrade = v.degrade or 20160
 		else
 			v.stack = true
 		end

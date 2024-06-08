@@ -248,7 +248,6 @@ end
 
 local function setItemDurability(item, metadata)
 	local degrade = item?.degrade
-
 	if degrade then
 		metadata.durability = os.time()+(degrade * 60)
 		metadata.degrade = degrade
@@ -289,6 +288,14 @@ function Items.Metadata(inv, item, metadata, count)
 		if item.hash == `WEAPON_PETROLCAN` or item.hash == `WEAPON_HAZARDCAN` or item.hash == `WEAPON_FERTILIZERCAN` or item.hash == `WEAPON_FIREEXTINGUISHER` then
 			metadata.ammo = metadata.durability
 		end
+
+        local degrade = item?.degrade
+        if degrade then
+            metadata.durability = os.time()+(degrade * 60)
+            metadata.degrade = degrade
+        elseif item?.durability then
+            metadata.durability = 100
+        end
 	else
 		local container = Items.containers[item.name]
 
