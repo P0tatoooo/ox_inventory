@@ -321,36 +321,6 @@ end
 RegisterNetEvent('ox_inventory:openInventory', client.openInventory)
 exports('openInventory', client.openInventory)
 
-function CreatePedScreen()
-    ActivateFrontendMenu(`FE_MENU_VERSION_EMPTY_NO_BACKGROUND`, false, -1)
-    Citizen.Wait(50)
-    N_0x98215325a695e78a(false) --Hide pause menu mouse
-
-    clonedPed = ClonePed(PlayerPedId(), 0, false, false)
-
-    local x, y, z = table.unpack(GetEntityCoords(clonedPed))
-    SetEntityCoords(clonedPed, x, y, z + 5.5)
-    FreezeEntityPosition(clonedPed, true)
-    N_0x4668d80430d6c299(clonedPed)
-
-    GivePedToPauseMenu(clonedPed, 1)
-    RequestScaleformMovie("PAUSE_MP_MENU_PLAYER_MODEL")
-    ReplaceHudColourWithRgba(117, 0, 0, 0, 0)
-    SetBlockingOfNonTemporaryEvents(clonedPed, true)
-    SetPauseMenuPedLighting(true)
-    SetPauseMenuPedSleepState(true)
-
-    ReleaseControlOfFrontend()
-end
-
-function DeletePedScreen()
-    if DoesEntityExist(clonedPed) then
-        DeleteEntity(clonedPed)
-    end
-    SetFrontendActive(false)
-    ReplaceHudColourWithRgba(117, 0, 0, 0, 186)
-end
-
 RegisterNetEvent('ox_inventory:forceOpenInventory', function(left, right)
 	if source == '' then return end
 
@@ -2161,3 +2131,35 @@ AddEventHandler('onResourceStop', function(resource)
     end
     DeletePedScreen()
 end)
+
+function DeletePedScreen()
+    QBCore.Functions.DeleteEntity(clonedPed)
+end
+
+function createPed(model, locationx, locationy, locationz)
+    local hash = model
+    while not HasModelLoaded(hash) do
+        RequestModel(hash)
+        Citizen.Wait(0)
+    end
+    return CreatePed(26, hash, locationx, locationy, locationz, 0, true, false)
+end
+
+function CreatePedScreen()
+    clonedPed = createPed(GetEntityModel(PlayerPedId()), false, false, false)
+    SetEntityCollision(clonedPed, false, true)
+    SetEntityInvincible(clonedPed, true)
+    NetworkSetEntityInvisibleToNetwork(clonedPed, true)
+    ClonePedToTarget(PlayerPedId(), clonedPed)
+    SetEntityCanBeDamaged(clonedPed, false)
+    SetBlockingOfNonTemporaryEvents(clonedPed, true)
+
+    while DoesEntityExist(clonedPed) do
+        Citizen.Wait(0)
+        local world, normal = GetWorldCoordFromScreenCoord(0.50, 0.7787036895752)
+        local target = world + normal * 3.5
+        local camRot = GetGameplayCamRot(2)
+        SetEntityCoords(clonedPed, target.x, target.y, target.z, false, false, false, true)
+        SetEntityRotation(clonedPed, camRot.x*(-1), 0, camRot.z + 180.0, false, false)
+    end
+end
