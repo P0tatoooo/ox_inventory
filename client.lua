@@ -633,6 +633,18 @@ local function useSlot(slot, noAnim)
 				end)
             elseif data.clip then
                 if isReloading then return end
+                local compatibleClip
+                for k,v in pairs(currentWeapon.clip) do
+                    if v == data.name then
+                        compatibleClip = true
+                        break
+                    end
+                end
+
+                if not compatibleClip then
+                    return lib.notify({ id = 'component_invalid', type = 'error', description = locale('component_invalid', label) })
+                end
+
                 isReloading = true
                 local components = data?.client?.component or nil
 				local componentType = data.type
@@ -1582,7 +1594,7 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 							if currentAmmo < weaponAmmo then
 								currentAmmo = (weaponAmmo < currentAmmo) and 0 or currentAmmo
 								currentWeapon.metadata.ammo = currentAmmo
-								currentWeapon.metadata.durability = currentWeapon.metadata.durability - (durabilityDrain * math.abs((weaponAmmo or 0.1) - currentAmmo))
+								--currentWeapon.metadata.durability = currentWeapon.metadata.durability - (durabilityDrain * currentWeapon.metadata.degrade)
 							end
 						end
 

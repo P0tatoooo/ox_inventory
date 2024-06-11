@@ -346,7 +346,6 @@ lib.callback.register('ox_inventory:useItem', function(source, itemName, slot, m
 			if item.ammo then
 				if inventory.weapon then
 					local weapon = inventory.items[inventory.weapon]
-
 					if weapon and weapon?.metadata.durability > 0 then
 						consume = nil
 					end
@@ -397,6 +396,7 @@ lib.callback.register('ox_inventory:useItem', function(source, itemName, slot, m
 				durability = consume ~= 0 and consume < 1 and data.metadata.durability --[[@as number | false]]
 
 				if durability then
+
 					if durability > 100 then
 						local degrade = (data.metadata.degrade or item.degrade) * 60
 						durability -= degrade * consume
