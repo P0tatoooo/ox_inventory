@@ -5,7 +5,7 @@ require 'modules.interface.client'
 
 local Utils = require 'modules.utils.client'
 local Weapon = require 'modules.weapon.client'
-local currentWeapon, isReloading
+local currentWeapon, isReloading, clonedPed
 
 exports('getCurrentWeapon', function()
 	return currentWeapon
@@ -2136,30 +2136,26 @@ function DeletePedScreen()
     QBCore.Functions.DeleteEntity(clonedPed)
 end
 
-function createPed(model, locationx, locationy, locationz)
-    local hash = model
-    while not HasModelLoaded(hash) do
-        RequestModel(hash)
-        Citizen.Wait(0)
-    end
-    return CreatePed(26, hash, locationx, locationy, locationz, 0, true, false)
-end
-
 function CreatePedScreen()
-    clonedPed = createPed(GetEntityModel(PlayerPedId()), false, false, false)
-    SetEntityCollision(clonedPed, false, true)
-    SetEntityInvincible(clonedPed, true)
-    NetworkSetEntityInvisibleToNetwork(clonedPed, true)
-    ClonePedToTarget(PlayerPedId(), clonedPed)
-    SetEntityCanBeDamaged(clonedPed, false)
-    SetBlockingOfNonTemporaryEvents(clonedPed, true)
+    Citizen.CreateThread(function()
+        QBCore.Functions.DeleteEntity(clonedPed)
+        local model = GetEntityModel(PlayerPedId())
+        QBCore.Functions.LoadModel(model)
+        clonedPed = CreatePed(28, model, GetEntityCoords(PlayerPedId()), 0, true, false)
+        SetEntityCollision(clonedPed, false, true)
+        SetEntityInvincible(clonedPed, true)
+        NetworkSetEntityInvisibleToNetwork(clonedPed, true)
+        ClonePedToTarget(PlayerPedId(), clonedPed)
+        SetEntityCanBeDamaged(clonedPed, false)
+        SetBlockingOfNonTemporaryEvents(clonedPed, true)
 
-    while DoesEntityExist(clonedPed) do
-        Citizen.Wait(0)
-        local world, normal = GetWorldCoordFromScreenCoord(0.50, 0.7787036895752)
-        local target = world + normal * 3.5
-        local camRot = GetGameplayCamRot(2)
-        SetEntityCoords(clonedPed, target.x, target.y, target.z, false, false, false, true)
-        SetEntityRotation(clonedPed, camRot.x*(-1), 0, camRot.z + 180.0, false, false)
-    end
+        while DoesEntityExist(clonedPed) do
+            Citizen.Wait(0)
+            local world, normal = GetWorldCoordFromScreenCoord(0.50, 0.7787036895752)
+            local target = world + normal * 3.5
+            local camRot = GetGameplayCamRot(2)
+            SetEntityCoords(clonedPed, target.x, target.y, target.z, false, false, false, true)
+            SetEntityRotation(clonedPed, camRot.x*(-1), 0, camRot.z + 180.0, false, false)
+        end
+    end)
 end
