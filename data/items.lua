@@ -91,6 +91,12 @@ return {
 		}
 	},
 
+	['soda'] = {
+		label = 'Soda',
+		weight = 350,
+		stack = true,
+	},
+
 	['parachute'] = {
 		label = 'Parachute',
 		weight = 8000,
@@ -605,8 +611,8 @@ return {
 
 	},
 
-	['barleymalt'] = {
-		label = 'moût d\'orge',
+	['malt'] = {
+		label = 'orge',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -651,12 +657,6 @@ return {
 		stack = true,
 		close = true,
 
-	},
-
-	['wheat'] = {
-		label = 'blé',
-		weight = 130,
-		stack = true,
 	},
 
 	['bloodsample'] = {
@@ -708,14 +708,6 @@ return {
 	['bracelet'] = {
 		label = 'bracelet',
 		weight = 100,
-		stack = true,
-		close = true,
-
-	},
-
-	['bread'] = {
-		label = 'pain',
-		weight = 120,
 		stack = true,
 		close = true,
 
@@ -1445,7 +1437,7 @@ return {
 
 	},
 
-	['cocacola'] = {
+	['cola'] = {
 		label = 'coca cola',
 		weight = 750,
 		stack = true,
@@ -1557,7 +1549,7 @@ return {
 
 	},
 
-	['cosmopolitan'] = {
+	['cosmopolitancocktail'] = {
 		label = 'cosmopolitan',
 		weight = 750,
 		stack = true,
@@ -1590,7 +1582,7 @@ return {
 	},
 
 	['cream'] = {
-		label = 'crème',
+		label = 'crème fraiche',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -1887,25 +1879,9 @@ return {
 		degrade = 4320
 	},
 
-	['fermentedbarleymalt'] = {
-		label = 'moût d\'orge fermenté',
-		weight = 100,
-		stack = true,
-		close = true,
-
-	},
-
 	['fishing_rod'] = {
 		label = 'canne à pêche',
 		weight = 500,
-		stack = true,
-		close = true,
-
-	},
-
-	['flour'] = {
-		label = 'farine',
-		weight = 100,
 		stack = true,
 		close = true,
 
@@ -2295,13 +2271,6 @@ return {
 
 	},
 
-	['jagerbomb'] = {
-		label = 'jägerbomb',
-		weight = 750,
-		stack = true,
-		close = true,
-
-	},
 
 	['jagermeister'] = {
 		label = 'jägermeister',
@@ -2561,13 +2530,7 @@ return {
 
 	},
 
-	['margarita'] = {
-		label = 'margarita',
-		weight = 750,
-		stack = true,
-		close = true,
 
-	},
 
 	['marijuana'] = {
 		label = 'cannabis',
@@ -2673,14 +2636,6 @@ return {
 
 	},
 
-	['milk'] = {
-		label = 'lait',
-		weight = 130,
-		stack = true,
-		close = true,
-
-	},
-
 	['milkshake'] = {
 		label = 'milkshake fraise',
 		weight = 750,
@@ -2727,14 +2682,6 @@ return {
 		stack = true,
 		close = true,
 		degrade = 4320
-	},
-
-	['mojito'] = {
-		label = 'mojito',
-		weight = 750,
-		stack = true,
-		close = true,
-
 	},
 
 	['morphine'] = {
@@ -3009,24 +2956,8 @@ return {
 
 	},
 
-	['potato'] = {
-		label = 'pomme de terre',
-		weight = 125,
-		stack = true,
-		close = true,
-
-	},
-
 	['poppyresin'] = {
 		label = 'résine de pavot',
-		weight = 100,
-		stack = true,
-		close = true,
-
-	},
-
-	['ppa'] = {
-		label = 'permis de port d\'arme',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -3329,7 +3260,7 @@ return {
 		degrade = 4320
 	},
 
-	['saucisson'] = {
+	['salami'] = {
 		label = 'saucisson',
 		weight = 500,
 		stack = true,
@@ -3451,13 +3382,6 @@ return {
 		weight = 3000,
 		stack = true,
 		close = true,
-
-	},
-
-	['soja'] = {
-		label = 'soja',
-		weight = 100,
-		stack = true,
 
 	},
 
@@ -3784,13 +3708,7 @@ return {
 
 	},
 
-	['tequilasunrise'] = {
-		label = 'tequila sunrise',
-		weight = 750,
-		stack = true,
-		close = true,
 
-	},
 
 	['tequipaf'] = {
 		label = 'tequipaf',
@@ -3811,14 +3729,6 @@ return {
 	['token'] = {
 		label = 'jeton',
 		weight = 0,
-		stack = true,
-		close = true,
-
-	},
-
-	['tomato'] = {
-		label = 'tomate',
-		weight = 120,
 		stack = true,
 		close = true,
 
@@ -3904,7 +3814,7 @@ return {
 		degrade = 4320
 	},
 
-	['vin_blanc'] = {
+	['whitewine'] = {
 		label = 'vin blanc',
 		weight = 120,
 		stack = true,
@@ -3912,7 +3822,7 @@ return {
 
 	},
 
-	['vin_rouge'] = {
+	['redwine'] = {
 		label = 'vin rouge',
 		weight = 120,
 		stack = true,
@@ -4052,14 +3962,6 @@ return {
 
 	},
 
-	['coffeebean'] = {
-		label = 'graine de café',
-		weight = 10,
-		stack = true,
-		close = true,
-
-	},
-
 	['agave'] = {
 		label = 'agave',
 		weight = 10,
@@ -4157,22 +4059,6 @@ return {
 	['sakuraloyaltycard'] = {
 		label = 'cdf sakura',
 		weight = 10,
-		stack = true,
-		close = true,
-
-	},
-
-	['tealeaf'] = {
-		label = 'feuille de thé',
-		weight = 10,
-		stack = true,
-		close = true,
-
-	},
-
-	['cubalibre'] = {
-		label = 'cuba libre',
-		weight = 750,
 		stack = true,
 		close = true,
 
@@ -5526,10 +5412,6 @@ return {
 		weight = 10000,
 		stack = false
 	},
-    ["sojaseed"] = {
-		label = "Graine de Soja",
-		weight = 100,
-	},
     ['mechanic_tools'] = {
         label = 'Mechanic Tools',
         weight = 1000,
@@ -6730,7 +6612,7 @@ return {
     ["pickaxe"] = {
 		label = "Pioche",
 		weight = 1000,
-		stack = true,
+		stack = false,
 		close = false,
         consume = 0,
 	},
@@ -7312,5 +7194,442 @@ return {
         client = {
             export = "MyCity_CoreV2.placeProp"
         }
+	},
+
+    ['taxiticket'] = {
+		label = 'Ticket Taxi',
+		weight = 1,
+		stack = true,
+	},
+
+    ['restaurationticket'] = {
+		label = 'Ticket Restaurant',
+		weight = 1,
+		stack = true,
+	},
+
+    ['healticket'] = {
+		label = 'Ticket Soins',
+		weight = 1,
+		stack = true,
+	},
+
+    ['reparationticket'] = {
+		label = 'Ticket Réparation',
+		weight = 1,
+		stack = true,
+	},
+
+	['diabolapizza'] = {
+		label = 'Pizza Diabola',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['bolognesepizza'] = {
+		label = 'Pizza Bolognaise',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['lasagna'] = {
+		label = 'lasagnes',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['carbonarapasta'] = {
+		label = 'Pâtes Carbonara',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+
+	['heartstopper'] = {
+		label = 'HeartStopper',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['bleeder'] = {
+		label = 'Bleeder',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['meatfree'] = {
+		label = 'MeatFree',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['moneyshot'] = {
+		label = 'MoneyShot',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+
+	['kasburger'] = {
+		label = 'KAS Burger',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['chickenskewer'] = {
+		label = 'Brochette de Poulet',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['sunday'] = {
+		label = 'Sunday',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+
+	['americanchickensandwich'] = {
+		label = 'Américain Poulet',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['americantunasandwich'] = {
+		label = 'Américain Thon',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['vegetariansandwich'] = {
+		label = 'Le Végétarien',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['chefspecialsandwich'] = {
+		label = 'Le Spécial du Chef',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['doubleicecream'] = {
+		label = 'Glace Deux Boules',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['waffle'] = {
+		label = 'Gauffre',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+	['churros'] = {
+		label = 'Chichis',
+		weight = 1000,
+		stack = true,
+		degrade = 4320,
+	},
+
+	['mezcal'] = {
+		label = 'Mezcal',
+		weight = 750,
+		stack = true
+	},
+
+	['sexandthedivincocktail'] = {
+		label = 'Sex and the Divin',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['whiskycocacocktail'] = {
+		label = 'Whisy-Coca',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['fruitcocktail'] = {
+		label = 'Cocktail de Fruits',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['tontoncocktail'] = {
+		label = 'Le Tonton',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+
+	['foxcocktail'] = {
+		label = 'Le Fox',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['texasteqcocktail'] = {
+		label = 'Le Texas Teq\'',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['birdcocktail'] = {
+		label = 'Le Bird',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['cowboycocktail'] = {
+		label = 'Le Cowboy',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['jesstoniccocktail'] = {
+		label = 'Le Jess\'Tonic',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['bouboucocktail'] = {
+		label = 'Le Boubou',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['prospectcocktail'] = {
+		label = 'Le Prospect',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['skyappelcocktail'] = {
+		label = 'Le Sky\' Appel',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['orgasmcocktail'] = {
+		label = 'Orgasme',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['sexonthebeachcocktail'] = {
+		label = 'Sex On The Beach',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['energyvodkacocktail'] = {
+		label = 'Energy Vodka',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['pinacoladaorangecocktail'] = {
+		label = 'Pina Colada Orange',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['cubalibrecocktail'] = {
+		label = 'cuba libre',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['jagerbombcocktail'] = {
+		label = 'jägerbomb',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['mojitococktail'] = {
+		label = 'jägerbomb',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+
+	['margaritacocktail'] = {
+		label = 'margarita',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+
+	['tequilasunrisecocktail'] = {
+		label = 'tequila sunrise',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+
+	['codawncocktail'] = {
+		label = 'CoDAWN !',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+
+	['tequilabinousecocktail'] = {
+		label = 'tequila binouse',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+
+	['palomacocktail'] = {
+		label = 'Paloma',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['micheladacocktail'] = {
+		label = 'Michelada',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['mezcalmulecocktail'] = {
+		label = 'Mezcal Mule',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['horchatacocktail'] = {
+		label = 'Horchata',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+	['vampirococktail'] = {
+		label = 'Vampiro',
+		weight = 750,
+		stack = true,
+		close = true,
+	},
+
+    ['potato'] = {
+		label = 'pomme de terre',
+		weight = 125,
+		stack = true,
+	},
+
+	['milk'] = {
+		label = 'lait',
+		weight = 130,
+		stack = true,
+		close = true,
+	},
+
+	['tomato'] = {
+		label = 'tomate',
+		weight = 120,
+		stack = true,
+		close = true,
+	},
+
+    ['wheatseed'] = {
+		label = 'Graine de Blé',
+		weight = 130,
+		stack = true,
+	},
+    ['maltseed'] = {
+		label = 'Graine de Malt',
+		weight = 130,
+		stack = true,
+	},
+    ['riceseed'] = {
+		label = 'Riz Germé',
+		weight = 130,
+		stack = true,
+	},
+    ['potatoseed'] = {
+		label = 'Pomme de Terre Germée',
+		weight = 130,
+		stack = true,
+	},
+    ['sojaseed'] = {
+		label = 'Graine de Soja',
+		weight = 130,
+		stack = true,
+	},
+    ['tomatoseed'] = {
+		label = 'Graine de Tomates',
+		weight = 130,
+		stack = true,
+	},
+    ['saladseed'] = {
+		label = 'Pousse de Salade',
+		weight = 130,
+		stack = true,
+	},
+    ['sugarcaneseed'] = {
+		label = 'Graine de Canne à Sucre',
+		weight = 130,
+		stack = true,
+	},
+    ['agaveseed'] = {
+		label = 'Graine d\'Agave',
+		weight = 130,
+		stack = true,
+	},
+    ['coffeeseed'] = {
+		label = 'Graine de Café',
+		weight = 130,
+		stack = true,
+	},
+    ['teaseed'] = {
+		label = 'Graine de Thé',
+		weight = 130,
+		stack = true,
+	},
+    ['coffeebean'] = {
+		label = 'grain de café',
+		weight = 10,
+		stack = true,
+		close = true,
+	},
+    ['tealeaf'] = {
+		label = 'feuille de thé',
+		weight = 10,
+		stack = true,
+		close = true,
+	},
+
+	['wheat'] = {
+		label = 'blé',
+		weight = 130,
+		stack = true,
+	},
+
+	['salad'] = {
+		label = 'salade',
+		weight = 130,
+		stack = true,
+	},
+
+	['soja'] = {
+		label = 'soja',
+		weight = 100,
+		stack = true,
+	},
+
+	['flour'] = {
+		label = 'farine',
+		weight = 100,
+		stack = true,
+		close = true,
+	},
+
+	['bread'] = {
+		label = 'pain',
+		weight = 120,
+		stack = true,
+		close = true,
 	},
 }

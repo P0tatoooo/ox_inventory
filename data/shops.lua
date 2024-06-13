@@ -247,6 +247,26 @@ return {
 		}
 	},
 
+    GovernmentTickets = {
+		name = 'Gouvernement',
+		groups = {
+			['government'] = 0
+		},
+		--[[blip = {
+			id = 403, colour = 69, scale = 0.8
+		},]] inventory = {
+			{ name = 'taxiticket', price = 0 },
+			{ name = 'restaurationticket', price = 0 },
+			{ name = 'healticket', price = 0 },
+			{ name = 'reparationticket', price = 0 },
+		}, locations = {
+			vec3(-550.720886, -204.145050, 38.210205),
+            vec3(-542.057129, -199.239563, 38.210205),
+		}, targets = {
+
+		}
+	},
+
 	Fisherman = {
 		name = 'Pêcheur',
 		--[[blip = {
