@@ -1,4 +1,65 @@
 return {
+    RestaurantsShop = {
+		name = 'Transistep PNJ',
+		--[[blip = {
+			id = 93, colour = 69, scale = 0.8
+		},]] inventory = {
+			{ name = 'cream', price = 0 },
+			{ name = 'cheese', price = 0 },
+			{ name = 'flour', price = 0 },
+			{ name = 'bread', price = 0 },
+			{ name = 'chips', price = 0 },
+            { name = 'sugar', price = 0 },
+            { name = 'packaged_meat', price = 0 },
+            { name = 'packaged_chicken', price = 0 },
+			{ name = 'salami', price = 0 },
+			{ name = 'grapejuice', price = 0 },
+			{ name = 'cola', price = 0 },
+			{ name = 'soda', price = 0 },
+            { name = 'icetea', price = 0 },
+			{ name = 'limonade', price = 0 },
+			{ name = 'energydrink', price = 0 },
+			{ name = 'redwine', price = 0 },
+            { name = 'whitewine', price = 0 },
+            { name = 'champagne', price = 0 },
+            { name = 'beer', price = 0 },
+            { name = 'guinness', price = 0 },
+            { name = 'whisky', price = 0 },
+            { name = "rhum", price = 0 },
+            { name = "vodka", price = 0 },
+            { name = "tequila", price = 0 },
+            { name = "mezcal", price = 0 },
+            { name = "gin", price = 0 },
+            { name = "jagermeister", price = 0 },
+            { name = "absinthe", price = 0 },
+            { name = "cointreau", price = 0 },
+            { name = "baileys", price = 0 },
+            { name = "sake", price = 0 },
+            { name = "wheat", price = 0 },
+            { name = "malt", price = 0 },
+            { name = "rice", price = 0 },
+            { name = "potato", price = 0 },
+            { name = "soja", price = 0 },
+            { name = "tomato", price = 0 },
+            { name = "salad", price = 0 },
+            { name = "sugarcane", price = 0 },
+            { name = "agave", price = 0 },
+            { name = "coffeebean", price = 0 },
+            { name = "tealeaf", price = 0 },
+		}, locations = {
+            vec3(129.11, -1283.58, 29.26),
+            vec3(125.841759, -1036.800049, 29.263062),
+            vec3(-305.736267, 6267.890137, 31.520874),
+            vec3(413.010986, -1499.498901, 30.139160),
+            vec3(-1190.188965, -896.901123, 13.794922),
+            vec3(812.136292, -754.694519, 26.769287),
+            vec3(-584.901123, -884.545044, 25.994141)
+
+		}, targets = {
+			--{ loc = vector3(-90.90401, 25.78275, 71.95428), length = 0.5, width = 0.5, heading = 96.0, minZ = 71.5, maxZ = 72.5, distance = 1.5 },
+		}
+	},
+
     DigitalDen = {
 		name = 'Digital Den',
 		--[[blip = {

@@ -223,16 +223,12 @@ return {
 		stack = true,
 		close = true,
         client = {
-            status = { thirst = 80},
-            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-            prop = {
-                model = 'prop_cs_burger_01',
-                pos = { x = 0.02, y = 0.02, y = -0.02},
-                rot = { x = 0.0, y = 0.0, y = 0.0}
-            },
-            usetime = 2500,
-        }
-
+			status = { thirst = 80 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 
 	['absinthe'] = {
@@ -2168,7 +2164,7 @@ return {
 	},
 
 	['ikealoyaltycard'] = {
-		label = 'cdf ikea',
+		label = 'cdf youtool',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -2176,7 +2172,7 @@ return {
 	},
 
 	['ikealoyaltycard0'] = {
-		label = 'cdf ikea - 1 point',
+		label = 'cdf youtool - 1 point',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -2184,7 +2180,7 @@ return {
 	},
 
 	['ikealoyaltycard1'] = {
-		label = 'cdf ikea - 2 points',
+		label = 'cdf youtool - 2 points',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -2192,7 +2188,7 @@ return {
 	},
 
 	['ikealoyaltycard2'] = {
-		label = 'cdf ikea - 3 points',
+		label = 'cdf youtool - 3 points',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -2200,7 +2196,7 @@ return {
 	},
 
 	['ikealoyaltycard3'] = {
-		label = 'cdf ikea - 4 points',
+		label = 'cdf youtool - 4 points',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -2208,7 +2204,7 @@ return {
 	},
 
 	['ikealoyaltycard4'] = {
-		label = 'cdf ikea - 5 points',
+		label = 'cdf youtool - 5 points',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -2216,7 +2212,7 @@ return {
 	},
 
 	['ikealoyaltycard5'] = {
-		label = 'cdf ikea - 6 points',
+		label = 'cdf youtool - 6 points',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -2224,7 +2220,7 @@ return {
 	},
 
 	['ikealoyaltycard6'] = {
-		label = 'cdf ikea - 7 points',
+		label = 'cdf youtool - 7 points',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -2232,7 +2228,7 @@ return {
 	},
 
 	['ikealoyaltycard7'] = {
-		label = 'cdf ikea - 8 points',
+		label = 'cdf youtool - 8 points',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -2240,7 +2236,7 @@ return {
 	},
 
 	['ikealoyaltycard8'] = {
-		label = 'cdf ikea - 9 points',
+		label = 'cdf youtool - 9 points',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -2248,7 +2244,7 @@ return {
 	},
 
 	['ikealoyaltycard9'] = {
-		label = 'cdf ikea - 10 points',
+		label = 'cdf youtool - 10 points',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -3265,7 +3261,17 @@ return {
 		weight = 500,
 		stack = true,
 		close = true,
-		degrade = 4320
+		degrade = 4320,
+        client = {
+            status = { hunger = 20 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['sawnoffshotgun'] = {
@@ -3674,31 +3680,7 @@ return {
 
 	},
 
-	['tendersbucket'] = {
-		label = 'bucket tenders',
-		weight = 100,
-		stack = true,
-		close = true,
-		degrade = 4320
-	},
 
-	['tendersbucketmenu'] = {
-		label = 'menu bucket tenders',
-		weight = 100,
-		stack = true,
-		close = true,
-		degrade = 4320,
-        client = {
-            status = { hunger = 80, thirst = 80 },
-            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-            prop = {
-                model = 'prop_cs_burger_01',
-                pos = { x = 0.02, y = 0.02, y = -0.02},
-                rot = { x = 0.0, y = 0.0, y = 0.0}
-            },
-            usetime = 2500,
-        }
-	},
 
 	['tequila'] = {
 		label = 'tequila',
@@ -6577,7 +6559,7 @@ return {
     },
 
     ["posterremover"] = {
-        label = "Raclette",
+        label = "Spatule",
         weight = 360,
     },
 
@@ -7225,24 +7207,64 @@ return {
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['bolognesepizza'] = {
 		label = 'Pizza Bolognaise',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['lasagna'] = {
 		label = 'lasagnes',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['carbonarapasta'] = {
 		label = 'Pâtes Carbonara',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['heartstopper'] = {
@@ -7250,24 +7272,64 @@ return {
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['bleeder'] = {
 		label = 'Bleeder',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['meatfree'] = {
 		label = 'MeatFree',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['moneyshot'] = {
 		label = 'MoneyShot',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['kasburger'] = {
@@ -7275,18 +7337,65 @@ return {
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
+	},
+    ['tendersbucket'] = {
+		label = 'bucket tenders',
+		weight = 100,
+		stack = true,
+		close = true,
+		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['chickenskewer'] = {
 		label = 'Brochette de Poulet',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['sunday'] = {
 		label = 'Sunday',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 20 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['americanchickensandwich'] = {
@@ -7294,48 +7403,125 @@ return {
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['americantunasandwich'] = {
 		label = 'Américain Thon',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['vegetariansandwich'] = {
 		label = 'Le Végétarien',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['chefspecialsandwich'] = {
 		label = 'Le Spécial du Chef',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['doubleicecream'] = {
 		label = 'Glace Deux Boules',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 20 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['waffle'] = {
 		label = 'Gauffre',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 20 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 	['churros'] = {
 		label = 'Chichis',
 		weight = 1000,
 		stack = true,
 		degrade = 4320,
+        client = {
+            status = { hunger = 80 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = {
+                model = 'prop_cs_burger_01',
+                pos = { x = 0.02, y = 0.02, y = -0.02},
+                rot = { x = 0.0, y = 0.0, y = 0.0}
+            },
+            usetime = 2500,
+        }
 	},
 
 	['mezcal'] = {
 		label = 'Mezcal',
 		weight = 750,
-		stack = true
+		stack = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 
 	['sexandthedivincocktail'] = {
@@ -7343,24 +7529,52 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['whiskycocacocktail'] = {
 		label = 'Whisy-Coca',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['fruitcocktail'] = {
 		label = 'Cocktail de Fruits',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['tontoncocktail'] = {
 		label = 'Le Tonton',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 
 	['foxcocktail'] = {
@@ -7368,90 +7582,195 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['texasteqcocktail'] = {
 		label = 'Le Texas Teq\'',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['birdcocktail'] = {
 		label = 'Le Bird',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['cowboycocktail'] = {
 		label = 'Le Cowboy',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['jesstoniccocktail'] = {
 		label = 'Le Jess\'Tonic',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['bouboucocktail'] = {
 		label = 'Le Boubou',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['prospectcocktail'] = {
 		label = 'Le Prospect',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['skyappelcocktail'] = {
 		label = 'Le Sky\' Appel',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['orgasmcocktail'] = {
 		label = 'Orgasme',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['sexonthebeachcocktail'] = {
 		label = 'Sex On The Beach',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['energyvodkacocktail'] = {
 		label = 'Energy Vodka',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['pinacoladaorangecocktail'] = {
 		label = 'Pina Colada Orange',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['cubalibrecocktail'] = {
 		label = 'cuba libre',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['jagerbombcocktail'] = {
 		label = 'jägerbomb',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['mojitococktail'] = {
 		label = 'jägerbomb',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 
 	['margaritacocktail'] = {
@@ -7459,6 +7778,13 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 
 	['tequilasunrisecocktail'] = {
@@ -7466,6 +7792,13 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 
 	['codawncocktail'] = {
@@ -7473,6 +7806,13 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 
 	['tequilabinousecocktail'] = {
@@ -7480,6 +7820,13 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 
 	['palomacocktail'] = {
@@ -7487,30 +7834,65 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['micheladacocktail'] = {
 		label = 'Michelada',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['mezcalmulecocktail'] = {
 		label = 'Mezcal Mule',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['horchatacocktail'] = {
 		label = 'Horchata',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 	['vampirococktail'] = {
 		label = 'Vampiro',
 		weight = 750,
 		stack = true,
 		close = true,
+        client = {
+			status = { thirst = 20 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			notification = 'You quenched your thirst with a sprunk'
+		}
 	},
 
     ['potato'] = {
