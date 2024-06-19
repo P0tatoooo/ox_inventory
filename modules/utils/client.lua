@@ -58,7 +58,7 @@ function Utils.GetClosestPlayer()
             local ped = GetPlayerPed(player)
             local distance = #(playerCoords - GetEntityCoords(ped))
 
-            if distance < (targetDistance or 2) then
+            if distance < (targetDistance or 2) and IsEntityVisible(ped) then
                 targetDistance = distance
                 targetId = player
                 targetPed = ped

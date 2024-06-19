@@ -4,6 +4,9 @@ return {
 		--[[blip = {
 			id = 93, colour = 69, scale = 0.8
 		},]] inventory = {
+            { name = 'apple', price = 0 },
+            { name = 'orange', price = 0 },
+            { name = 'lime', price = 0 },
 			{ name = 'cream', price = 0 },
 			{ name = 'cheese', price = 0 },
 			{ name = 'flour', price = 0 },
@@ -13,12 +16,14 @@ return {
             { name = 'packaged_meat', price = 0 },
             { name = 'packaged_chicken', price = 0 },
 			{ name = 'salami', price = 0 },
+
 			{ name = 'grapejuice', price = 0 },
 			{ name = 'cola', price = 0 },
 			{ name = 'soda', price = 0 },
             { name = 'icetea', price = 0 },
 			{ name = 'limonade', price = 0 },
 			{ name = 'energydrink', price = 0 },
+
 			{ name = 'redwine', price = 0 },
             { name = 'whitewine', price = 0 },
             { name = 'champagne', price = 0 },
@@ -35,6 +40,7 @@ return {
             { name = "cointreau", price = 0 },
             { name = "baileys", price = 0 },
             { name = "sake", price = 0 },
+			
             { name = "wheat", price = 0 },
             { name = "malt", price = 0 },
             { name = "rice", price = 0 },
@@ -130,48 +136,6 @@ return {
 			{ loc = vec3(373.13, 326.29, 103.57), length = 0.6, width = 0.5, heading = 345.0, minZ = 103.57, maxZ = 103.97, distance = 1.5 },
 		}]]
 	},
-
-	Liquor = {
-		name = 'Supérette',
-		--[[blip = {
-			id = 93, colour = 69, scale = 0.8
-		},]] inventory = {
-			{ name = 'donut', price = 100 },
-			{ name = 'water', price = 50 },
-			{ name = 'football', price = 1000 },
-			{ name = 'basketball', price = 1000 },
-			{ name = 'rugby', price = 1000 },
-			{ name = 'baseball', price = 1000 },
-			{ name = 'skateboard', price = 1000 },
-			{ name = 'spray', price = 1000 },
-			{ name = 'notepad', price = 1000 },
-			{ name = 'notebook', price = 1000 },
-			{ name = 'boombox', price = 1000 }
-		}, locations = {
-			vec3(1135.808, -982.281, 46.415),
-			vec3(-1222.915, -906.983, 12.326),
-			vec3(-1487.553, -379.107, 40.163),
-			vec3(-2968.243, 390.910, 15.043),
-			vec3(1166.024, 2708.930, 38.157),
-			vec3(1392.562, 3604.684, 34.980),
-			vec3(-1393.409, -606.624, 30.319)
-		}, targets = {
-		}
-	},
-
-	--[[YouTool = {
-		name = 'YouTool',
-		blip = {
-			id = 402, colour = 69, scale = 0.8
-		}, inventory = {
-			{ name = 'lockpick', price = 10 }
-		}, locations = {
-			vec3(2748.0, 3473.0, 55.67),
-			vec3(342.99, -1298.26, 32.51)
-		}, targets = {
-			{ loc = vec3(2746.8, 3473.13, 55.67), length = 0.6, width = 3.0, heading = 65.0, minZ = 55.0, maxZ = 56.8, distance = 3.0 }
-		}
-	},]]
 
 	Ammunation = {
 		name = 'Ammunation',
