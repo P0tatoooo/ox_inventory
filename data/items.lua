@@ -284,6 +284,14 @@ return {
 
 	},
 
+    ['antidizziness'] = {
+		label = 'antivertigineux',
+		weight = 100,
+		stack = true,
+		close = true,
+
+	},
+
 	['apple'] = {
 		label = 'pomme',
 		weight = 100,

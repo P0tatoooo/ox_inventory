@@ -40,7 +40,7 @@ return {
             { name = "cointreau", price = 0 },
             { name = "baileys", price = 0 },
             { name = "sake", price = 0 },
-			
+
             { name = "wheat", price = 0 },
             { name = "malt", price = 0 },
             { name = "rice", price = 0 },
@@ -273,6 +273,7 @@ return {
 			{ name = 'painkiller', price = 0 },
 			{ name = 'antiinflammatory', price = 0 },
 			{ name = 'antibiotic', price = 0 },
+            { name = 'antidizziness', price = 0 },
 			{ name = 'crutches', price = 0 },
 			{ name = 'wheelchair', price = 0 },
 			{ name = 'cone', price = 0 },
