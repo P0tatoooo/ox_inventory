@@ -80,7 +80,7 @@
   "open_secondary_inventory": "Ouverture de l’inventaire secondaire~",
   "disable_hotbar": "Afficher les raccourcis de l’inventaire~",
   "reload_weapon": "Recharger l’arme~",
-  "use_hotbar": "Utiliser l’objet du racccourci %s~",
+  "use_hotbar": "Racccourci Inventaire %s~",
   "no_durability": "La durabilité de l'item a expiré",
   "cannot_give": "Impossible de donner %s %s à cet inventaire",
   "evidence_cannot_take": "Votre grade ne vous permet pas de récupérer des preuves",

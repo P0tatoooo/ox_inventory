@@ -943,6 +943,8 @@ local function registerCommands()
 		end
 	})
 
+    RegisterKeyMapping('reloadweapon', 'Recharger l\'arme - Manette', 'PAD_ANALOGBUTTON', 'RRIGHT_INDEX')
+
 	lib.addKeybind({
 		name = 'hotbar',
 		description = locale('disable_hotbar'),
@@ -963,6 +965,7 @@ local function registerCommands()
 				useSlot(i)
 			end
 		})
+        RegisterKeyMapping(('hotkey%s'):format(i), "Raccourci Inventaire " .. i .. " Manette", 'PAD_ANALOGBUTTON', '')
 	end
 
 	registerCommands = nil
