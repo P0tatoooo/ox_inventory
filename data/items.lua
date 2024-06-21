@@ -1710,36 +1710,6 @@ return {
             weight = 1000,
             stack = false,
     },
-    ['stock_suspension'] = {
-            label = 'Race Suspension',
-            weight = 1000,
-            stack = false,
-    },
-    ['race_suspension'] = {
-            label = 'Race Suspension',
-            weight = 1000,
-            stack = false,
-    },
-    ['michelin_tires'] = {
-            label = 'Michelin Tires',
-            weight = 1000,
-            stack = false,
-    },
-    ['race_brakes'] = {
-            label = 'Race Breaks',
-            weight = 1000,
-            stack = false,
-    },
-    ['stock_oil'] = {
-            label = 'Stock Oil',
-            weight = 1000,
-            stack = false,
-    },
-    ['shell_oil'] = {
-            label = 'Shell Oil',
-            weight = 1000,
-            stack = false,
-    },
     ['stock_engine'] = {
             label = 'Stock Engine',
             weight = 1000,
@@ -1811,32 +1781,52 @@ return {
             stack = false,
     },
     ['stock_tires'] = {
-            label = 'Stock Tires',
+            label = 'Pneus',
             weight = 1000,
             stack = false,
     },
-    ['michelin_tires'] = {
-            label = 'Michelin Tires',
-            weight = 1000,
-            stack = false,
-    },
+    ['atomic_tires'] = {
+        label = 'Pneus Atomic',
+        weight = 1000,
+        stack = false,
+},
     ['stock_brakes'] = {
             label = 'Stock Brakes',
             weight = 1000,
             stack = false,
     },
     ['race_brakes'] = {
-            label = 'Race Brakes',
+            label = 'Freins de Course',
             weight = 1000,
             stack = false,
     },
     ['stock_sparkplugs'] = {
-            label = 'Stock Sparkplugs',
+            label = 'Bougies',
             weight = 1000,
             stack = false,
     },
-    ['ngk_sparkplugs'] = {
-            label = 'NGK Sparkplugs',
+    ['atomic_sparkplugs'] = {
+            label = 'Bougies Atomic',
+            weight = 1000,
+            stack = false,
+    },
+    ['stock_suspension'] = {
+        label = 'Race Suspension',
+        weight = 1000,
+        stack = false,
+    },
+    ['race_suspension'] = {
+            label = 'Race Suspension',
+            weight = 1000,
+            stack = false,
+    },
+    ['stock_oil'] = {
+            label = 'Stock Oil',
+            weight = 1000,
+            stack = false,
+    },
+    ['atomic_oil'] = {
+            label = 'Huile Atomic',
             weight = 1000,
             stack = false,
     },
