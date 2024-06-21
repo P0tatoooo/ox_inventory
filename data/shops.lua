@@ -137,11 +137,9 @@ return {
 		}]]
 	},
 
-	Ammunation = {
+	--[[Ammunation = {
 		name = 'Ammunation',
-		--[[blip = {
-			id = 110, colour = 1, scale = 0.7
-		},]] inventory = {
+		inventory = {
             { name = 'WEAPON_FLASHLIGHT', price = 3000 },
 			{ name = 'WEAPON_BAT', price = 3000 },
             { name = 'WEAPON_POOLCUE', price = 3000 },
@@ -162,7 +160,7 @@ return {
             vec3(841.186829, -1028.967041, 28.184570),
 		}, targets = {
 		}
-	},
+	},]]
 
 	PoliceArmoury = {
 		name = 'Armurerie LSPD',
