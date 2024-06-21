@@ -307,17 +307,15 @@ return {
 		}
 	},
 
-	Fisherman = {
+	--[[Fisherman = {
 		name = 'Pêcheur',
-		--[[blip = {
-			id = 59, colour = 69, scale = 0.8
-		},]] inventory = {
+		inventory = {
 			{ name = 'fishing_rod', price = 1000 },
             { name = 'divinggear', price = 2000}
 		}, locations = {
 			vector3(-3418.335, 970.5667, 11.93619)
 		}
-	},
+	},]]
 
 	Illegal_BlackMarket = {
 		name = 'Black Market',
@@ -339,7 +337,7 @@ return {
 		}
 	},
 
-	Illegal_Fisherman = {
+	--[[Illegal_Fisherman = {
 		name = 'Pêcheur',
 		inventory = {
 			{ name = 'reinforced_fishing_rod', price = 5000, currency = 'black_money' }
@@ -348,7 +346,7 @@ return {
 		}, targets = {
 
 		}
-	},
+	},]]
 
 	VendingMachineDrinks = {
 		name = 'Vending Machine',
