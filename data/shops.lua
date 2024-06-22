@@ -251,6 +251,8 @@ return {
 			id = 403, colour = 69, scale = 0.8
 		},]] inventory = {
 			{ name = 'id_card', price = 0 },
+            { name = 'driver_license', price = 0 },
+            { name = 'cc_license', price = 0 },
 		}, locations = {
 			vec3(448.246155, -981.389038, 31.773682),
 		}, targets = {
