@@ -1927,6 +1927,12 @@ return {
             end
         }
     },
+    ['bank_card'] = {
+		label = 'Carte Bancaire',
+		weight = 100,
+		stack = false,
+        close = true,
+	},
     ["spikestrip"] = {
         label = "Herse",
         weight = 500,
