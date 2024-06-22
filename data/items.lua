@@ -55,6 +55,7 @@ return {
 	['bandage'] = {
 		label = 'Bandage',
 		weight = 115,
+		stack = true,
 		client = {
 			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
 			prop = { model = 'prop_rolled_sock_02', pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
@@ -69,7 +70,7 @@ return {
 
 	['sprunk'] = {
 		label = 'Sprunk',
-		weight = 350,
+		weight = 450,
 		client = {
 			status = { thirst = 80 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
@@ -80,7 +81,7 @@ return {
 
 	['soda'] = {
 		label = 'Soda',
-		weight = 350,
+		weight = 450,
 		stack = true,
 		client = {
 			status = { thirst = 60 },
@@ -92,7 +93,7 @@ return {
 
 	['parachute'] = {
 		label = 'Parachute',
-		weight = 8000,
+		weight = 3000,
 		stack = false,
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
@@ -163,7 +164,7 @@ return {
 
 	['lockpick'] = {
 		label = 'Tournevis Multi-Fonctions',
-		weight = 160,
+		weight = 260,
 		consume = 0,
         stack = false
 	},
@@ -175,7 +176,7 @@ return {
 
 	['water'] = {
 		label = 'Bouteille d\'eau',
-		weight = 750,
+		weight = 450,
 		stack = true,
 		close = true,
         client = {
@@ -263,14 +264,14 @@ return {
 
 	['animalfoodbag'] = {
 		label = 'nourriture pour animaux',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['antibiotic'] = {
 		label = 'antibiotique',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 
@@ -278,7 +279,7 @@ return {
 
 	['antiinflammatory'] = {
 		label = 'anti-inflammatoires',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 
@@ -294,7 +295,7 @@ return {
 
 	['apple'] = {
 		label = 'pomme',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 
@@ -302,7 +303,7 @@ return {
 
 	['argent_sale'] = {
 		label = 'argent sale',
-		weight = 1,
+		weight = 0.1,
 		stack = true,
 		close = true,
 	},
@@ -350,7 +351,7 @@ return {
 
 	['binoculars'] = {
 		label = 'jumelles',
-		weight = 800,
+		weight = 1000,
 		stack = true,
 		close = true,
 	},
@@ -369,7 +370,7 @@ return {
 
 	['bluefin_tuna'] = {
 		label = 'thon rouge',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 	},
@@ -383,7 +384,7 @@ return {
 
 	['bulletproof'] = {
 		label = 'gilet pare-balles',
-		weight = 2000,
+		weight = 4000,
 		stack = false,
 		close = true,
         consume = 0,
@@ -409,14 +410,14 @@ return {
 
 	['candies'] = {
 		label = 'bonbons',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['canesyrup'] = {
 		label = 'sirop de canne',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 
@@ -480,7 +481,7 @@ return {
 
 	['champagne'] = {
 		label = 'champagne',
-		weight = 750,
+		weight = 950,
 		stack = true,
 		close = true,
 		client = {
@@ -502,14 +503,14 @@ return {
 
 	['cheese'] = {
 		label = 'fromage',
-		weight = 100,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	['chemicals'] = {
 		label = 'produit chimique',
-		weight = 100,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
@@ -524,7 +525,7 @@ return {
 
 	['cigar'] = {
 		label = 'cigare',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 
@@ -532,14 +533,14 @@ return {
 
 	['cigarettementhol'] = {
 		label = 'cigarette menthol',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['cola'] = {
 		label = 'cola',
-		weight = 750,
+		weight = 450,
 		stack = true,
 		close = true,
 		degrade = 4320,
@@ -553,7 +554,7 @@ return {
 
 	['coca_leaf'] = {
 		label = 'feuille de coca',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 
@@ -561,7 +562,7 @@ return {
 
 	['coffee'] = {
 		label = 'café',
-		weight = 750,
+		weight = 450,
 		stack = true,
 		close = true,
 		degrade = 4320
@@ -569,7 +570,7 @@ return {
 
 	['coffeemachine'] = {
 		label = 'machine à café',
-		weight = 3000,
+		weight = 6000,
 		stack = true,
 		close = true,
 
@@ -590,7 +591,7 @@ return {
 
 	['coke'] = {
 		label = 'cocaine',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 	},
@@ -605,7 +606,7 @@ return {
 
 	['combatpistol'] = {
 		label = 'pistolet de combat désarmé',
-		weight = 1500,
+		weight = 2500,
 		stack = true,
 		close = true,
 
@@ -620,7 +621,7 @@ return {
 
 	['crack'] = {
 		label = 'pochon de crack',
-		weight = 1,
+		weight = 200,
 		stack = true,
 		close = true,
 	},
@@ -657,14 +658,14 @@ return {
 
 	['digitaltablet'] = {
 		label = 'tablette numérique',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['donut'] = {
 		label = 'donut',
-		weight = 500,
+		weight = 700,
 		stack = true,
 		close = true,
 		degrade = 4320,
@@ -682,7 +683,7 @@ return {
 
 	['drill'] = {
 		label = 'perceuse',
-		weight = 1000,
+		weight = 1500,
 		stack = true,
 		close = true,
 
@@ -698,7 +699,7 @@ return {
 
 	['energydrink'] = {
 		label = 'boisson energisante',
-		weight = 750,
+		weight = 450,
 		stack = true,
 		close = true,
 		client = {
@@ -719,7 +720,7 @@ return {
 
 	['fakeplate'] = {
 		label = 'fausse plaque',
-		weight = 200,
+		weight = 500,
 		stack = true,
 		close = true,
 
@@ -735,7 +736,7 @@ return {
 
 	['frenchfries'] = {
 		label = 'frites',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 		degrade = 4320
@@ -770,7 +771,7 @@ return {
 
 	['golf'] = {
 		label = 'balle de golf',
-		weight = 50,
+		weight = 100,
 		stack = true,
 		close = true,
 
@@ -778,7 +779,7 @@ return {
 
 	['golf_green'] = {
 		label = 'balle de golf (orange)',
-		weight = 50,
+		weight = 100,
 		stack = true,
 		close = true,
 
@@ -786,7 +787,7 @@ return {
 
 	['golf_pink'] = {
 		label = 'balle de golf (pink)',
-		weight = 50,
+		weight = 100,
 		stack = true,
 		close = true,
 
@@ -794,7 +795,7 @@ return {
 
 	['golf_yellow'] = {
 		label = 'balle de golf (yellow)',
-		weight = 50,
+		weight = 100,
 		stack = true,
 		close = true,
 
@@ -839,7 +840,7 @@ return {
 
 	['hood'] = {
 		label = 'cagoule',
-		weight = 2,
+		weight = 100,
 		stack = true,
 		close = true,
 
@@ -847,7 +848,7 @@ return {
 
 	['icetea'] = {
 		label = 'ice tea',
-		weight = 750,
+		weight = 450,
 		stack = true,
 		close = true,
 		client = {
@@ -860,7 +861,7 @@ return {
 
 	['grapejuice'] = {
 		label = 'jus de raisin',
-		weight = 750,
+		weight = 450,
 		stack = true,
 		close = true,
 		degrade = 4320,
@@ -874,7 +875,7 @@ return {
 
 	['kevlar'] = {
 		label = 'kevlar',
-		weight = 100,
+		weight = 300,
 		stack = true,
 		close = true,
 
@@ -882,7 +883,7 @@ return {
 
 	['laptop'] = {
 		label = 'ordinateur portable',
-		weight = 100,
+		weight = 300,
 		stack = true,
 		close = true,
 
@@ -898,7 +899,7 @@ return {
 
 	['limonade'] = {
 		label = 'limonade',
-		weight = 750,
+		weight = 450,
 		stack = true,
 		close = true,
 		client = {
@@ -919,7 +920,7 @@ return {
 
 	['machinepistol'] = {
 		label = 'tec-9 désarmé',
-		weight = 1500,
+		weight = 2000,
 		stack = true,
 		close = true,
 
@@ -958,14 +959,14 @@ return {
 
 	['meth'] = {
 		label = 'meth',
-		weight = 10,
+		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['microsmg'] = {
 		label = 'micro smg désarmé',
-		weight = 1500,
+		weight = 2500,
 		stack = true,
 		close = true,
 	},
@@ -980,7 +981,7 @@ return {
 
 	['minismg'] = {
 		label = 'mini smg désarmé',
-		weight = 1500,
+		weight = 2500,
 		stack = true,
 		close = true,
 	},
@@ -1002,7 +1003,7 @@ return {
 
 	['opium'] = {
 		label = 'opium',
-		weight = 10,
+		weight = 100,
 		stack = true,
 		close = true,
 
@@ -1018,7 +1019,7 @@ return {
 
 	['ore'] = {
 		label = 'minerai',
-		weight = 100,
+		weight = 150,
 		stack = true,
 		close = true,
 
@@ -1026,14 +1027,14 @@ return {
 
 	['divinggear'] = {
 		label = 'equipement de plongée',
-		weight = 1250,
+		weight = 1750,
 		stack = true,
 		close = true,
 	},
 
 	['packaged_chicken'] = {
 		label = 'barquette de poulet',
-		weight = 200,
+		weight = 250,
 		stack = true,
 		close = true,
 
@@ -1041,7 +1042,7 @@ return {
 
     ['packaged_fish'] = {
 		label = 'barquette de poisson',
-		weight = 200,
+		weight = 250,
 		stack = true,
 		close = true,
 
@@ -1070,14 +1071,14 @@ return {
 
     ['gas'] = {
 		label = 'essence',
-		weight = 1000,
+		weight = 800,
 		stack = true,
 		close = true,
 	},
 
 	['pistol'] = {
 		label = 'pistolet désarmé',
-		weight = 1500,
+		weight = 2000,
 		stack = true,
 		close = true,
 
@@ -1085,7 +1086,7 @@ return {
 
 	['pistol50'] = {
 		label = 'pistolet calibre .50 désarmé',
-		weight = 1500,
+		weight = 2000,
 		stack = true,
 		close = true,
 	},
@@ -1181,7 +1182,7 @@ return {
 
 	['salmon'] = {
 		label = 'saumon',
-		weight = 100,
+		weight = 150,
 		stack = true,
 		close = true,
 	},
@@ -1220,7 +1221,7 @@ return {
 
 	['shark_fin'] = {
 		label = 'aileron de requin',
-		weight = 500,
+		weight = 800,
 		stack = true,
 		close = true,
 
@@ -1255,7 +1256,7 @@ return {
 
 	['stingray'] = {
 		label = 'raie',
-		weight = 100,
+		weight = 500,
 		stack = true,
 		close = true,
 	},
@@ -1292,7 +1293,7 @@ return {
 
 	['television'] = {
 		label = 'télévision',
-		weight = 100,
+		weight = 1000,
 		stack = true,
 		close = true,
 	},
@@ -1312,28 +1313,28 @@ return {
 
 	['token'] = {
 		label = 'jeton',
-		weight = 0,
+		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	['tonic'] = {
 		label = 'soda tonic',
-		weight = 100,
+		weight = 750,
 		stack = true,
 		close = true,
 	},
 
 	['trout'] = {
 		label = 'truite',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['whitewine'] = {
 		label = 'vin blanc',
-		weight = 120,
+		weight = 850,
 		stack = true,
 		close = true,
 		client = {
@@ -1346,7 +1347,7 @@ return {
 
 	['redwine'] = {
 		label = 'vin rouge',
-		weight = 120,
+		weight = 850,
 		stack = true,
 		close = true,
 		client = {
@@ -1359,7 +1360,7 @@ return {
 
 	['vodka'] = {
 		label = 'vodka',
-		weight = 180,
+		weight = 850,
 		stack = true,
 		close = true,
 		client = {
@@ -1387,14 +1388,14 @@ return {
 
 	['wheelchair'] = {
 		label = 'fauteuil roulant',
-		weight = 100,
+		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	['whisky'] = {
 		label = 'whisky',
-		weight = 750,
+		weight = 850,
 		stack = true,
 		close = true,
 		client = {
@@ -1407,7 +1408,7 @@ return {
 
 	['white_seabass'] = {
 		label = 'bar blanc',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 
@@ -1446,7 +1447,7 @@ return {
 
 	['churros'] = {
 		label = 'churros',
-		weight = 250,
+		weight = 200,
 		stack = true,
 		close = true,
 		degrade = 4320
@@ -1462,7 +1463,7 @@ return {
 
 	['illegalcrate'] = {
 		label = 'caisse de contrebande',
-		weight = 1000,
+		weight = 2000,
 		stack = false,
 		close = true,
 
@@ -1470,14 +1471,14 @@ return {
 
 	['doubleaction'] = {
 		label = 'revolver double action désarmé',
-		weight = 1500,
+		weight = 2500,
 		stack = true,
 		close = true,
 	},
 
     ['enforcer'] = {
 		label = 'Bélier',
-		weight = 16000,
+		weight = 15000,
 		stack = false,
 		close = true,
 	},
@@ -1526,7 +1527,7 @@ return {
 
 	["wine"] = {
 		label = "Wine",
-		weight = 300,
+		weight = 800,
 		stack = true,
 		close = false,
 		description = "Some good wine to drink on a fine evening",
@@ -1584,7 +1585,7 @@ return {
 
 	["newscam"] = {
 		label = "News Camera",
-		weight = 100,
+		weight = 1000,
 		stack = false,
 		close = true,
 		description = "A camera for the news",
@@ -1595,7 +1596,7 @@ return {
 
 	["firstaidkit"] = {
 		label = "Kit Premier Secours",
-		weight = 250,
+		weight = 350,
 		stack = true,
 	},
 
@@ -1834,7 +1835,7 @@ return {
 
     ["camera"] = {
         label = "Appareil Photo",
-        weight = 4000,
+        weight = 1500,
         stack = false,
         close = true,
     },
@@ -1856,13 +1857,13 @@ return {
 
     ["notepad"] = {
 		label = "Carnet",
-		weight = 300,
+		weight = 200,
 		stack = false,
 		close = true
 	},
 	["note"] = {
 		label = "Note",
-		weight = 350,
+		weight = 150,
 		stack = false,
 		close = true
 	},
@@ -1874,7 +1875,7 @@ return {
 	},
     ["rope"] = {
 		label = "Corde",
-		weight = 100,
+		weight = 400,
 		stack = true,
         client = {
             export = "qb-policejob.cuffFromItem"
@@ -1929,20 +1930,20 @@ return {
     },
     ['bank_card'] = {
 		label = 'Carte Bancaire',
-		weight = 100,
+		weight = 10,
 		stack = false,
         close = true,
 	},
     ["spikestrip"] = {
         label = "Herse",
-        weight = 500,
+        weight = 750,
         client = {
             export = "qb-policejob.deploySpikestrip"
         }
     },
     ["ziptie"] = {
         label = "Serflex",
-        weight = 10,
+        weight = 30,
         stack = true,
         client = {
             export = "qb-policejob.cuffFromItem"
@@ -1950,27 +1951,27 @@ return {
     },
 	['id_card'] = {
 		label = 'Carte d\'identité',
-		weight = 100,
+		weight = 10,
 		stack = false,
         close = true,
 	},
 
 	["driver_license"] = {
 		label = "Permis de Conduire",
-		weight = 100,
+		weight = 10,
 		stack = false,
 		close = true,
 	},
 
     ["cc_license"] = {
 		label = "Permis de Port d'Armes",
-		weight = 100,
+		weight = 10,
 		stack = false,
 		close = true,
 	},
 	["lawyer_pass"] = {
 		label = "Carte d\'Avocat",
-		weight = 100,
+		weight = 10,
 		stack = false,
 		close = false
 	},
@@ -2042,7 +2043,7 @@ return {
 
     ["notebook"] = {
         label = "Cahier",
-        weight = 500,
+        weight = 200,
         stack = false,
     },
 
@@ -2084,7 +2085,7 @@ return {
 
     ['tape'] = {
 		label = 'Ruban adhésif',
-		weight = 100,
+		weight = 50,
 		stack = true
 	},
 
@@ -2102,12 +2103,12 @@ return {
 
     ['boombox'] = {
 		label = 'Enceinte',
-		weight = 1000,
+		weight = 1500,
 		stack = true
 	},
     ["poster"] = {
         label = "Poster",
-        weight = 360,
+        weight = 260,
     },
 
     ["posterremover"] = {
@@ -2216,7 +2217,7 @@ return {
 
     ['gazebotent'] = {
 		label = 'Tente Pliante',
-		weight = 1000,
+		weight = 2000,
 		stack = true,
 		close = true,
         client = {
@@ -2226,7 +2227,7 @@ return {
 
     ['worklight'] = {
 		label = 'Lampe de Chantier',
-		weight = 1000,
+		weight = 1500,
 		stack = true,
 		close = true,
         client = {
@@ -2406,7 +2407,7 @@ return {
 	},
     ['tendersbucket'] = {
 		label = 'bucket tenders',
-		weight = 100,
+		weight = 1000,
 		stack = true,
 		close = true,
 		degrade = 4320,
@@ -2937,77 +2938,77 @@ return {
 
     ['potato'] = {
 		label = 'pomme de terre',
-		weight = 125,
+		weight = 100,
 		stack = true,
 	},
 
 	['milk'] = {
 		label = 'lait',
-		weight = 130,
+		weight = 120,
 		stack = true,
 		close = true,
 	},
 
 	['tomato'] = {
 		label = 'tomate',
-		weight = 120,
+		weight = 90,
 		stack = true,
 		close = true,
 	},
 
     ['wheatseed'] = {
 		label = 'Graine de Blé',
-		weight = 130,
+		weight = 110,
 		stack = true,
 	},
     ['maltseed'] = {
 		label = 'Graine de Malt',
-		weight = 130,
+		weight = 120,
 		stack = true,
 	},
     ['riceseed'] = {
 		label = 'Riz Germé',
-		weight = 130,
+		weight = 140,
 		stack = true,
 	},
     ['potatoseed'] = {
 		label = 'Pomme de Terre Germée',
-		weight = 130,
+		weight = 140,
 		stack = true,
 	},
     ['sojaseed'] = {
 		label = 'Graine de Soja',
-		weight = 130,
+		weight = 140,
 		stack = true,
 	},
     ['tomatoseed'] = {
 		label = 'Graine de Tomates',
-		weight = 130,
+		weight = 140,
 		stack = true,
 	},
     ['saladseed'] = {
 		label = 'Pousse de Salade',
-		weight = 130,
+		weight = 140,
 		stack = true,
 	},
     ['sugarcaneseed'] = {
 		label = 'Graine de Canne à Sucre',
-		weight = 130,
+		weight = 140,
 		stack = true,
 	},
     ['agaveseed'] = {
 		label = 'Graine d\'Agave',
-		weight = 130,
+		weight = 140,
 		stack = true,
 	},
     ['coffeeseed'] = {
 		label = 'Graine de Café',
-		weight = 130,
+		weight = 140,
 		stack = true,
 	},
     ['teaseed'] = {
 		label = 'Graine de Thé',
-		weight = 130,
+		weight = 140,
 		stack = true,
 	},
     ['coffeebean'] = {
@@ -3025,19 +3026,19 @@ return {
 
 	['wheat'] = {
 		label = 'blé',
-		weight = 130,
+		weight = 140,
 		stack = true,
 	},
 
 	['salad'] = {
 		label = 'salade',
-		weight = 130,
+		weight = 140,
 		stack = true,
 	},
 
 	['soja'] = {
 		label = 'soja',
-		weight = 100,
+		weight = 140,
 		stack = true,
 	},
 
@@ -3050,14 +3051,14 @@ return {
 
 	['bread'] = {
 		label = 'pain',
-		weight = 120,
+		weight = 180,
 		stack = true,
 		close = true,
 	},
 
 	["grinder"] = {
 		label = "Meuleuse",
-		weight = 10,
+		weight = 1000,
 		stack = true,
 		close = false,
 		description = "Une meuleuse tout à fait normale.",
@@ -3067,18 +3068,18 @@ return {
 	},
 
 	["gold_ingot"] = {
-		label = "Missing [fr][loot_item_label] translation.",
-		weight = 1,
+		label = "Lingot d'or",
+		weight = 2000,
 		stack = true,
 		close = false,
-		description = "Missing [fr][loot_item_desc] translation.",
+		description = "Lingot d'or.",
 		client = {
 			image = "gold_ingot.png",
 		}
 	},
     ['welcomeflyer'] = {
 		label = 'Bienvenue à LS',
-		weight = 100,
+		weight = 10,
 		stack = true,
         close = true,
         client = {
@@ -3087,7 +3088,7 @@ return {
 	},
     ['flyer'] = {
 		label = 'Propectus',
-		weight = 100,
+		weight = 10,
 		stack = true,
         close = true,
         client = {
@@ -3096,7 +3097,7 @@ return {
 	},
     ['paper'] = {
 		label = 'Papier',
-		weight = 100,
+		weight = 10,
 		stack = true,
 	},
 }

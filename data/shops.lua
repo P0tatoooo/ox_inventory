@@ -53,13 +53,13 @@ return {
             { name = "coffeebean", price = 0 },
             { name = "tealeaf", price = 0 },
 		}, locations = {
-            vec3(129.11, -1283.58, 29.26),
+            --[[vec3(129.11, -1283.58, 29.26),
             vec3(125.841759, -1036.800049, 29.263062),
             vec3(-305.736267, 6267.890137, 31.520874),
             vec3(413.010986, -1499.498901, 30.139160),
             vec3(-1190.188965, -896.901123, 13.794922),
             vec3(812.136292, -754.694519, 26.769287),
-            vec3(-584.901123, -884.545044, 25.994141)
+            vec3(-584.901123, -884.545044, 25.994141)]]
 
 		}, targets = {
 			--{ loc = vector3(-90.90401, 25.78275, 71.95428), length = 0.5, width = 0.5, heading = 96.0, minZ = 71.5, maxZ = 72.5, distance = 1.5 },
@@ -72,10 +72,9 @@ return {
 			id = 93, colour = 69, scale = 0.8
 		},]] inventory = {
 			{ name = 'phone', price = 100 },
-			{ name = 'sim', price = 100 },
-			{ name = 'radio', price = 100 },
-			{ name = 'camera', price = 100 },
-			{ name = 'photopaper', price = 5 }
+			{ name = 'radio', price = 500 },
+			{ name = 'camera', price = 500 },
+			{ name = 'photopaper', price = 3 }
 		}, locations = {
 			vector3(-87.9641, 31.80348, 71.9517)
 
@@ -89,16 +88,16 @@ return {
 		--[[blip = {
 			id = 59, colour = 69, scale = 0.8
 		},]] inventory = {
-			{ name = 'donut', price = 100 },
+			{ name = 'donut', price = 90 },
 			{ name = 'water', price = 50 },
-			{ name = 'football', price = 1000 },
-			{ name = 'basketball', price = 1000 },
-			{ name = 'rugby', price = 1000 },
-			{ name = 'baseball', price = 1000 },
-			{ name = 'skateboard', price = 1000 },
-			{ name = 'spray', price = 1000 },
-			{ name = 'notepad', price = 1000 },
-			{ name = 'notebook', price = 1000 },
+			{ name = 'football', price = 40 },
+			{ name = 'basketball', price = 40 },
+			{ name = 'rugby', price = 40 },
+			{ name = 'baseball', price = 40 },
+			{ name = 'skateboard', price = 600 },
+			{ name = 'spray', price = 300 },
+			{ name = 'notepad', price = 100 },
+			{ name = 'notebook', price = 100 },
 			{ name = 'boombox', price = 1000 }
 		}, locations = {
 			vec3(24.672529, -1347.903320, 28.482056),
@@ -281,9 +280,9 @@ return {
 			{ name = 'gazebotent', price = 0 },
 			{ name = 'worklight', price = 0 },
 		}, locations = {
-			vector3(311.7069, -564.1088, 43.28403),
+			--[[vector3(311.7069, -564.1088, 43.28403),
             vector3(-259.36, 6326.99, 32.43),
-            vector3(1826.39, 3683.48, 34.27)
+            vector3(1826.39, 3683.48, 34.27)]]
 		}, targets = {
 
 		}
@@ -333,7 +332,7 @@ return {
             { name = 'WEAPON_MACHETE', price = 15000, currency = 'black_money' },
             { name = 'WEAPON_HATCHET', price = 15000, currency = 'black_money' },
 		}, locations = {
-			vector3(202.9437, -148.6392, 61.29925)
+			--vector3(202.9437, -148.6392, 61.29925)
 		}, targets = {
 
 		}
