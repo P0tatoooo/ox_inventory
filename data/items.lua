@@ -3076,4 +3076,27 @@ return {
 			image = "gold_ingot.png",
 		}
 	},
+    ['welcomeflyer'] = {
+		label = 'Bienvenue à LS',
+		weight = 100,
+		stack = true,
+        close = true,
+        client = {
+			export = 'MyCity_Printer.showFlyer'
+		},
+	},
+    ['flyer'] = {
+		label = 'Propectus',
+		weight = 100,
+		stack = true,
+        close = true,
+        client = {
+			export = 'MyCity_Printer.showFlyer'
+		},
+	},
+    ['paper'] = {
+		label = 'Papier',
+		weight = 100,
+		stack = true,
+	},
 }
