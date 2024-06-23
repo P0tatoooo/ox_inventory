@@ -943,7 +943,7 @@ local function registerCommands()
 		end
 	})
 
-    RegisterKeyMapping('reloadweapon', 'Recharger l\'arme - Manette', 'PAD_ANALOGBUTTON', 'RRIGHT_INDEX')
+    RegisterKeyMapping('reloadweapon', 'Recharger l\'arme - Manette', 'PAD_ANALOGBUTTON', 'RLEFT_INDEX')
 
 	lib.addKeybind({
 		name = 'hotbar',
