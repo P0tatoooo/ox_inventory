@@ -965,8 +965,13 @@ local function registerCommands()
 				useSlot(i)
 			end
 		})
-        RegisterKeyMapping(('hotkey%s'):format(i), "Raccourci Inventaire " .. i .. " Manette", 'PAD_ANALOGBUTTON', '')
 	end
+
+    RegisterCommand('hotkey1c', function(source, args, rawCommand)
+        if invOpen or EnableWeaponWheel or not invHotkeys or IsNuiFocused() then return end
+		useSlot(1)
+    end, true)
+    RegisterKeyMapping('hotkey1c', "Raccourci Inventaire 1 Manette", 'PAD_ANALOGBUTTON', 'L1_INDEX')
 
 	registerCommands = nil
 end
