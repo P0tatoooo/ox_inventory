@@ -365,7 +365,7 @@ return {
     ['bloodbag'] = {
 		label = 'Poche de sang',
 		weight = 1250,
-		stack = false,
+		stack = true,
 	},
 
 	['bluefin_tuna'] = {
