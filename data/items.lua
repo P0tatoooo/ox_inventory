@@ -2622,7 +2622,7 @@ return {
     ['crutches'] = {
 		label = 'béquilles',
 		weight = 1000,
-		stack = false,
+		stack = true,
 		close = true,
 	},
     ['speaker'] = {
