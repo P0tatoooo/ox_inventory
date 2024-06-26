@@ -531,7 +531,7 @@ return {
         },
     ---------------SOFT DRINKS-----------------------
     ['water'] = {
-		label = 'Bouteille d\'eau',
+		label = 'Bouteille d\'Eau 33cl',
 		weight = 450,
 		stack = true,
 		close = true,
@@ -544,7 +544,7 @@ return {
 	},
 
     ['cola'] = {
-		label = 'cola',
+		label = 'Canette de Cola 33cl',
 		weight = 450,
 		stack = true,
 		close = true,
@@ -558,7 +558,7 @@ return {
 	},
 
     ['soda'] = {
-		label = 'Soda',
+		label = 'Canette de Soda 33cl',
 		weight = 450,
 		stack = true,
 		client = {
@@ -569,8 +569,8 @@ return {
 		}
 	},
 
-	['energydrink'] = {
-		label = 'boisson energisante',
+    ['icetea'] = {
+		label = 'Canette d\'Ice Tea 33cl',
 		weight = 450,
 		stack = true,
 		close = true,
@@ -582,8 +582,60 @@ return {
 		}
 	},
 
-    ['icetea'] = {
-		label = 'ice tea',
+    ['bigwater'] = {
+		label = 'Grande Bouteille d\'Eau',
+		weight = 450,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 50 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+		}
+	},
+
+    ['bigcola'] = {
+		label = 'Cannette Cola 50Cl',
+		weight = 450,
+		stack = true,
+		close = true,
+		degrade = 4320,
+		client = {
+			status = { thirst = 50 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+		}
+	},
+
+    ['bigsoda'] = {
+		label = 'Cannette Soda 50Cl',
+		weight = 450,
+		stack = true,
+		client = {
+			status = { thirst = 50 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+		}
+	},
+
+    ['bigicetea'] = {
+		label = 'Cannette Ice tea 50Cl',
+		weight = 450,
+		stack = true,
+		close = true,
+		client = {
+			status = { thirst = 50 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+		}
+	},
+
+	['energydrink'] = {
+		label = 'boisson energisante',
 		weight = 450,
 		stack = true,
 		close = true,
