@@ -634,6 +634,19 @@ return {
 		}
 	},
 
+    ['biggrapejuice'] = {
+		label = 'jus de raisin 50cl',
+		weight = 450,
+		stack = true,
+		close = true,
+		client = {
+			status = { thirst = 25 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+		}
+	},
+
 	['energydrink'] = {
 		label = 'boisson energisante',
 		weight = 450,
@@ -648,11 +661,10 @@ return {
 	},
 
 	['grapejuice'] = {
-		label = 'jus de raisin',
+		label = 'jus de raisin 33cl',
 		weight = 450,
 		stack = true,
 		close = true,
-		degrade = 4320,
 		client = {
 			status = { thirst = 25 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
