@@ -467,6 +467,24 @@ RegisterCommand('convertinventory', function(source, args)
 	CreateThread(convert)
 end, true)
 
+RegisterServerEvent('ox_inventory:renameItem', function(slot, newLabel)
+    local inventory = Inventory(source)
+
+    if not type(newLabel) == "string" then return end
+
+    if newLabel == "" then
+        return TriggerClientEvent('ox_lib:notify', inventory.id, { type = 'error', description = locale('cannot_rename', data.label) })
+    end
+
+    local item = inventory.items[slot]
+
+    if not item then return end
+
+    item.metadata.label = newLabel
+
+    Inventory.SetMetadata(source, item.slot, item.metadata)
+end)
+
 lib.addCommand({'additem', 'giveitem'}, {
 	help = 'Gives an item to a player with the given id',
 	params = {

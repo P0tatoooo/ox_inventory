@@ -1,5 +1,7 @@
 {
   "ui_use": "Utiliser",
+  "ui_rename": "Renommer",
+  "ui_rename_new": "Nouveau nom",
   "ui_give": "Donner",
   "ui_close": "Fermer",
   "ui_drop": "Jeter",
@@ -37,6 +39,7 @@
   "already_have": "Vous avez déjà %s",
   "have_purchased": "Vous avez acheté %s",
   "can_not_afford": "Vous ne pouvez pas acheter %s",
+  "cannot_rename": "Valeur incorrecte pour renommer. %s",
   "purchase_license": "Acheter la licence",
   "interact_prompt": "Intéragir avec [%s]",
   "weapon_unregistered": "%s n’appartient à personne",

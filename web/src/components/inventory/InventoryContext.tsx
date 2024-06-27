@@ -1,4 +1,5 @@
 import { onUse } from '../../dnd/onUse';
+import { onRename } from '../../dnd/onRename';
 import { onGive } from '../../dnd/onGive';
 import { onDrop } from '../../dnd/onDrop';
 import { Items } from '../../store/items';
@@ -45,6 +46,9 @@ const InventoryContext: React.FC = () => {
     switch (data && data.action) {
       case 'use':
         onUse({ name: item.name, slot: item.slot });
+        break;
+      case 'rename':
+        onRename({ name: item.name, slot: item.slot });
         break;
       case 'give':
         onGive({ name: item.name, slot: item.slot });
@@ -93,6 +97,7 @@ const InventoryContext: React.FC = () => {
     <>
       <Menu>
         <MenuItem onClick={() => handleClick({ action: 'use' })} label={Locale.ui_use || 'Use'} />
+        <MenuItem onClick={() => handleClick({ action: 'rename' })} label={Locale.ui_rename || 'Rename'} />
         <MenuItem onClick={() => handleClick({ action: 'give' })} label={Locale.ui_give || 'Give'} />
         <MenuItem onClick={() => handleClick({ action: 'drop' })} label={Locale.ui_drop || 'Drop'} />
         {item && item.metadata?.ammo > 0 && (

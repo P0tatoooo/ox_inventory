@@ -1281,6 +1281,21 @@ lib.onCache('vehicle', function()
 	end
 end)
 
+RegisterNUICallback('renameItem', function(slotId, cb)
+    if type(slotId) ~= 'number' then
+        cb(0)
+        return TypeError('slotId', 'number', type(slotId))
+    end
+
+    local newLabel = lib.inputDialog(locale('ui_rename'), {locale('ui_rename_new')})
+
+    if not newLabel or newLabel[1] == "" then return end
+
+    TriggerServerEvent('ox_inventory:renameItem', slotId, newLabel[1])
+
+    cb(1)
+end)
+
 RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inventory, weight, player)
 	if source == '' then return end
 

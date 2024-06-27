@@ -1,5 +1,7 @@
 {
   "ui_use": "Use",
+  "ui_rename": "Rename",
+  "ui_rename_new": "New name",
   "ui_give": "Give",
   "ui_close": "Close",
   "ui_drop": "Drop",
@@ -50,6 +52,7 @@
   "component_invalid": "This weapon is incompatible with %s",
   "component_slot_occupied": "This weapon's %s slot is already occupied",
   "cannot_perform": "You can not perform this action",
+  "cannot_rename": "Incorrect value for renaming. %s",
   "cannot_carry": "You can not carry that much",
   "cannot_carry_other": "Target inventory can not hold that much",
   "cannot_carry_limit": "You cannot carry more than %s %s",
