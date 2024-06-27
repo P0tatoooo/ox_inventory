@@ -2706,6 +2706,14 @@ return {
             export = "qb-policejob.cuffFromItem"
         }
     },
+
+    ["envelope"] = {
+		label = "Enveloppe Cadeau",
+		weight = 10,
+		stack = true,
+		close = false,
+	},
+
 	['id_card'] = {
 		label = 'Carte d\'identité',
 		weight = 10,
