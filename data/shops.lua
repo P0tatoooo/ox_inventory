@@ -311,7 +311,7 @@ return {
 	Fisherman = {
 		name = 'Pêcheur',
 		inventory = {
-			{ name = 'fishing_rod', price = 500 },
+			{ name = 'fishing_rod', price = 200 },
             --{ name = 'divinggear', price = 2000}
 		}, locations = {
 			vector3(-3418.335, 970.5667, 11.93619)
