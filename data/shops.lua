@@ -161,6 +161,23 @@ return {
 		}
 	},]]
 
+    MCEventShop = {
+		name = 'MC Event',
+		groups = {mcevent = 0},
+		--[[blip = {
+			id = 110, colour = 84, scale = 0.8
+		},]] inventory = {
+            { name = 'cone', price = 0, grade = 1},
+			{ name = 'barrier', price = 0, grade = 1},
+			{ name = 'gazebotent', price = 0, grade = 1},
+			{ name = 'worklight', price = 0, grade = 1},
+		}, locations = {
+			vec3(-74.887909, -822.527466, 84.564087),
+		}, targets = {
+			--{ loc = vec3(453.21, -980.03, 30.68), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 }
+		}
+	},
+
 	PoliceArmoury = {
 		name = 'Armurerie LSPD',
 		groups = shared.police,
