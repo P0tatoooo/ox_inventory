@@ -1,5 +1,83 @@
 return {
-	--[[{
+	{
+		items = {
+			{
+				name = 'WEAPON_COMBATPDW',
+				ingredients = {
+					bp_CombatPDW = 1,
+					smg_barrel = 1,
+					attach_body = 1,
+					attach_grip = 1,
+					attach_guard = 1,
+					spring = 2
+				},
+				duration = 60000,
+				count = 1,
+			},
+			{
+				name = 'WEAPON_COMPACTRIFLE',
+				ingredients = {
+					bp_CompactRifle = 1,
+					smg_barrel = 1,
+					attach_body = 1,
+					attach_grip = 1,
+					attach_guard = 1,
+					spring = 1
+				},
+				duration = 60000,
+				count = 1,
+			},
+			{
+				name = 'WEAPON_ASSAULTRIFLE',
+				ingredients = {
+					bp_AssaultRifle = 1,
+					smg_barrel = 1,
+					attach_body = 1,
+					attach_grip = 1,
+					attach_guard = 1,
+					spring = 2
+				},
+				duration = 60000,
+				count = 1,
+			},
+			{
+				name = 'WEAPON_MICROSMG',
+				ingredients = {
+					bp_Micro_SMG = 1,
+					smg_barrel = 1,
+					attach_body = 1,
+					attach_grip = 1,
+					attach_guard = 1,
+					spring = 1
+				},
+				duration = 60000,
+				count = 1,
+			},
+		},
+		groups = {
+			['parabelum'] = 0,
+			['casano'] = 0
+		},
+		points = {
+			vec3(852.91, -967.63, 26.53),
+			vec3(-1103.22, -1014.38, 2.55),
+		},
+		zones = {
+			{
+				coords = vec3(852.91, -967.63, 26.53),
+				size = vec3(3.8, 1.05, 0.15),
+				distance = 1.5,
+				rotation = 315.0,
+			},
+			{
+				coords = vec3(-1103.22, -1014.38, 2.55),
+				size = vec3(3.8, 1.05, 0.15),
+				distance = 1.5,
+				rotation = 315.0,
+			},
+		},
+	},
+	{
 		items = {
 			{
 				name = 'lockpick',
@@ -12,23 +90,23 @@ return {
 			},
 		},
 		points = {
-			vec3(-1147.083008, -2002.662109, 13.180260),
-			vec3(-345.374969, -130.687088, 39.009613)
+			vec3(-2947.36, 57.44, 11.61),
+			vec3(-3179.21, 1093.44, 20.86),
 		},
 		zones = {
 			{
-				coords = vec3(-1146.2, -2002.05, 13.2),
+				coords = vec3(-2947.36, 57.44, 11.61),
 				size = vec3(3.8, 1.05, 0.15),
 				distance = 1.5,
 				rotation = 315.0,
 			},
 			{
-				coords = vec3(-346.1, -130.45, 39.0),
+				coords = vec3(-3179.21, 1093.44, 20.86),
 				size = vec3(3.8, 1.05, 0.15),
 				distance = 1.5,
-				rotation = 70.0,
+				rotation = 315.0,
 			},
 		},
-		blip = { id = 566, colour = 31, scale = 0.8 },
-	},]]
+	},
+	
 }

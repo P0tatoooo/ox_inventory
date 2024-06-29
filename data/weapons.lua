@@ -18,7 +18,7 @@ return {
 
 		['WEAPON_ASSAULTRIFLE'] = {
 			label = 'AK-47',
-			weight = 3470,
+			weight = 5000,
 			durability = 0.3,
 			clip = {'drumarclip','extendedarclip','arclip'},
             degrade = 20160
@@ -136,7 +136,7 @@ return {
 
 		['WEAPON_COMBATPDW'] = {
 			label = 'ADP de combat',
-			weight = 2700,
+			weight = 3400,
 			durability = 0.3,
 			clip = {'drumpdwclip','extendedpdwclip','pdwclip'},
             degrade = 20160
@@ -160,7 +160,7 @@ return {
 
 		['WEAPON_COMPACTRIFLE'] = {
 			label = 'AK-U',
-			weight = 2700,
+			weight = 3200,
 			durability = 0.3,
 			clip = {'drumarclip','extendedarclip','arclip'},
             degrade = 20160

@@ -4727,4 +4727,77 @@ return {
 			image = "weed_brick.png",
 		}
 	},
+
+	["smg_barrel"] = {
+		label = "Canon de mitrailleuse",
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+	["attach_body"] = {
+		label = "Corps de mitrailleuse",
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+	["attach_guard"] = {
+		label = "Garde de mitrailleuse",
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+	["attach_grip"] = {
+		label = "Poignée",
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+	["pistol_body"] = {
+		label = "Corps de pistolet",
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+	["spring"] = {
+		label = "Ressort",
+		weight = 250,
+		stack = true,
+		close = true,
+	},
+
+	["pistol_barrel"] = {
+		label = "Cannon de pistolet",
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+	["bp_CombatPDW"] = {
+		label = "Plan ADP de combat",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
+	["bp_CompactRifle"] = {
+		label = "Plan AK-U",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
+	["bp_AssaultRifle"] = {
+		label = "Plan AK-47",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
+	["bp_Micro_SMG"] = {
+		label = "Plan UZI",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
 }
