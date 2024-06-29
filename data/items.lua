@@ -4776,25 +4776,25 @@ return {
 		stack = true,
 		close = true,
 	},
-	["bp_CombatPDW"] = {
+	["bp_combatpdw"] = {
 		label = "Plan ADP de combat",
 		weight = 50,
 		stack = false,
 		close = true,
 	},
-	["bp_CompactRifle"] = {
+	["bp_compactrifle"] = {
 		label = "Plan AK-U",
 		weight = 50,
 		stack = false,
 		close = true,
 	},
-	["bp_AssaultRifle"] = {
+	["bp_assaultrifle"] = {
 		label = "Plan AK-47",
 		weight = 50,
 		stack = false,
 		close = true,
 	},
-	["bp_Micro_SMG"] = {
+	["bp_microsmg"] = {
 		label = "Plan UZI",
 		weight = 50,
 		stack = false,

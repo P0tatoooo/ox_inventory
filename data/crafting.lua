@@ -4,7 +4,7 @@ return {
 			{
 				name = 'WEAPON_COMBATPDW',
 				ingredients = {
-					bp_CombatPDW = 1,
+					bp_combatpdw = 1,
 					smg_barrel = 1,
 					attach_body = 1,
 					attach_grip = 1,
@@ -17,7 +17,7 @@ return {
 			{
 				name = 'WEAPON_COMPACTRIFLE',
 				ingredients = {
-					bp_CompactRifle = 1,
+					bp_compactrifle = 1,
 					smg_barrel = 1,
 					attach_body = 1,
 					attach_grip = 1,
@@ -30,7 +30,7 @@ return {
 			{
 				name = 'WEAPON_ASSAULTRIFLE',
 				ingredients = {
-					bp_AssaultRifle = 1,
+					bp_assaultrifle = 1,
 					smg_barrel = 1,
 					attach_body = 1,
 					attach_grip = 1,
@@ -43,7 +43,7 @@ return {
 			{
 				name = 'WEAPON_MICROSMG',
 				ingredients = {
-					bp_Micro_SMG = 1,
+					bp_microsmg = 1,
 					smg_barrel = 1,
 					attach_body = 1,
 					attach_grip = 1,
@@ -108,5 +108,5 @@ return {
 			},
 		},
 	},
-	
+
 }
