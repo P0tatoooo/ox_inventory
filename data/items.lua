@@ -2579,12 +2579,12 @@ return {
             stack = false,
     },
     ['stock_suspension'] = {
-        label = 'Race Suspension',
+        label = 'Suspensions',
         weight = 1000,
         stack = false,
     },
     ['race_suspension'] = {
-            label = 'Race Suspension',
+            label = 'Suspensions de Course',
             weight = 1000,
             stack = false,
     },
