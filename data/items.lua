@@ -2199,8 +2199,16 @@ return {
 		close = true,
 	},
 
+    ['weed_leaf'] = {
+		label = 'Feuille de Cannabis',
+		weight = 500,
+		stack = true,
+		close = true,
+
+	},
+
 	['weed'] = {
-		label = 'Marijuana',
+		label = 'Weed',
 		weight = 500,
 		stack = true,
 		close = true,
