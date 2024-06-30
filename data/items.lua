@@ -2238,6 +2238,14 @@ return {
 
 	},
 
+    ['packaged_fish'] = {
+		label = 'barquette de poisson',
+		weight = 200,
+		stack = true,
+		close = true,
+
+	},
+
 	['sprayremover'] = {
 		label = 'nettoyant anti-graffitis',
 		weight = 750,
