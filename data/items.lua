@@ -566,7 +566,6 @@ return {
 		weight = 450,
 		stack = true,
 		close = true,
-		degrade = 4320,
 		client = {
 			status = { thirst = 25 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
@@ -618,7 +617,6 @@ return {
 		weight = 450,
 		stack = true,
 		close = true,
-		degrade = 4320,
 		client = {
 			status = { thirst = 50 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
@@ -735,7 +733,6 @@ return {
 		weight = 450,
 		stack = true,
 		close = true,
-		degrade = 4320,
         client = {
 			status = { thirst = 25 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
