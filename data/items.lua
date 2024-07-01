@@ -2205,7 +2205,7 @@ return {
 	},
 
 	['weed'] = {
-		label = 'Weed',
+		label = 'Pochon de Weed',
 		weight = 500,
 		stack = true,
 		close = true,
