@@ -342,6 +342,8 @@ return {
 			{ name = 'pistol_body', price = 1200 },
 			{ name = 'spring', price = 50 },
 			{ name = 'pistol_barrel', price = 1000 },
+			{ name = 'kevlar', price = 500 },
+			{ name = 'armor_satchel', price = 1000 },
 		}, locations = {
 			vec3(-1227.37, -922.65, 2.15),
 			/*vec3(-354.87, -2633.30, 5.99),

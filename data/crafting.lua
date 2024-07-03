@@ -53,6 +53,15 @@ return {
 				duration = 60000,
 				count = 1,
 			},
+			{
+				name = 'bulletproof',
+				ingredients = {
+					kevlar = 10,
+					armor_satchel = 3,
+				},
+				duration = 60000,
+				count = 1,
+			},
 		},
 		groups = {
 			['parabelum'] = 0,
