@@ -2417,12 +2417,6 @@ return {
 		stack = false
 	},
 
-
-    ['toolbox'] = {
-            label = 'Tool Box',
-            weight = 1000,
-            stack = false,
-    },
     ['stock_turbo'] = {
             label = 'Turbo',
             weight = 1000,
@@ -2526,52 +2520,52 @@ return {
     ['stock_tires'] = {
             label = 'Pneus',
             weight = 1000,
-            stack = false,
+            stack = true,
     },
     ['atomic_tires'] = {
         label = 'Pneus Atomic',
         weight = 1000,
-        stack = false,
+        stack = true,
     },
     ['stock_brakes'] = {
             label = 'Freins',
             weight = 1000,
-            stack = false,
+            stack = true,
     },
     ['race_brakes'] = {
             label = 'Freins de Course',
             weight = 1000,
-            stack = false,
+            stack = true,
     },
     ['stock_sparkplugs'] = {
             label = 'Bougies',
             weight = 1000,
-            stack = false,
+            stack = true,
     },
     ['atomic_sparkplugs'] = {
             label = 'Bougies Atomic',
             weight = 1000,
-            stack = false,
+            stack = true,
     },
     ['stock_suspension'] = {
         label = 'Suspensions',
         weight = 1000,
-        stack = false,
+        stack = true,
     },
     ['race_suspension'] = {
             label = 'Suspensions de Course',
             weight = 1000,
-            stack = false,
+            stack = true,
     },
     ['stock_oil'] = {
             label = 'Huile Moteur',
             weight = 1000,
-            stack = false,
+            stack = true,
     },
     ['atomic_oil'] = {
             label = 'Huile Atomic',
             weight = 1000,
-            stack = false,
+            stack = true,
     },
     -----------------------------------------------------------
 
