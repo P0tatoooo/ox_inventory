@@ -669,7 +669,7 @@ return {
 	},
 
 	['limonade'] = {
-		label = 'Brique de jus de raisin',
+		label = 'Limonade',
 		weight = 450,
 		stack = true,
 		close = true,
