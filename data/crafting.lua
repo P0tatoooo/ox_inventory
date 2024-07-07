@@ -94,7 +94,7 @@ return {
 			},
 		},
 	},
-	{
+	--[[{
 		items = {
 			{
 				name = 'lockpick',
@@ -111,18 +111,12 @@ return {
 		},
 		zones = {
 			{
-				coords = vec3(-2947.36, 57.44, 11.61),
-				size = vec3(3.8, 1.05, 0.15),
-				distance = 1.5,
-				rotation = 315.0,
-			},
-			{
 				coords = vec3(-3179.21, 1093.44, 20.86),
 				size = vec3(3.8, 1.05, 0.15),
 				distance = 1.5,
 				rotation = 315.0,
 			},
 		},
-	},
+	},]]
 
 }
