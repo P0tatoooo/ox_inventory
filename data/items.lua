@@ -130,7 +130,7 @@ return {
             weight = 100,
             stack = true,
             close = true,
-            degrade = 4320,
+            degrade = 4320s,
             client = {
                 status = { hunger = 25 },
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
@@ -166,7 +166,7 @@ return {
             weight = 500,
             stack = true,
             close = true,
-            degrade = 4320,
+            degrade = 10080,
             client = {
                 status = { hunger = 25 },
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
@@ -184,7 +184,7 @@ return {
             weight = 100,
             stack = true,
             close = true,
-            degrade = 4320,
+            degrade = 10080,
             client = {
                 status = { hunger = 25},
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
