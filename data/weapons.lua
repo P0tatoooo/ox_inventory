@@ -1843,17 +1843,17 @@ return {
 
 	Ammo = {
         ['smgammo'] = {
-			label = '9mm/.45 ACP SMG',
+			label = 'Mun. SMG 9mm/.45 ACP',
 			weight = 3,
 		},
 
 		['revolverammo'] = {
-			label = '.44 Magnum',
+			label = 'Mun. .44 Magnum',
 			weight = 16,
 		},
 
 		['pistolammo'] = {
-			label = '9mm/.50',
+			label = 'Mun.9mm/.50',
 			weight = 8,
 		},
 
@@ -1868,12 +1868,12 @@ return {
 		},
 
 		['arammo'] = {
-			label = '5.56/7.62',
+			label = 'Mun. 5.56/7.62',
 			weight = 4,
 		},
 
         ['llammo'] = {
-			label = 'Munition Non Léthale',
+			label = 'Mun. Non Léthale',
 			weight = 38,
 		},
 
