@@ -1289,6 +1289,30 @@ return {
 	},
     -------------------------------------------------------
 
+    ['welcomeflyer'] = {
+		label = 'Bienvenue à LS',
+		weight = 10,
+		stack = true,
+        close = true,
+        client = {
+			export = 'MyCity_Printer.showFlyer'
+		},
+	},
+    ['flyer'] = {
+		label = 'Propectus',
+		weight = 10,
+		stack = true,
+        close = true,
+        client = {
+			export = 'MyCity_Printer.showFlyer'
+		},
+	},
+    ['paper'] = {
+		label = 'Papier',
+		weight = 10,
+		stack = true,
+	},
+
     ['radio'] = {
 		label = 'Radio',
 		weight = 220,
