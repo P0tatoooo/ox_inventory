@@ -1933,134 +1933,310 @@ return {
 			label = 'Ch. Pistolet',
 			ammoname = 'pistolammo',
 			ammocount = 12,
-			weight = 280
+			weight = 280,
+            buttons = {
+                {
+                    label = 'Remplir le chargeur',
+                    action = function(slot)
+                        exports.MyCity_CoreV2:RefillClip(slot)
+                    end
+                },
+            }
 		},
 		['combatpistolclip'] = {
 					label = 'Ch. Pistolet de Combat',
 					ammoname = 'pistolammo',
 					ammocount = 12,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['apppistolclip'] = {
 					label = 'Ch. Pistolet Perforant',
 					ammoname = 'pistolammo',
 					ammocount = 18,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['pistol50clip'] = {
 					label = 'Ch. Pistolet Cal .50',
 					ammoname = 'pistolammo',
 					ammocount = 9,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['snspistolclip'] = {
 					label = 'Ch. Pistolet SNS',
 					ammoname = 'pistolammo',
 					ammocount = 6,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['heavypistolclip'] = {
 					label = 'Ch. Pistolet Lourd',
 					ammoname = 'pistolammo',
 					ammocount = 18,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['vintagepistolclip'] = {
 					label = 'Ch. Pistolet Vintage',
 					ammoname = 'pistolammo',
 					ammocount = 7,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['microsmgclip'] = {
 					label = 'Ch. UZI',
 					ammoname = 'smgammo',
 					ammocount = 16,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['smgclip'] = {
 					label = 'Ch. MP5',
 					ammoname = 'smgammo',
 					ammocount = 30,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['assaultsmgclip'] = {
 					label = 'Ch. SMG d\'Assault',
 					ammoname = 'smgammo',
 					ammocount = 30,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['pdwclip'] = {
 					label = 'Ch. ADP',
 					ammoname = 'smgammo',
 					ammocount = 30,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['machinepistolclip'] = {
 					label = 'Ch. TEC-9',
 					ammoname = 'smgammo',
 					ammocount = 12,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['minismgclip'] = {
 					label = 'Ch. UZI',
 					ammoname = 'smgammo',
 					ammocount = 20,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['gusenbergclip'] = {
 					label = 'Ch. Gusenberg',
 					ammoname = 'smgammo',
 					ammocount = 30,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['assaultshotgunclip'] = {
 					label = 'Ch. Fusil à Pompe d\'Assault',
 					ammoname = 'shotgunammo',
 					ammocount = 8,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['arclip'] = {
 					label = 'Ch. Fusil d\'Assault',
                     type = 'magazine',
 					ammoname = 'arammo',
 					ammocount = 30,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['mgclip'] = {
 					label = 'Ch. Mitrailleuse',
 					ammoname = 'lmgammo',
 					ammocount = 54,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['combatmgclip'] = {
 					label = 'Ch. Mitrailleuse de Combat',
 					ammoname = 'lmgammo',
 					ammocount = 100,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['sniperclip'] = {
 					label = 'Ch. Sniper',
 					ammoname = 'sniperammo',
 					ammocount = 10,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['heavysniperclip'] = {
 					label = 'Ch. Sniper Lourd',
 					ammoname = 'sniperammo',
 					ammocount = 6,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['marksmansniperclip'] = {
 					label = 'Ch. Fusil Marksman',
 					ammoname = 'sniperammo',
 					ammocount = 8,
-					weight = 280
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    }
 			},
 		['extendedpistolclip'] = {
 					label = 'Ch. Am. Pistolet',
 					ammoname = 'pistolammo',
 					ammocount = 16,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_PISTOL_CLIP_02`,`COMPONENT_PISTOL_MK2_CLIP_02`},
 					}
@@ -2070,6 +2246,14 @@ return {
 					ammoname = 'pistolammo',
 					ammocount = 16,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_COMBATPISTOL_CLIP_02`},
 					}
@@ -2079,6 +2263,14 @@ return {
 					ammoname = 'pistolammo',
 					ammocount = 36,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_APPISTOL_CLIP_02`},
 					}
@@ -2088,6 +2280,14 @@ return {
 					ammoname = 'pistolammo',
 					ammocount = 12,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_PISTOL50_CLIP_02`},
 					}
@@ -2097,6 +2297,14 @@ return {
 					ammoname = 'pistolammo',
 					ammocount = 12,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_SNSPISTOL_CLIP_02`},
 					}
@@ -2106,6 +2314,14 @@ return {
 					ammoname = 'pistolammo',
 					ammocount = 36,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_HEAVYPISTOL_CLIP_02`},
 					}
@@ -2115,6 +2331,14 @@ return {
 					ammoname = 'pistolammo',
 					ammocount = 14,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_VINTAGEPISTOL_CLIP_02`},
 					}
@@ -2124,6 +2348,14 @@ return {
 					ammoname = 'smgammo',
 					ammocount = 30,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_MICROSMG_CLIP_02`},
 					}
@@ -2133,6 +2365,14 @@ return {
 					ammoname = 'smgammo',
 					ammocount = 60,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_SMG_CLIP_02`,`COMPONENT_SMG_MK2_CLIP_02`},
 					}
@@ -2142,6 +2382,14 @@ return {
 					ammoname = 'smgammo',
 					ammocount = 60,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_ASSAULTSMG_CLIP_02`},
 					}
@@ -2151,6 +2399,14 @@ return {
 					ammoname = 'smgammo',
 					ammocount = 60,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_COMBATPDW_CLIP_02`},
 					}
@@ -2160,6 +2416,14 @@ return {
 					ammoname = 'smgammo',
 					ammocount = 20,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_MACHINEPISTOL_CLIP_02`},
 					}
@@ -2169,6 +2433,14 @@ return {
 					ammoname = 'smgammo',
 					ammocount = 30,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_MINISMG_CLIP_02`},
 					}
@@ -2178,6 +2450,14 @@ return {
 					ammoname = 'smgammo',
 					ammocount = 50,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_GUSENBERG_CLIP_02`},
 					}
@@ -2187,6 +2467,14 @@ return {
 					ammoname = 'shotgunammo',
 					ammocount = 32,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_ASSAULTSHOTGUN_CLIP_02`},
 					}
@@ -2198,6 +2486,14 @@ return {
 					ammoname = 'shotgunammo',
 					ammocount = 12,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_HEAVYSHOTGUN_CLIP_02`},
 					}
@@ -2209,6 +2505,14 @@ return {
 					ammoname = 'arammo',
 					ammocount = 60,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_ASSAULTRIFLE_CLIP_02`,`COMPONENT_CARBINERIFLE_CLIP_02`,`COMPONENT_ADVANCEDRIFLE_CLIP_02`,`COMPONENT_SPECIALCARBINE_CLIP_02`,`COMPONENT_BULLPUPRIFLE_CLIP_02`,`COMPONENT_BULLPUPRIFLE_MK2_CLIP_02`,`COMPONENT_SPECIALCARBINE_MK2_CLIP_02`,`COMPONENT_ASSAULTRIFLE_MK2_CLIP_02`,`COMPONENT_CARBINERIFLE_MK2_CLIP_02`,`COMPONENT_COMPACTRIFLE_CLIP_02`,`COMPONENT_MILITARYRIFLE_CLIP_02`,`COMPONENT_TACTICALRIFLE_CLIP_02`,`COMPONENT_HEAVYRIFLE_CLIP_02`},
 					}
@@ -2218,6 +2522,14 @@ return {
 					ammoname = 'lmgammo',
 					ammocount = 100,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_MG_CLIP_02`},
 					}
@@ -2227,6 +2539,14 @@ return {
 					ammoname = 'lmgammo',
 					ammocount = 200,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_COMBATMG_CLIP_02`,`COMPONENT_COMBATMG_MK2_CLIP_02`},
 					}
@@ -2236,6 +2556,14 @@ return {
 					ammoname = 'sniperammo',
 					ammocount = 8,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_HEAVYSNIPER_MK2_CLIP_02`},
 					}
@@ -2245,6 +2573,14 @@ return {
 					ammoname = 'sniperammo',
 					ammocount = 16,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_MARKSMANRIFLE_CLIP_02`,`COMPONENT_MARKSMANRIFLE_MK2_CLIP_02`},
 					}
@@ -2254,6 +2590,14 @@ return {
             ammoname = 'paintballammo',
             ammocount = 12,
             weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
             client = {
                     component = {`COMPONENT_SNSPISTOL_MK2_CLIP_02`},
             }
@@ -2264,9 +2608,6 @@ return {
 					ammoname = 'smgammo',
 					ammocount = 100,
 					weight = 280,
-					client = {
-							component = {`COMPONENT_SMG_CLIP_03`},
-					},
                     buttons = {
                         {
                             label = 'Remplir le chargeur',
@@ -2274,7 +2615,10 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
-                    }
+                    },
+					client = {
+							component = {`COMPONENT_SMG_CLIP_03`},
+					},
 			},
 
 
@@ -2283,27 +2627,51 @@ return {
 					ammoname = 'smgammo',
 					ammocount = 100,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_COMBATPDW_CLIP_03`},
-					}
+					},
 			},
 		['drummachinepistolclip'] = {
 					label = 'Ch. Tam. TEC-9',
 					ammoname = 'smgammo',
 					ammocount = 30,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_MACHINEPISTOL_CLIP_03`},
-					}
+					},
 			},
 		['drumheavyshotgunclip'] = {
 					label = 'Ch. Tam. Fusil à Pompe Lourd',
 					ammoname = 'shotgunammo',
 					ammocount = 30,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_HEAVYSHOTGUN_CLIP_03`},
-					}
+					},
 			},
 		['drumarclip'] = {
 					label = 'Ch. Tam. Fusil d\'Assault',
@@ -2311,9 +2679,17 @@ return {
 					ammoname = 'arammo',
 					ammocount = 100,
 					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                    },
 					client = {
 							component = {`COMPONENT_ASSAULTRIFLE_CLIP_03`,`COMPONENT_CARBINERIFLE_CLIP_03`,`COMPONENT_SPECIALCARBINE_CLIP_03`,`COMPONENT_COMPACTRIFLE_CLIP_03`},
-					}
+					},
 			},
     }
 }

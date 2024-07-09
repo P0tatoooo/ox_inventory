@@ -325,7 +325,7 @@ return {
 		}
 	},
 
-	TempDarkShop1 = {
+	TempDarkShop1 = { -- Sell Weapon Parts
 		name = 'Revendeur',
 		groups = {
 			['braithemb'] = 0,
@@ -334,7 +334,7 @@ return {
 		},
 		--[[blip = {
 			id = 403, colour = 69, scale = 0.8
-		},]] 
+		},]]
 		inventory = {
 			{ name = 'smg_barrel', price = 2000 },
 			{ name = 'attach_body', price = 4000 },
@@ -343,14 +343,13 @@ return {
 			{ name = 'pistol_body', price = 1200 },
 			{ name = 'spring', price = 50 },
 			{ name = 'pistol_barrel', price = 1000 },
-			{ name = 'kevlar', price = 500 },
-			{ name = 'armor_satchel', price = 1000 },
+			--{ name = 'kevlar', price = 500 },
+			--{ name = 'armor_satchel', price = 1000 },
 		}, locations = {
-			vec3(-1227.37, -922.65, 2.15),
-			vec3(-354.87, -2633.30, 5.99),
-			/*
-			vec3(1646.6, 4844.36, 41.01),*/
-			vec3(351.11, -2760.62, 5.16),
+			vec3(-1227.37, -922.65, 2.15), -- ADP/AKU
+            vec3(351.11, -2760.62, 5.16), -- AK/UZI
+			--vec3(-354.87, -2633.30, 5.99),
+			--vec3(1646.6, 4844.36, 41.01),
 			/*vec3(1662.76, -54.26, 167.31),
 			vec3(2745.95, 1415.23, 19.82),
 			vec3(2393.14, 3068.36, 47.69),
