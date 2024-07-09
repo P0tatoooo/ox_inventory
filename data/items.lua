@@ -643,7 +643,7 @@ return {
 	},
 
 	['energydrink'] = {
-		label = 'Boisson energisante',
+		label = 'Canette de Boisson Energisante',
 		weight = 450,
 		stack = true,
 		close = true,
@@ -669,7 +669,7 @@ return {
 	},
 
 	['limonade'] = {
-		label = 'Limonade',
+		label = 'Canette de Limonade',
 		weight = 450,
 		stack = true,
 		close = true,
@@ -695,7 +695,7 @@ return {
 	},
 
     ['tonic'] = {
-		label = 'Bouteille d\'eCola Tonic',
+		label = 'Canette d\'eCola Tonic',
 		weight = 500,
 		stack = true,
 		close = true,
