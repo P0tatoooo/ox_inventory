@@ -1520,7 +1520,6 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 		elseif client.weaponmismatch and not client.ignoreweapons[weaponHash] then
 			local weaponType = GetWeapontypeGroup(weaponHash)
 			if weaponType ~= 0 and weaponType ~= `GROUP_UNARMED` then
-                TriggerServerEvent('MyCity_Core:CheatEventsNoWeapon:Logs', weaponHash)
 				Weapon.Disarm(currentWeapon, true)
 			end
 		end
