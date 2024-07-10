@@ -630,7 +630,7 @@ return {
 	},
 
     ['biggrapejuice'] = {
-		label = 'Bouteille de jus de raisin',
+		label = 'Bouteille de Jus de Raisin',
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -726,7 +726,7 @@ return {
 		stack = true,
 		close = true,
         client = {
-			status = { thirst = 25 },
+			status = { thirst = 50 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
@@ -738,7 +738,7 @@ return {
 		stack = true,
 		close = true,
         client = {
-			status = { thirst = 25 },
+			status = { thirst = 50 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
@@ -750,7 +750,7 @@ return {
 		stack = true,
 		close = true,
         client = {
-			status = { thirst = 25 },
+			status = { thirst = 50 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
@@ -763,7 +763,7 @@ return {
 		stack = true,
 		close = true,
         client = {
-			status = { thirst = 25 },
+			status = { thirst = 50 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
@@ -1150,7 +1150,7 @@ return {
 		}
 	},
 	['mojitococktail'] = {
-		label = 'jägerbomb',
+		label = 'Mojito',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1993,7 +1993,7 @@ return {
 
     ['gas'] = {
 		label = 'essence',
-		weight = 800,
+		weight = 1000,
 		stack = true,
 		close = true,
 	},
