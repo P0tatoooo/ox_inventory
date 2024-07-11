@@ -3148,28 +3148,56 @@ return {
 	},
 
 	["smg_barrel"] = {
-		label = "Canon de mitrailleuse",
+		label = "Canon de mitraillette",
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	["attach_body"] = {
-		label = "Corps de mitrailleuse",
+		label = "Corps de mitraillette",
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	["attach_guard"] = {
-		label = "Garde de mitrailleuse",
+		label = "Garde de mitraillette",
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
-	["attach_grip"] = {
-		label = "Poignée",
+    ["attach_grip"] = {
+		label = "Poignée de Mitraillette",
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+    ["shotgun_barrel"] = {
+		label = "Canon de Fusil à Pompe",
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+	["shotgun_body"] = {
+		label = "Corps de Fusil à Pompe",
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+	["shotgun_guard"] = {
+		label = "Garde de Fusil à Pompe",
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+    ["shotgun_grip"] = {
+		label = "Poignée de Fusil à Pompe",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -3215,6 +3243,36 @@ return {
 	},
 	["bp_microsmg"] = {
 		label = "Plan UZI",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
+    ["bp_machinepistol"] = {
+		label = "Plan TEC-9",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
+    ["bp_smg"] = {
+		label = "Plan MP5",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
+    ["bp_pumpshotgun"] = {
+		label = "Plan Fusil à Pompe",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
+    ["bp_sawnoffshotgun"] = {
+		label = "Plan Fusil à Pompe Court",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
+    ["bp_pistol"] = {
+		label = "Plan Pistolet",
 		weight = 50,
 		stack = false,
 		close = true,
