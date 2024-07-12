@@ -57,6 +57,34 @@ setContainerProperties('paperbag', {
 	blacklist = { 'testburger' }
 })
 
+setContainerProperties('wallet', {
+	slots = 10,
+	maxWeight = 1000,
+	whitelist = {
+        'money',
+        'id_card',
+        'driver_license',
+        'cc_license',
+        'taxiticket',
+        'restaurationticket',
+        'healticket',
+        'reparationticket',
+        'bank_card'
+    }
+})
+
+setContainerProperties('policebelt', {
+	slots = 15,
+	maxWeight = 20000,
+	whitelist = {
+        'handcuffs','radio','binoculars','sprayremover','posterremover','empty_evidence_bag','combatpistolclip','heavypistolclip',
+        'smgclip','extendedsmgclip','arclip','extendedarclip','WEAPON_RADARGUN','WEAPON_FLASHLIGHT','WEAPON_COLBATON','WEAPON_STUNGUN',
+        'WEAPON_PEPPERSPRAY','WEAPON_ANTIDOTE','WEAPON_COMBATPISTOL','WEAPON_HEAVYPISTOL','WEAPON_SMOKEGRENADE','WEAPON_SMOK2GRENADE',
+        'WEAPON_FLASHBANG', 'ziptie','airsoftball', 'WEAPON_AIRSOFTGLOCK20',
+        'WEAPON_PISTOL',  'WEAPON_PISTOL50', 'WEAPON_KNIFE', 'WEAPON_SWITCHBLADE', 'WEAPON_KNUCKLE',
+    }
+})
+
 setContainerProperties('pizzabox', {
 	slots = 5,
 	maxWeight = 1000,

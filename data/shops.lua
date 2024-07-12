@@ -90,6 +90,7 @@ return {
 		},]] inventory = {
 			{ name = 'donut', price = 90 },
 			{ name = 'water', price = 50 },
+            { name = 'wallet', price = 100 },
 			{ name = 'football', price = 40 },
 			{ name = 'basketball', price = 40 },
 			{ name = 'rugby', price = 40 },
@@ -186,6 +187,7 @@ return {
 		},]] inventory = {
             {name = 'handcuffs', price = 0, grade = 0},
             {name = 'radio', price = 0, grade = 0},
+            {name = 'policebelt', price = 0, grade = 0},
             {name = 'binoculars', price = 0, grade = 0},
             {name = 'sprayremover', price = 0, grade = 0},
             {name = 'posterremover', price = 0, grade = 0},

@@ -65,7 +65,7 @@ return {
 	},
 
 	['black_money'] = {
-		label = 'Argent Sale',
+		label = 'Liasses de Billets',
 	},
 
 	['parachute'] = {
@@ -105,6 +105,22 @@ return {
             end
         }
     },
+
+    ['policebelt'] = {
+		label = 'Ceinturon LSPD',
+		weight = 100,
+		stack = false,
+		close = false,
+		consume = 0
+	},
+
+    ['wallet'] = {
+		label = 'Portefeuille',
+		weight = 10,
+		stack = false,
+		close = false,
+		consume = 0
+	},
 
         --------------FOOD--------------------------
         -----------------------------------
@@ -1328,8 +1344,7 @@ return {
 	},
 
 	['money'] = {
-		label = 'Argent',
-        weight = 0.1
+		label = 'Argent'
 	},
 
 	['accesscard'] = {
