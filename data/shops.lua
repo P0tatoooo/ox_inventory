@@ -222,15 +222,9 @@ return {
             {name = 'WEAPON_BEANBAG', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
             {name = 'WEAPON_PUMPSHOTGUN', price = 0, grade = 7, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
 
-            {name = 'bulletproof_lspd0', grade = 1, price = 0},
-            {name = 'bulletproof_lspd1', grade = 2, price = 0},
-            {name = 'bulletproof_lspd2', grade = 2, price = 0},
-            {name = 'bulletproof_lspd3', grade = 2, price = 0},
-            {name = 'bulletproof_lspd4', grade = 2, price = 0},
-            {name = 'bulletproof_lspd5', grade = 2, price = 0},
-            {name = 'bulletproof_lspd6', grade = 2, price = 0},
-            {name = 'bulletproof_lspd7', grade = 2, price = 0},
-            {name = 'bulletproof_lspd8', grade = 2, price = 0},
+            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 2, label = "Gilet Cadet" }, price = 0},
+            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 3, label = "Gilet Patrouille" }, price = 0},
+            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 4, label = "Gilet Tactique" }, price = 0},
 
             {name = 'WEAPON_HEAVYPISTOL', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
             {name = 'WEAPON_SMG', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
