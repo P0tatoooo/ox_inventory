@@ -1337,6 +1337,13 @@ return {
 	},
 
 	['lockpick'] = {
+		label = 'Kit de Crochetage',
+		weight = 260,
+		consume = 0,
+        stack = false
+	},
+
+    ['lockpick2'] = {
 		label = 'Tournevis Multi-Fonctions',
 		weight = 260,
 		consume = 0,
