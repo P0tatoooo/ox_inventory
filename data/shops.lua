@@ -334,17 +334,17 @@ return {
 			id = 403, colour = 69, scale = 0.8
 		},]]
 		inventory = {
-            { name = 'spring', price = 50 },
-            { name = 'attach_body', price = 4000 },
-			{ name = 'smg_barrel', price = 2000 },
-			{ name = 'attach_guard', price = 2000 },
-			{ name = 'attach_grip', price = 500 },
-			{ name = 'pistol_body', price = 1200 },
-			{ name = 'pistol_barrel', price = 1000 },
-            { name = 'shotgun_body', price = 4000 },
-			{ name = 'shotgun_barrel', price = 2000 },
-			{ name = 'shotgun_guard', price = 2000 },
-			{ name = 'shotgun_grip', price = 500 },
+            { name = 'spring', price = 50, currency = 'black_money' },
+            { name = 'attach_body', price = 4000, currency = 'black_money' },
+			{ name = 'smg_barrel', price = 2000, currency = 'black_money' },
+			{ name = 'attach_guard', price = 2000, currency = 'black_money' },
+			{ name = 'attach_grip', price = 500, currency = 'black_money' },
+			{ name = 'pistol_body', price = 1200, currency = 'black_money' },
+			{ name = 'pistol_barrel', price = 1000, currency = 'black_money' },
+            { name = 'shotgun_body', price = 4000, currency = 'black_money' },
+			{ name = 'shotgun_barrel', price = 2000, currency = 'black_money' },
+			{ name = 'shotgun_guard', price = 2000, currency = 'black_money' },
+			{ name = 'shotgun_grip', price = 500, currency = 'black_money' },
 			--{ name = 'kevlar', price = 500 },
 			--{ name = 'armor_satchel', price = 1000 },
 		}, locations = {
