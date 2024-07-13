@@ -2158,6 +2158,7 @@ end
 
 exports.ox_inventory:displayMetadata('maxammo', 'Capacité du Chargeur')
 exports.ox_inventory:displayMetadata('ammocount', 'Munitions')
+exports.ox_inventory:displayMetadata('plate', 'Plaque')
 
 AddEventHandler('onResourceStop', function(resource)
     if GetCurrentResourceName() ~= resource then

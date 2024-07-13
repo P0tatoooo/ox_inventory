@@ -3162,6 +3162,42 @@ return {
 		close = true,
 	},
 
+    ["forklift"] = {
+		label = "Chariot Elevateur",
+		weight = 200000,
+		stack = false,
+		close = false,
+	},
+
+    ["pallet"] = {
+		label = "Palette",
+		weight = 100000,
+		stack = false,
+		close = false,
+	},
+
+    ["trolley"] = {
+		label = "Diable",
+		weight = 5000,
+		stack = false,
+		close = false,
+        client = {
+            add = function(total)
+                if total > 0 then
+                    TriggerServerEvent('MyCity_CoreV2:Transistep:HasTrolley', true)
+                end
+            end,
+
+            remove = function(total)
+                if total < 1 then
+                    TriggerServerEvent('MyCity_CoreV2:Skills:UpdateInventory')
+                end
+            end
+        }
+	},
+
+    -- Illegal
+
 	["smg_barrel"] = {
 		label = "Canon de mitraillette",
 		weight = 1000,
