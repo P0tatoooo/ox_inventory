@@ -10,7 +10,7 @@ import { Block } from '../../shared/component/Block';
 
 const PAGE_SIZE = 30;
 
-const InventoryGrid: React.FC<{ inventory: Inventory, BelowComponent?: JSX.Element }> = ({ inventory, BelowComponent }) => {
+const InventoryGrid: React.FC<{ inventory: Inventory, BelowComponent?: JSX.Element, mcCoin?: boolean }> = ({ inventory, BelowComponent, mcCoin = false }) => {
   const weight = useMemo(
     () => (inventory.maxWeight !== undefined ? Math.floor(getTotalWeight(inventory.items) * 1000) / 1000 : 0),
     [inventory.maxWeight, inventory.items]
@@ -43,7 +43,7 @@ const InventoryGrid: React.FC<{ inventory: Inventory, BelowComponent?: JSX.Eleme
 
   return (
     <div className="inventory-side-wrapper">
-      <Block className="inventory-block" title={inventory.label} subTitle={<FooterContent weight={weight} inventory={inventory}/>}>
+      <Block className="inventory-block" title={inventory.label} subTitle={<FooterContent weight={weight} inventory={inventory}/>} mcCoin={mcCoin}>
         <div className="inventory-grid-wrapper" style={{ pointerEvents: isBusy ? 'none' : 'auto' }}>
           <div className="inventory-grid-container" ref={containerRef}>
             <>

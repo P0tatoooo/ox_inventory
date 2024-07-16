@@ -12,6 +12,7 @@ import { fetchNui } from './utils/fetchNui';
 import { useDragDropManager } from 'react-dnd';
 import KeyPress from './components/utils/KeyPress';
 import React from 'react';
+import {myCityCoinStore} from "./store/mobx/MyCityCoinStore";
 
 debugData([
   {
@@ -118,6 +119,10 @@ const App: React.FC = () => {
 
   useNuiEvent('closeInventory', () => {
     manager.dispatch({ type: 'dnd-core/END_DRAG' });
+  });
+
+  useNuiEvent('MyCity:Coin:Update', (data) => {
+    myCityCoinStore.update(data.myCityCoin);
   });
 
   return (
