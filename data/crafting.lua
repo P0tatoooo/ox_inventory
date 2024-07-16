@@ -1,5 +1,5 @@
 return {
-	{
+	--[[{
 		items = {
 			{
 				name = 'WEAPON_COMBATPDW',
@@ -226,7 +226,7 @@ return {
 				rotation = 315.0,
 			},
 		},
-	},
+	},]]
 
     --[[{
 		items = {
