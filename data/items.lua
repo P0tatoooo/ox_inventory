@@ -2615,6 +2615,16 @@ return {
     },
     -----------------------------------------------------------
 
+    ['object'] = {
+		label = 'Objet',
+		weight = 500,
+		stack = true,
+		close = true,
+        client = {
+            export = "MyCity_CoreV2.placeProp2"
+        }
+	},
+
     ["camera"] = {
         label = "Appareil Photo",
         weight = 1500,
@@ -3201,6 +3211,20 @@ return {
                 end
             end
         }
+	},
+
+    ["log"] = {
+		label = "Bûche",
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+
+    ["plank"] = {
+		label = "Planche de Bois",
+		weight = 200,
+		stack = true,
+		close = false,
 	},
 
     -- Illegal
