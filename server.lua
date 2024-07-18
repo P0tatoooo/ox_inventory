@@ -64,6 +64,7 @@ function server.setPlayerInventory(player, data)
 		if server.syncInventory then server.syncInventory(inv) end
 		TriggerClientEvent('ox_inventory:setPlayerInventory', player.source, Inventory.Drops, inventory, totalWeight, inv.player)
 	end
+    TriggerEvent('MyCity_CoreV2:MCCoins:UpdateSv', player.source)
 end
 exports('setPlayerInventory', server.setPlayerInventory)
 AddEventHandler('ox_inventory:setPlayerInventory', server.setPlayerInventory)

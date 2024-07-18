@@ -417,4 +417,13 @@ RegisterNetEvent('ox_inventory:refreshSlotCount', function(data)
 	})
 end)
 
+RegisterNetEvent('MyCity_Inventory:Coins:Update', function(coins)
+    SendNUIMessage({
+        action = 'MyCity:Coin:Update',
+        data = {
+            myCityCoin = coins
+        }
+    })
+end)
+
 return Inventory
