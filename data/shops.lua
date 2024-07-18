@@ -162,6 +162,27 @@ return {
 		}
 	},]]
 
+    Farm = {
+		name = 'Farm',
+        groups = {farmer = 0, transistep = 0},
+		inventory = {
+            { name = 'wheatseed', price = 1 },
+            { name = 'maltseed', price = 1 },
+            { name = 'riceseed', price = 1 },
+            { name = 'potatoseed', price = 1 },
+            { name = 'sojaseed', price = 1 },
+            { name = 'tomatoseed', price = 1 },
+            { name = 'saladseed', price = 1 },
+            { name = 'sugarcaneseed', price = 1 },
+            { name = 'agaveseed', price = 1 },
+            { name = 'coffeeseed', price = 1 },
+            { name = 'teaseed', price = 1 },
+		}, locations = {
+			vec3(2425.516602, 4986.316406, 45.028564),
+		}, targets = {
+		}
+	},
+
     MCEventShop = {
 		name = 'MC Event',
 		groups = {mcevent = 0},
