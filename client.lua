@@ -2110,7 +2110,7 @@ function canSwapWeapon(weaponname)
 
     if (isWeaponLong(weaponname) or isWeaponLong(GetSelectedPedWeapon(playerPed))) then--and not isAdmin then
         local p = promise.new()
-        QBCore.Functions.TriggerCallback('qb-multicharacter:server:getSkin', function(model, data)
+        QBCore.Functions.TriggerCallback('MyCity_MultiCharacter:server:getSkin', function(model, data)
             local currentBagIndex = GetPedDrawableVariation(playerPed, 5)
 
             if QBCore.Functions.GetPlayerData().charinfo.gender == 0 then
