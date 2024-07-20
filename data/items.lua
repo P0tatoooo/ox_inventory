@@ -1336,6 +1336,18 @@ return {
 		allowArmed = true
 	},
 
+    ['screwdriver'] = {
+		label = 'Tournevis',
+		weight = 260,
+        stack = false
+	},
+
+    ['screwdriver2'] = {
+		label = 'Tournevis',
+		weight = 260,
+        stack = false
+	},
+
 	['lockpick'] = {
 		label = 'Kit de Crochetage',
 		weight = 260,
