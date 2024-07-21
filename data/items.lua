@@ -362,6 +362,40 @@ return {
             }
         },
 
+        ['chickenburger'] = {
+            label = 'The Chicken',
+            weight = 200,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 50 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+            }
+        },
+
+        ['fruitsalad'] = {
+            label = 'Salade de Fruits',
+            weight = 150,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+            }
+        },
+
         ['kasburger'] = {
             label = 'KAS Burger',
             weight = 1000,
