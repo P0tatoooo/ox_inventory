@@ -38,6 +38,7 @@ local function setItemCompatibilityProps(item)
 end
 
 local function setupPlayer(Player)
+    Citizen.Wait(1000)
 	Player.PlayerData.inventory = Player.PlayerData.items
 	Player.PlayerData.identifier = Player.PlayerData.citizenid
 	Player.PlayerData.name = ('%s %s'):format(Player.PlayerData.charinfo.firstname, Player.PlayerData.charinfo.lastname)
