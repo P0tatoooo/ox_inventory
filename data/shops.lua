@@ -435,7 +435,7 @@ return {
 		--[[blip = {
 			id = 403, colour = 69, scale = 0.8
 		},]] inventory = {
-			{ name = 'screwdriver', price = 700, currency = 'black_money' },
+			{ name = 'screwdriver', price = 1500, currency = 'black_money' },
 		}, locations = {
 			vec3(-770.426392, 354.105499, -150.945801),
 		}, targets = {
@@ -451,7 +451,7 @@ return {
 		--[[blip = {
 			id = 403, colour = 69, scale = 0.8
 		},]] inventory = {
-			{ name = 'screwdriver2', price = 1500, currency = 'black_money' },
+			{ name = 'screwdriver2', price = 700, currency = 'black_money' },
 		}, locations = {
             vec3(151.978027, 325.200012, -150.945801),
 		}, targets = {
