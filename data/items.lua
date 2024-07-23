@@ -3307,6 +3307,12 @@ return {
 		close = false,
 	},
 
+    ['thunderskullskeys'] = {
+		label = 'Clés TS',
+		weight = 1500,
+		stack = true
+	},
+
     -- Illegal
 
 	["smg_barrel"] = {
