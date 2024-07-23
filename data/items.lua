@@ -3309,7 +3309,7 @@ return {
 
     ['thunderskullskeys'] = {
 		label = 'Clés TS',
-		weight = 1500,
+		weight = 10,
 		stack = true
 	},
 
