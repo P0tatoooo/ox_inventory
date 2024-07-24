@@ -1416,6 +1416,12 @@ return {
         stack = false
 	},
 
+    ['screwdriver3'] = {
+		label = 'Tournevis',
+		weight = 260,
+        stack = false
+	},
+
 	['lockpick'] = {
 		label = 'Kit de Crochetage',
 		weight = 260,
