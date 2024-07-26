@@ -1510,7 +1510,7 @@ return {
 	},
 
 	['antibiotic'] = {
-		label = 'antibiotique',
+		label = 'Comprimé',
 		weight = 200,
 		stack = true,
 		close = true,
@@ -1518,7 +1518,7 @@ return {
 	},
 
 	['antiinflammatory'] = {
-		label = 'anti-inflammatoires',
+		label = 'Sirop',
 		weight = 200,
 		stack = true,
 		close = true,
