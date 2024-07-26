@@ -45,12 +45,12 @@ local function setupPlayer(Player)
 
 	Inventory.SetItem(Player.PlayerData.source, 'money', Player.PlayerData.money.cash)
 
-	QBCore.Functions.AddPlayerMethod(Player.PlayerData.source, "AddItem", function(item, amount, slot, info)
+	--[[QBCore.Functions.AddPlayerMethod(Player.PlayerData.source, "AddItem", function(item, amount, slot, info)
 		return Inventory.AddItem(Player.PlayerData.source, item, amount, info, slot)
 	end)
 
-	QBCore.Functions.AddPlayerMethod(Player.PlayerData.source, "RemoveItem", function(item, amount, slot)
-		return Inventory.RemoveItem(Player.PlayerData.source, item, amount, nil, slot)
+	QBCore.Functions.AddPlayerMethod(Player.PlayerData.source, "RemoveItem", function(item, amount, slot, info)
+		return Inventory.RemoveItem(Player.PlayerData.source, item, amount, info, slot)
 	end)
 
 	QBCore.Functions.AddPlayerMethod(Player.PlayerData.source, "GetItemBySlot", function(slot)
@@ -62,7 +62,7 @@ local function setupPlayer(Player)
         if result then
 		    return result
         else
-            return {amount = 0, label = Items()[itemName]?.label or "N/A"}
+            return {count = 0, label = Items()[itemName]?.label or "N/A"}
         end
 	end)
 
@@ -77,7 +77,7 @@ local function setupPlayer(Player)
 	QBCore.Functions.AddPlayerMethod(Player.PlayerData.source, "SetInventory", function()
 		-- ox_inventory's item structure is not compatible with qb-inventory's one so we don't support it
 		error('Player.Functions.SetInventory is unsupported for ox_inventory. Try ClearInventory, then add the desired items.')
-	end)
+	end)]]
 end
 
 AddEventHandler('QBCore:Server:PlayerLoaded', setupPlayer)
