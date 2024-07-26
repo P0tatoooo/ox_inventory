@@ -1806,6 +1806,7 @@ return {
 		weight = 1500,
 		stack = true,
 		close = true,
+        consume = 0
 	},
 
 	['egg'] = {
