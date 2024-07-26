@@ -3038,6 +3038,14 @@ return {
         consume = 0,
 	},
 
+	["axe"] = {
+		label = "Hache",
+		weight = 1000,
+		stack = false,
+		close = false,
+        consume = 0,
+	},
+
 	["goldingot"] = {
 		label = "Gold Ingot",
 		weight = 1000,
