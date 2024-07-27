@@ -2771,12 +2771,6 @@ return {
 		stack = true,
 		close = true,
 	},
-    ['speaker'] = {
-		label = 'Enceinte',
-		weight = 2000,
-		stack = false,
-		close = true,
-	},
     ['prisonticket'] = {
 		label = 'Ticket Pénitentiaire',
 		weight = 1,
