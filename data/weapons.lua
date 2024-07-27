@@ -2098,7 +2098,7 @@ return {
                     }
 			},
 		['minismgclip'] = {
-					label = 'Ch. UZI',
+					label = 'Ch. Skorpion',
 					ammoname = 'smgammo',
 					ammocount = 20,
 					weight = 280,
