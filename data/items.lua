@@ -3048,25 +3048,10 @@ return {
 	},
 
 	["goldingot"] = {
-		label = "Gold Ingot",
+		label = "Lingot d\'Or",
 		weight = 1000,
 		stack = true,
 		close = false,
-		description = "",
-		client = {
-			image = "goldingot.png",
-		}
-	},
-
-	["stone"] = {
-		label = "Stone",
-		weight = 2000,
-		stack = true,
-		close = false,
-		description = "Stone woo",
-		client = {
-			image = "stone.png",
-		}
 	},
 
     ["carparts"] = {
