@@ -2978,7 +2978,7 @@ return {
 
     ['export_box'] = {
 		label = 'Carton Export',
-		weight = 1000,
+		weight = 100000,
 		stack = true
 	},
 
