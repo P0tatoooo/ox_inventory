@@ -1583,6 +1583,7 @@ local function dropItem(source, playerInventory, fromData, data)
 
 	TriggerClientEvent('ox_inventory:createDrop', -1, dropId, Inventory.Drops[dropId], playerInventory.open and source, slot)
 
+    TriggerEvent('MyCity_CoreV2:OxInventoryDrop:Logs', data.count, toData.name, dropId, playerInventory.owner)
 	if server.loglevel > 0 then
 		lib.logger(playerInventory.owner, 'swapSlots', ('%sx %s transferred from "%s" to "%s"'):format(data.count, toData.name, playerInventory.label, dropId))
 	end
@@ -1738,6 +1739,7 @@ lib.callback.register('ox_inventory:swapItems', function(source, data)
 						toInventory.weight = toWeight
 						toData, fromData = Inventory.SwapSlots(fromInventory, toInventory, data.fromSlot, data.toSlot) --[[@as table]]
 
+                        TriggerEvent('MyCity_CoreV2:OxInventory:Logs2', fromData.count, fromData.name, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id, toData.count, toData.name, playerInventory.owner, fromInventory.owner, toInventory.owner)
 						if server.loglevel > 0 then
 							lib.logger(playerInventory.owner, 'swapSlots', ('%sx %s transferred from "%s" to "%s" for %sx %s'):format(fromData.count, fromData.name, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id, toData.count, toData.name))
 						end
@@ -1781,6 +1783,7 @@ lib.callback.register('ox_inventory:swapItems', function(source, data)
 							TriggerClientEvent('ox_inventory:itemNotify', toInventory.id, { toData, 'ui_added', data.count })
 						end
 
+                        TriggerEvent('MyCity_CoreV2:OxInventory:Logs', data.count, fromData.name, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id, playerInventory.owner, fromInventory.owner, toInventory.owner)
 						if server.loglevel > 0 then
 							lib.logger(playerInventory.owner, 'swapSlots', ('%sx %s transferred from "%s" to "%s"'):format(data.count, fromData.name, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id))
 						end
@@ -1831,6 +1834,7 @@ lib.callback.register('ox_inventory:swapItems', function(source, data)
 							TriggerClientEvent('ox_inventory:itemNotify', toInventory.id, { fromData, 'ui_added', data.count })
 						end
 
+                        TriggerEvent('MyCity_CoreV2:OxInventory:Logs', data.count, fromData.name, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id, playerInventory.owner, fromInventory.owner, toInventory.owner)
 						if server.loglevel > 0 then
 							lib.logger(playerInventory.owner, 'swapSlots', ('%sx %s transferred from "%s" to "%s"'):format(data.count, fromData.name, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id))
 						end
@@ -2437,6 +2441,7 @@ RegisterServerEvent('ox_inventory:giveItem', function(slot, target, count)
 			---@todo manually call swapItems or something?
 			if Inventory.AddItem(toInventory, item, count, data.metadata, toSlot) then
 				if Inventory.RemoveItem(fromInventory, item, count, data.metadata, slot) then
+                    TriggerEvent('MyCity_CoreV2:PlayerToPlayer:Logs', count, data.name, toInventory.label, fromInventory.owner)
 					if server.loglevel > 0 then
 						lib.logger(fromInventory.owner, 'giveItem', ('"%s" gave %sx %s to "%s"'):format(fromInventory.label, count, data.name, toInventory.label))
 					end
