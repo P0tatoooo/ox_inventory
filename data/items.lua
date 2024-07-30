@@ -2708,7 +2708,7 @@ return {
 		stack = true,
 		close = true,
         client = {
-            export = "MyCity_CoreV2.placeProp2"
+            export = "MyCity_CoreV2.placeProp"
         }
 	},
 
@@ -3074,9 +3074,6 @@ return {
 		weight = 1000,
 		stack = true,
 		close = true,
-        client = {
-            export = "MyCity_CoreV2.placeProp"
-        }
 	},
 
     ['barrier'] = {
@@ -3084,9 +3081,6 @@ return {
 		weight = 1000,
 		stack = true,
 		close = true,
-        client = {
-            export = "MyCity_CoreV2.placeProp"
-        }
 	},
 
     ['gazebotent'] = {
@@ -3094,9 +3088,6 @@ return {
 		weight = 2000,
 		stack = true,
 		close = true,
-        client = {
-            export = "MyCity_CoreV2.placeProp"
-        }
 	},
 
     ['worklight'] = {
@@ -3104,9 +3095,6 @@ return {
 		weight = 1500,
 		stack = true,
 		close = true,
-        client = {
-            export = "MyCity_CoreV2.placeProp"
-        }
 	},
 
     ['taxiticket'] = {
