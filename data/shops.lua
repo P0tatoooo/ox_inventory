@@ -223,7 +223,7 @@ return {
             {name = 'WEAPON_ANTIDOTE', price = 0, grade = 1},
             {name = 'WEAPON_COMBATPISTOL', price = 0, grade = 2, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
             {name = 'WEAPON_BEANBAG', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
-            {name = 'WEAPON_PUMPSHOTGUN', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
+            {name = 'WEAPON_PUMPSHOTGUN', price = 0, grade = 4, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
 
             {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 2, label = "Gilet Cadet", image = "bulletproof_rookie" }, price = 0},
             {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 3, label = "Gilet Patrouille", image = "bulletproof_lspd" }, price = 0},
