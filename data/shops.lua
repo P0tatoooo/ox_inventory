@@ -195,9 +195,11 @@ return {
 
             {name = 'spikestrip', price = 0, grade = 1},
             { name = 'cone', price = 0, grade = 1},
-			{ name = 'barrier', price = 0, grade = 1},
 			{ name = 'gazebotent', price = 0, grade = 1},
 			{ name = 'worklight', price = 0, grade = 1},
+			{ name = 'policebarrier', price = 0, grade = 1},
+			{ name = 'heavypolicebarrier', price = 0, grade = 1},
+			{ name = 'heavypolicebarrier2', price = 0, grade = 1},
 
             {name = 'suppressor', price = 0, grade = 2},
             {name = 'grip', price = 0, grade = 2},

@@ -3097,6 +3097,27 @@ return {
 		close = true,
 	},
 
+	['policebarrier'] = {
+		label = 'Barrière LSPD',
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+	['heavypolicebarrier'] = {
+		label = 'Barrière Lourde LSPD',
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+	['heavypolicebarrier2'] = {
+		label = 'Barrière Lourde Etendue LSPD',
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
     ['taxiticket'] = {
 		label = 'Ticket Taxi',
 		weight = 1,
