@@ -189,6 +189,7 @@ return {
             {name = 'radio', price = 0, grade = 0},
             {name = 'policebelt', price = 0, grade = 0},
             {name = 'binoculars', price = 0, grade = 0},
+            {name = 'metalwand', price = 0, grade = 0},
             {name = 'sprayremover', price = 0, grade = 0},
             {name = 'posterremover', price = 0, grade = 0},
             {name = 'empty_evidence_bag', price = 0, grade = 0},
