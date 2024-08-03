@@ -249,7 +249,8 @@ end
 local function setItemDurability(item, metadata)
 	local degrade = item?.degrade
 	if degrade then
-        if metadata.durability < 101 and metadata.durability ~= 0 then
+
+        if not metadata.durability or (metadata.durability < 101 and metadata.durability ~= 0) then
 		    metadata.durability = os.time()+(degrade * 60)
         end
 		metadata.degrade = degrade
@@ -293,7 +294,7 @@ function Items.Metadata(inv, item, metadata, count)
 
         local degrade = item?.degrade
         if degrade then
-            if metadata.durability < 101 and metadata.durability ~= 0 then
+            if not metadata.durability or (metadata.durability < 101 and metadata.durability ~= 0) then
                 metadata.durability = os.time()+(degrade * 60)
                 metadata.durability2 = 0
             end
