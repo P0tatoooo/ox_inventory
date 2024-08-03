@@ -247,10 +247,11 @@ local function GenerateSerial(text)
 end
 
 local function setItemDurability(item, metadata)
-
 	local degrade = item?.degrade
 	if degrade then
-		metadata.durability = os.time()+(degrade * 60)
+        if metadata.durability < 101 and metadata.durability ~= 0 then
+		    metadata.durability = os.time()+(degrade * 60)
+        end
 		metadata.degrade = degrade
 	elseif item?.durability then
 		metadata.durability = 100
@@ -292,8 +293,9 @@ function Items.Metadata(inv, item, metadata, count)
 
         local degrade = item?.degrade
         if degrade then
-            if metadata.durability < 101 then
+            if metadata.durability < 101 and metadata.durability ~= 0 then
                 metadata.durability = os.time()+(degrade * 60)
+                metadata.durability2 = 0
             end
             metadata.degrade = degrade
         elseif item?.durability then
