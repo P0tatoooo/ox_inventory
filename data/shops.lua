@@ -352,9 +352,9 @@ return {
 			--{ name = 'kevlar', price = 500 },
 			--{ name = 'armor_satchel', price = 1000 },
 		}, locations = {
-			vec3(-1227.37, -922.65, 2.15), -- ADP/AKU
+			--vec3(-1227.37, -922.65, 2.15), -- ADP/AKU
             vec3(351.11, -2760.62, 5.16), -- AK/UZI
-            vec3(-514.47, 5306.30, 73.50), -- MP5/TEC-9
+            --vec3(-514.47, 5306.30, 73.50), -- MP5/TEC-9
             vec3(2391.296631, 3067.410889, 48.673950), -- Fusil à Pompe/Fusil à Pompe Court
             vec3(-360.184601, 180.290115, 86.917236), -- Pistolets
 			/*

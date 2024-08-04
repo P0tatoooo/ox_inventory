@@ -2823,6 +2823,13 @@ return {
         }
     },
 
+    ['metal'] = {
+		label = 'Métal',
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
     ["envelope"] = {
 		label = "Enveloppe Cadeau",
 		weight = 10,
@@ -2936,31 +2943,43 @@ return {
 
     ["car_door"] = {
         label = "Portière",
-        weight = 4000,
+        weight = 2000,
         stack = false,
     },
 
     ["car_radiator"] = {
         label = "Radiateur",
-        weight = 4000,
+        weight = 1500,
         stack = false,
     },
 
     ["car_trunk"] = {
         label = "Coffre",
-        weight = 4000,
+        weight = 1500,
         stack = false,
     },
 
     ["car_wheel"] = {
         label = "Roue",
-        weight = 4000,
+        weight = 1500,
         stack = false,
     },
 
     ["car_hood"] = {
         label = "Capot",
-        weight = 4000,
+        weight = 1500,
+        stack = false,
+    },
+
+    ["car_engine"] = {
+        label = "Moteur",
+        weight = 3000,
+        stack = false,
+    },
+
+    ["car_transmission"] = {
+        label = "Transmission",
+        weight = 2000,
         stack = false,
     },
 
