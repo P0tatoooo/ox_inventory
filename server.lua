@@ -4,6 +4,8 @@ if GetConvar('inventory:versioncheck', 'true') == 'true' then
 	lib.versionCheck('overextended/ox_inventory')
 end
 
+QBCore = exports['qb-core']:GetCoreObject()
+
 require 'modules.bridge.server'
 require 'modules.pefcl.server'
 
@@ -224,7 +226,8 @@ end
 ---@param invType string
 ---@param data string|number|table
 lib.callback.register('ox_inventory:openInventory', function(source, invType, data)
-	return openInventory(source, invType, data)
+    local isAdmin = QBCore.Functions.HasPermission(source, 'admin')
+	return openInventory(source, invType, data, isAdmin)
 end)
 
 ---@param netId number

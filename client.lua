@@ -1,5 +1,13 @@
 if not lib then return end
 
+QBCore = exports['qb-core']:GetCoreObject()
+local isAdmin
+QBCore.Functions.TriggerCallback('MyCity_CoreV2:AdminMenu:HasAdminPermissions', function(group)
+    if group == 'god' or group == 'admin' then
+        isAdmin = true
+    end
+end)
+
 require 'modules.bridge.client'
 require 'modules.interface.client'
 
@@ -182,7 +190,9 @@ function client.openInventory(inv, data)
         local targetCoords = targetPed and GetEntityCoords(targetPed)
 
         if not targetCoords or #(targetCoords - GetEntityCoords(playerPed)) > 1.8 or not (client.hasGroup(shared.police) or canOpenTarget(targetPed)) then
-            return lib.notify({ id = 'inventory_right_access', type = 'error', description = locale('inventory_right_access') })
+            if not isAdmin then
+                return lib.notify({ id = 'inventory_right_access', type = 'error', description = locale('inventory_right_access') })
+            end
         end
     end
 
@@ -1478,15 +1488,17 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 						local pedCoords = GetEntityCoords(ped)
 
 						if not id or #(playerCoords - pedCoords) > 1.8 or not (client.hasGroup(shared.police) or canOpenTarget(ped)) then
-							client.closeInventory()
-							lib.notify({ id = 'inventory_lost_access', type = 'error', description = locale('inventory_lost_access') })
+							if not isAdmin then
+                                client.closeInventory()
+                                lib.notify({ id = 'inventory_lost_access', type = 'error', description = locale('inventory_lost_access') })
+                            end
 						else
 							TaskTurnPedToFaceCoord(playerPed, pedCoords.x, pedCoords.y, pedCoords.z, 50)
 						end
 
 					elseif currentInventory.coords and (#(playerCoords - currentInventory.coords) > (currentInventory.distance or 3.0) or canOpenTarget(playerPed)) then
-						client.closeInventory()
-						lib.notify({ id = 'inventory_lost_access', type = 'error', description = locale('inventory_lost_access') })
+                        client.closeInventory()
+                        lib.notify({ id = 'inventory_lost_access', type = 'error', description = locale('inventory_lost_access') })
 					end
 				end
 			end
@@ -2044,7 +2056,6 @@ end)
 ---------------------
 
 
-QBCore = exports['qb-core']:GetCoreObject()
 
 local longWeapons = {
 	'WEAPON_BAT',
