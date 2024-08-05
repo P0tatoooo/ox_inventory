@@ -1731,7 +1731,7 @@ return {
 
 	['coffeemachine'] = {
 		label = 'machine à café',
-		weight = 6000,
+		weight = 4000,
 		stack = true,
 		close = true,
 
@@ -1843,13 +1843,27 @@ return {
 
 	['gamingconsole'] = {
 		label = 'console de jeux',
-		weight = 1,
+		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	['glass'] = {
 		label = 'verre',
+		weight = 100,
+		stack = true,
+		close = true,
+	},
+
+    ['bottlecap'] = {
+		label = 'capsule',
+		weight = 10,
+		stack = true,
+		close = true,
+	},
+
+    ['plastic'] = {
+		label = 'Plastique',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -2993,7 +3007,7 @@ return {
     ["mixingboard"] = {
         label = "Table de Mixage",
         weight = 4000,
-        stack = false,
+        stack = true,
     },
 
     ['export_box'] = {
