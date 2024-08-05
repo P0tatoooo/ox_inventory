@@ -64,10 +64,6 @@ return {
 		}
 	},
 
-	['black_money'] = {
-		label = 'Liasses de Billets',
-	},
-
 	['parachute'] = {
 		label = 'Parachute',
 		weight = 3000,
@@ -1438,6 +1434,11 @@ return {
 
 	['money'] = {
 		label = 'Argent'
+	},
+
+    ['black_money'] = {
+		label = 'Liasses de Billets',
+        stack = true,
 	},
 
 	['accesscard'] = {
