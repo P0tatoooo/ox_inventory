@@ -3494,4 +3494,47 @@ return {
 		stack = false,
 		close = true,
 	},
-}
+
+    ----------------------------
+    ["security_card_01"] = {
+		label = "Security Card A",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "A security card... I wonder what it goes to",
+		client = {
+			image = "security_card_01.png",
+		}
+	},
+    ["thermite"] = {
+		label = "Thermite",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "Sometimes you'd wish for everything to burn",
+        consume=0,
+		client = {
+            export='',
+			image = "thermite.png",
+		}
+	},
+    ["deposit_box_key"] = {
+		label = "Deposit Box Key",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "",
+		client = {
+			image = ".png",
+		}
+	},
+    ['hackingdevice'] = {
+		label = 'Hacking device',
+		weight = 0,
+		description = 'Will allow you to bypass vehicle security systems.',
+		client = {
+			export = 'rahe-boosting.hackingdevice',
+		}
+	},
+
+  }
