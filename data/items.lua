@@ -3498,43 +3498,60 @@ return {
     ----------------------------
     ["security_card_01"] = {
 		label = "Security Card A",
-		weight = 0,
+		weight = 100,
 		stack = true,
 		close = true,
-		description = "A security card... I wonder what it goes to",
-		client = {
-			image = "security_card_01.png",
-		}
 	},
     ["thermite"] = {
 		label = "Thermite",
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Sometimes you'd wish for everything to burn",
         consume=0,
-		client = {
-            export='',
-			image = "thermite.png",
-		}
 	},
     ["deposit_box_key"] = {
 		label = "Deposit Box Key",
-		weight = 0,
+		weight = 100,
 		stack = false,
-		close = true,
-		description = "",
-		client = {
-			image = ".png",
-		}
 	},
     ['hackingdevice'] = {
 		label = 'Hacking device',
-		weight = 0,
-		description = 'Will allow you to bypass vehicle security systems.',
-		client = {
-			export = 'rahe-boosting.hackingdevice',
-		}
+		weight = 300,
+	},
+
+    ----------------------------
+    ['paintingg'] = {
+		label = 'paintingg',
+		weight = 300,
+	},
+    ['paintingh'] = {
+		label = 'paintingh',
+		weight = 300,
+	},
+
+    ['paintingf'] = {
+		label = 'paintingf',
+		weight = 300,
+	},
+    ['paintingj'] = {
+		label = 'paintingj',
+		weight = 300,
+	},
+    ['vanDiamond'] = {
+		label = 'vanDiamond',
+		weight = 300,
+	},
+    ['vanPanther'] = {
+		label = 'vanPanther',
+		weight = 300,
+	},
+    ['vanNecklace'] = {
+		label = 'vanNecklace',
+		weight = 300,
+	},
+    ['vanBottle'] = {
+		label = 'vanBottle',
+		weight = 300,
 	},
 
   }
