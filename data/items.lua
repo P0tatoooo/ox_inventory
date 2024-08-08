@@ -3520,38 +3520,24 @@ return {
 	},
 
     ----------------------------
-    ['paintingg'] = {
-		label = 'paintingg',
+    ['reddiamond'] = {
+		label = 'Diamant Rouge',
 		weight = 300,
 	},
-    ['paintingh'] = {
-		label = 'paintingh',
+    ['sapphirepanther'] = {
+		label = 'Panthère Sertie de Saphirs',
 		weight = 300,
 	},
-
-    ['paintingf'] = {
-		label = 'paintingf',
+    ['rubynecklace'] = {
+		label = 'Collier de Rubis',
 		weight = 300,
 	},
-    ['paintingj'] = {
-		label = 'paintingj',
+    ['mayabottle'] = {
+		label = 'Bouteille Maya',
 		weight = 300,
 	},
-    ['vanDiamond'] = {
-		label = 'vanDiamond',
+    ['glasscutter'] = {
+		label = 'Coupe-Verre',
 		weight = 300,
 	},
-    ['vanPanther'] = {
-		label = 'vanPanther',
-		weight = 300,
-	},
-    ['vanNecklace'] = {
-		label = 'vanNecklace',
-		weight = 300,
-	},
-    ['vanBottle'] = {
-		label = 'vanBottle',
-		weight = 300,
-	},
-
-  }
+}
