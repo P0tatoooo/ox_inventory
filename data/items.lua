@@ -3497,25 +3497,25 @@ return {
 
     ----------------------------
     ["security_card_01"] = {
-		label = "Security Card A",
+		label = "Carte de Sécurité",
 		weight = 100,
 		stack = true,
 		close = true,
 	},
     ["thermite"] = {
-		label = "Thermite",
+		label = "Explosif Thermite",
 		weight = 1000,
 		stack = true,
 		close = true,
-        consume=0,
+        consume= 0,
 	},
     ["deposit_box_key"] = {
-		label = "Deposit Box Key",
+		label = "Clé de Coffre",
 		weight = 100,
 		stack = false,
 	},
     ['hackingdevice'] = {
-		label = 'Hacking device',
+		label = 'Appareil de Piratage',
 		weight = 300,
 	},
 
