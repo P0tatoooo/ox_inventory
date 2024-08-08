@@ -3500,14 +3500,11 @@ return {
 		label = "Carte de Sécurité",
 		weight = 100,
 		stack = true,
-		close = true,
 	},
     ["thermite"] = {
 		label = "Explosif Thermite",
 		weight = 1000,
 		stack = true,
-		close = true,
-        consume= 0,
 	},
     ["deposit_box_key"] = {
 		label = "Clé de Coffre",
@@ -3539,5 +3536,7 @@ return {
     ['glasscutter'] = {
 		label = 'Coupe-Verre',
 		weight = 300,
+        stack = false,
+        consume = 0
 	},
 }
