@@ -3539,4 +3539,12 @@ return {
         stack = false,
         consume = 0
 	},
+    ['prepaidphone'] = {
+		label = 'Téléphone Jetable',
+		weight = 300,
+        stack = false,
+        client = {
+            export = "MyCity_CoreV2.usePrepaidPhone",
+        }
+	},
 }
