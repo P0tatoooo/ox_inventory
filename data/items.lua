@@ -3483,7 +3483,7 @@ return {
 		close = true,
 	},
     ["bp_pistol50"] = {
-		label = "Plan Pistolet",
+		label = "Plan Pistolet Cal .50",
 		weight = 50,
 		stack = false,
 		close = true,
