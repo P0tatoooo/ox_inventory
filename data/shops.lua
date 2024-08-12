@@ -330,11 +330,12 @@ return {
 	TempDarkShop1 = { -- Sell Weapon Parts
 		name = 'Revendeur',
 		groups = {
+            ['lossalvador'] = 0,
 			['braithemb'] = 0,
-			['casano'] = 0,
-            ['bmf'] = 0,
+            ['mogila'] = 0,
             ['losvalentinos'] = 0,
             ['ms13'] = 0,
+            ['piru'] = 0,
 		},
 		--[[blip = {
 			id = 403, colour = 69, scale = 0.8
@@ -354,11 +355,12 @@ return {
 			--{ name = 'kevlar', price = 500 },
 			--{ name = 'armor_satchel', price = 1000 },
 		}, locations = {
-			--vec3(-1227.37, -922.65, 2.15), -- ADP/AKU
+            vec3(-3160.984619, 1113.349487, 20.854980),-- ADP/AKU
             vec3(351.11, -2760.62, 5.16), -- AK/UZI
-            --vec3(-514.47, 5306.30, 73.50), -- MP5/TEC-9
+            vec3(1524.079102, 1709.854980, 110.007324), -- MP5/TEC-9
             vec3(2391.296631, 3067.410889, 48.673950), -- Fusil à Pompe/Fusil à Pompe Court
             vec3(-360.184601, 180.290115, 86.917236), -- Pistolets
+            vec3(-1092.843994, -1225.753906, 2.741455), -- Pistolets Cal .50
 			/*
 			vec3(2745.95, 1415.23, 19.82),
 			vec3(1887.51, 3913.88, 32.02),

@@ -3482,6 +3482,12 @@ return {
 		stack = false,
 		close = true,
 	},
+    ["bp_pistol50"] = {
+		label = "Plan Pistolet",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
 	["armor_satchel"] = {
 		label = "Plaque de métal",
 		weight = 500,
