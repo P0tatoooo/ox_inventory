@@ -2600,68 +2600,8 @@ return {
             weight = 1000,
             stack = true,
     },
-    ['v8engine'] = {
-            label = 'V8 Engine',
-            weight = 1000,
-            stack = false,
-    },
-    ['2jzengine'] = {
-            label = '2JZ Engine',
-            weight = 1000,
-            stack = false,
-    },
-    ['lambov10'] = {
-            label = 'lambov10',
-            weight = 1000,
-            stack = false,
-    },
-    ['musv8'] = {
-            label = 'musv8',
-            weight = 1000,
-            stack = false,
-    },
-    ['shonen'] = {
-            label = 'shonen',
-            weight = 1000,
-            stack = false,
-    },
-    ['rb26det'] = {
-            label = 'rb26det',
-            weight = 1000,
-            stack = false,
-    },
-    ['rotary7'] = {
-            label = 'rotary7',
-            weight = 1000,
-            stack = false,
-    },
-    ['m297zonda'] = {
-            label = 'm297zonda',
-            weight = 1000,
-            stack = false,
-    },
-    ['m158huayra'] = {
-            label = 'm158huayra',
-            weight = 1000,
-            stack = false,
-    },
-    ['k20a'] = {
-            label = 'k20a',
-            weight = 1000,
-            stack = false,
-    },
-    ['gt3flat6'] = {
-            label = 'gt3flat6',
-            weight = 1000,
-            stack = false,
-    },
-    ['predatorv8'] = {
-            label = 'predatorv8',
-            weight = 1000,
-            stack = false,
-    },
-    ['p60b40'] = {
-            label = 'p60b40',
+    ['custom_engine'] = {
+            label = 'Moteur Custom',
             weight = 1000,
             stack = false,
     },
