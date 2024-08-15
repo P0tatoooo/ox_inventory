@@ -462,7 +462,7 @@ return {
 		},]] inventory = {
 			{ name = 'screwdriver2', price = 700, currency = 'black_money' },
 		}, locations = {
-            vec3(151.978027, 325.200012, -150.945801),
+            vec3(807.613159, -2378.083496, -150.945801),
 		}, targets = {
 
 		}
