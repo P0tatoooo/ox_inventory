@@ -1869,6 +1869,20 @@ return {
 		close = true,
 	},
 
+    ['electroniccircuit'] = {
+		label = 'Circuit Electronique',
+		weight = 100,
+		stack = true,
+		close = true,
+	},
+
+    ['kevlarfiber'] = {
+		label = 'Fibre de Kevlar',
+		weight = 100,
+		stack = true,
+		close = true,
+	},
+
 	['golf'] = {
 		label = 'balle de golf',
 		weight = 100,
