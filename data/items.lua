@@ -2566,7 +2566,7 @@ return {
 	},
 
     ['stock_turbo'] = {
-            label = 'Turbo',
+            label = 'Turbo Custom',
             weight = 1000,
             stack = true,
     },
