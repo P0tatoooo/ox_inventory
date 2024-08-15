@@ -1941,6 +1941,12 @@ return {
                         exports.MyCity_CoreV2:RefillClip(slot)
                     end
                 },
+                {
+                    label = 'Vider le chargeur',
+                    action = function(slot)
+                        exports.MyCity_CoreV2:EmptyClip(slot)
+                    end
+                },
             }
 		},
 		['combatpistolclip'] = {
@@ -1953,6 +1959,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     }
@@ -1969,6 +1981,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     }
 			},
 		['pistol50clip'] = {
@@ -1981,6 +1999,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     }
@@ -1997,6 +2021,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     }
 			},
 		['heavypistolclip'] = {
@@ -2009,6 +2039,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     }
@@ -2025,6 +2061,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     }
 			},
 		['microsmgclip'] = {
@@ -2037,6 +2079,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     }
@@ -2053,6 +2101,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     }
 			},
 		['assaultsmgclip'] = {
@@ -2065,6 +2119,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     }
@@ -2081,6 +2141,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     }
 			},
 		['machinepistolclip'] = {
@@ -2093,6 +2159,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     }
@@ -2109,6 +2181,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     }
 			},
 		['gusenbergclip'] = {
@@ -2123,6 +2201,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     }
 			},
 		['assaultshotgunclip'] = {
@@ -2135,6 +2219,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     }
@@ -2152,6 +2242,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     }
 			},
 		['mgclip'] = {
@@ -2164,6 +2260,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     }
@@ -2180,6 +2282,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     }
 			},
 		['sniperclip'] = {
@@ -2192,6 +2300,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     }
@@ -2208,6 +2322,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     }
 			},
 		['marksmansniperclip'] = {
@@ -2222,6 +2342,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     }
 			},
 		['extendedpistolclip'] = {
@@ -2234,6 +2360,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2253,6 +2385,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_COMBATPISTOL_CLIP_02`},
@@ -2268,6 +2406,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2287,6 +2431,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_PISTOL50_CLIP_02`},
@@ -2302,6 +2452,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2321,6 +2477,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_HEAVYPISTOL_CLIP_02`},
@@ -2336,6 +2498,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2355,6 +2523,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_MICROSMG_CLIP_02`},
@@ -2370,6 +2544,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2389,6 +2569,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_ASSAULTSMG_CLIP_02`},
@@ -2404,6 +2590,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2423,6 +2615,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_MACHINEPISTOL_CLIP_02`},
@@ -2438,6 +2636,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2457,6 +2661,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_GUSENBERG_CLIP_02`},
@@ -2472,6 +2682,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2493,6 +2709,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_HEAVYSHOTGUN_CLIP_02`},
@@ -2512,6 +2734,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_ASSAULTRIFLE_CLIP_02`,`COMPONENT_CARBINERIFLE_CLIP_02`,`COMPONENT_ADVANCEDRIFLE_CLIP_02`,`COMPONENT_SPECIALCARBINE_CLIP_02`,`COMPONENT_BULLPUPRIFLE_CLIP_02`,`COMPONENT_BULLPUPRIFLE_MK2_CLIP_02`,`COMPONENT_SPECIALCARBINE_MK2_CLIP_02`,`COMPONENT_ASSAULTRIFLE_MK2_CLIP_02`,`COMPONENT_CARBINERIFLE_MK2_CLIP_02`,`COMPONENT_COMPACTRIFLE_CLIP_02`,`COMPONENT_MILITARYRIFLE_CLIP_02`,`COMPONENT_TACTICALRIFLE_CLIP_02`,`COMPONENT_HEAVYRIFLE_CLIP_02`},
@@ -2527,6 +2755,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2546,6 +2780,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_COMBATMG_CLIP_02`,`COMPONENT_COMBATMG_MK2_CLIP_02`},
@@ -2561,6 +2801,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2580,6 +2826,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_MARKSMANRIFLE_CLIP_02`,`COMPONENT_MARKSMANRIFLE_MK2_CLIP_02`},
@@ -2595,6 +2847,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2613,6 +2871,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2634,6 +2898,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_COMBATPDW_CLIP_03`},
@@ -2649,6 +2919,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },
@@ -2668,6 +2944,12 @@ return {
                                 exports.MyCity_CoreV2:RefillClip(slot)
                             end
                         },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
                     },
 					client = {
 							component = {`COMPONENT_HEAVYSHOTGUN_CLIP_03`},
@@ -2684,6 +2966,12 @@ return {
                             label = 'Remplir le chargeur',
                             action = function(slot)
                                 exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
                             end
                         },
                     },

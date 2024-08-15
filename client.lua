@@ -935,9 +935,15 @@ local function registerCommands()
 				if currentWeapon.metadata.durability > 0 then
                     local slotId
                     if currentWeapon.clip then
+                        local ammoInClip = 0
                         for k,v in pairs(currentWeapon.clip) do
-                            slotId = Inventory.GetSlotIdWithItem(v, nil, false)
-                            if slotId then break end
+                            local slotIds = Inventory.GetSlotsWithItem(v, nil, false)
+                            for l,w in pairs(slotIds) do
+                                if not slotId or ((tonumber(w.metadata.ammocount) or 0) > ammoInClip) then
+                                    slotId = w.slot
+                                    ammoInClip = tonumber(w.metadata.ammocount)
+                                end
+                            end
                         end
                     else
                         slotId = Inventory.GetSlotIdWithItem(currentWeapon.ammo, { type = currentWeapon.metadata.specialAmmo }, false)
@@ -953,7 +959,36 @@ local function registerCommands()
 		end
 	})
 
-    RegisterKeyMapping('reloadweapon', 'Recharger l\'arme - Manette', 'PAD_ANALOGBUTTON', 'RLEFT_INDEX')
+    RegisterCommand('reloadweapon2', function()
+        if not currentWeapon or not canUseItem(true) then return end
+        if currentWeapon.ammo or currentWeapon.clip then
+            if currentWeapon.metadata.durability > 0 then
+                local slotId
+                if currentWeapon.clip then
+                    local ammoInClip = 0
+                    for k,v in pairs(currentWeapon.clip) do
+                        local slotIds = Inventory.GetSlotsWithItem(v, nil, false)
+                        for l,w in pairs(slotIds) do
+                            if not slotId or ((tonumber(w.metadata.ammocount) or 0) > ammoInClip) then
+                                slotId = w.slot
+                                ammoInClip = tonumber(w.metadata.ammocount)
+                            end
+                        end
+                    end
+                else
+                    slotId = Inventory.GetSlotIdWithItem(currentWeapon.ammo, { type = currentWeapon.metadata.specialAmmo }, false)
+                end
+
+                if slotId then
+                    useSlot(slotId)
+                end
+            else
+                lib.notify({ id = 'no_durability', type = 'error', description = locale('no_durability', currentWeapon.label) })
+            end
+        end
+    end)
+
+    RegisterKeyMapping('reloadweapon2', 'Recharger l\'arme - Manette', 'PAD_ANALOGBUTTON', 'RLEFT_INDEX')
 
 	lib.addKeybind({
 		name = 'hotbar',

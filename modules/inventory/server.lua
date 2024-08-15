@@ -2534,8 +2534,7 @@ local function updateWeapon(source, action, value, slot, specialAmmo, clipinweap
 
 				elseif type == 'string' then
 					local component = inventory.items[tonumber(value)]
-
-					if not Inventory.RemoveItem(inventory, component.name, 1) then return false end
+					if not Inventory.RemoveItem(inventory, component.name, 1, nil, tonumber(value)) then return false end
 
 					table.insert(weapon.metadata.components, component.name)
 					weapon.weight = Inventory.SlotWeight(item, weapon)
