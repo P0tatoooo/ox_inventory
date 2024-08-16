@@ -2617,7 +2617,7 @@ return {
     ['custom_engine'] = {
             label = 'Moteur Custom',
             weight = 1000,
-            stack = false,
+            stack = true,
     },
     ['stock_tires'] = {
             label = 'Pneus',
