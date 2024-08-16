@@ -252,10 +252,9 @@ return {
             {name = 'WEAPON_AIRSOFTR870', price = 0, grade = 7},
             {name = 'WEAPON_AIRSOFTUZIMICRO', price = 0, grade = 7},
 		}, locations = {
-			vector3(458.928, -997.6299, 31.73878),
+			vector3(429.494507, -975.692322, 21.54),
             vector3(-1888.261, 3244.5, 32.83917),
             vector3(-425.2, 5998.34, 32),
-            vector3(472.4356, -972.226, 23.93244)
 		}, targets = {
 			--{ loc = vec3(453.21, -980.03, 30.68), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 }
 		}
@@ -273,7 +272,7 @@ return {
             { name = 'driver_license', price = 0 },
             { name = 'cc_license', price = 0 },
 		}, locations = {
-			vec3(448.246155, -981.389038, 31.773682),
+			vec3(433.753845, -979.318665, 31.01),
 		}, targets = {
 
 		}
