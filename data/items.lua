@@ -1817,8 +1817,8 @@ return {
 		close = true,
 	},
 
-	['ephedrine'] = {
-		label = 'Éphédrine',
+	['ephedra'] = {
+		label = 'Ephedra',
 		weight = 1,
 		stack = true,
 		close = true,
@@ -3432,6 +3432,18 @@ return {
 	},
     ["bp_sawnoffshotgun"] = {
 		label = "Plan Fusil à Pompe Court",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
+    ["bp_bullpupshotgun"] = {
+		label = "Plan Fusil à Pompe Bullpup",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
+    ["bp_dbshotgun"] = {
+		label = "Plan Fusil à Pompe Double Coup",
 		weight = 50,
 		stack = false,
 		close = true,
