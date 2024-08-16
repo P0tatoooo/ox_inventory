@@ -2585,7 +2585,7 @@ return {
             stack = true,
     },
     ['nos'] = {
-            label = 'Nitro',
+            label = 'Kit NOS',
             weight = 1000,
             stack = true,
     },
