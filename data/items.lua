@@ -2757,6 +2757,12 @@ return {
 		stack = false,
         close = true,
 	},
+    ['electricscooter'] = {
+		label = 'Trottinette Electrique',
+		weight = 2000,
+		stack = false,
+        close = true,
+	},
     ["shield"] = {
         label = "Police shield",
         weight = 8000,

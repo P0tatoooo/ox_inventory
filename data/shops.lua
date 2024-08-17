@@ -95,7 +95,7 @@ return {
 			{ name = 'basketball', price = 40 },
 			{ name = 'rugby', price = 40 },
 			{ name = 'baseball', price = 40 },
-			{ name = 'skateboard', price = 600 },
+			{ name = 'electricscooter', price = 600 },
 			{ name = 'spray', price = 300 },
 			{ name = 'notepad', price = 100 },
 			{ name = 'notebook', price = 100 },
