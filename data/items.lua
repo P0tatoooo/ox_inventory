@@ -2108,6 +2108,18 @@ return {
 		weight = 2000,
 		stack = true,
 		close = true,
+        consume = 0,
+	},
+
+    ['tattoogun'] = {
+		label = 'Pistolet de Tatouage',
+		weight = 500,
+		stack = true,
+		close = true,
+        consume = 0,
+        client = {
+            export = "MyCity_CoreV2.UseTattooGun"
+        }
 	},
 
 	['packaged_chicken'] = {
