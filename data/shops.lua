@@ -468,20 +468,4 @@ return {
 
 		}
 	},
-
-    DrillShop = {
-		name = 'Etagère',
-		groups = {
-			['mob'] = 0,
-		},
-		--[[blip = {
-			id = 403, colour = 69, scale = 0.8
-		},]] inventory = {
-			{ name = 'screwdriver3', price = 2500, currency = 'black_money' },
-		}, locations = {
-            vec3(-52.773628, 377.248352, -150.945801),
-		}, targets = {
-
-		}
-	},
 }
