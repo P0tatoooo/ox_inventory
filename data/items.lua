@@ -3053,7 +3053,7 @@ return {
     ["pickaxe"] = {
 		label = "Pioche",
 		weight = 1000,
-		stack = false,
+		stack = true,
 		close = false,
         consume = 0,
 	},
@@ -3061,7 +3061,7 @@ return {
 	["axe"] = {
 		label = "Hache",
 		weight = 1000,
-		stack = false,
+		stack = true,
 		close = false,
         consume = 0,
 	},
