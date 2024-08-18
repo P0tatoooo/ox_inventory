@@ -2101,12 +2101,11 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
-
 	},
 
 	['divinggear'] = {
 		label = 'equipement de plongée',
-		weight = 1750,
+		weight = 2000,
 		stack = true,
 		close = true,
 	},
@@ -2471,17 +2470,6 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
-	},
-
-	["diving_gear"] = {
-		label = "Diving Gear",
-		weight = 30000,
-		stack = false,
-		close = true,
-		description = "An oxygen tank and a rebreather",
-		client = {
-			image = "diving_gear.png",
-		}
 	},
 
 	["nitrous"] = {
