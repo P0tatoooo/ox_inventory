@@ -99,7 +99,8 @@ return {
 			{ name = 'spray', price = 300 },
 			{ name = 'notepad', price = 100 },
 			{ name = 'notebook', price = 100 },
-			{ name = 'boombox', price = 1000 }
+			{ name = 'boombox', price = 1000 },
+			{ name = 'divinggear', price = 2000 }
 		}, locations = {
 			vec3(24.672529, -1347.903320, 28.482056),
             vec3(-3038.426270, 584.795593, 6.897461),
@@ -193,6 +194,7 @@ return {
             {name = 'sprayremover', price = 0, grade = 0},
             {name = 'posterremover', price = 0, grade = 0},
             {name = 'empty_evidence_bag', price = 0, grade = 0},
+            { name = 'divinggear', price = 0 },
 
             {name = 'spikestrip', price = 0, grade = 1},
             { name = 'cone', price = 0, grade = 1},
