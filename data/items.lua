@@ -2811,6 +2811,13 @@ return {
 		close = true,
 	},
 
+    ['steel'] = {
+		label = 'Acier',
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
     ["envelope"] = {
 		label = "Enveloppe Cadeau",
 		weight = 10,
