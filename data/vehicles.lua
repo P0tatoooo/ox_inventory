@@ -58,7 +58,7 @@ return {
         [19] = {11, 2000},		-- Military
         [20] = {11, 2000},		-- Commercial (trucks)
 		models = {
-            [`nmule`] = {11, 42000}
+            [`nmule`] = {11, 42000},
 		}
 	},
 
@@ -90,7 +90,8 @@ return {
             [`bison3`] = {61, 400000},
             [`nmule`] = {61, 400000},
             [`mtanker3`] = {61, 1000000},
-            [`pounder`] = {61, 410000}
+            [`pounder`] = {61, 410000},
+            [`sunrise1`] = {61, 400000}
 		},
         boneIndex = {
         }
