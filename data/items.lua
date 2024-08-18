@@ -2718,13 +2718,13 @@ return {
 	["neonkit"] = {
 		label = "Kit Néons",
 		weight = 1000,
-		stack = false,
+		stack = true,
 		close = true
 	},
     ["driftkit"] = {
 		label = "Kit Drift",
 		weight = 1000,
-		stack = false,
+		stack = true,
 		close = true
 	},
     ["rope"] = {
