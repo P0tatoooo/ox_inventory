@@ -2109,6 +2109,9 @@ return {
 		stack = true,
 		close = true,
         consume = 0,
+        client = {
+            export = "MyCity_CoreV2.UseDivingGear"
+        }
 	},
 
     ['tattoogun'] = {
