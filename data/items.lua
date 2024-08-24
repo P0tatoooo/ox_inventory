@@ -1840,7 +1840,13 @@ return {
 		weight = 1,
 		stack = true,
 		close = true,
+	},
 
+	['poppyresin'] = {
+		label = 'Pavot',
+		weight = 1,
+		stack = true,
+		close = true,
 	},
 
 	['fakeplate'] = {
