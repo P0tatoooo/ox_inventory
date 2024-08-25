@@ -332,11 +332,11 @@ return {
 	TempDarkShop1 = { -- Sell Weapon Parts
 		name = 'Revendeur',
 		groups = {
-            ['lossalvador'] = 0,
+            ['cosanostra'] = 0,
 			['braithemb'] = 0,
             ['mogila'] = 0,
             ['losvalentinos'] = 0,
-            ['ms13'] = 0,
+            ['piru'] = 0,
             ['piru'] = 0,
             ['verdugos'] = 0
 		},
@@ -358,7 +358,7 @@ return {
 			--{ name = 'kevlar', price = 500 },
 			--{ name = 'armor_satchel', price = 1000 },
 		}, locations = {
-            vec3(-3160.984619, 1113.349487, 20.854980),-- ADP/AKU
+            vec3(-1048.813232, -521.657166, 36.575806), --AKU/ADP
             vec3(351.11, -2760.62, 5.16), -- AK/UZI
             vec3(1524.079102, 1709.854980, 110.007324), -- MP5/TEC-9
             vec3(2391.296631, 3067.410889, 48.673950), -- Fusil à Pompe Bullpup/Fusil à Pompe Canon Scié
