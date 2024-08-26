@@ -2833,7 +2833,7 @@ return {
 
     ['metal'] = {
 		label = 'Métal',
-		weight = 1000,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
