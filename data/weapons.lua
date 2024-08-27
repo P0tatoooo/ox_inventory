@@ -878,7 +878,21 @@ return {
 			ammoname = 'airsoftball'
 		},
 
-        ['WEAPON_AIRSOFTM4'] = {
+        ['WEAPON_AIRSOFTMP5'] = {
+			label = 'MP5 Airsoft',
+			weight = 2000,
+			durability = 0.2,
+			ammoname = 'airsoftball'
+		},
+
+		['WEAPON_AIRSOFTUZIMICRO'] = {
+			label = 'UZI Airsoft',
+			weight = 2000,
+			durability = 0.2,
+			ammoname = 'airsoftball'
+		},
+
+		--[[ ['WEAPON_AIRSOFTM4'] = {
 			label = 'M4 Airsoft',
 			weight = 2000,
 			durability = 0.2,
@@ -887,13 +901,6 @@ return {
 
         ['WEAPON_AIRSOFTM249'] = {
 			label = 'M249 Airsoft',
-			weight = 2000,
-			durability = 0.2,
-			ammoname = 'airsoftball'
-		},
-
-        ['WEAPON_AIRSOFTMP5'] = {
-			label = 'MP5 Airsoft',
 			weight = 2000,
 			durability = 0.2,
 			ammoname = 'airsoftball'
@@ -911,14 +918,7 @@ return {
 			weight = 2000,
 			durability = 0.2,
 			ammoname = 'airsoftball'
-		},
-
-        ['WEAPON_AIRSOFTUZIMICRO'] = {
-			label = 'UZI Airsoft',
-			weight = 2000,
-			durability = 0.2,
-			ammoname = 'airsoftball'
-		},
+		}, ]]
 	},
 
 	Components = {

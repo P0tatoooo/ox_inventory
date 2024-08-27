@@ -247,11 +247,7 @@ return {
             {name = 'WEAPON_AIRSOFTGLOCK20', price = 0, grade = 7},
             {name = 'WEAPON_AIRSOFTAK47', price = 0, grade = 7},
             {name = 'WEAPON_AIRSOFTG36C', price = 0, grade = 7},
-            {name = 'WEAPON_AIRSOFTM4', price = 0, grade = 7},
-            {name = 'WEAPON_AIRSOFTM249', price = 0, grade = 7},
             {name = 'WEAPON_AIRSOFTMP5', price = 0, grade = 7},
-            {name = 'WEAPON_AIRSOFTR700', price = 0, grade = 7},
-            {name = 'WEAPON_AIRSOFTR870', price = 0, grade = 7},
             {name = 'WEAPON_AIRSOFTUZIMICRO', price = 0, grade = 7},
 		}, locations = {
 			vector3(429.494507, -975.692322, 21.54),
