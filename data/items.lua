@@ -3053,14 +3053,14 @@ return {
 
     ["crackedironore"] = {
 		label = "Minerai de Fer Fissuré",
-		weight = 1000,
+		weight = 300,
 		stack = true,
 		close = false,
 	},
 
 	["carbon"] = {
 		label = "Carbone",
-		weight = 1000,
+		weight = 300,
 		stack = true,
 		close = false,
 	},
@@ -3105,6 +3105,13 @@ return {
     ['ironingot'] = {
 		label = 'Lingot de Fer',
 		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+	['carbonfiber'] = {
+		label = 'Fibre de Carbone',
+		weight = 300,
 		stack = true,
 		close = true,
 	},
