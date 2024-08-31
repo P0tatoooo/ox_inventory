@@ -948,6 +948,19 @@ return {
 		}
 	},
 
+	['pastis'] = {
+		label = 'pastis',
+		weight = 750,
+		stack = true,
+		close = true,
+		client = {
+			status = { thirst = 15 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+		}
+	},
+
 	['guinness'] = {
 		label = 'guinness',
 		weight = 750,
@@ -3198,52 +3211,52 @@ return {
 
     ['wheatseed'] = {
 		label = 'Graine de Blé',
-		weight = 110,
+		weight = 10,
 		stack = true,
 	},
     ['maltseed'] = {
 		label = 'Graine de Malt',
-		weight = 120,
+		weight = 10,
 		stack = true,
 	},
     ['riceseed'] = {
 		label = 'Riz Germé',
-		weight = 140,
+		weight = 10,
 		stack = true,
 	},
     ['potatoseed'] = {
 		label = 'Pomme de Terre Germée',
-		weight = 140,
+		weight = 10,
 		stack = true,
 	},
     ['sojaseed'] = {
 		label = 'Graine de Soja',
-		weight = 140,
+		weight = 10,
 		stack = true,
 	},
     ['tomatoseed'] = {
 		label = 'Graine de Tomates',
-		weight = 140,
+		weight = 10,
 		stack = true,
 	},
     ['saladseed'] = {
 		label = 'Pousse de Salade',
-		weight = 140,
+		weight = 10,
 		stack = true,
 	},
     ['sugarcaneseed'] = {
 		label = 'Graine de Canne à Sucre',
-		weight = 140,
+		weight = 10,
 		stack = true,
 	},
     ['agaveseed'] = {
 		label = 'Graine d\'Agave',
-		weight = 140,
+		weight = 10,
 		stack = true,
 	},
     ['coffeeseed'] = {
 		label = 'Graine de Café',
-		weight = 140,
+		weight = 10,
 		stack = true,
 	},
     ['teaseed'] = {
@@ -3262,6 +3275,17 @@ return {
 		weight = 10,
 		stack = true,
 		close = true,
+	},
+	['aniseseed'] = {
+		label = 'Graine d\'Anis',
+		weight = 10,
+		stack = true,
+	},
+
+	['anis'] = {
+		label = 'Anis',
+		weight = 140,
+		stack = true,
 	},
 
 	['wheat'] = {
