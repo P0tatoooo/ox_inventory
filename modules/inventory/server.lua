@@ -206,6 +206,12 @@ local function loadInventoryData(data, player)
 	return inventory or false
 end
 
+local function getVehiclesStorageInfo()
+	return Vehicles
+end
+
+exports('GetVehiclesStorageInfo', getVehiclesStorageInfo)
+
 setmetatable(Inventory, {
 	__call = function(self, inv, player)
 		if not inv then
