@@ -2822,6 +2822,20 @@ return {
             end
         }
     },
+	['loyaltycard'] = {
+		label = 'Carte de Fidélité',
+		weight = 10,
+		stack = true,
+        close = false,
+		buttons = {
+			{
+				label = 'Ajouter un Tampon',
+				action = function(slot)
+					TriggerServerEvent('MyCity_CoreV2:LoyaltyCards:AddPoint', slot)
+				end
+			},
+		}
+	},
     ['bank_card'] = {
 		label = 'Carte Bancaire',
 		weight = 10,
