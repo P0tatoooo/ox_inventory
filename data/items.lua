@@ -3545,6 +3545,18 @@ return {
 		stack = false,
 		close = true,
 	},
+	["bp_minismg"] = {
+		label = "Plan Skorpion",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
+	["bp_bullpuprifle"] = {
+		label = "Plan QBZ-95",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
 	["armor_satchel"] = {
 		label = "Plaque de métal",
 		weight = 500,
