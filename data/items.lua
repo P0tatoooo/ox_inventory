@@ -74,10 +74,6 @@ return {
 		}
 	},
 
-	['garbage'] = {
-		label = 'Poubelle',
-	},
-
 	['paperbag'] = {
 		label = 'Sac en Papier',
 		weight = 1,
@@ -125,24 +121,6 @@ return {
             weight = 100,
             stack = true,
             close = true,
-            client = {
-                status = { hunger = 25 },
-                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-                prop = {
-                    model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
-                },
-                usetime = 2500,
-            }
-        },
-
-        ['cupcake'] = {
-            label = 'Cupcake',
-            weight = 100,
-            stack = true,
-            close = true,
-            degrade = 4320,
             client = {
                 status = { hunger = 25 },
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
@@ -1479,61 +1457,6 @@ return {
 		close = true,
 	},
 
-	['advancedrifle'] = {
-		label = 'fusil avancé désarmé',
-		weight = 3000,
-		stack = true,
-		close = true,
-	},
-
-	['amorsagearme'] = {
-		label = 'kit d\'amorsage d\'arme',
-		weight = 500,
-		stack = true,
-		close = true,
-
-	},
-
-	['amorsagearmeap'] = {
-		label = 'kit d\'amorsage d\'arme ap',
-		weight = 500,
-		stack = true,
-		close = true,
-
-	},
-
-	['amorsagearmear'] = {
-		label = 'kit d\'amorsage d\'arme ar',
-		weight = 500,
-		stack = true,
-		close = true,
-
-	},
-
-	['amorsagearmeex'] = {
-		label = 'kit d\'amorsage d\'arme ex',
-		weight = 500,
-		stack = true,
-		close = true,
-
-	},
-
-	['amorsagearmefp'] = {
-		label = 'kit d\'amorsage d\'arme fp',
-		weight = 500,
-		stack = true,
-		close = true,
-
-	},
-
-	['amorsagearmemm'] = {
-		label = 'kit d\'amorsage d\'arme mm',
-		weight = 500,
-		stack = true,
-		close = true,
-
-	},
-
 	['animalfoodbag'] = {
 		label = 'nourriture pour animaux',
 		weight = 200,
@@ -1568,13 +1491,6 @@ return {
 	['apple'] = {
 		label = 'pomme',
 		weight = 200,
-		stack = true,
-		close = true,
-	},
-
-	['assaultrifle'] = {
-		label = 'fusil d\'assault désarmé',
-		weight = 3000,
 		stack = true,
 		close = true,
 	},
@@ -1629,21 +1545,6 @@ return {
         server = {
 			export = 'MyCity_CoreV2.bulletproof'
 		}
-	},
-
-	['bullpuprifle'] = {
-		label = 'fusil bullpup désarmé',
-		weight = 2000,
-		stack = true,
-		close = true,
-
-	},
-
-	['bullpupshotgun'] = {
-		label = 'fusil à pompe bullpup désarmé',
-		weight = 3000,
-		stack = true,
-		close = true,
 	},
 
 	['candies'] = {
@@ -1742,7 +1643,6 @@ return {
 		weight = 200,
 		stack = true,
 		close = true,
-
 	},
 
 	['cigarettementhol'] = {
@@ -1775,29 +1675,6 @@ return {
 		close = true,
 	},
 
-	['combatpdw'] = {
-		label = 'adp de combat désarmé',
-		weight = 3000,
-		stack = true,
-		close = true,
-
-	},
-
-	['combatpistol'] = {
-		label = 'pistolet de combat désarmé',
-		weight = 2500,
-		stack = true,
-		close = true,
-
-	},
-
-	['compactrifle'] = {
-		label = 'ak-u désarmé',
-		weight = 3000,
-		stack = true,
-		close = true,
-	},
-
 	['crack'] = {
 		label = 'pochon de crack',
 		weight = 200,
@@ -1805,23 +1682,9 @@ return {
 		close = true,
 	},
 
-	['crackcristal'] = {
-		label = 'cristaux de crack',
-		weight = 100,
-		stack = true,
-		close = true,
-	},
-
 	['cream'] = {
 		label = 'crème fraiche',
 		weight = 100,
-		stack = true,
-		close = true,
-	},
-
-	['dbshotgun'] = {
-		label = 'fusil à double canon désarmé',
-		weight = 3000,
 		stack = true,
 		close = true,
 	},
@@ -1875,7 +1738,6 @@ return {
 		weight = 500,
 		stack = true,
 		close = true,
-
 	},
 
 	['gamingconsole'] = {
@@ -1925,31 +1787,6 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
-
-	},
-
-	['golf_green'] = {
-		label = 'balle de golf (orange)',
-		weight = 100,
-		stack = true,
-		close = true,
-
-	},
-
-	['golf_pink'] = {
-		label = 'balle de golf (pink)',
-		weight = 100,
-		stack = true,
-		close = true,
-
-	},
-
-	['golf_yellow'] = {
-		label = 'balle de golf (yellow)',
-		weight = 100,
-		stack = true,
-		close = true,
-
 	},
 
 	['gunpowder'] = {
@@ -1957,7 +1794,6 @@ return {
 		weight = 1,
 		stack = true,
 		close = true,
-
 	},
 
 	['halibut'] = {
@@ -2005,23 +1841,6 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
-
-	},
-
-	['luckystrike'] = {
-		label = 'lucky strike',
-		weight = 100,
-		stack = true,
-		close = true,
-
-	},
-
-	['machinepistol'] = {
-		label = 'tec-9 désarmé',
-		weight = 2000,
-		stack = true,
-		close = true,
-
 	},
 
 	['cigarette'] = {
@@ -2029,7 +1848,6 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
-
 	},
 
 	['mceventbadge'] = {
@@ -2037,7 +1855,6 @@ return {
 		weight = 10,
 		stack = true,
 		close = true,
-
 	},
 
 	['mceventcoupon'] = {
@@ -2062,26 +1879,12 @@ return {
 		close = true,
 	},
 
-	['microsmg'] = {
-		label = 'micro smg désarmé',
-		weight = 2500,
-		stack = true,
-		close = true,
-	},
-
 	['microwave'] = {
 		label = 'micro-ondes',
 		weight = 100,
 		stack = true,
 		close = true,
 
-	},
-
-	['minismg'] = {
-		label = 'mini smg désarmé',
-		weight = 2500,
-		stack = true,
-		close = true,
 	},
 
 	['necklace'] = {
@@ -2104,7 +1907,6 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
-
 	},
 
 	['orange'] = {
@@ -2112,7 +1914,6 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
-
 	},
 
 	['ore'] = {
@@ -2149,7 +1950,6 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
-
 	},
 
     ['packaged_fish'] = {
@@ -2187,28 +1987,6 @@ return {
 		close = true,
 	},
 
-	['pistol'] = {
-		label = 'pistolet désarmé',
-		weight = 2000,
-		stack = true,
-		close = true,
-
-	},
-
-	['pistol50'] = {
-		label = 'pistolet calibre .50 désarmé',
-		weight = 2000,
-		stack = true,
-		close = true,
-	},
-
-	['pumpshotgun'] = {
-		label = 'fusil à pompe désarmé',
-		weight = 3000,
-		stack = true,
-		close = true,
-	},
-
 	['purpleweed'] = {
 		label = 'purple weed',
 		weight = 1,
@@ -2221,7 +1999,6 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
-
 	},
 
 	['redgrapes'] = {
@@ -2238,13 +2015,6 @@ return {
 		stack = true,
 		close = true,
 
-	},
-
-	['revolver'] = {
-		label = 'revolver désarmé',
-		weight = 1500,
-		stack = true,
-		close = true,
 	},
 
 	['rice'] = {
@@ -2269,46 +2039,17 @@ return {
 		close = true,
 	},
 
-	['sand'] = {
-		label = 'sable',
-		weight = 100,
-		stack = true,
-		close = true,
-	},
-
-	['sawnoffshotgun'] = {
-		label = 'fusil à canon scié désarmé',
-		weight = 3000,
-		stack = true,
-		close = true,
-	},
-
 	['shark_fin'] = {
 		label = 'aileron de requin',
 		weight = 800,
 		stack = true,
 		close = true,
-
-	},
-
-	['sim'] = {
-		label = 'sim',
-		weight = 1,
-		stack = false,
-		close = true
 	},
 
     ['chicken'] = {
 		label = 'poulet',
 		weight = 1000,
 		stack = false,
-	},
-
-	['smg'] = {
-		label = 'smg désarmé',
-		weight = 3000,
-		stack = true,
-		close = true,
 	},
 
 	['spray'] = {
@@ -2330,7 +2071,6 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
-
 	},
 
 	['sulfur'] = {
@@ -2380,7 +2120,6 @@ return {
 		weight = 500,
 		stack = true,
 		close = true,
-
 	},
 
 	['weed'] = {
@@ -2388,7 +2127,6 @@ return {
 		weight = 500,
 		stack = true,
 		close = true,
-
 	},
 
 	['wheelchair'] = {
@@ -2403,7 +2141,6 @@ return {
 		weight = 200,
 		stack = true,
 		close = true,
-
 	},
 
 	['agave'] = {
@@ -2419,7 +2156,6 @@ return {
 		weight = 200,
 		stack = true,
 		close = true,
-
 	},
 
     ['packaged_fish'] = {
@@ -2427,7 +2163,6 @@ return {
 		weight = 200,
 		stack = true,
 		close = true,
-
 	},
 
 	['sprayremover'] = {
@@ -2442,7 +2177,6 @@ return {
 		weight = 200,
 		stack = true,
 		close = true,
-
 	},
 
 	['sugarcane'] = {
@@ -2450,21 +2184,12 @@ return {
 		weight = 10,
 		stack = true,
 		close = true,
-
 	},
 
 	['illegalcrate'] = {
 		label = 'caisse de contrebande',
 		weight = 2000,
 		stack = false,
-		close = true,
-
-	},
-
-	['doubleaction'] = {
-		label = 'revolver double action désarmé',
-		weight = 2500,
-		stack = true,
 		close = true,
 	},
 
@@ -2480,7 +2205,6 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
-
 	},
 
     ['turtle'] = {
@@ -2488,7 +2212,6 @@ return {
 		weight = 500,
 		stack = true,
 		close = true,
-
 	},
 
     ['shishatobacco'] = {
@@ -2496,27 +2219,12 @@ return {
 		weight = 750,
 		stack = true,
 		close = true,
-
 	},
 
     ['shishatobaccoxl'] = {
 		label = 'tabac à chicha XL',
 		weight = 750,
 		stack = true,
-		close = true,
-	},
-
-	["nitrous"] = {
-		label = "Nitrous",
-		weight = 1000,
-		stack = false,
-		close = true,
-	},
-
-	["newsmic"] = {
-		label = "News Microphone",
-		weight = 100,
-		stack = false,
 		close = true,
 	},
 
@@ -2531,42 +2239,10 @@ return {
 		}
 	},
 
-	["newsbmic"] = {
-		label = "Boom Microphone",
-		weight = 100,
-		stack = false,
-		close = true,
-		description = "A Useable BoomMic",
-		client = {
-			image = "newsbmic.png",
-		}
-	},
-
-	["newscam"] = {
-		label = "News Camera",
-		weight = 1000,
-		stack = false,
-		close = true,
-		description = "A camera for the news",
-		client = {
-			image = "newscam.png",
-		}
-	},
-
 	["firstaidkit"] = {
 		label = "Kit Premier Secours",
 		weight = 350,
 		stack = true,
-	},
-
-	["diving_fill"] = {
-		label = "Diving Tube",
-		weight = 3000,
-		stack = false,
-		close = true,
-		client = {
-			image = "diving_tube.png",
-		}
 	},
 
 	["handcuffs"] = {
@@ -2577,17 +2253,6 @@ return {
         client = {
             export = "qb-policejob.cuffFromItem"
         }
-	},
-
-	["tunerlaptop"] = {
-		label = "Tunerchip",
-		weight = 2000,
-		stack = false,
-		close = true,
-		description = "With this tunerchip you can get your car on steroids... If you know what you're doing",
-		client = {
-			image = "tunerchip.png",
-		}
 	},
 
 	["repairkit"] = {
