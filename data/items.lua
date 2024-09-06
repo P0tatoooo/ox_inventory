@@ -2214,6 +2214,13 @@ return {
 		close = true,
 	},
 
+	['doll'] = {
+		label = 'Statuette',
+		weight = 100,
+		stack = true,
+		close = true,
+	},
+
     ['shishatobacco'] = {
 		label = 'tabac à chicha',
 		weight = 750,
