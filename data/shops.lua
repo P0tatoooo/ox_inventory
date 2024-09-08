@@ -328,13 +328,13 @@ return {
 	TempDarkShop1 = { -- Sell Weapon Parts
 		name = 'Revendeur',
 		groups = {
-            ['cosanostra'] = 0,
+            ['duggan'] = 0,
 			['braithemb'] = 0,
             ['mogila'] = 0,
             ['losvalentinos'] = 0,
             ['piru'] = 0,
-            ['piru'] = 0,
-            ['verdugos'] = 0,
+            ['mayans'] = 0,
+            ['soa'] = 0,
             ['carrington'] = 0
 		},
 		--[[blip = {
@@ -355,13 +355,13 @@ return {
 			--{ name = 'kevlar', price = 500 },
 			--{ name = 'armor_satchel', price = 1000 },
 		}, locations = {
-            vec3(-1048.813232, -521.657166, 36.575806), --AKU/ADP
+            vec3(917.538452, 3654.936279, 32.481323), --AKU/ADP
             vec3(351.11, -2760.62, 5.16), -- AK/UZI
             vec3(1524.079102, 1709.854980, 110.007324), -- MP5/TEC-9
-            vec3(2391.296631, 3067.410889, 48.673950), -- Fusil à Pompe Bullpup/Fusil à Pompe Canon Scié
+            vec3(2391.296631, 3067.410889, 48.673950), -- Fusil à Pompe Double Coup/Fusil à Pompe Canon Scié
             vec3(-360.184601, 180.290115, 86.917236), -- Pistolets
-            vec3(-1092.843994, -1225.753906, 2.741455), -- Pistolets Cal .50
-            vec3(173.881317, 2220.395508, 90.731201), -- Fusil à Pompe/ Fusil à Pompe Double Coup
+            vec3(575.775818, 138.171432, 97.459351), -- Pistolets Cal .50
+            vec3(818.386841, -1395.995605, 26.297485), -- Fusil à Pompe/Fusil à Pompe Bullpup 
 			vec3(-894.830750, 151.147247, 63.164795), -- Fusil Bullpup/Skorpion
 			/*
 			vec3(2745.95, 1415.23, 19.82),
