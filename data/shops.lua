@@ -359,7 +359,7 @@ return {
             vec3(351.11, -2760.62, 5.16), -- AK/UZI
             vec3(1524.079102, 1709.854980, 110.007324), -- MP5/TEC-9
             vec3(2391.296631, 3067.410889, 48.673950), -- Fusil à Pompe Double Coup/Fusil à Pompe Canon Scié
-            vec3(-360.184601, 180.290115, 86.917236), -- Pistolets
+            vec3(-1093.134033, -1225.872559, 2.741455), -- Pistolets
             vec3(575.775818, 138.171432, 97.459351), -- Pistolets Cal .50
             vec3(818.386841, -1395.995605, 26.297485), -- Fusil à Pompe/Fusil à Pompe Bullpup 
 			vec3(-894.830750, 151.147247, 63.164795), -- Fusil Bullpup/Skorpion
