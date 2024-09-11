@@ -602,6 +602,146 @@ return {
                 usetime = 2500,
             }
         },
+
+		['cheddarfrenchfries'] = {
+            label = 'Frites au Cheddar',
+            weight = 200,
+            stack = true,
+            close = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25},
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+            }
+        },
+
+		['sandyshoresbuger'] = {
+            label = 'Burger Sandy Shores',
+            weight = 200,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 50 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+            }
+        },
+
+		['paletohotbuger'] = {
+            label = 'Burger Paleto Hot',
+            weight = 200,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 50 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+            }
+        },
+
+		['chiliadskewer'] = {
+            label = 'Brochette Chilliad',
+            weight = 200,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 50 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+            }
+        },
+
+		['potatomash'] = {
+            label = 'Purée de Patates',
+            weight = 200,
+            stack = true,
+            close = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25},
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+            }
+        },
+
+		['tomatosalade'] = {
+            label = 'Salade et Tomate',
+            weight = 200,
+            stack = true,
+            close = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25},
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+            }
+        },
+
+		['applepie'] = {
+            label = 'Tarte aux Pommes',
+            weight = 200,
+            stack = true,
+            close = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25},
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+            }
+        },
+
+		['milkshake'] = {
+            label = 'Milkshake',
+            weight = 150,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 12, thirst = 12 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+            }
+        },
     ---------------SOFT DRINKS-----------------------
     ['water'] = {
 		label = 'Bouteille Rainé',
@@ -1081,6 +1221,19 @@ return {
 	},
 	['whiskycocacocktail'] = {
 		label = 'Whisy-Coca',
+		weight = 750,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 15 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+		}
+	},
+
+	['graveyardcocktail'] = {
+		label = 'Le Cimetière',
 		weight = 750,
 		stack = true,
 		close = true,
