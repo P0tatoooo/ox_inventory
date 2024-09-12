@@ -76,7 +76,7 @@ return {
 
 	['paperbag'] = {
 		label = 'Sac en Papier',
-		weight = 1,
+		weight = 100,
 		stack = false,
 		close = false,
 		consume = 0
@@ -1717,7 +1717,7 @@ return {
 
 	['cartridge'] = {
 		label = 'Douille',
-		weight = 1,
+		weight = 100,
 		stack = true,
 		close = true,
 
@@ -1807,7 +1807,7 @@ return {
 
 	['coca_leaf'] = {
 		label = 'Feuille de Coca',
-		weight = 200,
+		weight = 100,
 		stack = true,
 		close = true,
 
@@ -1823,14 +1823,14 @@ return {
 
 	['coke'] = {
 		label = 'Cocaine',
-		weight = 200,
+		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['crack'] = {
 		label = 'Pochon de Crack',
-		weight = 200,
+		weight = 100,
 		stack = true,
 		close = true,
 	},
@@ -1866,14 +1866,14 @@ return {
 
 	['ephedra'] = {
 		label = 'Ephedra',
-		weight = 1,
+		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['poppyresin'] = {
 		label = 'Pavot',
-		weight = 1,
+		weight = 100,
 		stack = true,
 		close = true,
 	},
@@ -1944,7 +1944,7 @@ return {
 
 	['gunpowder'] = {
 		label = 'Poudre à Canon',
-		weight = 1,
+		weight = 100,
 		stack = true,
 		close = true,
 	},
@@ -2142,7 +2142,7 @@ return {
 
 	['purpleweed'] = {
 		label = 'Purple Weed',
-		weight = 1,
+		weight = 100,
 		stack = true,
 		close = true,
 	},
@@ -2228,7 +2228,7 @@ return {
 
 	['sulfur'] = {
 		label = 'Soufre',
-		weight = 1,
+		weight = 100,
 		stack = true,
 		close = true,
 	},
@@ -2249,7 +2249,7 @@ return {
 
 	['token'] = {
 		label = 'Jeton',
-		weight = 1,
+		weight = 100,
 		stack = true,
 		close = true,
 	},
@@ -2270,14 +2270,14 @@ return {
 
     ['weed_leaf'] = {
 		label = 'Feuille de Cannabis',
-		weight = 500,
+		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['weed'] = {
 		label = 'Pochon de Weed',
-		weight = 500,
+		weight = 100,
 		stack = true,
 		close = true,
 	},
@@ -2612,7 +2612,7 @@ return {
 	},
     ['prisonticket'] = {
 		label = 'Ticket Pénitentiaire',
-		weight = 1,
+		weight = 10,
 		stack = true
 	},
     ['skateboard'] = {
@@ -2993,25 +2993,25 @@ return {
 
     ['taxiticket'] = {
 		label = 'Ticket Taxi',
-		weight = 1,
+		weight = 10,
 		stack = true,
 	},
 
     ['restaurationticket'] = {
 		label = 'Ticket Restaurant',
-		weight = 1,
+		weight = 10,
 		stack = true,
 	},
 
     ['healticket'] = {
 		label = 'Ticket Soins',
-		weight = 1,
+		weight = 10,
 		stack = true,
 	},
 
     ['reparationticket'] = {
 		label = 'Ticket Réparation',
-		weight = 1,
+		weight = 10,
 		stack = true,
 	},
 
