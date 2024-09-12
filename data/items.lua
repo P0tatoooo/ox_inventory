@@ -117,7 +117,7 @@ return {
         --------------FOOD--------------------------
         -----------------------------------
         ['purplecake'] = {
-            label = 'purple cake',
+            label = 'Purple Cake',
             weight = 100,
             stack = true,
             close = true,
@@ -188,7 +188,7 @@ return {
         },
 
         ['chips'] = {
-            label = 'chips',
+            label = 'Chips',
             weight = 100,
             stack = true,
             close = true,
@@ -206,7 +206,7 @@ return {
         },
 
         ['donut'] = {
-            label = 'donut',
+            label = 'Donut',
             weight = 150,
             stack = true,
             close = true,
@@ -257,7 +257,7 @@ return {
             }
         },
         ['lasagna'] = {
-            label = 'lasagnes',
+            label = 'Lasagnes',
             weight = 250,
             stack = true,
             degrade = 4320,
@@ -439,7 +439,7 @@ return {
             }
         },
         ['tendersbucket'] = {
-            label = 'bucket tenders',
+            label = 'Bucket Tenders',
             weight = 700,
             stack = true,
             close = true,
@@ -586,7 +586,7 @@ return {
         },
 
         ['frenchfries'] = {
-            label = 'frites',
+            label = 'Frites',
             weight = 200,
             stack = true,
             close = true,
@@ -898,7 +898,7 @@ return {
 	},
 
     ['tea'] = {
-		label = 'thé',
+		label = 'Thé',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -989,7 +989,7 @@ return {
     ---------------ALCOOL DRINKS-----------------------
 
     ['absinthe'] = {
-		label = 'absinthe',
+		label = 'Absinthe',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1002,7 +1002,7 @@ return {
 	},
 
 	['baileys'] = {
-		label = 'baileys',
+		label = 'Baileys',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1028,7 +1028,7 @@ return {
 	},
 
 	['champagne'] = {
-		label = 'champagne',
+		label = 'Champagne',
 		weight = 950,
 		stack = true,
 		close = true,
@@ -1041,7 +1041,7 @@ return {
 	},
 
 	['cointreau'] = {
-		label = 'cointreau',
+		label = 'Cointreau',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1054,7 +1054,7 @@ return {
 	},
 
 	['gin'] = {
-		label = 'gin',
+		label = 'Gin',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1067,7 +1067,7 @@ return {
 	},
 
 	['pastis'] = {
-		label = 'pastis',
+		label = 'Pastis',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1080,7 +1080,7 @@ return {
 	},
 
 	['guinness'] = {
-		label = 'guinness',
+		label = 'Guinness',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1093,7 +1093,7 @@ return {
 	},
 
 	['rhum'] = {
-		label = 'rhum',
+		label = 'Rhum',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1106,7 +1106,7 @@ return {
 	},
 
     ['sake'] = {
-		label = 'saké',
+		label = 'Saké',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1119,7 +1119,7 @@ return {
 	},
 
 	['tequila'] = {
-		label = 'tequila',
+		label = 'Tequila',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1132,7 +1132,7 @@ return {
 	},
 
 	['whitewine'] = {
-		label = 'vin blanc',
+		label = 'Vin Blanc',
 		weight = 850,
 		stack = true,
 		close = true,
@@ -1145,7 +1145,7 @@ return {
 	},
 
 	['redwine'] = {
-		label = 'vin rouge',
+		label = 'Vin Rouge',
 		weight = 850,
 		stack = true,
 		close = true,
@@ -1158,7 +1158,7 @@ return {
 	},
 
 	['vodka'] = {
-		label = 'vodka',
+		label = 'Vodka',
 		weight = 850,
 		stack = true,
 		close = true,
@@ -1171,7 +1171,7 @@ return {
 	},
 
     ['whisky'] = {
-		label = 'whisky',
+		label = 'Whisky',
 		weight = 850,
 		stack = true,
 		close = true,
@@ -1368,7 +1368,7 @@ return {
 		}
 	},
 	['cubalibrecocktail'] = {
-		label = 'cuba libre',
+		label = 'Cuba Libre',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1380,7 +1380,7 @@ return {
 		}
 	},
 	['jagerbombcocktail'] = {
-		label = 'jägerbomb',
+		label = 'Jägerbomb',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1405,7 +1405,7 @@ return {
 	},
 
 	['margaritacocktail'] = {
-		label = 'margarita',
+		label = 'Margarita',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1418,7 +1418,7 @@ return {
 	},
 
 	['tequilasunrisecocktail'] = {
-		label = 'tequila sunrise',
+		label = 'Tequila Sunrise',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1444,7 +1444,7 @@ return {
 	},
 
 	['tequilabinousecocktail'] = {
-		label = 'tequila binouse',
+		label = 'Tequila Binouse',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1518,7 +1518,7 @@ return {
 	},
 
 	['cosmopolitancocktail'] = {
-		label = 'cosmopolitan',
+		label = 'Cosmopolitan',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1604,14 +1604,14 @@ return {
 	},
 
 	['accesscard'] = {
-		label = 'carte d\'accès',
+		label = 'Carte d\'Accès',
 		weight = 10,
 		stack = true,
 		close = true,
 	},
 
 	['animalfoodbag'] = {
-		label = 'nourriture pour animaux',
+		label = 'Nourriture pour Animaux',
 		weight = 200,
 		stack = true,
 		close = true,
@@ -1634,7 +1634,7 @@ return {
 	},
 
     ['antidizziness'] = {
-		label = 'antivertigineux',
+		label = 'Antivertigineux',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -1642,14 +1642,14 @@ return {
 	},
 
 	['apple'] = {
-		label = 'pomme',
+		label = 'Pomme',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['malt'] = {
-		label = 'orge',
+		label = 'Orge',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -1657,7 +1657,7 @@ return {
 	},
 
 	['binoculars'] = {
-		label = 'jumelles',
+		label = 'Jumelles',
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -1676,21 +1676,21 @@ return {
 	},
 
 	['bluefin_tuna'] = {
-		label = 'thon rouge',
+		label = 'Thon Rouge',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['bracelet'] = {
-		label = 'bracelet',
+		label = 'Bracelet',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['bulletproof'] = {
-		label = 'gilet pare-balles',
+		label = 'Gilet Pare-Balles',
 		weight = 4000,
 		stack = false,
 		close = true,
@@ -1701,14 +1701,14 @@ return {
 	},
 
 	['candies'] = {
-		label = 'bonbons',
+		label = 'Bonbons',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['canesyrup'] = {
-		label = 'sirop de canne',
+		label = 'Sirop de Canne',
 		weight = 200,
 		stack = true,
 		close = true,
@@ -1716,7 +1716,7 @@ return {
 	},
 
 	['cartridge'] = {
-		label = 'douille',
+		label = 'Douille',
 		weight = 1,
 		stack = true,
 		close = true,
@@ -1724,7 +1724,7 @@ return {
 	},
 
 	['casinocoupon1'] = {
-		label = 'coupon casino lot 1',
+		label = 'Coupon Casino Lot 1',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -1732,7 +1732,7 @@ return {
 	},
 
 	['casinocoupon2'] = {
-		label = 'coupon casino lot 2',
+		label = 'Coupon Casino Lot 2',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -1740,7 +1740,7 @@ return {
 	},
 
 	['casinocoupon3'] = {
-		label = 'coupon casino lot 3',
+		label = 'Coupon Casino Lot 3',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -1748,7 +1748,7 @@ return {
 	},
 
 	['casinocoupon4'] = {
-		label = 'coupon casino lot 4',
+		label = 'Coupon Casino Lot 4',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -1756,7 +1756,7 @@ return {
 	},
 
 	['casinocoupon5'] = {
-		label = 'coupon casino lot 5',
+		label = 'Coupon Casino Lot 5',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -1764,49 +1764,49 @@ return {
 	},
 
 	['casinocoupon6'] = {
-		label = 'coupon casino lot 6',
+		label = 'Coupon Casino Lot 6',
 		weight = 10,
 		stack = true,
 		close = true,
 	},
 
 	['charcoal'] = {
-		label = 'charbon de bois',
+		label = 'Charbon de Bois',
 		weight = 10,
 		stack = true,
 		close = true,
 	},
 
 	['cheese'] = {
-		label = 'fromage',
+		label = 'Fromage',
 		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	['chemicals'] = {
-		label = 'produit chimique',
+		label = 'Produit Chimique',
 		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	['cigar'] = {
-		label = 'cigare',
+		label = 'Cigare',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['cigarettementhol'] = {
-		label = 'cigarette menthol',
+		label = 'Cigarette Menthol',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['coca_leaf'] = {
-		label = 'feuille de coca',
+		label = 'Feuille de Coca',
 		weight = 200,
 		stack = true,
 		close = true,
@@ -1814,7 +1814,7 @@ return {
 	},
 
 	['coffeemachine'] = {
-		label = 'machine à café',
+		label = 'Machine à Café',
 		weight = 4000,
 		stack = true,
 		close = true,
@@ -1822,35 +1822,35 @@ return {
 	},
 
 	['coke'] = {
-		label = 'cocaine',
+		label = 'Cocaine',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['crack'] = {
-		label = 'pochon de crack',
+		label = 'Pochon de Crack',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['cream'] = {
-		label = 'crème fraiche',
+		label = 'Crème Fraiche',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['digitaltablet'] = {
-		label = 'tablette numérique',
+		label = 'Tablette Numérique',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['drill'] = {
-		label = 'perceuse',
+		label = 'Perceuse',
 		weight = 1500,
 		stack = true,
 		close = true,
@@ -1858,7 +1858,7 @@ return {
 	},
 
 	['egg'] = {
-		label = 'oeuf',
+		label = 'Oeuf',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -1879,7 +1879,7 @@ return {
 	},
 
 	['fakeplate'] = {
-		label = 'fausse plaque',
+		label = 'Fausse Plaque',
 		weight = 500,
 		stack = true,
 		close = true,
@@ -1887,28 +1887,28 @@ return {
 	},
 
 	['fishing_rod'] = {
-		label = 'canne à pêche',
+		label = 'Canne à Pêche',
 		weight = 500,
 		stack = true,
 		close = true,
 	},
 
 	['gamingconsole'] = {
-		label = 'console de jeux',
+		label = 'Console de Jeux',
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	['glass'] = {
-		label = 'verre',
+		label = 'Verre',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
     ['bottlecap'] = {
-		label = 'capsule',
+		label = 'Capsule',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -1936,21 +1936,21 @@ return {
 	},
 
 	['golf'] = {
-		label = 'balle de golf',
+		label = 'Balle de Golf',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['gunpowder'] = {
-		label = 'poudre à canon',
+		label = 'Poudre à Canon',
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	['halibut'] = {
-		label = 'flétan',
+		label = 'Flétan',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -1958,7 +1958,7 @@ return {
 	},
 
 	['heroin'] = {
-		label = 'héroine',
+		label = 'Héroine',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -1966,7 +1966,7 @@ return {
 	},
 
 	['hood'] = {
-		label = 'cagoule',
+		label = 'Cagoule',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -1974,7 +1974,7 @@ return {
 	},
 
 	['kevlar'] = {
-		label = 'kevlar',
+		label = 'Kevlar',
 		weight = 300,
 		stack = true,
 		close = true,
@@ -1982,7 +1982,7 @@ return {
 	},
 
 	['laptop'] = {
-		label = 'ordinateur portable',
+		label = 'Ordinateur Portable',
 		weight = 300,
 		stack = true,
 		close = true,
@@ -1990,35 +1990,35 @@ return {
 	},
 
 	['lime'] = {
-		label = 'citron vert',
+		label = 'Citron Vert',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['cigarette'] = {
-		label = 'cigarette',
+		label = 'Cigarette',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['mceventbadge'] = {
-		label = 'badge mcevent',
+		label = 'Badge MCEvent',
 		weight = 10,
 		stack = true,
 		close = true,
 	},
 
 	['mceventcoupon'] = {
-		label = 'ticket mcevent',
+		label = 'Ticket MCEvent',
 		weight = 10,
 		stack = true,
 		close = true,
 	},
 
 	['meat'] = {
-		label = 'viande',
+		label = 'Viande',
 		weight = 250,
 		stack = true,
 		close = true,
@@ -2026,14 +2026,14 @@ return {
 	},
 
 	['meth'] = {
-		label = 'meth',
+		label = 'Meth',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['microwave'] = {
-		label = 'micro-ondes',
+		label = 'Micro-Ondes',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -2041,7 +2041,7 @@ return {
 	},
 
 	['necklace'] = {
-		label = 'collier',
+		label = 'Collier',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -2049,35 +2049,35 @@ return {
 	},
 
 	['nylon'] = {
-		label = 'nylon',
+		label = 'Nylon',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['opium'] = {
-		label = 'opium',
+		label = 'Opium',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['orange'] = {
-		label = 'orange',
+		label = 'Orange',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['ore'] = {
-		label = 'minerai',
+		label = 'Minerai',
 		weight = 150,
 		stack = true,
 		close = true,
 	},
 
 	['divinggear'] = {
-		label = 'equipement de plongée',
+		label = 'Equipement de Plongée',
 		weight = 2000,
 		stack = true,
 		close = true,
@@ -2099,63 +2099,63 @@ return {
 	},
 
 	['packaged_chicken'] = {
-		label = 'barquette de poulet',
+		label = 'Barquette de Poulet',
 		weight = 250,
 		stack = true,
 		close = true,
 	},
 
     ['packaged_fish'] = {
-		label = 'barquette de poisson',
+		label = 'Barquette de Poisson',
 		weight = 250,
 		stack = true,
 		close = true,
 	},
 
 	['painkiller'] = {
-		label = 'anti-douleur',
+		label = 'Anti-Douleur',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['painting'] = {
-		label = 'tableau',
+		label = 'Tableau',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['petrol'] = {
-		label = 'pétrole',
+		label = 'Pétrole',
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
     ['gas'] = {
-		label = 'essence',
+		label = 'Essence',
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	['purpleweed'] = {
-		label = 'purple weed',
+		label = 'Purple Weed',
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	['whitegrapes'] = {
-		label = 'raisin blanc',
+		label = 'Raisin Blanc',
 		weight = 150,
 		stack = true,
 		close = true,
 	},
 
 	['redgrapes'] = {
-		label = 'raisin rouge',
+		label = 'Raisin Rouge',
 		weight = 150,
 		stack = true,
 		close = true,
@@ -2163,7 +2163,7 @@ return {
 	},
 
 	['reinforced_fishing_rod'] = {
-		label = 'canne à pêche renforcée',
+		label = 'Canne à Pêche Renforcée',
 		weight = 500,
 		stack = true,
 		close = true,
@@ -2171,7 +2171,7 @@ return {
 	},
 
 	['rice'] = {
-		label = 'riz',
+		label = 'Riz',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -2179,21 +2179,21 @@ return {
 	},
 
 	['ring'] = {
-		label = 'bague',
+		label = 'Bague',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['salmon'] = {
-		label = 'saumon',
+		label = 'Saumon',
 		weight = 150,
 		stack = true,
 		close = true,
 	},
 
 	['shark_fin'] = {
-		label = 'aileron de requin',
+		label = 'Aileron de requin',
 		weight = 800,
 		stack = true,
 		close = true,
@@ -2206,63 +2206,63 @@ return {
 	},
 
 	['spray'] = {
-		label = 'bombe de peinture',
+		label = 'Bombe de peinture',
 		weight = 500,
 		stack = true,
 		close = true,
 	},
 
 	['stingray'] = {
-		label = 'raie',
+		label = 'Raie',
 		weight = 500,
 		stack = true,
 		close = true,
 	},
 
 	['sugar'] = {
-		label = 'sucre',
+		label = 'Sucre',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['sulfur'] = {
-		label = 'soufre',
+		label = 'Soufre',
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	['telescope'] = {
-		label = 'télescope',
+		label = 'Télescope',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['television'] = {
-		label = 'télévision',
+		label = 'Télévision',
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	['token'] = {
-		label = 'jeton',
+		label = 'Jeton',
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	['trout'] = {
-		label = 'truite',
+		label = 'Truite',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['watch'] = {
-		label = 'montre',
+		label = 'Montre',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -2283,21 +2283,21 @@ return {
 	},
 
 	['wheelchair'] = {
-		label = 'fauteuil roulant',
+		label = 'fauteuil Toulant',
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	['white_seabass'] = {
-		label = 'bar blanc',
+		label = 'Bar Blanc',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['agave'] = {
-		label = 'agave',
+		label = 'Agave',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -2305,42 +2305,42 @@ return {
 	},
 
 	['packaged_meat'] = {
-		label = 'barquette de viande',
+		label = 'Barquette de Viande',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
     ['packaged_fish'] = {
-		label = 'barquette de poisson',
+		label = 'Barquette de Poisson',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['sprayremover'] = {
-		label = 'nettoyant anti-graffitis',
+		label = 'Nettoyant Anti-Graffitis',
 		weight = 750,
 		stack = true,
 		close = true,
 	},
 
 	['packaged_salmon'] = {
-		label = 'barquette de saumon',
+		label = 'Barquette de Saumon',
 		weight = 200,
 		stack = true,
 		close = true,
 	},
 
 	['sugarcane'] = {
-		label = 'canne à sucre',
+		label = 'Canne à sucre',
 		weight = 10,
 		stack = true,
 		close = true,
 	},
 
 	['illegalcrate'] = {
-		label = 'caisse de contrebande',
+		label = 'Caisse de Contrebande',
 		weight = 2000,
 		stack = false,
 		close = true,
@@ -2375,14 +2375,14 @@ return {
 	},
 
     ['shishatobacco'] = {
-		label = 'tabac à chicha',
+		label = 'Tabac à Chicha',
 		weight = 750,
 		stack = true,
 		close = true,
 	},
 
     ['shishatobaccoxl'] = {
-		label = 'tabac à chicha XL',
+		label = 'Tabac à Chicha XL',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -2393,7 +2393,6 @@ return {
 		weight = 0,
 		stack = true,
 		close = false,
-		description = "Used a lot to keep DNA from blood, bullet shells and more",
 		client = {
 			image = "evidence.png",
 		}
@@ -2606,7 +2605,7 @@ return {
 		stack = true
 	},
     ['crutches'] = {
-		label = 'béquilles',
+		label = 'Béquilles',
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -2617,7 +2616,7 @@ return {
 		stack = true
 	},
     ['skateboard'] = {
-		label = 'skateboard',
+		label = 'Skateboard',
 		weight = 2000,
 		stack = false,
         close = true,
@@ -2628,25 +2627,6 @@ return {
 		stack = false,
         close = true,
 	},
-    ["shield"] = {
-        label = "Police shield",
-        weight = 8000,
-        stack = false,
-        consume = 0,
-        client = {
-            export = "qb-policejob.useShield",
-            add = function(total)
-                if total > 0 then
-                        pcall(function() return exports["qb-policejob"]:hasShield(true) end)
-                    end
-                end,
-            remove = function(total)
-                if total < 1 then
-                    pcall(function() return exports["qb-policejob"]:hasShield(false) end)
-                end
-            end
-        }
-    },
 	['loyaltycard'] = {
 		label = 'Carte de Fidélité',
 		weight = 10,
@@ -2705,7 +2685,7 @@ return {
 	},
 
 	['id_card'] = {
-		label = 'Carte d\'identité',
+		label = 'Carte d\'Identité',
 		weight = 10,
 		stack = false,
         close = true,
@@ -3036,20 +3016,20 @@ return {
 	},
 
     ['potato'] = {
-		label = 'pomme de terre',
+		label = 'Pomme de Terre',
 		weight = 100,
 		stack = true,
 	},
 
 	['milk'] = {
-		label = 'lait',
+		label = 'Lait',
 		weight = 120,
 		stack = true,
 		close = true,
 	},
 
 	['tomato'] = {
-		label = 'tomate',
+		label = 'Tomate',
 		weight = 90,
 		stack = true,
 		close = true,
@@ -3111,13 +3091,13 @@ return {
 		stack = true,
 	},
     ['coffeebean'] = {
-		label = 'grain de café',
+		label = 'Grain de Café',
 		weight = 10,
 		stack = true,
 		close = true,
 	},
     ['tealeaf'] = {
-		label = 'feuille de thé',
+		label = 'Feuille de Thé',
 		weight = 10,
 		stack = true,
 		close = true,
@@ -3135,19 +3115,19 @@ return {
 	},
 
 	['wheat'] = {
-		label = 'blé',
+		label = 'Blé',
 		weight = 140,
 		stack = true,
 	},
 
 	['salad'] = {
-		label = 'salade',
+		label = 'Salade',
 		weight = 140,
 		stack = true,
 	},
 
 	['soja'] = {
-		label = 'soja',
+		label = 'Soja',
 		weight = 140,
 		stack = true,
 	},
@@ -3223,21 +3203,21 @@ return {
     -- Illegal
 
 	["smg_barrel"] = {
-		label = "Canon de mitraillette",
+		label = "Canon de Mitraillette",
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	["attach_body"] = {
-		label = "Corps de mitraillette",
+		label = "Corps de Mitraillette",
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	["attach_guard"] = {
-		label = "Garde de mitraillette",
+		label = "Garde de Mitraillette",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -3279,7 +3259,7 @@ return {
 	},
 
 	["pistol_body"] = {
-		label = "Corps de pistolet",
+		label = "Corps de Pistolet",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -3293,13 +3273,13 @@ return {
 	},
 
 	["pistol_barrel"] = {
-		label = "Cannon de pistolet",
+		label = "Cannon de Pistolet",
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 	["bp_combatpdw"] = {
-		label = "Plan ADP de combat",
+		label = "Plan ADP de Combat",
 		weight = 50,
 		stack = false,
 		close = true,
