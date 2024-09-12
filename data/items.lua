@@ -1717,7 +1717,7 @@ return {
 
 	['cartridge'] = {
 		label = 'Douille',
-		weight = 100,
+		weight = 10,
 		stack = true,
 		close = true,
 
@@ -1944,7 +1944,7 @@ return {
 
 	['gunpowder'] = {
 		label = 'Poudre à Canon',
-		weight = 100,
+		weight = 20,
 		stack = true,
 		close = true,
 	},
@@ -1990,7 +1990,7 @@ return {
 	},
 
 	['lime'] = {
-		label = 'Citron Vert',
+		label = 'Citron',
 		weight = 100,
 		stack = true,
 		close = true,
@@ -2228,7 +2228,7 @@ return {
 
 	['sulfur'] = {
 		label = 'Soufre',
-		weight = 100,
+		weight = 10,
 		stack = true,
 		close = true,
 	},
