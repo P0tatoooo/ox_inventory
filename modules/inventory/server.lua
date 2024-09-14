@@ -2289,11 +2289,11 @@ local function prepareInventorySave(inv, buffer, time)
     end
 
     if inv.type == 'trunk' then
-        return 2, { data, inv.dbId }
+        return 2, { data, inv.dbId, inv.dbId }
     end
 
     if inv.type == 'glovebox' then
-        return 3, { data, inv.dbId }
+        return 3, { data, inv.dbId, inv.dbId }
     end
 
     return 4, { data, inv.owner and tostring(inv.owner) or '', inv.dbId }

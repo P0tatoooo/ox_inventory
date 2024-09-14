@@ -6,11 +6,11 @@ local Query = {
     UPSERT_STASH =
     'INSERT INTO ox_inventory (data, owner, name) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE data = VALUES(data)',
     INSERT_STASH = 'INSERT INTO ox_inventory (owner, name) VALUES (?, ?)',
-    SELECT_GLOVEBOX = 'SELECT plate, glovebox FROM `{vehicle_table}` WHERE `{vehicle_column}` = ?',
-    SELECT_TRUNK = 'SELECT plate, trunk FROM `{vehicle_table}` WHERE `{vehicle_column}` = ?',
+    SELECT_GLOVEBOX = 'SELECT plate, fakeplate, glovebox FROM `{vehicle_table}` WHERE `{vehicle_column}` = ? OR fakeplate = ?',
+    SELECT_TRUNK = 'SELECT plate, fakeplate, trunk FROM `{vehicle_table}` WHERE `{vehicle_column}` = ? OR fakeplate = ?',
     SELECT_PLAYER = 'SELECT inventory FROM `{user_table}` WHERE `{user_column}` = ?',
-    UPDATE_TRUNK = 'UPDATE `{vehicle_table}` SET trunk = ? WHERE `{vehicle_column}` = ?',
-    UPDATE_GLOVEBOX = 'UPDATE `{vehicle_table}` SET glovebox = ? WHERE `{vehicle_column}` = ?',
+    UPDATE_TRUNK = 'UPDATE `{vehicle_table}` SET trunk = ? WHERE `{vehicle_column}` = ? OR fakeplate = ?',
+    UPDATE_GLOVEBOX = 'UPDATE `{vehicle_table}` SET glovebox = ? WHERE `{vehicle_column}` = ? OR fakeplate = ?',
     UPDATE_PLAYER = 'UPDATE `{user_table}` SET inventory = ? WHERE `{user_column}` = ?',
 }
 
@@ -142,15 +142,15 @@ function db.saveGlovebox(id, inventory)
 end
 
 function db.loadGlovebox(id)
-    return MySQL.prepare.await(Query.SELECT_GLOVEBOX, { id })
+    return MySQL.prepare.await(Query.SELECT_GLOVEBOX, { id, id })
 end
 
 function db.saveTrunk(id, inventory)
-    return MySQL.prepare(Query.UPDATE_TRUNK, { inventory, id })
+    return MySQL.prepare(Query.UPDATE_TRUNK, { inventory, id, id })
 end
 
 function db.loadTrunk(id)
-    return MySQL.prepare.await(Query.SELECT_TRUNK, { id })
+    return MySQL.prepare.await(Query.SELECT_TRUNK, { id, id })
 end
 
 ---@param rows number | MySQLQuery | MySQLQuery[]
