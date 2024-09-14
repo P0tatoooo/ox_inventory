@@ -2012,7 +2012,7 @@ return {
 
 	['mceventcoupon'] = {
 		label = 'Ticket MCEvent',
-		weight = 10,
+		weight = 1,
 		stack = true,
 		close = true,
 	},
@@ -2612,7 +2612,7 @@ return {
 	},
     ['prisonticket'] = {
 		label = 'Ticket Pénitentiaire',
-		weight = 10,
+		weight = 1,
 		stack = true
 	},
     ['skateboard'] = {
@@ -2993,25 +2993,25 @@ return {
 
     ['taxiticket'] = {
 		label = 'Ticket Taxi',
-		weight = 10,
+		weight = 1,
 		stack = true,
 	},
 
     ['restaurationticket'] = {
 		label = 'Ticket Restaurant',
-		weight = 10,
+		weight = 1,
 		stack = true,
 	},
 
     ['healticket'] = {
 		label = 'Ticket Soins',
-		weight = 10,
+		weight = 1,
 		stack = true,
 	},
 
     ['reparationticket'] = {
 		label = 'Ticket Réparation',
-		weight = 10,
+		weight = 1,
 		stack = true,
 	},
 
