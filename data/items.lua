@@ -3438,4 +3438,1767 @@ return {
 		weight = 300,
 		stack = false,
 	},
+
+
+
+	-- Gun Crafting Items
+	["main_frame"] = {
+		label = ".50 Main Frame",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "A part for .50 pistol",
+		client = {
+			image = "MainFrame.png",
+		}
+	},
+
+	["lower_handguard_c"] = {
+		label = "Carbine Lower Handguard",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Carbine Rifle",
+		client = {
+			image = "LowerHandguardC.png",
+		}
+	},
+
+	["firing_pin_g_p"] = {
+		label = "Ceramic Pistol Firing Pin",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Ceramic Pistol",
+		client = {
+			image = "FiringPinGP.png",
+		}
+	},
+
+	["gas_block_s_c"] = {
+		label = "Special Carbine Gas block",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "GasBlockSC.png",
+		}
+	},
+
+	["reloader_a_r"] = {
+		label = "Advanced Rifle Reloader",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "ReloaderAR.png",
+		}
+	},
+
+	["hammer_a"] = {
+		label = "Assault Rifle Hammer",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "HammerA.png",
+		}
+	},
+
+	["main_frame_s"] = {
+		label = "SMG Main Frame",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "A part for SMG",
+		client = {
+			image = "MainFrameS.png",
+		}
+	},
+
+	["handguard_l"] = {
+		label = "Shotgun Handguard",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Shotgun",
+		client = {
+			image = "HandguardL.png",
+		}
+	},
+
+	["trigger"] = {
+		label = ".50 Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for .50 pistol",
+		client = {
+			image = "Trigger.png",
+		}
+	},
+
+	["stock_s"] = {
+		label = "SMG Stock",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SMG",
+		client = {
+			image = "StockS.png",
+		}
+	},
+
+	["magazine_h_p"] = {
+		label = "Heavy Pistol Magazine",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Heavy Pistol",
+		client = {
+			image = "MagazineHP.png",
+		}
+	},
+
+	["hammer_p"] = {
+		label = "Pistol Hammer",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for pistol",
+		client = {
+			image = "HammerP.png",
+		}
+	},
+
+	["slide"] = {
+		label = ".50 Slide",
+		weight = 30,
+		stack = true,
+		close = true,
+		description = "A part for .50 pistol",
+		client = {
+			image = "Slide.png",
+		}
+	},
+
+	["grip_left_h_p"] = {
+		label = "Heavy Pistol Left Grip",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Heavy Pistol",
+		client = {
+			image = "GripLeftHP.png",
+		}
+	},
+
+	["barrel_s_p"] = {
+		label = "SNS Pistol Barrel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SNS Pistol",
+		client = {
+			image = "BarrelSP.png",
+		}
+	},
+
+	["main_frame_a"] = {
+		label = "Assault Rifle Main frame",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "MainFrameA.png",
+		}
+	},
+
+	["spring_coil_k"] = {
+		label = "Combat Pistol Spring Coil",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Combat pistol",
+		client = {
+			image = "SpringCoilCP.png",
+		}
+	},
+
+	["handgaurd_left_m"] = {
+		label = "Micro SMG left handguard",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for microsmg",
+		client = {
+			image = "HandgaurdLeftM.png",
+		}
+	},
+
+	["rear_sight_k"] = {
+		label = "Combat Pistol Rear Sight",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Combat pistol",
+		client = {
+			image = "RearSightCP.png",
+		}
+	},
+
+	["grip_c_r"] = {
+		label = "Compact Rifle Grip",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Compact Rifle",
+		client = {
+			image = "GripCR.png",
+		}
+	},
+
+	["barrel_s"] = {
+		label = "SMG Barrel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SMG",
+		client = {
+			image = "BarrelS.png",
+		}
+	},
+
+	["trigger_g_p"] = {
+		label = "Ceramic Pistol Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Ceramic Pistol",
+		client = {
+			image = "TriggerGP.png",
+		}
+	},
+
+	["magazine_body_p"] = {
+		label = "Pistol Magazine Body",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for pistol",
+		client = {
+			image = "MagazineBodyP.png",
+		}
+	},
+
+	["trigger_m"] = {
+		label = "Micro SMG trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for microsmg",
+		client = {
+			image = "TriggerM.png",
+		}
+	},
+
+	["folding_stock_assembly_m"] = {
+		label = "Micro SMG stock assembly",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for microsmg",
+		client = {
+			image = "FoldingStockAssemblyM.png",
+		}
+	},
+
+	["magazine_body_g_p"] = {
+		label = "Ceramic Pistol Magazine Body",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Ceramic Pistol",
+		client = {
+			image = "MagazineBodyGP.png",
+		}
+	},
+
+	["gas_piston_tube_a"] = {
+		label = "Assault Rifle Piston Tube",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "GasPistonTubeA.png",
+		}
+	},
+
+	["outer_barrel"] = {
+		label = ".50 Outer Barrel",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "A part for .50 pistol",
+		client = {
+			image = "OuterBarrel.png",
+		}
+	},
+
+	["main_frame_s_p"] = {
+		label = "SNS Pistol Main Frame",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "A part for SNS Pistol",
+		client = {
+			image = "MainFrameSP.png",
+		}
+	},
+
+	["scope_port_a_r"] = {
+		label = "Advanced Rifle Scope Port",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "ScopePortAR.png",
+		}
+	},
+
+	["rear_sight_a"] = {
+		label = "Assault Rifle Rear Sight",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "RearSightA.png",
+		}
+	},
+
+	["magazine_spring_holder_p"] = {
+		label = "Pistol Magazine Spring Holder",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for pistol",
+		client = {
+			image = "MagazineSpringHolderP.png",
+		}
+	},
+
+	["rear_sight_s_c"] = {
+		label = "Special Carbine Rear Sight",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "RearSightSC.png",
+		}
+	},
+
+	["lower_hand_guard_a"] = {
+		label = "Assault Rifle Hand Guard",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "LowerHandGuardA.png",
+		}
+	},
+
+	["recoil_spring_guide_g_p"] = {
+		label = "Ceramic Pistol Recoil Spring Guide",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Ceramic Pistol",
+		client = {
+			image = "RecoilSpringGuideGP.png",
+		}
+	},
+
+	["magazine_tube_l"] = {
+		label = "Shotgun Magazine Tube",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Shotgun",
+		client = {
+			image = "MagazineTubeL.png",
+		}
+	},
+
+	["receiver_c"] = {
+		label = "Carbine Receiver",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "A part for Carbine Rifle",
+		client = {
+			image = "ReceiverC.png",
+		}
+	},
+
+	["front_sight_l"] = {
+		label = "Shotgun Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Shotgun",
+		client = {
+			image = "FrontSightL.png",
+		}
+	},
+
+	["upper_handguard_c"] = {
+		label = "Carbine upper handguard",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Carbine Rifle",
+		client = {
+			image = "UpperHandguardC.png",
+		}
+	},
+
+	["trigger_a"] = {
+		label = "Assault Rifle Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "TriggerA.png",
+		}
+	},
+
+	["main_frame_c"] = {
+		label = "Carbine Main Frame",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "A part for Carbine Rifle",
+		client = {
+			image = "MainFrameC.png",
+		}
+	},
+
+	["hammer_s_p"] = {
+		label = "SNS Pistol Hammer",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SNS Pistol",
+		client = {
+			image = "HammerSP.png",
+		}
+	},
+
+	["receiver_cover_a"] = {
+		label = "Assault Rifle Receiver Cover",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "ReceiverCoverA.png",
+		}
+	},
+
+	["magazine_spring_holder_g_p"] = {
+		label = "Ceramic Pistol Magazine Spring Holder",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Ceramic Pistol",
+		client = {
+			image = "MagazineSpringHolderGP.png",
+		}
+	},
+
+	["extractor_parts_g_p"] = {
+		label = "Ceramic Pistol Extractor parts",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Ceramic Pistol",
+		client = {
+			image = "ExtractorPartsGP.png",
+		}
+	},
+
+	["magazine_s_c"] = {
+		label = "Special Carbine Magazine",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "MagazineSC.png",
+		}
+	},
+
+	["gas_port_a"] = {
+		label = "Assault Rifle Gas port",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "GasPortA.png",
+		}
+	},
+
+	["firing_pin"] = {
+		label = ".50 Firing Pin",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for .50 pistol",
+		client = {
+			image = "FiringPin.png",
+		}
+	},
+
+	["magazine_body_a"] = {
+		label = "Assault Rifle Magazine Body",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "MagazineBodyA.png",
+		}
+	},
+
+	["slide_g_p"] = {
+		label = "Ceramic Pistol Slide",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Ceramic Pistol",
+		client = {
+			image = "SlideGP.png",
+		}
+	},
+
+	["bolt_carrier_a"] = {
+		label = "Assault Rifle Bolt carrier",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "BoltCarrierA.png",
+		}
+	},
+
+	["hammer"] = {
+		label = ".50 Hammer",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for .50 pistol",
+		client = {
+			image = "Hammer.png",
+		}
+	},
+
+	["trigger_c"] = {
+		label = "Carbine Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Carbine Rifle",
+		client = {
+			image = "TriggerC.png",
+		}
+	},
+
+	["bolt_m"] = {
+		label = "Micro SMG bolt",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for microsmg",
+		client = {
+			image = "BoltM.png",
+		}
+	},
+
+	["rear_sight_c_r"] = {
+		label = "Compact Rifle Rear Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Compact Rifle",
+		client = {
+			image = "RearSightCR.png",
+		}
+	},
+
+	["rear_sight_p"] = {
+		label = "Pistol Rear Sight",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for pistol",
+		client = {
+			image = "RearSightP.png",
+		}
+	},
+
+	["slide_p"] = {
+		label = "Pistol Slide",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "A part for pistol",
+		client = {
+			image = "SlideP.png",
+		}
+	},
+
+	["front_sight_s_p"] = {
+		label = "SNS Pistol Front Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for SNS Pistol",
+		client = {
+			image = "FrontSightSP.png",
+		}
+	},
+
+	["barrel_m"] = {
+		label = "Micro SMG barrel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for microsmg",
+		client = {
+			image = "BarrelM.png",
+		}
+	},
+
+	["trigger_s"] = {
+		label = "SMG Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SMG",
+		client = {
+			image = "TriggerS.png",
+		}
+	},
+
+	["front_sight_c_r"] = {
+		label = "Compact Rifle Front Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Compact Rifle",
+		client = {
+			image = "FrontSightCR.png",
+		}
+	},
+
+	["handguard_s_c"] = {
+		label = "Special Carbine Handguard",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "HandguardSC.png",
+		}
+	},
+
+	["recoil_spring_guide_k"] = {
+		label = "Combat Pistol Spring Guide",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Combat pistol",
+		client = {
+			image = "RecoilSpringGuideCP.png",
+		}
+	},
+
+	["magazine_s_p"] = {
+		label = "SNS Pistol Magazine",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SNS Pistol",
+		client = {
+			image = "MagazineSP.png",
+		}
+	},
+
+	["barrel_a"] = {
+		label = "Assault Rifle Barrel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "BarrelA.png",
+		}
+	},
+
+	["grip_s_c"] = {
+		label = "Special Carbine Grip",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "GripSC.png",
+		}
+	},
+
+	["main_frame_a_r"] = {
+		label = "Advanced Rifle Main Frame",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "MainFrameAR.png",
+		}
+	},
+
+	["barrel_bushing_a"] = {
+		label = "Assault Rifle bushing",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "BarrelBushingA.png",
+		}
+	},
+
+	["main_frame_s_c"] = {
+		label = "Special Carbine Main Frame",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "MainFrameSC.png",
+		}
+	},
+
+	["grip_right_h_p"] = {
+		label = "Heavy Pistol RightGrip",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Heavy Pistol",
+		client = {
+			image = "GrpRightHP.png",
+		}
+	},
+
+	["grip_left_s_p"] = {
+		label = "SNS Pistol Left Grip",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SNS Pistol",
+		client = {
+			image = "GripLeftSP.png",
+		}
+	},
+
+	["trigger_s_p"] = {
+		label = "SNS Pistol Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SNS Pistol",
+		client = {
+			image = "TriggerSP.png",
+		}
+	},
+
+	["firing_pin_s"] = {
+		label = "SMG Firing Pin",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for SMG",
+		client = {
+			image = "FiringPinS.png",
+		}
+	},
+
+	["front_sight_a_r"] = {
+		label = "Advanced Rifle Front Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "FrontSightAR.png",
+		}
+	},
+
+	["magazine_spring_holder"] = {
+		label = ".50 Magazine Spring Holder",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for .50 pistol",
+		client = {
+			image = "MagazineSpringHolder.png",
+		}
+	},
+
+	["bolt_assembly"] = {
+		label = ".50 Bolt Assembly",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for .50 pistol",
+		client = {
+			image = "BoltAssembly.png",
+		}
+	},
+
+	["barrel_p"] = {
+		label = "Pistol Barrel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for pistol",
+		client = {
+			image = "BarrelP.png",
+		}
+	},
+
+	["rear_sight_s_p"] = {
+		label = "SNS Pistol Rear Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for SNS Pistol",
+		client = {
+			image = "RearSightSP.png",
+		}
+	},
+
+	["magazine_spring_holder_k"] = {
+		label = "Combat Pistol Magazine Spring Holder",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Combat pistol",
+		client = {
+			image = "MagazineSpringHolderCP.png",
+		}
+	},
+
+	["trigger_s_c"] = {
+		label = "Special Carbine Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "TriggerSC.png",
+		}
+	},
+
+	["hammer_k"] = {
+		label = "Combat Pistol Hammer",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Combat pistol",
+		client = {
+			image = "HammerCP.png",
+		}
+	},
+
+	["barrel_g_p"] = {
+		label = "Ceramic Pistol Barrel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Ceramic Pistol",
+		client = {
+			image = "BarrelGP.png",
+		}
+	},
+
+	["bolt_carrier_s"] = {
+		label = "SMG Bolt Carrier",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SMG",
+		client = {
+			image = "BoltCarrierS.png",
+		}
+	},
+
+	["gas_piston_tube_c_r"] = {
+		label = "Compact Rifle Gas Piston Tube",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Compact Rifle",
+		client = {
+			image = "GasPistonTubeCR.png",
+		}
+	},
+
+	["barrel_retaining_nut_m"] = {
+		label = "Micro SMG retaining nut",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for microsmg",
+		client = {
+			image = "BarrelRetainingNutM.png",
+		}
+	},
+
+	["main_frame_p"] = {
+		label = "Pistol Main Frame",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "A part for pistol",
+		client = {
+			image = "MainFrameP.png",
+		}
+	},
+
+	["mechanism_housing"] = {
+		label = ".50 Mechanism Housing",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for .50 pistol",
+		client = {
+			image = "MechanismHousing.png",
+		}
+	},
+
+	["hand_grip_a_r"] = {
+		label = "Advanced Rifle Hand Grip",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "HandGripAR.png",
+		}
+	},
+
+	["hammer_h_p"] = {
+		label = "Heavy Pistol Hammer",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Heavy Pistol",
+		client = {
+			image = "HammerHP.png",
+		}
+	},
+
+	["rear_sight_s"] = {
+		label = "SMG Rear Sight",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SMG",
+		client = {
+			image = "RearSightS.png",
+		}
+	},
+
+	["butt_cover_a_r"] = {
+		label = "Advanced Rifle Butt Cover",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "ButtCoverAR.png",
+		}
+	},
+
+	["barrel_a_r"] = {
+		label = "Advanced Rifle Barrel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "BarrelAR.png",
+		}
+	},
+
+	["handguard_assembly_s_c"] = {
+		label = "Special Carbine Handguard assembly",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "HandguardAssemblySC.png",
+		}
+	},
+
+	["barrel_s_c"] = {
+		label = "Special Carbine Barrel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "BarrelSC.png",
+		}
+	},
+
+	["barrel_l"] = {
+		label = "Shotgun Barrel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Shotgun",
+		client = {
+			image = "BarrelL.png",
+		}
+	},
+
+	["front_sight_g_p"] = {
+		label = "Ceramic Pistol Front Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Ceramic Pistol",
+		client = {
+			image = "FrontSightGP.png",
+		}
+	},
+
+	["magazine_body"] = {
+		label = ".50 Magazine Body",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for .50 pistol",
+		client = {
+			image = "MagazineBody.png",
+		}
+	},
+
+	["front_sight_s"] = {
+		label = "SMG Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for SMG",
+		client = {
+			image = "FrontSightS.png",
+		}
+	},
+
+	["lower_hand_guard_c_r"] = {
+		label = "Compact Rifle Lower Hand Guard",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Compact Rifle",
+		client = {
+			image = "LowerHandGuardCR.png",
+		}
+	},
+
+	["front_sight_s_c"] = {
+		label = "Special Carbine Front Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "FrontSightSC.png",
+		}
+	},
+
+	["firing_pin_k"] = {
+		label = "Combat Pistol Firing Pin",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Combat pistol",
+		client = {
+			image = "FiringPinCP.png",
+		}
+	},
+
+	["nozzle_c_r"] = {
+		label = "Compact Rifle Nozzle",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Compact Rifle",
+		client = {
+			image = "NozzleCR.png",
+		}
+	},
+
+	["body_grip_m"] = {
+		label = "Micro SMG body grip",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for microsmg",
+		client = {
+			image = "BodyGripM.png",
+		}
+	},
+
+	["magazine_body_k"] = {
+		label = "Combat Pistol Magazine Body",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Combat pistol",
+		client = {
+			image = "MagazineBodyCP.png",
+		}
+	},
+
+	["barrel_h_p"] = {
+		label = "Heavy Pistol Barrel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Heavy Pistol",
+		client = {
+			image = "BarrelHP.png",
+		}
+	},
+
+	["magazine_cap_l"] = {
+		label = "Shotgun Magazine Cap",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Shotgun",
+		client = {
+			image = "MagazineCapL.png",
+		}
+	},
+
+	["slide_h_p"] = {
+		label = "Heavy Pistol Slide",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Heavy Pistol",
+		client = {
+			image = "SlideHP.png",
+		}
+	},
+
+	["main_frame_h_p"] = {
+		label = "Heavy Pistol Main Frame",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "A part for Heavy Pistol",
+		client = {
+			image = "MainFrameHP.png",
+		}
+	},
+
+	["rear_sight_g_p"] = {
+		label = "Ceramic Pistol Rear Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Ceramic Pistol",
+		client = {
+			image = "RearSightGP.png",
+		}
+	},
+
+	["buttstock_s_c"] = {
+		label = "Special Carbine buttstock",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "ButtstockSC.png",
+		}
+	},
+
+	["bolt_carrier_c_r"] = {
+		label = "Compact Rifle Bolt Carrier",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Compact Rifle",
+		client = {
+			image = "BoltCarrierCR.png",
+		}
+	},
+
+	["handguard_right_m"] = {
+		label = "Micro SMG right handguard",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for microsmg",
+		client = {
+			image = "HandguardRightM.png",
+		}
+	},
+
+	["grip_a"] = {
+		label = "Assault Rifle Grip",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "GripA.png",
+		}
+	},
+
+	["stock_c"] = {
+		label = "Carbine Stock",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Carbine Rifle",
+		client = {
+			image = "StockC.png",
+		}
+	},
+
+	["barrel_c"] = {
+		label = "Carbine Barrel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Carbine Rifle",
+		client = {
+			image = "BarrelC.png",
+		}
+	},
+
+	["receiver_cover_m"] = {
+		label = "Micro SMG reciver cover",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for microsmg",
+		client = {
+			image = "ReceiverCoverM.png",
+		}
+	},
+
+	["rear_recoil_spring_guide_a"] = {
+		label = "Assault Rifle Spring Guide",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "RearRecoilSpringGuideA.png",
+		}
+	},
+
+	["rear_sight_a_r"] = {
+		label = "Advanced Rifle Rear Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "RearSightAR.png",
+		}
+	},
+
+	["magazine_c_r"] = {
+		label = "Compact Rifle Magazine",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Compact Rifle",
+		client = {
+			image = "MagazineCR.png",
+		}
+	},
+
+	["trigger_c_r"] = {
+		label = "Compact Rifle Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Compact Rifle",
+		client = {
+			image = "TriggerCR.png",
+		}
+	},
+
+	["trigger_l"] = {
+		label = "Shotgun Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Shotgun",
+		client = {
+			image = "TriggerL.png",
+		}
+	},
+
+	["barrel_k"] = {
+		label = "Combat Pistol Barrel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Combat pistol",
+		client = {
+			image = "BarrelCP.png",
+		}
+	},
+
+	["receiver_s"] = {
+		label = "SMG Receiver",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "A part for SMG",
+		client = {
+			image = "ReceiverS.png",
+		}
+	},
+
+	["rear_sight_l"] = {
+		label = "Shotgun Rear Sight",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Shotgun",
+		client = {
+			image = "RearSightL.png",
+		}
+	},
+
+	["front_sight_k"] = {
+		label = "Combat Pistol Front Sight",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Combat pistol",
+		client = {
+			image = "FrontSightCP.png",
+		}
+	},
+
+	["main_frame_k"] = {
+		label = "Combat Pistol Main Frame",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "A part for Combat pistol",
+		client = {
+			image = "MainFrameCP.png",
+		}
+	},
+
+	["main_frame_l"] = {
+		label = "Shotgun Main Frame",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "A part for Shotgun",
+		client = {
+			image = "MainFrameL.png",
+		}
+	},
+
+	["main_frame_c_r"] = {
+		label = "Compact Rifle Main Frame",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "A part for Compact Rifle",
+		client = {
+			image = "MainFrameCR.png",
+		}
+	},
+
+	["grip_right_p"] = {
+		label = "Pistol Right Grip",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for pistol",
+		client = {
+			image = "GripRightP.png",
+		}
+	},
+
+	["magazine_c"] = {
+		label = "Carbine Magazine",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Carbine Rifle",
+		client = {
+			image = "MagazineC.png",
+		}
+	},
+
+	["magazine_s"] = {
+		label = "SMG Magazine",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SMG",
+		client = {
+			image = "MagazineS.png",
+		}
+	},
+
+	["muzzel_s_c"] = {
+		label = "Special Carbine Muzzel",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "MuzzelSC.png",
+		}
+	},
+
+	["trigger_h_p"] = {
+		label = "Heavy Pistol Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Heavy Pistol",
+		client = {
+			image = "TriggerHP.png",
+		}
+	},
+
+	["nozzle_hold_c_r"] = {
+		label = "Compact Rifle Nozzle Holder",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Compact Rifle",
+		client = {
+			image = "NozzleHoldCR.png",
+		}
+	},
+
+	["magazine_a_r"] = {
+		label = "Advanced Rifle Magazine",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "MagazineAR.png",
+		}
+	},
+
+	["grip_l"] = {
+		label = "Shotgun Grip",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Shotgun",
+		client = {
+			image = "GripL.png",
+		}
+	},
+
+	["grip_left_p"] = {
+		label = "Pistol Left Grip",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for pistol",
+		client = {
+			image = "GripLeftP.png",
+		}
+	},
+
+	["trigger_k"] = {
+		label = "Combat Pistol Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Combat pistol",
+		client = {
+			image = "TriggerCP.png",
+		}
+	},
+
+	["front_sight_c"] = {
+		label = "Carbine Front Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Carbine Rifle",
+		client = {
+			image = "FrontSightC.png",
+		}
+	},
+
+	["main_frame_g_p"] = {
+		label = "Ceramic Pistol Main Frame",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "A part for Ceramic Pistol",
+		client = {
+			image = "MainFrameGP.png",
+		}
+	},
+
+	["slide_s_p"] = {
+		label = "SNS Pistol Slide",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SNS Pistol",
+		client = {
+			image = "SlideSP.png",
+		}
+	},
+
+	["grip_c"] = {
+		label = "Carbine Grip",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Carbine Rifle",
+		client = {
+			image = "GripC.png",
+		}
+	},
+
+	["rear_sight"] = {
+		label = ".50 Rear Sight",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for .50 pistol",
+		client = {
+			image = "RearSight.png",
+		}
+	},
+
+	["handguard_s"] = {
+		label = "SMG Handguard",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SMG",
+		client = {
+			image = "HandguardS.png",
+		}
+	},
+
+	["front_port_a_r"] = {
+		label = "Advanced Rifle Front Port",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "FrontPortAR.png",
+		}
+	},
+
+	["front_sight_h_p"] = {
+		label = "Heavy Pistol Front Sight",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "A part for Heavy Pistol",
+		client = {
+			image = "FrontSightHP.png",
+		}
+	},
+
+	["recoil_spring_guide_h_p"] = {
+		label = "Heavy Pistol Spring Guide",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Heavy Pistol",
+		client = {
+			image = "RecoilSpringGuideHP.png",
+		}
+	},
+
+	["trigger_p"] = {
+		label = "Pistol Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for pistol",
+		client = {
+			image = "TriggerP.png",
+		}
+	},
+
+	["bolthead_carrier_s_c"] = {
+		label = "Special Carbine Bolthead",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Special Carbine",
+		client = {
+			image = "BoltheadCarrierSC.png",
+		}
+	},
+
+	["bolt_carrier_c"] = {
+		label = "Carbine Bolt Carrier",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Carbine Rifle",
+		client = {
+			image = "BoltCarrierC.png",
+		}
+	},
+
+	["trigger_a_r"] = {
+		label = "Advanced Rifle Trigger",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "TriggerAR.png",
+		}
+	},
+
+	["slide_k"] = {
+		label = "Combat Pistol Slide",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "A part for Combat pistol",
+		client = {
+			image = "SlideCP.png",
+		}
+	},
+
+	["front_sight_a"] = {
+		label = "Assault Rifle Front sight",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for assault rifle",
+		client = {
+			image = "FrontSightA.png",
+		}
+	},
+
+	["grip_right_s_p"] = {
+		label = "SNS Pistol RightGrip",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for SNS Pistol",
+		client = {
+			image = "GrpRightSP.png",
+		}
+	},
+
+	["firing_pin_h_p"] = {
+		label = "Heavy Pistol Firing Pin",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Heavy Pistol",
+		client = {
+			image = "FiringPinHP.png",
+		}
+	},
+
+	["receiver_m"] = {
+		label = "Micro SMG receiver",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for microsmg",
+		client = {
+			image = "ReceiverM.png",
+		}
+	},
+
+	["reloader_cylinder_a_r"] = {
+		label = "Advanced Rifle Reloader Cylinder",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "ReloaderCylinderAR.png",
+		}
+	},
+
+	["front_sight"] = {
+		label = ".50 Front Sight",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "A part for .50 pistol",
+		client = {
+			image = "FrontSight.png",
+		}
+	},
+
+	["magazine_m"] = {
+		label = "Micro SMG magazine",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for microsmg",
+		client = {
+			image = "MagazineM.png",
+		}
+	},
+
+	["nozzle_a_r"] = {
+		label = "Advanced Rifle Nozzle",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A part for Advanced Rifle",
+		client = {
+			image = "NozzleAR.png",
+		}
+	},
 }
