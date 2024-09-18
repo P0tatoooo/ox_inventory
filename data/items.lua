@@ -1671,7 +1671,7 @@ return {
 
     ['bloodbag'] = {
 		label = 'Poche de sang',
-		weight = 1250,
+		weight = 200,
 		stack = true,
 	},
 
@@ -3426,5 +3426,10 @@ return {
         client = {
             export = "MyCity_CoreV2.usePrepaidPhone",
         }
+	},
+	['moneybag'] = {
+		label = 'Sac à Billets',
+		weight = 300,
+		stack = false,
 	},
 }
