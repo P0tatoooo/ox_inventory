@@ -3435,7 +3435,7 @@ return {
 	},
 	['moneybag'] = {
 		label = 'Sac à Billets',
-		weight = 300,
+		weight = 1000,
 		stack = false,
 	},
 
