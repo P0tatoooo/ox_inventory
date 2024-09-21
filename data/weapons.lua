@@ -1,7 +1,7 @@
 return {
 	Weapons = {
         ['WEAPON_ADVANCEDRIFLE'] = {
-			label = 'TAR 21',
+			label = 'Fusil Amélioré',
 			weight = 3180,
 			durability = 0.3,
 			clip = {'extendedarclip','arclip'},
@@ -9,7 +9,7 @@ return {
 		},
 
 		['WEAPON_APPISTOL'] = {
-			label = 'Pistol Perforant',
+			label = 'Pistolet Perforant',
 			weight = 1220,
 			durability = 0.5,
 			clip = {'extendedapppistolclip','apppistolclip'},
@@ -33,7 +33,7 @@ return {
 		},
 
 		['WEAPON_ASSAULTSHOTGUN'] = {
-			label = 'Striker-12',
+			label = 'Fusil à Pompe d\'Assault',
 			weight = 3100,
 			durability = 1,
 			clip = {'extendedassaultshotgunclip','assaultshotgunclip'},
@@ -41,7 +41,7 @@ return {
 		},
 
 		['WEAPON_ASSAULTSMG'] = {
-			label = 'P90',
+			label = 'SMG d\'Assault',
 			weight = 2850,
 			durability = 0.3,
 			clip = {'extendedassaultsmgclip','assaultsmgclip'},
@@ -61,7 +61,7 @@ return {
 		},
 
 		['WEAPON_BATTLEAXE'] = {
-			label = 'hache de combat',
+			label = 'Hache de Combat',
 			weight = 1200,
 			durability = 1,
 		},
@@ -73,7 +73,7 @@ return {
 		},
 
 		['WEAPON_BULLPUPRIFLE'] = {
-			label = 'QBZ-95',
+			label = 'Fusil Bullpup',
 			weight = 2900,
 			durability = 0.3,
 			clip = {'extendedarclip','arclip'},
@@ -81,7 +81,7 @@ return {
 		},
 
 		['WEAPON_BULLPUPRIFLE_MK2'] = {
-			label = 'QBZ-95 MK2',
+			label = 'Fusil Bullpup MK2',
 			weight = 2900,
 			durability = 0.3,
 			clip = {'extendedarclip','arclip'},
@@ -89,7 +89,7 @@ return {
 		},
 
 		['WEAPON_BULLPUPSHOTGUN'] = {
-			label = 'KSG',
+			label = 'Fusil à Pompe Bullpup',
 			weight = 3100,
 			durability = 1,
 			ammoname = 'shotgunammo',
@@ -135,7 +135,7 @@ return {
 		},
 
 		['WEAPON_COMBATPDW'] = {
-			label = 'ADP de combat',
+			label = 'ADP',
 			weight = 3400,
 			durability = 0.3,
 			clip = {'drumpdwclip','extendedpdwclip','pdwclip'},
@@ -179,7 +179,7 @@ return {
 		},
 
 		['WEAPON_DBSHOTGUN'] = {
-			label = 'Fusil à Canon Scié',
+			label = 'Fusil à Double Canon',
 			weight = 3175,
 			durability = 1,
 			ammoname = 'shotgunammo',
@@ -216,26 +216,26 @@ return {
 		},
 
 		['WEAPON_FLARE'] = {
-			label = 'Fusée de détresse',
+			label = 'Fusée de Détresse',
 			weight = 235,
 			throwable = true,
 		},
 
 		['WEAPON_FLAREGUN'] = {
-			label = 'Pistolet de détresse',
+			label = 'Pistolet de Détresse',
 			weight = 1000,
 			durability = 1,
 			ammoname = 'flareammo'
 		},
 
 		['WEAPON_FLASHLIGHT'] = {
-			label = 'lampe torche',
+			label = 'Lampe Torche',
 			weight = 125,
 			durability = 1,
 		},
 
 		['WEAPON_GOLFCLUB'] = {
-			label = 'Club de golf',
+			label = 'Club de Golf',
 			weight = 330,
 			durability = 1,
 		},
@@ -247,7 +247,7 @@ return {
 		},
 
 		['WEAPON_GUSENBERG'] = {
-			label = 'M1928A1 Thompson',
+			label = 'Mitraillette Gusenberg',
 			weight = 4900,
 			durability = 0.3,
 			clip = {'extendedgusenbergclip','gusenbergclip'},
@@ -255,13 +255,13 @@ return {
 		},
 
 		['WEAPON_HAMMER'] = {
-			label = 'marteau',
+			label = 'Marteau',
 			weight = 1200,
 			durability = 1,
 		},
 
 		['WEAPON_HATCHET'] = {
-			label = 'hachette',
+			label = 'Hachette',
 			weight = 1000,
 			durability = 1,
 		},
@@ -288,7 +288,7 @@ return {
 		},
 
 		['WEAPON_HEAVYSHOTGUN'] = {
-			label = 'S12K',
+			label = 'Fusil à Pompe Lourd',
 			weight = 3600,
 			durability = 1,
 			clip = {'drumheavyshotgunclip','extendedheavyshotgunclip'},
@@ -439,7 +439,7 @@ return {
 		},
 
 		['WEAPON_PISTOL'] = {
-			label = 'berretta',
+			label = 'Pistolet Berretta',
 			weight = 970,
 			durability = 0.5,
             clip = {'extendedpistolclip','pistolclip'},
@@ -455,7 +455,7 @@ return {
 		},
 
 		['WEAPON_PISTOL_MK2'] = {
-			label = 'Pistol MK2',
+			label = 'Pistolet Berretta MK2',
 			weight = 970,
 			durability = 0.5,
 			clip = {'extendedpistolclip','pistolclip'},
@@ -507,7 +507,7 @@ return {
 		},
 
 		['WEAPON_SAWNOFFSHOTGUN'] = {
-			label = 'Fusil à Pompe Court',
+			label = 'Fusil à Pompe Canon Scié',
 			weight = 2380,
 			durability = 1,
 			ammoname = 'shotgunammo',
@@ -531,13 +531,13 @@ return {
 		},
 
 		['WEAPON_SMOKEGRENADE'] = {
-			label = 'grenade lacrimogène',
+			label = 'Grenade Lacrimogène',
 			weight = 600,
 			throwable = true,
 		},
 
 		['WEAPON_SNIPERRIFLE'] = {
-			label = 'Sniper',
+			label = 'Fusil de Précision à Verrou',
 			weight = 6500,
 			durability = 1,
 			clip = {'sniperclip'},
@@ -545,13 +545,13 @@ return {
 		},
 
 		['WEAPON_SNOWBALL'] = {
-			label = 'boule de neige',
+			label = 'Boule de Neige',
 			weight = 5,
 			throwable = true,
 		},
 
 		['WEAPON_SNSPISTOL'] = {
-			label = 'Pistolet sns',
+			label = 'Pistolet SNS',
 			weight = 465,
 			durability = 0.5,
 			clip = {'extendedsnspistolclip','snspistolclip'},
@@ -589,7 +589,7 @@ return {
 		},
 
 		['WEAPON_STONE_HATCHET'] = {
-			label = 'hachette en pierre',
+			label = 'Hachette en Pierre',
 			weight = 800,
 			durability = 1,
 		},
@@ -630,7 +630,7 @@ return {
 		},
 
         ['WEAPON_COLBATON'] = {
-			label = 'Bâton télescopique',
+			label = 'Bâton Télescopique',
 			weight = 2500,
 			durability = 1,
 		},
@@ -756,7 +756,7 @@ return {
 		},
 
         ['WEAPON_RAYCARBINE'] = {
-			label = 'Unholy Hellbringer',
+			label = 'Fusil Laser',
 			weight = 3620,
 			durability = 0.2,
 			ammoname = 'laserammo',
@@ -771,7 +771,7 @@ return {
 		},
 
         ['WEAPON_RAYMINIGUN'] = {
-			label = 'Widowmaker',
+			label = 'Mitrailleuse Laser',
 			weight = 7000,
 			durability = 0.1,
 			ammoname = 'laserammo',
@@ -858,37 +858,37 @@ return {
 		},
 
         ['WEAPON_AIRSOFTGLOCK20'] = {
-			label = 'GLOCK20 Airsoft',
+			label = 'GLOCK Airsoft',
 			weight = 2000,
-			durability = 0.2,
+			durability = 0.1,
 			ammoname = 'airsoftball'
 		},
 
         ['WEAPON_AIRSOFTAK47'] = {
 			label = 'AK47 Airsoft',
 			weight = 2000,
-			durability = 0.2,
+			durability = 0.1,
 			ammoname = 'airsoftball'
 		},
 
         ['WEAPON_AIRSOFTG36C'] = {
 			label = 'G36C Airsoft',
 			weight = 2000,
-			durability = 0.2,
+			durability = 0.1,
 			ammoname = 'airsoftball'
 		},
 
         ['WEAPON_AIRSOFTMP5'] = {
 			label = 'MP5 Airsoft',
 			weight = 2000,
-			durability = 0.2,
+			durability = 0.1,
 			ammoname = 'airsoftball'
 		},
 
 		['WEAPON_AIRSOFTUZIMICRO'] = {
 			label = 'UZI Airsoft',
 			weight = 2000,
-			durability = 0.2,
+			durability = 0.1,
 			ammoname = 'airsoftball'
 		},
 
