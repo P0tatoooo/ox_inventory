@@ -433,7 +433,7 @@ return {
 		},
 
 		['WEAPON_PIPEBOMB'] = {
-			label = 'Pipe Bomb',
+			label = 'Bombe Artisanale',
 			weight = 1800,
 			throwable = true,
 		},
@@ -657,7 +657,7 @@ return {
 			label = 'Fusil de Chasse',
 			weight = 4800,
 			durability = 0.5,
-			ammoname = 'sniperammo',
+			ammoname = 'huntingammo',
             degrade = 20160
 		},
         ['WEAPON_RADARGUN'] = {
@@ -1877,6 +1877,11 @@ return {
 			weight = 38,
 		},
 
+		['huntingammo'] = {
+			label = '.308 Winchester',
+			weight = 38,
+		},
+
 		['shotgunammo'] = {
 			label = '12 Gauge',
 			weight = 38,
@@ -2978,6 +2983,46 @@ return {
 					client = {
 							component = {`COMPONENT_ASSAULTRIFLE_CLIP_03`,`COMPONENT_CARBINERIFLE_CLIP_03`,`COMPONENT_SPECIALCARBINE_CLIP_03`,`COMPONENT_COMPACTRIFLE_CLIP_03`},
 					},
+			},
+			['ceramicpistolclip'] = {
+				label = 'Ch. Pistolet Céramique',
+				ammoname = 'pistolammo',
+				ammocount = 12,
+				weight = 280,
+				buttons = {
+					{
+						label = 'Remplir le chargeur',
+						action = function(slot)
+							exports.MyCity_CoreV2:RefillClip(slot)
+						end
+					},
+					{
+						label = 'Vider le chargeur',
+						action = function(slot)
+							exports.MyCity_CoreV2:EmptyClip(slot)
+						end
+					},
+				}
+			},
+			['extendedceramicpistolclip'] = {
+				label = 'Ch. Am. Pistolet Céramique',
+				ammoname = 'pistolammo',
+				ammocount = 17,
+				weight = 280,
+				buttons = {
+					{
+						label = 'Remplir le chargeur',
+						action = function(slot)
+							exports.MyCity_CoreV2:RefillClip(slot)
+						end
+					},
+					{
+						label = 'Vider le chargeur',
+						action = function(slot)
+							exports.MyCity_CoreV2:EmptyClip(slot)
+						end
+					},
+				}
 			},
     }
 }
