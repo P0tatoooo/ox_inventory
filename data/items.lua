@@ -2380,6 +2380,13 @@ return {
 		close = true,
 	},
 
+	['officedesk'] = {
+		label = 'Bureau Préfait',
+		weight = 100,
+		stack = true,
+		close = true,
+	},
+	
     ['shishatobacco'] = {
 		label = 'Tabac à Chicha',
 		weight = 750,
