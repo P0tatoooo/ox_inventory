@@ -3265,7 +3265,7 @@ return {
 	},
 
 	["pistol_body"] = {
-		label = "Corps de Pistolet",
+		label = "Corps de Pistolet Berretta",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -3279,7 +3279,7 @@ return {
 	},
 
 	["pistol_barrel"] = {
-		label = "Cannon de Pistolet",
+		label = "Canon de Pistolet Berretta",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -3444,106 +3444,106 @@ return {
 	--Gun Crafting
 
 	["trigger_g_p"] = {
-		label = "Ceramic Pistol Trigger",
+		label = "Pistolet Céramique Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Ceramic Pistol",
+		description = "Une partie du Pistolet Céramique",
 		client = {
 			image = "TriggerGP.png",
 		}
 	},
 
 	["grip_left_s_p"] = {
-		label = "SNS Pistol Left Grip",
+		label = "Pistolet SNS Poignée Gauche",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SNS Pistol",
+		description = "Une partie du Pistolet SNS",
 		client = {
 			image = "GripLeftSP.png",
 		}
 	},
 
 	["folding_stock_assembly_m"] = {
-		label = "Micro SMG stock assembly",
+		label = "UZI Crosse",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for microsmg",
+		description = "Une partie du UZI",
 		client = {
 			image = "FoldingStockAssemblyM.png",
 		}
 	},
 
 	["magazine_body_g_p"] = {
-		label = "Ceramic Pistol Magazine Body",
+		label = "Pistolet Céramique Corps Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Ceramic Pistol",
+		description = "Une partie du Pistolet Céramique",
 		client = {
 			image = "MagazineBodyGP.png",
 		}
 	},
 
 	["main_frame_a_s"] = {
-		label = "Assault SMG Main Frame",
+		label = "SMG d'Assault Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for Assault SMG",
+		description = "Une partie du SMG d\'Assault",
 		client = {
 			image = "MainFrameAS.png",
 		}
 	},
 
 	["grip_c"] = {
-		label = "Carbine Grip",
+		label = "M4 Poignée",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Carbine Rifle",
+		description = "Une partie du M4",
 		client = {
 			image = "GripC.png",
 		}
 	},
 
 	["front_sight"] = {
-		label = ".50 Front Sight",
+		label = "Pistolet Cal .50 Viseur Avant",
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "A part for .50 pistol",
+		description = "Une partie du Pistolet Cal .50",
 		client = {
 			image = "FrontSight.png",
 		}
 	},
 
 	["top_grip_a_s"] = {
-		label = "Assault SMG Top Grip",
+		label = "SMG d'Assault Haut Poignée",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Assault SMG",
+		description = "Une partie du SMG d\'Assault",
 		client = {
 			image = "TopGripAS.png",
 		}
 	},
 
 	["rear_sight_g_p"] = {
-		label = "Ceramic Pistol Rear Sight",
+		label = "Pistolet Céramique Viseur Arrière",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Ceramic Pistol",
+		description = "Une partie du Pistolet Céramique",
 		client = {
 			image = "RearSightGP.png",
 		}
 	},
 
 	["b_p_heavy_pistol"] = {
-		label = "Heavy Pistol Blueprint",
+		label = "Pistolet Lourd Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -3554,161 +3554,161 @@ return {
 	},
 
 	["main_frame_c"] = {
-		label = "Carbine Main Frame",
+		label = "M4 Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for Carbine Rifle",
+		description = "Une partie du M4",
 		client = {
 			image = "MainFrameC.png",
 		}
 	},
 
 	["handguard_l"] = {
-		label = "Shotgun Handguard",
+		label = "Fusil à Pompe Poignée Avant",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Shotgun",
+		description = "Une partie du Fusil à Pompe",
 		client = {
 			image = "HandguardL.png",
 		}
 	},
 
 	["nozzle_c_r"] = {
-		label = "Compact Rifle Nozzle",
+		label = "AK-U Embout",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Compact Rifle",
+		description = "Une partie du AK-U",
 		client = {
 			image = "NozzleCR.png",
 		}
 	},
 
 	["front_sight_s"] = {
-		label = "SMG Sight",
+		label = "MP5 Viseur",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for SMG",
+		description = "Une partie du MP5",
 		client = {
 			image = "FrontSightS.png",
 		}
 	},
 
 	["bolt_carrier_c"] = {
-		label = "Carbine Bolt Carrier",
+		label = "M4 Support Vis",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Carbine Rifle",
+		description = "Une partie du M4",
 		client = {
 			image = "BoltCarrierC.png",
 		}
 	},
 
 	["sight_holder_b_p"] = {
-		label = "Bullpup Rifle Sight Holder",
+		label = "Fusil Bullpup Support Viseur",
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "A part for Bullpup Rifle",
+		description = "Une partie du Fusil Bullpup",
 		client = {
 			image = "SightHolderBP.png",
 		}
 	},
 
 	["reloader_a_s"] = {
-		label = "Assault SMG Reloader",
+		label = "SMG d'Assault Rechargement",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Assault SMG",
+		description = "Une partie du SMG d\'Assault",
 		client = {
 			image = "ReloaderAS.png",
 		}
 	},
 
 	["barrel_m"] = {
-		label = "Micro SMG barrel",
+		label = "UZI Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for microsmg",
+		description = "Une partie du UZI",
 		client = {
 			image = "BarrelM.png",
 		}
 	},
 
 	["barrel_retaining_nut_m"] = {
-		label = "Micro SMG retaining nut",
+		label = "UZI Ecrou de Maintien",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for microsmg",
+		description = "Une partie du UZI",
 		client = {
 			image = "BarrelRetainingNutM.png",
 		}
 	},
 
 	["mechanism_housing"] = {
-		label = ".50 Mechanism Housing",
+		label = "Pistolet Cal .50 Boitier Mécanisme",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for .50 pistol",
+		description = "Une partie du Pistolet Cal .50",
 		client = {
 			image = "MechanismHousing.png",
 		}
 	},
 
 	["rear_sight_c_r"] = {
-		label = "Compact Rifle Rear Sight",
+		label = "AK-U Viseur Arrière",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Compact Rifle",
+		description = "Une partie du AK-U",
 		client = {
 			image = "RearSightCR.png",
 		}
 	},
 
 	["receiver_s"] = {
-		label = "SMG Receiver",
+		label = "MP5 Récepteur",
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "A part for SMG",
+		description = "Une partie du MP5",
 		client = {
 			image = "ReceiverS.png",
 		}
 	},
 
 	["bolthead_carrier_s_c"] = {
-		label = "Special Carbine Bolthead",
+		label = "G36 Boulon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "BoltheadCarrierSC.png",
 		}
 	},
 
 	["handguard_s"] = {
-		label = "SMG Handguard",
+		label = "MP5 Poignée Avant",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SMG",
+		description = "Une partie du MP5",
 		client = {
 			image = "HandguardS.png",
 		}
 	},
 
 	["b_p_advanced_rifle"] = {
-		label = "Advanced Rifle Blueprint",
+		label = "Fusil Amélioré Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -3719,205 +3719,205 @@ return {
 	},
 
 	["slide_g_p"] = {
-		label = "Ceramic Pistol Slide",
+		label = "Pistolet Céramique Glissière",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Ceramic Pistol",
+		description = "Une partie du Pistolet Céramique",
 		client = {
 			image = "SlideGP.png",
 		}
 	},
 
 	["trigger_a_r"] = {
-		label = "Advanced Rifle Trigger",
+		label = "Fusil Amélioré Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "TriggerAR.png",
 		}
 	},
 
 	["main_frame_h_p"] = {
-		label = "Heavy Pistol Main Frame",
+		label = "Pistolet Lourd Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for Heavy Pistol",
+		description = "Une partie du Pistolet Lourd",
 		client = {
 			image = "MainFrameHP.png",
 		}
 	},
 
 	["nozzle_b_p"] = {
-		label = "Bullpup Rifle Nozzle",
+		label = "Fusil Bullpup Embout",
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "A part for Bullpup Rifle",
+		description = "Une partie du Fusil Bullpup",
 		client = {
 			image = "NozzleBP.png",
 		}
 	},
 
 	["main_frame_k"] = {
-		label = "Combat Pistol Main Frame",
+		label = "Glock Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for Combat pistol",
+		description = "Une partie du Glock",
 		client = {
 			image = "MainFrameCP.png",
 		}
 	},
 
 	["grip_l"] = {
-		label = "Shotgun Grip",
+		label = "Fusil à Pompe Poignée",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Shotgun",
+		description = "Une partie du Fusil à Pompe",
 		client = {
 			image = "GripL.png",
 		}
 	},
 
 	["extractor_parts_g_p"] = {
-		label = "Ceramic Pistol Extractor parts",
+		label = "Pistolet Céramique Extracteur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Ceramic Pistol",
+		description = "Une partie du Pistolet Céramique",
 		client = {
 			image = "ExtractorPartsGP.png",
 		}
 	},
 
 	["gas_block_s_c"] = {
-		label = "Special Carbine Gas block",
+		label = "G36 Bloc Gaz",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "GasBlockSC.png",
 		}
 	},
 
 	["barrel_c"] = {
-		label = "Carbine Barrel",
+		label = "M4 Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Carbine Rifle",
+		description = "Une partie du M4",
 		client = {
 			image = "BarrelC.png",
 		}
 	},
 
 	["firing_pin_g_p"] = {
-		label = "Ceramic Pistol Firing Pin",
+		label = "Pistolet Céramique Percuteur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Ceramic Pistol",
+		description = "Une partie du Pistolet Céramique",
 		client = {
 			image = "FiringPinGP.png",
 		}
 	},
 
 	["lower_hand_guard_c_r"] = {
-		label = "Compact Rifle Lower Hand Guard",
+		label = "AK-U Poignée Avant",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Compact Rifle",
+		description = "Une partie du AK-U",
 		client = {
 			image = "LowerHandGuardCR.png",
 		}
 	},
 
 	["rear_sight_a_s"] = {
-		label = "Assault SMG Rear Sight",
+		label = "SMG d'Assault Viseur Arrière",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Assault SMG",
+		description = "Une partie du SMG d\'Assault",
 		client = {
 			image = "RearSightAS.png",
 		}
 	},
 
 	["barrel_bushing_a"] = {
-		label = "Assault Rifle bushing",
+		label = "AK-47 Bague",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "BarrelBushingA.png",
 		}
 	},
 
 	["trigger_m"] = {
-		label = "Micro SMG trigger",
+		label = "UZI Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for microsmg",
+		description = "Une partie du UZI",
 		client = {
 			image = "TriggerM.png",
 		}
 	},
 
 	["trigger_a"] = {
-		label = "Assault Rifle Trigger",
+		label = "AK-47 Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "TriggerA.png",
 		}
 	},
 
 	["trigger_c_r"] = {
-		label = "Compact Rifle Trigger",
+		label = "AK-U Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Compact Rifle",
+		description = "Une partie du AK-U",
 		client = {
 			image = "TriggerCR.png",
 		}
 	},
 
 	["gas_piston_tube_a"] = {
-		label = "Assault Rifle Piston Tube",
+		label = "AK-47 Tube Piston",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "GasPistonTubeA.png",
 		}
 	},
 
 	["hammer_a"] = {
-		label = "Assault Rifle Hammer",
+		label = "AK-47 Marteau",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "HammerA.png",
 		}
 	},
 
 	["b_p_pistol"] = {
-		label = "Pistol Blueprint",
+		label = "Pistolet Berretta Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -3928,40 +3928,40 @@ return {
 	},
 
 	["receiver_c"] = {
-		label = "Carbine Receiver",
+		label = "M4 Récepteur",
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "A part for Carbine Rifle",
+		description = "Une partie du M4",
 		client = {
 			image = "ReceiverC.png",
 		}
 	},
 
 	["main_frame_b_p"] = {
-		label = "Bullpup Rifle Main Frame",
+		label = "Fusil Bullpup Corps Principal",
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "A part for Bullpup Rifle",
+		description = "Une partie du Fusil Bullpup",
 		client = {
 			image = "MainFrameBP.png",
 		}
 	},
 
 	["main_grip_a_s"] = {
-		label = "Assault SMG Main Grip",
+		label = "SMG d'Assault Poignée Principale",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Assault SMG",
+		description = "Une partie du SMG d\'Assault",
 		client = {
 			image = "MainGripAS.png",
 		}
 	},
 
 	["b_p_compact_rifle"] = {
-		label = "Advanced Rifle Blueprint",
+		label = "Fusil Amélioré Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -3972,62 +3972,62 @@ return {
 	},
 
 	["magazine_body_k"] = {
-		label = "Combat Pistol Magazine Body",
+		label = "Glock Corps Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Combat pistol",
+		description = "Une partie du Glock",
 		client = {
 			image = "MagazineBodyCP.png",
 		}
 	},
 
 	["rear_sight_k"] = {
-		label = "Combat Pistol Rear Sight",
+		label = "Glock Viseur Arrière",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Combat pistol",
+		description = "Une partie du Glock",
 		client = {
 			image = "RearSightCP.png",
 		}
 	},
 
 	["grip_lock_a_s"] = {
-		label = "Assault SMG Grip Lock",
+		label = "SMG d'Assault Poignée",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Assault SMG",
+		description = "Une partie du SMG d\'Assault",
 		client = {
 			image = "GripLockAS.png",
 		}
 	},
 
 	["main_frame_g_p"] = {
-		label = "Ceramic Pistol Main Frame",
+		label = "Pistolet Céramique Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for Ceramic Pistol",
+		description = "Une partie du Pistolet Céramique",
 		client = {
 			image = "MainFrameGP.png",
 		}
 	},
 
 	["handguard_right_m"] = {
-		label = "Micro SMG right handguard",
+		label = "UZI Poignée Avant Droite",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for microsmg",
+		description = "Une partie du UZI",
 		client = {
 			image = "HandguardRightM.png",
 		}
 	},
 
 	["b_p_50"] = {
-		label = ".50 Blueprint",
+		label = "Pistolet Cal .50 Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -4038,249 +4038,249 @@ return {
 	},
 
 	["barrel_k"] = {
-		label = "Combat Pistol Barrel",
+		label = "Glock Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Combat pistol",
+		description = "Une partie du Glock",
 		client = {
 			image = "BarrelCP.png",
 		}
 	},
 
 	["main_frame_s_c"] = {
-		label = "Special Carbine Main Frame",
+		label = "G36 Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "MainFrameSC.png",
 		}
 	},
 
 	["hand_grip_b_p"] = {
-		label = "Bullpup Rifle Hand Grip",
+		label = "Fusil Bullpup Poignée Avant",
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "A part for Bullpup Rifle",
+		description = "Une partie du Fusil Bullpup",
 		client = {
 			image = "HandGripBP.png",
 		}
 	},
 
 	["front_sight_a_s"] = {
-		label = "Assault SMG Front Sight",
+		label = "SMG d'Assault Viseur Avant",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Assault SMG",
+		description = "Une partie du SMG d\'Assault",
 		client = {
 			image = "FrontSightAS.png",
 		}
 	},
 
 	["front_sight_l"] = {
-		label = "Shotgun Sight",
+		label = "Fusil à Pompe Viseur",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Shotgun",
+		description = "Une partie du Fusil à Pompe",
 		client = {
 			image = "FrontSightL.png",
 		}
 	},
 
 	["slide_k"] = {
-		label = "Combat Pistol Slide",
+		label = "Glock Glissière",
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "A part for Combat pistol",
+		description = "Une partie du Glock",
 		client = {
 			image = "SlideCP.png",
 		}
 	},
 
 	["barrel_b_p"] = {
-		label = "Bullpup Rifle Barrel",
+		label = "Fusil Bullpup Canon",
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "A part for Bullpup Rifle",
+		description = "Une partie du Fusil Bullpup",
 		client = {
 			image = "BarrelBP.png",
 		}
 	},
 
 	["magazine_a_r"] = {
-		label = "Advanced Rifle Magazine",
+		label = "Fusil Amélioré Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "MagazineAR.png",
 		}
 	},
 
 	["front_sight_a_r"] = {
-		label = "Advanced Rifle Front Sight",
+		label = "Fusil Amélioré Viseur Avant",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "FrontSightAR.png",
 		}
 	},
 
 	["lower_hand_guard_a"] = {
-		label = "Assault Rifle Hand Guard",
+		label = "AK-47 Poignée Avant",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "LowerHandGuardA.png",
 		}
 	},
 
 	["trigger_s"] = {
-		label = "SMG Trigger",
+		label = "MP5 Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SMG",
+		description = "Une partie du MP5",
 		client = {
 			image = "TriggerS.png",
 		}
 	},
 
 	["grip_left_p"] = {
-		label = "Pistol Left Grip",
+		label = "Pistolet Berretta Poignée Gauche",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for pistol",
+		description = "Une partie du Pistolet Berretta",
 		client = {
 			image = "GripLeftP.png",
 		}
 	},
 
 	["grip_right_s_p"] = {
-		label = "SNS Pistol RightGrip",
+		label = "Pistolet SNS Poignée Droite",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SNS Pistol",
+		description = "Une partie du Pistolet SNS",
 		client = {
 			image = "GrpRightSP.png",
 		}
 	},
 
 	["magazine_m"] = {
-		label = "Micro SMG magazine",
+		label = "UZI Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for microsmg",
+		description = "Une partie du UZI",
 		client = {
 			image = "MagazineM.png",
 		}
 	},
 
 	["firing_pin"] = {
-		label = ".50 Firing Pin",
+		label = "Pistolet Cal .50 Percuteur",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for .50 pistol",
+		description = "Une partie du Pistolet Cal .50",
 		client = {
 			image = "FiringPin.png",
 		}
 	},
 
 	["bolt_assembly"] = {
-		label = ".50 Bolt Assembly",
+		label = "Pistolet Cal .50 Boulon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for .50 pistol",
+		description = "Une partie du Pistolet Cal .50",
 		client = {
 			image = "BoltAssembly.png",
 		}
 	},
 
 	["rear_sight_s_c"] = {
-		label = "Special Carbine Rear Sight",
+		label = "G36 Viseur Arrière",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "RearSightSC.png",
 		}
 	},
 
 	["slide_h_p"] = {
-		label = "Heavy Pistol Slide",
+		label = "Pistolet Lourd Glissière",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Heavy Pistol",
+		description = "Une partie du Pistolet Lourd",
 		client = {
 			image = "SlideHP.png",
 		}
 	},
 
 	["receiver_m"] = {
-		label = "Micro SMG receiver",
+		label = "UZI Récepteur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for microsmg",
+		description = "Une partie du UZI",
 		client = {
 			image = "ReceiverM.png",
 		}
 	},
 
 	["upper_grip_a_s"] = {
-		label = "Assault SMG Upper Grip",
+		label = "SMG d'Assault Haut de Poignée",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Assault SMG",
+		description = "Une partie du SMG d\'Assault",
 		client = {
 			image = "UpperGripAS.png",
 		}
 	},
 
 	["handguard_s_c"] = {
-		label = "Special Carbine Handguard",
+		label = "G36 Poignée Avant",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "HandguardSC.png",
 		}
 	},
 
 	["magazine_body"] = {
-		label = ".50 Magazine Body",
+		label = "Pistolet Cal .50 Corps Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for .50 pistol",
+		description = "Une partie du Pistolet Cal .50",
 		client = {
 			image = "MagazineBody.png",
 		}
 	},
 
 	["b_p_combat_pistol"] = {
-		label = "Combat Pistol Blueprint",
+		label = "Glock Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -4291,216 +4291,216 @@ return {
 	},
 
 	["trigger_l"] = {
-		label = "Shotgun Trigger",
+		label = "Fusil à Pompe Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Shotgun",
+		description = "Une partie du Fusil à Pompe",
 		client = {
 			image = "TriggerL.png",
 		}
 	},
 
 	["rear_recoil_spring_guide_a"] = {
-		label = "Assault Rifle Spring Guide",
+		label = "AK-47 Guide Ressort",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "RearRecoilSpringGuideA.png",
 		}
 	},
 
 	["front_sight_h_p"] = {
-		label = "Heavy Pistol Front Sight",
+		label = "Pistolet Lourd Viseur Avant",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Heavy Pistol",
+		description = "Une partie du Pistolet Lourd",
 		client = {
 			image = "FrontSightHP.png",
 		}
 	},
 
 	["magazine_c_r"] = {
-		label = "Compact Rifle Magazine",
+		label = "AK-U Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Compact Rifle",
+		description = "Une partie du AK-U",
 		client = {
 			image = "MagazineCR.png",
 		}
 	},
 
 	["bolt_m"] = {
-		label = "Micro SMG bolt",
+		label = "UZI Verrou",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for microsmg",
+		description = "Une partie du UZI",
 		client = {
 			image = "BoltM.png",
 		}
 	},
 
 	["reloader_b_p"] = {
-		label = "Bullpup Rifle Reloader",
+		label = "Fusil Bullpup Rechargement",
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "A part for Bullpup Rifle",
+		description = "Une partie du Fusil Bullpup",
 		client = {
 			image = "ReloaderBP.png",
 		}
 	},
 
 	["butt_cover_a_r"] = {
-		label = "Advanced Rifle Butt Cover",
+		label = "Fusil Amélioré Protection Crosse",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "ButtCoverAR.png",
 		}
 	},
 
 	["grip_a"] = {
-		label = "Assault Rifle Grip",
+		label = "AK-47 Poignée",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "GripA.png",
 		}
 	},
 
 	["main_frame_a"] = {
-		label = "Assault Rifle Main frame",
+		label = "AK-47 Corps Principal",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "MainFrameA.png",
 		}
 	},
 
 	["outer_barrel"] = {
-		label = ".50 Outer Barrel",
+		label = "Pistolet Cal .50 Canon Extérieur",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for .50 pistol",
+		description = "Une partie du Pistolet Cal .50",
 		client = {
 			image = "OuterBarrel.png",
 		}
 	},
 
 	["recoil_spring_guide_k"] = {
-		label = "Combat Pistol Spring Guide",
+		label = "Glock Guide Ressort",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Combat pistol",
+		description = "Une partie du Glock",
 		client = {
 			image = "RecoilSpringGuideCP.png",
 		}
 	},
 
 	["magazine_tube_l"] = {
-		label = "Shotgun Magazine Tube",
+		label = "Fusil à Pompe Chargeur Tube",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Shotgun",
+		description = "Une partie du Fusil à Pompe",
 		client = {
 			image = "MagazineTubeL.png",
 		}
 	},
 
 	["receiver_cover_m"] = {
-		label = "Micro SMG reciver cover",
+		label = "UZI Cache Récepteur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for microsmg",
+		description = "Une partie du UZI",
 		client = {
 			image = "ReceiverCoverM.png",
 		}
 	},
 
 	["firing_pin_s"] = {
-		label = "SMG Firing Pin",
+		label = "MP5 Percuteur",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for SMG",
+		description = "Une partie du MP5",
 		client = {
 			image = "FiringPinS.png",
 		}
 	},
 
 	["recoil_spring_guide_g_p"] = {
-		label = "Ceramic Pistol Recoil Spring Guide",
+		label = "Pistolet Céramique Guide Ressort Recul",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Ceramic Pistol",
+		description = "Une partie du Pistolet Céramique",
 		client = {
 			image = "RecoilSpringGuideGP.png",
 		}
 	},
 
 	["trigger_k"] = {
-		label = "Combat Pistol Trigger",
+		label = "Glock Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Combat pistol",
+		description = "Une partie du Glock",
 		client = {
 			image = "TriggerCP.png",
 		}
 	},
 
 	["rear_sight_s"] = {
-		label = "SMG Rear Sight",
+		label = "MP5 Viseur Arrière",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SMG",
+		description = "Une partie du MP5",
 		client = {
 			image = "RearSightS.png",
 		}
 	},
 
 	["hammer_s_p"] = {
-		label = "SNS Pistol Hammer",
+		label = "Pistolet SNS Marteau",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SNS Pistol",
+		description = "Une partie du Pistolet SNS",
 		client = {
 			image = "HammerSP.png",
 		}
 	},
 
 	["barrel_h_p"] = {
-		label = "Heavy Pistol Barrel",
+		label = "Pistolet Lourd Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Heavy Pistol",
+		description = "Une partie du Pistolet Lourd",
 		client = {
 			image = "BarrelHP.png",
 		}
 	},
 
 	["b_p_pump_shotgun"] = {
-		label = "Pump Shotgun Blueprint",
+		label = "Fusil à Pompe Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -4511,139 +4511,139 @@ return {
 	},
 
 	["gas_piston_tube_c_r"] = {
-		label = "Compact Rifle Gas Piston Tube",
+		label = "AK-U Piston Tube",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Compact Rifle",
+		description = "Une partie du AK-U",
 		client = {
 			image = "GasPistonTubeCR.png",
 		}
 	},
 
 	["front_sight_c_r"] = {
-		label = "Compact Rifle Front Sight",
+		label = "AK-U Viseur Avant",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Compact Rifle",
+		description = "Une partie du AK-U",
 		client = {
 			image = "FrontSightCR.png",
 		}
 	},
 
 	["trigger_c"] = {
-		label = "Carbine Trigger",
+		label = "M4 Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Carbine Rifle",
+		description = "Une partie du M4",
 		client = {
 			image = "TriggerC.png",
 		}
 	},
 
 	["magazine_spring_holder_g_p"] = {
-		label = "Ceramic Pistol Magazine Spring Holder",
+		label = "Pistolet Céramique Support Ressort Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Ceramic Pistol",
+		description = "Une partie du Pistolet Céramique",
 		client = {
 			image = "MagazineSpringHolderGP.png",
 		}
 	},
 
 	["bolt_carrier_c_r"] = {
-		label = "Compact Rifle Bolt Carrier",
+		label = "AK-U Support Vis",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Compact Rifle",
+		description = "Une partie du AK-U",
 		client = {
 			image = "BoltCarrierCR.png",
 		}
 	},
 
 	["handgaurd_left_m"] = {
-		label = "Micro SMG left handguard",
+		label = "UZI Poignée Avant Gauche",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for microsmg",
+		description = "Une partie du UZI",
 		client = {
 			image = "HandgaurdLeftM.png",
 		}
 	},
 
 	["rear_sight"] = {
-		label = ".50 Rear Sight",
+		label = "Pistolet Cal .50 Viseur Arrière",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for .50 pistol",
+		description = "Une partie du Pistolet Cal .50",
 		client = {
 			image = "RearSight.png",
 		}
 	},
 
 	["trigger_b_p"] = {
-		label = "Bullpup Rifle Trigger",
+		label = "Fusil Bullpup Gachette",
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "A part for Bullpup Rifle",
+		description = "Une partie du Fusil Bullpup",
 		client = {
 			image = "TriggerBP.png",
 		}
 	},
 
 	["magazine_spring_holder_k"] = {
-		label = "Combat Pistol Magazine Spring Holder",
+		label = "Glock Support Ressort Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Combat pistol",
+		description = "Une partie du Glock",
 		client = {
 			image = "MagazineSpringHolderCP.png",
 		}
 	},
 
 	["hammer_k"] = {
-		label = "Combat Pistol Hammer",
+		label = "Glock Marteau",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Combat pistol",
+		description = "Une partie du Glock",
 		client = {
 			image = "HammerCP.png",
 		}
 	},
 
 	["main_frame_s"] = {
-		label = "SMG Main Frame",
+		label = "MP5 Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for SMG",
+		description = "Une partie du MP5",
 		client = {
 			image = "MainFrameS.png",
 		}
 	},
 
 	["rear_sight_p"] = {
-		label = "Pistol Rear Sight",
+		label = "Pistol Viseur Arrière",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for pistol",
+		description = "Une partie du Pistolet Berretta",
 		client = {
 			image = "RearSightP.png",
 		}
 	},
 
 	["b_p_bullpup_rifle"] = {
-		label = "Bullpup Rifle Blueprint",
+		label = "Fusil Bullpup Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -4654,29 +4654,29 @@ return {
 	},
 
 	["magazine_c"] = {
-		label = "Carbine Magazine",
+		label = "M4 Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Carbine Rifle",
+		description = "Une partie du M4",
 		client = {
 			image = "MagazineC.png",
 		}
 	},
 
 	["upper_handguard_c"] = {
-		label = "Carbine upper handguard",
+		label = "M4 Haut Poignée Avant",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Carbine Rifle",
+		description = "Une partie du M4",
 		client = {
 			image = "UpperHandguardC.png",
 		}
 	},
 
 	["b_p_special_carbine"] = {
-		label = "Special Carbine Blueprint",
+		label = "G36 Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -4687,95 +4687,95 @@ return {
 	},
 
 	["grip_s_c"] = {
-		label = "Special Carbine Grip",
+		label = "G36 Poignée",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "GripSC.png",
 		}
 	},
 
 	["rear_sight_a"] = {
-		label = "Assault Rifle Rear Sight",
+		label = "AK-47 Viseur Arrière",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "RearSightA.png",
 		}
 	},
 
 	["firing_pin_h_p"] = {
-		label = "Heavy Pistol Firing Pin",
+		label = "Pistolet Lourd Percuteur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Heavy Pistol",
+		description = "Une partie du Pistolet Lourd",
 		client = {
 			image = "FiringPinHP.png",
 		}
 	},
 
 	["front_sight_a"] = {
-		label = "Assault Rifle Front sight",
+		label = "AK-47 Viseur Avant",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "FrontSightA.png",
 		}
 	},
 
 	["barrel_a_s"] = {
-		label = "Assault SMG Barrel",
+		label = "SMG d'Assault Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Assault SMG",
+		description = "Une partie du SMG d\'Assault",
 		client = {
 			image = "BarrelAS.png",
 		}
 	},
 
 	["hammer_p"] = {
-		label = "Pistol Hammer",
+		label = "Pistol Marteau",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for pistol",
+		description = "Une partie du Pistolet Berretta",
 		client = {
 			image = "HammerP.png",
 		}
 	},
 
 	["front_sight_g_p"] = {
-		label = "Ceramic Pistol Front Sight",
+		label = "Pistolet Céramique Viseur Avant",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Ceramic Pistol",
+		description = "Une partie du Pistolet Céramique",
 		client = {
 			image = "FrontSightGP.png",
 		}
 	},
 
 	["barrel_a"] = {
-		label = "Assault Rifle Barrel",
+		label = "AK-47 Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "BarrelA.png",
 		}
 	},
 
 	["b_p_assault_rifle"] = {
-		label = "Assault Rifle Blueprint",
+		label = "AK-47 Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -4786,150 +4786,150 @@ return {
 	},
 
 	["rear_sight_s_p"] = {
-		label = "SNS Pistol Rear Sight",
+		label = "Pistolet SNS Viseur Arrière",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for SNS Pistol",
+		description = "Une partie du Pistolet SNS",
 		client = {
 			image = "RearSightSP.png",
 		}
 	},
 
 	["barrel_s"] = {
-		label = "SMG Barrel",
+		label = "MP5 Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SMG",
+		description = "Une partie du MP5",
 		client = {
 			image = "BarrelS.png",
 		}
 	},
 
 	["trigger_s_c"] = {
-		label = "Special Carbine Trigger",
+		label = "G36 Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "TriggerSC.png",
 		}
 	},
 
 	["reloader_cylinder_a_r"] = {
-		label = "Advanced Rifle Reloader Cylinder",
+		label = "Fusil Amélioré Cylindre Rechargement",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "ReloaderCylinderAR.png",
 		}
 	},
 
 	["slide"] = {
-		label = ".50 Slide",
+		label = "Pistolet Cal .50 Glissière",
 		weight = 30,
 		stack = true,
 		close = true,
-		description = "A part for .50 pistol",
+		description = "Une partie du Pistolet Cal .50",
 		client = {
 			image = "Slide.png",
 		}
 	},
 
 	["magazine_s_p"] = {
-		label = "SNS Pistol Magazine",
+		label = "Pistolet SNS Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SNS Pistol",
+		description = "Une partie du Pistolet SNS",
 		client = {
 			image = "MagazineSP.png",
 		}
 	},
 
 	["firing_pin_k"] = {
-		label = "Combat Pistol Firing Pin",
+		label = "Glock Percuteur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Combat pistol",
+		description = "Une partie du Glock",
 		client = {
 			image = "FiringPinCP.png",
 		}
 	},
 
 	["stock_c"] = {
-		label = "Carbine Stock",
+		label = "M4 Crosse",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Carbine Rifle",
+		description = "Une partie du M4",
 		client = {
 			image = "StockC.png",
 		}
 	},
 
 	["magazine_cap_l"] = {
-		label = "Shotgun Magazine Cap",
+		label = "Fusil à Pompe Capuchon Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Shotgun",
+		description = "Une partie du Fusil à Pompe",
 		client = {
 			image = "MagazineCapL.png",
 		}
 	},
 
 	["barrel_g_p"] = {
-		label = "Ceramic Pistol Barrel",
+		label = "Pistolet Céramique Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Ceramic Pistol",
+		description = "Une partie du Pistolet Céramique",
 		client = {
 			image = "BarrelGP.png",
 		}
 	},
 
 	["trigger_h_p"] = {
-		label = "Heavy Pistol Trigger",
+		label = "Pistolet Lourd Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Heavy Pistol",
+		description = "Une partie du Pistolet Lourd",
 		client = {
 			image = "TriggerHP.png",
 		}
 	},
 
 	["slide_p"] = {
-		label = "Pistol Slide",
+		label = "Pistolet Berretta Glissière",
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "A part for pistol",
+		description = "Une partie du Pistolet Berretta",
 		client = {
 			image = "SlideP.png",
 		}
 	},
 
 	["buttstock_s_c"] = {
-		label = "Special Carbine buttstock",
+		label = "G36 Crosse",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "ButtstockSC.png",
 		}
 	},
 
 	["b_p_ceramic_pistol"] = {
-		label = "Ceramic Pistol Blueprint",
+		label = "Pistolet Céramique Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -4940,95 +4940,95 @@ return {
 	},
 
 	["recoil_spring_guide_h_p"] = {
-		label = "Heavy Pistol Spring Guide",
+		label = "Pistolet Lourd Guide Ressort",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Heavy Pistol",
+		description = "Une partie du Pistolet Lourd",
 		client = {
 			image = "RecoilSpringGuideHP.png",
 		}
 	},
 
 	["sight_holder_a_s"] = {
-		label = "Assault SMG Sight Holder",
+		label = "SMG d'Assault Support Viseur",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Assault SMG",
+		description = "Une partie du SMG d\'Assault",
 		client = {
 			image = "SightHolderAS.png",
 		}
 	},
 
 	["front_sight_s_p"] = {
-		label = "SNS Pistol Front Sight",
+		label = "Pistolet SNS Viseur Avant",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for SNS Pistol",
+		description = "Une partie du Pistolet SNS",
 		client = {
 			image = "FrontSightSP.png",
 		}
 	},
 
 	["magazine_s_c"] = {
-		label = "Special Carbine Magazine",
+		label = "G36 Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "MagazineSC.png",
 		}
 	},
 
 	["main_frame"] = {
-		label = ".50 Main Frame",
+		label = "Pistolet Cal .50 Corps Principal",
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "A part for .50 pistol",
+		description = "Une partie du Pistolet Cal .50",
 		client = {
 			image = "MainFrame.png",
 		}
 	},
 
 	["barrel_p"] = {
-		label = "Pistol Barrel",
+		label = "Pistolet Berretta Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for pistol",
+		description = "Une partie du Pistolet Berretta",
 		client = {
 			image = "BarrelP.png",
 		}
 	},
 
 	["rear_sight_b_p"] = {
-		label = "Bullpup Rifle Rear Sight",
+		label = "Fusil Bullpup Viseur Arrière",
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "A part for Bullpup Rifle",
+		description = "Une partie du Fusil Bullpup",
 		client = {
 			image = "RearSightBP.png",
 		}
 	},
 
 	["reloader_a_r"] = {
-		label = "Advanced Rifle Reloader",
+		label = "Fusil Amélioré Rechargement",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "ReloaderAR.png",
 		}
 	},
 
 	["b_p_s_m_g"] = {
-		label = "SMG Blueprint",
+		label = "MP5 Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -5039,62 +5039,62 @@ return {
 	},
 
 	["magazine_spring_holder_p"] = {
-		label = "Pistol Magazine Spring Holder",
+		label = "Pistolet Berretta Support Ressort Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for pistol",
+		description = "Une partie du Pistolet Berretta",
 		client = {
 			image = "MagazineSpringHolderP.png",
 		}
 	},
 
 	["trigger_p"] = {
-		label = "Pistol Trigger",
+		label = "Pistolet Berretta Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for pistol",
+		description = "Une partie du Pistolet Berretta",
 		client = {
 			image = "TriggerP.png",
 		}
 	},
 
 	["body_grip_m"] = {
-		label = "Micro SMG body grip",
+		label = "UZI Poignée",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for microsmg",
+		description = "Une partie du UZI",
 		client = {
 			image = "BodyGripM.png",
 		}
 	},
 
 	["grip_right_h_p"] = {
-		label = "Heavy Pistol RightGrip",
+		label = "Pistolet Lourd Poignée Droite",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Heavy Pistol",
+		description = "Une partie du Pistolet Lourd",
 		client = {
 			image = "GrpRightHP.png",
 		}
 	},
 
-	["hammer"] = {
-		label = ".50 Hammer",
+	["Marteau"] = {
+		label = "Pistolet Cal .50 Marteau",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for .50 pistol",
+		description = "Une partie du Pistolet Cal .50",
 		client = {
-			image = "Hammer.png",
+			image = "Marteau.png",
 		}
 	},
 
 	["b_p_assault_smg"] = {
-		label = "Assault SMG Blueprint",
+		label = "SMG d'Assault Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -5105,161 +5105,161 @@ return {
 	},
 
 	["muzzel_s_c"] = {
-		label = "Special Carbine Muzzel",
+		label = "G36 Museau",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "MuzzelSC.png",
 		}
 	},
 
 	["grip_c_r"] = {
-		label = "Compact Rifle Grip",
+		label = "AK-U Poignée",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Compact Rifle",
+		description = "Une partie du AK-U",
 		client = {
 			image = "GripCR.png",
 		}
 	},
 
 	["hammer_h_p"] = {
-		label = "Heavy Pistol Hammer",
+		label = "Pistolet Lourd Marteau",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Heavy Pistol",
+		description = "Une partie du Pistolet Lourd",
 		client = {
 			image = "HammerHP.png",
 		}
 	},
 
 	["magazine_s"] = {
-		label = "SMG Magazine",
+		label = "MP5 Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SMG",
+		description = "Une partie du MP5",
 		client = {
 			image = "MagazineS.png",
 		}
 	},
 
 	["barrel_l"] = {
-		label = "Shotgun Barrel",
+		label = "Fusil à Pompe Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Shotgun",
+		description = "Une partie du Fusil à Pompe",
 		client = {
 			image = "BarrelL.png",
 		}
 	},
 
 	["scope_port_a_r"] = {
-		label = "Advanced Rifle Scope Port",
+		label = "Fusil Amélioré Viseur",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "ScopePortAR.png",
 		}
 	},
 
 	["magazine_h_p"] = {
-		label = "Heavy Pistol Magazine",
+		label = "Pistolet Lourd Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Heavy Pistol",
+		description = "Une partie du Pistolet Lourd",
 		client = {
 			image = "MagazineHP.png",
 		}
 	},
 
 	["bolt_carrier_s"] = {
-		label = "SMG Bolt Carrier",
+		label = "MP5 Support Vis",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SMG",
+		description = "Une partie du MP5",
 		client = {
 			image = "BoltCarrierS.png",
 		}
 	},
 
 	["main_frame_p"] = {
-		label = "Pistol Main Frame",
+		label = "Pistolet Berretta Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for pistol",
+		description = "Une partie du Pistolet Berretta",
 		client = {
 			image = "MainFrameP.png",
 		}
 	},
 
 	["magazine_spring_holder"] = {
-		label = ".50 Magazine Spring Holder",
+		label = "Pistolet Cal .50 Support Ressort Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for .50 pistol",
+		description = "Une partie du Pistolet Cal .50",
 		client = {
 			image = "MagazineSpringHolder.png",
 		}
 	},
 
 	["rear_sight_a_r"] = {
-		label = "Advanced Rifle Rear Sight",
+		label = "Fusil Amélioré Viseur Arrière",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "RearSightAR.png",
 		}
 	},
 
 	["barrel_s_p"] = {
-		label = "SNS Pistol Barrel",
+		label = "Pistolet SNS Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SNS Pistol",
+		description = "Une partie du Pistolet SNS",
 		client = {
 			image = "BarrelSP.png",
 		}
 	},
 
 	["main_frame_c_r"] = {
-		label = "Compact Rifle Main Frame",
+		label = "AK-U Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for Compact Rifle",
+		description = "Une partie du AK-U",
 		client = {
 			image = "MainFrameCR.png",
 		}
 	},
 
 	["nozzle_hold_c_r"] = {
-		label = "Compact Rifle Nozzle Holder",
+		label = "AK-U Support Embout",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Compact Rifle",
+		description = "Une partie du AK-U",
 		client = {
 			image = "NozzleHoldCR.png",
 		}
 	},
 
 	["b_p_micro_s_m_g"] = {
-		label = "Micro SMG Blueprint",
+		label = "UZI Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -5270,315 +5270,315 @@ return {
 	},
 
 	["spring_coil_k"] = {
-		label = "Combat Pistol Spring Coil",
+		label = "Glock Ressort",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Combat pistol",
+		description = "Une partie du Glock",
 		client = {
 			image = "SpringCoilCP.png",
 		}
 	},
 
 	["main_frame_s_p"] = {
-		label = "SNS Pistol Main Frame",
+		label = "Pistolet SNS Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for SNS Pistol",
+		description = "Une partie du Pistolet SNS",
 		client = {
 			image = "MainFrameSP.png",
 		}
 	},
 
 	["slide_s_p"] = {
-		label = "SNS Pistol Slide",
+		label = "Pistolet SNS Glissière",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SNS Pistol",
+		description = "Une partie du Pistolet SNS",
 		client = {
 			image = "SlideSP.png",
 		}
 	},
 
 	["front_sight_s_c"] = {
-		label = "Special Carbine Front Sight",
+		label = "G36 Viseur Avant",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "FrontSightSC.png",
 		}
 	},
 
 	["barrel_s_c"] = {
-		label = "Special Carbine Barrel",
+		label = "G36 Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "BarrelSC.png",
 		}
 	},
 
 	["magazine_b_p"] = {
-		label = "Bullpup Rifle Magazine",
+		label = "Fusil Bullpup Chargeur",
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "A part for Bullpup Rifle",
+		description = "Une partie du Fusil Bullpup",
 		client = {
 			image = "MagazineBP.png",
 		}
 	},
 
 	["front_sight_c"] = {
-		label = "Carbine Front Sight",
+		label = "M4 Viseur Avant",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Carbine Rifle",
+		description = "Une partie du M4",
 		client = {
 			image = "FrontSightC.png",
 		}
 	},
 
 	["trigger"] = {
-		label = ".50 Trigger",
+		label = "Pistolet Cal .50 Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for .50 pistol",
+		description = "Une partie du Pistolet Cal .50",
 		client = {
 			image = "Trigger.png",
 		}
 	},
 
 	["magazine_body_a"] = {
-		label = "Assault Rifle Magazine Body",
+		label = "AK-47 Corps Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "MagazineBodyA.png",
 		}
 	},
 
 	["receiver_cover_a"] = {
-		label = "Assault Rifle Receiver Cover",
+		label = "AK-47 Protège Récepteur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "ReceiverCoverA.png",
 		}
 	},
 
 	["butt_lock_b_p"] = {
-		label = "Bullpup Rifle Butt Lock",
+		label = "Fusil Bullpup Crosse",
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "A part for Bullpup Rifle",
+		description = "Une partie du Fusil Bullpup",
 		client = {
 			image = "ButtLockBP.png",
 		}
 	},
 
 	["hand_grip_a_r"] = {
-		label = "Advanced Rifle Hand Grip",
+		label = "Fusil Amélioré Poignée Avant",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "HandGripAR.png",
 		}
 	},
 
 	["trigger_s_p"] = {
-		label = "SNS Pistol Trigger",
+		label = "Pistolet SNS Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SNS Pistol",
+		description = "Une partie du Pistolet SNS",
 		client = {
 			image = "TriggerSP.png",
 		}
 	},
 
 	["front_port_a_r"] = {
-		label = "Advanced Rifle Front Port",
+		label = "Fusil Amélioré Avant",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "FrontPortAR.png",
 		}
 	},
 
 	["gas_port_a"] = {
-		label = "Assault Rifle Gas port",
+		label = "AK-47 Embout Gaz",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "GasPortA.png",
 		}
 	},
 
 	["front_sight_k"] = {
-		label = "Combat Pistol Front Sight",
+		label = "Glock Viseur Avant",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Combat pistol",
+		description = "Une partie du Glock",
 		client = {
 			image = "FrontSightCP.png",
 		}
 	},
 
 	["main_frame_a_r"] = {
-		label = "Advanced Rifle Main Frame",
+		label = "Fusil Amélioré Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "MainFrameAR.png",
 		}
 	},
 
 	["stock_s"] = {
-		label = "SMG Stock",
+		label = "MP5 Crosse",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for SMG",
+		description = "Une partie du MP5",
 		client = {
 			image = "StockS.png",
 		}
 	},
 
 	["grip_left_h_p"] = {
-		label = "Heavy Pistol Left Grip",
+		label = "Pistolet Lourd Poignée Gauche",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Heavy Pistol",
+		description = "Une partie du Pistolet Lourd",
 		client = {
 			image = "GripLeftHP.png",
 		}
 	},
 
 	["trigger_a_s"] = {
-		label = "Assault SMG Trigger",
+		label = "SMG d'Assault Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Assault SMG",
+		description = "Une partie du SMG d\'Assault",
 		client = {
 			image = "TriggerAS.png",
 		}
 	},
 
 	["barrel_a_r"] = {
-		label = "Advanced Rifle Barrel",
+		label = "Fusil Amélioré Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "BarrelAR.png",
 		}
 	},
 
 	["rear_sight_l"] = {
-		label = "Shotgun Rear Sight",
+		label = "Fusil à Pompe Viseur Arrière",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Shotgun",
+		description = "Une partie du Fusil à Pompe",
 		client = {
 			image = "RearSightL.png",
 		}
 	},
 
 	["main_frame_l"] = {
-		label = "Shotgun Main Frame",
+		label = "Fusil à Pompe Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "A part for Shotgun",
+		description = "Une partie du Fusil à Pompe",
 		client = {
 			image = "MainFrameL.png",
 		}
 	},
 
 	["lower_handguard_c"] = {
-		label = "Carbine Lower Handguard",
+		label = "M4 Bas Poignée Avant",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Carbine Rifle",
+		description = "Une partie du M4",
 		client = {
 			image = "LowerHandguardC.png",
 		}
 	},
 
 	["handguard_assembly_s_c"] = {
-		label = "Special Carbine Handguard assembly",
+		label = "G36 Poignée Avant",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Special Carbine",
+		description = "Une partie du G36",
 		client = {
 			image = "HandguardAssemblySC.png",
 		}
 	},
 
 	["front_sight_holder_b_p"] = {
-		label = "Bullpup Rifle Front Sight Holder",
+		label = "Fusil Bullpup Viseur Avant Holder",
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "A part for Bullpup Rifle",
+		description = "Une partie du Fusil Bullpup",
 		client = {
 			image = "FrontSightHolderBP.png",
 		}
 	},
 
 	["magazine_body_p"] = {
-		label = "Pistol Magazine Body",
+		label = "Pistolet Berretta Corps Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for pistol",
+		description = "Une partie du Pistolet Berretta",
 		client = {
 			image = "MagazineBodyP.png",
 		}
 	},
 
 	["grip_right_p"] = {
-		label = "Pistol Right Grip",
+		label = "Pistolet Berretta Poignée Droite",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "A part for pistol",
+		description = "Une partie du Pistolet Berretta",
 		client = {
 			image = "GripRightP.png",
 		}
 	},
 
 	["b_p_s_n_s_pistol"] = {
-		label = "SNS Pistol Blueprint",
+		label = "Pistolet SNS Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -5589,22 +5589,22 @@ return {
 	},
 
 	["bolt_carrier_a"] = {
-		label = "Assault Rifle Bolt carrier",
+		label = "AK-47 Support Vis",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for assault rifle",
+		description = "Une partie du AK-47",
 		client = {
 			image = "BoltCarrierA.png",
 		}
 	},
 
 	["nozzle_a_r"] = {
-		label = "Advanced Rifle Nozzle",
+		label = "Fusil Amélioré Embout",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "A part for Advanced Rifle",
+		description = "Une partie du Fusil Amélioré",
 		client = {
 			image = "NozzleAR.png",
 		}
