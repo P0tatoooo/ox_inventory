@@ -94,16 +94,15 @@ function Weapon.Equip(item, data, noWeaponAnim)
 
 	if item.metadata.components then
 		for i = 1, #item.metadata.components do
-            if Items[item.metadata.components[i]].client then
-                local components = Items[item.metadata.components[i]].client.component
-                for v=1, #components do
-                    local component = components[v]
-                    if DoesWeaponTakeWeaponComponent(data.hash, component) then
-                        if not HasPedGotWeaponComponent(playerPed, data.hash, component) then
-                            GiveWeaponComponentToPed(playerPed, data.hash, component)
-                        end
-                    end
-                end
+			local componentsClient = Items[item.metadata.components[i]].client
+            if componentsClient and componentsClient.component then
+				for k,v in pairs(componentsClient.component) do
+					if DoesWeaponTakeWeaponComponent(data.hash, v) then
+						if not HasPedGotWeaponComponent(playerPed, data.hash, v) then
+							GiveWeaponComponentToPed(playerPed, data.hash, v)
+						end
+					end
+				end
             end
 		end
 	end
