@@ -5616,4 +5616,103 @@ return {
 			image = "NozzleAR.png",
 		}
 	},
+
+	["main_frame"] = {
+		label = "Arme Corps Principal",
+		weight = 20,
+		stack = true,
+		close = true,
+		description = "Une partie d'Arme",
+		client = {
+			image = "MainFrameC.png",
+		}
+	},
+
+	["stock"] = {
+		label = "Arme Crosse",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "Une partie d'Arme'",
+		client = {
+			image = "StockC.png",
+		}
+	},
+
+	["grip"] = {
+		label = "Arme Poignée",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "Une partie d'Arme",
+		client = {
+			image = "GripC.png",
+		}
+	},
+
+	["barrel"] = {
+		label = "Arme Canon",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "Une partie d'Arme",
+		client = {
+			image = "BarrelC.png",
+		}
+	},
+
+	["handguard"] = {
+		label = "Arme Poignée Avant",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "Une partie d'Arme",
+		client = {
+			image = "LowerHandguardC.png",
+		}
+	},
+
+	["magazine"] = {
+		label = "Arme Chargeur",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "Une partie d'Arme",
+		client = {
+			image = "MagazineC.png",
+		}
+	},
+
+	["trigger"] = {
+		label = "Arme Gachette",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "Une partie d'Arme",
+		client = {
+			image = "TriggerC.png",
+		}
+	},
+	
+	["front_sight"] = {
+		label = "Arme Viseur Avant",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "Une partie d'Arme",
+		client = {
+			image = "FrontSightC.png",
+		}
+	},
+
+	["rear_sight"] = {
+		label = "Arme Viseur Arrière",
+		weight = 2,
+		stack = true,
+		close = true,
+		description = "Une partie d'Arme",
+		client = {
+			image = "RearSightCR.png",
+		}
+	},
 }

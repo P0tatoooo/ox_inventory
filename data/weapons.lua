@@ -1853,7 +1853,7 @@ return {
 		},
 
 		['pistolammo'] = {
-			label = 'Mun.9mm/.50',
+			label = 'Mun. Pis. 9mm/.50',
 			weight = 8,
 		},
 
@@ -1878,12 +1878,12 @@ return {
 		},
 
 		['huntingammo'] = {
-			label = '.308 Winchester',
+			label = 'Mun. .308 Winchester',
 			weight = 38,
 		},
 
 		['shotgunammo'] = {
-			label = '12 Gauge',
+			label = 'Mun. 12 Gauge',
 			weight = 38,
 		},
 
@@ -1903,7 +1903,7 @@ return {
 		},
 
         ['grenadeammo'] = {
-			label = '40mm Explosive',
+			label = 'Mun. 40mm Explosive',
 			weight = 400,
 		},
 
