@@ -3449,7 +3449,61 @@ return {
 
 
 	--Gun Crafting
-
+	['pistol'] = {
+		label = 'Pistolet Berretta Bloqué',
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+	['snspistol'] = {
+		label = 'Pistolet SNS Bloqué',
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+	['ceramicpistol'] = {
+		label = 'Pistolet Céramique Bloqué',
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+	['combatpistol'] = {
+		label = 'Glock Bloqué',
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+	['heavypistol'] = {
+		label = 'Pistolet Lourd Bloqué',
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+	['pumpshotgun'] = {
+		label = 'Fusil à Pompe Bloqué',
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+	['smg'] = {
+		label = 'MP5 Bloquée',
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+	['carbinerifle'] = {
+		label = 'M4 Bloquée',
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+	['huntingrifle'] = {
+		label = 'Fusil de Chasse Bloqué',
+		weight = 1000,
+		stack = true,
+		close = false,
+	},
+	
 	["trigger_g_p"] = {
 		label = "Pistolet Céramique Gachette",
 		weight = 10,
