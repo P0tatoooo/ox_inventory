@@ -69,7 +69,10 @@ setContainerProperties('wallet', {
         'restaurationticket',
         'healticket',
         'reparationticket',
-        'bank_card'
+        'bank_card',
+		'note',
+		'photopaper',
+		'picture'
     }
 })
 
