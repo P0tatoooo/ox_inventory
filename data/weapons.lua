@@ -1935,7 +1935,7 @@ return {
 
     Clips = {
         ['pistolclip'] = {
-			label = 'Ch. Pistolet',
+			label = 'Ch. Pistolet Berretta',
 			ammoname = 'pistolammo',
 			ammocount = 12,
 			weight = 280,
@@ -2356,7 +2356,7 @@ return {
                     }
 			},
 		['extendedpistolclip'] = {
-					label = 'Ch. Am. Pistolet',
+					label = 'Ch. Am. Pistolet Berretta',
 					ammoname = 'pistolammo',
 					ammocount = 16,
 					weight = 280,
