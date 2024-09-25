@@ -5671,7 +5671,7 @@ return {
 		}
 	},
 
-	["main_frame"] = {
+	["weaponmainframe"] = {
 		label = "Arme Corps Principal",
 		weight = 20,
 		stack = true,
@@ -5682,7 +5682,7 @@ return {
 		}
 	},
 
-	["stock"] = {
+	["weaponstock"] = {
 		label = "Arme Crosse",
 		weight = 10,
 		stack = true,
@@ -5693,7 +5693,7 @@ return {
 		}
 	},
 
-	["grip"] = {
+	["weapongrip"] = {
 		label = "Arme Poignée",
 		weight = 2,
 		stack = true,
@@ -5704,7 +5704,7 @@ return {
 		}
 	},
 
-	["barrel"] = {
+	["weaponbarrel"] = {
 		label = "Arme Canon",
 		weight = 10,
 		stack = true,
@@ -5715,7 +5715,7 @@ return {
 		}
 	},
 
-	["handguard"] = {
+	["weaponhandguard"] = {
 		label = "Arme Poignée Avant",
 		weight = 10,
 		stack = true,
@@ -5726,7 +5726,7 @@ return {
 		}
 	},
 
-	["magazine"] = {
+	["weaponmagazine"] = {
 		label = "Arme Chargeur",
 		weight = 10,
 		stack = true,
@@ -5737,7 +5737,7 @@ return {
 		}
 	},
 
-	["trigger"] = {
+	["weapontrigger"] = {
 		label = "Arme Gachette",
 		weight = 10,
 		stack = true,
@@ -5748,7 +5748,7 @@ return {
 		}
 	},
 	
-	["front_sight"] = {
+	["weaponfrontsight"] = {
 		label = "Arme Viseur Avant",
 		weight = 2,
 		stack = true,
@@ -5759,7 +5759,7 @@ return {
 		}
 	},
 
-	["rear_sight"] = {
+	["weaponrearsight"] = {
 		label = "Arme Viseur Arrière",
 		weight = 2,
 		stack = true,

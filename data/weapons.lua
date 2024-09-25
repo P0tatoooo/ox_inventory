@@ -1878,7 +1878,7 @@ return {
 		},
 
 		['huntingammo'] = {
-			label = 'Mun. .308 Winchester',
+			label = 'Mun. .308 Win',
 			weight = 38,
 		},
 
