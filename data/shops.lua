@@ -173,6 +173,10 @@ return {
 			{ name = 'barrier', price = 0, grade = 1},
 			{ name = 'gazebotent', price = 0, grade = 1},
 			{ name = 'worklight', price = 0, grade = 1},
+			{ name = 'boombox', price = 0, grade = 1},
+			{ name = 'djstand', price = 0, grade = 1},
+			{ name = 'bigspeakers', price = 0, grade = 1},
+			{ name = 'ropebarrier', price = 0, grade = 1},
 		}, locations = {
 			vec3(-74.887909, -822.527466, 84.564087),
 		}, targets = {

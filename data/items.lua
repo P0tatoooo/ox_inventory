@@ -2866,6 +2866,22 @@ return {
 		weight = 1500,
 		stack = true
 	},
+	['djstand'] = {
+		label = 'Table de Mixage',
+		weight = 1500,
+		stack = true
+	},
+	['bigspeakers'] = {
+		label = 'Grosses Enceintes',
+		weight = 1500,
+		stack = true
+	},
+	['ropebarrier'] = {
+		label = 'Barrière de Corde',
+		weight = 500,
+		stack = true
+	},
+	
     ["poster"] = {
         label = "Poster",
         weight = 260,
