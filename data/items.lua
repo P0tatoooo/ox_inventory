@@ -3293,7 +3293,7 @@ return {
 	},
 
 	["pistol_body"] = {
-		label = "Corps de Pistolet Berretta",
+		label = "Corps de Pistolet Beretta",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -3307,7 +3307,7 @@ return {
 	},
 
 	["pistol_barrel"] = {
-		label = "Canon de Pistolet Berretta",
+		label = "Canon de Pistolet Beretta",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -3471,7 +3471,7 @@ return {
 
 	--Gun Crafting
 	['pistol'] = {
-		label = 'Pistolet Berretta Bloqué',
+		label = 'Pistolet Beretta Bloqué',
 		weight = 1000,
 		stack = true,
 		close = false,
@@ -3999,7 +3999,7 @@ return {
 	},
 
 	["b_p_pistol"] = {
-		label = "Pistolet Berretta Blueprint",
+		label = "Pistolet Beretta Blueprint",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -4241,11 +4241,11 @@ return {
 	},
 
 	["grip_left_p"] = {
-		label = "Pistolet Berretta Poignée Gauche",
+		label = "Pistolet Beretta Poignée Gauche",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "Une partie du Pistolet Berretta",
+		description = "Une partie du Pistolet Beretta",
 		client = {
 			image = "GripLeftP.png",
 		}
@@ -4718,7 +4718,7 @@ return {
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie du Pistolet Berretta",
+		description = "Une partie du Pistolet Beretta",
 		client = {
 			image = "RearSightP.png",
 		}
@@ -4835,11 +4835,11 @@ return {
 	},
 
 	["hammer_p"] = {
-		label = "Pistolet Berretta Marteau",
+		label = "Pistolet Beretta Marteau",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie du Pistolet Berretta",
+		description = "Une partie du Pistolet Beretta",
 		client = {
 			image = "HammerP.png",
 		}
@@ -5000,11 +5000,11 @@ return {
 	},
 
 	["slide_p"] = {
-		label = "Pistolet Berretta Glissière",
+		label = "Pistolet Beretta Glissière",
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "Une partie du Pistolet Berretta",
+		description = "Une partie du Pistolet Beretta",
 		client = {
 			image = "SlideP.png",
 		}
@@ -5088,11 +5088,11 @@ return {
 	},
 
 	["barrel_p"] = {
-		label = "Pistolet Berretta Canon",
+		label = "Pistolet Beretta Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie du Pistolet Berretta",
+		description = "Une partie du Pistolet Beretta",
 		client = {
 			image = "BarrelP.png",
 		}
@@ -5132,22 +5132,22 @@ return {
 	},
 
 	["magazine_spring_holder_p"] = {
-		label = "Pistolet Berretta Support Ressort Chargeur",
+		label = "Pistolet Beretta Support Ressort Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie du Pistolet Berretta",
+		description = "Une partie du Pistolet Beretta",
 		client = {
 			image = "MagazineSpringHolderP.png",
 		}
 	},
 
 	["trigger_p"] = {
-		label = "Pistolet Berretta Gachette",
+		label = "Pistolet Beretta Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie du Pistolet Berretta",
+		description = "Une partie du Pistolet Beretta",
 		client = {
 			image = "TriggerP.png",
 		}
@@ -5286,11 +5286,11 @@ return {
 	},
 
 	["main_frame_p"] = {
-		label = "Pistolet Berretta Corps Principal",
+		label = "Pistolet Beretta Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "Une partie du Pistolet Berretta",
+		description = "Une partie du Pistolet Beretta",
 		client = {
 			image = "MainFrameP.png",
 		}
@@ -5649,22 +5649,22 @@ return {
 	},
 
 	["magazine_body_p"] = {
-		label = "Pistolet Berretta Corps Chargeur",
+		label = "Pistolet Beretta Corps Chargeur",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie du Pistolet Berretta",
+		description = "Une partie du Pistolet Beretta",
 		client = {
 			image = "MagazineBodyP.png",
 		}
 	},
 
 	["grip_right_p"] = {
-		label = "Pistolet Berretta Poignée Droite",
+		label = "Pistolet Beretta Poignée Droite",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "Une partie du Pistolet Berretta",
+		description = "Une partie du Pistolet Beretta",
 		client = {
 			image = "GripRightP.png",
 		}

@@ -439,7 +439,7 @@ return {
 		},
 
 		['WEAPON_PISTOL'] = {
-			label = 'Pistolet Berretta',
+			label = 'Pistolet Beretta',
 			weight = 970,
 			durability = 0.5,
             clip = {'extendedpistolclip','pistolclip'},
@@ -455,7 +455,7 @@ return {
 		},
 
 		['WEAPON_PISTOL_MK2'] = {
-			label = 'Pistolet Berretta MK2',
+			label = 'Pistolet Beretta MK2',
 			weight = 970,
 			durability = 0.5,
 			clip = {'extendedpistolclip','pistolclip'},
@@ -1935,7 +1935,7 @@ return {
 
     Clips = {
         ['pistolclip'] = {
-			label = 'Ch. Pistolet Berretta',
+			label = 'Ch. Pistolet Beretta',
 			ammoname = 'pistolammo',
 			ammocount = 12,
 			weight = 280,
@@ -2356,7 +2356,7 @@ return {
                     }
 			},
 		['extendedpistolclip'] = {
-					label = 'Ch. Am. Pistolet Berretta',
+					label = 'Ch. Am. Pistolet Beretta',
 					ammoname = 'pistolammo',
 					ammocount = 16,
 					weight = 280,
