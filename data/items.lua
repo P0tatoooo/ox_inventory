@@ -2380,6 +2380,13 @@ return {
 		close = true,
 	},
 
+	['dagger'] = {
+		label = 'Dague de Rituel',
+		weight = 100,
+		stack = false,
+		close = false,
+	},
+
 	['officedesk'] = {
 		label = 'Bureau Préfait',
 		weight = 100,
