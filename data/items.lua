@@ -4823,8 +4823,19 @@ return {
 		}
 	},
 
+	["hammer"] = {
+		label = "Pistolet Cal .50 Marteau",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "Une partie du Pistolet Cal .50",
+		client = {
+			image = "HammerP.png",
+		}
+	},
+
 	["hammer_p"] = {
-		label = "Pistol Marteau",
+		label = "Pistolet Berretta Marteau",
 		weight = 10,
 		stack = true,
 		close = true,
