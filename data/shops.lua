@@ -356,8 +356,6 @@ return {
 			{ name = 'shotgun_barrel', price = 2000, currency = 'black_money' },
 			{ name = 'shotgun_guard', price = 2000, currency = 'black_money' },
 			{ name = 'shotgun_grip', price = 500, currency = 'black_money' },
-			--{ name = 'kevlar', price = 500 },
-			--{ name = 'armor_satchel', price = 1000 },
 		}, locations = {
             vec3(917.538452, 3654.936279, 32.481323), --AKU/ADP
             vec3(351.11, -2760.62, 5.16), -- AK/UZI

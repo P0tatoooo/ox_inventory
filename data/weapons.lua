@@ -179,7 +179,7 @@ return {
 		},
 
 		['WEAPON_DBSHOTGUN'] = {
-			label = 'Fusil à Double Canon',
+			label = 'Fusil à Pompe Double Canon',
 			weight = 3175,
 			durability = 1,
 			ammoname = 'shotgunammo',

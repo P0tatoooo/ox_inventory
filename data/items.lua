@@ -3355,7 +3355,7 @@ return {
 		close = true,
 	},
     ["bp_sawnoffshotgun"] = {
-		label = "Plan Fusil à Pompe Court",
+		label = "Plan Fusil à Pompe Canon Scié",
 		weight = 50,
 		stack = false,
 		close = true,
@@ -3367,13 +3367,13 @@ return {
 		close = true,
 	},
     ["bp_dbshotgun"] = {
-		label = "Plan Fusil à Pompe Double Coup",
+		label = "Plan Fusil à Pompe Double Canon",
 		weight = 50,
 		stack = false,
 		close = true,
 	},
     ["bp_pistol"] = {
-		label = "Plan Pistolet",
+		label = "Plan Pistolet Beretta",
 		weight = 50,
 		stack = false,
 		close = true,
@@ -3391,19 +3391,7 @@ return {
 		close = true,
 	},
 	["bp_bullpuprifle"] = {
-		label = "Plan QBZ-95",
-		weight = 50,
-		stack = false,
-		close = true,
-	},
-	["armor_satchel"] = {
-		label = "Plaque de métal",
-		weight = 500,
-		stack = true,
-		close = true,
-	},
-	["bp_kevlar"] = {
-		label = "Plan gilet pare balle",
+		label = "Plan Fusil Bullpup",
 		weight = 50,
 		stack = false,
 		close = true,
