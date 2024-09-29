@@ -2893,6 +2893,11 @@ return {
 		weight = 500,
 		stack = true
 	},
+	['admincrate'] = {
+		label = 'Caisse Admin',
+		weight = 500,
+		stack = true
+	},
 	
     ["poster"] = {
         label = "Poster",
