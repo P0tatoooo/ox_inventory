@@ -2119,7 +2119,7 @@ return {
 	},
 
 	['painkiller'] = {
-		label = 'Anti-Douleur',
+		label = 'Revigorate',
 		weight = 100,
 		stack = true,
 		close = true,
