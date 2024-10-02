@@ -138,7 +138,7 @@ function db.loadStash(owner, name)
 end
 
 function db.saveGlovebox(id, inventory)
-    return MySQL.prepare(Query.UPDATE_GLOVEBOX, { inventory, id })
+    return MySQL.prepare(Query.UPDATE_GLOVEBOX, { inventory, id, id })
 end
 
 function db.loadGlovebox(id)
