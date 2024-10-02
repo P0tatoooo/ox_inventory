@@ -5,7 +5,7 @@ return {
 			weight = 3180,
 			durability = 0.3,
 			clip = {'extendedarclip','arclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_APPISTOL'] = {
@@ -13,7 +13,7 @@ return {
 			weight = 1220,
 			durability = 0.5,
 			clip = {'extendedapppistolclip','apppistolclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_ASSAULTRIFLE'] = {
@@ -21,7 +21,7 @@ return {
 			weight = 5000,
 			durability = 0.3,
 			clip = {'drumarclip','extendedarclip','arclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_ASSAULTRIFLE_MK2'] = {
@@ -29,7 +29,7 @@ return {
 			weight = 3300,
 			durability = 0.3,
 			clip = {'extendedarclip','arclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_ASSAULTSHOTGUN'] = {
@@ -37,7 +37,7 @@ return {
 			weight = 3100,
 			durability = 1,
 			clip = {'extendedassaultshotgunclip','assaultshotgunclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_ASSAULTSMG'] = {
@@ -45,7 +45,7 @@ return {
 			weight = 2850,
 			durability = 0.3,
 			clip = {'extendedassaultsmgclip','assaultsmgclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_BALL'] = {
@@ -77,7 +77,7 @@ return {
 			weight = 2900,
 			durability = 0.3,
 			clip = {'extendedarclip','arclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_BULLPUPRIFLE_MK2'] = {
@@ -85,7 +85,7 @@ return {
 			weight = 2900,
 			durability = 0.3,
 			clip = {'extendedarclip','arclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_BULLPUPSHOTGUN'] = {
@@ -93,7 +93,7 @@ return {
 			weight = 3100,
 			durability = 1,
 			ammoname = 'shotgunammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_BZGAS'] = {
@@ -107,7 +107,7 @@ return {
 			weight = 3100,
 			durability = 0.3,
 			clip = {'drumarclip','extendedarclip','arclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_CARBINERIFLE_MK2'] = {
@@ -115,7 +115,7 @@ return {
 			weight = 3000,
 			durability = 0.3,
 			clip = {'extendedarclip','arclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_COMBATMG'] = {
@@ -123,7 +123,7 @@ return {
 			weight = 10000,
 			durability = 0.3,
 			clip = {'extendedcombatmgclip','combatmgclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_COMBATMG_MK2'] = {
@@ -131,7 +131,7 @@ return {
 			weight = 10500,
 			durability = 0.3,
 			clip = {'extendedcombatmgclip','combatmgclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_COMBATPDW'] = {
@@ -139,7 +139,7 @@ return {
 			weight = 3400,
 			durability = 0.3,
 			clip = {'drumpdwclip','extendedpdwclip','pdwclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_COMBATPISTOL'] = {
@@ -147,7 +147,7 @@ return {
 			weight = 970,
 			durability = 0.5,
 			clip = {'extendedcombatpistolclip','combatpistolclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_COMBATSHOTGUN'] = {
@@ -155,7 +155,7 @@ return {
 			weight = 4400,
 			durability = 1,
 			ammoname = 'shotgunammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_COMPACTRIFLE'] = {
@@ -163,7 +163,7 @@ return {
 			weight = 3200,
 			durability = 0.3,
 			clip = {'drumarclip','extendedarclip','arclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_CROWBAR'] = {
@@ -183,7 +183,7 @@ return {
 			weight = 3175,
 			durability = 1,
 			ammoname = 'shotgunammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_DOUBLEACTION'] = {
@@ -191,7 +191,7 @@ return {
 			weight = 940,
 			durability = 1,
 			ammoname = 'revolverammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_EMPLAUNCHER'] = {
@@ -199,7 +199,7 @@ return {
 			weight = 2750,
 			durability = 1,
 			ammoname = 'empammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_FIREEXTINGUISHER'] = {
@@ -212,7 +212,7 @@ return {
 			weight = 1000,
 			durability = 1,
 			ammoname = 'fireworkammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_FLARE'] = {
@@ -251,7 +251,7 @@ return {
 			weight = 4900,
 			durability = 0.3,
 			clip = {'extendedgusenbergclip','gusenbergclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_HAMMER'] = {
@@ -271,7 +271,7 @@ return {
 			weight = 2750,
 			durability = 0.3,
             clip = {'extendedarclip','arclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_HAZARDCAN'] = {
@@ -284,7 +284,7 @@ return {
 			weight = 1100,
 			durability = 0.5,
 			clip = {'extendedheavypistolclip','heavypistolclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_HEAVYSHOTGUN'] = {
@@ -292,7 +292,7 @@ return {
 			weight = 3600,
 			durability = 1,
 			clip = {'drumheavyshotgunclip','extendedheavyshotgunclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_HEAVYSNIPER'] = {
@@ -300,7 +300,7 @@ return {
 			weight = 14000,
 			durability = 1,
 			clip = {'heavysniperclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_HEAVYSNIPER_MK2'] = {
@@ -308,7 +308,7 @@ return {
 			weight = 10432,
 			durability = 1,
 			clip = {'extendedheavysniperclip','heavysniperclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_KNIFE'] = {
@@ -334,7 +334,7 @@ return {
 			weight = 1400,
 			durability = 0.3,
 			clip = {'drummachinepistolclip','extendedmachinepistolclip','machinepistolclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_MARKSMANPISTOL'] = {
@@ -342,7 +342,7 @@ return {
 			weight = 1588,
 			durability = 1,
 			ammoname = 'revolverammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_MARKSMANRIFLE'] = {
@@ -350,7 +350,7 @@ return {
 			weight = 7500,
 			durability = 1,
 			clip = {'extendedmarksmansniperclip','marksmansniperclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_MARKSMANRIFLE_MK2'] = {
@@ -358,7 +358,7 @@ return {
 			weight = 4000,
 			durability = 1,
 			clip = {'extendedmarksmansniperclip','marksmansniperclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_MG'] = {
@@ -366,7 +366,7 @@ return {
 			weight = 9000,
 			durability = 0.3,
 			clip = {'extendedmgclip','mgclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_MICROSMG'] = {
@@ -374,14 +374,14 @@ return {
 			weight = 4000,
 			durability = 0.3,
 			clip = {'extendedmicrosmgclip','microsmgclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_MILITARYRIFLE'] = {
 			label = 'AUG A3',
 			weight = 3600,
 			durability = 0.3,
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_MINISMG'] = {
@@ -389,7 +389,7 @@ return {
 			weight = 2770,
 			durability = 0.3,
 			clip = {'extendedminismgclip','minismgclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_MOLOTOV'] = {
@@ -403,7 +403,7 @@ return {
 			weight = 4500,
 			durability = 1,
 			ammoname = 'musketball',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_NAVYREVOLVER'] = {
@@ -411,7 +411,7 @@ return {
 			weight = 2000,
 			durability = 1,
 			ammoname = 'revolverammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_NIGHTSTICK'] = {
@@ -429,7 +429,7 @@ return {
 			label = 'Pistolet Perico',
 			weight = 1750,
 			durability = 1,
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_PIPEBOMB'] = {
@@ -443,7 +443,7 @@ return {
 			weight = 970,
 			durability = 0.5,
             clip = {'extendedpistolclip','pistolclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_PISTOL50'] = {
@@ -451,7 +451,7 @@ return {
 			weight = 2000,
 			durability = 0.5,
 			clip = {'extendedpistol50clip','pistol50clip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_PISTOL_MK2'] = {
@@ -459,7 +459,7 @@ return {
 			weight = 970,
 			durability = 0.5,
 			clip = {'extendedpistolclip','pistolclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_POOLCUE'] = {
@@ -479,7 +479,7 @@ return {
 			weight = 3400,
 			durability = 1,
 			ammoname = 'shotgunammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_PUMPSHOTGUN_MK2'] = {
@@ -487,7 +487,7 @@ return {
 			weight = 3200,
 			durability = 1,
 			ammoname = 'shotgunammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_REVOLVER'] = {
@@ -495,7 +495,7 @@ return {
 			weight = 2260,
 			durability = 1,
 			ammoname = 'revolverammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_REVOLVER_MK2'] = {
@@ -503,7 +503,7 @@ return {
 			weight = 1500,
 			durability = 1,
 			ammoname = 'revolverammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_SAWNOFFSHOTGUN'] = {
@@ -511,7 +511,7 @@ return {
 			weight = 2380,
 			durability = 1,
 			ammoname = 'shotgunammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_SMG'] = {
@@ -519,7 +519,7 @@ return {
 			weight = 3084,
 			durability = 0.3,
 			clip = {'drumsmgclip','extendedsmgclip','smgclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_SMG_MK2'] = {
@@ -527,7 +527,7 @@ return {
 			weight = 2700,
 			durability = 0.3,
 			clip = {'extendedsmgclip','smgclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_SMOKEGRENADE'] = {
@@ -541,7 +541,7 @@ return {
 			weight = 6500,
 			durability = 1,
 			clip = {'sniperclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_SNOWBALL'] = {
@@ -555,7 +555,7 @@ return {
 			weight = 465,
 			durability = 0.5,
 			clip = {'extendedsnspistolclip','snspistolclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_SNSPISTOL_MK2'] = {
@@ -563,7 +563,7 @@ return {
 			weight = 465,
 			durability = 0.5,
             clip = {'paintballgunclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_SPECIALCARBINE'] = {
@@ -571,7 +571,7 @@ return {
 			weight = 3000,
 			durability = 0.3,
 			clip = {'drumarclip','extendedarclip','arclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_SPECIALCARBINE_MK2'] = {
@@ -579,7 +579,7 @@ return {
 			weight = 3370,
 			durability = 0.3,
 			clip = {'extendedarclip','arclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_STICKYBOMB'] = {
@@ -605,7 +605,7 @@ return {
 			weight = 4400,
 			durability = 1,
 			ammoname = 'shotgunammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_SWITCHBLADE'] = {
@@ -620,7 +620,7 @@ return {
 			weight = 100,
 			durability = 0.5,
 			clip = {'extendedvintagepistolclip','vintagepistolclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_WRENCH'] = {
@@ -658,7 +658,7 @@ return {
 			weight = 4800,
 			durability = 0.5,
 			ammoname = 'huntingammo',
-            degrade = 40320
+            degrade = 20160
 		},
         ['WEAPON_RADARGUN'] = {
 			label = 'Pistolet Radar',
@@ -680,7 +680,7 @@ return {
 			weight = 5000,
 			durability = 0.2,
 			ammoname = 'llammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_PRECISIONRIFLE'] = {
@@ -688,7 +688,7 @@ return {
 			weight = 4800,
 			durability = 0.5,
 			ammoname = 'sniperammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
         ['WEAPON_AUTOSHOTGUN'] = {
@@ -696,7 +696,7 @@ return {
 			weight = 4400,
 			durability = 0.05,
 			ammoname = 'shotgunammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
         ['WEAPON_TACTICALRIFLE'] = {
@@ -704,7 +704,7 @@ return {
 			weight = 3400,
 			durability = 0.3,
 			clip = {'extendedarclip','arclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
         ['WEAPON_COMPACTLAUNCHER'] = {
@@ -712,7 +712,7 @@ return {
 			weight = 2500,
 			durability = 0.05,
 			ammoname = 'grenadeammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
         ['WEAPON_GRENADELAUNCHER'] = {
@@ -720,7 +720,7 @@ return {
 			weight = 6500,
 			durability = 0.05,
 			ammoname = 'grenadeammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
         ['WEAPON_MINIGUN'] = {
@@ -728,7 +728,7 @@ return {
 			weight = 38500,
 			durability = 0.1,
 			ammoname = 'arammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
         ['WEAPON_HOMINGLAUNCHER'] = {
@@ -736,7 +736,7 @@ return {
 			weight = 10000,
 			durability = 0.6,
 			ammoname = 'rocketammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
         ['WEAPON_RPG'] = {
@@ -744,7 +744,7 @@ return {
 			weight = 5000,
 			durability = 0.3,
 			ammoname = 'rocketammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
         ['WEAPON_RAILGUN'] = {
@@ -752,7 +752,7 @@ return {
 			weight = 3570,
 			durability = 0.5,
 			ammoname = 'laserammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
         ['WEAPON_RAYCARBINE'] = {
@@ -760,14 +760,14 @@ return {
 			weight = 3620,
 			durability = 0.2,
 			ammoname = 'laserammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
         ['WEAPON_RAYPISTOL'] = {
 			label = 'Up-n-Atomizer',
 			weight = 1540,
 			durability = 0.5,
-            degrade = 40320
+            degrade = 20160
 		},
 
         ['WEAPON_RAYMINIGUN'] = {
@@ -775,7 +775,7 @@ return {
 			weight = 7000,
 			durability = 0.1,
 			ammoname = 'laserammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
         -- Need to add clips when pistols are present in game
@@ -785,7 +785,7 @@ return {
 			durability = 0.5,
 			ammoname = 'pistolammo',
             clip = {'extendedtecpistolclip','tecpistolclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
         ['WEAPON_CERAMICPISTOL'] = {
@@ -794,7 +794,7 @@ return {
 			durability = 0.5,
 			ammoname = 'pistolammo',
             clip = {'extendedceramicpistolclip','ceramicpistolclip'},
-            degrade = 40320
+            degrade = 20160
 		},
 
         ----------------------------------
@@ -804,7 +804,7 @@ return {
 			weight = 969,
 			durability = 0.2,
 			ammoname = 'pistolammo',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_METALDETECTOR'] = {
@@ -828,7 +828,7 @@ return {
 			weight = 3570,
 			durability = 0.5,
 			ammoname = 'ammo-railgun',
-            degrade = 40320
+            degrade = 20160
 		},
 
 		['WEAPON_TEARGAS'] = {
