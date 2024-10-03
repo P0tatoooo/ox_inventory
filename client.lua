@@ -840,6 +840,7 @@ local function registerCommands()
 
 	local function openGlovebox(vehicle)
 		if not IsPedInAnyVehicle(playerPed, false) or not NetworkGetEntityIsNetworked(vehicle) then return end
+		if QBCore.Shared.Trim(GetVehicleNumberPlateText(vehicle)) == "0" then return client.openInventory() end
 
 		local vehicleHash = GetEntityModel(vehicle)
 		local vehicleClass = GetVehicleClass(vehicle)

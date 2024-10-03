@@ -3,8 +3,7 @@ if not lib then return end
 local Query = {
     SELECT_STASH = 'SELECT data FROM ox_inventory WHERE owner = ? AND name = ?',
     UPDATE_STASH = 'UPDATE ox_inventory SET data = ? WHERE owner = ? AND name = ?',
-    UPSERT_STASH =
-    'INSERT INTO ox_inventory (data, owner, name) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE data = VALUES(data)',
+    UPSERT_STASH = 'INSERT INTO ox_inventory (data, owner, name) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE data = VALUES(data)',
     INSERT_STASH = 'INSERT INTO ox_inventory (owner, name) VALUES (?, ?)',
     SELECT_GLOVEBOX = 'SELECT plate, fakeplate, glovebox FROM `{vehicle_table}` WHERE `{vehicle_column}` = ? OR fakeplate = ?',
     SELECT_TRUNK = 'SELECT plate, fakeplate, trunk FROM `{vehicle_table}` WHERE `{vehicle_column}` = ? OR fakeplate = ?',
@@ -138,6 +137,7 @@ function db.loadStash(owner, name)
 end
 
 function db.saveGlovebox(id, inventory)
+    if id == "" then return end
     return MySQL.prepare(Query.UPDATE_GLOVEBOX, { inventory, id, id })
 end
 
@@ -146,6 +146,7 @@ function db.loadGlovebox(id)
 end
 
 function db.saveTrunk(id, inventory)
+    if id == "" then return end
     return MySQL.prepare(Query.UPDATE_TRUNK, { inventory, id, id })
 end
 
