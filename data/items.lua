@@ -136,6 +136,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -154,6 +155,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -172,6 +174,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -190,6 +193,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -208,6 +212,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -226,6 +231,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -243,6 +249,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -260,6 +267,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['lasagna'] = {
@@ -276,6 +284,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['carbonarapasta'] = {
@@ -292,6 +301,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -309,6 +319,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -326,6 +337,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -343,6 +355,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['bleeder'] = {
@@ -359,6 +372,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['meatfree'] = {
@@ -375,6 +389,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['moneyshot'] = {
@@ -391,6 +406,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -408,6 +424,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -425,6 +442,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -442,6 +460,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['tendersbucket'] = {
@@ -459,6 +478,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['chickenskewer'] = {
@@ -475,6 +495,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['sunday'] = {
@@ -491,6 +512,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -508,6 +530,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['americantunasandwich'] = {
@@ -524,6 +547,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['vegetariansandwich'] = {
@@ -540,6 +564,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['chefspecialsandwich'] = {
@@ -556,6 +581,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['doubleicecream'] = {
@@ -572,6 +598,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
         ['waffle'] = {
@@ -588,6 +615,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -606,6 +634,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -624,6 +653,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -641,6 +671,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -658,6 +689,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -675,6 +707,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -693,6 +726,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -711,6 +745,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -729,6 +764,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
             }
         },
 
@@ -746,6 +782,7 @@ return {
                     rot = { x = 0.0, y = 0.0, z = 0.0}
                 },
                 usetime = 2500,
+				export = 'MyCity_CoreV2.drinkBeverage'
             }
         },
     ---------------SOFT DRINKS-----------------------
@@ -759,6 +796,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `vw_prop_casino_water_bottle_01a`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -772,6 +810,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -784,6 +823,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -797,6 +837,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -810,6 +851,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -823,6 +865,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -835,6 +878,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -848,6 +892,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -861,6 +906,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -874,6 +920,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -887,6 +934,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -900,6 +948,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -913,6 +962,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -926,6 +976,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
@@ -939,6 +990,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol'
 		}
 	},
 
@@ -952,6 +1004,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
 		}
 	},
 	['bouboucocktail'] = {
@@ -964,6 +1017,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
 		}
 	},
 	['prospectcocktail'] = {
@@ -976,6 +1030,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
 		}
 	},
 
@@ -989,6 +1044,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
 		}
 	},
 
@@ -1004,6 +1060,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1017,6 +1075,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1030,6 +1090,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 20
 		}
 	},
 
@@ -1043,6 +1105,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 20
 		}
 	},
 
@@ -1056,6 +1120,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1069,6 +1135,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1082,6 +1150,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 25
 		}
 	},
 
@@ -1095,6 +1165,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 20
 		}
 	},
 
@@ -1108,6 +1180,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1121,6 +1195,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1134,6 +1210,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1147,6 +1225,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 20
 		}
 	},
 
@@ -1160,6 +1240,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 20
 		}
 	},
 
@@ -1173,6 +1255,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1186,6 +1270,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1198,6 +1284,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1210,6 +1298,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1223,6 +1313,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['whiskycocacocktail'] = {
@@ -1235,6 +1327,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1248,6 +1342,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 90
 		}
 	},
 
@@ -1261,6 +1357,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1274,6 +1372,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1287,6 +1387,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['birdcocktail'] = {
@@ -1299,6 +1401,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['cowboycocktail'] = {
@@ -1311,6 +1415,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['skyappelcocktail'] = {
@@ -1323,6 +1429,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['orgasmcocktail'] = {
@@ -1335,6 +1443,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 60
 		}
 	},
 	['sexonthebeachcocktail'] = {
@@ -1347,6 +1457,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['energyvodkacocktail'] = {
@@ -1359,6 +1471,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['pinacoladaorangecocktail'] = {
@@ -1371,6 +1485,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['cubalibrecocktail'] = {
@@ -1383,6 +1499,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['jagerbombcocktail'] = {
@@ -1395,6 +1513,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['mojitococktail'] = {
@@ -1407,6 +1527,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1420,6 +1542,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 60
 		}
 	},
 
@@ -1433,6 +1557,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1446,6 +1572,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 60
 		}
 	},
 
@@ -1459,6 +1587,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 80
 		}
 	},
 
@@ -1472,6 +1602,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['micheladacocktail'] = {
@@ -1484,6 +1616,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['mezcalmulecocktail'] = {
@@ -1496,6 +1630,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['horchatacocktail'] = {
@@ -1508,6 +1644,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 	['vampirococktail'] = {
@@ -1520,6 +1658,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
 		}
 	},
 
@@ -1533,6 +1673,8 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 60
 		}
 	},
     -------------------------------------------------------
@@ -2142,13 +2284,6 @@ return {
     ['gas'] = {
 		label = 'Essence',
 		weight = 1000,
-		stack = true,
-		close = true,
-	},
-
-	['purpleweed'] = {
-		label = 'Purple Weed',
-		weight = 100,
 		stack = true,
 		close = true,
 	},
