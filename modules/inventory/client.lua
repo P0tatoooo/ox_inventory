@@ -23,7 +23,6 @@ local Vehicles = lib.load('data.vehicles')
 local backDoorIds = { 2, 3 }
 
 function Inventory.CanAccessTrunk(entity)
-	if QBCore.Shared.Trim(GetVehicleNumberPlateText(entity)) == "0" then return end
     if cache.vehicle or not NetworkGetEntityIsNetworked(entity) then return end
 
 	local vehicleHash = GetEntityModel(entity)
@@ -73,7 +72,10 @@ function Inventory.OpenTrunk(entity)
         return lib.notify({ id = 'vehicle_locked', type = 'error', description = locale('vehicle_locked') })
     end
 
-    local plate = GetVehicleNumberPlateText(entity)
+    local plate = QBCore.Shared.Trim(GetVehicleNumberPlateText(entity))
+
+	if plate == "0" and Entity(entity).state.plate then plate = Entity(entity).state.plate end
+
     local invId = 'trunk'..plate
     local coords = GetEntityCoords(entity)
 

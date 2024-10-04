@@ -840,7 +840,8 @@ local function registerCommands()
 
 	local function openGlovebox(vehicle)
 		if not IsPedInAnyVehicle(playerPed, false) or not NetworkGetEntityIsNetworked(vehicle) then return end
-		if QBCore.Shared.Trim(GetVehicleNumberPlateText(vehicle)) == "0" then return client.openInventory() end
+		local plate = QBCore.Shared.Trim(GetVehicleNumberPlateText(vehicle))
+		if plate == "0" and Entity(vehicle).state.plate then plate = Entity(vehicle).state.plate end
 
 		local vehicleHash = GetEntityModel(vehicle)
 		local vehicleClass = GetVehicleClass(vehicle)
@@ -849,7 +850,7 @@ local function registerCommands()
 		-- No storage or no glovebox
 		if (checkVehicle == 0 or checkVehicle == 2) or (not Vehicles.glovebox[vehicleClass] and not Vehicles.glovebox.models[vehicleHash]) then return end
 
-		local isOpen = client.openInventory('glovebox', { id = 'glove'..GetVehicleNumberPlateText(vehicle), netid = NetworkGetNetworkIdFromEntity(vehicle) })
+		local isOpen = client.openInventory('glovebox', { id = 'glove'.. plate, netid = NetworkGetNetworkIdFromEntity(vehicle) })
 
 		if isOpen then
 			currentInventory.entity = vehicle

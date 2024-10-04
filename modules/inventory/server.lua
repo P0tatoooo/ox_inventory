@@ -169,7 +169,12 @@ local function loadInventoryData(data, player)
                 dbId = data.id:sub(6)
             end
 
-            inventory = Inventory.Create(data.id, plate, data.type, storage[1], 0, storage[2], false, nil, nil, dbId)
+			local label = "Coffre"
+			if string.match(data.id, "glove") then
+				label = "Boite à Gants"
+			end
+
+            inventory = Inventory.Create(data.id, label, data.type, storage[1], 0, storage[2], false, nil, nil, dbId)
 		end
 	elseif data.type == 'policeevidence' then
 		inventory = Inventory.Create(data.id, locale('police_evidence'), data.type, 100, 0, 100000, false)
