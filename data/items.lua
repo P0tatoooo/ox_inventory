@@ -910,6 +910,34 @@ return {
 		}
 	},
 
+	['bigapplejuice'] = {
+		label = 'Bouteille de Jus de Pommes',
+		weight = 1000,
+		stack = true,
+		close = true,
+		client = {
+			status = { thirst = 50 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
+		}
+	},
+
+	['bigorangejuice'] = {
+		label = 'Bouteille de Jus d\'Orange',
+		weight = 1000,
+		stack = true,
+		close = true,
+		client = {
+			status = { thirst = 50 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
+		}
+	},
+
 	['energydrink'] = {
 		label = 'Canette de Boisson Energisante',
 		weight = 450,
@@ -925,7 +953,35 @@ return {
 	},
 
 	['grapejuice'] = {
-		label = 'Brique de jus de raisin',
+		label = 'Brique de Jus de Raisin',
+		weight = 200,
+		stack = true,
+		close = true,
+		client = {
+			status = { thirst = 25 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
+		}
+	},
+
+	['applejuice'] = {
+		label = 'Brique de Jus de Pomme',
+		weight = 200,
+		stack = true,
+		close = true,
+		client = {
+			status = { thirst = 25 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkBeverage'
+		}
+	},
+
+	['orangejuice'] = {
+		label = 'Brique de Jus d\'Orange',
 		weight = 200,
 		stack = true,
 		close = true,
