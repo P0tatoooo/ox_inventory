@@ -3770,13 +3770,7 @@ return {
 		stack = true,
 		close = false,
 	},
-	['huntingrifle'] = {
-		label = 'Fusil de Chasse Bloqué',
-		weight = 1000,
-		stack = true,
-		close = false,
-	},
-	
+
 	["trigger_g_p"] = {
 		label = "Pistolet Céramique Gachette",
 		weight = 10,
