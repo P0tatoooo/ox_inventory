@@ -270,6 +270,43 @@ return {
 				export = 'MyCity_CoreV2.eatFood'
             }
         },
+
+		['calzonepizza'] = {
+            label = 'Pizza Calzone',
+            weight = 100,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 50 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+
+		['pineapplepizza'] = {
+            label = 'La Spéciale 23',
+            weight = 100,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 50 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+
         ['lasagna'] = {
             label = 'Lasagnes',
             weight = 250,
@@ -289,6 +326,23 @@ return {
         },
         ['carbonarapasta'] = {
             label = 'Pâtes Carbonara',
+            weight = 200,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 50 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+		['bolognesepasta'] = {
+            label = 'Pâtes Bolognaise',
             weight = 200,
             stack = true,
             degrade = 4320,
@@ -1852,6 +1906,13 @@ return {
 		close = true,
 	},
 
+	['pineapple'] = {
+		label = 'Ananas',
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
 	['malt'] = {
 		label = 'Orge',
 		weight = 100,
@@ -3370,14 +3431,14 @@ return {
 	},
 
 	['flour'] = {
-		label = 'farine',
+		label = 'Farine',
 		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	['bread'] = {
-		label = 'pain',
+		label = 'Pain',
 		weight = 180,
 		stack = true,
 		close = true,
