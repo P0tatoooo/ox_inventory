@@ -3375,8 +3375,8 @@ return {
 		close = false,
 	},
 
-    ['thunderskullskeys'] = {
-		label = 'Clés TS',
+    ['tijkeys'] = {
+		label = 'Clés Hangar',
 		weight = 10,
 		stack = true
 	},
