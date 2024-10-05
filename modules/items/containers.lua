@@ -72,7 +72,8 @@ setContainerProperties('wallet', {
         'bank_card',
 		'note',
 		'photopaper',
-		'picture'
+		'picture',
+		'loyaltycard'
     }
 })
 
