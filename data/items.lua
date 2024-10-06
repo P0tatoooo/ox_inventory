@@ -2989,6 +2989,13 @@ return {
 		close = true,
 	},
 
+	['boat_license'] = {
+		label = 'Permis Bateau',
+		weight = 10,
+		stack = false,
+        close = true,
+	},
+
     ["cc_license"] = {
 		label = "Permis de Port d'Armes",
 		weight = 10,

@@ -73,7 +73,9 @@ setContainerProperties('wallet', {
 		'note',
 		'photopaper',
 		'picture',
-		'loyaltycard'
+		'loyaltycard',
+		'uff_card',
+		'boat_license'
     }
 })
 
