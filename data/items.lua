@@ -3197,6 +3197,14 @@ return {
         consume = 0,
 	},
 
+	["jackhammer"] = {
+		label = "Marteau Piqueur",
+		weight = 1000,
+		stack = true,
+		close = false,
+        consume = 0,
+	},
+
 	["axe"] = {
 		label = "Hache",
 		weight = 1000,
