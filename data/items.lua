@@ -140,6 +140,25 @@ return {
             }
         },
 
+		['popcorn'] = {
+            label = 'Popcorn',
+            weight = 100,
+            stack = true,
+            close = true,
+            degrade = 10080,
+            client = {
+                status = { hunger = 25},
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+                    pos = { x = 0.02, y = 0.02, z = -0.02},
+                    rot = { x = 0.0, y = 0.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+
         ['churros'] = {
             label = 'Churros',
             weight = 200,
@@ -3411,6 +3430,16 @@ return {
 	['aniseseed'] = {
 		label = 'Graine d\'Anis',
 		weight = 10,
+		stack = true,
+	},
+	['cornseed'] = {
+		label = 'Graine de Maïs',
+		weight = 10,
+		stack = true,
+	},
+	['corn'] = {
+		label = 'Maïs',
+		weight = 140,
 		stack = true,
 	},
 
