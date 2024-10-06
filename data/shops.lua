@@ -172,6 +172,7 @@ return {
             {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 8, label = "Gilet Tactique Lourd", image = "bulletproof_tactical_heavy" }, price = 0},
             {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 5, label = "Gilet Media", image = "bulletproof_media" }, price = 0},
             {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 6, label = "Gilet Medic", image = "bulletproof_medic" }, price = 0},
+			{name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 50, label = "Gilet Gruppe 6", image = "bulletproof_gruppe6" }, price = 0},
 
             {name = 'WEAPON_HEAVYPISTOL', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
             {name = 'WEAPON_SMG', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
