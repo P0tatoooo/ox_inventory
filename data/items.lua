@@ -2995,6 +2995,14 @@ return {
 		stack = false,
 		close = true,
 	},
+
+	["uff_card"] = {
+		label = "Carte de l'UFF",
+		weight = 10,
+		stack = false,
+		close = true,
+	},
+
 	["lawyer_pass"] = {
 		label = "Carte d\'Avocat",
 		weight = 10,
