@@ -3263,7 +3263,7 @@ return {
 
     ['ironingot'] = {
 		label = 'Lingot de Fer',
-		weight = 1000,
+		weight = 500,
 		stack = true,
 		close = true,
 	},
@@ -3277,7 +3277,7 @@ return {
 
     ['steelingot'] = {
 		label = 'Lingot d\'Acier',
-		weight = 1000,
+		weight = 500,
 		stack = true,
 		close = true,
 	},
