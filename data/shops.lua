@@ -32,8 +32,6 @@ return {
 			{ name = 'spray', price = 300 },
 			{ name = 'notepad', price = 100 },
 			{ name = 'notebook', price = 100 },
-			{ name = 'boombox', price = 1000 },
-			{ name = 'divinggear', price = 2000 }
 		}, locations = {
 			vec3(24.672529, -1347.903320, 28.482056),
             vec3(-3038.426270, 584.795593, 6.897461),
@@ -326,7 +324,7 @@ return {
 		}
 	},
 
-	Fisherman = {
+	--[[ Fisherman = {
 		name = 'Pêcheur',
 		inventory = {
 			{ name = 'fishing_rod', price = 200 },
@@ -334,7 +332,7 @@ return {
 		}, locations = {
 			vector3(-3418.335, 970.5667, 11.93619)
 		}
-	},
+	}, ]]
 
 	Illegal_BlackMarket = {
 		name = 'Black Market',
