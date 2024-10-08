@@ -197,6 +197,22 @@ return {
 		}
 	},
 
+	BoatDealerPrinter = {
+		name = 'Photocopieuse',
+		groups = {
+			['boatdealer'] = 0
+		},
+		--[[blip = {
+			id = 403, colour = 69, scale = 0.8
+		},]] inventory = {
+			{ name = 'boat_license', price = 0 },
+		}, locations = {
+			vec3(-806.940674, -1369.542847, 5.167725),
+		}, targets = {
+
+		}
+	},
+
     LSPDPrinter = {
 		name = 'Photocopieuse',
 		groups = {
