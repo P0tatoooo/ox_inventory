@@ -3197,7 +3197,7 @@ return {
 
 	["ironore"] = {
 		label = "Minerai de Fer",
-		weight = 1000,
+		weight = 500,
 		stack = true,
 		close = false,
 	},
