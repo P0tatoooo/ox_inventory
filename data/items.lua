@@ -2366,7 +2366,7 @@ return {
 		stack = true,
 		close = true,
         consume = 0,
-        client = {
+        server = {
             export = "MyCity_CoreV2.UseDivingGear"
         }
 	},
