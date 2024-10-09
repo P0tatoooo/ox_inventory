@@ -22,7 +22,7 @@ local Utils = require 'modules.utils.client'
 local Vehicles = lib.load('data.vehicles')
 local backDoorIds = { 2, 3 }
 
-function Inventory.CanAccessTrunk(entity)
+function Inventory.CanAccessTrunk(entity, dontmove)
     if cache.vehicle or not NetworkGetEntityIsNetworked(entity) then return end
 
 	local vehicleHash = GetEntityModel(entity)
@@ -54,13 +54,19 @@ function Inventory.CanAccessTrunk(entity)
     end
 
     if #(GetEntityCoords(cache.ped) - offset) < maxDistance then
-        local coords = GetEntityCoords(entity)
 
-        TaskTurnPedToFaceCoord(cache.ped, coords.x, coords.y, coords.z, 500)
+		if not dontmove then
+			local coords = GetEntityCoords(entity)
+			TaskTurnPedToFaceCoord(cache.ped, coords.x, coords.y, coords.z, 500)
+		end
 
         return doorId
+	else
+		return
     end
 end
+
+exports('CanAccessTrunk', Inventory.CanAccessTrunk)
 
 function Inventory.OpenTrunk(entity)
     ---@type number | number[] | nil
