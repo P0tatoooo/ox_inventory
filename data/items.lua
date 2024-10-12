@@ -1915,7 +1915,12 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+	},
 
+	['newspaper'] = {
+		label = 'Journal',
+		weight = 100,
+		stack = true,
 	},
 
 	['apple'] = {
