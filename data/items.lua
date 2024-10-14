@@ -3718,6 +3718,13 @@ return {
 		close = true,
 	},
 
+	["bp_snspistol"] = {
+		label = "Plan Pistolet SNS",
+		weight = 50,
+		stack = false,
+		close = true,
+	},
+
     ----------------------------
     ["security_card_01"] = {
 		label = "Carte de Sécurité",
