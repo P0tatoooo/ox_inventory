@@ -79,7 +79,7 @@ return {
 			usetime = 1500
 		}
 	},
-
+	
 	['paperbag'] = {
 		label = 'Sac en Papier',
 		weight = 100,
@@ -2099,7 +2099,13 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+	},
 
+	['logboat'] = {
+		label = 'Bateau Bûche',
+		weight = 20000,
+		stack = false,
+		close = true,
 	},
 
 	['coffeemachine'] = {
