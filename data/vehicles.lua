@@ -35,6 +35,7 @@ return {
 		[`trophytruck2`] = 1,
         [`caddy`] = 1,
         [`tractor2`] = 1,
+        [`treetrunkdoo`] = 0,
 	},
 
 	-- slots, maxWeight; default weight is 8000 per slot
