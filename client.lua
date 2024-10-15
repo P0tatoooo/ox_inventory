@@ -2095,54 +2095,47 @@ end)
 
 
 local longWeapons = {
-	'WEAPON_BAT',
-	'WEAPON_GOLFCLUB',
-	'WEAPON_CROWBAR',
-	'WEAPON_HATCHET',
-	'WEAPON_MACHETE',
-	'WEAPON_BATTLEAXE',
-	'WEAPON_POOLCUE',
-	'WEAPON_WRENCH',
-	'WEAPON_MICROSMG',
-	'WEAPON_ASSAULTSMG',
-	'WEAPON_MINISMG',
-	'WEAPON_COMBATPDW',
-	'WEAPON_SAWNOFFSHOTGUN',
-	'WEAPON_COMPACTRIFLE',
-	'WEAPON_GUSENBERG',
-	'WEAPON_MARKSMANPISTOL',
-	'WEAPON_DBSHOTGUN',
-	"WEAPON_ASSAULTRIFLE",
-	"WEAPON_PUMPSHOTGUN",
-	"WEAPON_BULLPUPSHOTGUN",
-	"WEAPON_CARBINERIFLE",
-	"WEAPON_SMG",
-	"WEAPON_PUMPSHOTGUN_MK2",
-	"WEAPON_CARBINERIFLE_MK2",
-	"WEAPON_GUSENBERG",
-	"WEAPON_MG",
-	"WEAPON_ADVANCEDRIFLE",
-	"WEAPON_SNIPERRIFLE",
-	"WEAPON_ASSAULTRIFLE_MK2",
-	"WEAPON_COMBATMG_MK2",
-	"WEAPON_SPECIALCARBINE",
-	"WEAPON_SMG_MK2",
-	"WEAPON_SPECIALCARBINE_MK2",
+	[`WEAPON_BAT`] = true,
+	[`WEAPON_GOLFCLUB`] = true,
+	[`WEAPON_CROWBAR`] = true,
+	[`WEAPON_HATCHET`] = true,
+	[`WEAPON_MACHETE`] = true,
+	[`WEAPON_BATTLEAXE`] = true,
+	[`WEAPON_POOLCUE`] = true,
+	[`WEAPON_WRENCH`] = true,
+	[`WEAPON_MICROSMG`] = true,
+	[`WEAPON_ASSAULTSMG`] = true,
+	[`WEAPON_MINISMG`] = true,
+	[`WEAPON_COMBATPDW`] = true,
+	[`WEAPON_SAWNOFFSHOTGUN`] = true,
+	[`WEAPON_COMPACTRIFLE`] = true,
+	[`WEAPON_GUSENBERG`] = true,
+	[`WEAPON_MARKSMANPISTOL`] = true,
+	[`WEAPON_DBSHOTGUN`] = true,
+	[`WEAPON_ASSAULTRIFLE`] = true,
+	[`WEAPON_PUMPSHOTGUN`] = true,
+	[`WEAPON_BULLPUPSHOTGUN`] = true,
+	[`WEAPON_CARBINERIFLE`] = true,
+	[`WEAPON_SMG`] = true,
+	[`WEAPON_PUMPSHOTGUN_MK2`] = true,
+	[`WEAPON_CARBINERIFLE_MK2`] = true,
+	[`WEAPON_GUSENBERG`] = true,
+	[`WEAPON_MG`] = true,
+	[`WEAPON_ADVANCEDRIFLE`] = true,
+	[`WEAPON_SNIPERRIFLE`] = true,
+	[`WEAPON_ASSAULTRIFLE_MK2`] = true,
+	[`WEAPON_COMBATMG_MK2`] = true,
+	[`WEAPON_SPECIALCARBINE`] = true,
+	[`WEAPON_SMG_MK2`] = true,
+	[`WEAPON_SPECIALCARBINE_MK2`] = true,
 }
 
 local function isWeaponLong(newWeapon)
+	print(newWeapon, type(newWeapon))
     if type(newWeapon) == 'string' then
-        for i = 1, #longWeapons do
-            if longWeapons[i] == newWeapon then
-                return true
-            end
-        end
+        return longWeapons[GetHashKey(newWeapon)]
     else
-        for i = 1, #longWeapons do
-            if GetHashKey(longWeapons[i]) == newWeapon then
-                return true
-            end
-        end
+        return longWeapons[newWeapon]
     end
 	return false
 end
@@ -2153,55 +2146,50 @@ local bagsIndex = {
 }
 
 function canSwapWeapon(weaponname)
-    local playerPed = PlayerPedId()
+    --[[ local playerPed = PlayerPedId()
     local hasBag
 
     if (isWeaponLong(weaponname) or isWeaponLong(GetSelectedPedWeapon(playerPed))) then--and not isAdmin then
-        local p = promise.new()
-        QBCore.Functions.TriggerCallback('MyCity_MultiCharacter:server:getSkin', function(model, data)
-            local currentBagIndex = GetPedDrawableVariation(playerPed, 5)
+		local currentBagIndex = GetPedDrawableVariation(playerPed, 5)
 
-            if QBCore.Functions.GetPlayerData().charinfo.gender == 0 then
-                for k,v in pairs(bagsIndex.male) do
-                    if v == currentBagIndex then
-                        hasBag = true
-                        break
-                    end
-                end
-            else
-                for k,v in pairs(bagsIndex.female) do
-                    if v == currentBagIndex then
-                        hasBag = true
-                        break
-                    end
-                end
-            end
+		if QBCore.Functions.GetPlayerData().charinfo.gender == 0 then
+			for k,v in pairs(bagsIndex.male) do
+				if v == currentBagIndex then
+					hasBag = true
+					break
+				end
+			end
+		else
+			for k,v in pairs(bagsIndex.female) do
+				if v == currentBagIndex then
+					hasBag = true
+					break
+				end
+			end
+		end
 
-            if not hasBag then
-                local vehFront, vehicleDistance = QBCore.Functions.GetClosestVehicle()
+		if not hasBag then
+			local vehFront, vehicleDistance = QBCore.Functions.GetClosestVehicle()
 
-                if vehFront ~= -1 and  vehicleDistance < 20.0 then
-                    local lockStatus = GetVehicleDoorLockStatus(vehFront)
-                    if lockStatus == 1 or lockStatus == 0 then
-                        local d1 = GetModelDimensions(GetEntityModel(vehFront))
-                        local playerCoords = GetEntityCoords(playerPed)
-                        local vehCoords = GetOffsetFromEntityInWorldCoords(vehFront, 0.0,d1["y"],0.0)
-                        local distance = #(playerCoords - vehCoords)
+			if vehFront ~= -1 and  vehicleDistance < 20.0 then
+				local lockStatus = GetVehicleDoorLockStatus(vehFront)
+				if lockStatus == 1 or lockStatus == 0 then
+					local d1 = GetModelDimensions(GetEntityModel(vehFront))
+					local playerCoords = GetEntityCoords(playerPed)
+					local vehCoords = GetOffsetFromEntityInWorldCoords(vehFront, 0.0,d1["y"],0.0)
+					local distance = #(playerCoords - vehCoords)
 
-                        if distance < 2.0 then
-                            hasBag = true
-                        end
-                    end
-                end
-            end
-            p:resolve()
-        end)
-        Citizen.Await(p)
+					if distance < 2.0 then
+						hasBag = true
+					end
+				end
+			end
+		end
     else
         hasBag = true
-    end
-	hasBag = true
-    return hasBag
+    end ]]
+
+    return true
 end
 
 exports.ox_inventory:displayMetadata('maxammo', 'Capacité du Chargeur')
