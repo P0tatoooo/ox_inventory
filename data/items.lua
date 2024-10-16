@@ -2009,7 +2009,27 @@ return {
 		weight = 10,
 		stack = true,
 		close = true,
+	},
 
+	['blueprintpaper'] = {
+		label = 'Papier Cartonné',
+		weight = 10,
+		stack = true,
+		close = false,
+	},
+
+	['ink'] = {
+		label = 'Encre',
+		weight = 10,
+		stack = true,
+		close = false,
+	},
+
+	['mainbp'] = {
+		label = 'Plan Principal',
+		weight = 10,
+		stack = true,
+		close = false,
 	},
 
 	['casinocoupon1'] = {
