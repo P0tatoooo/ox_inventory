@@ -289,7 +289,7 @@ return {
             ['piru'] = 0,
             ['mayans'] = 0,
             ['soa'] = 0,
-            --['carrington'] = 0
+            ['dnk'] = 0
 		},
 		--[[blip = {
 			id = 403, colour = 69, scale = 0.8
@@ -315,7 +315,7 @@ return {
             vec3(-1093.134033, -1225.872559, 2.741455), -- Pistolets
             vec3(450.817596, 3533.090088, 33.374390), -- Pistolets Cal .50
             vec3(818.386841, -1395.995605, 26.297485), -- Fusil à Pompe/Fusil à Pompe Bullpup 
-			vec3(-894.830750, 151.147247, 63.164795), -- Fusil Bullpup/Skorpion
+			vec3(2360.677002, 3124.562744, 48.202148), -- Fusil Bullpup/Skorpion
 			/*
 			vec3(2745.95, 1415.23, 19.82),
 			vec3(1887.51, 3913.88, 32.02),
