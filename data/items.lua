@@ -1866,6 +1866,21 @@ return {
 			alcohol = 60
 		}
 	},
+
+	['slayercocktail'] = {
+		label = 'Slayer',
+		weight = 750,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 15 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 60
+		}
+	},
     -------------------------------------------------------
 
     ['welcomeflyer'] = {
