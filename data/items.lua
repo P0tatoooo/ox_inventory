@@ -2056,6 +2056,13 @@ return {
 		close = true,
 	},
 
+	['mmcandies'] = {
+		label = 'Bonbons Meuh-Meuh',
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
 	['canesyrup'] = {
 		label = 'Sirop de Canne',
 		weight = 200,
