@@ -689,23 +689,24 @@ local function useSlot(slot, noAnim)
                 if components then
                     for i = 1, #components do
                         local component = components[i]
-
                         if DoesWeaponTakeWeaponComponent(currentWeapon.hash, component) then
-                            if HasPedGotWeaponComponent(playerPed, currentWeapon.hash, component) then
-                                lib.notify({ id = 'component_has', type = 'error', description = locale('component_has', label) })
-                            else
+                            --if HasPedGotWeaponComponent(playerPed, currentWeapon.hash, component) then
+                            --    lib.notify({ id = 'component_has', type = 'error', description = locale('component_has', label) })
+                            --else
                                 useItem(data, function(data)
                                     if data then
                                         local success = lib.callback.await('ox_inventory:updateWeapon', false, 'component', tostring(data.slot), currentWeapon.slot)
 
                                         if success then
                                             SetTimeout(1500, function()
-                                                GiveWeaponComponentToPed(playerPed, currentWeapon.hash, component)
+												if not HasPedGotWeaponComponent(playerPed, currentWeapon.hash, component) then
+                                                	GiveWeaponComponentToPed(playerPed, currentWeapon.hash, component)
+												end
                                             end)
                                         end
                                     end
                                 end)
-                            end
+                            --end
                         end
                     end
                 else
@@ -738,7 +739,7 @@ local function useSlot(slot, noAnim)
 
                 lib.callback.await('ox_inventory:updateWeapon', false, 'loadclip', newAmmo)
 
-                SetTimeout(500, function()
+                SetTimeout(1500, function()
                     isReloading = false
                 end)
 
