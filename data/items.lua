@@ -1907,6 +1907,16 @@ return {
 		stack = true,
 	},
 
+	['cups'] = {
+		label = 'Gobelets Beer Pong',
+		weight = 250,
+		close = true,
+		consume = 0,
+		server = {
+			export = 'rcore_beerpong.cups',
+		},
+	},
+
     ['radio'] = {
 		label = 'Radio',
 		weight = 220,
