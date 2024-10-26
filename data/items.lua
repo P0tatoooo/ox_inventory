@@ -1917,6 +1917,17 @@ return {
 		},
 	},
 
+	['basketball_hoop'] = {
+		label = 'Panier de Basketball',
+		weight = 250,
+		close = true,
+		consume = 0,
+		client = {},
+		server = {
+			export = 'rcore_basketball.basketball_hoop',
+		},
+	},
+
     ['radio'] = {
 		label = 'Radio',
 		weight = 220,
