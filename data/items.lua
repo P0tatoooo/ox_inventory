@@ -3684,6 +3684,12 @@ return {
 		stack = true
 	},
 
+	['grandcycletalisman'] = {
+		label = 'Talisman du Grand Cycle',
+		weight = 10,
+		stack = true
+	},
+
     -- Illegal
 
 	["smg_barrel"] = {
