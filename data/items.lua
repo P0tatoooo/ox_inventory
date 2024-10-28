@@ -1868,7 +1868,7 @@ return {
 	},
 
 	['slayercocktail'] = {
-		label = 'Slayer',
+		label = 'Divin Slayer',
 		weight = 750,
 		stack = true,
 		close = true,
