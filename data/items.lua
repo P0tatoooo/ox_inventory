@@ -2519,7 +2519,7 @@ return {
 	['halloweenbasket'] = {
 		label = 'Panier à Bonbons',
 		weight = 100,
-		stack = true,
+		stack = false,
 		close = true,
         client = {
             export = "MyCity_CoreV2.UseHalloweenBasket"

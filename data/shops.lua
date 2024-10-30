@@ -32,6 +32,7 @@ return {
 			{ name = 'spray', price = 300 },
 			{ name = 'notepad', price = 100 },
 			{ name = 'notebook', price = 100 },
+			{ name = 'halloweenbasket', price = 50 },
 		}, locations = {
 			vec3(24.672529, -1347.903320, 28.482056),
             vec3(-3038.426270, 584.795593, 6.897461),
