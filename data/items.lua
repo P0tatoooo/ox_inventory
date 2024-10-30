@@ -2516,6 +2516,16 @@ return {
         }
 	},
 
+	['halloweenbasket'] = {
+		label = 'Panier à Bonbons',
+		weight = 100,
+		stack = true,
+		close = true,
+        client = {
+            export = "MyCity_CoreV2.UseHalloweenBasket"
+        }
+	},
+
 	['packaged_chicken'] = {
 		label = 'Barquette de Poulet',
 		weight = 250,
