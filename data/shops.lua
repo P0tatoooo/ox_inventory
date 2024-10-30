@@ -287,7 +287,7 @@ return {
             ['mogila'] = 0,
             ['losvalentinos'] = 0,
 			['one9ers'] = 0,
-            ['piru'] = 0,
+            ['brs'] = 0,
             ['mayans'] = 0,
             ['soa'] = 0,
             ['dnk'] = 0
@@ -313,7 +313,7 @@ return {
             vec3(1524.079102, 1709.854980, 110.007324), -- MP5/TEC-9
             vec3(2391.296631, 3067.410889, 48.673950), -- Fusil à Pompe Double Coup/Fusil à Pompe Canon Scié
 			vec3(-1861.740601, -316.905487, 49.128906),-- Pistolets SNS
-            vec3(-1093.134033, -1225.872559, 2.741455), -- Pistolets
+            vec3(-1203.758301, -445.806580, 33.559692), -- Pistolets
             vec3(450.817596, 3533.090088, 33.374390), -- Pistolets Cal .50
             vec3(818.386841, -1395.995605, 26.297485), -- Fusil à Pompe/Fusil à Pompe Bullpup 
 			vec3(2360.677002, 3124.562744, 48.202148), -- Fusil Bullpup/Skorpion
