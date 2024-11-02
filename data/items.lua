@@ -901,7 +901,7 @@ return {
 	},
 
     ['icetea'] = {
-		label = 'Canette d\'Orang O Tang',
+		label = 'Canette d\'Ice Tea',
 		weight = 330,
 		stack = true,
 		close = true,
@@ -956,7 +956,7 @@ return {
 	},
 
     ['bigicetea'] = {
-		label = 'Bouteille d\'Orang O Tang',
+		label = 'Bouteille d\'Ice Tea',
 		weight = 500,
 		stack = true,
 		close = true,
