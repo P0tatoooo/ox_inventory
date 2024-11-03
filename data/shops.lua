@@ -287,7 +287,7 @@ return {
             ['mogila'] = 0,
             ['losvalentinos'] = 0,
 			['one9ers'] = 0,
-            ['brs'] = 0,
+            ['crusaders'] = 0,
             ['mayans'] = 0,
             ['soa'] = 0,
             ['dnk'] = 0
