@@ -561,7 +561,7 @@ return {
 		['WEAPON_SNSPISTOL_MK2'] = {
 			label = 'Lanceur Paintball',
 			weight = 465,
-			durability = 0.5,
+			durability = 0.05,
             clip = {'paintballgunclip'},
             degrade = 40320
 		},
