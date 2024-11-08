@@ -114,7 +114,7 @@ return {
 
     ['wallet'] = {
 		label = 'Portefeuille',
-		weight = 10,
+		weight = 25,
 		stack = false,
 		close = false,
 		consume = 0
@@ -2098,7 +2098,8 @@ return {
 	},
 
 	['money'] = {
-		label = 'Argent'
+		label = 'Argent',
+		weight = 0.01
 	},
 
     ['black_money'] = {
@@ -3118,13 +3119,13 @@ return {
     },
     ["photopaper"] = {
         label = "Papier Photo",
-        weight = 10,
+        weight = 0.01,
         stack = true,
         close = false
     },
     ["picture"] = {
         label = "Image Polaroid",
-        weight = 10,
+        weight = 0.01,
         stack = false,
         close = true,
         client = {
@@ -3140,7 +3141,7 @@ return {
 	},
 	["note"] = {
 		label = "Note",
-		weight = 150,
+		weight = 0.01,
 		stack = false,
 		close = true
 	},
@@ -3194,7 +3195,7 @@ return {
 	},
 	['loyaltycard'] = {
 		label = 'Carte de Fidélité',
-		weight = 10,
+		weight = 0.01,
 		stack = true,
         close = false,
 		buttons = {
@@ -3208,7 +3209,7 @@ return {
 	},
     ['bank_card'] = {
 		label = 'Carte Bancaire',
-		weight = 10,
+		weight = 0.01,
 		stack = false,
         close = true,
 	},
@@ -3244,49 +3245,49 @@ return {
 
     ["envelope"] = {
 		label = "Enveloppe Cadeau",
-		weight = 10,
+		weight = 0.01,
 		stack = true,
 		close = false,
 	},
 
 	['id_card'] = {
 		label = 'Carte d\'Identité',
-		weight = 10,
+		weight = 0.01,
 		stack = false,
         close = true,
 	},
 
 	["driver_license"] = {
 		label = "Permis de Conduire",
-		weight = 10,
+		weight = 0.01,
 		stack = false,
 		close = true,
 	},
 
 	['boat_license'] = {
 		label = 'Permis Bateau',
-		weight = 10,
+		weight = 0.01,
 		stack = false,
         close = true,
 	},
 
     ["cc_license"] = {
 		label = "Permis de Port d'Armes",
-		weight = 10,
+		weight = 0.01,
 		stack = false,
 		close = true,
 	},
 
 	["uff_card"] = {
 		label = "Carte de l'UFF",
-		weight = 10,
+		weight = 0.01,
 		stack = false,
 		close = true,
 	},
 
 	["lawyer_pass"] = {
 		label = "Carte d\'Avocat",
-		weight = 10,
+		weight = 0.01,
 		stack = false,
 		close = false
 	},
@@ -3607,25 +3608,25 @@ return {
 
     ['taxiticket'] = {
 		label = 'Ticket Taxi',
-		weight = 1,
+		weight = 0.01,
 		stack = true,
 	},
 
     ['restaurationticket'] = {
 		label = 'Ticket Restaurant',
-		weight = 1,
+		weight = 0.01,
 		stack = true,
 	},
 
     ['healticket'] = {
 		label = 'Ticket Soins',
-		weight = 1,
+		weight = 0.01,
 		stack = true,
 	},
 
     ['reparationticket'] = {
 		label = 'Ticket Réparation',
-		weight = 1,
+		weight = 0.01,
 		stack = true,
 	},
 
@@ -3826,7 +3827,7 @@ return {
 
 	['grandcycletalisman'] = {
 		label = 'Talisman du Grand Cycle',
-		weight = 10,
+		weight = 0.01,
 		stack = true
 	},
 

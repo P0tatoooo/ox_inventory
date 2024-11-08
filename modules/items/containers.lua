@@ -59,7 +59,7 @@ setContainerProperties('paperbag', {
 
 setContainerProperties('wallet', {
 	slots = 10,
-	maxWeight = 1000,
+	maxWeight = 25,
 	whitelist = {
         'money',
         'id_card',
