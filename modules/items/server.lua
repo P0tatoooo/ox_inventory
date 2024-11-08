@@ -288,9 +288,9 @@ function Items.Metadata(inv, item, metadata, count)
 			metadata.serial = GenerateSerial(metadata.serial)
 		end
 
-		if item.hash == `WEAPON_PETROLCAN` or item.hash == `WEAPON_HAZARDCAN` or item.hash == `WEAPON_FERTILIZERCAN` or item.hash == `WEAPON_FIREEXTINGUISHER` then
-			metadata.ammo = metadata.durability
-		end
+		--if item.hash == `WEAPON_PETROLCAN` or item.hash == `WEAPON_HAZARDCAN` or item.hash == `WEAPON_FERTILIZERCAN` or item.hash == `WEAPON_FIREEXTINGUISHER` then
+			--metadata.ammo = metadata.durability
+		--end
 
         local degrade = item?.degrade
         if degrade then
@@ -299,8 +299,6 @@ function Items.Metadata(inv, item, metadata, count)
                 metadata.durability2 = 0
             end
             metadata.degrade = degrade
-        elseif item?.durability then
-            metadata.durability = 100
         end
 	else
 		local container = Items.containers[item.name]
@@ -323,7 +321,7 @@ function Items.Metadata(inv, item, metadata, count)
 				metadata.description = trashType.description
 			end
 		end
-
+		
 		if not metadata.durability then
 			metadata = setItemDurability(ItemList[item.name], metadata)
 		end
@@ -422,7 +420,6 @@ end
 ---@return boolean? removed
 function Items.UpdateDurability(inv, slot, item, value, ostime)
     local durability = slot.metadata.durability or value
-
     if not durability then return end
 
     if value then
