@@ -226,6 +226,7 @@ return {
             { name = 'cc_license', price = 0 },
 		}, locations = {
 			vec3(433.753845, -979.318665, 31.01),
+			vec3(-451.859344, 6013.661621, 31.706177),
 		}, targets = {
 
 		}
