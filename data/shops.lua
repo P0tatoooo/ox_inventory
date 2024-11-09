@@ -281,7 +281,7 @@ return {
 		}
 	},
 
-	TempDarkShop1 = { -- Sell Weapon Parts
+	--[[ TempDarkShop1 = { -- Sell Weapon Parts
 		name = 'Revendeur',
 		groups = {
             --['duggan'] = 0,
@@ -294,9 +294,6 @@ return {
             ['soa'] = 0,
             ['duggan'] = 0
 		},
-		--[[blip = {
-			id = 403, colour = 69, scale = 0.8
-		},]]
 		inventory = {
             { name = 'spring', price = 50, currency = 'black_money' },
             { name = 'attach_body', price = 4000, currency = 'black_money' },
@@ -310,15 +307,15 @@ return {
 			{ name = 'shotgun_guard', price = 2000, currency = 'black_money' },
 			{ name = 'shotgun_grip', price = 500, currency = 'black_money' },
 		}, locations = {
-            vec3(917.538452, 3654.936279, 32.481323), --AKU/ADP
-            vec3(351.11, -2760.62, 5.16), -- AK/UZI
-            vec3(443.525269, 3562.430664, 33.222656), -- MP5/TEC-9
-            vec3(2391.296631, 3067.410889, 48.673950), -- Fusil à Pompe Double Coup/Fusil à Pompe Canon Scié
-			vec3(-1861.740601, -316.905487, 49.128906),-- Pistolets SNS
-            vec3(-1203.758301, -445.806580, 33.559692), -- Pistolets
-            vec3(450.817596, 3533.090088, 33.374390), -- Pistolets Cal .50
-            vec3(818.386841, -1395.995605, 26.297485), -- Fusil à Pompe/Fusil à Pompe Bullpup 
-			vec3(917.538452, 3654.936279, 32.481323), -- Fusil Bullpup/Skorpion
+            --vec3(917.538452, 3654.936279, 32.481323), --AKU/ADP
+            --vec3(351.11, -2760.62, 5.16), -- AK/UZI
+            --vec3(443.525269, 3562.430664, 33.222656), -- MP5/TEC-9
+            --vec3(2391.296631, 3067.410889, 48.673950), -- Fusil à Pompe Double Coup/Fusil à Pompe Canon Scié
+			--vec3(-1861.740601, -316.905487, 49.128906),-- Pistolets SNS
+            --vec3(-1203.758301, -445.806580, 33.559692), -- Pistolets
+            --vec3(450.817596, 3533.090088, 33.374390), -- Pistolets Cal .50
+            --vec3(818.386841, -1395.995605, 26.297485), -- Fusil à Pompe/Fusil à Pompe Bullpup 
+			--vec3(917.538452, 3654.936279, 32.481323), -- Fusil Bullpup/Skorpion
 			/*
 			vec3(2745.95, 1415.23, 19.82),
 			vec3(1887.51, 3913.88, 32.02),
@@ -327,7 +324,7 @@ return {
 		}, targets = {
 
 		}
-	},
+	}, ]]
 
 	--[[ Fisherman = {
 		name = 'Pêcheur',
