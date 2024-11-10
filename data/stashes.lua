@@ -92,15 +92,6 @@ return {
 		groups = 'government'
 	},
 
-    {
-		coords = vector3(10000, 10000, 10000),
-		name = 'adminlocker',
-		label = 'Casier Admin',
-		owner = true,
-		slots = 500,
-		weight = 10000000
-	},
-
 	--[[{
 		coords = vec3(301.3, -600.23, 43.28),
 		name = 'emslocker',
