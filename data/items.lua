@@ -2158,6 +2158,13 @@ return {
 		close = true,
 	},
 
+	['creamtube'] = {
+		label = 'Tube de Crème',
+		weight = 100,
+		stack = true,
+		close = true,
+	},
+
 	['newspaper'] = {
 		label = 'Journal',
 		weight = 100,
