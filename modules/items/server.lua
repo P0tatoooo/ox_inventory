@@ -288,9 +288,9 @@ function Items.Metadata(inv, item, metadata, count)
 			metadata.serial = GenerateSerial(metadata.serial)
 		end
 
-		--if item.hash == `WEAPON_PETROLCAN` or item.hash == `WEAPON_HAZARDCAN` or item.hash == `WEAPON_FERTILIZERCAN` or item.hash == `WEAPON_FIREEXTINGUISHER` then
-			--metadata.ammo = metadata.durability
-		--end
+		if item.hash == `WEAPON_PETROLCAN` or item.hash == `WEAPON_HAZARDCAN` or item.hash == `WEAPON_FERTILIZERCAN` or item.hash == `WEAPON_FIREEXTINGUISHER` then
+			metadata.ammo = metadata.durability
+		end
 
         local degrade = item?.degrade
         if degrade then
