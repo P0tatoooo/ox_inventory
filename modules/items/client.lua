@@ -116,7 +116,7 @@ Item('parachute', function(data, slot)
 		ox_inventory:useItem(data, function(data)
 			if data then
 				local chute = `GADGET_PARACHUTE`
-				SetPlayerParachuteTintIndex(PlayerData.id, -1)
+				SetPlayerParachuteTintIndex(PlayerData.id, 6)
 				GiveWeaponToPed(cache.ped, chute, 0, true, false)
 				SetPedGadget(cache.ped, chute, true)
 				lib.requestModel(1269906701)
