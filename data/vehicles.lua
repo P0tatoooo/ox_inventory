@@ -101,6 +101,7 @@ return {
             [`rubble`] = {61, 1000000}
 		},
         boneIndex = {
+            [`outlaw`] = 10
         }
 	}
 }
