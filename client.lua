@@ -1868,7 +1868,7 @@ RegisterNUICallback('giveItem', function(data, cb)
 	cb(1)
 
 	if client.giveplayerlist then
-		local nearbyPlayers = lib.getNearbyPlayers(GetEntityCoords(playerPed), 3.0)
+		local nearbyPlayers = lib.getNearbyPlayers(GetEntityCoords(playerPed), 3.5)
         local nearbyCount = #nearbyPlayers
 
 		if nearbyCount == 0 then return end
