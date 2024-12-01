@@ -2870,7 +2870,7 @@ return {
 	},
 
 	['wheelchair'] = {
-		label = 'fauteuil Toulant',
+		label = 'Fauteuil Roulant',
 		weight = 1000,
 		stack = true,
 		close = true,
