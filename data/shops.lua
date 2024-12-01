@@ -110,6 +110,8 @@ return {
 			{ name = 'bigspeakers', price = 0, grade = 1},
 			{ name = 'ropebarrier', price = 0, grade = 1},
 			{ name = 'redcarpet', price = 0, grade = 1},
+			{ name = 'poster', price = 0, grade = 1},
+			{ name = 'posterremover', price = 0, grade = 1},
 		}, locations = {
 			vec3(-74.887909, -822.527466, 84.564087),
 		}, targets = {
