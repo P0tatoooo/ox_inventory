@@ -2274,8 +2274,8 @@ return {
 			status = { hunger = 10 },
 			anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 			prop = {
-				model = 'prop_cs_burger_01',
-				pos = { x = 0.02, y = 0.02, z = -0.02},
+				model = 'prop_choc_ego',
+				pos = { x = 0.0, y = 0.0, z = 0.0},
 				rot = { x = 0.0, y = 0.0, z = 0.0}
 			},
 			usetime = 2500,
