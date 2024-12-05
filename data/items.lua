@@ -2265,6 +2265,24 @@ return {
 		close = true,
 	},
 
+	['mmchocolatebox'] = {
+		label = 'Chocolats Meuh-Meuh',
+		weight = 200,
+		stack = true,
+		close = true,
+		client = {
+			status = { hunger = 10 },
+			anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+			prop = {
+				model = 'prop_cs_burger_01',
+				pos = { x = 0.02, y = 0.02, z = -0.02},
+				rot = { x = 0.0, y = 0.0, z = 0.0}
+			},
+			usetime = 2500,
+			export = 'MyCity_CoreV2.eatFood'
+		}
+	},
+
 	['canesyrup'] = {
 		label = 'Sirop de Canne',
 		weight = 200,
