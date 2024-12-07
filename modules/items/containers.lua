@@ -75,6 +75,7 @@ setContainerProperties('wallet', {
 		'picture',
 		'loyaltycard',
 		'uff_card',
+		'press_card',
 		'boat_license',
 		'grandcycletalisman'
     }

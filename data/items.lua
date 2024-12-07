@@ -3338,6 +3338,13 @@ return {
 		close = true,
 	},
 
+	["press_card"] = {
+		label = "Carte de Presse",
+		weight = 0.01,
+		stack = false,
+		close = true,
+	},
+
 	["lawyer_pass"] = {
 		label = "Carte d\'Avocat",
 		weight = 0.01,
