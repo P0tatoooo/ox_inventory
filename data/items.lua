@@ -132,8 +132,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -151,8 +152,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -170,8 +172,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -189,8 +192,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -208,8 +212,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -227,8 +232,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -246,8 +252,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -264,8 +271,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -282,8 +290,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -300,8 +309,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -318,8 +328,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -336,8 +347,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -353,8 +365,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -370,8 +383,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -388,8 +402,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -406,8 +421,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -424,8 +440,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -441,8 +458,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -458,8 +476,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -475,8 +494,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -493,8 +513,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -511,8 +532,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -529,8 +551,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -547,8 +570,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -564,8 +588,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -581,8 +606,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -599,8 +625,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -616,8 +643,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -633,8 +661,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -650,8 +679,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -667,8 +697,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -684,8 +715,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -703,8 +735,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -722,8 +755,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 60309,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -740,8 +774,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -758,8 +793,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -776,8 +812,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -795,8 +832,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -814,8 +852,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -833,8 +872,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -852,8 +892,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -871,8 +912,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.eatFood'
@@ -889,8 +931,9 @@ return {
                 anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
                 prop = {
                     model = 'prop_cs_burger_01',
-                    pos = { x = 0.02, y = 0.02, z = -0.02},
-                    rot = { x = 0.0, y = 0.0, z = 0.0}
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
                 },
                 usetime = 2500,
 				export = 'MyCity_CoreV2.drinkBeverage'
@@ -2275,6 +2318,7 @@ return {
 			anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 			prop = {
 				model = 'prop_choc_ego',
+				bone = 60309,
 				pos = { x = 0.0, y = 0.0, z = 0.0},
 				rot = { x = 0.0, y = 0.0, z = 0.0}
 			},
