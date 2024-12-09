@@ -3923,6 +3923,26 @@ return {
         }
 	},
 
+	["christmashood"] = {
+		label = "Hotte de Père Noël",
+		weight = 5000,
+		stack = false,
+		close = false,
+        client = {
+            add = function(total)
+                if total > 0 then
+                    TriggerServerEvent('MyCity_CoreV2:Transistep:HasTrolley', true)
+                end
+            end,
+
+            remove = function(total)
+                if total < 1 then
+                    TriggerServerEvent('MyCity_CoreV2:Skills:UpdateInventory')
+                end
+            end
+        }
+	},
+	
     ["log"] = {
 		label = "Bûche",
 		weight = 1000,
