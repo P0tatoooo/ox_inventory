@@ -2308,6 +2308,13 @@ return {
 		close = true,
 	},
 
+	['mmgift'] = {
+		label = 'Cadeau Meuh-Meuh',
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
 	['mmchristmascandies'] = {
 		label = 'Bonbons Meuhgique de Noël',
 		weight = 200,
