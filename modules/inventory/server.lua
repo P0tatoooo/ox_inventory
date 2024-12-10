@@ -2729,6 +2729,47 @@ end
 
 exports('CreateTemporaryStash', Inventory.CreateTemporaryStash)
 
+local function generateInvId2(prefix, citizenid)
+	while true do
+		local invId = ('%s-%s-%s'):format(prefix or 'drop', citizenid, math.random(100000, 999999))
+
+		if not Inventories[invId] then return invId end
+
+		Wait(0)
+	end
+end
+
+function Inventory.CreateTemporaryStash2(properties, citizenid)
+	properties.name = generateInvId2('fakeplayerinv',citizenid)
+
+	local inventory = {}
+	local totalWeight = 0
+
+	local ostime = os.time()
+	local data = properties.items
+	for _, v in pairs(data) do
+		local item = Items(v.name)
+		if item then
+			v.metadata = Items.CheckMetadata(v.metadata or {}, item, v.name, ostime)
+			local weight = Inventory.SlotWeight(item, v)
+			totalWeight = totalWeight + weight
+
+			inventory[v.slot] = {name = item.name, label = item.label, weight = weight, slot = v.slot, count = v.count, description = item.description, metadata = v.metadata, stack = item.stack, close = item.close}
+		end
+	end
+
+	local name, slots, maxWeight, coords = checkStashProperties(properties)
+	local inventory = Inventory.Create(name, properties.label, 'fakeplayerinv', slots, totalWeight, maxWeight, properties.owner, inventory, properties.groups)
+
+	if not inventory then return end
+
+	inventory.coords = coords
+
+	return inventory.id
+end
+
+exports('CreateTemporaryStash2', Inventory.CreateTemporaryStash2)
+
 function Inventory.InspectInventory(playerId, invId)
 	local inventory = invId ~= playerId and Inventory(invId)
 	local playerInventory = Inventory(playerId)
