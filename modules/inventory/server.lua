@@ -2739,8 +2739,8 @@ local function generateInvId2(prefix, citizenid)
 	end
 end
 
-function Inventory.CreateTemporaryStash2(properties, citizenid)
-	properties.name = generateInvId2('fakeplayerinv',citizenid)
+function Inventory.CreateTemporaryStash2(properties, prefix, citizenid)
+	properties.name = generateInvId2(prefix, citizenid)
 
 	local inventory = {}
 	local totalWeight = 0
@@ -2759,7 +2759,7 @@ function Inventory.CreateTemporaryStash2(properties, citizenid)
 	end
 
 	local name, slots, maxWeight, coords = checkStashProperties(properties)
-	local inventory = Inventory.Create(name, properties.label, 'fakeplayerinv', slots, totalWeight, maxWeight, properties.owner, inventory, properties.groups)
+	local inventory = Inventory.Create(name, properties.label, prefix, slots, totalWeight, maxWeight, properties.owner, inventory, properties.groups)
 
 	if not inventory then return end
 
