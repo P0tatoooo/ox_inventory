@@ -391,38 +391,4 @@ return {
 		}, targets = {
 		}
 	},
-
-    LockpickShop = {
-		name = 'Etagère',
-		groups = {
-			['mob'] = 0,
-		},
-		--[[blip = {
-			id = 403, colour = 69, scale = 0.8
-		},]] inventory = {
-			{ name = 'screwdriver', price = 1500, currency = 'black_money' },
-		}, locations = {
-			vec3(-770.426392, 354.105499, -150.945801),
-		}, targets = {
-
-		}
-	},
-
-    Lockpick2Shop = {
-		name = 'Etagère',
-		groups = {
-			['nightkidz'] = 0,
-			['crusaders'] = 0,
-		},
-		--[[blip = {
-			id = 403, colour = 69, scale = 0.8
-		},]] inventory = {
-			{ name = 'screwdriver2', price = 700, currency = 'black_money' },
-		}, locations = {
-            vec3(807.613159, -2378.083496, -150.945801),
-			vec3(2191.674805, 3495.547363, -150.945801),
-		}, targets = {
-
-		}
-	},
 }
