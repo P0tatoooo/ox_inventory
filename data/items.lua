@@ -2373,6 +2373,9 @@ return {
 		weight = 200,
 		stack = true,
 		close = true,
+        server = {
+            export = "MyCity_CoreV2.UseMMGift"
+        }
 	},
 
 	['mmchristmascandies'] = {
