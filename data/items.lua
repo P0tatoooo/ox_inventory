@@ -2975,14 +2975,14 @@ return {
 
 	['token'] = {
 		label = 'Jeton',
-		weight = 100,
+		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	['illegaltoken'] = {
 		label = 'Jeton RN',
-		weight = 100,
+		weight = 1,
 		stack = true,
 		close = true,
 	},
