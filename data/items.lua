@@ -2980,6 +2980,13 @@ return {
 		close = true,
 	},
 
+	['illegaltoken'] = {
+		label = 'Jeton RN',
+		weight = 100,
+		stack = true,
+		close = true,
+	},
+
 	['trout'] = {
 		label = 'Truite',
 		weight = 200,
