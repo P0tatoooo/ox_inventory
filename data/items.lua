@@ -3240,6 +3240,11 @@ return {
         weight = 1000,
         stack = true,
     },
+	['snow_tires'] = {
+        label = 'Pneus Chaines à Neige',
+        weight = 1000,
+        stack = true,
+    },
     ['stock_brakes'] = {
             label = 'Freins',
             weight = 1000,
