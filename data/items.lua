@@ -942,7 +942,7 @@ return {
     ---------------SOFT DRINKS-----------------------
     ['water'] = {
 		label = 'Bouteille Rainé',
-		weight = 500,
+		weight = 250,
 		stack = true,
 		close = true,
         client = {
@@ -956,7 +956,7 @@ return {
 
     ['cola'] = {
 		label = 'Canette d\'eCola',
-		weight = 330,
+		weight = 250,
 		stack = true,
 		close = true,
 		client = {
@@ -970,7 +970,7 @@ return {
 
     ['soda'] = {
 		label = 'Canette de Sprunk',
-		weight = 330,
+		weight = 250,
 		stack = true,
 		client = {
 			status = { thirst = 25 },
@@ -983,7 +983,7 @@ return {
 
     ['icetea'] = {
 		label = 'Canette d\'Ice Tea',
-		weight = 330,
+		weight = 250,
 		stack = true,
 		close = true,
 		client = {
@@ -1052,7 +1052,7 @@ return {
 
     ['biggrapejuice'] = {
 		label = 'Bouteille de Jus de Raisin',
-		weight = 1000,
+		weight = 500,
 		stack = true,
 		close = true,
 		client = {
@@ -1066,7 +1066,7 @@ return {
 
 	['bigapplejuice'] = {
 		label = 'Bouteille de Jus de Pommes',
-		weight = 1000,
+		weight = 500,
 		stack = true,
 		close = true,
 		client = {
@@ -1080,7 +1080,7 @@ return {
 
 	['bigorangejuice'] = {
 		label = 'Bouteille de Jus d\'Orange',
-		weight = 1000,
+		weight = 500,
 		stack = true,
 		close = true,
 		client = {
@@ -1094,7 +1094,7 @@ return {
 
 	['energydrink'] = {
 		label = 'Canette de Boisson Energisante',
-		weight = 450,
+		weight = 250,
 		stack = true,
 		close = true,
 		client = {
@@ -1108,7 +1108,7 @@ return {
 
 	['grapejuice'] = {
 		label = 'Brique de Jus de Raisin',
-		weight = 200,
+		weight = 250,
 		stack = true,
 		close = true,
 		client = {
@@ -1122,7 +1122,7 @@ return {
 
 	['applejuice'] = {
 		label = 'Brique de Jus de Pomme',
-		weight = 200,
+		weight = 250,
 		stack = true,
 		close = true,
 		client = {
@@ -1136,7 +1136,7 @@ return {
 
 	['orangejuice'] = {
 		label = 'Brique de Jus d\'Orange',
-		weight = 200,
+		weight = 250,
 		stack = true,
 		close = true,
 		client = {
@@ -1150,7 +1150,7 @@ return {
 
 	['limonade'] = {
 		label = 'Canette de Limonade',
-		weight = 450,
+		weight = 250,
 		stack = true,
 		close = true,
 		client = {
@@ -1321,7 +1321,7 @@ return {
 
 	['champagne'] = {
 		label = 'Champagne',
-		weight = 950,
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
@@ -1441,7 +1441,7 @@ return {
 
 	['whitewine'] = {
 		label = 'Vin Blanc',
-		weight = 850,
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
@@ -1456,7 +1456,7 @@ return {
 
 	['redwine'] = {
 		label = 'Vin Rouge',
-		weight = 850,
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
@@ -1471,7 +1471,7 @@ return {
 
 	['christmasredwine'] = {
 		label = 'Vin Rouge Nectar de Brume 2024',
-		weight = 850,
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
@@ -1486,7 +1486,7 @@ return {
 
 	['christmaswhitewine'] = {
 		label = 'Vin Blanc Nectar de Brume 2024',
-		weight = 850,
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
@@ -1501,7 +1501,7 @@ return {
 
 	['christmaschampagne'] = {
 		label = 'Champagne Nectar de Brume 2024',
-		weight = 850,
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
@@ -1516,7 +1516,7 @@ return {
 
 	['bigchampagne'] = {
 		label = 'Champagne Étoile d\'Or',
-		weight = 850,
+		weight = 1500,
 		stack = true,
 		close = true,
 		client = {
@@ -1531,7 +1531,7 @@ return {
 
 	['vodka'] = {
 		label = 'Vodka',
-		weight = 850,
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
@@ -1546,7 +1546,7 @@ return {
 
     ['whisky'] = {
 		label = 'Whisky',
-		weight = 850,
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
