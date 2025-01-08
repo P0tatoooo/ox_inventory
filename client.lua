@@ -1086,7 +1086,7 @@ local function updateInventory(data, weight)
 				itemCount[curItem.name] = (itemCount[curItem.name] or 0) - curItem.count
 			end
 
-			if item.count then
+			if item.count and item.name then
 				itemCount[item.name] = (itemCount[item.name] or 0) + item.count
 			end
 
