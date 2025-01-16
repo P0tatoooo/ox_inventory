@@ -1314,6 +1314,19 @@ return {
 		}
 	},
 
+	['sunbeachcocktail'] = {
+		label = 'Le Sun Beach',
+		weight = 750,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 50 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+		}
+	},
     ---------------ALCOOL DRINKS-----------------------
 
     ['absinthe'] = {
@@ -1761,6 +1774,20 @@ return {
 	},
 	['skyappelcocktail'] = {
 		label = 'Le Sky\' Appel',
+		weight = 750,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 15 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
+		}
+	},
+	['blacktopcocktail'] = {
+		label = 'Le Black Top',
 		weight = 750,
 		stack = true,
 		close = true,
