@@ -3127,6 +3127,13 @@ return {
 		close = true,
 	},
 
+	['packaged_pork'] = {
+		label = 'Barquette de Porc',
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
     ['packaged_fish'] = {
 		label = 'Barquette de Poisson',
 		weight = 200,
