@@ -4513,17 +4513,6 @@ return {
 		}
 	},
 
-	["b_p_heavy_pistol"] = {
-		label = "Pistolet Lourd Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for Heavy Pistol",
-		client = {
-			image = "bpheavypistol.png",
-		}
-	},
-
 	["main_frame_c"] = {
 		label = "M4 Corps Principal",
 		weight = 20,
@@ -4675,17 +4664,6 @@ return {
 		description = "Une partie du MP5",
 		client = {
 			image = "HandguardS.png",
-		}
-	},
-
-	["b_p_advanced_rifle"] = {
-		label = "Fusil Amélioré Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for Advanced Rifle",
-		client = {
-			image = "bpadvancedrifle.png",
 		}
 	},
 
@@ -4887,17 +4865,6 @@ return {
 		}
 	},
 
-	["b_p_pistol"] = {
-		label = "Pistolet Beretta Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for Pistol",
-		client = {
-			image = "bppistol.png",
-		}
-	},
-
 	["receiver_c"] = {
 		label = "M4 Récepteur",
 		weight = 100,
@@ -4928,17 +4895,6 @@ return {
 		description = "Une partie du SMG d\'Assault",
 		client = {
 			image = "MainGripAS.png",
-		}
-	},
-
-	["b_p_compact_rifle"] = {
-		label = "Fusil Amélioré Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for Compact Rifle",
-		client = {
-			image = "bpcompactrifle.png",
 		}
 	},
 
@@ -4994,17 +4950,6 @@ return {
 		description = "Une partie du UZI",
 		client = {
 			image = "HandguardRightM.png",
-		}
-	},
-
-	["b_p_50"] = {
-		label = "Pistolet Cal .50 Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for .50",
-		client = {
-			image = "bppistol50.png",
 		}
 	},
 
@@ -5250,17 +5195,6 @@ return {
 		}
 	},
 
-	["b_p_combat_pistol"] = {
-		label = "Glock Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for Combat Pistol",
-		client = {
-			image = "bpcombatpistol.png",
-		}
-	},
-
 	["trigger_l"] = {
 		label = "Fusil à Pompe Gachette",
 		weight = 10,
@@ -5470,17 +5404,6 @@ return {
 		}
 	},
 
-	["b_p_pump_shotgun"] = {
-		label = "Fusil à Pompe Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for Pump Shotgun",
-		client = {
-			image = "bppumpshotgun.png",
-		}
-	},
-
 	["gas_piston_tube_c_r"] = {
 		label = "AK-U Piston Tube",
 		weight = 10,
@@ -5613,17 +5536,6 @@ return {
 		}
 	},
 
-	["b_p_bullpup_rifle"] = {
-		label = "Fusil Bullpup Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for Bullpup Rifle",
-		client = {
-			image = "bpbullpuprifle.png",
-		}
-	},
-
 	["magazine_c"] = {
 		label = "M4 Chargeur",
 		weight = 10,
@@ -5643,17 +5555,6 @@ return {
 		description = "Une partie du M4",
 		client = {
 			image = "UpperHandguardC.png",
-		}
-	},
-
-	["b_p_special_carbine"] = {
-		label = "G36 Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for Special Carbine",
-		client = {
-			image = "bpspecialcarbine.png",
 		}
 	},
 
@@ -5753,17 +5654,6 @@ return {
 		description = "Une partie du AK-47",
 		client = {
 			image = "BarrelA.png",
-		}
-	},
-
-	["b_p_assault_rifle"] = {
-		label = "AK-47 Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for Assault Rifle",
-		client = {
-			image = "bpassaultrifle.png",
 		}
 	},
 
@@ -5910,17 +5800,6 @@ return {
 		}
 	},
 
-	["b_p_ceramic_pistol"] = {
-		label = "Pistolet Céramique Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for Ceramic Pistol",
-		client = {
-			image = "bpceramicpistol.png",
-		}
-	},
-
 	["recoil_spring_guide_h_p"] = {
 		label = "Pistolet Lourd Guide Ressort",
 		weight = 10,
@@ -6009,17 +5888,6 @@ return {
 		}
 	},
 
-	["b_p_s_m_g"] = {
-		label = "MP5 Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for SMG",
-		client = {
-			image = "bpsmg.png",
-		}
-	},
-
 	["magazine_spring_holder_p"] = {
 		label = "Pistolet Beretta Support Ressort Chargeur",
 		weight = 10,
@@ -6072,17 +5940,6 @@ return {
 		description = "Une partie du Pistolet Cal .50",
 		client = {
 			image = "Marteau.png",
-		}
-	},
-
-	["b_p_assault_smg"] = {
-		label = "SMG d'Assault Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for Assault SMG",
-		client = {
-			image = "bpassaultsmg.png",
 		}
 	},
 
@@ -6237,17 +6094,6 @@ return {
 		description = "Une partie du AK-U",
 		client = {
 			image = "NozzleHoldCR.png",
-		}
-	},
-
-	["b_p_micro_s_m_g"] = {
-		label = "UZI Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for Micro SMG",
-		client = {
-			image = "bpmicrosmg.png",
 		}
 	},
 
@@ -6556,17 +6402,6 @@ return {
 		description = "Une partie du Pistolet Beretta",
 		client = {
 			image = "GripRightP.png",
-		}
-	},
-
-	["b_p_s_n_s_pistol"] = {
-		label = "Pistolet SNS Blueprint",
-		weight = 1,
-		stack = true,
-		close = true,
-		description = "Blueprint for SNS Pistol",
-		client = {
-			image = "bpsnspistol.png",
 		}
 	},
 
