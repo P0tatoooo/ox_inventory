@@ -1652,7 +1652,7 @@ lib.callback.register('ox_inventory:swapItems', function(source, data)
 	local sameInventory = fromInventory.id == toInventory.id
 	local fromOtherPlayer = fromInventory.player and fromInventory ~= playerInventory
 	local toOtherPlayer = toInventory.player and toInventory ~= playerInventory
-	local toData = toInventory.items[data.toSlot]
+	local toData = toInventory.items and toInventory.items[data.toSlot] or nil
 
 	if not sameInventory and (fromInventory.type == 'policeevidence' or (toInventory.type == 'policeevidence' and toData)) then
 		local group, rank = server.hasGroup(playerInventory, shared.police)
@@ -1671,7 +1671,7 @@ lib.callback.register('ox_inventory:swapItems', function(source, data)
 	end)
 
 	if toInventory and (data.toType == 'newdrop' or fromInventory ~= toInventory or data.fromSlot ~= data.toSlot) then
-		local fromData = fromInventory.items[data.fromSlot]
+		local fromData = fromInventory.items and fromInventory.items[data.fromSlot] or nil
 
 		if not fromData then
 			return false, {
