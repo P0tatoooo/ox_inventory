@@ -919,6 +919,46 @@ return {
             }
         },
 
+		['caramelizedpork'] = {
+            label = 'Porc Caramélisé',
+            weight = 200,
+            stack = true,
+            close = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25},
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+
+		['eggbacon'] = {
+            label = 'Oeufs au Bacon',
+            weight = 200,
+            stack = true,
+            close = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25},
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+		
 		['tiramisu'] = {
             label = 'Tiramisu',
             weight = 200,
