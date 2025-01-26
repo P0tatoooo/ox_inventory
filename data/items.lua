@@ -1296,7 +1296,7 @@ return {
 		}
 	},
 	['bouboucocktail'] = {
-		label = 'Le Boubou',
+		label = 'Le Loyal',
 		weight = 150,
 		stack = true,
 		close = true,
@@ -1393,7 +1393,7 @@ return {
 	},
 
 	['sunbeachcocktail'] = {
-		label = 'Le Sun Beach',
+		label = 'Le PiouPiou',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1851,7 +1851,7 @@ return {
 		}
 	},
 	['skyappelcocktail'] = {
-		label = 'Le Sky\' Appel',
+		label = 'Le Patriote',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -1876,6 +1876,48 @@ return {
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkAlcohol',
 			alcohol = 30
+		}
+	},
+	['phoenixcocktail'] = {
+		label = 'Le Phoénix',
+		weight = 750,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 15 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
+		}
+	},
+	['sombrerococktail'] = {
+		label = 'Le Sombrero',
+		weight = 750,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 15 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
+		}
+	},
+	['vpcocktail'] = {
+		label = 'Le VP',
+		weight = 750,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 15 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 60
 		}
 	},
 	['orgasmcocktail'] = {
