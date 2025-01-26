@@ -3632,6 +3632,13 @@ return {
 		close = true,
 	},
 
+	["cc_license_pro"] = {
+		label = "Permis de Port d'Armes Professionnel",
+		weight = 0.01,
+		stack = false,
+		close = true,
+	},
+
 	["uff_card"] = {
 		label = "Carte de l'UFF",
 		weight = 0.01,
