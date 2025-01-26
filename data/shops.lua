@@ -184,6 +184,8 @@ return {
             {name = 'WEAPON_FLASHBANG', price = 0, grade = 3},--, license = 'weapon'},
             {name = 'ziptie', price = 0, grade = 3},
 
+			{name = 'parachute', price = 0, grade = 3},
+
             --{ name = 'airsoftball', price = 0, grade = 7},
             --{name = 'WEAPON_AIRSOFTGLOCK20', price = 0, grade = 7},
             --{name = 'WEAPON_AIRSOFTAK47', price = 0, grade = 7},
