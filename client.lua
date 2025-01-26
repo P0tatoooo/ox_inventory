@@ -1545,6 +1545,7 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 		if client.parachute and GetPedParachuteState(playerPed) ~= -1 then
 			Utils.DeleteEntity(client.parachute)
 			client.parachute = false
+			TriggerServerEvent("MyCity_CoreV2:Parachute:HasParachute", false)
 		end
 
 		if EnableWeaponWheel then return end
@@ -2088,12 +2089,13 @@ lib.callback.register('ox_inventory:getVehicleData', function(netid)
 	end
 end)
 
-
-
+RegisterNetEvent("qb-radialmenu:removeparachute", function()
+	Utils.DeleteEntity(client.parachute)
+	client.parachute = false
+	TriggerServerEvent("MyCity_CoreV2:Parachute:RemoveParachute", true)
+end)
 
 ---------------------
-
-
 
 local longWeapons = {
 	[`WEAPON_BAT`] = true,

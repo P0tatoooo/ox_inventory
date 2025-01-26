@@ -110,6 +110,7 @@ Item('armour', function(data, slot)
 	end
 end)
 
+MenuItemId = nil
 client.parachute = false
 Item('parachute', function(data, slot)
 	if not client.parachute then
@@ -124,8 +125,32 @@ Item('parachute', function(data, slot)
 				if slot.metadata.type then
 					SetPlayerParachuteTintIndex(PlayerData.id, slot.metadata.type)
 				end
+
+				TriggerServerEvent("MyCity_CoreV2:Parachute:HasParachute", true)
 			end
 		end)
+	end
+end)
+
+RegisterNetEvent("qb-radialmenu:client:onRadialmenuOpen", function()
+	if not client.parachute then
+		if MenuItemId then
+			exports["qb-radialmenu"]:RemoveOption(MenuItemId)
+			MenuItemId = nil
+		end
+	else
+		if not MenuItemId then
+			MenuItemId = exports["qb-radialmenu"]:AddOption(
+			{
+				id = "remove_parachute",
+				title = "Enlever Parachute",
+				icon = "link",
+				type = "client",
+				event = "qb-radialmenu:removeparachute",
+				shouldClose = true
+			},	
+			MenuItemId)
+		end
 	end
 end)
 
