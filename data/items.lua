@@ -2400,19 +2400,13 @@ return {
 	},
 
     ['screwdriver'] = {
-		label = 'Tournevis',
+		label = 'Tournevis Rouge',
 		weight = 260,
         stack = false
 	},
 
     ['screwdriver2'] = {
-		label = 'Tournevis',
-		weight = 260,
-        stack = false
-	},
-
-    ['screwdriver3'] = {
-		label = 'Tournevis',
+		label = 'Tournevis Bleu',
 		weight = 260,
         stack = false
 	},
@@ -3632,8 +3626,22 @@ return {
 		close = true,
 	},
 
+	['metal2'] = {
+		label = 'Métal de Qualité',
+		weight = 30,
+		stack = true,
+		close = true,
+	},
+
     ['steel'] = {
 		label = 'Acier',
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
+	['steel2'] = {
+		label = "Acier de Qualité",
 		weight = 1000,
 		stack = true,
 		close = true,
