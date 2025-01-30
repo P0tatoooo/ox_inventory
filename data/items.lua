@@ -4328,7 +4328,7 @@ return {
 	},
 
 	["pistol_body"] = {
-		label = "Corps de Pistolet Beretta",
+		label = "Corps de Pistolet",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -4342,7 +4342,7 @@ return {
 	},
 
 	["pistol_barrel"] = {
-		label = "Canon de Pistolet Beretta",
+		label = "Canon de Pistolet",
 		weight = 1000,
 		stack = true,
 		close = true,
