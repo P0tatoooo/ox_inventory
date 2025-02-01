@@ -725,7 +725,7 @@ return {
 
         ['WEAPON_MINIGUN'] = {
 			label = 'Minigun',
-			weight = 38500,
+			weight = 12000,
 			durability = 0.1,
 			ammoname = 'arammo',
             degrade = 40320
