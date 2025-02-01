@@ -7,6 +7,7 @@ local webHook = GetConvar('inventory:webhook', '')
 if webHook ~= '' then
 	local validHosts = {
 		['i.imgur.com'] = true,
+		['r2.fivemanage.com'] = true,
 	}
 
 	local validExtensions = {
