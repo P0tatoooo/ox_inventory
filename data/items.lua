@@ -3393,6 +3393,19 @@ return {
 		stack = false
 	},
 
+	["atmconsole"] = {
+		label = "Console ATM",
+		weight = 5000,
+		stack = false
+	},
+
+	["atmframe"] = {
+		label = "Cadre ATM",
+		weight = 5000,
+		stack = false
+	},
+
+
     ['stock_turbo'] = {
             label = 'Turbo Custom',
             weight = 1000,
