@@ -3384,27 +3384,26 @@ return {
     ["atm"] = {
 		label = "ATM",
 		weight = 10000,
-		stack = false
+		stack = true
 	},
 
     ["atmempty"] = {
 		label = "ATM Vide",
 		weight = 10000,
-		stack = false
+		stack = true
 	},
 
 	["atmconsole"] = {
 		label = "Console ATM",
 		weight = 5000,
-		stack = false
+		stack = true
 	},
 
 	["atmframe"] = {
 		label = "Cadre ATM",
 		weight = 5000,
-		stack = false
+		stack = true
 	},
-
 
     ['stock_turbo'] = {
             label = 'Turbo Custom',
