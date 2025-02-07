@@ -2854,6 +2854,13 @@ return {
 		close = true,
 	},
 
+	['trainbomb'] = {
+		label = 'Bombe pour Train',
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
+
 	['golf'] = {
 		label = 'Balle de Golf',
 		weight = 100,
