@@ -3161,7 +3161,7 @@ return {
 	},
 
 	['bloodinjector'] = {
-		label = 'Auto-Injecteur',
+		label = 'Auto-Injecteur de Sang',
 		weight = 100,
 		stack = true,
 		close = true,
