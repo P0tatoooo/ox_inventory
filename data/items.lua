@@ -3160,6 +3160,13 @@ return {
 		close = true,
 	},
 
+	['bloodinjector'] = {
+		label = 'Auto-Injecteur',
+		weight = 100,
+		stack = true,
+		close = true,
+	},
+
 	['painting'] = {
 		label = 'Tableau',
 		weight = 100,
