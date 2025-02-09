@@ -3011,7 +3011,34 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+	},
 
+	['humanblood'] = {
+		label = 'Sang Humain',
+		weight = 250,
+		stack = true,
+		close = true,
+	},
+
+	['humanfat'] = {
+		label = 'Graisse Humaine',
+		weight = 250,
+		stack = true,
+		close = true,
+	},
+
+	['humanbone'] = {
+		label = 'Os Humain',
+		weight = 250,
+		stack = true,
+		close = true,
+	},
+
+	['humanorgan'] = {
+		label = 'Organes Humains',
+		weight = 250,
+		stack = true,
+		close = true,
 	},
 
 	['meth'] = {
