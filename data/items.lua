@@ -2950,6 +2950,62 @@ return {
 		close = true,
 	},
 
+	['dugganbrightgreencoin'] = {
+		label = 'Pièce Verte',
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	['dugganbrightredcoin'] = {
+		label = 'Pièce Rouge',
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	['duggandarkbluecoin'] = {
+		label = 'Pièce Bleue Foncé',
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	['duggangoldencoin'] = {
+		label = 'Pièce Doré',
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	['dugganlightbluecoin'] = {
+		label = 'Pièce Bleue Clair',
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	['dugganpinkcoin'] = {
+		label = 'Pièce Rose',
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	['dugganrdarkedcoin'] = {
+		label = 'Pièce Rouge Foncé',
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	['dugganwhitecoin'] = {
+		label = 'Pièce Blanche',
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
 	['meat'] = {
 		label = 'Viande',
 		weight = 250,
