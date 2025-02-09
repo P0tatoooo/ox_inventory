@@ -4007,6 +4007,12 @@ return {
 		weight = 500,
 		stack = true
 	},
+	['trashbag'] = {
+		label = 'Sac Poubelle',
+		weight = 100,
+		stack = true
+	},
+	
 	
     ["poster"] = {
         label = "Poster",
