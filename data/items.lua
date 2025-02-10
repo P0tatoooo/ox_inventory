@@ -2987,7 +2987,7 @@ return {
 	},
 
 	['duggangoldencoin'] = {
-		label = 'Pièce Doré',
+		label = 'Pièce Dorée',
 		weight = 1,
 		stack = true,
 		close = true,
