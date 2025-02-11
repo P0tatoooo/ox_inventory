@@ -2452,7 +2452,7 @@ RegisterServerEvent('ox_inventory:giveItem', function(slot, target, count)
 			---@todo manually call swapItems or something?
 			if Inventory.AddItem(toInventory, item, count, data.metadata, toSlot) then
 				if Inventory.RemoveItem(fromInventory, item, count, data.metadata, slot) then
-                    TriggerEvent('MyCity_CoreV2:PlayerToPlayer:Logs', count, data.name, toInventory.label, fromInventory.owner)
+                    TriggerEvent('MyCity_CoreV2:PlayerToPlayer:Logs', count, data.name, toInventory.label, fromInventory.owner, toInventory.owner)
 					if server.loglevel > 0 then
 						lib.logger(fromInventory.owner, 'giveItem', ('"%s" gave %sx %s to "%s"'):format(fromInventory.label, count, data.name, toInventory.label))
 					end
