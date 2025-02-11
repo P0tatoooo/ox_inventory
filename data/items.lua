@@ -3050,7 +3050,7 @@ return {
 	},
 
 	['humanorgan'] = {
-		label = 'Organes Humains',
+		label = 'Organe Humain',
 		weight = 250,
 		stack = true,
 		close = true,
