@@ -560,6 +560,25 @@ return {
             }
         },
 
+		['baconator'] = {
+            label = 'The Baconator',
+            weight = 200,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 50 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+
         ['fruitsalad'] = {
             label = 'Salade de Fruits',
             weight = 150,
@@ -784,6 +803,26 @@ return {
 
 		['cheddarfrenchfries'] = {
             label = 'Frites au Cheddar',
+            weight = 200,
+            stack = true,
+            close = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25},
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 60309,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+
+		['baconcheddarfrenchfries'] = {
+            label = 'Frites Bacon-Cheddar',
             weight = 200,
             stack = true,
             close = true,
