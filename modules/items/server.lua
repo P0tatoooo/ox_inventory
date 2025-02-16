@@ -292,7 +292,7 @@ function Items.Metadata(inv, item, metadata, count)
 			metadata.ammo = metadata.durability
 		end
 
-        local degrade = item?.degrade
+        local degrade = (metadata and metadata?.degrade) or item?.degrade
         if degrade then
             if not metadata.durability or (metadata.durability < 101 and metadata.durability ~= 0) then
                 metadata.durability = os.time()+(degrade * 60)
