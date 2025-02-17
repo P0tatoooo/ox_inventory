@@ -1811,7 +1811,7 @@ lib.callback.register('ox_inventory:swapItems', function(source, data)
 				toData = table.clone(fromData)
 				toData.count = data.count
 				toData.slot = data.toSlot
-				toData.weight = Inventory.SlotWeight(Items(toData.name), toData)
+				toData.weight = Inventory.SlotWeight(Items(toData.name), toData) or 0
 
 				if fromInventory.type == 'container' or sameInventory or (toInventory.weight + toData.weight <= toInventory.maxWeight) then
 					hookPayload.action = 'move'
