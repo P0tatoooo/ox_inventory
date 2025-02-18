@@ -2198,6 +2198,7 @@ end
 exports.ox_inventory:displayMetadata('maxammo', 'Capacité du Chargeur')
 exports.ox_inventory:displayMetadata('ammocount', 'Munitions')
 exports.ox_inventory:displayMetadata('quality', 'Qualité')
+exports.ox_inventory:displayMetadata('drugpurity', 'Pureté')
 exports.ox_inventory:displayMetadata('plate', 'Plaque')
 exports.ox_inventory:displayMetadata('points', 'Points')
 exports.ox_inventory:displayMetadata('stampdate', 'Dernier Tampon')
