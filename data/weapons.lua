@@ -447,7 +447,7 @@ return {
 		},
 
 		['WEAPON_PISTOL50'] = {
-			label = 'Desert Eagle',
+			label = 'Pistolet Cal .50',
 			weight = 2000,
 			durability = 0.5,
 			clip = {'extendedpistol50clip','pistol50clip'},
@@ -955,7 +955,7 @@ return {
 			}
 		},
 
-		['grip'] = {
+		['weapongrip'] = {
 			label = 'Poignée',
 			type = 'grip',
 			weight = 280,

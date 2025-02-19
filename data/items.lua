@@ -4790,6 +4790,17 @@ return {
 		}
 	},
 
+	["grip"] = {
+		label = "Pistolet Cal .50 Poignée",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "Une partie du Pistolet Cal .50",
+		client = {
+			image = "Grip.png",
+		}
+	},
+
 	["front_sight"] = {
 		label = "Pistolet Cal .50 Viseur Avant",
 		weight = 1,
@@ -5836,7 +5847,7 @@ return {
 	},
 
 	["rear_sight_p"] = {
-		label = "Pistol Viseur Arrière",
+		label = "Pistolet Viseur Arrière",
 		weight = 10,
 		stack = true,
 		close = true,
