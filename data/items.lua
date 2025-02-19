@@ -5847,7 +5847,7 @@ return {
 	},
 
 	["rear_sight_p"] = {
-		label = "Pistolet Viseur Arrière",
+		label = "Pistolet Beretta Viseur Arrière",
 		weight = 10,
 		stack = true,
 		close = true,
@@ -6759,12 +6759,20 @@ return {
 		}
 	},
 
+	["weapongrippart"] = {
+		label = "Arme Poignée",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "Une partie d'Arme",
+	},
+
 	["weaponstock"] = {
 		label = "Arme Crosse",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie d'Arme'",
+		description = "Une partie d'Arme",
 		client = {
 			image = "StockC.png",
 		}
