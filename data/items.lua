@@ -6770,17 +6770,6 @@ return {
 		}
 	},
 
-	["weapongrip"] = {
-		label = "Arme Poignée",
-		weight = 2,
-		stack = true,
-		close = true,
-		description = "Une partie d'Arme",
-		client = {
-			image = "GripC.png",
-		}
-	},
-
 	["weaponbarrel"] = {
 		label = "Arme Canon",
 		weight = 10,
