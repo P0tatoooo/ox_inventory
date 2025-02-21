@@ -2140,7 +2140,7 @@ end
 
 function canSwapWeapon(weaponhash)
     local playerPed = PlayerPedId()
-    if ((weaponhash == "electricscooter") or (longWeapons[weaponhash] or longWeapons[GetSelectedPedWeapon(playerPed)])) then--and not isAdmin then
+    if ((weaponhash == "electricscooter") or (longWeapons[weaponhash] or longWeapons[GetSelectedPedWeapon(playerPed)])) and not isAdmin then
 		local gender = isMpPed()
 		
 		if gender then
