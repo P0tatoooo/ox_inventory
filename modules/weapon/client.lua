@@ -13,16 +13,18 @@ anims[`GROUP_STUNGUN`] = anims[`GROUP_PISTOL`]
 local holsterStyle = 0
 
 AddEventHandler("MyCity_Emotes:setHolsterStyle", function(style)
-	if style.anim == "rightholster" then
-		holsterStyle = 1
-	elseif style.anim == "frontholster" then
-		holsterStyle = 2
-	elseif style.anim == "leftholster" then
-		holsterStyle = 3
-	elseif style.anim == "rightlegholster" then
-		holsterStyle = 4
-	else
-		holsterStyle = 0
+	if style then
+		if style.anim == "rightholster" then
+			holsterStyle = 1
+		elseif style.anim == "frontholster" then
+			holsterStyle = 2
+		elseif style.anim == "leftholster" then
+			holsterStyle = 3
+		elseif style.anim == "rightlegholster" then
+			holsterStyle = 4
+		else
+			holsterStyle = 0
+		end
 	end
 end)
 
