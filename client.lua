@@ -2140,7 +2140,7 @@ end
 
 function canSwapWeapon(weaponhash)
     local playerPed = PlayerPedId()
-    if (longWeapons[weaponhash] or longWeapons[GetSelectedPedWeapon(playerPed)]) and not isAdmin then
+    if ((weaponhash == "electricscooter") or (longWeapons[weaponhash] or longWeapons[GetSelectedPedWeapon(playerPed)])) then--and not isAdmin then
 		local gender = isMpPed()
 		
 		if gender then
@@ -2174,6 +2174,7 @@ function canSwapWeapon(weaponhash)
 
     return false
 end
+exports("CanSwapWeapon", canSwapWeapon)
 
 exports.ox_inventory:displayMetadata('maxammo', 'Capacité du Chargeur')
 exports.ox_inventory:displayMetadata('ammocount', 'Munitions')
