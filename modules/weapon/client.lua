@@ -13,10 +13,39 @@ anims[`GROUP_STUNGUN`] = anims[`GROUP_PISTOL`]
 local holsterStyle = 0
 
 AddEventHandler("MyCity_Emotes:setHolsterStyle", function(style)
-    holsterStyle = style
+	if style.anim == "rightholster" then
+		holsterStyle = 1
+	elseif style.anim == "frontholster" then
+		holsterStyle = 2
+	elseif style.anim == "leftholster" then
+		holsterStyle = 3
+	elseif style.anim == "rightlegholster" then
+		holsterStyle = 4
+	else
+		holsterStyle = 0
+	end
 end)
 
 TriggerEvent("MyCity_Emotes:getHolsterStyle")
+
+local pistolWeapons = {
+	["WEAPON_PISTOL"] = true,
+	["WEAPON_COMBATPISTOL"] = true,
+	["WEAPON_APPISTOL"] = true,
+	["WEAPON_PISTOL50"] = true,
+	["WEAPON_SNSPISTOL"] = true,
+	["WEAPON_HEAVYPISTOL"] = true,
+	["WEAPON_VINTAGEPISTOL"] = true,
+	["WEAPON_MARKSMANPISTOL"] = true,
+	["WEAPON_MACHINEPISTOL"] = true,
+	["WEAPON_VINTAGEPISTOL"] = true,
+	["WEAPON_PISTOL_MK2"] = true,
+	["WEAPON_SNSPISTOL_MK2"] = true,
+	["WEAPON_FLAREGUN"] = true,
+	["WEAPON_STUNGUN"] = true,
+	["WEAPON_REVOLVER"] = true,
+	["WEAPON_REVOLVER_MK2"] = true,
+}
 
 function playUnholsterAnim()
     local playerPed = PlayerPedId()
@@ -26,9 +55,9 @@ function playUnholsterAnim()
     elseif holsterStyle == 1 then
         Utils.PlayAnimAdvanced(800, 'reaction@intimidation@cop@unarmed', 'intro', coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(playerPed), 8.0, 3.0, -1, 50, 0.325)
     elseif holsterStyle == 2 then
-        Utils.PlayAnimAdvanced(600, "combat@combat_reactions@pistol_1h_gang", "0", coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(playerPed), 8.0, 3.0, -1, 50, 0.325)
+        Utils.PlayAnimAdvanced(500, "combat@combat_reactions@pistol_1h_gang", "0", coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(playerPed), 8.0, 3.0, -1, 50, 0.125)
     elseif holsterStyle == 3 then
-        Utils.PlayAnimAdvanced(1000, "combat@combat_reactions@pistol_1h_gang", "0", coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(playerPed), 8.0, 3.0, -1, 50, 0.125)
+        Utils.PlayAnimAdvanced(500, "combat@combat_reactions@pistol_1h_gang", "0", coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(playerPed), 8.0, 3.0, -1, 50, 0.125)
     elseif holsterStyle == 4 then
         Utils.PlayAnimAdvanced(500, "reaction@male_stand@big_variations@d", "react_big_variations_m", coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(playerPed), 8.0, 3.0, -1, 50, 0.325)
     end
@@ -43,8 +72,11 @@ function playHolsterAnim()
     elseif holsterStyle == 1 then
         -- Hoster Droite
         Utils.PlayAnimAdvanced(450, 'reaction@intimidation@cop@unarmed', 'outro', coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(cache.ped), 8.0, 3.0, -1, 50, 0)
-    elseif holsterStyle == 2 or holsterStyle == 3 then
-        -- Hoster Devant et Holster Gauche
+    elseif holsterStyle == 2 then
+        -- Hoster Devant
+        Utils.PlayAnimAdvanced(600, "combat@combat_reactions@pistol_1h_gang", "0", coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(cache.ped), 8.0, 3.0, -1, 50, 0.325)
+	elseif holsterStyle == 3 then
+        -- Holster Gauche
         Utils.PlayAnimAdvanced(600, "combat@combat_reactions@pistol_1h_gang", "0", coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(cache.ped), 8.0, 3.0, -1, 50, 0.125)
     elseif holsterStyle == 4 then
         --Holster Jambe
@@ -62,23 +94,27 @@ function Weapon.Equip(item, data, noWeaponAnim)
 	local coords = GetEntityCoords(playerPed, true)
     local sleep
 
-	if client.weaponanims then
-		if noWeaponAnim or (cache.vehicle and vehicleIsCycle(cache.vehicle)) then
-			goto skipAnim
+	if pistolWeapons[data.name] then
+        playHolsterAnim()
+    else
+		if client.weaponanims then
+			if noWeaponAnim or (cache.vehicle and vehicleIsCycle(cache.vehicle)) then
+				goto skipAnim
+			end
+
+			local anim = data.anim or anims[GetWeapontypeGroup(data.hash)]
+
+			if anim == anims[`GROUP_PISTOL`] and not client.hasGroup(shared.police) then
+				anim = nil
+			end
+
+			sleep = anim and anim[3] or 1200
+
+			Utils.PlayAnimAdvanced(sleep, anim and anim[1] or 'reaction@intimidation@1h', anim and anim[2] or 'intro', coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(playerPed), 8.0, 3.0, sleep*2, 50, 0.1)
 		end
 
-		local anim = data.anim or anims[GetWeapontypeGroup(data.hash)]
-
-		if anim == anims[`GROUP_PISTOL`] and not client.hasGroup(shared.police) then
-			anim = nil
-		end
-
-		sleep = anim and anim[3] or 1200
-
-		Utils.PlayAnimAdvanced(sleep, anim and anim[1] or 'reaction@intimidation@1h', anim and anim[2] or 'intro', coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(playerPed), 8.0, 3.0, sleep*2, 50, 0.1)
+		::skipAnim::
 	end
-
-	::skipAnim::
 
 	item.hash = data.hash
 	item.ammo = data.ammoname
@@ -142,27 +178,38 @@ function Weapon.Disarm(currentWeapon, noAnim)
 	if currentWeapon?.timer then
 		currentWeapon.timer = nil
 
+		if not noAnim then
+			if not canSwapWeapon(currentWeapon.hash) then
+				return lib.notify({ type = 'error', description = 'Vous ne pouvez pas sortir/ranger votre arme dans votre cul !' })
+			end
+		end
+
         TriggerServerEvent('ox_inventory:updateWeapon')
 		SetPedAmmo(cache.ped, currentWeapon.hash, 0)
 
 		if client.weaponanims and not noAnim then
-			if cache.vehicle and vehicleIsCycle(cache.vehicle) then
-				goto skipAnim
+
+			if pistolWeapons[currentWeapon.name] then
+				playUnholsterAnim()
+			else
+				if cache.vehicle and vehicleIsCycle(cache.vehicle) then
+					goto skipAnim
+				end
+
+				ClearPedSecondaryTask(cache.ped)
+
+				local item = Items[currentWeapon.name]
+				local coords = GetEntityCoords(cache.ped, true)
+				local anim = item.anim or anims[GetWeapontypeGroup(currentWeapon.hash)]
+
+				if anim == anims[`GROUP_PISTOL`] and not client.hasGroup(shared.police) then
+					anim = nil
+				end
+
+				local sleep = anim and anim[6] or 1400
+
+				Utils.PlayAnimAdvanced(sleep, anim and anim[4] or 'reaction@intimidation@1h', anim and anim[5] or 'outro', coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(cache.ped), 8.0, 3.0, sleep, 50, 0)
 			end
-
-			ClearPedSecondaryTask(cache.ped)
-
-			local item = Items[currentWeapon.name]
-			local coords = GetEntityCoords(cache.ped, true)
-			local anim = item.anim or anims[GetWeapontypeGroup(currentWeapon.hash)]
-
-			if anim == anims[`GROUP_PISTOL`] and not client.hasGroup(shared.police) then
-				anim = nil
-			end
-
-			local sleep = anim and anim[6] or 1400
-
-			Utils.PlayAnimAdvanced(sleep, anim and anim[4] or 'reaction@intimidation@1h', anim and anim[5] or 'outro', coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(cache.ped), 8.0, 3.0, sleep, 50, 0)
 		end
 
 		::skipAnim::

@@ -17,7 +17,7 @@ function Utils.PlayAnimAdvanced(wait, dict, name, posX, posY, posZ, rotX, rotY, 
         time, 0, 0)
     RemoveAnimDict(dict)
 
-    if wait > 0 then Wait(wait) end
+    if wait > 0 then Wait(wait) ClearPedSecondaryTask(cache.ped) end
 end
 
 ---@param flag number

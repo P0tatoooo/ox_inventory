@@ -527,6 +527,10 @@ local function useSlot(slot, noAnim)
 
 			if IsCinematicCamRendering() then SetCinematicModeActive(false) end
 
+			if not canSwapWeapon(data.hash) then
+                return lib.notify({ type = 'error', description = 'Vous ne pouvez pas sortir/ranger votre arme dans votre cul !' })
+            end
+
 			if currentWeapon then
 				local weaponSlot = currentWeapon.slot
 				currentWeapon = Weapon.Disarm(currentWeapon)
@@ -539,10 +543,6 @@ local function useSlot(slot, noAnim)
 
             if data.hash ~= GetSelectedPedWeapon(playerPed) then
                 return lib.notify({ type = 'error', description = locale('cannot_use', data.label) })
-            end
-
-            if not canSwapWeapon(data.hash) then
-                return lib.notify({ type = 'error', description = 'Vous ne pouvez pas sortir/ranger votre ' .. data.label .. ' sans un sac approprié !' })
             end
 
             RemoveWeaponFromPed(cache.ped, data.hash)
@@ -2133,66 +2133,46 @@ local longWeapons = {
 	[`WEAPON_SPECIALCARBINE_MK2`] = true,
 }
 
-local function isWeaponLong(newWeapon)
-	print(newWeapon, type(newWeapon))
-    if type(newWeapon) == 'string' then
-        return longWeapons[GetHashKey(newWeapon)]
-    else
-        return longWeapons[newWeapon]
-    end
-	return false
+local function isMpPed()
+	local currentModel = GetEntityModel(PlayerPedId())
+	if currentModel == `mp_m_freemode_01` then return "male" elseif currentModel == `mp_f_freemode_01` then return "female" else return false end
 end
 
-local bagsIndex = {
-    male = {9,34,35,36,39,42,43,45,50,51,52,53,85,86,89,90,126,127,130,131},
-    female = {9,33,34,35,37,40,41,45,46,47,48,80,81,84,85,121,122,125,126}
-}
+function canSwapWeapon(weaponhash)
+    local playerPed = PlayerPedId()
+    if (longWeapons[weaponhash] or longWeapons[GetSelectedPedWeapon(playerPed)]) and not isAdmin then
+		local gender = isMpPed()
+		
+		if gender then
+			local currentBagIndex = GetPedDrawableVariation(playerPed, 5)
+			local hasBag
 
-function canSwapWeapon(weaponname)
-    --[[ local playerPed = PlayerPedId()
-    local hasBag
+			if gender == "male" then
+				hasBag = QBCore.Shared.MaleBags[currentBagIndex]
+			else
+				hasBag = QBCore.Shared.FemaleBags[currentBagIndex]
+			end
 
-    if (isWeaponLong(weaponname) or isWeaponLong(GetSelectedPedWeapon(playerPed))) then--and not isAdmin then
-		local currentBagIndex = GetPedDrawableVariation(playerPed, 5)
+			if hasBag then
+				return true
+			else
+				local vehFront, vehicleDistance = QBCore.Functions.GetClosestVehicle()
 
-		if QBCore.Functions.GetPlayerData().charinfo.gender == 0 then
-			for k,v in pairs(bagsIndex.male) do
-				if v == currentBagIndex then
-					hasBag = true
-					break
+				if vehFront ~= -1 and  vehicleDistance < 20.0 then
+					local hasBag = exports.ox_inventory:CanAccessTrunk(vehFront)
+					return hasBag
+				else
+					return false
 				end
 			end
 		else
-			for k,v in pairs(bagsIndex.female) do
-				if v == currentBagIndex then
-					hasBag = true
-					break
-				end
-			end
+			return true
 		end
+	else
+		return true
+    end
 
-		if not hasBag then
-			local vehFront, vehicleDistance = QBCore.Functions.GetClosestVehicle()
-
-			if vehFront ~= -1 and  vehicleDistance < 20.0 then
-				local lockStatus = GetVehicleDoorLockStatus(vehFront)
-				if lockStatus == 1 or lockStatus == 0 then
-					local d1 = GetModelDimensions(GetEntityModel(vehFront))
-					local playerCoords = GetEntityCoords(playerPed)
-					local vehCoords = GetOffsetFromEntityInWorldCoords(vehFront, 0.0,d1["y"],0.0)
-					local distance = #(playerCoords - vehCoords)
-
-					if distance < 2.0 then
-						hasBag = true
-					end
-				end
-			end
-		end
-    else
-        hasBag = true
-    end ]]
-
-    return true
+    return false
 end
 
 exports.ox_inventory:displayMetadata('maxammo', 'Capacité du Chargeur')
