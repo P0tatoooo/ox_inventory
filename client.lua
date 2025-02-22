@@ -2106,6 +2106,7 @@ local longWeapons = {
 	[`WEAPON_BATTLEAXE`] = true,
 	[`WEAPON_POOLCUE`] = true,
 	[`WEAPON_WRENCH`] = true,
+	[`WEAPON_SLEDGEHAMMER`] = true,
 	[`WEAPON_MICROSMG`] = true,
 	[`WEAPON_ASSAULTSMG`] = true,
 	[`WEAPON_MINISMG`] = true,
