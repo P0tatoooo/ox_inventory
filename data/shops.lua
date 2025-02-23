@@ -387,8 +387,6 @@ return {
 		inventory = {
             { name = 'donut', price = 10, currency = 'prisonticket' },
             { name = 'water', price = 10, currency = 'prisonticket' },
-            { name = 'cigarette', price = 15, currency = 'prisonticket' },
-            { name = 'cigar', price = 15, currency = 'prisonticket' },
 		}, locations = {
 			vec3(1780.971436, 2559.032959, 45.657837)
 		}, targets = {
