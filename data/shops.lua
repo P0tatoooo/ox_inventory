@@ -201,6 +201,50 @@ return {
 		}
 	},
 
+	SheriffArmoury = {
+		name = 'Armurerie BCSO',
+		groups = {
+			['sheriff'] = 0
+		},
+		--[[blip = {
+			id = 110, colour = 84, scale = 0.8
+		},]] inventory = {
+            {name = 'handcuffs', price = 0, grade = 0},
+            {name = 'radio', price = 0, grade = 0},
+            {name = 'policebelt', price = 0, grade = 0},
+            {name = 'binoculars', price = 0, grade = 0},
+            {name = 'metalwand', price = 0, grade = 0},
+            {name = 'sprayremover', price = 0, grade = 0},
+            {name = 'posterremover', price = 0, grade = 0},
+            {name = 'empty_evidence_bag', price = 0, grade = 0},
+            {name = 'divinggear', price = 0},
+
+            {name = 'spikestrip', price = 0, grade = 1},
+            { name = 'cone', price = 0, grade = 1},
+			{ name = 'gazebotent', price = 0, grade = 1},
+			{ name = 'worklight', price = 0, grade = 1},
+			{ name = 'policebarrier', price = 0, grade = 1},
+			{ name = 'heavypolicebarrier', price = 0, grade = 1},
+			{ name = 'heavypolicebarrier2', price = 0, grade = 1},
+
+            {name = 'WEAPON_RADARGUN', price = 0, grade = 1},
+			{name = 'WEAPON_PEPPERSPRAY', price = 0, grade = 1},
+            {name = 'WEAPON_ANTIDOTE', price = 0, grade = 1},
+
+            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 2, label = "Gilet Cadet", image = "bulletproof_rookie" }, price = 0},
+
+            {name = 'WEAPON_SMOKEGRENADE', price = 0, grade = 3},--, license = 'weapon'},
+            {name = 'WEAPON_SMOK2GRENADE', price = 0, grade = 3},--, license = 'weapon'},
+            {name = 'WEAPON_FLASHBANG', price = 0, grade = 3},--, license = 'weapon'},
+            {name = 'ziptie', price = 0, grade = 3},
+			{name = 'parachute', price = 0, grade = 3},
+		}, locations = {
+			vec3(1837.890747, 3688.118652, 34.189236),
+		}, targets = {
+			--{ loc = vec3(453.21, -980.03, 30.68), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 }
+		}
+	},
+
 	BoatDealerPrinter = {
 		name = 'Photocopieuse',
 		groups = {

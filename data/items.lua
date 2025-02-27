@@ -105,7 +105,7 @@ return {
     },
 
     ['policebelt'] = {
-		label = 'Ceinturon LSPD',
+		label = 'Ceinturon',
 		weight = 100,
 		stack = false,
 		close = false,
@@ -4193,21 +4193,21 @@ return {
 	},
 
 	['policebarrier'] = {
-		label = 'Barrière LSPD',
+		label = 'Barrière Police',
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	['heavypolicebarrier'] = {
-		label = 'Barrière Lourde LSPD',
+		label = 'Barrière Lourde Police',
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	['heavypolicebarrier2'] = {
-		label = 'Barrière Lourde Etendue LSPD',
+		label = 'Barrière Lourde Etendue Police',
 		weight = 1000,
 		stack = true,
 		close = true,

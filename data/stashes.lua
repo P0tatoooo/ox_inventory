@@ -35,6 +35,24 @@ return {
 		weight = 100000,
 		groups = shared.police
 	},
+	{
+		coords = vec3(1837.155640, 3685.334717, 34.189220),
+		target = {
+			loc = vec3(1837.155640, 3685.334717, 34.189220),
+			length = 1.2,
+			width = 5.6,
+			heading = 0,
+			minZ = 29.49,
+			maxZ = 32.09,
+			label = 'Open personal locker'
+		},
+		name = 'sherifflocker',
+		label = 'Casier BCSO',
+		owner = true,
+		slots = 70,
+		weight = 100000,
+		groups = "sheriff"
+	},
     {
 		coords = vector3(-523.9194, -176.1098, 42.83658),
 		target = {
