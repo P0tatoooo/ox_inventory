@@ -233,7 +233,9 @@ return {
 			{name = 'WEAPON_PEPPERSPRAY', price = 0, grade = 1},
             {name = 'WEAPON_ANTIDOTE', price = 0, grade = 1},
 
-            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 2, label = "Gilet Cadet", image = "bulletproof_rookie" }, price = 0},
+            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 52, label = "Gilet Shérif", image = "bulletproof_sheriff" }, price = 0},
+			{name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 53, label = "Gilet Shérif Tactique", image = "bulletproof_tacticalsheriff" }, price = 0},
+			{name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 54, label = "Gilet Shérif Banalisé", image = "bulletproof_banasheriff" }, price = 0},
 
             {name = 'WEAPON_SMOKEGRENADE', price = 0, grade = 3},--, license = 'weapon'},
             {name = 'WEAPON_SMOK2GRENADE', price = 0, grade = 3},--, license = 'weapon'},
