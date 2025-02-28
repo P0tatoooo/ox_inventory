@@ -121,7 +121,9 @@ return {
 
 	PoliceArmoury = {
 		name = 'Armurerie LSPD',
-		groups = shared.police,
+		groups = {
+			['police'] = 0,
+		},
 		--[[blip = {
 			id = 110, colour = 84, scale = 0.8
 		},]] inventory = {
@@ -264,7 +266,8 @@ return {
     LSPDPrinter = {
 		name = 'Photocopieuse',
 		groups = {
-			['police'] = 0
+			['police'] = 0,
+			['sheriff'] = 0,
 		},
 		--[[blip = {
 			id = 403, colour = 69, scale = 0.8
@@ -276,6 +279,7 @@ return {
 		}, locations = {
 			vec3(433.753845, -979.318665, 31.01),
 			vec3(-451.859344, 6013.661621, 31.706177),
+			vec3(1832.909302, 3682.334473, 34.189301),
 		}, targets = {
 
 		}

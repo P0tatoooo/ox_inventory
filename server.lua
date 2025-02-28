@@ -139,7 +139,9 @@ local function openInventory(source, invType, data, ignoreSecurityChecks)
 				return
 			end
 		elseif invType == 'policeevidence' then
-			if server.hasGroup(left, shared.police) then
+			if server.hasGroup(left, "sheriff") then
+				right = Inventory(('sheriffevidence-%s'):format(data))
+			elseif server.hasGroup(left, shared.police) then
 				right = Inventory(('evidence-%s'):format(data))
 			end
 		elseif invType == 'dumpster' then
