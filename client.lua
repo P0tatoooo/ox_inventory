@@ -1390,15 +1390,17 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 	end
 
 	for _, data in pairs(inventory) do
-		local item = Items[data.name]
+		if data.name then
+			local item = Items[data.name]
 
-		if item then
-			item.count += data.count
-			ItemData[data.name].count += data.count
-			local add = item.client?.add
+			if item then
+				item.count += data.count
+				ItemData[data.name].count += data.count
+				local add = item.client?.add
 
-			if add then
-				add(item.count)
+				if add then
+					add(item.count)
+				end
 			end
 		end
 	end

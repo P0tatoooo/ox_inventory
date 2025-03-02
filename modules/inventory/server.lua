@@ -2270,15 +2270,17 @@ local function prepareInventorySave(inv, buffer, time)
     local n = 0
 
     for k, v in pairs(inv.items) do
-        if not Items.UpdateDurability(inv, v, Items(v.name), nil, time) and shouldSave then
-            n += 1
-            buffer[n] = {
-                name = v.name,
-                count = v.count,
-                slot = k,
-                metadata = next(v.metadata) and v.metadata or nil
-            }
-        end
+		if v.name then
+			if not Items.UpdateDurability(inv, v, Items(v.name), nil, time) and shouldSave then
+				n += 1
+				buffer[n] = {
+					name = v.name,
+					count = v.count,
+					slot = k,
+					metadata = next(v.metadata) and v.metadata or nil
+				}
+			end
+		end
 	end
 
     if not shouldSave then return end
