@@ -1594,7 +1594,7 @@ local function dropItem(source, playerInventory, fromData, data)
 
 	TriggerClientEvent('ox_inventory:createDrop', -1, dropId, Inventory.Drops[dropId], playerInventory.open and source, slot)
 
-    TriggerEvent('MyCity_CoreV2:OxInventoryDrop:Logs', data.count, toData.name, dropId, playerInventory.owner)
+    TriggerEvent('MyCity_CoreV2:OxInventoryDrop:Logs', data.count, toData.name, toData.metadata, dropId, playerInventory.owner)
 	if server.loglevel > 0 then
 		lib.logger(playerInventory.owner, 'swapSlots', ('%sx %s transferred from "%s" to "%s"'):format(data.count, toData.name, playerInventory.label, dropId))
 	end
@@ -1750,7 +1750,7 @@ lib.callback.register('ox_inventory:swapItems', function(source, data)
 						toInventory.weight = toWeight
 						toData, fromData = Inventory.SwapSlots(fromInventory, toInventory, data.fromSlot, data.toSlot) --[[@as table]]
 
-                        TriggerEvent('MyCity_CoreV2:OxInventory:Logs2', fromData.count, fromData.name, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id, toData.count, toData.name, playerInventory.owner, fromInventory.owner, toInventory.owner)
+                        TriggerEvent('MyCity_CoreV2:OxInventory:Logs2', fromData.count, fromData.name, fromData.metadata, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id, toData.count, toData.name, toData.metadata, playerInventory.owner, fromInventory.owner, toInventory.owner)
 						if server.loglevel > 0 then
 							lib.logger(playerInventory.owner, 'swapSlots', ('%sx %s transferred from "%s" to "%s" for %sx %s'):format(fromData.count, fromData.name, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id, toData.count, toData.name))
 						end
@@ -1794,7 +1794,7 @@ lib.callback.register('ox_inventory:swapItems', function(source, data)
 							TriggerClientEvent('ox_inventory:itemNotify', toInventory.id, { toData, 'ui_added', data.count })
 						end
 
-                        TriggerEvent('MyCity_CoreV2:OxInventory:Logs', data.count, fromData.name, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id, playerInventory.owner, fromInventory.owner, toInventory.owner)
+                        TriggerEvent('MyCity_CoreV2:OxInventory:Logs', data.count, fromData.name, fromData.metadata, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id, playerInventory.owner, fromInventory.owner, toInventory.owner)
 						if server.loglevel > 0 then
 							lib.logger(playerInventory.owner, 'swapSlots', ('%sx %s transferred from "%s" to "%s"'):format(data.count, fromData.name, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id))
 						end
@@ -1845,7 +1845,7 @@ lib.callback.register('ox_inventory:swapItems', function(source, data)
 							TriggerClientEvent('ox_inventory:itemNotify', toInventory.id, { fromData, 'ui_added', data.count })
 						end
 
-                        TriggerEvent('MyCity_CoreV2:OxInventory:Logs', data.count, fromData.name, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id, playerInventory.owner, fromInventory.owner, toInventory.owner)
+                        TriggerEvent('MyCity_CoreV2:OxInventory:Logs', data.count, fromData.name, fromData.metadata, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id, playerInventory.owner, fromInventory.owner, toInventory.owner)
 						if server.loglevel > 0 then
 							lib.logger(playerInventory.owner, 'swapSlots', ('%sx %s transferred from "%s" to "%s"'):format(data.count, fromData.name, fromInventory.owner and fromInventory.label or fromInventory.id, toInventory.owner and toInventory.label or toInventory.id))
 						end
