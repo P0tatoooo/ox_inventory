@@ -4675,6 +4675,7 @@ return {
     ['prepaidphone'] = {
 		label = 'Téléphone Jetable',
 		weight = 300,
+		degrade = 120,
         stack = false,
         client = {
             export = "MyCity_CoreV2.usePrepaidPhone",
