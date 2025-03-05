@@ -3,7 +3,7 @@ return {
         ['WEAPON_ADVANCEDRIFLE'] = {
 			label = 'Fusil Amélioré',
 			weight = 3180,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedarclip','arclip'},
             degrade = 40320
 		},
@@ -11,7 +11,7 @@ return {
 		['WEAPON_APPISTOL'] = {
 			label = 'Pistolet Perforant',
 			weight = 1220,
-			durability = 0.5,
+			durability = 0.3,
 			clip = {'extendedapppistolclip','apppistolclip'},
             degrade = 40320
 		},
@@ -19,7 +19,7 @@ return {
 		['WEAPON_ASSAULTRIFLE'] = {
 			label = 'AK-47',
 			weight = 5000,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'drumarclip','extendedarclip','arclip'},
             degrade = 40320
 		},
@@ -27,7 +27,7 @@ return {
 		['WEAPON_ASSAULTRIFLE_MK2'] = {
 			label = 'AK-47 MK2',
 			weight = 3300,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedarclip','arclip'},
             degrade = 40320
 		},
@@ -43,7 +43,7 @@ return {
 		['WEAPON_ASSAULTSMG'] = {
 			label = 'SMG d\'Assault',
 			weight = 2850,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedassaultsmgclip','assaultsmgclip'},
             degrade = 40320
 		},
@@ -75,7 +75,7 @@ return {
 		['WEAPON_BULLPUPRIFLE'] = {
 			label = 'Fusil Bullpup',
 			weight = 2900,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedarclip','arclip'},
             degrade = 40320
 		},
@@ -83,7 +83,7 @@ return {
 		['WEAPON_BULLPUPRIFLE_MK2'] = {
 			label = 'Fusil Bullpup MK2',
 			weight = 2900,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedarclip','arclip'},
             degrade = 40320
 		},
@@ -105,7 +105,7 @@ return {
 		['WEAPON_CARBINERIFLE'] = {
 			label = 'M4',
 			weight = 3100,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'drumarclip','extendedarclip','arclip'},
             degrade = 40320
 		},
@@ -113,7 +113,7 @@ return {
 		['WEAPON_CARBINERIFLE_MK2'] = {
 			label = 'M4 MK2',
 			weight = 3000,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedarclip','arclip'},
             degrade = 40320
 		},
@@ -121,7 +121,7 @@ return {
 		['WEAPON_COMBATMG'] = {
 			label = 'Mitrailleuse de Combat',
 			weight = 10000,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedcombatmgclip','combatmgclip'},
             degrade = 40320
 		},
@@ -129,7 +129,7 @@ return {
 		['WEAPON_COMBATMG_MK2'] = {
 			label = 'Mitrailleuse de Combat MK2',
 			weight = 10500,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedcombatmgclip','combatmgclip'},
             degrade = 40320
 		},
@@ -137,7 +137,7 @@ return {
 		['WEAPON_COMBATPDW'] = {
 			label = 'ADP',
 			weight = 3400,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'drumpdwclip','extendedpdwclip','pdwclip'},
             degrade = 40320
 		},
@@ -145,7 +145,7 @@ return {
 		['WEAPON_COMBATPISTOL'] = {
 			label = 'Glock',
 			weight = 970,
-			durability = 0.5,
+			durability = 0.25,
 			clip = {'extendedcombatpistolclip','combatpistolclip'},
             degrade = 40320
 		},
@@ -161,7 +161,7 @@ return {
 		['WEAPON_COMPACTRIFLE'] = {
 			label = 'AK-U',
 			weight = 3200,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'drumarclip','extendedarclip','arclip'},
             degrade = 40320
 		},
@@ -249,7 +249,7 @@ return {
 		['WEAPON_GUSENBERG'] = {
 			label = 'Mitraillette Gusenberg',
 			weight = 4900,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedgusenbergclip','gusenbergclip'},
             degrade = 40320
 		},
@@ -269,7 +269,7 @@ return {
 		['WEAPON_HEAVYRIFLE'] = {
 			label = 'FN SCAR',
 			weight = 2750,
-			durability = 0.3,
+			durability = 0.15,
             clip = {'extendedarclip','arclip'},
             degrade = 40320
 		},
@@ -282,7 +282,7 @@ return {
 		['WEAPON_HEAVYPISTOL'] = {
 			label = 'Pistolet Lourd',
 			weight = 1100,
-			durability = 0.5,
+			durability = 0.25,
 			clip = {'extendedheavypistolclip','heavypistolclip'},
             degrade = 40320
 		},
@@ -332,7 +332,7 @@ return {
 		['WEAPON_MACHINEPISTOL'] = {
 			label = 'TEC-9',
 			weight = 1400,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'drummachinepistolclip','extendedmachinepistolclip','machinepistolclip'},
             degrade = 40320
 		},
@@ -364,7 +364,7 @@ return {
 		['WEAPON_MG'] = {
 			label = 'Mitrailleuse',
 			weight = 9000,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedmgclip','mgclip'},
             degrade = 40320
 		},
@@ -372,7 +372,7 @@ return {
 		['WEAPON_MICROSMG'] = {
 			label = 'UZI',
 			weight = 4000,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedmicrosmgclip','microsmgclip'},
             degrade = 40320
 		},
@@ -380,14 +380,14 @@ return {
 		['WEAPON_MILITARYRIFLE'] = {
 			label = 'AUG A3',
 			weight = 3600,
-			durability = 0.3,
+			durability = 0.15,
             degrade = 40320
 		},
 
 		['WEAPON_MINISMG'] = {
 			label = 'Skorpion',
 			weight = 2770,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedminismgclip','minismgclip'},
             degrade = 40320
 		},
@@ -441,7 +441,7 @@ return {
 		['WEAPON_PISTOL'] = {
 			label = 'Pistolet Beretta',
 			weight = 970,
-			durability = 0.5,
+			durability = 0.25,
             clip = {'extendedpistolclip','pistolclip'},
             degrade = 40320
 		},
@@ -449,7 +449,7 @@ return {
 		['WEAPON_PISTOL50'] = {
 			label = 'Pistolet Cal .50',
 			weight = 2000,
-			durability = 0.5,
+			durability = 0.25,
 			clip = {'extendedpistol50clip','pistol50clip'},
             degrade = 40320
 		},
@@ -457,7 +457,7 @@ return {
 		['WEAPON_PISTOL_MK2'] = {
 			label = 'Pistolet Beretta MK2',
 			weight = 970,
-			durability = 0.5,
+			durability = 0.25,
 			clip = {'extendedpistolclip','pistolclip'},
             degrade = 40320
 		},
@@ -517,7 +517,7 @@ return {
 		['WEAPON_SMG'] = {
 			label = 'MP5',
 			weight = 3084,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'drumsmgclip','extendedsmgclip','smgclip'},
             degrade = 40320
 		},
@@ -525,7 +525,7 @@ return {
 		['WEAPON_SMG_MK2'] = {
 			label = 'MP5 Mk2',
 			weight = 2700,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedsmgclip','smgclip'},
             degrade = 40320
 		},
@@ -553,7 +553,7 @@ return {
 		['WEAPON_SNSPISTOL'] = {
 			label = 'Pistolet SNS',
 			weight = 465,
-			durability = 0.5,
+			durability = 0.25,
 			clip = {'extendedsnspistolclip','snspistolclip'},
             degrade = 40320
 		},
@@ -569,7 +569,7 @@ return {
 		['WEAPON_SPECIALCARBINE'] = {
 			label = 'G36',
 			weight = 3000,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'drumarclip','extendedarclip','arclip'},
             degrade = 40320
 		},
@@ -577,7 +577,7 @@ return {
 		['WEAPON_SPECIALCARBINE_MK2'] = {
 			label = 'G36 MK2',
 			weight = 3370,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedarclip','arclip'},
             degrade = 40320
 		},
@@ -597,7 +597,7 @@ return {
 		['WEAPON_STUNGUN'] = {
 			label = 'Tazer',
 			weight = 227,
-			durability = 0.5,
+			durability = 0.25,
 		},
 
 		['WEAPON_SWEEPERSHOTGUN'] = {
@@ -618,7 +618,7 @@ return {
 		['WEAPON_VINTAGEPISTOL'] = {
 			label = 'Pistolet Vintage',
 			weight = 100,
-			durability = 0.5,
+			durability = 0.25,
 			clip = {'extendedvintagepistolclip','vintagepistolclip'},
             degrade = 40320
 		},
@@ -656,14 +656,14 @@ return {
         ['WEAPON_HUNTINGRIFLE'] = {
 			label = 'Fusil de Chasse',
 			weight = 4800,
-			durability = 0.5,
+			durability = 0.25,
 			ammoname = 'huntingammo',
             degrade = 40320
 		},
         ['WEAPON_RADARGUN'] = {
 			label = 'Pistolet Radar',
 			weight = 2000,
-			durability = 0.5
+			durability = 0.25
 		},
         ['WEAPON_PEPPERSPRAY'] = {
 			label = 'Bombe Lacrymogène',
@@ -678,7 +678,7 @@ return {
         ['WEAPON_BEANBAG'] = {
 			label = 'Fusil à Pompe Non Létal',
 			weight = 5000,
-			durability = 0.2,
+			durability = 0.5,
 			ammoname = 'llammo',
             degrade = 40320
 		},
@@ -686,7 +686,7 @@ return {
 		['WEAPON_PRECISIONRIFLE'] = {
 			label = 'Fusil de précision',
 			weight = 4800,
-			durability = 0.5,
+			durability = 0.25,
 			ammoname = 'sniperammo',
             degrade = 40320
 		},
@@ -702,7 +702,7 @@ return {
         ['WEAPON_TACTICALRIFLE'] = {
 			label = 'M16',
 			weight = 3400,
-			durability = 0.3,
+			durability = 0.15,
 			clip = {'extendedarclip','arclip'},
             degrade = 40320
 		},
@@ -734,7 +734,7 @@ return {
         ['WEAPON_HOMINGLAUNCHER'] = {
 			label = 'Homing Launcher',
 			weight = 10000,
-			durability = 0.6,
+			durability = 0.3,
 			ammoname = 'rocketammo',
             degrade = 40320
 		},
@@ -742,7 +742,7 @@ return {
         ['WEAPON_RPG'] = {
 			label = 'RPG',
 			weight = 5000,
-			durability = 0.3,
+			durability = 0.15,
 			ammoname = 'rocketammo',
             degrade = 40320
 		},
@@ -750,7 +750,7 @@ return {
         ['WEAPON_RAILGUN'] = {
 			label = 'Railgun',
 			weight = 3570,
-			durability = 0.5,
+			durability = 0.25,
 			ammoname = 'laserammo',
             degrade = 40320
 		},
@@ -758,7 +758,7 @@ return {
         ['WEAPON_RAYCARBINE'] = {
 			label = 'Fusil Laser',
 			weight = 3620,
-			durability = 0.2,
+			durability = 0.15,
 			ammoname = 'laserammo',
             degrade = 40320
 		},
@@ -766,7 +766,7 @@ return {
         ['WEAPON_RAYPISTOL'] = {
 			label = 'Up-n-Atomizer',
 			weight = 1540,
-			durability = 0.5,
+			durability = 0.25,
             degrade = 40320
 		},
 
@@ -782,7 +782,7 @@ return {
         ['WEAPON_TECPISTOL'] = {
 			label = 'Tactical SMG',
 			weight = 1500,
-			durability = 0.5,
+			durability = 0.25,
 			ammoname = 'pistolammo',
             clip = {'extendedtecpistolclip','tecpistolclip'},
             degrade = 40320
@@ -791,7 +791,7 @@ return {
         ['WEAPON_CERAMICPISTOL'] = {
 			label = 'Pistolet Céramique',
 			weight = 700,
-			durability = 0.5,
+			durability = 0.25,
 			ammoname = 'pistolammo',
             clip = {'extendedceramicpistolclip','ceramicpistolclip'},
             degrade = 40320
@@ -802,7 +802,7 @@ return {
 		['WEAPON_PISTOLXM3'] = {
 			label = 'WM 29 Pistol',
 			weight = 969,
-			durability = 0.2,
+			durability = 0.25,
 			ammoname = 'pistolammo',
             degrade = 40320
 		},
