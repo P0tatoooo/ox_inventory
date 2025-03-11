@@ -2121,6 +2121,7 @@ local longWeapons = {
 	[`WEAPON_ASSAULTRIFLE`] = true,
 	[`WEAPON_PUMPSHOTGUN`] = true,
 	[`WEAPON_BULLPUPSHOTGUN`] = true,
+	[`WEAPON_BULLPUPRIFLE`] = true,
 	[`WEAPON_CARBINERIFLE`] = true,
 	[`WEAPON_SMG`] = true,
 	[`WEAPON_PUMPSHOTGUN_MK2`] = true,
