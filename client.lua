@@ -1041,6 +1041,9 @@ function client.closeInventory(server)
 		SendNUIMessage({ action = 'closeInventory' })
 		SetInterval(client.interval, 200)
 		Wait(200)
+		Citizen.Wait(50)
+		SetControlNormal(0, 24, 0.0) -- Left Click Release
+		SetControlNormal(0, 25, 0.0) -- Right Click Release
 
 		if invOpen ~= nil then return end
 
