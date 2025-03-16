@@ -1056,6 +1056,116 @@ return {
 				export = 'MyCity_CoreV2.drinkBeverage'
             }
         },
+
+		['muffin'] = {
+            label = 'Muffin',
+            weight = 100,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+
+		['coffeemuffin'] = {
+            label = 'Muffin Café',
+            weight = 100,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+
+		['cheesecake'] = {
+            label = 'Cheesecake',
+            weight = 100,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+		['macchiato'] = {
+			label = 'Macchiato',
+			weight = 250,
+			stack = true,
+			close = true,
+			client = {
+				status = { thirst = 25 },
+				anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+				prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+				usetime = 2500,
+				export = 'MyCity_CoreV2.drinkBeverage'
+			}
+		},
+		['capuccino'] = {
+			label = 'Capuccino',
+			weight = 250,
+			stack = true,
+			close = true,
+			client = {
+				status = { thirst = 25 },
+				anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+				prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+				usetime = 2500,
+				export = 'MyCity_CoreV2.drinkBeverage'
+			}
+		},
+		['mochacoffee'] = {
+			label = 'Café Mocha',
+			weight = 250,
+			stack = true,
+			close = true,
+			client = {
+				status = { thirst = 25 },
+				anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+				prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+				usetime = 2500,
+				export = 'MyCity_CoreV2.drinkBeverage'
+			}
+		},
+		['lattecoffee'] = {
+			label = 'Café Latté',
+			weight = 250,
+			stack = true,
+			close = true,
+			client = {
+				status = { thirst = 25 },
+				anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+				prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+				usetime = 2500,
+				export = 'MyCity_CoreV2.drinkBeverage'
+			}
+		},
+		
     ---------------SOFT DRINKS-----------------------
     ['water'] = {
 		label = 'Bouteille Rainé',
