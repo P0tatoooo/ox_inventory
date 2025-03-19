@@ -126,7 +126,7 @@ local function openInventory(source, invType, data, ignoreSecurityChecks)
                     local lockStatus = entity > 0 and GetVehicleDoorLockStatus(entity)
 
                     -- 0: no lock; 1: unlocked; 8: boot unlocked
-                    if lockStatus > 1 and lockStatus ~= 8 then
+                    if lockStatus and lockStatus > 1 and lockStatus ~= 8 then
                         return false, false, 'vehicle_locked'
                     end
                 end
