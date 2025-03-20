@@ -2558,6 +2558,13 @@ return {
 		},
 	},
 
+	["liartable"] = {
+		label = "Liar's Table",
+		weight = 1000,
+		stack = true,
+		close = true
+	},
+
 	['basketball_hoop'] = {
 		label = 'Panier de Basketball',
 		weight = 250,
