@@ -511,6 +511,10 @@ lib.addCommand({'additem', 'giveitem'}, {
             metadata = {ammoname = item.ammoname, maxammo = item.ammocount, ammocount = item.ammocount}
         end
 
+		if item.name == "prepaidphone" then
+			metadata = {phoneinfos = "infosdealers"}
+		end
+
 		local success, response = Inventory.AddItem(inventory, item.name, count, metadata)
 
 		if not success then
