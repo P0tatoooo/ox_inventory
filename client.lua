@@ -2191,6 +2191,14 @@ exports.ox_inventory:displayMetadata('plate', 'Plaque')
 exports.ox_inventory:displayMetadata('points', 'Points')
 exports.ox_inventory:displayMetadata('stampdate', 'Dernier Tampon')
 
+exports.ox_inventory:displayMetadata('weed', 'Cannabis')
+exports.ox_inventory:displayMetadata('crack', 'Crack')
+exports.ox_inventory:displayMetadata('coke', 'Cocaine')
+exports.ox_inventory:displayMetadata('heroin', 'Héroine')
+exports.ox_inventory:displayMetadata('opium', 'Opium')
+exports.ox_inventory:displayMetadata('meth', 'Meth')
+exports.ox_inventory:displayMetadata('analyzeddate', 'Date Analyse')
+
 --exports.ox_inventory:displayMetadata('degrade', 'Dégradation')
 
 AddEventHandler('onResourceStop', function(resource)

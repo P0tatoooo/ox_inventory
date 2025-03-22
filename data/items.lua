@@ -2688,7 +2688,6 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
-
 	},
 
 	['binoculars'] = {
@@ -2696,6 +2695,24 @@ return {
 		weight = 1000,
 		stack = true,
 		close = true,
+	},
+
+	['breathtest'] = {
+		label = "Ethylotest",
+		weight = 125,
+		stack = false,
+	},
+
+	['salivarytest'] = {
+		label = "Test Salivaire",
+		weight = 125,
+		stack = false,
+	},
+
+	['bloodtestkit'] = {
+		label = "Kit d'Analyse de Sang",
+		weight = 125,
+		stack = false,
 	},
 
 	['bloodsample'] = {
