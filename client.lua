@@ -2198,6 +2198,8 @@ exports.ox_inventory:displayMetadata('heroin', 'Héroine')
 exports.ox_inventory:displayMetadata('opium', 'Opium')
 exports.ox_inventory:displayMetadata('meth', 'Meth')
 exports.ox_inventory:displayMetadata('analyzeddate', 'Date Analyse')
+exports.ox_inventory:displayMetadata('testresult', 'Résultat')
+exports.ox_inventory:displayMetadata('date', 'Date')
 
 --exports.ox_inventory:displayMetadata('degrade', 'Dégradation')
 

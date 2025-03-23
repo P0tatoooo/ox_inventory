@@ -2700,19 +2700,20 @@ return {
 	['breathtest'] = {
 		label = "Ethylotest",
 		weight = 125,
-		stack = false,
+		stack = true,
+        consume = 0
 	},
 
 	['salivarytest'] = {
 		label = "Test Salivaire",
 		weight = 125,
-		stack = false,
+		stack = true,
 	},
 
 	['bloodtestkit'] = {
 		label = "Kit d'Analyse de Sang",
 		weight = 125,
-		stack = false,
+		stack = true,
 	},
 
 	['bloodsample'] = {
