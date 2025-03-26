@@ -51,6 +51,8 @@ function Inventory.CanAccessTrunk(entity, dontmove)
     if vehicleClass == 14 or vehicleClass == 15 or vehicleClass == 16 then
         offset = GetEntityCoords(entity)
         maxDistance = 5.0
+	elseif vehicleClass == 20 then
+		maxDistance = 2.5
     end
 
     if #(GetEntityCoords(cache.ped) - offset) < maxDistance then
