@@ -2352,7 +2352,7 @@ local function saveInventories(clearInventories)
                 if NetworkGetEntityFromNetworkId(inv.netid) ~= inv.entityId then
                     Inventory.Remove(inv)
                 end
-            elseif time - inv.time >= inventoryClearTime then
+            elseif inv.type ~= "drop" and time - inv.time >= inventoryClearTime then
                 Inventory.Remove(inv)
             end
         end
