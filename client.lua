@@ -2163,10 +2163,9 @@ function canSwapWeapon(weaponhash)
 			if hasBag then
 				return true
 			else
-				local vehFront, vehicleDistance = QBCore.Functions.GetClosestVehicle()
-
+				local vehFront, vehicleDistance = QBCore.Functions.GetClosestVehicle(nil, `electricscooter`, false)
 				if vehFront ~= -1 and  vehicleDistance < 20.0 then
-					local hasBag = exports.ox_inventory:CanAccessTrunk(vehFront)
+					local hasBag = exports.ox_inventory:CanAccessTrunk(vehFront, true)
 					return hasBag
 				else
 					return false
