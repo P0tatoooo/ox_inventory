@@ -2755,21 +2755,28 @@ return {
 
 	['candies'] = {
 		label = 'Bonbons',
-		weight = 200,
+		weight = 20,
+		stack = true,
+		close = true,
+	},
+
+	['mmcigarette'] = {
+		label = 'Cigarette Meuh-Meuh',
+		weight = 20,
 		stack = true,
 		close = true,
 	},
 
 	['mmcandies'] = {
 		label = 'Bonbons Meuh-Meuh',
-		weight = 200,
+		weight = 20,
 		stack = true,
 		close = true,
 	},
 
 	['mmcandies2'] = {
 		label = 'Bonbons Festifs Meuh-Meuh',
-		weight = 200,
+		weight = 20,
 		stack = true,
 		close = true,
 	},
@@ -2786,7 +2793,7 @@ return {
 
 	['mmchristmascandies'] = {
 		label = 'Bonbons Meuhgique de Noël',
-		weight = 200,
+		weight = 20,
 		stack = true,
 		close = true,
 	},
