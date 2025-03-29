@@ -2761,7 +2761,7 @@ return {
 	},
 
 	['mmcigarette'] = {
-		label = 'Cigarette Meuh-Meuh',
+		label = 'Clope Meuh-Meuh',
 		weight = 20,
 		stack = true,
 		close = true,
