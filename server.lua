@@ -118,6 +118,10 @@ local function openInventory(source, invType, data, ignoreSecurityChecks)
 
 		if invType == 'stash' then
 			right = Inventory(data, left)
+			if not right and ignoreSecurityChecks then
+				exports.ox_inventory:RegisterStash(data, "Inventaire", 500, 1000000000, false)
+				right = Inventory(data, left)
+			end
 			if right == false then return false end
 		elseif isDataTable then
 			if data.netid then
