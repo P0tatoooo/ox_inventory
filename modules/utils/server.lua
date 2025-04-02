@@ -8,6 +8,7 @@ if webHook ~= '' then
 	local validHosts = {
 		['i.imgur.com'] = true,
 		['r2.fivemanage.com'] = true,
+		['i.fmfile.com'] = true
 	}
 
 	local validExtensions = {
