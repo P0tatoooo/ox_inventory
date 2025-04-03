@@ -762,6 +762,24 @@ return {
 				export = 'MyCity_CoreV2.eatFood'
             }
         },
+		['chocoweedicecream'] = {
+            label = 'Glace Choco-Weed',
+            weight = 150,
+            stack = true,
+            degrade = 1440,
+            client = {
+                status = { hunger = 25 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
         ['waffle'] = {
             label = 'Gauffre',
             weight = 100,
