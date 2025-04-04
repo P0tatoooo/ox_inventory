@@ -3670,6 +3670,13 @@ return {
 		close = true,
 	},
 
+	['weedseed'] = {
+		label = 'Graine de Cannabis',
+		weight = 100,
+		stack = true,
+		close = true,
+	},
+
     ['weed_leaf'] = {
 		label = 'Feuille de Cannabis',
 		weight = 100,
