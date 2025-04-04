@@ -1336,7 +1336,8 @@ return {
 			prop = { model = `vw_prop_casino_water_bottle_01a`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
-		}
+		},
+		consume = 0
 	},
 
     ['cola'] = {
