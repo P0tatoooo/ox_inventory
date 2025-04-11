@@ -2731,9 +2731,9 @@ end
 
 exports('CreateTemporaryStash', Inventory.CreateTemporaryStash)
 
-local function generateInvId2(prefix, citizenid)
+local function generateInvId2(prefix, subid)
 	while true do
-		local invId = ('%s-%s-%s'):format(prefix or 'drop', citizenid, math.random(100000, 999999))
+		local invId = ('%s-%s-%s'):format(prefix or 'drop', subid or math.random(100000, 999999), math.random(100000, 999999))
 
 		if not Inventories[invId] then return invId end
 
@@ -2741,8 +2741,8 @@ local function generateInvId2(prefix, citizenid)
 	end
 end
 
-function Inventory.CreateTemporaryStash2(properties, prefix, citizenid)
-	properties.name = generateInvId2(prefix, citizenid)
+function Inventory.CreateTemporaryStash2(properties, prefix, subid)
+	properties.name = generateInvId2(prefix, subid)
 
 	local inventory = {}
 	local totalWeight = 0
