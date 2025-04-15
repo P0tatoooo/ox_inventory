@@ -174,6 +174,10 @@ local function loadInventoryData(data, player)
 				label = "Boite à Gants"
 			end
 
+			if not storage then
+				return false
+			end
+			
             inventory = Inventory.Create(data.id, label, data.type, storage[1], 0, storage[2], false, nil, nil, dbId)
 		end
 	elseif data.type == 'policeevidence' then
