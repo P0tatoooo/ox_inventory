@@ -1870,11 +1870,66 @@ local function isGiveTargetValid(ped, coords)
     return entity == ped and IsEntityVisible(ped)
 end
 
+function ButtonMessage(text)
+    BeginTextCommandScaleformString("STRING")
+    AddTextComponentScaleform(text)
+    EndTextCommandScaleformString()
+end
+
+function Button(ControlButton)
+    N_0xe83a3e3557a56640(ControlButton)
+end
+
+function setupGiveItemInstructionalScaleform(scaleform)
+    local scaleform = RequestScaleformMovie(scaleform)
+    while not HasScaleformMovieLoaded(scaleform) do
+        Citizen.Wait(0)
+    end
+    PushScaleformMovieFunction(scaleform, "CLEAR_ALL")
+    PopScaleformMovieFunctionVoid()
+    
+    PushScaleformMovieFunction(scaleform, "SET_CLEAR_SPACE")
+    PushScaleformMovieFunctionParameterInt(200)
+    PopScaleformMovieFunctionVoid()
+
+    PushScaleformMovieFunction(scaleform, "SET_DATA_SLOT")
+    PushScaleformMovieFunctionParameterInt(0)
+	Button(GetControlInstructionalButton(2, 38, true))
+	Button(GetControlInstructionalButton(2, 176, true))
+    ButtonMessage("Valider")
+    PopScaleformMovieFunctionVoid()
+
+    PushScaleformMovieFunction(scaleform, "SET_DATA_SLOT")
+    PushScaleformMovieFunctionParameterInt(1)
+	Button(GetControlInstructionalButton(2, 73, true))
+    ButtonMessage("Annuler")
+    PopScaleformMovieFunctionVoid()
+
+	PushScaleformMovieFunction(scaleform, "SET_DATA_SLOT")
+    PushScaleformMovieFunctionParameterInt(2)
+	Button(GetControlInstructionalButton(2, 175, true))
+	Button(GetControlInstructionalButton(2, 174, true))
+    ButtonMessage("Changer de Personne")
+    PopScaleformMovieFunctionVoid()
+
+    PushScaleformMovieFunction(scaleform, "DRAW_INSTRUCTIONAL_BUTTONS")
+    PopScaleformMovieFunctionVoid()
+
+    PushScaleformMovieFunction(scaleform, "SET_BACKGROUND_COLOUR")
+    PushScaleformMovieFunctionParameterInt(0)
+    PushScaleformMovieFunctionParameterInt(0)
+    PushScaleformMovieFunctionParameterInt(0)
+    PushScaleformMovieFunctionParameterInt(80)
+    PopScaleformMovieFunctionVoid()
+
+    return scaleform
+end
+
 RegisterNUICallback('giveItem', function(data, cb)
 	cb(1)
 
 	if client.giveplayerlist then
-		local nearbyPlayers = lib.getNearbyPlayers(GetEntityCoords(playerPed), 3.5)
+		--[[ local nearbyPlayers = lib.getNearbyPlayers(GetEntityCoords(playerPed), 3.5)
         local nearbyCount = #nearbyPlayers
 
 		if nearbyCount == 0 then return end
@@ -1910,9 +1965,92 @@ RegisterNUICallback('giveItem', function(data, cb)
 			options = giveList,
 		}, function(selected)
             giveItemToTarget(giveList[selected].id, data.slot, data.count)
-        end)
-
+        end) 
+		
 		return lib.showMenu('ox_inventory:givePlayerList')
+		]]
+
+		local playerCoords = GetEntityCoords(PlayerPedId())
+		local closestPlayers = QBCore.Functions.GetPlayersFromCoords(GetEntityCoords(PlayerPedId()), 3.5)
+
+		if #closestPlayers == 0 then
+			return
+		end
+
+		if #closestPlayers == 1 then
+			giveItemToTarget(closestPlayers[1], data.slot, data.count)
+			return
+		end
+
+		local index = 1
+		local giveTable = {}
+		for k,v in pairs(closestPlayers) do
+			local ped = GetPlayerPed(GetPlayerFromServerId(v))
+			giveTable[#giveTable+1] = {id = v, ped = ped, distance = #(GetEntityCoords(ped) - playerCoords)}
+		end
+
+		table.sort(giveTable, function(a,b) 
+			return a.distance < b.distance 
+		end)
+
+		client.closeInventory()
+		
+		while true do
+			Citizen.Wait(0)
+
+			local scaleType = setupGiveItemInstructionalScaleform("instructional_buttons")
+        	DrawScaleformMovieFullscreen(scaleType, 255, 255, 255, 255, 0)
+
+			if DoesEntityExist(giveTable[index].ped) then
+				local closestPlayerCoords = GetEntityCoords(giveTable[index].ped)
+				DrawMarker(20, closestPlayerCoords.x, closestPlayerCoords.y, closestPlayerCoords.z + 1.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0.4, 0.4, -0.4, 100, 0, 0, 100, false, true, 2, false, false, false, false)
+				DrawMarker(25, closestPlayerCoords.x, closestPlayerCoords.y, closestPlayerCoords.z - 0.95, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 1.0, 100, 0, 0, 100, false, true, 2, false, false, false, false)
+			else
+				local oldIndex = index
+				if index + 1 > #giveTable then
+					index = 1
+				else
+					index = index + 1
+				end
+				if index == oldIndex then
+					client.openInventory()
+					return 
+				end
+			end
+
+			if IsControlJustReleased(0, 174) then
+				if index - 1 < 1 then
+					index = #giveTable
+				else
+					index = index - 1
+				end
+			end
+
+			if IsControlJustReleased(0, 175) then
+				if index + 1 > #giveTable then
+					index = 1
+				else
+					index = index + 1
+				end
+			end
+
+			if IsControlJustReleased(0, 38) or IsControlJustReleased(0, 176) then
+				break
+			end
+
+			if IsControlJustReleased(0, 73) then
+				client.openInventory()
+				return
+			end
+		end
+
+		if DoesEntityExist(giveTable[index].ped) and #(GetEntityCoords(giveTable[index].ped) - GetEntityCoords(PlayerPedId())) < 5 then
+			giveItemToTarget(giveTable[index].id, data.slot, data.count)
+		end
+
+		client.openInventory()
+
+		return
 	end
 
     if cache.vehicle then
