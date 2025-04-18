@@ -1978,15 +1978,15 @@ RegisterNUICallback('giveItem', function(data, cb)
 		end
 
 		if #closestPlayers == 1 then
-			giveItemToTarget(closestPlayers[1], data.slot, data.count)
+			giveItemToTarget(GetPlayerServerId(closestPlayers[1]), data.slot, data.count)
 			return
 		end
 
 		local index = 1
 		local giveTable = {}
 		for k,v in pairs(closestPlayers) do
-			local ped = GetPlayerPed(GetPlayerFromServerId(v))
-			giveTable[#giveTable+1] = {id = v, ped = ped, distance = #(GetEntityCoords(ped) - playerCoords)}
+			local ped = GetPlayerPed(v)
+			giveTable[#giveTable+1] = {id = GetPlayerServerId(v), ped = ped, distance = #(GetEntityCoords(ped) - playerCoords)}
 		end
 
 		table.sort(giveTable, function(a,b) 
