@@ -232,8 +232,7 @@ end
 ---@param invType string
 ---@param data string|number|table
 lib.callback.register('ox_inventory:openInventory', function(source, invType, data)
-    local isAdmin = QBCore.Functions.HasPermission(source, 'admin')
-	return openInventory(source, invType, data, isAdmin)
+	return openInventory(source, invType, data)
 end)
 
 ---@param netId number
