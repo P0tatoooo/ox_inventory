@@ -2327,6 +2327,7 @@ exports.ox_inventory:displayMetadata('drugpurity', 'Pureté')
 exports.ox_inventory:displayMetadata('plate', 'Plaque')
 exports.ox_inventory:displayMetadata('points', 'Points')
 exports.ox_inventory:displayMetadata('stampdate', 'Dernier Tampon')
+exports.ox_inventory:displayMetadata('containerid', 'ID Stockage')
 
 exports.ox_inventory:displayMetadata('weed', 'Cannabis')
 exports.ox_inventory:displayMetadata('crack', 'Crack')
