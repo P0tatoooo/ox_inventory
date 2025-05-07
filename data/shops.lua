@@ -195,7 +195,7 @@ return {
             --{name = 'WEAPON_AIRSOFTMP5', price = 0, grade = 7},
             --{name = 'WEAPON_AIRSOFTUZIMICRO', price = 0, grade = 7},
 		}, locations = {
-			vector3(429.494507, -975.692322, 21.54),
+			vec3(468.208344, -983.454346, 26.092115),
             vector3(-1888.261, 3244.5, 32.83917),
             vector3(-425.2, 5998.34, 32),
 		}, targets = {
@@ -279,7 +279,7 @@ return {
             { name = 'cc_license', price = 0 },
 			{ name = 'cc_license_pro', price = 0 },
 		}, locations = {
-			vec3(433.753845, -979.318665, 31.01),
+			vec3(442.971680, -985.158630, 31.090000),
 			vec3(-451.859344, 6013.661621, 31.706177),
 			vec3(1832.909302, 3682.334473, 34.189301),
 		}, targets = {
