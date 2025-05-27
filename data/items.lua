@@ -781,7 +781,7 @@ return {
             }
         },
         ['waffle'] = {
-            label = 'Gauffre',
+            label = 'Gaufre',
             weight = 100,
             stack = true,
             degrade = 4320,
@@ -799,7 +799,7 @@ return {
             }
         },
 		['chocolatewaffle'] = {
-            label = 'Gauffre au Chocolat',
+            label = 'Gaufre au Chocolat',
             weight = 100,
             stack = true,
             degrade = 4320,
