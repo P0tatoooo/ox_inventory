@@ -7,7 +7,7 @@ AddEventHandler('QBCore:Server:OnPlayerUnload', server.playerDropped)
 
 AddEventHandler('QBCore:Server:OnJobUpdate', function(source, job)
 	local inventory = Inventory(source)
-	if not inventory then return end
+	if not inventory or not inventory.player then return end
 	inventory.player.groups[inventory.player.job] = nil
 	inventory.player.job = job.name
 	inventory.player.groups[job.name] = job.grade.level
