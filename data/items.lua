@@ -2864,7 +2864,7 @@ return {
 	},
     ['flyer'] = {
 		label = 'Propectus',
-		weight = 10,
+		weight = 0.01,
 		stack = true,
         close = true,
         client = {
