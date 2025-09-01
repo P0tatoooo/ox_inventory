@@ -181,7 +181,7 @@ return {
             --{name = 'WEAPON_HEAVYPISTOL', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
             --{name = 'WEAPON_SMG', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
             --{name = 'WEAPON_CARBINERIFLE', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
-            {name = 'WEAPON_SMOKEGRENADE', price = 0, grade = 3},--, license = 'weapon'},
+            --{name = 'WEAPON_SMOKEGRENADE', price = 0, grade = 3},--, license = 'weapon'},
             {name = 'WEAPON_SMOK2GRENADE', price = 0, grade = 3},--, license = 'weapon'},
             {name = 'WEAPON_FLASHBANG', price = 0, grade = 3},--, license = 'weapon'},
             {name = 'ziptie', price = 0, grade = 3},
@@ -237,7 +237,7 @@ return {
 			{name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 53, label = "Gilet Shérif Tactique", image = "bulletproof_tacticalsheriff" }, price = 0},
 			{name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 54, label = "Gilet Shérif Banalisé", image = "bulletproof_banasheriff" }, price = 0},
 
-            {name = 'WEAPON_SMOKEGRENADE', price = 0, grade = 3},--, license = 'weapon'},
+            --{name = 'WEAPON_SMOKEGRENADE', price = 0, grade = 3},--, license = 'weapon'},
             {name = 'WEAPON_SMOK2GRENADE', price = 0, grade = 3},--, license = 'weapon'},
             {name = 'WEAPON_FLASHBANG', price = 0, grade = 3},--, license = 'weapon'},
             {name = 'ziptie', price = 0, grade = 3},
