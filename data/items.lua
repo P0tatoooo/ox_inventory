@@ -1493,6 +1493,101 @@ return {
 				export = 'MyCity_CoreV2.eatFood'
             }
         },
+
+		['tacos'] = {
+            label = 'Tacos',
+            weight = 150,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 50 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+
+		['burrito'] = {
+            label = 'Burrito',
+            weight = 150,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 50 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+
+		['fajitas'] = {
+            label = 'Fajitas',
+            weight = 150,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 50 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+
+        ['capirotada'] = {
+            label = 'Capirotada',
+            weight = 150,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
+
+		['arrozconleche'] = {
+            label = 'Arroz Con Leche',
+            weight = 150,
+            stack = true,
+            degrade = 4320,
+            client = {
+                status = { hunger = 25 },
+                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+                prop = {
+                    model = 'prop_cs_burger_01',
+					bone = 18905,
+                    pos = { x = 0.12, y = 0.028, z = 0.001},
+                    rot = { x = 10.0, y = 175.0, z = 0.0}
+                },
+                usetime = 2500,
+				export = 'MyCity_CoreV2.eatFood'
+            }
+        },
 		
     ---------------SOFT DRINKS-----------------------
     ['water'] = {
