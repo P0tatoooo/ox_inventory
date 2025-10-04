@@ -1591,7 +1591,7 @@ return {
 		
     ---------------SOFT DRINKS-----------------------
     ['water'] = {
-		label = 'Bouteille Rainé',
+		label = 'Petite Bouteille Rainé',
 		weight = 250,
 		stack = true,
 		close = true,
