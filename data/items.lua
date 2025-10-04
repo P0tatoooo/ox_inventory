@@ -1591,7 +1591,7 @@ return {
 		
     ---------------SOFT DRINKS-----------------------
     ['water'] = {
-		label = 'Petite Bouteille Rainé',
+		label = "Petite Bouteille d'Eau",
 		weight = 250,
 		stack = true,
 		close = true,
@@ -1647,7 +1647,7 @@ return {
 	},
 
     ['bigwater'] = {
-		label = 'Bouteille d\'Eau Flow',
+		label = "Bouteille d'Eau",
 		weight = 500,
 		stack = true,
 		close = true,
