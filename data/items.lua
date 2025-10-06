@@ -3269,6 +3269,25 @@ return {
 		}
 	},
 
+	['mmhalloweencookies'] = {
+		label = 'Cookies Halloween Meuh-Meuh',
+		weight = 20,
+		stack = true,
+		close = true,
+		client = {
+			status = { hunger = 10 },
+			anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+			prop = {
+				model = 'prop_choc_ego',
+				bone = 60309,
+				pos = { x = 0.0, y = 0.0, z = 0.0},
+				rot = { x = 0.0, y = 0.0, z = 0.0}
+			},
+			usetime = 2500,
+			export = 'MyCity_CoreV2.eatFood'
+		}
+	},
+
 	['canesyrup'] = {
 		label = 'Sirop de Canne',
 		weight = 200,
