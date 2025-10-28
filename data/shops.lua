@@ -381,15 +381,15 @@ return {
 		}
 	}, ]]
 
-	--[[ Fisherman = {
+	Fisherman = {
 		name = 'Pêcheur',
 		inventory = {
 			{ name = 'fishing_rod', price = 200 },
-            --{ name = 'divinggear', price = 2000}
+            { name = 'divinggear', price = 500}
 		}, locations = {
 			vector3(-3418.335, 970.5667, 11.93619)
 		}
-	}, ]]
+	},
 
 	Illegal_BlackMarket = {
 		name = 'Black Market',
