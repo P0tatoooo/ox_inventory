@@ -2,10 +2,13 @@ if not lib then return end
 
 QBCore = exports['qb-core']:GetCoreObject()
 local isAdmin
-QBCore.Functions.TriggerCallback('MyCity_CoreV2:AdminMenu:HasAdminPermissions', function(group)
-    if group == 'god' or group == 'admin' then
-        isAdmin = true
-    end
+Citizen.CreateThread(function()
+    while not LocalPlayer.state.isLoggedIn do Wait(500) end
+    QBCore.Functions.TriggerCallback('MyCity_CoreV2:AdminMenu:HasAdminPermissions', function(group)
+		if group == 'god' or group == 'admin' then
+            isAdmin = true
+        end
+    end)
 end)
 
 require 'modules.bridge.client'
