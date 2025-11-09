@@ -2974,6 +2974,81 @@ return {
 		}
 	},
 
+	['boatcocktail'] = {
+		label = 'Boat',
+		weight = 750,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 15 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
+		}
+	},
+
+	['starxcocktail'] = {
+		label = 'Star-X',
+		weight = 750,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 15 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
+		}
+	},
+
+	['braisecocktail'] = {
+		label = 'Braisé',
+		weight = 750,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 15 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
+		}
+	},
+
+	['miladycocktail'] = {
+		label = 'Milady',
+		weight = 750,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 15 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
+		}
+	},
+
+	['bombassecocktail'] = {
+		label = 'Boat',
+		weight = 750,
+		stack = true,
+		close = true,
+        client = {
+			status = { thirst = 15 },
+			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			usetime = 2500,
+			export = 'MyCity_CoreV2.drinkAlcohol',
+			alcohol = 30
+		}
+	},
+
     -------------------------------------------------------
 
     ['welcomeflyer'] = {
