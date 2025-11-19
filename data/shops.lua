@@ -187,6 +187,7 @@ return {
             {name = 'ziptie', price = 0, grade = 3},
 
 			{name = 'parachute', price = 0, grade = 3},
+			{name = 'storagescanner', price = 0, grade = 12},
 
             --{ name = 'airsoftball', price = 0, grade = 7},
             --{name = 'WEAPON_AIRSOFTGLOCK20', price = 0, grade = 7},
@@ -242,6 +243,7 @@ return {
             {name = 'WEAPON_FLASHBANG', price = 0, grade = 3},--, license = 'weapon'},
             {name = 'ziptie', price = 0, grade = 3},
 			{name = 'parachute', price = 0, grade = 3},
+			{name = 'storagescanner', price = 0, grade = 8},
 		}, locations = {
 			vec3(1837.890747, 3688.118652, 34.189236),
 		}, targets = {
