@@ -4632,6 +4632,11 @@ return {
         weight = 1000,
         stack = false
     },
+	["storagescanner"] = {
+        label = 'Décodeur Electronique',
+        weight = 1000,
+        stack = false
+    },
 	['rccar'] = {
 		label = 'Voiture Télécommandée',
 		weight = 2000,
