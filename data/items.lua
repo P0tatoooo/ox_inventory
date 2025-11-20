@@ -5389,13 +5389,11 @@ return {
     ['glasscutter'] = {
 		label = 'Coupe-Verre',
 		weight = 300,
-        stack = false,
         consume = 0
 	},
 	['grinder'] = {
 		label = 'Meuleuse',
 		weight = 300,
-        stack = false,
         consume = 0
 	},
     ['prepaidphone'] = {
