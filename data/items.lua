@@ -2975,7 +2975,7 @@ return {
 	},
 
 	['boatcocktail'] = {
-		label = 'Boat',
+		label = 'Manza',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -3005,7 +3005,7 @@ return {
 	},
 
 	['braisecocktail'] = {
-		label = 'Braisé',
+		label = 'Long Island',
 		weight = 750,
 		stack = true,
 		close = true,
