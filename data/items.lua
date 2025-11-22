@@ -4056,6 +4056,13 @@ return {
 		close = true,
 	},
 
+	['casinochips'] = {
+		label = 'Jeton Casino',
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
 	['illegaltoken'] = {
 		label = 'Jeton RN',
 		weight = 1,
