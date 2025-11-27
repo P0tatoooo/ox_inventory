@@ -3113,13 +3113,11 @@ return {
     ['screwdriver'] = {
 		label = 'Tournevis Rouge',
 		weight = 260,
-        stack = false
 	},
 
     ['screwdriver2'] = {
 		label = 'Tournevis Bleu',
 		weight = 260,
-        stack = false
 	},
 
 	['lockpick'] = {
