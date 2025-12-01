@@ -3321,6 +3321,13 @@ return {
 		close = true,
 	},
 
+	['mmchristmascandies2'] = {
+		label = 'Bon Meuh de Noël',
+		weight = 20,
+		stack = true,
+		close = true,
+	},
+
 	['mmchocolatebox'] = {
 		label = 'Chocolats Meuh-Meuh',
 		weight = 200,
