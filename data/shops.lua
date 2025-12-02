@@ -251,6 +251,22 @@ return {
 		}
 	},
 
+	Casino = {
+		name = 'Casino',
+		groups = {
+			['casino'] = 0
+		},
+		--[[blip = {
+			id = 403, colour = 69, scale = 0.8
+		},]] inventory = {
+			{ name = 'casinochips', price = 0 },
+		}, locations = {
+			vec3(410.435699, 75.366714, 93.172104),
+		}, targets = {
+
+		}
+	},
+
 	BoatDealerPrinter = {
 		name = 'Photocopieuse',
 		groups = {
