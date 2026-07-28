@@ -1,5 +1,9 @@
 .inventory-control {
   display: flex;
+  align-items: center;
+  // Matches UsefulControls' natural height so both side panels' Blocks -- and
+  // therefore their title bars -- land at the same vertical position when centered.
+  min-height: 70px;
 
   .inventory-control-wrapper {
     display: flex;

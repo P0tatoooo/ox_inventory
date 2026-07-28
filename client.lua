@@ -2087,6 +2087,18 @@ RegisterNUICallback('exit', function(_, cb)
 	cb(1)
 end)
 
+RegisterNUICallback('toggleClothing', function(data, cb)
+	cb(1)
+
+	if not data or not data.id then return end
+
+	if data.isProp then
+		TriggerEvent('qb-radialmenu:ToggleProps', data.id)
+	else
+		TriggerEvent('qb-radialmenu:ToggleClothing', data.id)
+	end
+end)
+
 lib.callback.register('ox_inventory:startCrafting', function(id, recipe)
 	recipe = CraftingBenches[id].items[recipe]
 
@@ -2367,14 +2379,74 @@ function CreatePedScreen()
         ClonePedToTarget(PlayerPedId(), clonedPed)
         SetEntityCanBeDamaged(clonedPed, false)
         SetBlockingOfNonTemporaryEvents(clonedPed, true)
+        -- Without this, the physics/animation engine can still nudge the clone
+        -- (gravity, foot placement, velocity copied from the real ped) between our
+        -- once-a-frame repositioning below, on top of whatever's causing it to move.
+        FreezeEntityPosition(clonedPed, true)
+
+        local smoothedTarget
+        local smoothedPitch
+        local lastAppearanceSync = GetGameTimer()
 
         while DoesEntityExist(clonedPed) do
             Citizen.Wait(0)
-            local world, normal = GetWorldCoordFromScreenCoord(0.50, 0.7787036895752)
-            local target = world + normal * 3.5
+
+            -- The clothing toggle buttons change the real player's components, not
+            -- the clone's, and the actual change only lands after qb-radialmenu's
+            -- toggle emote finishes playing -- so re-cloning appearance on a short
+            -- interval (instead of trying to sync it to that one specific event) picks
+            -- up that change, and any other appearance change, shortly after it happens.
+            local now = GetGameTimer()
+            if now - lastAppearanceSync > 500 then
+                lastAppearanceSync = now
+                ClonePedToTarget(PlayerPedId(), clonedPed)
+            end
+
+            -- GetWorldCoordFromScreenCoord unprojects through the camera's current
+            -- FOV/projection, and GTA subtly widens the FOV while running (a speed
+            -- effect) -- so the computed position pulsed with it. Deriving the point
+            -- directly from the camera's own position + rotation (same approach
+            -- MyCity_Emotes uses, which doesn't have this problem) is FOV-independent.
+            local camCoord = GetGameplayCamCoord()
             local camRot = GetGameplayCamRot(2)
-            SetEntityCoords(clonedPed, target.x, target.y, target.z, false, false, false, true)
-            SetEntityRotation(clonedPed, camRot.x*(-1), 0, camRot.z + 180.0, false, false)
+            local yawRad = math.rad(camRot.z)
+
+            -- Tilts the aim point below the camera's true forward, roughly matching
+            -- where the old screen-anchored version (0.5, 0.78) used to frame the
+            -- character instead of dead-center. Angle-based, not screen-%, so it
+            -- stays FOV-independent (doesn't reintroduce the sprint-FOV jitter).
+            --
+            -- Clamped (position only, not the rotation/tilt below): at steep bird's-eye
+            -- angles the real camera pulls back and up to keep framing the player, so a
+            -- point held at a fixed distance along an equally steep ray collapses toward
+            -- directly beneath that now much-higher camera -- reading as the clone
+            -- suddenly looming closer. Capping the angle keeps the ray from ever getting
+            -- that steep.
+            local clampedCamPitch = math.max(-35.0, math.min(40.0, camRot.x))
+            local aimPitchRad = math.rad(clampedCamPitch - 16.0)
+            local forward = vector3(
+                -math.sin(yawRad) * math.abs(math.cos(aimPitchRad)),
+                math.cos(yawRad) * math.abs(math.cos(aimPitchRad)),
+                math.sin(aimPitchRad)
+            )
+            local target = camCoord + forward * 3.5
+
+            -- The gameplay camera also bobs slightly with the walk-cycle animation,
+            -- and since target is recalculated from raw camera state every single
+            -- frame, that bob was passed straight through to the clone. Easing toward
+            -- the target instead of snapping to it filters that out too.
+            smoothedTarget = smoothedTarget and (smoothedTarget + (target - smoothedTarget) * 0.25) or target
+
+            SetEntityCoords(clonedPed, smoothedTarget.x, smoothedTarget.y, smoothedTarget.z, false, false, false, true)
+
+            -- Full rotation again (pitch + yaw), so the clone tilts to stay square-on
+            -- to the lens when the camera angles up/down. Pitching the whole body
+            -- around its feet is what caused the swinging before, so only the pitch
+            -- is eased here -- yaw still tracks the camera directly, same as heading did.
+            local rawPitch = camRot.x * -1
+            smoothedPitch = smoothedPitch and (smoothedPitch + (rawPitch - smoothedPitch) * 0.25) or rawPitch
+
+            SetEntityRotation(clonedPed, smoothedPitch, 0.0, camRot.z + 180.0, false, false)
         end
     end)
 end

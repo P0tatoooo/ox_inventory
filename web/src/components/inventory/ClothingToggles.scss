@@ -1,0 +1,68 @@
+.clothing-toggles {
+  position: relative;
+  align-self: flex-start;
+  flex: 1;
+  min-width: 22rem;
+  max-width: 27rem;
+  // Top and height matched to the inventory panels (vh-based, like the grid itself,
+  // so it scales the same way at any resolution): top-row and columns are
+  // positioned absolutely below, both relative to *this* box, so the columns can be
+  // centered on the panel's full height independently of the top-row's own height
+  // instead of only getting whatever flex space happens to be left over.
+  margin-top: 18vh;
+  height: 62vh;
+
+  button {
+    background-color: var(--background-color);
+    border-color: var(--background-color);
+  }
+
+  &__top-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    // Two groups pushed to the edges, not one centered cluster -- leaves the space
+    // directly above the player's head open instead of covering it.
+    justify-content: space-between;
+  }
+
+  &__top-group {
+    display: flex;
+    flex-direction: row;
+    gap: .6rem;
+  }
+
+  &__columns {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    // Columns sit at the edges of this container, not centered in it -- the empty
+    // space they push apart is where the ped renders, in between the two panels.
+    justify-content: space-between;
+    align-items: center;
+    // This box spans the container's full height (needed so align-items can center
+    // its buttons on it), including the top-row's region above -- without this, its
+    // own empty transparent space up there was intercepting clicks meant for the
+    // top-row buttons underneath it.
+    pointer-events: none;
+
+    button {
+      pointer-events: auto;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: .6rem;
+  }
+}

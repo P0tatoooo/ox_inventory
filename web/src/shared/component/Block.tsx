@@ -11,9 +11,13 @@ type BlockProps = {
   overflowBody?: boolean;
   footer?: JSX.Element | null;
   mcCoin?: boolean;
+  // Keeps the title row's height reserved even with no title text, so a Block
+  // without a name still lines up with one that has one. Off by default so
+  // title-less consumers (e.g. UsefulControls) keep their original compact size.
+  reserveTitleHeight?: boolean;
 } & PropsWithChildren;
 
-const Block = observer(({title, subTitle, className, footer = null, children, overflowBody = false, mcCoin = false}: BlockProps) => {
+const Block = observer(({title, subTitle, className, footer = null, children, overflowBody = false, mcCoin = false, reserveTitleHeight = false}: BlockProps) => {
   const blockClasses = useMemo(
     () =>
       ['block', className, overflowBody && 'block--body-overflow'].filter(Boolean).join(' '),
@@ -26,7 +30,7 @@ const Block = observer(({title, subTitle, className, footer = null, children, ov
   );
 
   const BlockTitle = () => {
-    if (!title) {
+    if (!title && !reserveTitleHeight) {
       return null;
     }
     return (
