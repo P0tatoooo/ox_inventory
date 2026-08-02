@@ -9,6 +9,10 @@
   font-size: 1rem;
   color: white;
   border-radius: var(--button-radius-size);
+  // Chromium/CEF keeps the default focus ring on a button after it's clicked
+  // (focus persists post-click, there's no blur), so it stays lit as a white
+  // outline until something else steals focus.
+  outline: none;
 
   display: flex;
   justify-content: start;

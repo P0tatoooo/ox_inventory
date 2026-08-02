@@ -36,6 +36,12 @@
     gap: .6rem;
   }
 
+  &__top-group-column {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+  }
+
   &__columns {
     position: absolute;
     top: 0;

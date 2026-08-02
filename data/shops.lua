@@ -24,6 +24,8 @@ return {
 			{ name = 'donut', price = 90 },
 			{ name = 'water', price = 50 },
             { name = 'wallet', price = 100 },
+			{ name = 'hairtie', price = 100 },
+			{ name = 'tablet', price = 1000 },
 			{ name = 'football', price = 40 },
 			{ name = 'basketball', price = 40 },
 			{ name = 'rugby', price = 40 },

@@ -3565,6 +3565,20 @@ return {
 		close = true,
 	},
 
+	['hairtie'] = {
+		label = 'Chouchou',
+		weight = 20,
+		stack = true,
+		close = true,
+	},
+
+	['tablet'] = {
+		label = 'Tablette',
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
 	['digitaltablet'] = {
 		label = 'Tablette Numérique',
 		weight = 200,

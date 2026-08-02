@@ -110,3 +110,10 @@ export const DecalsIcon: React.FC = () => (
     <path d="M3 12l9 5 9-5" />
   </svg>
 );
+
+export const HairIcon: React.FC = () => (
+  <svg {...iconProps}>
+    <path d="M4 10h16" />
+    <path d="M7 10c0 4 .4 7 .8 9M12 10c0 4 .2 7 .5 9M17 10c0 4-.4 7-.8 9" />
+  </svg>
+);
