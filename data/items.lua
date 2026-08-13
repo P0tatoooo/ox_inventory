@@ -3570,6 +3570,10 @@ return {
 		weight = 20,
 		stack = true,
 		close = true,
+		consume = 1,
+		client = {
+			export = 'illenium-appearance.toggleHair'
+		},
 	},
 
 	['tablet'] = {
