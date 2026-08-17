@@ -91,10 +91,14 @@ for _, stash in pairs(lib.load('data.stashes')) do
 	}
 end
 
+---@type table
+local Items
+
 --- An inventory's decayMultiplier slows down how fast item decay timers run while the
 --- item is stored inside it, i.e. a multiplier of 2 makes items last twice as long.
 --- A multiplier of -1 means items don't decay at all, which is applied as an absurdly
 --- large multiplier so the existing timestamp based durability logic keeps working.
+--- Weapons are excluded, they always decay at their normal rate.
 local DECAY_FREEZE_FACTOR = 1000000
 
 ---Keep rescaled timers as integers whenever they divide evenly, so they survive a json round-trip intact.
@@ -133,13 +137,16 @@ end
 ---`metadata.decayFactor` records the factor already baked into `durability` and
 ---`degrade`, so this is idempotent and can be called on any item at any time.
 ---@param inv OxInventory?
+---@param name? string item name, used to leave weapons at their normal decay rate
 ---@param metadata? table
 ---@param ostime? number
 ---@return table? metadata
-local function applyDecayFactor(inv, metadata, ostime)
+local function applyDecayFactor(inv, name, metadata, ostime)
 	if not metadata then return metadata end
 
-	local target = getDecayFactor(inv and inv.decayMultiplier)
+	-- weapon decay is tied to the weapon itself, not to wherever it happens to be stored
+	local isWeapon = name and Items(name)?.weapon
+	local target = not isWeapon and getDecayFactor(inv and inv.decayMultiplier) or 1
 	local current = metadata.decayFactor or 1
 
 	if current == target then return metadata end
@@ -172,7 +179,7 @@ end
 ---@param ostime? number
 ---@return SlotWithItem? slot
 local function applySlotDecayFactor(inv, slot, ostime)
-	if slot then applyDecayFactor(inv, slot.metadata, ostime) end
+	if slot then applyDecayFactor(inv, slot.name, slot.metadata, ostime) end
 
 	return slot
 end
@@ -485,7 +492,7 @@ function Inventory.SetSlot(inv, item, count, metadata, slot)
 
 	if not inv then return end
 
-	metadata = applyDecayFactor(inv, metadata)
+	metadata = applyDecayFactor(inv, item.name, metadata)
 
 	local currentSlot = inv.items[slot]
 	local newCount = currentSlot and currentSlot.count + count or count
@@ -510,7 +517,7 @@ function Inventory.SetSlot(inv, item, count, metadata, slot)
 	return currentSlot
 end
 
-local Items = require 'modules.items.server'
+Items = require 'modules.items.server'
 
 CreateThread(function()
     Inventory.accounts = server.accounts
@@ -1248,7 +1255,7 @@ function Inventory.AddItem(inv, item, count, metadata, slot, cb)
 	if slot then
 		local slotData = inv.items[slot]
 		slotMetadata, slotCount = Items.Metadata(inv.id, item, metadata and table.clone(metadata) or {}, count)
-		applyDecayFactor(inv, slotMetadata)
+		applyDecayFactor(inv, item.name, slotMetadata)
 
 		if not slotData or (item.stack and slotData.name == item.name and table.matches(slotData.metadata, slotMetadata)) then
 			toSlot = slot
@@ -1258,7 +1265,7 @@ function Inventory.AddItem(inv, item, count, metadata, slot, cb)
 	if not toSlot then
 		local items = inv.items
 		slotMetadata, slotCount = Items.Metadata(inv.id, item, metadata and table.clone(metadata) or {}, count)
-		applyDecayFactor(inv, slotMetadata)
+		applyDecayFactor(inv, item.name, slotMetadata)
 
 		for i = 1, inv.slots do
 			local slotData = items[i]
@@ -1277,7 +1284,7 @@ function Inventory.AddItem(inv, item, count, metadata, slot, cb)
 
 				count -= 1
 				slotMetadata, slotCount = Items.Metadata(inv.id, item, metadata and table.clone(metadata) or {}, count)
-				applyDecayFactor(inv, slotMetadata)
+				applyDecayFactor(inv, item.name, slotMetadata)
 			elseif not toSlot and not slotData then
 				toSlot = i
 			end
