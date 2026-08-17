@@ -86,8 +86,107 @@ for _, stash in pairs(lib.load('data.stashes')) do
 		slots = stash.slots,
 		maxWeight = stash.weight,
 		groups = stash.groups or stash.jobs,
-		coords = shared.target and stash.target?.loc or stash.coords
+		coords = shared.target and stash.target?.loc or stash.coords,
+		decayMultiplier = stash.decayMultiplier
 	}
+end
+
+--- An inventory's decayMultiplier slows down how fast item decay timers run while the
+--- item is stored inside it, i.e. a multiplier of 2 makes items last twice as long.
+--- A multiplier of -1 means items don't decay at all, which is applied as an absurdly
+--- large multiplier so the existing timestamp based durability logic keeps working.
+local DECAY_FREEZE_FACTOR = 1000000
+
+---Keep rescaled timers as integers whenever they divide evenly, so they survive a json round-trip intact.
+---@param value number
+---@return number
+local function keepInteger(value)
+	return value % 1 == 0 and math.tointeger(value) or value
+end
+
+---Resolve an inventory's decay multiplier into the factor its item timers are scaled by.
+---@param multiplier? number
+---@return number
+local function getDecayFactor(multiplier)
+	if not multiplier or multiplier == 1 then return 1 end
+
+	return multiplier == -1 and DECAY_FREEZE_FACTOR or multiplier
+end
+
+---@param multiplier? number
+---@return number? multiplier
+local function checkDecayMultiplier(multiplier)
+	if multiplier == nil then return end
+
+	if type(multiplier) ~= 'number' then
+		error(('received %s for stash decayMultiplier (expected number)'):format(type(multiplier)))
+	end
+
+	if multiplier ~= -1 and multiplier <= 0 then
+		error(('received %s for stash decayMultiplier (expected a positive number, or -1 to disable decay)'):format(multiplier))
+	end
+
+	return multiplier ~= 1 and multiplier or nil
+end
+
+---Rescale an item's decay timers to the rate of the inventory currently holding it.
+---`metadata.decayFactor` records the factor already baked into `durability` and
+---`degrade`, so this is idempotent and can be called on any item at any time.
+---@param inv OxInventory?
+---@param metadata? table
+---@param ostime? number
+---@return table? metadata
+local function applyDecayFactor(inv, metadata, ostime)
+	if not metadata then return metadata end
+
+	local target = getDecayFactor(inv and inv.decayMultiplier)
+	local current = metadata.decayFactor or 1
+
+	if current == target then return metadata end
+
+	local durability = metadata.durability
+
+	-- only timestamp based decay (durability above 100) is affected by the multiplier
+	if not metadata.degrade or type(durability) ~= 'number' or durability <= 100 then
+		if metadata.degrade and current ~= 1 then
+			metadata.degrade = keepInteger(metadata.degrade / current)
+		end
+
+		metadata.decayFactor = nil
+		return metadata
+	end
+
+	ostime = ostime or os.time()
+
+	local remaining = (durability - ostime) / current
+
+	metadata.degrade = keepInteger(metadata.degrade / current * target)
+	metadata.durability = math.floor(ostime + remaining * target + 0.5)
+	metadata.decayFactor = target ~= 1 and target or nil
+
+	return metadata
+end
+
+---@param inv OxInventory?
+---@param slot? SlotWithItem
+---@param ostime? number
+---@return SlotWithItem? slot
+local function applySlotDecayFactor(inv, slot, ostime)
+	if slot then applyDecayFactor(inv, slot.metadata, ostime) end
+
+	return slot
+end
+
+---Rescale every item held by an inventory, i.e. after loading it or changing its multiplier.
+---@param inv OxInventory
+local function applyInventoryDecayFactor(inv)
+	if not inv.items then return end
+
+	local ostime = os.time()
+
+	for _, slot in pairs(inv.items) do
+		applySlotDecayFactor(inv, slot, ostime)
+	end
 end
 
 local GetVehicleNumberPlateText = GetVehicleNumberPlateText
@@ -202,7 +301,7 @@ local function loadInventoryData(data, player)
 			inventory = Inventories[owner and ('%s:%s'):format(stash.name, owner) or stash.name]
 
 			if not inventory then
-				inventory = Inventory.Create(stash.name, stash.label or stash.name, 'stash', stash.slots, 0, stash.maxWeight, owner, nil, stash.groups)
+				inventory = Inventory.Create(stash.name, stash.label or stash.name, 'stash', stash.slots, 0, stash.maxWeight, owner, nil, stash.groups, nil, stash.decayMultiplier)
 			end
 		end
 	end
@@ -386,6 +485,8 @@ function Inventory.SetSlot(inv, item, count, metadata, slot)
 
 	if not inv then return end
 
+	metadata = applyDecayFactor(inv, metadata)
+
 	local currentSlot = inv.items[slot]
 	local newCount = currentSlot and currentSlot.count + count or count
 	local newWeight = currentSlot and inv.weight - currentSlot.weight or inv.weight
@@ -566,10 +667,11 @@ end, true)
 ---@param owner string | number | boolean
 ---@param items? table
 ---@param dbId? string | number
+---@param decayMultiplier? number
 ---@return OxInventory?
 --- This should only be utilised internally!
 --- To create a stash, please use `exports.ox_inventory:RegisterStash` instead.
-function Inventory.Create(id, label, invType, slots, weight, maxWeight, owner, items, groups, dbId)
+function Inventory.Create(id, label, invType, slots, weight, maxWeight, owner, items, groups, dbId, decayMultiplier)
 	if invType == 'player' and hasActiveInventory(id, owner) then return end
 
 	local self = {
@@ -588,7 +690,8 @@ function Inventory.Create(id, label, invType, slots, weight, maxWeight, owner, i
 		time = os.time(),
 		groups = groups,
 		openedBy = {},
-        dbId = dbId
+        dbId = dbId,
+        decayMultiplier = decayMultiplier
 	}
 
 	if invType == 'drop' or invType == 'temp' or invType == 'dumpster' then
@@ -610,6 +713,8 @@ function Inventory.Create(id, label, invType, slots, weight, maxWeight, owner, i
 	elseif weight == 0 and next(items) then
 		self.weight = Inventory.CalculateWeight(items)
 	end
+
+	applyInventoryDecayFactor(self)
 
 	Inventories[self.id] = setmetatable(self, OxInventory)
 	return Inventories[self.id]
@@ -1088,6 +1193,37 @@ end
 
 exports('SetMaxWeight', Inventory.SetMaxWeight)
 
+---Change how fast items decay inside an inventory, rescaling anything already stored in it.
+---@param inv inventory
+---@param decayMultiplier? number 2 makes items decay twice as slowly, -1 stops decay, nil or 1 restores the default rate
+function Inventory.SetDecayMultiplier(inv, decayMultiplier)
+	inv = Inventory(inv) --[[@as OxInventory]]
+
+	if not inv then return end
+
+	decayMultiplier = checkDecayMultiplier(decayMultiplier)
+
+	if inv.decayMultiplier == decayMultiplier then return end
+
+	inv.decayMultiplier = decayMultiplier
+
+	applyInventoryDecayFactor(inv)
+
+	if inv.changed ~= nil then inv.changed = true end
+
+	local slots = {}
+
+	for _, item in pairs(inv.items) do
+		slots[#slots + 1] = { item = item, inventory = inv.id }
+	end
+
+	if next(slots) then
+		inv:syncSlotsWithClients(slots, true)
+	end
+end
+
+exports('SetDecayMultiplier', Inventory.SetDecayMultiplier)
+
 ---@param inv inventory
 ---@param item table | string
 ---@param count number
@@ -1112,6 +1248,7 @@ function Inventory.AddItem(inv, item, count, metadata, slot, cb)
 	if slot then
 		local slotData = inv.items[slot]
 		slotMetadata, slotCount = Items.Metadata(inv.id, item, metadata and table.clone(metadata) or {}, count)
+		applyDecayFactor(inv, slotMetadata)
 
 		if not slotData or (item.stack and slotData.name == item.name and table.matches(slotData.metadata, slotMetadata)) then
 			toSlot = slot
@@ -1121,6 +1258,7 @@ function Inventory.AddItem(inv, item, count, metadata, slot, cb)
 	if not toSlot then
 		local items = inv.items
 		slotMetadata, slotCount = Items.Metadata(inv.id, item, metadata and table.clone(metadata) or {}, count)
+		applyDecayFactor(inv, slotMetadata)
 
 		for i = 1, inv.slots do
 			local slotData = items[i]
@@ -1139,6 +1277,7 @@ function Inventory.AddItem(inv, item, count, metadata, slot, cb)
 
 				count -= 1
 				slotMetadata, slotCount = Items.Metadata(inv.id, item, metadata and table.clone(metadata) or {}, count)
+				applyDecayFactor(inv, slotMetadata)
 			elseif not toSlot and not slotData then
 				toSlot = i
 			end
@@ -1887,6 +2026,13 @@ lib.callback.register('ox_inventory:swapItems', function(source, data)
 				end
 			end
 
+			if not sameInventory then
+				local ostime = os.time()
+
+				applySlotDecayFactor(fromInventory, fromData, ostime)
+				applySlotDecayFactor(toInventory, toData, ostime)
+			end
+
 			fromInventory.items[data.fromSlot] = fromData
 			toInventory.items[data.toSlot] = toData
 
@@ -2627,7 +2773,9 @@ lib.callback.register('ox_inventory:removeAmmoFromWeapon', function(source, slot
 end)
 
 local function checkStashProperties(properties)
-	local name, slots, maxWeight, coords in properties
+	local name, slots, maxWeight, coords, decayMultiplier in properties
+
+	decayMultiplier = checkDecayMultiplier(decayMultiplier)
 
 	if type(name) ~= 'string' then
 		error(('received %s for stash name (expected string)'):format(type(name)))
@@ -2659,7 +2807,7 @@ local function checkStashProperties(properties)
 		end
 	end
 
-	return name, slots, maxWeight, coords
+	return name, slots, maxWeight, coords, decayMultiplier
 end
 
 ---@param name string stash identifier when loading from the database
@@ -2669,6 +2817,7 @@ end
 ---@param owner? string|number|boolean
 ---@param groups? table<string, number>
 ---@param coords? vector3|table<vector3>
+---@param decayMultiplier? number
 --- For simple integration with other resources that want to create valid stashes.
 --- This needs to be triggered before a player can open a stash.
 --- ```
@@ -2678,13 +2827,19 @@ end
 --- nil: always shared
 ---
 --- groups: { ['police'] = 0 }
+---
+--- decayMultiplier divides the rate at which stored items decay.
+--- 2: items take twice as long to decay while inside this stash
+--- -1: items don't decay at all while inside this stash
+--- nil or 1: items decay as normal
 --- ```
-local function registerStash(name, label, slots, maxWeight, owner, groups, coords)
-	name, slots, maxWeight, coords = checkStashProperties({
+local function registerStash(name, label, slots, maxWeight, owner, groups, coords, decayMultiplier)
+	name, slots, maxWeight, coords, decayMultiplier = checkStashProperties({
 		name = name,
 		slots = slots,
 		maxWeight = maxWeight,
 		coords = coords,
+		decayMultiplier = decayMultiplier,
 	})
 
 	local curStash = RegisteredStashes[name]
@@ -2701,6 +2856,12 @@ local function registerStash(name, label, slots, maxWeight, owner, groups, coord
 				stash.maxWeight = maxWeight or stash.maxWeight
 				stash.groups = groups or stash.groups
 				stash.coords = coords or stash.coords
+
+				if stash.decayMultiplier ~= decayMultiplier then
+					stash.decayMultiplier = decayMultiplier
+					applyInventoryDecayFactor(stash)
+					stash.changed = true
+				end
 			end
 		end
 	end
@@ -2712,7 +2873,8 @@ local function registerStash(name, label, slots, maxWeight, owner, groups, coord
 		slots = slots,
 		maxWeight = maxWeight,
 		groups = groups,
-		coords = coords
+		coords = coords,
+		decayMultiplier = decayMultiplier
 	}
 end
 
@@ -2722,13 +2884,15 @@ exports('RegisterStash', registerStash)
 function Inventory.CreateTemporaryStash(properties)
 	properties.name = generateInvId('temp')
 
-	local name, slots, maxWeight, coords = checkStashProperties(properties)
-	local inventory = Inventory.Create(name, properties.label, 'temp', slots, 0, maxWeight, properties.owner, {}, properties.groups)
+	local name, slots, maxWeight, coords, decayMultiplier = checkStashProperties(properties)
+	local inventory = Inventory.Create(name, properties.label, 'temp', slots, 0, maxWeight, properties.owner, {}, properties.groups, nil, decayMultiplier)
 
 	if not inventory then return end
 
 	inventory.items, inventory.weight = generateItems(inventory, 'drop', properties.items)
 	inventory.coords = coords
+
+	applyInventoryDecayFactor(inventory)
 
 	return inventory.id
 end
@@ -2764,8 +2928,8 @@ function Inventory.CreateTemporaryStash2(properties, prefix, subid)
 		end
 	end
 
-	local name, slots, maxWeight, coords = checkStashProperties(properties)
-	local inventory = Inventory.Create(name, properties.label, prefix, slots, totalWeight, maxWeight, properties.owner, inventory, properties.groups)
+	local name, slots, maxWeight, coords, decayMultiplier = checkStashProperties(properties)
+	local inventory = Inventory.Create(name, properties.label, prefix, slots, totalWeight, maxWeight, properties.owner, inventory, properties.groups, nil, decayMultiplier)
 
 	if not inventory then return end
 
