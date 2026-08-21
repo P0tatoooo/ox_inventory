@@ -31,6 +31,7 @@ return {
 			{ name = 'rugby', price = 40 },
 			{ name = 'baseball', price = 40 },
 			{ name = 'electricscooter', price = 600 },
+			{ name = 'tarp', price = 500 },
 			{ name = 'spray', price = 300 },
 			{ name = 'notepad', price = 100 },
 			{ name = 'notebook', price = 100 },

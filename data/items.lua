@@ -112,6 +112,14 @@ return {
 		consume = 0
 	},
 
+	['tarp'] = {
+		label = 'Bâche',
+		weight = 100,
+		stack = false,
+		close = false,
+		consume = 0
+	},
+
     ['wallet'] = {
 		label = 'Portefeuille',
 		weight = 25,
