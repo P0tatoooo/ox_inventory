@@ -1609,8 +1609,7 @@ return {
 			prop = { model = `vw_prop_casino_water_bottle_01a`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
-		},
-		consume = 0
+		}
 	},
 
     ['cola'] = {
@@ -3259,13 +3258,6 @@ return {
 		stack = true,
 	},
 
-	['bluefin_tuna'] = {
-		label = 'Thon Rouge',
-		weight = 200,
-		stack = true,
-		close = true,
-	},
-
 	['bracelet'] = {
 		label = 'Bracelet',
 		weight = 100,
@@ -3635,13 +3627,6 @@ return {
 
 	},
 
-	['fishing_rod'] = {
-		label = 'Canne à Pêche',
-		weight = 500,
-		stack = true,
-		close = true,
-	},
-
 	['gamingconsole'] = {
 		label = 'Console de Jeux',
 		weight = 1000,
@@ -3703,14 +3688,6 @@ return {
 		weight = 20,
 		stack = true,
 		close = true,
-	},
-
-	['halibut'] = {
-		label = 'Flétan',
-		weight = 100,
-		stack = true,
-		close = true,
-
 	},
 
 	['heroin'] = {
@@ -4012,14 +3989,6 @@ return {
 
 	},
 
-	['reinforced_fishing_rod'] = {
-		label = 'Canne à Pêche Renforcée',
-		weight = 500,
-		stack = true,
-		close = true,
-
-	},
-
 	['rice'] = {
 		label = 'Riz',
 		weight = 100,
@@ -4035,20 +4004,6 @@ return {
 		close = true,
 	},
 
-	['salmon'] = {
-		label = 'Saumon',
-		weight = 150,
-		stack = true,
-		close = true,
-	},
-
-	['shark_fin'] = {
-		label = 'Aileron de requin',
-		weight = 800,
-		stack = true,
-		close = true,
-	},
-
     ['chicken'] = {
 		label = 'poulet',
 		weight = 1000,
@@ -4057,13 +4012,6 @@ return {
 
 	['spray'] = {
 		label = 'Bombe de peinture',
-		weight = 500,
-		stack = true,
-		close = true,
-	},
-
-	['stingray'] = {
-		label = 'Raie',
 		weight = 500,
 		stack = true,
 		close = true,
@@ -4118,13 +4066,6 @@ return {
 		close = true,
 	},
 
-	['trout'] = {
-		label = 'Truite',
-		weight = 200,
-		stack = true,
-		close = true,
-	},
-
 	['watch'] = {
 		label = 'Montre',
 		weight = 100,
@@ -4156,13 +4097,6 @@ return {
 	['wheelchair'] = {
 		label = 'Fauteuil Roulant',
 		weight = 1000,
-		stack = true,
-		close = true,
-	},
-
-	['white_seabass'] = {
-		label = 'Bar Blanc',
-		weight = 200,
 		stack = true,
 		close = true,
 	},
@@ -7637,7 +7571,7 @@ return {
 			image = "RearSightCR.png",
 		}
 	},
-['fish_alligator_gar'] = {
+	['fish_alligator_gar'] = {
 		label = 'Poisson-alligator',
 		weight = 1000,
 		stack = true,
@@ -7919,32 +7853,94 @@ return {
 		stack = true,
 		close = true,
 	},
+	['fishing_rod'] = {
+		label = 'Canne en bambou',
+		weight = 1000,
+		stack = false,
+		close = true,
+		durability = true,
+		description = 'Canne de palier 1 -- niveau de peche 1 requis',
+	},
 	['fishing_rod_2'] = {
 		label = 'Canne composite',
 		weight = 1000,
 		stack = false,
 		close = true,
-		description = 'Canne de palier 2 -- niveau de peche 5 requis.',
+		durability = true,
+		description = 'Canne de palier 2 -- niveau de peche 16 requis',
 	},
 	['fishing_rod_3'] = {
 		label = 'Canne carbone',
 		weight = 1000,
 		stack = false,
 		close = true,
-		description = 'Canne de palier 3 -- niveau de peche 12 requis.',
+		durability = true,
+		description = 'Canne de palier 3 -- niveau de peche 32 requis',
+	},
+	['fishing_rod_4'] = {
+		label = 'Canne renforcée',
+		weight = 1000,
+		stack = false,
+		close = true,
+		durability = true,
+		description = 'Canne de palier 4 -- niveau de peche 50 requis',
 	},
 	['fishing_rod_5'] = {
 		label = 'Canne haute mer',
 		weight = 1000,
 		stack = false,
 		close = true,
-		description = 'Canne de palier 5 -- niveau de peche 32 requis.',
+		durability = true,
+		description = 'Canne de palier 5 -- niveau de peche 72 requis',
 	},
 	['fishing_rod_6'] = {
 		label = 'Canne abyssale',
 		weight = 1000,
 		stack = false,
 		close = true,
-		description = 'Canne de palier 6 -- niveau de peche 45 requis.',
+		durability = true,
+		description = 'Canne de palier 6 -- niveau de peche 90 requis',
+	},
+	['bait_crickets'] = {
+		label = 'Grillons',
+		weight = 10,
+		stack = true,
+		close = true,
+		description = 'Appat de peche -- niveau 26 requis.',
+	},
+	['bait_grasshopper'] = {
+		label = 'Sauterelles',
+		weight = 10,
+		stack = true,
+		close = true,
+		description = 'Appat de peche -- niveau 44 requis.',
+	},
+	['bait_minnows'] = {
+		label = 'Vairons',
+		weight = 10,
+		stack = true,
+		close = true,
+		description = 'Appat de peche -- niveau 64 requis.',
+	},
+	['bait_seaweed'] = {
+		label = 'Algues',
+		weight = 10,
+		stack = true,
+		close = true,
+		description = 'Appat de peche -- niveau 8 requis.',
+	},
+	['bait_squid'] = {
+		label = 'Calmar',
+		weight = 10,
+		stack = true,
+		close = true,
+		description = 'Appat de peche -- niveau 82 requis.',
+	},
+	['bait_worm'] = {
+		label = 'Ver de terre',
+		weight = 10,
+		stack = true,
+		close = true,
+		description = 'Appat de peche -- niveau 1 requis.',
 	},
 }

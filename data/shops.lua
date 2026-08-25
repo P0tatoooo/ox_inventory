@@ -405,8 +405,26 @@ return {
 	Fisherman = {
 		name = 'Pêcheur',
 		inventory = {
-			{ name = 'fishing_rod', price = 200 },
-            { name = 'divinggear', price = 500}
+			-- Cannes : elles cassent a l'usage, c'est un consommable. Le niveau
+			-- requis est verifie a l'UTILISATION (MyCity_Fishing) et pas ici, un
+			-- magasin ox_inventory ne sachant pas filtrer sur un niveau de metier.
+			{ name = 'fishing_rod', price = 35 },           -- niveau 1, 50 lancers
+			{ name = 'fishing_rod_2', price = 80 },         -- niveau 16, 100 lancers
+			{ name = 'fishing_rod_3', price = 185 },        -- niveau 32, 150 lancers
+			{ name = 'fishing_rod_4', price = 270 },        -- niveau 50, 200 lancers
+			{ name = 'fishing_rod_5', price = 365 },        -- niveau 72, 250 lancers
+			{ name = 'fishing_rod_6', price = 490 },        -- niveau 90, 300 lancers
+			{ name = 'divinggear', price = 500 },
+			-- Appats : consommes a chaque prise, achetes en gros. Le niveau
+			-- requis est verifie a l'UTILISATION (MyCity_Fishing), pas ici :
+			-- un magasin ox_inventory ne sait pas filtrer sur un niveau de
+			-- metier. En acheter trop tot ne sert donc a rien, mais ne casse rien.
+			{ name = 'bait_worm', price = 1 },              -- niveau 1
+			{ name = 'bait_seaweed', price = 1 },           -- niveau 8
+			{ name = 'bait_crickets', price = 1 },          -- niveau 26
+			{ name = 'bait_grasshopper', price = 2 },       -- niveau 44
+			{ name = 'bait_minnows', price = 2 },           -- niveau 64
+			{ name = 'bait_squid', price = 2 },             -- niveau 82
 		}, locations = {
 			vector3(-3418.335, 970.5667, 11.93619)
 		}
