@@ -36,6 +36,7 @@ return {
 			{ name = 'notepad', price = 100 },
 			{ name = 'notebook', price = 100 },
 			{ name = 'halloweenbasket', price = 50 },
+			{ name = 'divinggear', price = 500 },
 		}, locations = {
 			vec3(24.672529, -1347.903320, 28.482056),
 			vec3(-3038.426270, 584.795593, 6.897461),
@@ -138,8 +139,7 @@ return {
             {name = 'sprayremover', price = 0, grade = 0},
             {name = 'posterremover', price = 0, grade = 0},
             {name = 'empty_evidence_bag', price = 0, grade = 0},
-            { name = 'divinggear', price = 0 },
-
+            
             {name = 'spikestrip', price = 0, grade = 1},
             { name = 'cone', price = 0, grade = 1},
 			{ name = 'gazebotent', price = 0, grade = 1},
@@ -223,7 +223,6 @@ return {
             {name = 'sprayremover', price = 0, grade = 0},
             {name = 'posterremover', price = 0, grade = 0},
             {name = 'empty_evidence_bag', price = 0, grade = 0},
-            {name = 'divinggear', price = 0},
 
             {name = 'spikestrip', price = 0, grade = 1},
             { name = 'cone', price = 0, grade = 1},
@@ -408,25 +407,33 @@ return {
 			-- Cannes : elles cassent a l'usage, c'est un consommable. Le niveau
 			-- requis est verifie a l'UTILISATION (MyCity_Fishing) et pas ici, un
 			-- magasin ox_inventory ne sachant pas filtrer sur un niveau de metier.
-			{ name = 'fishing_rod', price = 35 },           -- niveau 1, 50 lancers
-			{ name = 'fishing_rod_2', price = 80 },         -- niveau 16, 100 lancers
-			{ name = 'fishing_rod_3', price = 185 },        -- niveau 32, 150 lancers
-			{ name = 'fishing_rod_4', price = 270 },        -- niveau 50, 200 lancers
-			{ name = 'fishing_rod_5', price = 365 },        -- niveau 72, 250 lancers
-			{ name = 'fishing_rod_6', price = 490 },        -- niveau 90, 300 lancers
-			{ name = 'divinggear', price = 500 },
+			{ name = 'fishing_rod', price = 35, license = 'fishing' },           -- niveau 1, 50 lancers
+			{ name = 'fishing_rod_2', price = 80, license = 'fishing' },         -- niveau 16, 100 lancers
+			{ name = 'fishing_rod_3', price = 185, license = 'fishing' },        -- niveau 32, 150 lancers
+			{ name = 'fishing_rod_4', price = 270, license = 'fishing' },        -- niveau 50, 200 lancers
+			{ name = 'fishing_rod_5', price = 365, license = 'fishing' },        -- niveau 72, 250 lancers
+			{ name = 'fishing_rod_6', price = 490, license = 'fishing' },        -- niveau 90, 300 lancers
+
 			-- Appats : consommes a chaque prise, achetes en gros. Le niveau
 			-- requis est verifie a l'UTILISATION (MyCity_Fishing), pas ici :
 			-- un magasin ox_inventory ne sait pas filtrer sur un niveau de
 			-- metier. En acheter trop tot ne sert donc a rien, mais ne casse rien.
-			{ name = 'bait_worm', price = 1 },              -- niveau 1
-			{ name = 'bait_seaweed', price = 1 },           -- niveau 8
-			{ name = 'bait_crickets', price = 1 },          -- niveau 26
-			{ name = 'bait_grasshopper', price = 2 },       -- niveau 44
-			{ name = 'bait_minnows', price = 2 },           -- niveau 64
-			{ name = 'bait_squid', price = 2 },             -- niveau 82
+			{ name = 'bait_worm', price = 1, license = 'fishing' },              -- niveau 1
+			{ name = 'bait_seaweed', price = 1, license = 'fishing' },           -- niveau 8
+			{ name = 'bait_crickets', price = 1, license = 'fishing' },          -- niveau 26
+			{ name = 'bait_grasshopper', price = 2, license = 'fishing' },       -- niveau 44
+			{ name = 'bait_minnows', price = 2, license = 'fishing' },           -- niveau 64
+			{ name = 'bait_squid', price = 2, license = 'fishing' },             -- niveau 82
 		}, locations = {
-			vector3(-3418.335, 970.5667, 11.93619)
+			-- Posé sur le marchand de MyCity_Fishing (Config.Merchant) : c'est
+			-- cette ressource-là qui spawne le PNJ, ox_inventory n'ajoute que le
+			-- point d'interaction.
+			--
+			-- `locations` et NON `targets` : ce serveur tourne avec
+			-- `setr inventory:target false` (base.cfg), et dans ce mode
+			-- modules/shops/client.lua ne lit que la branche `locations` --
+			-- `targets` y est purement ignoré, le magasin devient injoignable.
+			vector3(1310.756714, 4304.890625, 37.736233)
 		}
 	},
 
