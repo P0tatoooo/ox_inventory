@@ -425,6 +425,14 @@ return {
 			{ name = 'bait_grasshopper', price = 2, license = 'fishing' },       -- niveau 44
 			{ name = 'bait_minnows', price = 2, license = 'fishing' },           -- niveau 64
 			{ name = 'bait_squid', price = 2, license = 'fishing' },             -- niveau 82
+
+			-- Filets : revenu PASSIF, donc volontairement chers pour ce qu'ils
+			-- rapportent. Un filet se rembourse en trois releves, soit six heures
+			-- a l'eau, et rend au total trois a quatre fois sa mise avant de
+			-- ceder. Le niveau requis est verifie a la POSE (MyCity_Fishing).
+			{ name = 'fishnet_small', price = 250, license = 'fishing' },        -- niveau 5, 15 poissons, 8 releves
+			{ name = 'fishnet_medium', price = 600, license = 'fishing' },       -- niveau 22, 20 poissons, 10 releves
+			{ name = 'fishnet_large', price = 1000, license = 'fishing' },       -- niveau 40, 30 poissons, 12 releves
 		}, locations = {
 			-- Posé sur le marchand de MyCity_Fishing (Config.Merchant) : c'est
 			-- cette ressource-là qui spawne le PNJ, ox_inventory n'ajoute que le

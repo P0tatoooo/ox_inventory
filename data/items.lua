@@ -8120,4 +8120,28 @@ return {
 		close = true,
 		description = 'Appat de peche -- niveau 1 requis.',
 	},
+	['fishnet_large'] = {
+		label = 'Grand filet de pêche',
+		weight = 11000,
+		stack = false,
+		close = true,
+		durability = true,
+		description = 'Filet de peche -- niveau 40 requis, 30 poissons par releve, 12 releves.',
+	},
+	['fishnet_medium'] = {
+		label = 'Filet de pêche moyen',
+		weight = 7000,
+		stack = false,
+		close = true,
+		durability = true,
+		description = 'Filet de peche -- niveau 22 requis, 20 poissons par releve, 10 releves.',
+	},
+	['fishnet_small'] = {
+		label = 'Petit filet de pêche',
+		weight = 4000,
+		stack = false,
+		close = true,
+		durability = true,
+		description = 'Filet de peche -- niveau 5 requis, 15 poissons par releve, 8 releves.',
+	},
 }
