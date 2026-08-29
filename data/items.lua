@@ -4572,6 +4572,13 @@ return {
 		close = true,
 	},
 
+	["fishing_license"] = {
+		label = "Permis de Pêche",
+		weight = 0.01,
+		stack = false,
+		close = true,
+	},
+
 	["uff_card"] = {
 		label = "Carte de l'UFF",
 		weight = 0.01,

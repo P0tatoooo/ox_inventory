@@ -298,6 +298,7 @@ return {
             { name = 'driver_license', price = 0 },
             { name = 'cc_license', price = 0 },
 			{ name = 'cc_license_pro', price = 0 },
+			{ name = 'fishing_license', price = 0 },
 		}, locations = {
 			vec3(442.971680, -985.158630, 31.090000),
 			vec3(-451.859344, 6013.661621, 31.706177),

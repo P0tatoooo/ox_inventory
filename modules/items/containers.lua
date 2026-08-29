@@ -66,6 +66,8 @@ setContainerProperties('wallet', {
         'driver_license',
         'cc_license',
 		'cc_license_pro',
+		'fishing_license',
+		'uff_card',
         'taxiticket',
         'restaurationticket',
         'healticket',
