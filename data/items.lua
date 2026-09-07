@@ -3577,6 +3577,10 @@ return {
 		weight = 200,
 		stack = true,
 		close = true,
+		consume = 0,
+		client = {
+			export = 'MyCity_Tab.UseTabletItem'
+		}
 	},
 
 	['digitaltablet'] = {
