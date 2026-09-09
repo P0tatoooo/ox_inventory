@@ -390,7 +390,7 @@ return {
 		}
 	}, ]]
 
-	Fisherman = {
+	--[[ Fisherman = {
 		name = 'Pêcheur',
 		inventory = {
 			-- Cannes : elles cassent a l'usage, c'est un consommable. Le niveau
@@ -432,7 +432,7 @@ return {
 			-- `targets` y est purement ignoré, le magasin devient injoignable.
 			vector3(1310.756714, 4304.890625, 37.736233)
 		}
-	},
+	}, ]]
 
 	Illegal_BlackMarket = {
 		name = 'Black Market',
