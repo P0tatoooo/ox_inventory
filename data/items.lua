@@ -3583,6 +3583,13 @@ return {
 		}
 	},
 
+	['hanger'] = {
+		label = 'Cintre',
+		weight = 100,
+		stack = true,
+		close = true,
+	},
+
 	['digitaltablet'] = {
 		label = 'Tablette Numérique',
 		weight = 200,
