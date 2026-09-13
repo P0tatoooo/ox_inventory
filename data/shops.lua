@@ -16,51 +16,9 @@ return {
 		}
 	},
 
-	General = {
-		name = 'Supérette',
-		--[[blip = {
-			id = 59, colour = 69, scale = 0.8
-		},]] inventory = {
-			{ name = 'donut', price = 90 },
-			{ name = 'water', price = 50 },
-			{ name = 'phone', price = 500 },
-			{ name = 'tablet', price = 1000 },
-		}, locations = {
-			vec3(24.672529, -1347.903320, 28.482056),
-			vec3(-3038.426270, 584.795593, 6.897461),
-			vec3(-3241.674805, 999.942871, 11.817627),
-			vec3(372.448364, 325.846161, 102.553833),
-			--vec3(-705.599976, -915.375854, 18.203613),
-			--vec3(-47.432968, -1759.608765, 28.414673),
-			--vec3(1165.516479, -324.408783, 68.197021),
-			vec3(-1818.553833, 793.239563, 137.062256),
-			vec3(-2966.017578, 390.909882, 14.041748),
-			vec3(1133.723022, -982.588989, 45.399292),
-			vec3(-1221.692261, -908.690125, 11.312134),
-			vec3(-1485.942871, -377.670319, 39.147949),
-			vec3(1727.617554, 6414.645996, 34.025635),
-			vec3(1696.325317, 4923.455078, 41.052002),
-			vec3(1960.404419, 3739.476807, 31.329712),
-			vec3(548.967041, 2671.885742, 41.153076),
-			vec3(2678.545166, 3279.217529, 54.228516),
-			vec3(2557.819824, 380.861542, 107.608765),
-			vec3(1165.898926, 2711.248291, 37.142822),
-			vec3(1392.567017, 3606.672607, 33.975098),
-			vec3(160.153854, 6641.129883, 30.689331),
-
-		}, --[[targets = {
-			{ loc = vec3(25.06, -1347.32, 29.5), length = 0.7, width = 0.5, heading = 0.0, minZ = 29.5, maxZ = 29.9, distance = 1.5 },
-			{ loc = vec3(-3039.18, 585.13, 7.91), length = 0.6, width = 0.5, heading = 15.0, minZ = 7.91, maxZ = 8.31, distance = 1.5 },
-			{ loc = vec3(-3242.2, 1000.58, 12.83), length = 0.6, width = 0.6, heading = 175.0, minZ = 12.83, maxZ = 13.23, distance = 1.5 },
-			{ loc = vec3(1728.39, 6414.95, 35.04), length = 0.6, width = 0.6, heading = 65.0, minZ = 35.04, maxZ = 35.44, distance = 1.5 },
-			{ loc = vec3(1698.37, 4923.43, 42.06), length = 0.5, width = 0.5, heading = 235.0, minZ = 42.06, maxZ = 42.46, distance = 1.5 },
-			{ loc = vec3(1960.54, 3740.28, 32.34), length = 0.6, width = 0.5, heading = 120.0, minZ = 32.34, maxZ = 32.74, distance = 1.5 },
-			{ loc = vec3(548.5, 2671.25, 42.16), length = 0.6, width = 0.5, heading = 10.0, minZ = 42.16, maxZ = 42.56, distance = 1.5 },
-			{ loc = vec3(2678.29, 3279.94, 55.24), length = 0.6, width = 0.5, heading = 330.0, minZ = 55.24, maxZ = 55.64, distance = 1.5 },
-			{ loc = vec3(2557.19, 381.4, 108.62), length = 0.6, width = 0.5, heading = 0.0, minZ = 108.62, maxZ = 109.02, distance = 1.5 },
-			{ loc = vec3(373.13, 326.29, 103.57), length = 0.6, width = 0.5, heading = 345.0, minZ = 103.57, maxZ = 103.97, distance = 1.5 },
-		}]]
-	},
+	-- `General` (Supérette) retirée : les supérettes et leur boutique sont
+	-- maintenant tenues par MyCity_CoreV2 (table `mycity_stores`), qui enregistre
+	-- la boutique `Superette` avec la position de chaque vendeur.
 
 	--[[Ammunation = {
 		name = 'Ammunation',
