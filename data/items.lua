@@ -3060,7 +3060,7 @@ return {
 		stack = true,
         close = true,
         client = {
-			export = 'MyCity_Printer.showFlyer'
+			export = 'MyCity_Tab.showFlyer'
 		},
 	},
     ['flyer'] = {
@@ -3069,7 +3069,7 @@ return {
 		stack = true,
         close = true,
         client = {
-			export = 'MyCity_Printer.showFlyer'
+			export = 'MyCity_Tab.showFlyer'
 		},
 	},
     ['paper'] = {
