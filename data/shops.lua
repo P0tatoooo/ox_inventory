@@ -193,7 +193,7 @@ return {
 			{name = 'parachute', price = 0, grade = 3},
 			{name = 'storagescanner', price = 0, grade = 8},
 		}, locations = {
-			vec3(1837.890747, 3688.118652, 34.189236),
+			vec3(1891.548462, 3659.714355, 34.112938),
 		}, targets = {
 			--{ loc = vec3(453.21, -980.03, 30.68), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 }
 		}
@@ -247,8 +247,7 @@ return {
 			{ name = 'fishing_license', price = 0 },
 		}, locations = {
 			vec3(442.971680, -985.158630, 31.090000),
-			vec3(-451.859344, 6013.661621, 31.706177),
-			vec3(1832.909302, 3682.334473, 34.189301),
+			vec3(1891.787720, 3639.255859, 34.112907),
 		}, targets = {
 
 		}

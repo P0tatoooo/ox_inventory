@@ -12,7 +12,7 @@ return {
 		}
 	},
 	{
-		coords = vec3(1830.562378, 3679.599121, 38.859409),
+		coords = vec3(1897.578613, 3655.454834, 29.421926),
 		target = { -- qtarget support
 			name = 'sheriff_evidence', -- name of zone must be unique
 			loc = vec3(1830.562378, 3679.599121, 38.859409),
