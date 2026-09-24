@@ -3996,6 +3996,15 @@ return {
 
 	},
 
+	-- Produit intermédiaire du vignoble (MyCity_Vineyard) : contenu et qualité
+	-- dans les metadata, un tonnelet = un lot de 12 bouteilles
+	['keg'] = {
+		label = 'Tonnelet',
+		weight = 9000,
+		stack = false,
+		close = true,
+	},
+
 	['rice'] = {
 		label = 'Riz',
 		weight = 100,
