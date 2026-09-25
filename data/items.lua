@@ -7798,6 +7798,12 @@ return {
 		stack = true,
 		close = true,
 	},
+	['fish_horn_shark'] = {
+		label = 'Requin dormeur',
+		weight = 2600,
+		stack = true,
+		close = true,
+	},
 	['fish_jacksmelt'] = {
 		label = 'Capucette',
 		weight = 517,
