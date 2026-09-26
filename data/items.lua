@@ -7656,7 +7656,7 @@ return {
 	},
 	['fish_baudroie'] = {
 		label = 'Baudroie abyssale',
-		weight = 2045,
+		weight = 1545,
 		stack = true,
 		close = true,
 	},
@@ -7752,7 +7752,7 @@ return {
 	},
 	['fish_espadon'] = {
 		label = 'Espadon',
-		weight = 2700,
+		weight = 2200,
 		stack = true,
 		close = true,
 	},
@@ -7764,7 +7764,7 @@ return {
 	},
 	['fish_esturgeon_beluga'] = {
 		label = 'Esturgeon Béluga',
-		weight = 2800,
+		weight = 3300,
 		stack = true,
 		close = true,
 	},
@@ -7800,7 +7800,7 @@ return {
 	},
 	['fish_horn_shark'] = {
 		label = 'Requin dormeur',
-		weight = 2600,
+		weight = 3100,
 		stack = true,
 		close = true,
 	},
@@ -7836,7 +7836,7 @@ return {
 	},
 	['fish_marlin'] = {
 		label = 'Marlin bleu',
-		weight = 2725,
+		weight = 2225,
 		stack = true,
 		close = true,
 	},
@@ -7860,7 +7860,7 @@ return {
 	},
 	['fish_opah'] = {
 		label = 'Opah',
-		weight = 2590,
+		weight = 2090,
 		stack = true,
 		close = true,
 	},
@@ -7890,19 +7890,19 @@ return {
 	},
 	['fish_poisson_lanterne'] = {
 		label = 'Poisson-lanterne',
-		weight = 2012,
+		weight = 1512,
 		stack = true,
 		close = true,
 	},
 	['fish_poisson_lune'] = {
 		label = 'Poisson-lune',
-		weight = 2665,
+		weight = 2165,
 		stack = true,
 		close = true,
 	},
 	['fish_poisson_sabre'] = {
 		label = 'Poisson-sabre',
-		weight = 2100,
+		weight = 1600,
 		stack = true,
 		close = true,
 	},
@@ -7918,6 +7918,12 @@ return {
 		stack = true,
 		close = true,
 	},
+	['fish_raie_pastenague'] = {
+		label = 'Raie pastenague',
+		weight = 1560,
+		stack = true,
+		close = true,
+	},
 	['fish_regalec'] = {
 		label = 'Régalec',
 		weight = 3400,
@@ -7926,7 +7932,7 @@ return {
 	},
 	['fish_requin_marteau'] = {
 		label = 'Requin-marteau',
-		weight = 2700,
+		weight = 3200,
 		stack = true,
 		close = true,
 	},
@@ -8028,7 +8034,7 @@ return {
 	},
 	['fish_voilier'] = {
 		label = 'Poisson-voilier',
-		weight = 2670,
+		weight = 2170,
 		stack = true,
 		close = true,
 	},
