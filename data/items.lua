@@ -7666,12 +7666,6 @@ return {
 		stack = true,
 		close = true,
 	},
-	['fish_blobfish'] = {
-		label = 'Blobfish',
-		weight = 3030,
-		stack = true,
-		close = true,
-	},
 	['fish_bonite'] = {
 		label = 'Bonite à dos rayé',
 		weight = 1545,
