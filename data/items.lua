@@ -8050,12 +8050,6 @@ return {
 		stack = true,
 		close = true,
 	},
-	['fishing_boot'] = {
-		label = 'Vieille botte',
-		weight = 522,
-		stack = true,
-		close = true,
-	},
 	['fishing_rod'] = {
 		label = 'Canne en bambou',
 		weight = 1000,
