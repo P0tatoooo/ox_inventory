@@ -2101,7 +2101,7 @@ end)
 
 RegisterNUICallback('toggleFixHair', function(_, cb)
 	cb(1)
-	TriggerEvent('illenium-appearance:ToggleFixHair')
+	TriggerEvent('MyCity_Appearance:ToggleFixHair')
 end)
 
 lib.callback.register('ox_inventory:startCrafting', function(id, recipe)

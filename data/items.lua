@@ -3568,7 +3568,7 @@ return {
 		close = true,
 		consume = 1,
 		client = {
-			export = 'illenium-appearance.toggleHair'
+			export = 'MyCity_Appearance.toggleHair'
 		},
 	},
 
