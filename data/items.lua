@@ -7786,6 +7786,12 @@ return {
 		stack = true,
 		close = true,
 	},
+	['fish_hippocampe'] = {
+		label = 'Hippocampe',
+		weight = 1015,
+		stack = true,
+		close = true,
+	},
 	['fish_homard'] = {
 		label = 'Homard',
 		weight = 1027,
@@ -7900,6 +7906,12 @@ return {
 		stack = true,
 		close = true,
 	},
+	['fish_poisson_scie'] = {
+		label = 'Poisson-scie',
+		weight = 3350,
+		stack = true,
+		close = true,
+	},
 	['fish_poisson_volant'] = {
 		label = 'Poisson volant',
 		weight = 1022,
@@ -7909,6 +7921,18 @@ return {
 	['fish_pufferfish'] = {
 		label = 'Poisson-globe',
 		weight = 1527,
+		stack = true,
+		close = true,
+	},
+	['fish_raie_aigle'] = {
+		label = 'Raie aigle léopard',
+		weight = 2150,
+		stack = true,
+		close = true,
+	},
+	['fish_raie_manta'] = {
+		label = 'Raie manta',
+		weight = 3350,
 		stack = true,
 		close = true,
 	},
@@ -7924,9 +7948,45 @@ return {
 		stack = true,
 		close = true,
 	},
+	['fish_requin_blanc'] = {
+		label = 'Grand requin blanc',
+		weight = 3300,
+		stack = true,
+		close = true,
+	},
+	['fish_requin_bleu'] = {
+		label = 'Requin bleu',
+		weight = 2190,
+		stack = true,
+		close = true,
+	},
+	['fish_requin_leopard'] = {
+		label = 'Requin léopard',
+		weight = 1590,
+		stack = true,
+		close = true,
+	},
+	['fish_requin_mako'] = {
+		label = 'Requin mako',
+		weight = 2200,
+		stack = true,
+		close = true,
+	},
 	['fish_requin_marteau'] = {
 		label = 'Requin-marteau',
 		weight = 3200,
+		stack = true,
+		close = true,
+	},
+	['fish_requin_renard'] = {
+		label = 'Requin-renard',
+		weight = 2275,
+		stack = true,
+		close = true,
+	},
+	['fish_requin_tigre'] = {
+		label = 'Requin-tigre',
+		weight = 3275,
 		stack = true,
 		close = true,
 	},
@@ -8011,6 +8071,30 @@ return {
 	['fish_thon_listao'] = {
 		label = 'Thon listao',
 		weight = 1550,
+		stack = true,
+		close = true,
+	},
+	['fish_tortue_caouanne'] = {
+		label = 'Tortue caouanne',
+		weight = 2060,
+		stack = true,
+		close = true,
+	},
+	['fish_tortue_luth'] = {
+		label = 'Tortue luth',
+		weight = 3110,
+		stack = true,
+		close = true,
+	},
+	['fish_tortue_verte'] = {
+		label = 'Tortue verte',
+		weight = 1575,
+		stack = true,
+		close = true,
+	},
+	['fish_totoaba'] = {
+		label = 'Totoaba',
+		weight = 2100,
 		stack = true,
 		close = true,
 	},
