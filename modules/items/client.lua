@@ -129,7 +129,7 @@ Item('parachute', function(data, slot)
 				TriggerServerEvent("MyCity_CoreV2:Parachute:HasParachute", true)
 
 				if not MenuItemId then
-					MenuItemId = exports["qb-radialmenu"]:AddOption(
+					MenuItemId = exports.MyCity_QuickMenu:AddOption(
 					{
 						id = "remove_parachute",
 						title = "Enlever Parachute",
@@ -145,9 +145,11 @@ Item('parachute', function(data, slot)
 	end
 end)
 
+-- The quick menu (MyCity_QuickMenu, ex qb-radialmenu) still fires this event
+-- name on opening, before it builds its tiles.
 RegisterNetEvent("qb-radialmenu:client:onRadialmenuOpen", function()
 	if MenuItemId and not client.parachute then
-		exports["qb-radialmenu"]:RemoveOption(MenuItemId)
+		exports.MyCity_QuickMenu:RemoveOption(MenuItemId)
 		MenuItemId = nil
 	end
 end)
