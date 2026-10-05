@@ -69,6 +69,8 @@ return {
 		}
 	},
 
+	-- Placée par MyCity_Police (cibles ox_target, Config.Stations) : il la
+	-- redéclare avec ses positions, ox garde donc son contrôle de distance.
 	PoliceArmoury = {
 		name = 'Armurerie LSPD',
 		groups = {
@@ -87,6 +89,7 @@ return {
             {name = 'empty_evidence_bag', price = 0, grade = 0},
             
             {name = 'spikestrip', price = 0, grade = 1},
+            {name = 'ballistic_shield', price = 0, grade = 1},
             { name = 'cone', price = 0, grade = 1},
 			{ name = 'gazebotent', price = 0, grade = 1},
 			{ name = 'worklight', price = 0, grade = 1},
@@ -144,15 +147,11 @@ return {
             --{name = 'WEAPON_AIRSOFTG36C', price = 0, grade = 7},
             --{name = 'WEAPON_AIRSOFTMP5', price = 0, grade = 7},
             --{name = 'WEAPON_AIRSOFTUZIMICRO', price = 0, grade = 7},
-		}, locations = {
-			vec3(468.208344, -983.454346, 26.092115),
-            vector3(-1888.261, 3244.5, 32.83917),
-            vector3(-425.2, 5998.34, 32),
-		}, targets = {
-			--{ loc = vec3(453.21, -980.03, 30.68), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 }
 		}
 	},
 
+	-- Placée par MyCity_Police (cibles ox_target, Config.Stations) : il la
+	-- redéclare avec ses positions, ox garde donc son contrôle de distance.
 	SheriffArmoury = {
 		name = 'Armurerie BCSO',
 		groups = {
@@ -171,6 +170,7 @@ return {
             {name = 'empty_evidence_bag', price = 0, grade = 0},
 
             {name = 'spikestrip', price = 0, grade = 1},
+            {name = 'ballistic_shield', price = 0, grade = 1},
             { name = 'cone', price = 0, grade = 1},
 			{ name = 'gazebotent', price = 0, grade = 1},
 			{ name = 'worklight', price = 0, grade = 1},
@@ -192,10 +192,6 @@ return {
             {name = 'ziptie', price = 0, grade = 3},
 			{name = 'parachute', price = 0, grade = 3},
 			{name = 'storagescanner', price = 0, grade = 8},
-		}, locations = {
-			vec3(1891.548462, 3659.714355, 34.112938),
-		}, targets = {
-			--{ loc = vec3(453.21, -980.03, 30.68), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 }
 		}
 	},
 
@@ -231,6 +227,8 @@ return {
 		}
 	},
 
+    -- Placée par MyCity_Police (cibles ox_target, Config.Printer) : il la
+    -- redéclare avec ses positions, ox garde donc son contrôle de distance.
     LSPDPrinter = {
 		name = 'Photocopieuse',
 		groups = {
@@ -245,11 +243,6 @@ return {
             { name = 'cc_license', price = 0 },
 			{ name = 'cc_license_pro', price = 0 },
 			{ name = 'fishing_license', price = 0 },
-		}, locations = {
-			vec3(442.971680, -985.158630, 31.090000),
-			vec3(1891.787720, 3639.255859, 34.112907),
-		}, targets = {
-
 		}
 	},
 

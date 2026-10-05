@@ -1,42 +1,6 @@
 return {
-    {
-		coords = vec3(466.764343, -987.407410, 26.092108),
-		target = {
-			loc = vec3(466.764343, -987.407410, 26.092108),
-			length = 1.2,
-			width = 5.6,
-			heading = 0,
-			minZ = 29.49,
-			maxZ = 32.09,
-			label = 'Open personal locker'
-		},
-		name = 'policelocker',
-		label = 'Casier LSPD',
-		owner = true,
-		slots = 70,
-		weight = 100000,
-		groups = {
-			['police'] = 0,
-		},
-	},
-	{
-		coords = vec3(1837.155640, 3685.334717, 34.189220),
-		target = {
-			loc = vec3(1837.155640, 3685.334717, 34.189220),
-			length = 1.2,
-			width = 5.6,
-			heading = 0,
-			minZ = 29.49,
-			maxZ = 32.09,
-			label = 'Open personal locker'
-		},
-		name = 'sherifflocker',
-		label = 'Casier BCSO',
-		owner = true,
-		slots = 70,
-		weight = 100000,
-		groups = "sheriff"
-	},
+    -- Casiers LSPD / BCSO (policelocker, sherifflocker) : MyCity_Police
+    -- (RegisterStash avec leur position, cibles ox_target).
     {
 		coords = vector3(-523.9194, -176.1098, 42.83658),
 		target = {

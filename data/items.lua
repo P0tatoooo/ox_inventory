@@ -4252,7 +4252,7 @@ return {
 		stack = true,
 		close = true,
         client = {
-            export = "qb-policejob.cuffFromItem"
+            export = "MyCity_Police.cuffFromItem"
         }
 	},
 
@@ -4455,7 +4455,7 @@ return {
 		weight = 400,
 		stack = true,
         client = {
-            export = "qb-policejob.cuffFromItem"
+            export = "MyCity_Police.cuffFromItem"
         }
 	},
     ["headbag"] = {
@@ -4510,7 +4510,19 @@ return {
         label = "Herse",
         weight = 750,
         client = {
-            export = "qb-policejob.deploySpikestrip"
+            export = "MyCity_Police.deploySpikestrip"
+        }
+    },
+    -- Utilisé : sorti / rangé (MyCity_Police, client/station.lua). Rangé de
+    -- lui-même quand il quitte l'inventaire.
+    ["ballistic_shield"] = {
+        label = "Bouclier balistique",
+        weight = 6000,
+        stack = false,
+        close = true,
+        description = "Se tient à la main gauche, pistolet dans l'autre",
+        client = {
+            export = "MyCity_Police.useShield"
         }
     },
     ["ziptie"] = {
@@ -4518,7 +4530,7 @@ return {
         weight = 30,
         stack = true,
         client = {
-            export = "qb-policejob.cuffFromItem"
+            export = "MyCity_Police.cuffFromItem"
         }
     },
 
