@@ -1601,6 +1601,9 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 
 		if invOpen then
 			DisableAllControlActions(0)
+			-- Frontend group too: the character preview is a frontend menu, and its
+			-- Back/Pause inputs (Backspace typed in an NUI field) would close it.
+			DisableAllControlActions(2)
 			HideHudAndRadarThisFrame()
 
 			for i = 1, #EnableKeys do
@@ -2368,90 +2371,125 @@ AddEventHandler('onResourceStop', function(resource)
     DeletePedScreen()
 end)
 
+-- Character preview, the way tgiann-inventory does it: the ped is drawn by an
+-- empty frontend (pause-menu) layer underneath the NUI, so it is lit, sharp,
+-- never clips into walls and isn't a world entity anyone else can see. It shows
+-- through the transparent gap between the inventory panels.
+local PED_SCREEN_POSITION = 1 -- GivePedToPauseMenu slot: 0 left, 1 center, 2 right
+local pedScreenSession = 0
+local pedScreenFrontend = false
+
+-- HUD_COLOUR_PAUSE_BG: the frontend still fills its ped column with it (the dark
+-- rectangle beside the ped), so it is made transparent while the preview is up
+-- and put back after, since the real pause menu uses it too.
+local PAUSE_BG_COLOUR = 117
+local pauseBgOriginal
+
+local function deletePreviewPed(ped)
+    if ped and DoesEntityExist(ped) then DeleteEntity(ped) end
+end
+
+local function clonePreviewPed()
+    -- ClonePed's 2nd argument is isNetwork, not a heading: false keeps the clone local.
+    local ped = ClonePed(PlayerPedId(), false, false, true)
+    SetEntityVisible(ped, false, false)
+    SetEntityCollision(ped, false, false)
+    FreezeEntityPosition(ped, true)
+    SetEntityInvincible(ped, true)
+    SetBlockingOfNonTemporaryEvents(ped, true)
+    return ped
+end
+
+-- The clothing toggles change the real player, and only once qb-radialmenu's
+-- toggle emote has played, so the preview polls for any appearance change
+-- instead of hooking one specific event.
+local function appearanceSignature(ped)
+    local parts = { GetEntityModel(ped) }
+    for i = 0, 11 do
+        parts[#parts + 1] = GetPedDrawableVariation(ped, i)
+        parts[#parts + 1] = GetPedTextureVariation(ped, i)
+    end
+    for i = 0, 7 do
+        parts[#parts + 1] = GetPedPropIndex(ped, i)
+        parts[#parts + 1] = GetPedPropTextureIndex(ped, i)
+    end
+    return table.concat(parts, ',')
+end
+
 function DeletePedScreen()
-    QBCore.Functions.DeleteEntity(clonedPed)
+    pedScreenSession = pedScreenSession + 1
+    deletePreviewPed(clonedPed)
+    clonedPed = nil
+
+    if pedScreenFrontend then
+        pedScreenFrontend = false
+        ClearPedInPauseMenu()
+        SetFrontendActive(false)
+
+        local c = pauseBgOriginal
+        ReplaceHudColourWithRgba(PAUSE_BG_COLOUR, c[1], c[2], c[3], c[4])
+    end
 end
 
 function CreatePedScreen()
+    DeletePedScreen()
+    local session = pedScreenSession
+
+    -- The real pause menu is open: leave it alone, there's no room for ours.
+    if IsPauseMenuActive() then return end
+
     Citizen.CreateThread(function()
-        QBCore.Functions.DeleteEntity(clonedPed)
-        local model = GetEntityModel(PlayerPedId())
-        QBCore.Functions.LoadModel(model)
-        clonedPed = CreatePed(28, model, GetEntityCoords(PlayerPedId()), 0, true, false)
-        SetEntityCollision(clonedPed, false, false)
-        SetEntityInvincible(clonedPed, true)
-        NetworkSetEntityInvisibleToNetwork(clonedPed, true)
-        ClonePedToTarget(PlayerPedId(), clonedPed)
-        SetEntityCanBeDamaged(clonedPed, false)
-        SetBlockingOfNonTemporaryEvents(clonedPed, true)
-        -- Without this, the physics/animation engine can still nudge the clone
-        -- (gravity, foot placement, velocity copied from the real ped) between our
-        -- once-a-frame repositioning below, on top of whatever's causing it to move.
-        FreezeEntityPosition(clonedPed, true)
+        -- Closed before this thread even ran: opening the frontend now would leave it up.
+        if session ~= pedScreenSession then return end
 
-        local smoothedTarget
-        local smoothedPitch
-        local lastAppearanceSync = GetGameTimer()
+        -- Read once, before our first replace, so it's the game's own value.
+        if not pauseBgOriginal then
+            pauseBgOriginal = { GetHudColour(PAUSE_BG_COLOUR) }
+        end
+        ReplaceHudColourWithRgba(PAUSE_BG_COLOUR, 0, 0, 0, 0)
 
-        while DoesEntityExist(clonedPed) do
-            Citizen.Wait(0)
+        ActivateFrontendMenu(`FE_MENU_VERSION_EMPTY_NO_BACKGROUND`, false, -1)
+        pedScreenFrontend = true
 
-            -- The clothing toggle buttons change the real player's components, not
-            -- the clone's, and the actual change only lands after qb-radialmenu's
-            -- toggle emote finishes playing -- so re-cloning appearance on a short
-            -- interval (instead of trying to sync it to that one specific event) picks
-            -- up that change, and any other appearance change, shortly after it happens.
-            local now = GetGameTimer()
-            if now - lastAppearanceSync > 500 then
-                lastAppearanceSync = now
-                ClonePedToTarget(PlayerPedId(), clonedPed)
+        local timeout = GetGameTimer() + 1000
+        while not IsFrontendReadyForControl() and GetGameTimer() < timeout do Wait(0) end
+        if session ~= pedScreenSession then return end
+
+        -- The frontend draws its own mouse cursor under the NUI one, and the game
+        -- turns it back on (menu setup, window refocus), so hide it every frame.
+        Citizen.CreateThread(function()
+            while session == pedScreenSession do
+                Citizen.InvokeNative(0x98215325A695E78A, false)
+                Wait(0)
+            end
+        end)
+
+        local lastSignature
+        while session == pedScreenSession do
+            local signature = appearanceSignature(PlayerPedId())
+
+            if signature ~= lastSignature then
+                lastSignature = signature
+                local previous = clonedPed
+                local ped = clonePreviewPed()
+                clonedPed = ped
+
+                local streamTimeout = GetGameTimer() + 1000
+                while not HaveAllStreamingRequestsCompleted(ped) and GetGameTimer() < streamTimeout do Wait(0) end
+
+                -- Closed meanwhile: DeletePedScreen already removed the new clone.
+                if session ~= pedScreenSession then
+                    deletePreviewPed(previous)
+                    return
+                end
+
+                GivePedToPauseMenu(ped, PED_SCREEN_POSITION)
+                SetPauseMenuPedLighting(true)
+                SetPauseMenuPedSleepState(true)
+                deletePreviewPed(previous)
             end
 
-            -- GetWorldCoordFromScreenCoord unprojects through the camera's current
-            -- FOV/projection, and GTA subtly widens the FOV while running (a speed
-            -- effect) -- so the computed position pulsed with it. Deriving the point
-            -- directly from the camera's own position + rotation (same approach
-            -- MyCity_Emotes uses, which doesn't have this problem) is FOV-independent.
-            local camCoord = GetGameplayCamCoord()
-            local camRot = GetGameplayCamRot(2)
-            local yawRad = math.rad(camRot.z)
-
-            -- Tilts the aim point below the camera's true forward, roughly matching
-            -- where the old screen-anchored version (0.5, 0.78) used to frame the
-            -- character instead of dead-center. Angle-based, not screen-%, so it
-            -- stays FOV-independent (doesn't reintroduce the sprint-FOV jitter).
-            --
-            -- Clamped (position only, not the rotation/tilt below): at steep bird's-eye
-            -- angles the real camera pulls back and up to keep framing the player, so a
-            -- point held at a fixed distance along an equally steep ray collapses toward
-            -- directly beneath that now much-higher camera -- reading as the clone
-            -- suddenly looming closer. Capping the angle keeps the ray from ever getting
-            -- that steep.
-            local clampedCamPitch = math.max(-35.0, math.min(40.0, camRot.x))
-            local aimPitchRad = math.rad(clampedCamPitch - 16.0)
-            local forward = vector3(
-                -math.sin(yawRad) * math.abs(math.cos(aimPitchRad)),
-                math.cos(yawRad) * math.abs(math.cos(aimPitchRad)),
-                math.sin(aimPitchRad)
-            )
-            local target = camCoord + forward * 3.5
-
-            -- The gameplay camera also bobs slightly with the walk-cycle animation,
-            -- and since target is recalculated from raw camera state every single
-            -- frame, that bob was passed straight through to the clone. Easing toward
-            -- the target instead of snapping to it filters that out too.
-            smoothedTarget = smoothedTarget and (smoothedTarget + (target - smoothedTarget) * 0.25) or target
-
-            SetEntityCoords(clonedPed, smoothedTarget.x, smoothedTarget.y, smoothedTarget.z, false, false, false, true)
-
-            -- Full rotation again (pitch + yaw), so the clone tilts to stay square-on
-            -- to the lens when the camera angles up/down. Pitching the whole body
-            -- around its feet is what caused the swinging before, so only the pitch
-            -- is eased here -- yaw still tracks the camera directly, same as heading did.
-            local rawPitch = camRot.x * -1
-            smoothedPitch = smoothedPitch and (smoothedPitch + (rawPitch - smoothedPitch) * 0.25) or rawPitch
-
-            SetEntityRotation(clonedPed, smoothedPitch, 0.0, camRot.z + 180.0, false, false)
+            Wait(500)
         end
     end)
 end
