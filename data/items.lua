@@ -2268,21 +2268,6 @@ return {
 		}
 	},
 
-	['christmaschampagne'] = {
-		label = 'Champagne Nectar de Brume 2024',
-		weight = 750,
-		stack = true,
-		close = true,
-		client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 20
-		}
-	},
-
 	['bigchampagne'] = {
 		label = 'Champagne Étoile d\'Or',
 		weight = 1500,
