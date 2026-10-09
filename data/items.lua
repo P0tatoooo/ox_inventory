@@ -3305,15 +3305,8 @@ return {
 		close = true,
 	},
 
-	['mmcandies'] = {
-		label = 'Bonbons Meuh-Meuh',
-		weight = 20,
-		stack = true,
-		close = true,
-	},
-
-	['mmcandies2'] = {
-		label = 'Bonbons Festifs Meuh-Meuh',
+	['uffcandies'] = {
+		label = 'Bonbons UFF',
 		weight = 20,
 		stack = true,
 		close = true,
@@ -3327,96 +3320,6 @@ return {
         server = {
             export = "MyCity_CoreV2.UseMMGift"
         }
-	},
-
-	['mmchristmascandies'] = {
-		label = 'Bonbons Meuhgique de Noël',
-		weight = 20,
-		stack = true,
-		close = true,
-	},
-
-	['mmchristmascandies2'] = {
-		label = 'Bon Meuh de Noël',
-		weight = 20,
-		stack = true,
-		close = true,
-	},
-
-	['mmchocolatebox'] = {
-		label = 'Chocolats Meuh-Meuh',
-		weight = 200,
-		stack = true,
-		close = true,
-		client = {
-			status = { hunger = 10 },
-			anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-			prop = {
-				model = 'prop_choc_ego',
-				bone = 60309,
-				pos = { x = 0.0, y = 0.0, z = 0.0},
-				rot = { x = 0.0, y = 0.0, z = 0.0}
-			},
-			usetime = 2500,
-			export = 'MyCity_CoreV2.eatFood'
-		}
-	},
-
-	['mmhalloweencookies'] = {
-		label = 'Cookies Halloween Meuh-Meuh',
-		weight = 20,
-		stack = true,
-		close = true,
-		client = {
-			status = { hunger = 10 },
-			anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-			prop = {
-				model = 'prop_choc_ego',
-				bone = 60309,
-				pos = { x = 0.0, y = 0.0, z = 0.0},
-				rot = { x = 0.0, y = 0.0, z = 0.0}
-			},
-			usetime = 2500,
-			export = 'MyCity_CoreV2.eatFood'
-		}
-	},
-
-	['mmweddingcookies'] = {
-		label = 'Cookies Gâteaux',
-		weight = 20,
-		stack = true,
-		close = true,
-		client = {
-			status = { hunger = 10 },
-			anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-			prop = {
-				model = 'prop_choc_ego',
-				bone = 60309,
-				pos = { x = 0.0, y = 0.0, z = 0.0},
-				rot = { x = 0.0, y = 0.0, z = 0.0}
-			},
-			usetime = 2500,
-			export = 'MyCity_CoreV2.eatFood'
-		}
-	},
-
-	['mmweddingcookies2'] = {
-		label = 'Cookies Gâteaux 2',
-		weight = 20,
-		stack = true,
-		close = true,
-		client = {
-			status = { hunger = 10 },
-			anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-			prop = {
-				model = 'prop_choc_ego',
-				bone = 60309,
-				pos = { x = 0.0, y = 0.0, z = 0.0},
-				rot = { x = 0.0, y = 0.0, z = 0.0}
-			},
-			usetime = 2500,
-			export = 'MyCity_CoreV2.eatFood'
-		}
 	},
 
 	['canesyrup'] = {
