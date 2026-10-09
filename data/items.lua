@@ -3918,10 +3918,11 @@ return {
 
 	},
 
-	-- Produit intermédiaire du vignoble (MyCity_Vineyard) : contenu et qualité
-	-- dans les metadata, un tonnelet = un lot de 12 bouteilles
-	['keg'] = {
-		label = 'Tonnelet',
+	-- Produit intermédiaire du vignoble (MyCity_Vineyard) : contenu et note
+	-- dans les metadata, une caisse = un lot de 6 bouteilles, portée à deux
+	-- mains
+	['bottle_crate'] = {
+		label = 'Caisse de bouteilles',
 		weight = 9000,
 		stack = false,
 		close = true,
