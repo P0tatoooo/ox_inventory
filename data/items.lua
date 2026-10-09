@@ -5224,28 +5224,32 @@ return {
     -- Illegal
 
 	["smg_barrel"] = {
-		label = "Canon de Mitraillette",
+		label = "Canon d'Arme Automatique",
+		description = "Pièce de rechange : toutes les mitraillettes et armes d'assaut",
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	["attach_body"] = {
-		label = "Corps de Mitraillette",
+		label = "Corps d'Arme Automatique",
+		description = "Pièce de rechange : toutes les mitraillettes et armes d'assaut",
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
 	["attach_guard"] = {
-		label = "Garde de Mitraillette",
+		label = "Garde-main d'Arme Automatique",
+		description = "Pièce de rechange : toutes les mitraillettes et armes d'assaut",
 		weight = 1000,
 		stack = true,
 		close = true,
 	},
 
     ["attach_grip"] = {
-		label = "Poignée de Mitraillette",
+		label = "Poignée d'Arme Automatique",
+		description = "Pièce de rechange : toutes les mitraillettes et armes d'assaut",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -5253,6 +5257,7 @@ return {
 
     ["shotgun_barrel"] = {
 		label = "Canon de Fusil à Pompe",
+		description = "Pièce de rechange : tous les fusils à pompe",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -5260,6 +5265,7 @@ return {
 
 	["shotgun_body"] = {
 		label = "Corps de Fusil à Pompe",
+		description = "Pièce de rechange : tous les fusils à pompe",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -5267,6 +5273,7 @@ return {
 
 	["shotgun_guard"] = {
 		label = "Garde de Fusil à Pompe",
+		description = "Pièce de rechange : tous les fusils à pompe",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -5274,6 +5281,7 @@ return {
 
     ["shotgun_grip"] = {
 		label = "Poignée de Fusil à Pompe",
+		description = "Pièce de rechange : tous les fusils à pompe",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -5281,6 +5289,7 @@ return {
 
 	["pistol_body"] = {
 		label = "Corps de Pistolet",
+		description = "Pièce de rechange : tous les pistolets",
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -5288,6 +5297,15 @@ return {
 
 	["spring"] = {
 		label = "Ressort",
+		description = "Pièce de rechange : ressorts, détente, chien et chargeurs de toutes les armes",
+		weight = 250,
+		stack = true,
+		close = true,
+	},
+
+	["pistol_grip"] = {
+		label = "Poignée de Pistolet",
+		description = "Pièce de rechange : tous les pistolets",
 		weight = 250,
 		stack = true,
 		close = true,
@@ -5295,6 +5313,7 @@ return {
 
 	["pistol_barrel"] = {
 		label = "Canon de Pistolet",
+		description = "Pièce de rechange : tous les pistolets",
 		weight = 1000,
 		stack = true,
 		close = true,
