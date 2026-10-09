@@ -5459,11 +5459,11 @@ return {
 	},
 
 	["main_frame_a_s"] = {
-		label = "SMG d'Assault Corps Principal",
+		label = "SMG d'Assaut Corps Principal",
 		weight = 20,
 		stack = true,
 		close = true,
-		description = "Une partie du SMG d\'Assault",
+		description = "Une partie du SMG d\'Assaut",
 		client = {
 			image = "MainFrameAS.png",
 		}
@@ -5503,11 +5503,11 @@ return {
 	},
 
 	["top_grip_a_s"] = {
-		label = "SMG d'Assault Haut Poignée",
+		label = "SMG d'Assaut Haut Poignée",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie du SMG d\'Assault",
+		description = "Une partie du SMG d\'Assaut",
 		client = {
 			image = "TopGripAS.png",
 		}
@@ -5591,11 +5591,11 @@ return {
 	},
 
 	["reloader_a_s"] = {
-		label = "SMG d'Assault Rechargement",
+		label = "SMG d'Assaut Rechargement",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "Une partie du SMG d\'Assault",
+		description = "Une partie du SMG d\'Assaut",
 		client = {
 			image = "ReloaderAS.png",
 		}
@@ -5800,11 +5800,11 @@ return {
 	},
 
 	["rear_sight_a_s"] = {
-		label = "SMG d'Assault Viseur Arrière",
+		label = "SMG d'Assaut Viseur Arrière",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "Une partie du SMG d\'Assault",
+		description = "Une partie du SMG d\'Assaut",
 		client = {
 			image = "RearSightAS.png",
 		}
@@ -5899,11 +5899,11 @@ return {
 	},
 
 	["main_grip_a_s"] = {
-		label = "SMG d'Assault Poignée Principale",
+		label = "SMG d'Assaut Poignée Principale",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie du SMG d\'Assault",
+		description = "Une partie du SMG d\'Assaut",
 		client = {
 			image = "MainGripAS.png",
 		}
@@ -5932,11 +5932,11 @@ return {
 	},
 
 	["grip_lock_a_s"] = {
-		label = "SMG d'Assault Poignée",
+		label = "SMG d'Assaut Poignée",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie du SMG d\'Assault",
+		description = "Une partie du SMG d\'Assaut",
 		client = {
 			image = "GripLockAS.png",
 		}
@@ -5998,11 +5998,11 @@ return {
 	},
 
 	["front_sight_a_s"] = {
-		label = "SMG d'Assault Viseur Avant",
+		label = "SMG d'Assaut Viseur Avant",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "Une partie du SMG d\'Assault",
+		description = "Une partie du SMG d\'Assaut",
 		client = {
 			image = "FrontSightAS.png",
 		}
@@ -6174,11 +6174,11 @@ return {
 	},
 
 	["upper_grip_a_s"] = {
-		label = "SMG d'Assault Haut de Poignée",
+		label = "SMG d'Assaut Haut de Poignée",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie du SMG d\'Assault",
+		description = "Une partie du SMG d\'Assaut",
 		client = {
 			image = "UpperGripAS.png",
 		}
@@ -6614,11 +6614,11 @@ return {
 	},
 
 	["barrel_a_s"] = {
-		label = "SMG d'Assault Canon",
+		label = "SMG d'Assaut Canon",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie du SMG d\'Assault",
+		description = "Une partie du SMG d\'Assaut",
 		client = {
 			image = "BarrelAS.png",
 		}
@@ -6823,11 +6823,11 @@ return {
 	},
 
 	["sight_holder_a_s"] = {
-		label = "SMG d'Assault Support Viseur",
+		label = "SMG d'Assaut Support Viseur",
 		weight = 2,
 		stack = true,
 		close = true,
-		description = "Une partie du SMG d\'Assault",
+		description = "Une partie du SMG d\'Assaut",
 		client = {
 			image = "SightHolderAS.png",
 		}
@@ -7318,11 +7318,11 @@ return {
 	},
 
 	["trigger_a_s"] = {
-		label = "SMG d'Assault Gachette",
+		label = "SMG d'Assaut Gachette",
 		weight = 10,
 		stack = true,
 		close = true,
-		description = "Une partie du SMG d\'Assault",
+		description = "Une partie du SMG d\'Assaut",
 		client = {
 			image = "TriggerAS.png",
 		}

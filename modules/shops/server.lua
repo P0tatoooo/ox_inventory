@@ -60,6 +60,7 @@ local function registerShopType(shopType, properties)
 			items = properties.inventory,
 			slots = #properties.inventory,
 			type = 'shop',
+			viewOnly = properties.viewOnly,
 		}
 
 		setupShopItems(nil, shopType, properties.name, properties.groups or properties.jobs)
@@ -196,6 +197,12 @@ lib.callback.register('ox_inventory:buyItem', function(source, data)
 		if shopId then shopId = tonumber(shopId) end
 
 		local shop = shopId and Shops[shopType][shopId] or Shops[shopType]
+
+		-- vitrine de consultation (/itemshop) : rien ne s'y achète
+		if shop.viewOnly then
+			return false, false, { type = 'inform', description = 'Vitrine de consultation : rien ne s\'achète ici' }
+		end
+
 		local fromData = shop.items[data.fromSlot]
 		local toData = playerInv.items[data.toSlot]
 
@@ -282,6 +289,56 @@ lib.callback.register('ox_inventory:buyItem', function(source, data)
 			return false, false, { type = 'error', description = locale('unable_stack_items') }
 		end
 	end
+end)
+
+--- /itemshop [filtre] : vitrine de tous les items d'ox_inventory (ou de ceux dont le nom ou le
+--- libellé contient le filtre), triés par libellé, pour voir les images et les noms. Admin
+--- seulement ; rien ne s'y achète (viewOnly), même si un joueur ouvrait la vitrine lui-même.
+lib.addCommand('itemshop', {
+	help = 'Open a view-only shop with every item (optionally filtered by name or label)',
+	params = {
+		{ name = 'filter', type = 'string', help = 'Part of the item name or label', optional = true },
+	},
+	restricted = 'qbcore.admin',
+}, function(source, args)
+	if source <= 0 then return end
+
+	local filter = args.filter and args.filter:lower() or nil
+	local list = {}
+
+	for name, item in pairs(Items()) do
+		local label = tostring(item.label or name)
+
+		if not filter or name:lower():find(filter, 1, true) or label:lower():find(filter, 1, true) then
+			list[#list + 1] = { name = name, label = label:lower() }
+		end
+	end
+
+	if #list == 0 then
+		return TriggerClientEvent('ox_lib:notify', source, { type = 'error', description = ('Aucun item ne contient « %s »'):format(args.filter) })
+	end
+
+	table.sort(list, function(a, b)
+		if a.label == b.label then return a.name < b.name end
+		return a.label < b.label
+	end)
+
+	local inventory = {}
+
+	for i = 1, #list do
+		inventory[i] = { name = list[i].name, price = 0 }
+	end
+
+	-- une vitrine par filtre : deux admins peuvent regarder des listes différentes en même temps
+	local shopType = filter and ('itemshop_' .. filter:gsub('[^%w]', '_')) or 'itemshop'
+
+	registerShopType(shopType, {
+		name = filter and ('Tous les items : %s (%d)'):format(args.filter, #list) or ('Tous les items (%d)'):format(#list),
+		inventory = inventory,
+		viewOnly = true,
+	})
+
+	TriggerClientEvent('ox_inventory:openInventory', source, 'shop', { type = shopType })
 end)
 
 server.shops = Shops

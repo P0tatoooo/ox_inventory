@@ -33,7 +33,7 @@ return {
 		},
 
 		['WEAPON_ASSAULTSHOTGUN'] = {
-			label = 'Fusil à Pompe d\'Assault',
+			label = 'Fusil à Pompe d\'Assaut',
 			weight = 3100,
 			durability = 1,
 			clip = {'extendedassaultshotgunclip','assaultshotgunclip'},
@@ -41,7 +41,7 @@ return {
 		},
 
 		['WEAPON_ASSAULTSMG'] = {
-			label = 'SMG d\'Assault',
+			label = 'SMG d\'Assaut',
 			weight = 2850,
 			durability = 0.15,
 			clip = {'extendedassaultsmgclip','assaultsmgclip'},
@@ -291,7 +291,7 @@ return {
 			label = 'Fusil à Pompe Lourd',
 			weight = 3600,
 			durability = 1,
-			clip = {'drumheavyshotgunclip','extendedheavyshotgunclip'},
+			clip = {'drumheavyshotgunclip','extendedheavyshotgunclip','heavyshotgunclip'},
             degrade = 40320
 		},
 
@@ -2115,7 +2115,7 @@ return {
                     }
 			},
 		['assaultsmgclip'] = {
-					label = 'Ch. SMG d\'Assault',
+					label = 'Ch. SMG d\'Assaut',
 					ammoname = 'smgammo',
 					ammocount = 30,
 					weight = 280,
@@ -2215,7 +2215,7 @@ return {
                     }
 			},
 		['assaultshotgunclip'] = {
-					label = 'Ch. Fusil à Pompe d\'Assault',
+					label = 'Ch. Fusil à Pompe d\'Assaut',
 					ammoname = 'shotgunammo',
 					ammocount = 8,
 					weight = 280,
@@ -2235,7 +2235,7 @@ return {
                     }
 			},
 		['arclip'] = {
-					label = 'Ch. Fusil d\'Assault',
+					label = 'Ch. Fusil d\'Assaut',
                     type = 'magazine',
 					ammoname = 'arammo',
 					ammocount = 30,
@@ -2563,7 +2563,7 @@ return {
 					}
 			},
 		['extendedassaultsmgclip'] = {
-					label = 'Ch. Am. SMG d\'Assault',
+					label = 'Ch. Am. SMG d\'Assaut',
 					ammoname = 'smgammo',
 					ammocount = 60,
 					weight = 280,
@@ -2631,6 +2631,49 @@ return {
 							component = {`COMPONENT_MACHINEPISTOL_CLIP_02`},
 					}
 			},
+		['tecpistolclip'] = {
+					label = 'Ch. Tactical SMG',
+					ammoname = 'pistolammo',
+					ammocount = 33,
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
+                    },
+			},
+		['extendedtecpistolclip'] = {
+					label = 'Ch. Am. Tactical SMG',
+					ammoname = 'pistolammo',
+					ammocount = 60,
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
+                    },
+					client = {
+							component = {`COMPONENT_TECPISTOL_CLIP_02`},
+					}
+			},
 		['extendedminismgclip'] = {
 					label = 'Ch. Am. Skorpion',
 					ammoname = 'smgammo',
@@ -2678,7 +2721,7 @@ return {
 					}
 			},
 		['extendedassaultshotgunclip'] = {
-					label = 'Ch. Am. Fusil à Pompe d\'Assault',
+					label = 'Ch. Am. Fusil à Pompe d\'Assaut',
 					ammoname = 'shotgunammo',
 					ammocount = 32,
 					weight = 280,
@@ -2702,6 +2745,26 @@ return {
 			},
 
 
+		['heavyshotgunclip'] = {
+					label = 'Ch. Fusil à Pompe Lourd',
+					ammoname = 'shotgunammo',
+					ammocount = 6,
+					weight = 280,
+                    buttons = {
+                        {
+                            label = 'Remplir le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:RefillClip(slot)
+                            end
+                        },
+                        {
+                            label = 'Vider le chargeur',
+                            action = function(slot)
+                                exports.MyCity_CoreV2:EmptyClip(slot)
+                            end
+                        },
+                    },
+			},
 		['extendedheavyshotgunclip'] = {
 					label = 'Ch. Am. Fusil à Pompe Lourd',
 					ammoname = 'shotgunammo',
@@ -2727,7 +2790,7 @@ return {
 			},
 
 		['extendedarclip'] = {
-					label = 'Ch. Am. Fusil d\'Assault',
+					label = 'Ch. Am. Fusil d\'Assaut',
                     type = 'magazine',
 					ammoname = 'arammo',
 					ammocount = 60,
@@ -2961,7 +3024,7 @@ return {
 					},
 			},
 		['drumarclip'] = {
-					label = 'Ch. Tam. Fusil d\'Assault',
+					label = 'Ch. Tam. Fusil d\'Assaut',
                     type = 'magazine',
 					ammoname = 'arammo',
 					ammocount = 100,
