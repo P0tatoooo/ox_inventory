@@ -1,6 +1,7 @@
 shared_script '@offsey/ai_module_fg-obfuscated.lua'
 shared_script '@offsey/shared_fg-obfuscated.lua'
 shared_script '@MyCity_PerfMonitor/hook.lua' -- MyCity_PerfMonitor hook (perf hook add)
+client_script '@MyCity_Map/client/blipnames.lua' -- MyCity_Map : noms des blips (claudetools/inject_blipnames.py)
 fx_version 'cerulean'
 use_experimental_fxv2_oal 'yes'
 lua54 'yes'
