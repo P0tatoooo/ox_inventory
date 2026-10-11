@@ -2238,35 +2238,7 @@ return {
 		}
 	},
 
-	['christmasredwine'] = {
-		label = 'Vin Rouge Nectar de Brume 2024',
-		weight = 750,
-		stack = true,
-		close = true,
-		client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 20
-		}
-	},
 
-	['christmaswhitewine'] = {
-		label = 'Vin Blanc Nectar de Brume 2024',
-		weight = 750,
-		stack = true,
-		close = true,
-		client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 20
-		}
-	},
 
 	['bigchampagne'] = {
 		label = 'Champagne Étoile d\'Or',
@@ -3903,14 +3875,35 @@ return {
 
 	},
 
-	-- Produit intermédiaire du vignoble (MyCity_Vineyard) : contenu et note
-	-- dans les metadata, une caisse = un lot de 6 bouteilles, portée à deux
-	-- mains
+	-- Produit intermédiaire du vignoble (MyCity_Vineyard), jusqu'à la ligne
+	-- d'embouteillage : contenu et note dans les metadata, un tonnelet = un
+	-- lot de 6 bouteilles, porté à deux mains
+	['keg'] = {
+		label = 'Tonnelet',
+		weight = 9000,
+		stack = false,
+		close = true,
+	},
+
+	-- Ce que donne la ligne d'embouteillage du vignoble : une caisse de 6
+	-- bouteilles (metadata : bouteille, nombre, contenu, qualité), portée à deux mains
 	['bottle_crate'] = {
 		label = 'Caisse de bouteilles',
 		weight = 9000,
 		stack = false,
 		close = true,
+		-- l'utiliser l'ouvre : ses bouteilles à la place (MyCity_Vineyard
+		-- client/crates.lua) ; c'est le serveur qui retire la caisse
+		consume = 0,
+		client = { export = 'MyCity_Vineyard.openCrate' },
+		buttons = {
+			{
+				label = 'Ouvrir la caisse',
+				action = function(slot)
+					exports.MyCity_Vineyard:OpenCrateSlot(slot)
+				end
+			},
+		},
 	},
 
 	['rice'] = {
