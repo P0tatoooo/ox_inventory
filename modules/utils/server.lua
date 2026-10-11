@@ -4,6 +4,14 @@ local Utils = {}
 
 local webHook = GetConvar('inventory:webhook', '')
 
+---Files served by the server's own resources (https://cfx-nui-<resource>/..., nui://):
+---they can only point at files a resource declares in its files{}, so there is
+---nothing to vet and nothing to report. MyCity_Youtool's furniture pictures use it.
+---@param url string?
+function Utils.IsLocalImageUrl(url)
+	return type(url) == 'string' and (url:find('^https://cfx%-nui%-') or url:find('^nui://')) ~= nil
+end
+
 if webHook ~= '' then
 	local validHosts = {
 		['i.imgur.com'] = true,

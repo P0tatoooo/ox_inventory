@@ -1141,7 +1141,8 @@ function Inventory.SetMetadata(inv, slotId, metadata)
         server.syncInventory(inv)
     end
 
-    if metadata.imageurl ~= imageurl and Utils.IsValidImageUrl then
+    if metadata.imageurl and metadata.imageurl ~= imageurl and Utils.IsValidImageUrl
+        and not Utils.IsLocalImageUrl(metadata.imageurl) then
         if Utils.IsValidImageUrl(metadata.imageurl) then
             Utils.DiscordEmbed('Valid image URL', ('Updated item "%s" (%s) with valid url in "%s".\n%s\nid: %s\nowner: %s'):format(metadata.label or slot.label, slot.name, inv.label, metadata.imageurl, inv.id, inv.owner, metadata.imageurl), metadata.imageurl, 65280)
         else

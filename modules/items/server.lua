@@ -342,7 +342,7 @@ function Items.Metadata(inv, item, metadata, count)
 		metadata = response
 	end
 
-	if metadata.imageurl and Utils.IsValidImageUrl then
+	if metadata.imageurl and Utils.IsValidImageUrl and not Utils.IsLocalImageUrl(metadata.imageurl) then
 		if Utils.IsValidImageUrl(metadata.imageurl) then
 			Utils.DiscordEmbed('Valid image URL', ('Created item "%s" (%s) with valid url in "%s".\n%s\nid: %s\nowner: %s'):format(metadata.label or item.label, item.name, inv.label, metadata.imageurl, inv.id, inv.owner, metadata.imageurl), metadata.imageurl, 65280)
 		else
