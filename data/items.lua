@@ -5030,11 +5030,24 @@ return {
 		close = true,
 	},
 
+    -- Un chariot ou une palette rangés dans un camion (coffre) ou un conteneur
+    -- (stockage) : clic droit sur l'objet dans cet inventaire pour le sortir
+    -- derrière (MyCity_CoreV2, Client/Jobs/Transistep.lua). `otherInventory = true` :
+    -- un bouton de l'autre inventaire seulement (MyCity), absent du sien.
     ["forklift"] = {
 		label = "Chariot Elevateur",
 		weight = 200000,
 		stack = false,
 		close = false,
+		buttons = {
+			{
+				label = 'Sortir le chariot élévateur',
+				otherInventory = true,
+				action = function(slot, inventory)
+					TriggerEvent('MyCity_CoreV2:Transistep:TakeOutStored', inventory, slot)
+				end
+			},
+		},
 	},
 
     ["pallet"] = {
@@ -5042,6 +5055,15 @@ return {
 		weight = 100000,
 		stack = false,
 		close = false,
+		buttons = {
+			{
+				label = 'Sortir la palette',
+				otherInventory = true,
+				action = function(slot, inventory)
+					TriggerEvent('MyCity_CoreV2:Transistep:TakeOutStored', inventory, slot)
+				end
+			},
+		},
 	},
 
     ["trolley"] = {

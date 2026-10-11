@@ -23,6 +23,8 @@ interface Button {
   label: string;
   index: number;
   group?: string;
+  // MyCity: a button for the item in the other inventory (a trunk, a stash) only
+  otherInventory?: boolean;
 }
 
 interface Group {
@@ -39,6 +41,8 @@ interface GroupedButtons extends Array<Group> {}
 const InventoryContext: React.FC = () => {
   const contextMenu = useAppSelector((state) => state.contextMenu);
   const item = contextMenu.item;
+  // MyCity: an item of the other inventory only shows its own buttons
+  const own = !contextMenu.inventoryType || contextMenu.inventoryType === 'player';
 
   const handleClick = (data: DataProps) => {
     if (!item) return;
@@ -66,13 +70,24 @@ const InventoryContext: React.FC = () => {
         setClipboard(data.serial || '');
         break;
       case 'custom':
-        fetchNui('useButton', { id: (data?.id || 0) + 1, slot: item.slot });
+        fetchNui('useButton', {
+          id: (data?.id || 0) + 1,
+          slot: item.slot,
+          inventory: own ? undefined : contextMenu.inventoryId,
+          name: item.name,
+        });
         break;
     }
   };
 
+  // MyCity: the player's own items show the normal buttons, the other inventory's
+  // only those marked `otherInventory` -- each keeps its index in the item's list
+  const shown = (button: Button) => (own ? !button.otherInventory : !!button.otherInventory);
+  const visibleButtons = ((item && item.name && (Items[item.name]?.buttons as any)) || []).filter(shown);
+
   const groupButtons = (buttons: any): GroupedButtons => {
     return buttons.reduce((groups: Group[], button: Button, index: number) => {
+      if (!shown(button)) return groups;
       if (button.group) {
         const groupIndex = groups.findIndex((group) => group.groupName === button.group);
         if (groupIndex !== -1) {
@@ -96,20 +111,20 @@ const InventoryContext: React.FC = () => {
   return (
     <>
       <Menu>
-        <MenuItem onClick={() => handleClick({ action: 'use' })} label={Locale.ui_use || 'Use'} />
-        <MenuItem onClick={() => handleClick({ action: 'rename' })} label={Locale.ui_rename || 'Rename'} />
-        <MenuItem onClick={() => handleClick({ action: 'give' })} label={Locale.ui_give || 'Give'} />
-        <MenuItem onClick={() => handleClick({ action: 'drop' })} label={Locale.ui_drop || 'Drop'} />
-        {item && item.metadata?.ammo > 0 && (
+        {own && <MenuItem onClick={() => handleClick({ action: 'use' })} label={Locale.ui_use || 'Use'} />}
+        {own && <MenuItem onClick={() => handleClick({ action: 'rename' })} label={Locale.ui_rename || 'Rename'} />}
+        {own && <MenuItem onClick={() => handleClick({ action: 'give' })} label={Locale.ui_give || 'Give'} />}
+        {own && <MenuItem onClick={() => handleClick({ action: 'drop' })} label={Locale.ui_drop || 'Drop'} />}
+        {own && item && item.metadata?.ammo > 0 && (
           <MenuItem onClick={() => handleClick({ action: 'removeAmmo' })} label={Locale.ui_remove_ammo} />
         )}
-        {item && item.metadata?.serial && (
+        {own && item && item.metadata?.serial && (
           <MenuItem
             onClick={() => handleClick({ action: 'copy', serial: item.metadata?.serial })}
             label={Locale.ui_copy}
           />
         )}
-        {item && item.metadata?.components && item.metadata?.components.length > 0 && (
+        {own && item && item.metadata?.components && item.metadata?.components.length > 0 && (
           <Menu label={Locale.ui_removeattachments}>
             {item &&
               item.metadata?.components.map((component: string, index: number) => (
@@ -121,7 +136,7 @@ const InventoryContext: React.FC = () => {
               ))}
           </Menu>
         )}
-        {((item && item.name && Items[item.name]?.buttons?.length) || 0) > 0 && (
+        {visibleButtons.length > 0 && (
           <>
             {item &&
               item.name &&

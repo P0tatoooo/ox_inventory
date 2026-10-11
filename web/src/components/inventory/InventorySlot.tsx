@@ -102,9 +102,19 @@ const InventorySlot: React.ForwardRefRenderFunction<HTMLDivElement, SlotProps> =
 
   const handleContext = (event: React.MouseEvent<HTMLDivElement>) => {
     event.preventDefault();
-    if (inventoryType !== 'player' || !isSlotWithItem(item)) return;
+    if (!isSlotWithItem(item)) return;
+    // MyCity: in the other inventory (a trunk, a stash, not a shop or a bench), an
+    // item with buttons marked `otherInventory` opens the menu too -- those buttons
+    // only (a pallet or a forklift taken out of a truck, MyCity_CoreV2 Transistep)
+    if (inventoryType !== 'player') {
+      const buttons: any[] = (Items[item.name]?.buttons as any) || [];
+      const hasButtons = buttons.some((button) => button && button.otherInventory);
+      if (!hasButtons || inventoryType === 'shop' || inventoryType === 'crafting') return;
+    }
 
-    dispatch(openContextMenu({ item, coords: { x: event.clientX, y: event.clientY } }));
+    dispatch(
+      openContextMenu({ item, coords: { x: event.clientX, y: event.clientY }, inventoryType, inventoryId })
+    );
   };
 
   const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {

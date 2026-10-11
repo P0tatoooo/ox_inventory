@@ -7,20 +7,36 @@ interface ContextMenuState {
     y: number;
   } | null;
   item: SlotWithItem | null;
+  // MyCity: the inventory the item is in -- the player's own, or the other one
+  // (a trunk, a stash), where the menu only offers the item's own buttons
+  inventoryType: string | null;
+  inventoryId: string | number | null;
 }
 
 const initialState: ContextMenuState = {
   coords: null,
   item: null,
+  inventoryType: null,
+  inventoryId: null,
 };
 
 export const contextMenuSlice = createSlice({
   name: 'contextMenu',
   initialState,
   reducers: {
-    openContextMenu(state, action: PayloadAction<{ item: SlotWithItem; coords: { x: number; y: number } }>) {
+    openContextMenu(
+      state,
+      action: PayloadAction<{
+        item: SlotWithItem;
+        coords: { x: number; y: number };
+        inventoryType?: string;
+        inventoryId?: string | number;
+      }>
+    ) {
       state.coords = action.payload.coords;
       state.item = action.payload.item;
+      state.inventoryType = action.payload.inventoryType ?? 'player';
+      state.inventoryId = action.payload.inventoryId ?? null;
     },
     closeContextMenu(state) {
       state.coords = null;

@@ -795,15 +795,28 @@ exports('useSlot', useSlot)
 
 ---@param id number
 ---@param slot number
-local function useButton(id, slot)
+local function useButton(id, slot, inventory, name)
 	if PlayerData.loaded and not invBusy and not lib.progressActive() then
+		-- MyCity : un bouton sur un objet de l'autre inventaire (un coffre, un stockage),
+		-- celui qui est ouvert. Seuls les boutons marqués `otherInventory = true` y servent
+		-- (data/items.lua) ; leur action reçoit l'emplacement, l'id de cet inventaire et le
+		-- nom de l'objet (une palette sortie d'un camion, MyCity_CoreV2 Transistep).
+		if inventory then
+			if not currentInventory or currentInventory.id ~= inventory then return end
+			local data = Items[name]
+			local button = data and data.buttons and data.buttons[id]
+			if button and button.otherInventory and button.action then button.action(slot, inventory, name) end
+			return
+		end
+
 		local item = PlayerData.inventory[slot]
 		if not item then return end
 
 		local data = Items[item.name]
 		local buttons = data?.buttons
 
-		if buttons and buttons[id]?.action then
+		-- les boutons `otherInventory` ne servent que dans l'autre inventaire
+		if buttons and buttons[id]?.action and not buttons[id].otherInventory then
 			buttons[id].action(slot)
 		end
 	end
@@ -1378,7 +1391,8 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 
 		if buttons then
 			for i = 1, #v.buttons do
-				buttons[i] = {label = v.buttons[i].label, group = v.buttons[i].group}
+				-- MyCity : `otherInventory` dit à la page où montrer le bouton
+				buttons[i] = {label = v.buttons[i].label, group = v.buttons[i].group, otherInventory = v.buttons[i].otherInventory or nil}
 			end
 		end
 
@@ -2081,7 +2095,7 @@ RegisterNUICallback('giveItem', function(data, cb)
 end)
 
 RegisterNUICallback('useButton', function(data, cb)
-	useButton(data.id, data.slot)
+	useButton(data.id, data.slot, data.inventory, data.name)
 	cb(1)
 end)
 
