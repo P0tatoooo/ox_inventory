@@ -9,7 +9,6 @@ import {
   EarIcon,
   GlassesIcon,
   GlovesIcon,
-  HairIcon,
   HatIcon,
   MaskIcon,
   NeckIcon,
@@ -28,8 +27,10 @@ type ClothingToggle = {
 };
 
 // Split left/right with a gap in between so the row doesn't cover the player's head.
-const hatToggle: ClothingToggle = { id: 'Hat', label: 'Chapeau', icon: HatIcon, isProp: true };
-const maskToggle: ClothingToggle = { id: 'Mask', label: 'Masque', icon: MaskIcon };
+const topLeftToggles: ClothingToggle[] = [
+  { id: 'Hat', label: 'Chapeau', icon: HatIcon, isProp: true },
+  { id: 'Mask', label: 'Masque', icon: MaskIcon },
+];
 
 const topRightToggles: ClothingToggle[] = [
   { id: 'Glasses', label: 'Lunettes', icon: GlassesIcon, isProp: true },
@@ -56,21 +57,9 @@ const toggleClothing = (toggle: ClothingToggle) => {
   fetchNui('toggleClothing', { id: toggle.id, isProp: !!toggle.isProp });
 };
 
-const toggleFixHair = () => {
-  fetchNui('toggleFixHair');
-};
-
 const ToggleButton: React.FC<{ toggle: ClothingToggle }> = ({ toggle }) => (
   <Button square tooltip={toggle.label} onClick={() => toggleClothing(toggle)}>
     <toggle.icon />
-  </Button>
-);
-
-// Same effect as the qb-radialmenu "Cheveux sous chapeaux" option, exposed
-// here too since hats/masks are toggled from this panel.
-const FixHairButton: React.FC = () => (
-  <Button square tooltip="Cheveux sous chapeaux" onClick={toggleFixHair}>
-    <HairIcon />
   </Button>
 );
 
@@ -94,13 +83,7 @@ export const ClothingToggles: React.FC = () => {
   return (
     <div className="clothing-toggles">
       <div className="clothing-toggles__top-row">
-        <div className="clothing-toggles__top-group">
-          <div className="clothing-toggles__top-group-column">
-            <ToggleButton toggle={hatToggle} />
-            <FixHairButton />
-          </div>
-          <ToggleButton toggle={maskToggle} />
-        </div>
+        <ClothingGroup toggles={topLeftToggles} />
         <ClothingGroup toggles={topRightToggles} />
       </div>
       <div className="clothing-toggles__columns">

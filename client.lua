@@ -2116,11 +2116,6 @@ RegisterNUICallback('toggleClothing', function(data, cb)
 	end
 end)
 
-RegisterNUICallback('toggleFixHair', function(_, cb)
-	cb(1)
-	TriggerEvent('MyCity_Appearance:ToggleFixHair')
-end)
-
 lib.callback.register('ox_inventory:startCrafting', function(id, recipe)
 	recipe = CraftingBenches[id].items[recipe]
 
