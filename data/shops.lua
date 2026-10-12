@@ -1,3 +1,42 @@
+-- Bulletproof vests: label and picture from MyCity_CoreV2's catalogue
+-- (Data/bulletproofvests.json, edited from MyCity_AdminMenu > Gilets pare-balles),
+-- for the shop grid. The vest bought gets them again from CoreV2's createItem hook.
+-- At server start CoreV2 is not up yet: its file is read directly, and a photo is
+-- used when its file is there (CoreV2 serves what was there when it started).
+local vestCatalogue
+
+local function Vest(vestType)
+    if IsDuplicityVersion() and GetResourceState('MyCity_CoreV2') == 'started' then
+        local ok, metadata = pcall(function()
+            return exports.MyCity_CoreV2:BulletproofVestMetadata(vestType)
+        end)
+        if ok and type(metadata) == 'table' then return metadata end
+    end
+
+    if not vestCatalogue then
+        vestCatalogue = {}
+        local ok, list = pcall(json.decode, LoadResourceFile('MyCity_CoreV2', 'Data/bulletproofvests.json') or '')
+        for _, vest in ipairs(ok and type(list) == 'table' and list or {}) do
+            vestCatalogue[vest.id] = vest
+        end
+    end
+
+    local metadata = { bulletproofvesttype = vestType }
+    local vest = vestCatalogue[vestType]
+    if not vest then return metadata end
+
+    metadata.label = vest.label
+    local root = vest.photo and IsDuplicityVersion() and GetResourcePath('MyCity_CoreV2')
+    local file = root and io.open(('%s/Html/img/bulletproof/%d.webp'):format(root, vestType), 'rb')
+    if file then
+        file:close()
+        metadata.imageurl = ('https://cfx-nui-MyCity_CoreV2/Html/img/bulletproof/%d.webp?v=%d'):format(vestType, vest.photo)
+    else
+        metadata.image = vest.image
+    end
+    return metadata
+end
+
 return {
     DigitalDen = {
 		name = 'Digital Den',
@@ -121,14 +160,14 @@ return {
             --{name = 'WEAPON_BEANBAG', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
             --{name = 'WEAPON_PUMPSHOTGUN', price = 0, grade = 4, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
 
-            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 2, label = "Gilet Cadet", image = "bulletproof_rookie" }, price = 0},
-            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 3, label = "Gilet Patrouille", image = "bulletproof_lspd" }, price = 0},
-			{name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 51, label = "Gilet Gang Unit", image = "bulletproof_gangunit" }, price = 0},
-            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 4, label = "Gilet Tactique", image = "bulletproof_tactical" }, price = 0},
-            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 8, label = "Gilet Tactique Lourd", image = "bulletproof_tactical_heavy" }, price = 0},
-            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 5, label = "Gilet Media", image = "bulletproof_media" }, price = 0},
-            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 6, label = "Gilet Medic", image = "bulletproof_medic" }, price = 0},
-			{name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 50, label = "Gilet Gruppe 6", image = "bulletproof_gruppe6" }, price = 0},
+            {name = 'bulletproof', grade = 1, metadata = Vest(2), price = 0},
+            {name = 'bulletproof', grade = 1, metadata = Vest(3), price = 0},
+			{name = 'bulletproof', grade = 1, metadata = Vest(51), price = 0},
+            {name = 'bulletproof', grade = 1, metadata = Vest(4), price = 0},
+            {name = 'bulletproof', grade = 1, metadata = Vest(8), price = 0},
+            {name = 'bulletproof', grade = 1, metadata = Vest(5), price = 0},
+            {name = 'bulletproof', grade = 1, metadata = Vest(6), price = 0},
+			{name = 'bulletproof', grade = 1, metadata = Vest(50), price = 0},
 
             --{name = 'WEAPON_HEAVYPISTOL', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
             --{name = 'WEAPON_SMG', price = 0, grade = 3, metadata = { registered = true, serial = 'POL' }},--, license = 'weapon'},
@@ -182,9 +221,9 @@ return {
 			{name = 'WEAPON_PEPPERSPRAY', price = 0, grade = 1},
             {name = 'WEAPON_ANTIDOTE', price = 0, grade = 1},
 
-            {name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 52, label = "Gilet Shérif", image = "bulletproof_sheriff" }, price = 0},
-			{name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 53, label = "Gilet Shérif Tactique", image = "bulletproof_tacticalsheriff" }, price = 0},
-			{name = 'bulletproof', grade = 1, metadata = {bulletproofvesttype = 54, label = "Gilet Shérif Banalisé", image = "bulletproof_banasheriff" }, price = 0},
+            {name = 'bulletproof', grade = 1, metadata = Vest(52), price = 0},
+			{name = 'bulletproof', grade = 1, metadata = Vest(53), price = 0},
+			{name = 'bulletproof', grade = 1, metadata = Vest(54), price = 0},
 
             --{name = 'WEAPON_SMOKEGRENADE', price = 0, grade = 3},--, license = 'weapon'},
             {name = 'WEAPON_SMOK2GRENADE', price = 0, grade = 3},--, license = 'weapon'},
