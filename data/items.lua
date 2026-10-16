@@ -1628,41 +1628,41 @@ return {
 	},
 
     ['cola'] = {
-		label = 'Canette d\'eCola',
-		weight = 250,
+		label = 'eCola (50 cl)',
+		weight = 500,
 		stack = true,
 		close = true,
 		client = {
 			status = { thirst = 25 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_cola_small_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
     ['soda'] = {
-		label = 'Canette de Sprunk',
-		weight = 250,
+		label = 'Sprunk (50 cl)',
+		weight = 500,
 		stack = true,
 		client = {
 			status = { thirst = 25 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_sprunk_small_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
     ['icetea'] = {
-		label = 'Canette d\'Ice Tea',
-		weight = 250,
+		label = 'Thé Glacé (50 cl)',
+		weight = 500,
 		stack = true,
 		close = true,
 		client = {
 			status = { thirst = 25 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_icetea_small_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
@@ -1683,153 +1683,153 @@ return {
 	},
 
     ['bigcola'] = {
-		label = 'Bouteille d\'eCola',
-		weight = 500,
+		label = 'eCola (75 cl)',
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
 			status = { thirst = 50 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_cola_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
     ['bigsoda'] = {
-		label = 'Bouteille de Sprunk',
-		weight = 500,
+		label = 'Sprunk (75 cl)',
+		weight = 750,
 		stack = true,
 		client = {
 			status = { thirst = 50 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_sprunk_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
     ['bigicetea'] = {
-		label = 'Bouteille d\'Ice Tea',
-		weight = 500,
+		label = 'Thé Glacé (75 cl)',
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
 			status = { thirst = 50 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_icetea_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
     ['biggrapejuice'] = {
-		label = 'Bouteille de Jus de Raisin',
-		weight = 500,
+		label = 'Jus de Raisin (75 cl)',
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
 			status = { thirst = 50 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_grape_juice_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
 	['bigapplejuice'] = {
-		label = 'Bouteille de Jus de Pommes',
-		weight = 500,
+		label = 'Jus de Pomme (75 cl)',
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
 			status = { thirst = 50 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_apple_juice_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
 	['bigorangejuice'] = {
-		label = 'Bouteille de Jus d\'Orange',
-		weight = 500,
+		label = 'Jus d\'Orange (75 cl)',
+		weight = 750,
 		stack = true,
 		close = true,
 		client = {
 			status = { thirst = 50 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_orange_juice_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
 	['energydrink'] = {
-		label = 'Canette de Boisson Energisante',
-		weight = 250,
+		label = 'Boisson Énergisante (50 cl)',
+		weight = 500,
 		stack = true,
 		close = true,
 		client = {
 			status = { thirst = 25 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_energy_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
 	['grapejuice'] = {
-		label = 'Brique de Jus de Raisin',
-		weight = 250,
+		label = 'Jus de Raisin (50 cl)',
+		weight = 500,
 		stack = true,
 		close = true,
 		client = {
 			status = { thirst = 25 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_grape_juice_small_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
 	['applejuice'] = {
-		label = 'Brique de Jus de Pomme',
-		weight = 250,
+		label = 'Jus de Pomme (50 cl)',
+		weight = 500,
 		stack = true,
 		close = true,
 		client = {
 			status = { thirst = 25 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_apple_juice_small_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
 	['orangejuice'] = {
-		label = 'Brique de Jus d\'Orange',
-		weight = 250,
+		label = 'Jus d\'Orange (50 cl)',
+		weight = 500,
 		stack = true,
 		close = true,
 		client = {
 			status = { thirst = 25 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_orange_juice_small_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
 	},
 
 	['limonade'] = {
-		label = 'Canette de Limonade',
-		weight = 250,
+		label = 'Limonade (50 cl)',
+		weight = 500,
 		stack = true,
 		close = true,
 		client = {
 			status = { thirst = 25 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_limonade_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
@@ -1850,14 +1850,14 @@ return {
 	},
 
     ['tonic'] = {
-		label = 'Canette d\'eCola Tonic',
+		label = 'Tonic (50 cl)',
 		weight = 500,
 		stack = true,
 		close = true,
         client = {
 			status = { thirst = 25 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+			prop = { model = `mc_line_bottle_tonic_crate`, pos = vec3(0.0, 0.0, -0.08), rot = vec3(0.0, 0.0, 209.11), bone = 60309 },
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkBeverage'
 		}
@@ -2074,7 +2074,7 @@ return {
 	},
 
 	['beer'] = {
-		label = 'Bière',
+		label = 'Bière Blonde',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -2149,7 +2149,7 @@ return {
 	},
 
 	['guinness'] = {
-		label = 'Guinness',
+		label = 'Bière Brune',
 		weight = 750,
 		stack = true,
 		close = true,
