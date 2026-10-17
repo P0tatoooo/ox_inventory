@@ -77,18 +77,6 @@ return {
 		stack = true,
 	},
 
-	['pharmacybandage'] = {
-		label = 'Pansement',
-		weight = 100,
-		stack = true,
-		--[[ client = {
-			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
-			prop = { model = 'prop_rolled_sock_02', pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
-			disable = { move = true, car = true, combat = true },
-			usetime = 2500,
-		} ]]
-	},
-
 	['parachute'] = {
 		label = 'Parachute',
 		weight = 3000,
@@ -284,65 +272,8 @@ return {
             }
         },
 
-        ['diabolapizza'] = {
-            label = 'Pizza Diabola',
-            weight = 100,
-            stack = true,
-            degrade = 4320,
-            client = {
-                status = { hunger = 50 },
-                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-                prop = {
-                    model = 'prop_cs_burger_01',
-					bone = 18905,
-                    pos = { x = 0.12, y = 0.028, z = 0.001},
-                    rot = { x = 10.0, y = 175.0, z = 0.0}
-                },
-                usetime = 2500,
-				export = 'MyCity_CoreV2.eatFood'
-            }
-        },
-
-        ['bolognesepizza'] = {
-            label = 'Pizza Bolognaise',
-            weight = 100,
-            stack = true,
-            degrade = 4320,
-            client = {
-                status = { hunger = 50 },
-                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-                prop = {
-                    model = 'prop_cs_burger_01',
-					bone = 18905,
-                    pos = { x = 0.12, y = 0.028, z = 0.001},
-                    rot = { x = 10.0, y = 175.0, z = 0.0}
-                },
-                usetime = 2500,
-				export = 'MyCity_CoreV2.eatFood'
-            }
-        },
-
 		['calzonepizza'] = {
             label = 'Pizza Calzone',
-            weight = 100,
-            stack = true,
-            degrade = 4320,
-            client = {
-                status = { hunger = 50 },
-                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-                prop = {
-                    model = 'prop_cs_burger_01',
-					bone = 18905,
-                    pos = { x = 0.12, y = 0.028, z = 0.001},
-                    rot = { x = 10.0, y = 175.0, z = 0.0}
-                },
-                usetime = 2500,
-				export = 'MyCity_CoreV2.eatFood'
-            }
-        },
-
-		['pineapplepizza'] = {
-            label = 'La Spéciale 23',
             weight = 100,
             stack = true,
             degrade = 4320,
@@ -510,25 +441,6 @@ return {
             }
         },
 
-        ['sugol'] = {
-            label = 'Sugol',
-            weight = 150,
-            stack = true,
-            degrade = 4320,
-            client = {
-                status = { hunger = 25 },
-                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-                prop = {
-                    model = 'prop_cs_burger_01',
-					bone = 18905,
-                    pos = { x = 0.12, y = 0.028, z = 0.001},
-                    rot = { x = 10.0, y = 175.0, z = 0.0}
-                },
-                usetime = 2500,
-				export = 'MyCity_CoreV2.eatFood'
-            }
-        },
-
 		['pannacotta'] = {
             label = 'Panna Cotta',
             weight = 150,
@@ -586,24 +498,6 @@ return {
             }
         },
 
-        ['heartstopper'] = {
-            label = 'HeartStopper',
-            weight = 500,
-            stack = true,
-            degrade = 4320,
-            client = {
-                status = { hunger = 50 },
-                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-                prop = {
-                    model = 'prop_cs_burger_01',
-					bone = 18905,
-                    pos = { x = 0.12, y = 0.028, z = 0.001},
-                    rot = { x = 10.0, y = 175.0, z = 0.0}
-                },
-                usetime = 2500,
-				export = 'MyCity_CoreV2.eatFood'
-            }
-        },
         ['bleeder'] = {
             label = 'Bleeder',
             weight = 200,
@@ -625,24 +519,6 @@ return {
         ['meatfree'] = {
             label = 'MeatFree',
             weight = 150,
-            stack = true,
-            degrade = 4320,
-            client = {
-                status = { hunger = 50 },
-                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-                prop = {
-                    model = 'prop_cs_burger_01',
-					bone = 18905,
-                    pos = { x = 0.12, y = 0.028, z = 0.001},
-                    rot = { x = 10.0, y = 175.0, z = 0.0}
-                },
-                usetime = 2500,
-				export = 'MyCity_CoreV2.eatFood'
-            }
-        },
-        ['moneyshot'] = {
-            label = 'MoneyShot',
-            weight = 200,
             stack = true,
             degrade = 4320,
             client = {
@@ -849,24 +725,6 @@ return {
 
         ['americanchickensandwich'] = {
             label = 'Américain Poulet',
-            weight = 150,
-            stack = true,
-            degrade = 4320,
-            client = {
-                status = { hunger = 50 },
-                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-                prop = {
-                    model = 'prop_cs_burger_01',
-					bone = 18905,
-                    pos = { x = 0.12, y = 0.028, z = 0.001},
-                    rot = { x = 10.0, y = 175.0, z = 0.0}
-                },
-                usetime = 2500,
-				export = 'MyCity_CoreV2.eatFood'
-            }
-        },
-        ['americantunasandwich'] = {
-            label = 'Américain Thon',
             weight = 150,
             stack = true,
             degrade = 4320,
@@ -1111,26 +969,6 @@ return {
 
 		['potatomash'] = {
             label = 'Purée de Patates',
-            weight = 200,
-            stack = true,
-            close = true,
-            degrade = 4320,
-            client = {
-                status = { hunger = 25},
-                anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-                prop = {
-                    model = 'prop_cs_burger_01',
-					bone = 18905,
-                    pos = { x = 0.12, y = 0.028, z = 0.001},
-                    rot = { x = 10.0, y = 175.0, z = 0.0}
-                },
-                usetime = 2500,
-				export = 'MyCity_CoreV2.eatFood'
-            }
-        },
-
-		['tomatosalade'] = {
-            label = 'Salade et Tomate',
             weight = 200,
             stack = true,
             close = true,
@@ -1835,20 +1673,6 @@ return {
 		}
 	},
 
-    ['tea'] = {
-		label = 'Thé',
-		weight = 100,
-		stack = true,
-		close = true,
-		client = {
-			status = { thirst = 25 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkBeverage'
-		}
-	},
-
     ['tonic'] = {
 		label = 'Tonic (50 cl)',
 		weight = 500,
@@ -1905,35 +1729,9 @@ return {
 		}
 	},
 
-    ['jesstoniccocktail'] = {
-		label = 'Le Jess\'Tonic',
-		weight = 150,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 50 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-		}
-	},
 	['bouboucocktail'] = {
 		label = 'Le Loyal',
 		weight = 150,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 50 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-		}
-	},
-	['prospectcocktail'] = {
-		label = 'Le Prospect',
-		weight = 750,
 		stack = true,
 		close = true,
         client = {
@@ -2371,64 +2169,6 @@ return {
 		}
 	},
 
-	['tontoncocktail'] = {
-		label = 'Le Tonton',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-
-	['foxcocktail'] = {
-		label = 'Le Fox',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-
-	['texasteqcocktail'] = {
-		label = 'Le Texas Teq\'',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-	['birdcocktail'] = {
-		label = 'Le Bird',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
 	['asskickercocktail'] = {
 		label = 'Ass Kicker',
 		weight = 750,
@@ -2443,36 +2183,8 @@ return {
 			alcohol = 30
 		}
 	},
-	['cowboycocktail'] = {
-		label = 'Le Cowboy',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
 	['skyappelcocktail'] = {
 		label = 'Le Patriote',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-	['blacktopcocktail'] = {
-		label = 'Le Black Top',
 		weight = 750,
 		stack = true,
 		close = true,
@@ -2672,77 +2384,6 @@ return {
 		}
 	},
 
-	['palomacocktail'] = {
-		label = 'Paloma',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-	['micheladacocktail'] = {
-		label = 'Michelada',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-	['mezcalmulecocktail'] = {
-		label = 'Mezcal Mule',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-	['horchatacocktail'] = {
-		label = 'Horchata',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-	['vampirococktail'] = {
-		label = 'Vampiro',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-
 	['cosmopolitancocktail'] = {
 		label = 'Cosmopolitan',
 		weight = 750,
@@ -2830,96 +2471,6 @@ return {
 			usetime = 2500,
 			export = 'MyCity_CoreV2.drinkAlcohol',
 			alcohol = 60
-		}
-	},
-
-	['desesmoorescocktail'] = {
-		label = 'De ses Moores',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-
-	['gouvernailcocktail'] = {
-		label = 'Gouvernail',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-
-	['meuhmeuhcocktail'] = {
-		label = 'Meuh-Meuh',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-
-	['drkekettecocktail'] = {
-		label = 'Dr Kekette',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 60
-		}
-	},
-
-	['bloodymarycocktail'] = {
-		label = 'Bloody Mary',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
-		}
-	},
-
-	['appleskycocktail'] = {
-		label = 'Applesky',
-		weight = 750,
-		stack = true,
-		close = true,
-        client = {
-			status = { thirst = 15 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			export = 'MyCity_CoreV2.drinkAlcohol',
-			alcohol = 30
 		}
 	},
 
@@ -3279,87 +2830,11 @@ return {
         }
 	},
 
-	['canesyrup'] = {
-		label = 'Sirop de Canne',
-		weight = 200,
-		stack = true,
-		close = true,
-
-	},
-
-	['cartridge'] = {
-		label = 'Douille',
-		weight = 10,
-		stack = true,
-		close = true,
-	},
-
-	['blueprintpaper'] = {
-		label = 'Papier Cartonné',
-		weight = 10,
-		stack = true,
-		close = false,
-	},
-
 	['ink'] = {
 		label = 'Encre',
 		weight = 10,
 		stack = true,
 		close = false,
-	},
-
-	['mainbp'] = {
-		label = 'Plan Principal',
-		weight = 10,
-		stack = true,
-		close = false,
-	},
-
-	['casinocoupon1'] = {
-		label = 'Coupon Casino Lot 1',
-		weight = 10,
-		stack = true,
-		close = true,
-
-	},
-
-	['casinocoupon2'] = {
-		label = 'Coupon Casino Lot 2',
-		weight = 10,
-		stack = true,
-		close = true,
-
-	},
-
-	['casinocoupon3'] = {
-		label = 'Coupon Casino Lot 3',
-		weight = 10,
-		stack = true,
-		close = true,
-
-	},
-
-	['casinocoupon4'] = {
-		label = 'Coupon Casino Lot 4',
-		weight = 10,
-		stack = true,
-		close = true,
-
-	},
-
-	['casinocoupon5'] = {
-		label = 'Coupon Casino Lot 5',
-		weight = 10,
-		stack = true,
-		close = true,
-
-	},
-
-	['casinocoupon6'] = {
-		label = 'Coupon Casino Lot 6',
-		weight = 10,
-		stack = true,
-		close = true,
 	},
 
 	['charcoal'] = {
@@ -3592,14 +3067,6 @@ return {
 
 	},
 
-	['kevlar'] = {
-		label = 'Kevlar',
-		weight = 300,
-		stack = true,
-		close = true,
-
-	},
-
 	['laptop'] = {
 		label = 'Ordinateur Portable',
 		weight = 300,
@@ -3625,69 +3092,6 @@ return {
 	['mceventbadge'] = {
 		label = 'Badge MCEvent',
 		weight = 10,
-		stack = true,
-		close = true,
-	},
-
-	['mceventcoupon'] = {
-		label = 'Ticket MCEvent',
-		weight = 1,
-		stack = true,
-		close = true,
-	},
-
-	['dugganbrightgreencoin'] = {
-		label = 'Pièce Verte',
-		weight = 1,
-		stack = true,
-		close = true,
-	},
-
-	['dugganbrightredcoin'] = {
-		label = 'Pièce Rouge',
-		weight = 1,
-		stack = true,
-		close = true,
-	},
-
-	['duggandarkbluecoin'] = {
-		label = 'Pièce Bleue Foncé',
-		weight = 1,
-		stack = true,
-		close = true,
-	},
-
-	['duggangoldencoin'] = {
-		label = 'Pièce Dorée',
-		weight = 1,
-		stack = true,
-		close = true,
-	},
-
-	['dugganlightbluecoin'] = {
-		label = 'Pièce Bleue Clair',
-		weight = 1,
-		stack = true,
-		close = true,
-	},
-
-	['dugganpinkcoin'] = {
-		label = 'Pièce Rose',
-		weight = 1,
-		stack = true,
-		close = true,
-	},
-
-	['dugganrdarkedcoin'] = {
-		label = 'Pièce Rouge Foncé',
-		weight = 1,
-		stack = true,
-		close = true,
-	},
-
-	['dugganwhitecoin'] = {
-		label = 'Pièce Blanche',
-		weight = 1,
 		stack = true,
 		close = true,
 	},
@@ -3812,13 +3216,6 @@ return {
 
 	['packaged_chicken'] = {
 		label = 'Barquette de Poulet',
-		weight = 250,
-		stack = true,
-		close = true,
-	},
-
-    ['packaged_fish'] = {
-		label = 'Barquette de Poisson',
 		weight = 250,
 		stack = true,
 		close = true,
@@ -3976,13 +3373,6 @@ return {
 		close = true,
 	},
 
-	['illegaltoken'] = {
-		label = 'Jeton RN',
-		weight = 1,
-		stack = true,
-		close = true,
-	},
-
 	['watch'] = {
 		label = 'Montre',
 		weight = 100,
@@ -4040,23 +3430,9 @@ return {
 		close = true,
 	},
 
-    ['packaged_fish'] = {
-		label = 'Barquette de Poisson',
-		weight = 200,
-		stack = true,
-		close = true,
-	},
-
 	['sprayremover'] = {
 		label = 'Nettoyant Anti-Graffitis',
 		weight = 750,
-		stack = true,
-		close = true,
-	},
-
-	['packaged_salmon'] = {
-		label = 'Barquette de Saumon',
-		weight = 200,
 		stack = true,
 		close = true,
 	},
@@ -4065,20 +3441,6 @@ return {
 		label = 'Canne à sucre',
 		weight = 10,
 		stack = true,
-		close = true,
-	},
-
-	['illegalcrate'] = {
-		label = 'Caisse de Contrebande',
-		weight = 2000,
-		stack = false,
-		close = true,
-	},
-
-    ['enforcer'] = {
-		label = 'Bélier',
-		weight = 15000,
-		stack = false,
 		close = true,
 	},
 
@@ -4359,11 +3721,6 @@ return {
             export = "MyCity_Police.cuffFromItem"
         }
 	},
-    ["headbag"] = {
-		label = "Sac tête",
-		weight = 100,
-		stack = true
-	},
     ['crutches'] = {
 		label = 'Béquilles',
 		weight = 1000,
@@ -4526,12 +3883,6 @@ return {
 		close = true,
 	},
 
-	["lawyer_pass"] = {
-		label = "Carte d\'Avocat",
-		weight = 0.01,
-		stack = false,
-		close = false
-	},
     ["rugby"] = {
         label = 'Ballon de Rugby',
         weight = 1000,
@@ -4567,51 +3918,10 @@ return {
 		weight = 2000,
 		stack = false,
 	},
-    ['racing_gps'] = {
-		label = 'GPS de Course',
-		weight = 1000,
-		stack = false,
-	},
-
-    ['obd_scanner'] = {
-		label = 'OBD Scanner',
-		weight = 1000,
-		stack = false,
-	},
-
-    ["chalkboard1"] = {
-        label = "Tableau - Sol",
-        weight = 5000,
-        stack = false,
-    },
-
-    ["chalkboard2"] = {
-        label = "Tableau - Mur",
-        weight = 5000,
-        stack = false,
-    },
-
-    ["chalkboard3"] = {
-        label = "Tableau - Carré",
-        weight = 5000,
-        stack = false,
-    },
-
-    ["chalkboard4"] = {
-        label = "Tableau - Vertical",
-        weight = 5000,
-        stack = false,
-    },
 
     ["notebook"] = {
         label = "Cahier",
         weight = 200,
-        stack = false,
-    },
-
-    ["stancerkit"] = {
-        label = "Stancer Kit",
-        weight = 2000,
         stack = false,
     },
 
@@ -4739,13 +4049,6 @@ return {
 	["carbon"] = {
 		label = "Carbone",
 		weight = 300,
-		stack = true,
-		close = false,
-	},
-
-	["drillbit"] = {
-		label = "Mèche de Perceuse",
-		weight = 10,
 		stack = true,
 		close = false,
 	},
@@ -5315,20 +4618,10 @@ return {
 	},
 
     ----------------------------
-    ["security_card_01"] = {
-		label = "Carte de Sécurité",
-		weight = 100,
-		stack = true,
-	},
     ["thermite"] = {
 		label = "Explosif Thermite",
 		weight = 1000,
 		stack = true,
-	},
-    ["deposit_box_key"] = {
-		label = "Clé de Coffre",
-		weight = 100,
-		stack = false,
 	},
     ['hackingdevice'] = {
 		label = 'Appareil de Piratage',
