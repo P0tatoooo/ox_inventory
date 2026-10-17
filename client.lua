@@ -2321,14 +2321,9 @@ function canSwapWeapon(weaponhash)
 		local gender = isMpPed()
 		
 		if gender then
-			local currentBagIndex = GetPedDrawableVariation(playerPed, 5)
-			local hasBag
-
-			if gender == "male" then
-				hasBag = QBCore.Shared.MaleBags[currentBagIndex]
-			else
-				hasBag = QBCore.Shared.FemaleBags[currentBagIndex]
-			end
+			-- qb-core's own MaleBags / FemaleBags (shared/clothinglists.json, MyCity_AdminMenu page Vêtements
+			-- Spéciaux): this resource's copy of QBCore.Shared would miss a change made since it started
+			local hasBag = QBCore.Functions.IsWearingBag()
 
 			if hasBag then
 				return true
