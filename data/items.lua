@@ -3138,6 +3138,13 @@ return {
 		close = true,
 	},
 
+	['fentanyl'] = {
+		label = 'Fentanyl',
+		weight = 100,
+		stack = true,
+		close = true,
+	},
+
 	['microwave'] = {
 		label = 'Micro-Ondes',
 		weight = 100,
