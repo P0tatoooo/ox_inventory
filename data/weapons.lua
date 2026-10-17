@@ -1268,9 +1268,11 @@ return {
 
 		['at_skin_wood'] = {
 			label = 'Wood Weapon Kit',
+			description = 'Applicable sur : Pistolet Lourd, Fusil de Précision à Verrou, Pistolet SNS.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_wood.webp',
 				component = {
 					`COMPONENT_HEAVYPISTOL_VARMOD_LUXE`,
 					`COMPONENT_SNIPERRIFLE_VARMOD_LUXE`,
@@ -1282,9 +1284,11 @@ return {
 
 		['at_skin_metal'] = {
 			label = 'Metal Weapon Kit',
+			description = 'Applicable sur : Fusil Amélioré, Pistolet Perforant, Fusil Bullpup, Fusil à Pompe Canon Scié, G36.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_metal.webp',
 				component = {
 					`COMPONENT_ADVANCEDRIFLE_VARMOD_LUXE`,
 					`COMPONENT_APPISTOL_VARMOD_LUXE`,
@@ -1298,9 +1302,11 @@ return {
 
 		['at_skin_pearl'] = {
 			label = 'Pearl Weapon Kit',
+			description = 'Applicable sur : Pistolet Cal .50.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_pearl.webp',
 				component = {
 					`COMPONENT_PISTOL50_VARMOD_LUXE`
 				},
@@ -1310,9 +1316,11 @@ return {
 
 		['at_skin_ballas'] = {
 			label = 'Ballas Weapon Kit',
+			description = 'Applicable sur : Poing Américain.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_ballas.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_BALLAS`
 				},
@@ -1322,9 +1330,11 @@ return {
 
 		['at_skin_diamond'] = {
 			label = 'Diamond Weapon Kit',
+			description = 'Applicable sur : Poing Américain.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_diamond.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_DIAMOND`
 				},
@@ -1334,9 +1344,11 @@ return {
 
 		['at_skin_dollar'] = {
 			label = 'Dollar Weapon Kit',
+			description = 'Applicable sur : Poing Américain.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_dollar.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_DOLLAR`
 				},
@@ -1346,9 +1358,11 @@ return {
 
 		['at_skin_hate'] = {
 			label = 'Hate Weapon Kit',
+			description = 'Applicable sur : Poing Américain.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_hate.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_HATE`
 				},
@@ -1358,9 +1372,11 @@ return {
 
 		['at_skin_king'] = {
 			label = 'King Weapon Kit',
+			description = 'Applicable sur : Poing Américain.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_king.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_KING`
 				},
@@ -1370,9 +1386,11 @@ return {
 
 		['at_skin_love'] = {
 			label = 'Love Weapon Kit',
+			description = 'Applicable sur : Poing Américain.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_love.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_LOVE`
 				},
@@ -1382,9 +1400,11 @@ return {
 
 		['at_skin_pimp'] = {
 			label = 'Pimp Weapon Kit',
+			description = 'Applicable sur : Poing Américain.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_pimp.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_PIMP`
 				},
@@ -1394,9 +1414,11 @@ return {
 
 		['at_skin_player'] = {
 			label = 'Player Weapon Kit',
+			description = 'Applicable sur : Poing Américain.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_player.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_PLAYER`
 				},
@@ -1406,9 +1428,11 @@ return {
 
 		['at_skin_vagos'] = {
 			label = 'Vagos Weapon Kit',
+			description = 'Applicable sur : Poing Américain.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_vagos.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_VAGOS`
 				},
@@ -1418,9 +1442,11 @@ return {
 
 		['at_skin_blagueurs'] = {
 			label = 'Blagueurs Weapon Kit',
+			description = 'Applicable sur : Batte.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_blagueurs.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3`
 				},
@@ -1430,9 +1456,11 @@ return {
 
 		['at_skin_splatter'] = {
 			label = 'Splatter Weapon Kit',
+			description = 'Applicable sur : Batte.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_splatter.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_01`
 				},
@@ -1442,9 +1470,11 @@ return {
 
 		['at_skin_bulletholes'] = {
 			label = 'Bullet Holes Weapon Kit',
+			description = 'Applicable sur : Batte.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_bulletholes.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_02`
 				},
@@ -1454,9 +1484,11 @@ return {
 
 		['at_skin_burgershot'] = {
 			label = 'Burger Shot Weapon Kit',
+			description = 'Applicable sur : Batte.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_burgershot.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_03`
 				},
@@ -1466,9 +1498,11 @@ return {
 
 		['at_skin_cluckinbell'] = {
 			label = 'Cluckin Bell Weapon Kit',
+			description = 'Applicable sur : Batte.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_cluckinbell.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_04`
 				},
@@ -1478,9 +1512,11 @@ return {
 
 		['at_skin_fatalincursion'] = {
 			label = 'Fatal Incursion Weapon Kit',
+			description = 'Applicable sur : Batte.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_fatalincursion.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_05`
 				},
@@ -1490,9 +1526,11 @@ return {
 
 		['at_skin_luchalibre'] = {
 			label = 'Lucha Libre Weapon Kit',
+			description = 'Applicable sur : Batte.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_luchalibre.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_06`
 				},
@@ -1502,9 +1540,11 @@ return {
 
 		['at_skin_trippy'] = {
 			label = 'Trippy Weapon Kit',
+			description = 'Applicable sur : Batte.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_trippy.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_07`
 				},
@@ -1514,9 +1554,11 @@ return {
 
 		['at_skin_tiedye'] = {
 			label = 'Tie-Dye Weapon Kit',
+			description = 'Applicable sur : Batte.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_tiedye.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_08`
 				},
@@ -1526,9 +1568,11 @@ return {
 
 		['at_skin_wall'] = {
 			label = 'Wall Weapon Kit',
+			description = 'Applicable sur : Batte.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_wall.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_09`
 				},
@@ -1538,9 +1582,11 @@ return {
 
 		['at_skin_vip'] = {
 			label = 'VIP Weapon Kit',
+			description = 'Applicable sur : Revolver, Couteau à Cran d\'Arrêt.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_vip.webp',
 				component = {
 					`COMPONENT_REVOLVER_VARMOD_BOSS`,
 					`COMPONENT_SWITCHBLADE_VARMOD_VAR1`
@@ -1551,9 +1597,11 @@ return {
 
 		['at_skin_bodyguard'] = {
 			label = 'Bodyguard Weapon Kit',
+			description = 'Applicable sur : Revolver, Couteau à Cran d\'Arrêt.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_bodyguard.webp',
 				component = {
 					`COMPONENT_REVOLVER_VARMOD_GOON`,
 					`COMPONENT_SWITCHBLADE_VARMOD_VAR2`
@@ -1564,9 +1612,11 @@ return {
 
 		['at_skin_festive'] = {
 			label = 'Festive Weapon Kit',
+			description = 'Applicable sur : Up-n-Atomizer.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_festive.webp',
 				component = {
 					`COMPONENT_RAYPISTOL_VARMOD_XMAS18`
 				},
@@ -1576,9 +1626,11 @@ return {
 
 		['at_skin_security'] = {
 			label = 'Security Weapon Kit',
+			description = 'Applicable sur : Pistolet Perforant, UZI.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_security.webp',
 				component = {
 					`COMPONENT_APPISTOL_VARMOD_SECURITY`,
 					`COMPONENT_MICROSMG_VARMOD_SECURITY`,
@@ -1589,9 +1641,11 @@ return {
 
 		['at_skin_camo'] = {
 			label = 'Camo Weapon Kit',
+			description = 'Applicable sur : AK-47 MK2, Fusil Bullpup MK2, M4 MK2, Mitrailleuse de Combat MK2, Barrett M82 MK2, Fusil Marksman MK2, Pistolet Beretta MK2, Fusil à Pompe MK2, Revolver MK2, MP5 Mk2, Lanceur Paintball, G36 MK2.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_camo.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO`,
@@ -1612,9 +1666,11 @@ return {
 
 		['at_skin_brushstroke'] = {
 			label = 'Brushstroke Weapon Kit',
+			description = 'Applicable sur : AK-47 MK2, Fusil Bullpup MK2, M4 MK2, Mitrailleuse de Combat MK2, Barrett M82 MK2, Fusil Marksman MK2, Pistolet Beretta MK2, Fusil à Pompe MK2, Revolver MK2, MP5 Mk2, Lanceur Paintball, G36 MK2.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_brushstroke.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_02`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_02`,
@@ -1635,9 +1691,11 @@ return {
 
 		['at_skin_woodland'] = {
 			label = 'Woodland Weapon Kit',
+			description = 'Applicable sur : AK-47 MK2, Fusil Bullpup MK2, M4 MK2, Mitrailleuse de Combat MK2, Barrett M82 MK2, Fusil Marksman MK2, Pistolet Beretta MK2, Fusil à Pompe MK2, Revolver MK2, MP5 Mk2, Lanceur Paintball, G36 MK2.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_woodland.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_03`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_03`,
@@ -1658,9 +1716,11 @@ return {
 
 		['at_skin_skull'] = {
 			label = 'Skull Weapon Kit',
+			description = 'Applicable sur : AK-47 MK2, Fusil Bullpup MK2, M4 MK2, Mitrailleuse de Combat MK2, Barrett M82 MK2, Fusil Marksman MK2, Pistolet Beretta MK2, Fusil à Pompe MK2, Revolver MK2, MP5 Mk2, Lanceur Paintball, G36 MK2.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_skull.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_04`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_04`,
@@ -1681,9 +1741,11 @@ return {
 
 		['at_skin_sessanta'] = {
 			label = 'Sessanta Weapon Kit',
+			description = 'Applicable sur : AK-47 MK2, Fusil Bullpup MK2, M4 MK2, Mitrailleuse de Combat MK2, Barrett M82 MK2, Fusil Marksman MK2, Pistolet Beretta MK2, Fusil à Pompe MK2, Revolver MK2, MP5 Mk2, Lanceur Paintball, G36 MK2.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_sessanta.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_05`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_05`,
@@ -1704,9 +1766,11 @@ return {
 
 		['at_skin_perseus'] = {
 			label = 'Perseus Weapon Kit',
+			description = 'Applicable sur : AK-47 MK2, Fusil Bullpup MK2, M4 MK2, Mitrailleuse de Combat MK2, Barrett M82 MK2, Fusil Marksman MK2, Pistolet Beretta MK2, Fusil à Pompe MK2, Revolver MK2, MP5 Mk2, Lanceur Paintball, G36 MK2.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_perseus.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_06`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_06`,
@@ -1727,9 +1791,11 @@ return {
 
 		['at_skin_leopard'] = {
 			label = 'Leopard Weapon Kit',
+			description = 'Applicable sur : AK-47 MK2, Fusil Bullpup MK2, M4 MK2, Mitrailleuse de Combat MK2, Barrett M82 MK2, Fusil Marksman MK2, Pistolet Beretta MK2, Fusil à Pompe MK2, Revolver MK2, MP5 Mk2, Lanceur Paintball, G36 MK2.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_leopard.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_07`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_07`,
@@ -1750,9 +1816,11 @@ return {
 
 		['at_skin_zebra'] = {
 			label = 'Zebra Weapon Kit',
+			description = 'Applicable sur : AK-47 MK2, Fusil Bullpup MK2, M4 MK2, Mitrailleuse de Combat MK2, Barrett M82 MK2, Fusil Marksman MK2, Pistolet Beretta MK2, Fusil à Pompe MK2, Revolver MK2, MP5 Mk2, Lanceur Paintball, G36 MK2.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_zebra.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_08`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_08`,
@@ -1773,9 +1841,11 @@ return {
 
 		['at_skin_geometric'] = {
 			label = 'Geometric Weapon Kit',
+			description = 'Applicable sur : AK-47 MK2, Fusil Bullpup MK2, M4 MK2, Mitrailleuse de Combat MK2, Barrett M82 MK2, Fusil Marksman MK2, Pistolet Beretta MK2, Fusil à Pompe MK2, Revolver MK2, MP5 Mk2, Lanceur Paintball, G36 MK2.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_geometric.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_09`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_09`,
@@ -1796,9 +1866,11 @@ return {
 
 		['at_skin_boom'] = {
 			label = 'Boom Weapon Kit',
+			description = 'Applicable sur : AK-47 MK2, Fusil Bullpup MK2, M4 MK2, Mitrailleuse de Combat MK2, Barrett M82 MK2, Fusil Marksman MK2, Pistolet Beretta MK2, Fusil à Pompe MK2, Revolver MK2, MP5 Mk2, Lanceur Paintball, G36 MK2.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_boom.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_10`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_10`,
@@ -1819,9 +1891,11 @@ return {
 
 		['at_skin_patriotic'] = {
 			label = 'Patriotic Weapon Kit',
+			description = 'Applicable sur : AK-47 MK2, Fusil Bullpup MK2, M4 MK2, Mitrailleuse de Combat MK2, Barrett M82 MK2, Fusil Marksman MK2, Pistolet Beretta MK2, Fusil à Pompe MK2, Revolver MK2, MP5 Mk2, Lanceur Paintball, G36 MK2.',
 			type = 'skin',
 			weight = 50,
 			client = {
+				image = 'at_skin_patriotic.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_IND_01`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_IND_01`,

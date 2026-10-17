@@ -45,6 +45,7 @@ files {
     'web/build/assets/*.css',
     'web/build/assets/*.png',
     'web/images/*.png',
+    'web/images/*.webp', -- at_skin_* pictures (orb-greenscreen /screenmc > Skins d'armes) and racing_suspension
     'modules/**/shared.lua',
     'modules/**/client.lua',
     'modules/bridge/**/client.lua',
