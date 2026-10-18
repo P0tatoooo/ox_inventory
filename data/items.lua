@@ -1872,13 +1872,6 @@ return {
         }
 	},
 
-	['ink'] = {
-		label = 'Encre',
-		weight = 10,
-		stack = true,
-		close = false,
-	},
-
 	['charcoal'] = {
 		label = 'Charbon de Bois',
 		weight = 10,
@@ -2140,34 +2133,6 @@ return {
 
 	['meat'] = {
 		label = 'Viande',
-		weight = 250,
-		stack = true,
-		close = true,
-	},
-
-	['humanblood'] = {
-		label = 'Sang Humain',
-		weight = 250,
-		stack = true,
-		close = true,
-	},
-
-	['humanfat'] = {
-		label = 'Graisse Humaine',
-		weight = 250,
-		stack = true,
-		close = true,
-	},
-
-	['humanbone'] = {
-		label = 'Os Humain',
-		weight = 250,
-		stack = true,
-		close = true,
-	},
-
-	['humanorgan'] = {
-		label = 'Organe Humain',
 		weight = 250,
 		stack = true,
 		close = true,
@@ -3490,18 +3455,6 @@ return {
 		weight = 200,
 		stack = true,
 		close = false,
-	},
-
-    ['tijkeys'] = {
-		label = 'Clés Hangar',
-		weight = 10,
-		stack = true
-	},
-
-	['grandcycletalisman'] = {
-		label = 'Talisman du Grand Cycle',
-		weight = 0.01,
-		stack = true
 	},
 
     -- Illegal
