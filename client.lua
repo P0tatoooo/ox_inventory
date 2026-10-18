@@ -2427,15 +2427,22 @@ local function appearanceSignature(ped)
     return table.concat(parts, ',')
 end
 
-function DeletePedScreen()
+-- A closing frontend still reads as IsPauseMenuActive() for a few frames: when ours
+-- started closing, so that isn't taken for the real pause menu.
+local pedScreenClosedAt = 0
+local PED_SCREEN_CLOSE_GRACE = 1500
+
+---@param keepFrontend? boolean only the clone goes, our frontend stays up (CreatePedScreen reuses it)
+function DeletePedScreen(keepFrontend)
     pedScreenSession = pedScreenSession + 1
     deletePreviewPed(clonedPed)
     clonedPed = nil
 
-    if pedScreenFrontend then
+    if pedScreenFrontend and not keepFrontend then
         pedScreenFrontend = false
         ClearPedInPauseMenu()
         SetFrontendActive(false)
+        pedScreenClosedAt = GetGameTimer()
 
         local c = pauseBgOriginal
         ReplaceHudColourWithRgba(PAUSE_BG_COLOUR, c[1], c[2], c[3], c[4])
@@ -2443,28 +2450,44 @@ function DeletePedScreen()
 end
 
 function CreatePedScreen()
-    DeletePedScreen()
+    -- Another inventory opened while ours is up (a container, a drop, one the server
+    -- opens): keep our frontend, redo only the clone. Closing it and then checking
+    -- IsPauseMenuActive() in the same frame read our own closing menu as the real pause
+    -- menu: no preview, and MyCity_HUD2 (hidden only while IsPauseMenuActive) came back.
+    local reuse = pedScreenFrontend and IsPauseMenuActive()
+    DeletePedScreen(reuse)
     local session = pedScreenSession
 
+    -- Ours still closing (inventory reopened right after closing): waited out below.
+    local ownClosing = not reuse and GetGameTimer() - pedScreenClosedAt < PED_SCREEN_CLOSE_GRACE
+
     -- The real pause menu is open: leave it alone, there's no room for ours.
-    if IsPauseMenuActive() then return end
+    if not reuse and not ownClosing and IsPauseMenuActive() then return end
 
     Citizen.CreateThread(function()
         -- Closed before this thread even ran: opening the frontend now would leave it up.
         if session ~= pedScreenSession then return end
 
-        -- Read once, before our first replace, so it's the game's own value.
-        if not pauseBgOriginal then
-            pauseBgOriginal = { GetHudColour(PAUSE_BG_COLOUR) }
+        if not reuse then
+            if ownClosing then
+                local closeTimeout = GetGameTimer() + PED_SCREEN_CLOSE_GRACE
+                while IsPauseMenuActive() and GetGameTimer() < closeTimeout do Wait(0) end
+                if session ~= pedScreenSession or IsPauseMenuActive() then return end
+            end
+
+            -- Read once, before our first replace, so it's the game's own value.
+            if not pauseBgOriginal then
+                pauseBgOriginal = { GetHudColour(PAUSE_BG_COLOUR) }
+            end
+            ReplaceHudColourWithRgba(PAUSE_BG_COLOUR, 0, 0, 0, 0)
+
+            ActivateFrontendMenu(`FE_MENU_VERSION_EMPTY_NO_BACKGROUND`, false, -1)
+            pedScreenFrontend = true
+
+            local timeout = GetGameTimer() + 1000
+            while not IsFrontendReadyForControl() and GetGameTimer() < timeout do Wait(0) end
+            if session ~= pedScreenSession then return end
         end
-        ReplaceHudColourWithRgba(PAUSE_BG_COLOUR, 0, 0, 0, 0)
-
-        ActivateFrontendMenu(`FE_MENU_VERSION_EMPTY_NO_BACKGROUND`, false, -1)
-        pedScreenFrontend = true
-
-        local timeout = GetGameTimer() + 1000
-        while not IsFrontendReadyForControl() and GetGameTimer() < timeout do Wait(0) end
-        if session ~= pedScreenSession then return end
 
         -- The frontend draws its own mouse cursor under the NUI one, and the game
         -- turns it back on (menu setup, window refocus), so hide it every frame.
