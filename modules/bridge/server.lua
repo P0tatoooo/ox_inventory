@@ -44,6 +44,8 @@ function server.playerDropped(source)
 
 	if inv?.player then
 		inv:closeInventory()
+		-- MyCity: the worn clothes go with the character (Inventory.GetClothing)
+		Inventory.RemoveClothing(inv)
 		Inventory.Remove(inv)
 	end
 end

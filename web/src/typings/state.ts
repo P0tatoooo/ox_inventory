@@ -4,6 +4,8 @@ import { Slot } from './slot';
 export type State = {
   leftInventory: Inventory;
   rightInventory: Inventory;
+  /** MyCity: the clothes the player wears, one slot per category (ClothingSlots). */
+  clothingInventory: Inventory;
   itemAmount: number;
   shiftPressed: boolean;
   isBusy: boolean;
@@ -11,5 +13,6 @@ export type State = {
   history?: {
     leftInventory: Inventory;
     rightInventory: Inventory;
+    clothingInventory: Inventory;
   };
 };

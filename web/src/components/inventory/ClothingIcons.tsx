@@ -110,3 +110,17 @@ export const DecalsIcon: React.FC = () => (
     <path d="M3 12l9 5 9-5" />
   </svg>
 );
+
+// MyCity: the slots around the character (ClothingSlots) -- the T-shirt under the jacket, and the outfit
+export const TShirtIcon: React.FC = () => (
+  <svg {...iconProps}>
+    <path d="M9 4 4 6.5l1.5 3.5L8 9v11h8V9l2.5 1L20 6.5 15 4c0 1.7-1.3 3-3 3S9 5.7 9 4Z" />
+  </svg>
+);
+
+export const OutfitIcon: React.FC = () => (
+  <svg {...iconProps}>
+    <path d="M12 7a2 2 0 1 0-2-2" />
+    <path d="M12 7v1.5L3.5 15a1.2 1.2 0 0 0 .7 2.2h15.6a1.2 1.2 0 0 0 .7-2.2L12 8.5" />
+  </svg>
+);

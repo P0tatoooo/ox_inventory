@@ -1861,6 +1861,12 @@ RegisterNUICallback('removeAmmo', function(slot, cb)
 	end
 end)
 
+-- MyCity: a double-click on a clothing slot around the character takes that piece / outfit off (MyCity_Appearance)
+RegisterNUICallback('clothingTakeOff', function(slot, cb)
+	cb(1)
+	if type(slot) == 'number' then TriggerServerEvent('MyCity_Appearance:server:takeOffSlot', slot) end
+end)
+
 RegisterNUICallback('useItem', function(slot, cb)
 	useSlot(slot --[[@as number]])
 	cb(1)

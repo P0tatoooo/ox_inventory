@@ -15,6 +15,7 @@ import { ItemsPayload } from '../../reducers/refreshSlots';
 import { closeTooltip, openTooltip } from '../../store/tooltip';
 import { openContextMenu } from '../../store/contextMenu';
 import { useMergeRefs } from '@floating-ui/react';
+import { fetchNui } from '../../utils/fetchNui';
 
 interface SlotProps {
   inventoryId: Inventory['id'];
@@ -127,6 +128,15 @@ const InventorySlot: React.ForwardRefRenderFunction<HTMLDivElement, SlotProps> =
     }
   };
 
+  // MyCity: a double-click puts a piece of clothing / an outfit on (from the inventory: its use) or takes it off
+  // (from the slots around the character: MyCity_Appearance server takeOffSlot)
+  const handleDoubleClick = () => {
+    if (!isSlotWithItem(item) || (item.name !== 'clothing' && item.name !== 'outfit')) return;
+    dispatch(closeTooltip());
+    if (inventoryType === 'clothing') fetchNui('clothingTakeOff', item.slot);
+    else if (inventoryType === 'player') onUse(item);
+  };
+
   const refs = useMergeRefs([connectRef, ref]);
 
   const getQuantity = (item: Slot) => {
@@ -151,6 +161,7 @@ const InventorySlot: React.ForwardRefRenderFunction<HTMLDivElement, SlotProps> =
       ref={refs}
       onContextMenu={handleContext}
       onClick={handleClick}
+      onDoubleClick={handleDoubleClick}
       className="inventory-slot"
       style={{
         filter:

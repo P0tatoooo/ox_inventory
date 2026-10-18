@@ -24,6 +24,12 @@ const initialState: State = {
     maxWeight: 0,
     items: [],
   },
+  clothingInventory: {
+    id: '',
+    type: 'clothing',
+    slots: 0,
+    items: [],
+  },
   additionalMetadata: new Array(),
   itemAmount: 0,
   shiftPressed: false,
@@ -70,6 +76,7 @@ export const inventorySlice = createSlice({
       state.history = {
         leftInventory: current(state.leftInventory),
         rightInventory: current(state.rightInventory),
+        clothingInventory: current(state.clothingInventory),
       };
     });
     builder.addMatcher(isFulfilled, (state) => {
@@ -79,6 +86,7 @@ export const inventorySlice = createSlice({
       if (state.history && state.history.leftInventory && state.history.rightInventory) {
         state.leftInventory = state.history.leftInventory;
         state.rightInventory = state.history.rightInventory;
+        state.clothingInventory = state.history.clothingInventory;
       }
       state.isBusy = false;
     });
@@ -98,6 +106,7 @@ export const {
 } = inventorySlice.actions;
 export const selectLeftInventory = (state: RootState) => state.inventory.leftInventory;
 export const selectRightInventory = (state: RootState) => state.inventory.rightInventory;
+export const selectClothingInventory = (state: RootState) => state.inventory.clothingInventory;
 export const selectItemAmount = (state: RootState) => state.inventory.itemAmount;
 export const selectIsBusy = (state: RootState) => state.inventory.isBusy;
 

@@ -22,6 +22,8 @@ shared = {
 }
 
 shared.dropslots = GetConvarInt('inventory:dropslots', shared.playerslots)
+-- MyCity: the worn clothes, one slot per category (MyCity_Appearance shared/clothingslots.lua), the outfit last
+shared.clothingslots = 16
 shared.dropweight = GetConvarInt('inventory:dropslotcount', shared.playerweight)
 
 do

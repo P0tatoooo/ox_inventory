@@ -13,6 +13,26 @@ export const setupInventoryReducer: CaseReducer<
   const { leftInventory, rightInventory } = action.payload;
   const curTime = Math.floor(Date.now() / 1000);
 
+  // MyCity: the worn clothes come with the player's inventory (server.lua openInventory)
+  const clothing = leftInventory?.clothing;
+  if (clothing)
+    state.clothingInventory = {
+      ...clothing,
+      items: Array.from(Array(clothing.slots), (_, index) => {
+        const item = Object.values(clothing.items || {}).find((item) => item?.slot === index + 1) || {
+          slot: index + 1,
+        };
+
+        if (!item.name) return item;
+
+        if (typeof Items[item.name] === 'undefined') {
+          getItemData(item.name);
+        }
+
+        return item;
+      }),
+    };
+
   if (leftInventory)
     state.leftInventory = {
       ...leftInventory,

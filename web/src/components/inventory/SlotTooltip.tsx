@@ -71,7 +71,8 @@ const SlotTooltip: React.ForwardRefRenderFunction<
                   {Locale.ui_serial}: {item.metadata.serial}
                 </p>
               )}
-              {item.metadata?.components && item.metadata?.components[0] && (
+              {/* MyCity: weapon attachments only (an outfit's `components` are clothing pieces, objects) */}
+              {item.metadata?.components && typeof item.metadata?.components[0] === 'string' && (
                 <p>
                   {Locale.ui_components}:{' '}
                   {(item.metadata?.components).map((component: string, index: number, array: []) =>

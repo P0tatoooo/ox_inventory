@@ -208,13 +208,23 @@ local function openInventory(source, invType, data, ignoreSecurityChecks)
 		left:openInventory(left)
 	end
 
+	-- MyCity: the worn clothes, in the slots around the character (Inventory.GetClothing)
+	local clothing = Inventory.GetClothing(left)
+
 	return {
 		id = left.id,
 		label = left.label,
 		type = left.type,
 		slots = left.slots,
 		weight = left.weight,
-		maxWeight = left.maxWeight
+		maxWeight = left.maxWeight,
+		clothing = clothing and {
+			id = clothing.id,
+			label = clothing.label,
+			type = 'clothing',
+			slots = clothing.slots,
+			items = clothing.items
+		}
 	}, right and {
 		id = right.id,
 		label = right.player and '' or right.label,

@@ -93,16 +93,23 @@ export const findAvailableSlot = (item: Slot, data: ItemData, items: Slot[]) => 
   return stackableSlot || items.find((target) => target.name === undefined);
 };
 
+// MyCity: `clothing` is the worn clothes around the character, a third inventory next to the two panels.
+const inventoryOfType = (state: State, type: Inventory['type']) =>
+  type === InventoryType.PLAYER
+    ? state.leftInventory
+    : type === InventoryType.CLOTHING
+    ? state.clothingInventory
+    : state.rightInventory;
+
 export const getTargetInventory = (
   state: State,
   sourceType: Inventory['type'],
   targetType?: Inventory['type']
 ): { sourceInventory: Inventory; targetInventory: Inventory } => ({
-  sourceInventory: sourceType === InventoryType.PLAYER ? state.leftInventory : state.rightInventory,
+  sourceInventory: inventoryOfType(state, sourceType),
+  // without a target (ctrl + click): the player's inventory for the other two, the other panel for the player's
   targetInventory: targetType
-    ? targetType === InventoryType.PLAYER
-      ? state.leftInventory
-      : state.rightInventory
+    ? inventoryOfType(state, targetType)
     : sourceType === InventoryType.PLAYER
     ? state.rightInventory
     : state.leftInventory,

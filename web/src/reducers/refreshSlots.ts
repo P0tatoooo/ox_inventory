@@ -21,14 +21,31 @@ export const refreshSlotsReducer: CaseReducer<State, PayloadAction<Payload>> = (
     Object.values(action.payload.items)
       .filter((data) => !!data)
       .forEach((data) => {
+        // MyCity: the worn clothes are told apart by their inventory id (clothing:<citizenid>)
         const targetInventory = data.inventory
-          ? data.inventory !== InventoryType.PLAYER
+          ? data.inventory === state.clothingInventory.id
+            ? state.clothingInventory
+            : data.inventory !== InventoryType.PLAYER
             ? state.rightInventory
             : state.leftInventory
           : state.leftInventory;
 
         data.item.durability = itemDurability(data.item.metadata, curTime);
         targetInventory.items[data.item.slot - 1] = data.item;
+
+        // MyCity: a move still waiting for the server keeps the state from before it, to put back if refused. An
+        // update arriving meanwhile is newer than that state: it goes in it too, or a refusal would undo it (an
+        // outfit dropped on its slot: the hook refuses the move and puts the outfit on itself, ClothingItems).
+        const history = state.history;
+        if (state.isBusy && history) {
+          const saved =
+            targetInventory === state.clothingInventory
+              ? history.clothingInventory
+              : targetInventory === state.rightInventory
+              ? history.rightInventory
+              : history.leftInventory;
+          if (saved && saved.id === targetInventory.id) saved.items[data.item.slot - 1] = data.item;
+        }
       });
 
     // Janky workaround to force a state rerender for crafting inventory to

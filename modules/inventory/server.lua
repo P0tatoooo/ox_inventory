@@ -487,7 +487,9 @@ end
 ---@param count number
 ---@param metadata any
 ---@param slot any
-function Inventory.SetSlot(inv, item, count, metadata, slot)
+-- MyCity: quiet = no « added / removed » notification (the worn clothes moved between the player's inventory and
+-- the clothing slots around the character, MyCity_Appearance server/clothingitems.lua: both are their inventory)
+function Inventory.SetSlot(inv, item, count, metadata, slot, quiet)
 	inv = Inventory(inv) --[[@as OxInventory]]
 
 	if not inv then return end
@@ -499,7 +501,7 @@ function Inventory.SetSlot(inv, item, count, metadata, slot)
 	local newWeight = currentSlot and inv.weight - currentSlot.weight or inv.weight
 
 	if currentSlot and newCount < 1 then
-		TriggerClientEvent('ox_inventory:itemNotify', inv.id, { currentSlot, 'ui_removed', currentSlot.count })
+		if not quiet then TriggerClientEvent('ox_inventory:itemNotify', inv.id, { currentSlot, 'ui_removed', currentSlot.count }) end
 		currentSlot = nil
 	else
 		currentSlot = {name = item.name, label = item.label, weight = item.weight, slot = slot, count = newCount, description = item.description, metadata = metadata, stack = item.stack, close = item.close}
@@ -507,7 +509,7 @@ function Inventory.SetSlot(inv, item, count, metadata, slot)
 		currentSlot.weight = slotWeight
 		newWeight += slotWeight
 
-		TriggerClientEvent('ox_inventory:itemNotify', inv.id, { currentSlot, count < 0 and 'ui_removed' or 'ui_added', math.abs(count) })
+		if not quiet then TriggerClientEvent('ox_inventory:itemNotify', inv.id, { currentSlot, count < 0 and 'ui_removed' or 'ui_added', math.abs(count) }) end
 	end
 
 	inv.weight = newWeight
@@ -1239,7 +1241,8 @@ exports('SetDecayMultiplier', Inventory.SetDecayMultiplier)
 ---@param slot? number
 ---@param cb? fun(success?: boolean, response: string|SlotWithItem|nil)
 ---@return boolean? success, string|SlotWithItem|nil response
-function Inventory.AddItem(inv, item, count, metadata, slot, cb)
+--- MyCity: quiet (after cb) = no notification, see Inventory.SetSlot.
+function Inventory.AddItem(inv, item, count, metadata, slot, cb, quiet)
 	if type(item) ~= 'table' then item = Items(item) end
 
 	if not item then return false, 'invalid_item' end
@@ -1300,7 +1303,7 @@ function Inventory.AddItem(inv, item, count, metadata, slot, cb)
 	local toSlotType = type(toSlot)
 
 	if toSlotType == 'number' then
-		Inventory.SetSlot(inv, item, slotCount, slotMetadata, toSlot)
+		Inventory.SetSlot(inv, item, slotCount, slotMetadata, toSlot, quiet)
 
 		if inv.player and server.syncInventory then
 			server.syncInventory(inv)
@@ -1325,7 +1328,7 @@ function Inventory.AddItem(inv, item, count, metadata, slot, cb)
 		for i = 1, #toSlot do
 			local data = toSlot[i]
 			added += data.count
-			Inventory.SetSlot(inv, item, data.count, data.metadata, data.slot)
+			Inventory.SetSlot(inv, item, data.count, data.metadata, data.slot, quiet)
 			toSlot[i] = { item = inv.items[data.slot], inventory = inv.id }
 		end
 
@@ -1443,7 +1446,8 @@ exports('GetItemSlots', Inventory.GetItemSlots)
 ---@param slot? number
 ---@param ignoreTotal? boolean
 ---@return boolean? success, string? response
-function Inventory.RemoveItem(inv, item, count, metadata, slot, ignoreTotal)
+--- MyCity: quiet (after ignoreTotal) = no notification, see Inventory.SetSlot.
+function Inventory.RemoveItem(inv, item, count, metadata, slot, ignoreTotal, quiet)
 	if type(item) ~= 'table' then item = Items(item) end
 
 	if not item then return false, 'invalid_item' end
@@ -1470,25 +1474,25 @@ function Inventory.RemoveItem(inv, item, count, metadata, slot, ignoreTotal)
 
 		if slot and itemSlots[slot] then
 			removed = count
-			Inventory.SetSlot(inv, item, -count, inv.items[slot].metadata, slot)
+			Inventory.SetSlot(inv, item, -count, inv.items[slot].metadata, slot, quiet)
 			slots[#slots+1] = inv.items[slot] or slot
 		elseif itemSlots and totalCount > 0 then
 			for k, v in pairs(itemSlots) do
 				if removed < total then
 					if v == count then
-						TriggerClientEvent('ox_inventory:itemNotify', inv.id, { inv.items[k], 'ui_removed', v })
+						if not quiet then TriggerClientEvent('ox_inventory:itemNotify', inv.id, { inv.items[k], 'ui_removed', v }) end
 
 						removed = total
 						inv.weight -= inv.items[k].weight
 						inv.items[k] = nil
 						slots[#slots+1] = inv.items[k] or k
 					elseif v > count then
-						Inventory.SetSlot(inv, item, -count, inv.items[k].metadata, k)
+						Inventory.SetSlot(inv, item, -count, inv.items[k].metadata, k, quiet)
 						slots[#slots+1] = inv.items[k] or k
 						removed = total
 						count = v - count
 					else
-						TriggerClientEvent('ox_inventory:itemNotify', inv.id, { inv.items[k], 'ui_removed', v })
+						if not quiet then TriggerClientEvent('ox_inventory:itemNotify', inv.id, { inv.items[k], 'ui_removed', v }) end
 
 						removed = removed + v
 						count = count - v
@@ -1774,8 +1778,18 @@ lib.callback.register('ox_inventory:swapItems', function(source, data)
 
 	if not playerInventory then return end
 
-	local toInventory = (data.toType == 'player' and playerInventory) or Inventory(playerInventory.open)
-	local fromInventory = (data.fromType == 'player' and playerInventory) or Inventory(playerInventory.open)
+	-- MyCity: `clothing` is always the player's own worn clothes (Inventory.GetClothing), next to whatever is open
+	local function sideInventory(invType)
+		if invType == 'player' then return playerInventory end
+		if invType == 'clothing' then return Inventory.GetClothing(playerInventory) end
+		return Inventory(playerInventory.open)
+	end
+
+	local toInventory = sideInventory(data.toType)
+	local fromInventory = sideInventory(data.fromType)
+
+	-- dropping on the ground goes through the player's own slots (dropItem): take the piece off first
+	if data.fromType == 'clothing' and data.toType == 'newdrop' then return false end
 
 	if not fromInventory or not toInventory then
 		playerInventory:closeInventory()
@@ -2504,7 +2518,7 @@ local function saveInventories(clearInventories)
     if not clearInventories then return end
 
     for _, inv in pairs(Inventories) do
-        if not inv.open and not inv.player then
+        if not inv.open and not inv.player and inv.type ~= 'clothing' then
             -- clear inventory from memory if unused for x minutes, or on entity/netid mismatch
             if inv.type == 'glovebox' or inv.type == 'trunk' then
                 if NetworkGetEntityFromNetworkId(inv.netid) ~= inv.entityId then
@@ -2959,5 +2973,41 @@ function Inventory.InspectInventory(playerId, invId)
 end
 
 exports('InspectInventory', Inventory.InspectInventory)
+
+--- MyCity: the clothes a character wears, as items (MyCity_Appearance server/clothingitems.lua). One inventory per
+--- character, `clothing:<citizenid>`, one slot per clothing category (shared.clothingslots, the outfit in the last).
+--- It stays loaded while the character plays, and its wearer gets every change to it (openedBy), so the slots around
+--- the character in the inventory screen follow what scripts do to it. Moves to and from it come from the inventory
+--- screen as the `clothing` type (ox_inventory:swapItems); MyCity_Appearance checks them (swapItems hook).
+---@param playerInv inventory
+---@return OxInventory?
+function Inventory.GetClothing(playerInv)
+	playerInv = Inventory(playerInv) --[[@as OxInventory]]
+	if not playerInv or not playerInv.player or not playerInv.owner then return end
+
+	local id = ('clothing:%s'):format(playerInv.owner)
+	local inv = Inventories[id] or Inventory.Create('clothing', 'Vêtements', 'clothing', shared.clothingslots, 0, 1000000, playerInv.owner)
+
+	if inv then
+		inv.wearer = playerInv.id
+		inv.openedBy[playerInv.id] = true
+	end
+
+	return inv
+end
+
+exports('GetClothingInventory', function(playerId)
+	local inv = Inventory.GetClothing(playerId)
+	return inv and inv.id
+end)
+
+--- The character is leaving: its clothes are saved and unloaded with it.
+function Inventory.RemoveClothing(playerInv)
+	local inv = playerInv and playerInv.owner and Inventories[('clothing:%s'):format(playerInv.owner)]
+	if not inv then return end
+
+	inv.openedBy = {}
+	Inventory.Remove(inv)
+end
 
 return Inventory

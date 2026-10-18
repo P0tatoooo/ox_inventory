@@ -3664,6 +3664,33 @@ return {
     },
     -----------------------------------------------------------
 
+    -- MyCity: the clothes as items (MyCity_Appearance server/clothingitems.lua). One item each, the piece in its
+    -- metadata (label, slot, kind / id, drawable, texture, model, imageurl = its MyCity_Appearance picture); worn
+    -- in the slots around the character (the `clothing:<citizenid>` inventory). Using one puts it on.
+    ['clothing'] = {
+		label = 'Vêtement',
+		weight = 200,
+		stack = false,
+		close = false,
+		description = 'Un vêtement : glissez-le sur sa case autour du personnage pour le porter.',
+		server = {
+			export = 'MyCity_Appearance.useClothingItem'
+		}
+	},
+
+    -- A whole outfit in one item (label, model, components, props: only the pieces it covers; job for a uniform).
+    -- Worn in the Tenue slot, its pieces go over the empty slots and push the worn ones into the inventory.
+    ['outfit'] = {
+		label = 'Tenue',
+		weight = 1000,
+		stack = false,
+		close = false,
+		description = 'Une tenue complète : glissez-la sur la case Tenue pour la porter.',
+		server = {
+			export = 'MyCity_Appearance.useClothingItem'
+		}
+	},
+
     ['object'] = {
 		label = 'Objet',
 		weight = 500,

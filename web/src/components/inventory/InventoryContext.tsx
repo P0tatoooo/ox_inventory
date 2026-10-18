@@ -124,7 +124,8 @@ const InventoryContext: React.FC = () => {
             label={Locale.ui_copy}
           />
         )}
-        {own && item && item.metadata?.components && item.metadata?.components.length > 0 && (
+        {/* MyCity: weapon attachments only (an outfit's `components` are clothing pieces, objects) */}
+        {own && item && item.metadata?.components && typeof item.metadata?.components[0] === 'string' && (
           <Menu label={Locale.ui_removeattachments}>
             {item &&
               item.metadata?.components.map((component: string, index: number) => (
