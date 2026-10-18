@@ -128,10 +128,10 @@ const InventorySlot: React.ForwardRefRenderFunction<HTMLDivElement, SlotProps> =
     }
   };
 
-  // MyCity: a double-click puts a piece of clothing / an outfit on (from the inventory: its use) or takes it off
+  // MyCity: a double-click puts a piece of clothing / an outfit / a bulletproof vest on (from the inventory: its use) or takes it off
   // (from the slots around the character: MyCity_Appearance server takeOffSlot)
   const handleDoubleClick = () => {
-    if (!isSlotWithItem(item) || (item.name !== 'clothing' && item.name !== 'outfit')) return;
+    if (!isSlotWithItem(item) || (item.name !== 'clothing' && item.name !== 'outfit' && item.name !== 'bulletproof')) return;
     dispatch(closeTooltip());
     if (inventoryType === 'clothing') fetchNui('clothingTakeOff', item.slot);
     else if (inventoryType === 'player') onUse(item);

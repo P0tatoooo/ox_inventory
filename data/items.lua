@@ -1830,14 +1830,16 @@ return {
 		close = true,
 	},
 
+	-- MyCity: worn in the vest slot around the character like the clothes (MyCity_Appearance server/clothingitems.lua),
+	-- its armour MyCity_CoreV2's (Server/Modules/bulletProof.lua)
 	['bulletproof'] = {
 		label = 'Gilet Pare-Balles',
 		weight = 4000,
 		stack = false,
-		close = true,
+		close = false,
         consume = 0,
         server = {
-			export = 'MyCity_CoreV2.bulletproof'
+			export = 'MyCity_Appearance.useClothingItem'
 		}
 	},
 
