@@ -1272,7 +1272,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_wood.webp',
 				component = {
 					`COMPONENT_HEAVYPISTOL_VARMOD_LUXE`,
 					`COMPONENT_SNIPERRIFLE_VARMOD_LUXE`,
@@ -1288,7 +1287,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_metal.webp',
 				component = {
 					`COMPONENT_ADVANCEDRIFLE_VARMOD_LUXE`,
 					`COMPONENT_APPISTOL_VARMOD_LUXE`,
@@ -1306,7 +1304,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_pearl.webp',
 				component = {
 					`COMPONENT_PISTOL50_VARMOD_LUXE`
 				},
@@ -1320,7 +1317,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_ballas.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_BALLAS`
 				},
@@ -1334,7 +1330,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_diamond.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_DIAMOND`
 				},
@@ -1348,7 +1343,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_dollar.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_DOLLAR`
 				},
@@ -1362,7 +1356,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_hate.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_HATE`
 				},
@@ -1376,7 +1369,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_king.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_KING`
 				},
@@ -1390,7 +1382,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_love.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_LOVE`
 				},
@@ -1404,7 +1395,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_pimp.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_PIMP`
 				},
@@ -1418,7 +1408,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_player.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_PLAYER`
 				},
@@ -1432,7 +1421,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_vagos.webp',
 				component = {
 					`COMPONENT_KNUCKLE_VARMOD_VAGOS`
 				},
@@ -1446,7 +1434,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_blagueurs.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3`
 				},
@@ -1460,7 +1447,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_splatter.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_01`
 				},
@@ -1474,7 +1460,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_bulletholes.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_02`
 				},
@@ -1488,7 +1473,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_burgershot.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_03`
 				},
@@ -1502,7 +1486,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_cluckinbell.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_04`
 				},
@@ -1516,7 +1499,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_fatalincursion.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_05`
 				},
@@ -1530,7 +1512,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_luchalibre.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_06`
 				},
@@ -1544,7 +1525,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_trippy.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_07`
 				},
@@ -1558,7 +1538,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_tiedye.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_08`
 				},
@@ -1572,7 +1551,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_wall.webp',
 				component = {
 					`COMPONENT_BAT_VARMOD_XM3_09`
 				},
@@ -1586,7 +1564,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_vip.webp',
 				component = {
 					`COMPONENT_REVOLVER_VARMOD_BOSS`,
 					`COMPONENT_SWITCHBLADE_VARMOD_VAR1`
@@ -1601,7 +1578,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_bodyguard.webp',
 				component = {
 					`COMPONENT_REVOLVER_VARMOD_GOON`,
 					`COMPONENT_SWITCHBLADE_VARMOD_VAR2`
@@ -1616,7 +1592,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_festive.webp',
 				component = {
 					`COMPONENT_RAYPISTOL_VARMOD_XMAS18`
 				},
@@ -1630,7 +1605,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_security.webp',
 				component = {
 					`COMPONENT_APPISTOL_VARMOD_SECURITY`,
 					`COMPONENT_MICROSMG_VARMOD_SECURITY`,
@@ -1645,7 +1619,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_camo.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO`,
@@ -1670,7 +1643,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_brushstroke.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_02`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_02`,
@@ -1695,7 +1667,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_woodland.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_03`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_03`,
@@ -1720,7 +1691,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_skull.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_04`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_04`,
@@ -1745,7 +1715,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_sessanta.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_05`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_05`,
@@ -1770,7 +1739,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_perseus.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_06`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_06`,
@@ -1795,7 +1763,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_leopard.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_07`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_07`,
@@ -1820,7 +1787,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_zebra.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_08`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_08`,
@@ -1845,7 +1811,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_geometric.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_09`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_09`,
@@ -1870,7 +1835,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_boom.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_10`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_10`,
@@ -1895,7 +1859,6 @@ return {
 			type = 'skin',
 			weight = 50,
 			client = {
-				image = 'at_skin_patriotic.webp',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_MK2_CAMO_IND_01`,
 					`COMPONENT_BULLPUPRIFLE_MK2_CAMO_IND_01`,
