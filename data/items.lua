@@ -1704,6 +1704,15 @@ return {
 		consume = 0
 	},
 
+	-- Carte d'accès à un fournisseur illégal (MyCity_CoreV2, Shared/IllegalOrders.lua) :
+	-- metadata `zone` = le type de la zone du fournisseur, donnée par un admin
+	['keycard'] = {
+		label = "Carte d'accès",
+		weight = 10,
+		stack = false,
+		close = true,
+	},
+
 	['money'] = {
 		label = 'Argent',
 		weight = 0.01
