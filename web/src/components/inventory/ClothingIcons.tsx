@@ -124,3 +124,11 @@ export const OutfitIcon: React.FC = () => (
     <path d="M12 7v1.5L3.5 15a1.2 1.2 0 0 0 .7 2.2h15.6a1.2 1.2 0 0 0 .7-2.2L12 8.5" />
   </svg>
 );
+
+// the lock of a clothing slot (ClothingSlots): closed = the piece stays on under an outfit
+export const LockIcon: React.FC<{ open?: boolean }> = ({ open }) => (
+  <svg {...iconProps} strokeWidth={2}>
+    <rect x="5" y="11" width="14" height="10" rx="2" />
+    <path d={open ? 'M8 11V7a4 4 0 0 1 7.5-2' : 'M8 11V7a4 4 0 0 1 8 0v4'} />
+  </svg>
+);

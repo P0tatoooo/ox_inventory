@@ -87,4 +87,41 @@ $clothingSlotsPerColumn: 8;
     }
   }
 
+  // the lock of a worn piece: a black square in the slot's top right corner (inside its border, flush with its edges),
+  // the icon dim while open, white once locked
+  &__lock {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    z-index: 2;
+    width: 2.2vh;
+    height: 2.2vh;
+    padding: .4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0;
+    // no white focus ring left on it after a click (CEF keeps the focus, as shared/component/Button.scss says)
+    outline: none;
+    background: rgba(0, 0, 0, 0.6);
+    color: rgba(white, 0.4);
+    cursor: pointer;
+    pointer-events: auto;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    // not pushed down when pressed like the other buttons (index.scss button:active): it stays in its corner
+    &:active {
+      transform: none;
+    }
+
+    &--on {
+      color: #fff;
+    }
+  }
+
 }

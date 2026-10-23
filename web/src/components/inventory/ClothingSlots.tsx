@@ -3,6 +3,7 @@ import { useAppSelector } from '../../store';
 import { selectClothingInventory } from '../../store/inventory';
 import { Inventory } from '../../typings';
 import { isSlotWithItem } from '../../helpers';
+import { fetchNui } from '../../utils/fetchNui';
 import InventorySlot from './InventorySlot';
 import './ClothingSlots.scss';
 import {
@@ -13,6 +14,7 @@ import {
   GlassesIcon,
   GlovesIcon,
   HatIcon,
+  LockIcon,
   MaskIcon,
   NeckIcon,
   OutfitIcon,
@@ -28,6 +30,8 @@ import {
  * MyCity: the clothes the player wears, as items, in slots around the character (the inventory `clothing:<citizenid>`,
  * Inventory.GetClothing). The slot numbers are the categories of MyCity_Appearance's shared/clothingslots.lua: an item
  * dropped on a slot puts the piece on, one dragged out takes it off; the server refuses a piece in the wrong slot.
+ * A worn piece has a lock at its top right: locked (its metadata.locked), no outfit takes it off, it is worn over it
+ * (MyCity_Appearance server lockSlot).
  */
 type ClothingSlotDef = { slot: number; label: string; icon: React.FC };
 
@@ -57,6 +61,9 @@ const RIGHT: ClothingSlotDef[] = [
 const ClothingSlot: React.FC<{ def: ClothingSlotDef; inventory: Inventory }> = ({ def, inventory }) => {
   const item = inventory.items[def.slot - 1] || { slot: def.slot };
   const worn = isSlotWithItem(item);
+  // pieces only: an outfit is what the lock keeps out, a bulletproof vest never goes into one
+  const lockable = worn && item.name === 'clothing';
+  const locked = lockable && item.metadata?.locked === true;
 
   return (
     <div className="clothing-slot">
@@ -72,6 +79,20 @@ const ClothingSlot: React.FC<{ def: ClothingSlotDef; inventory: Inventory }> = (
         inventoryGroups={inventory.groups}
         inventoryId={inventory.id}
       />
+      {lockable && (
+        <button
+          type="button"
+          className={`clothing-slot__lock${locked ? ' clothing-slot__lock--on' : ''}`}
+          title={locked ? 'Verrouillé : reste porté sous une tenue' : 'Verrouiller : une tenue ne l’enlèvera pas'}
+          onMouseDown={(event) => event.stopPropagation()}
+          onClick={(event) => {
+            event.stopPropagation();
+            fetchNui('clothingLock', def.slot);
+          }}
+        >
+          <LockIcon open={!locked} />
+        </button>
+      )}
     </div>
   );
 };

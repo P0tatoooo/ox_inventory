@@ -1867,6 +1867,12 @@ RegisterNUICallback('clothingTakeOff', function(slot, cb)
 	if type(slot) == 'number' then TriggerServerEvent('MyCity_Appearance:server:takeOffSlot', slot) end
 end)
 
+-- MyCity: the lock of a clothing slot: the piece worn there stays on under an outfit (MyCity_Appearance)
+RegisterNUICallback('clothingLock', function(slot, cb)
+	cb(1)
+	if type(slot) == 'number' then TriggerServerEvent('MyCity_Appearance:server:lockSlot', slot) end
+end)
+
 RegisterNUICallback('useItem', function(slot, cb)
 	useSlot(slot --[[@as number]])
 	cb(1)
