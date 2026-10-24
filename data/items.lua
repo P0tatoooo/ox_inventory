@@ -2419,6 +2419,14 @@ return {
 		close = true,
 	},
 
+	-- Vendu en supérette : un par pochon de weed (MyCity_CoreV2, table de weed et labo PvP)
+	['empty_pouch'] = {
+		label = 'Pochon vide',
+		weight = 5,
+		stack = true,
+		close = true,
+	},
+
 	['weed'] = {
 		label = 'Pochon de Weed',
 		weight = 100,
