@@ -3698,6 +3698,21 @@ return {
 		weight = 300,
         consume = 0
 	},
+	-- MyCity_CopperTheft : vol de cuivre dans les armoires électriques de rue
+	['wirecutter'] = {
+		label = 'Pince Coupe-Câble',
+		weight = 900,
+		stack = false,
+		consume = 0,
+		description = "Coupe les gros câbles d'une armoire électrique. Pas sous tension.",
+	},
+	['copper'] = {
+		label = 'Cuivre',
+		weight = 400,
+		stack = true,
+		close = true,
+		description = 'Câble de cuivre arraché, dénudé.',
+	},
 	['grinder'] = {
 		label = 'Meuleuse',
 		weight = 300,
