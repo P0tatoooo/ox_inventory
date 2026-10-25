@@ -2443,7 +2443,6 @@ return {
 		weight = 2500,
 		stack = false,
 		consume = 0,
-		description = 'De quoi creuser.',
 	},
 
 	-- Trouvé dans un cercueil (MyCity_CoreV2, pillage de tombes), revendu au receleur
