@@ -1713,6 +1713,16 @@ return {
 		close = true,
 	},
 
+	-- MyCity_CoreV2 : rendue au premier contact d'un Go Fast, qui la garde ; se commande au
+	-- fournisseur « Go Fast » (Shared/IllegalOrders.lua)
+	['gofastkey'] = {
+		label = 'Clé de Go Fast',
+		weight = 20,
+		stack = true,
+		close = true,
+		description = 'Le premier contact d\'un Go Fast ne sort pas la voiture sans elle.',
+	},
+
 	['money'] = {
 		label = 'Argent',
 		weight = 0.01
