@@ -1720,7 +1720,6 @@ return {
 		weight = 20,
 		stack = true,
 		close = true,
-		description = 'Le premier contact d\'un Go Fast ne sort pas la voiture sans elle.',
 	},
 
 	['money'] = {
@@ -3730,14 +3729,12 @@ return {
 		weight = 900,
 		stack = false,
 		consume = 0,
-		description = "Coupe les gros câbles d'une armoire électrique. Pas sous tension.",
 	},
 	['copper'] = {
 		label = 'Cuivre',
 		weight = 400,
 		stack = true,
 		close = true,
-		description = 'Câble de cuivre arraché, dénudé.',
 	},
 	['grinder'] = {
 		label = 'Meuleuse',
