@@ -2437,6 +2437,23 @@ return {
 		close = true,
 	},
 
+	-- Vendue en supérette : creuser les tombes (MyCity_CoreV2, pillage de tombes), s'use à chaque tombe
+	['shovel'] = {
+		label = 'Pelle',
+		weight = 2500,
+		stack = false,
+		consume = 0,
+		description = 'De quoi creuser.',
+	},
+
+	-- Trouvé dans un cercueil (MyCity_CoreV2, pillage de tombes), revendu au receleur
+	['whiteskull'] = {
+		label = 'Crâne',
+		weight = 800,
+		stack = true,
+		description = 'Il a appartenu à quelqu\'un.',
+	},
+
 	['weed'] = {
 		label = 'Pochon de Weed',
 		weight = 100,
