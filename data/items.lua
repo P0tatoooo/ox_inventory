@@ -1963,6 +1963,35 @@ return {
 		close = true,
 	},
 
+	-- Labos de cocaïne et de crack, par étapes (MyCity_CoreV2, Shared/DrugLab.lua)
+	['bicarbonate'] = {
+		label = 'Bicarbonate de soude',
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
+	['coca_paste'] = {
+		label = 'Pâte de coca',
+		weight = 150,
+		stack = true,
+		close = true,
+	},
+
+	['cocaine'] = {
+		label = 'Cocaïne en vrac',
+		weight = 50,
+		stack = true,
+		close = true,
+	},
+
+	['crack_slab'] = {
+		label = 'Plaque de crack',
+		weight = 150,
+		stack = true,
+		close = true,
+	},
+
 	['cream'] = {
 		label = 'Crème Fraiche',
 		weight = 100,
