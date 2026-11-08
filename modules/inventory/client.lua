@@ -34,7 +34,7 @@ function Inventory.CanAccessTrunk(entity, dontmove)
     ---@type number | number[]
     local doorId = checkVehicle and 4 or 5
     if not Vehicles.trunk.boneIndex?[vehicleHash] and not GetIsDoorValid(entity, doorId --[[@as number]]) and vehicleClass ~= 14 and vehicleClass ~= 15 and vehicleClass ~= 16 and vehicleClass ~= 10 then
-        if vehicleHash ~= `celeste` and vehicleHash ~= `imorgon` and vehicleHash ~= `gstgwood1` and vehicleHash ~= `ratloader` and vehicleHash ~= `mtanker3` and vehicleClass ~= 11 and (doorId ~= 5 or GetEntityBoneIndexByName(entity, 'boot') ~= -1 or not GetIsDoorValid(entity, 2)) then
+        if vehicleHash ~= `pounder3` and vehicleHash ~= `celeste` and vehicleHash ~= `imorgon` and vehicleHash ~= `gstgwood1` and vehicleHash ~= `ratloader` and vehicleHash ~= `mtanker3` and vehicleClass ~= 11 and (doorId ~= 5 or GetEntityBoneIndexByName(entity, 'boot') ~= -1 or not GetIsDoorValid(entity, 2)) then
             return
         end
 
@@ -44,7 +44,7 @@ function Inventory.CanAccessTrunk(entity, dontmove)
     end
 
     local min, max = GetModelDimensions(vehicleHash)
-    local offset = (max - min) * (not checkVehicle and vec3(0.5, 0, 0.5) or vec3(0.5, 1, 0.5)) + min
+    local offset = Vehicles.trunk.offset?[vehicleHash] or (max - min) * (not checkVehicle and vec3(0.5, 0, 0.5) or vec3(0.5, 1, 0.5)) + min
     offset = GetOffsetFromEntityInWorldCoords(entity, offset.x, offset.y, offset.z)
 
     local maxDistance = 1.5

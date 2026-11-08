@@ -94,6 +94,7 @@ return {
             [`nmule`] = {61, 400000},
             [`mtanker3`] = {61, 4000000},
             [`pounder`] = {61, 610000},
+            [`pounder3`] = {61, 610000},	-- 4 palettes (100 000) + 1 chariot élévateur (200 000)
             [`sunrise1`] = {61, 400000},
             [`trash`] = {61, 400000},
             [`journey`] = {61, 400000},
@@ -102,6 +103,11 @@ return {
 		},
         boneIndex = {
             [`outlaw`] = 10
+        },
+        -- où se tenir pour ouvrir le coffre (repère du véhicule) quand l'arrière de la boîte
+        -- englobante n'est pas le bord du coffre : la rampe du pounder3 (extra 6) l'allonge de 5 m
+        offset = {
+            [`pounder3`] = vec3(0.0, -9.92, 0.6)
         }
 	}
 }
