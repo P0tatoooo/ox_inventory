@@ -3476,6 +3476,15 @@ return {
 		},
 	},
 
+    -- le conteneur maritime d'une tournée Transistep posé sur un pounder3 (extra 3), par la
+    -- grue du port : il n'en sort que par la grue (MyCity_CoreV2 bloque tout déplacement à la main)
+    ["shipcontainer"] = {
+		label = "Conteneur maritime",
+		weight = 10000,
+		stack = false,
+		close = false,
+	},
+
     ["trolley"] = {
 		label = "Diable",
 		weight = 5000,
