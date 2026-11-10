@@ -2473,6 +2473,14 @@ return {
 		consume = 0,
 	},
 
+	-- Prospection (MyCity_CoreV2, Activities/Prospecting) : sortir / ranger le détecteur
+	['metaldetector'] = {
+		label = 'Détecteur de métaux',
+		weight = 2000,
+		stack = false,
+		close = true,
+	},
+
 	-- Trouvé dans un cercueil (MyCity_CoreV2, pillage de tombes), revendu au receleur
 	['whiteskull'] = {
 		label = 'Crâne',
