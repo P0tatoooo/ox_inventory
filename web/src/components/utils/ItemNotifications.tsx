@@ -29,21 +29,22 @@ const ItemNotification = React.forwardRef(
     const slotItem = props.item.item;
 
     return (
+      // an item gained, lost or used, for a moment over the game: MyCity_UI's inventory slot, what happened in a pill
       <div
-        className="item-notification-item-box"
+        className="mc-inv-slot mc-inv-slot--bare mc-inv-slot--filled item-notification-slot"
         style={{
           backgroundImage: `url(${getItemUrl(slotItem) || 'none'}`,
           ...props.style,
         }}
         ref={ref}
       >
-        <div className="item-slot-wrapper">
-          <div className="item-notification-action-box">
-            <p>{props.item.text}</p>
+        <div className="inventory-slot-body">
+          <div className="mc-inv-slot-top">
+            <div className="mc-inv-slot-pills">
+              <span className="mc-inv-pill">{props.item.text}</span>
+            </div>
           </div>
-          <div className="inventory-slot-label-box">
-            <div className="inventory-slot-label-text">{slotItem.metadata?.label || Items[slotItem.name]?.label}</div>
-          </div>
+          <div className="mc-inv-slot-name">{slotItem.metadata?.label || Items[slotItem.name]?.label}</div>
         </div>
       </div>
     );

@@ -126,7 +126,7 @@ const App: React.FC = () => {
   });
 
   return (
-    <div className="app-wrapper">
+    <div className="app-wrapper mc-root" data-mc-nav="off">
       <InventoryComponent />
       <DragPreview />
       <KeyPress />

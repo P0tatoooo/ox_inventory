@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { getItemUrl, isSlotWithItem } from '../../helpers';
 import useNuiEvent from '../../hooks/useNuiEvent';
 import { Items } from '../../store/items';
-import WeightBar from '../utils/WeightBar';
+import { DurabilityBar } from '../utils/WeightBar';
 import { useAppSelector } from '../../store';
 import { selectLeftInventory } from '../../store/inventory';
 import { SlotWithItem } from '../../typings';
@@ -24,42 +24,30 @@ const InventoryHotbar: React.FC = () => {
     }
   });
 
+  // the five first slots, shown for a moment over the game: MyCity_UI's inventory slots, standing alone (--bare)
   return (
     <SlideUp in={hotbarVisible}>
       <div className="hotbar-container">
         {items.map((item) => (
           <div
-            className="hotbar-item-slot"
+            className={`mc-inv-slot mc-inv-slot--bare hotbar-slot${isSlotWithItem(item) ? ' mc-inv-slot--filled' : ''}`}
             style={{
               backgroundImage: `url(${item?.name ? getItemUrl(item as SlotWithItem) : 'none'}`,
             }}
             key={`hotbar-${item.slot}`}
           >
             {isSlotWithItem(item) && (
-              <div className="item-slot-wrapper">
-                <div className="hotbar-slot-header-wrapper">
-                  <div className="inventory-slot-number">{item.slot}</div>
-                  <div className="item-slot-info-wrapper">
-                    <p>
-                      {item.weight > 0
-                        ? item.weight >= 1000
-                          ? `${(item.weight / 1000).toLocaleString('en-us', {
-                              minimumFractionDigits: 2,
-                            })}kg `
-                          : `${item.weight.toLocaleString('en-us', {
-                              minimumFractionDigits: 0,
-                            })}g `
-                        : ''}
-                    </p>
-                    <p>{item.count ? item.count.toLocaleString('en-us') + `x` : ''}</p>
+              <div className="inventory-slot-body">
+                <div className="mc-inv-slot-top">
+                  <span className="mc-inv-slot-key">{item.slot}</span>
+                  <div className="mc-inv-slot-pills">
+                    {item.count ? <span className="mc-inv-pill">{item.count.toLocaleString('en-us')}x</span> : null}
                   </div>
                 </div>
                 <div>
-                  {item?.durability !== undefined && <WeightBar percent={item.durability} durability />}
-                  <div className="inventory-slot-label-box">
-                    <div className="inventory-slot-label-text">
-                      {item.metadata?.label ? item.metadata.label : Items[item.name]?.label || item.name}
-                    </div>
+                  {item?.durability !== undefined && <DurabilityBar percent={item.durability} />}
+                  <div className="mc-inv-slot-name">
+                    {item.metadata?.label ? item.metadata.label : Items[item.name]?.label || item.name}
                   </div>
                 </div>
               </div>

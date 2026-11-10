@@ -1,23 +1,29 @@
 import { Locale } from '../../store/locale';
-import React from 'react';
-import './UsefulControls.scss'
-import { Block } from '../../shared/component/Block';
 
+const HINTS: { keys: string[]; text: () => string }[] = [
+  { keys: ['Ctrl', 'Clic gauche'], text: () => Locale.ui_ctrl_lmb },
+  { keys: ['Maj', 'Glisser'], text: () => Locale.ui_shift_drag },
+];
+
+// two lines only: with the buttons' box under the player's inventory, both sides end at the same height
+/** The mouse shortcuts, under the other inventory: MyCity_UI key hints (.mc-keys-group) in a see-through box. */
 export const UsefulControls = () => {
   return (
-    <Block className="usefull-controls">
-      <div className="usefull-controls__control">
-        <kbd>CTRL + Clic Gauche</kbd>
-        <span>{Locale.ui_ctrl_lmb}</span>
+    <div className="mc-float mc-float--glass inventory-under">
+      <div className="mc-keys-group">
+        {HINTS.map((hint) => (
+          <div className="mc-keys" key={hint.keys.join('+')}>
+            <span className="mc-keys-caps">
+              {hint.keys.map((key) => (
+                <span className="mc-keystroke" key={key}>
+                  {key}
+                </span>
+              ))}
+            </span>
+            <span>{hint.text()}</span>
+          </div>
+        ))}
       </div>
-      <div className="usefull-controls__control">
-        <kbd>CTRL + SHIFT + Clic Gauche</kbd>
-        <span>{Locale.ui_ctrl_shift_lmb}</span>
-      </div>
-      <div className="usefull-controls__control">
-        <kbd>SHIFT + Drag</kbd>
-        <span>{Locale.ui_shift_drag}</span>
-      </div>
-    </Block>
+    </div>
   );
 };

@@ -2,7 +2,7 @@ import React, { useCallback, useRef } from 'react';
 import { DragSource, Inventory, InventoryType, Slot, SlotWithItem } from '../../typings';
 import { useDrag, useDragDropManager, useDrop } from 'react-dnd';
 import { useAppDispatch } from '../../store';
-import WeightBar from '../utils/WeightBar';
+import { DurabilityBar } from '../utils/WeightBar';
 import { onDrop } from '../../dnd/onDrop';
 import { onBuy } from '../../dnd/onBuy';
 import { Items } from '../../store/items';
@@ -156,26 +156,62 @@ const InventorySlot: React.ForwardRefRenderFunction<HTMLDivElement, SlotProps> =
     return prefix + quantity + suffix;
   }
 
+  const filled = isSlotWithItem(item);
+  const available =
+    canPurchaseItem(item, { type: inventoryType, groups: inventoryGroups }) && canCraftItem(item, inventoryType);
+  // the worn clothes stand around the character, over the game itself: one piece a slot, its name only
+  const worn = inventoryType === 'clothing';
+  const hotkey = inventoryType === 'player' && item.slot <= 5;
+
+  const getWeight = (weight: number) =>
+    weight > 0
+      ? weight >= 1000
+        ? `${(weight / 1000).toLocaleString('en-us', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}kg`
+        : `${weight.toLocaleString('en-us', { minimumFractionDigits: 0, maximumFractionDigits: 2 })}g`
+      : '';
+
+  // a shop's price: in an item (its picture first), or in money -- clean (green) or not (red)
+  const getPrice = (item: SlotWithItem) => {
+    if (inventoryType !== 'shop' || item.price === undefined || item.price <= 0) return null;
+    if (item.currency && item.currency !== 'money' && item.currency !== 'black_money')
+      return (
+        <span className="mc-inv-pill">
+          <img src={getItemUrl(item.currency)} alt="" />
+          {item.price.toLocaleString('en-us')}
+        </span>
+      );
+    return (
+      <span className={`mc-inv-pill ${item.currency === 'money' || !item.currency ? 'mc-inv-pill--ok' : 'mc-inv-pill--danger'}`}>
+        {Locale.$ || '$'}
+        {item.price.toLocaleString('en-us')}
+      </span>
+    );
+  };
+
+  // MyCity_UI's inventory slot (.mc-inv-slot): the kit draws it, its states are classes
+  const className = [
+    'mc-inv-slot',
+    filled && 'mc-inv-slot--filled',
+    worn && 'mc-inv-slot--bare',
+    isOver && 'mc-inv-slot--over',
+    isDragging && 'mc-inv-slot--dragging',
+    !available && 'mc-inv-slot--off',
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
     <div
       ref={refs}
       onContextMenu={handleContext}
       onClick={handleClick}
       onDoubleClick={handleDoubleClick}
-      className="inventory-slot"
-      style={{
-        filter:
-          !canPurchaseItem(item, { type: inventoryType, groups: inventoryGroups }) || !canCraftItem(item, inventoryType)
-            ? 'brightness(80%) grayscale(100%)'
-            : undefined,
-        opacity: isDragging ? 0.4 : 1.0,
-        backgroundImage: `url(${item?.name ? getItemUrl(item as SlotWithItem) : 'none'}`,
-        border: isOver ? '1px dashed rgba(255,255,255,0.4)' : '',
-      }}
+      className={className}
+      style={{ backgroundImage: `url(${item?.name ? getItemUrl(item as SlotWithItem) : 'none'}` }}
     >
       {isSlotWithItem(item) && (
         <div
-          className="item-slot-wrapper"
+          className="inventory-slot-body"
           onMouseEnter={() => {
             timerRef.current = window.setTimeout(() => {
               dispatch(openTooltip({ item, inventoryType }));
@@ -189,73 +225,23 @@ const InventorySlot: React.ForwardRefRenderFunction<HTMLDivElement, SlotProps> =
             }
           }}
         >
-          <div
-            className={
-              inventoryType === 'player' && item.slot <= 5 ? 'item-hotslot-header-wrapper' : 'item-slot-header-wrapper'
-            }
-          >
-            {inventoryType === 'player' && item.slot <= 5 && <div className="inventory-slot-number">{item.slot}</div>}
-            <div className="item-slot-info-wrapper">
-              <p>
-                {getQuantity(item)}
-              </p>
-              <p>
-                {item.weight > 0
-                  ? item.weight >= 1000
-                    ? `${(item.weight / 1000).toLocaleString('en-us', {
-                      minimumFractionDigits: 2,
-                      maximumFractionDigits: 2,
-                    })}kg `
-                    : `${item.weight.toLocaleString('en-us', {
-                      minimumFractionDigits: 0,
-                      maximumFractionDigits: 2,
-                    })}g `
-                  : ''}
-              </p>
-            </div>
+          <div className="mc-inv-slot-top">
+            {hotkey && <span className="mc-inv-slot-key">{item.slot}</span>}
+            {/* its weight on the top left (after the hotbar key), how many and its price on the top right */}
+            {!worn && getWeight(item.weight) && (
+              <span className="mc-inv-pill mc-inv-pill--dim">{getWeight(item.weight)}</span>
+            )}
+            {!worn && (
+              <div className="mc-inv-slot-pills">
+                {getQuantity(item) && <span className="mc-inv-pill">{getQuantity(item)}</span>}
+                {getPrice(item)}
+              </div>
+            )}
           </div>
           <div>
-            {inventoryType !== 'shop' && item?.durability !== undefined && (
-              <WeightBar percent={item.durability} durability />
-            )}
-            {inventoryType === 'shop' && item?.price !== undefined && (
-              <>
-                {item?.currency !== 'money' && item.currency !== 'black_money' && item.price > 0 && item.currency ? (
-                  <div className="item-slot-currency-wrapper">
-                    <img
-                      src={item.currency ? getItemUrl(item.currency) : 'none'}
-                      alt="item-image"
-                      style={{
-                        imageRendering: '-webkit-optimize-contrast',
-                        height: 'auto',
-                        width: '2vh',
-                        backfaceVisibility: 'hidden',
-                        transform: 'translateZ(0)',
-                      }}
-                    />
-                    <p>{item.price.toLocaleString('en-us')}</p>
-                  </div>
-                ) : (
-                  <>
-                    {item.price > 0 && (
-                      <div
-                        className="item-slot-price-wrapper"
-                        style={{ color: item.currency === 'money' || !item.currency ? '#2ECC71' : '#E74C3C' }}
-                      >
-                        <p>
-                          {Locale.$ || '$'}
-                          {item.price.toLocaleString('en-us')}
-                        </p>
-                      </div>
-                    )}
-                  </>
-                )}
-              </>
-            )}
-            <div className="inventory-slot-label-box">
-              <div className="inventory-slot-label-text">
-                {item.metadata?.label ? item.metadata.label : Items[item.name]?.label || item.name}
-              </div>
+            {inventoryType !== 'shop' && item?.durability !== undefined && <DurabilityBar percent={item.durability} />}
+            <div className="mc-inv-slot-name">
+              {item.metadata?.label ? item.metadata.label : Items[item.name]?.label || item.name}
             </div>
           </div>
         </div>

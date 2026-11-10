@@ -1,101 +1,86 @@
-@import "shared/style/common";
-
-$mainColor: #22232c;
-$textColor: #c1c2c5;
-$mainFont: Roboto;
-
-$secondaryColor: rgba(12, 12, 12, 0.4);
-$secondaryColorHighlight: #33343F;
-$secondaryColorLight: rgba(0, 0, 0, 0.5);
-$secondaryColorDark: rgba(12, 12, 12, 0.8);
+// Layout only. The look is MyCity_UI's, loaded by index.html: the see-through boxes (.mc-float--glass), the
+// inventory's head, grid and slots (.mc-inv-*), the item card (.mc-tipcard), the right-click menu (.mc-menu),
+// the buttons, the field and the key hints. A colour or a size of a component is changed there, not here.
 
 $gridCols: 5;
 $gridRows: 5;
 $gridSize: 10.2vh;
-$gridGap: .25rem;
-$containerSize: calc(#{$gridRows} * #{$gridSize + 0.22vh} + #{$gridRows} * #{$gridGap});
-
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: none !important;
-  overflow: hidden !important;
-  user-select: none;
-}
+// the kit's .mc-inv-grid gap
+$gridGap: 0.3rem;
 
 #root {
   height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-  font-family: $mainFont;
-}
-
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 .app-wrapper {
   height: 100%;
   width: 100%;
-  color: white;
 }
 
-.context-menu-list {
-  min-width: 200px;
-  background-color: $mainColor;
-  color: $textColor;
-  padding: 4px;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: inset;
-  border-width: 1px;
-  border-radius: 4px;
-  outline: none;
+// the two inventories side by side, the worn clothes and the character between them
+.inventory-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  gap: 1.6rem;
+}
+
+// an inventory and what sits under it; both start at the same height whatever that is
+.inventory-side {
   display: flex;
   flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 15vh;
 }
 
-.context-menu-item  {
-  padding: 8px;
-  border-radius: 4px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  color: $textColor;
+// five slots across, five rows in sight, the rest scrolls
+.inventory-grid {
+  grid-template-columns: repeat($gridCols, $gridSize);
+  grid-auto-rows: $gridSize;
+  height: calc(#{$gridRows} * #{$gridSize} + #{$gridRows - 1} * #{$gridGap});
+}
+
+// what a slot holds: its figures at the top, its name at the bottom
+.inventory-slot-body {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  &:active {
-    transform: none;
+  height: 100%;
+}
+
+// the box under each inventory (the buttons, the key hints): one height, so both sides end level
+.inventory-under {
+  box-sizing: border-box;
+  height: 5rem;
+  justify-content: center;
+}
+
+.inventory-control {
+  // the kit's field is as wide as its parent: here it is a short one before the buttons
+  input.mc-input {
+    flex: none;
+    width: 6rem;
+    text-align: center;
   }
-  &:hover {
-    background-color: $secondaryColorHighlight;
-    cursor: pointer;
+
+  &__buttons {
+    flex: 1;
   }
 }
 
-.tooltip-description {
-  padding-top: 5px;
+.inventory-menu {
+  min-width: 12rem;
+  outline: none;
+
+  &__more {
+    margin-left: auto;
+    display: flex;
+  }
 }
 
-.tooltip-markdown > p {
-  margin: 0;
-}
-
-button:active {
-  transform: translateY(3px);
-}
-
+// the item carried under the mouse
 .item-drag-preview {
   width: 7.7vh;
   height: 7.7vh;
@@ -110,248 +95,40 @@ button:active {
   image-rendering: -webkit-optimize-contrast;
 }
 
-.inventory-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-
-  gap: 1.25rem;
-}
-
-.useful-controls-dialog {
-  background-color: $mainColor;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: $textColor;
-  width: 450px;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  border-radius: 4px;
-  gap: 16px;
-}
-
-.useful-controls-dialog-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.useful-controls-dialog-title {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px;
-}
-
-.useful-controls-dialog-close {
-  width: 25px;
-  height: 25px;
-  padding: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  fill: $textColor;
-  &:hover {
-    background-color: $secondaryColorHighlight;
-    cursor: pointer;
-  }
-}
-
-.useful-controls-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.divider {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.12);
-}
-
-.useful-controls-exit-button {
-  position: absolute !important;
-  right: 8px;
-  top: 8px;
-  border-radius: 2.5% !important;
-  color: grey !important;
-}
-
-// Dialog is used fro useful controls window
-
-
-// inventory grids
-.inventory-grid-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: calc($gridGap * 2);
-}
-.inventory-grid-header-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  p {
-    font-size: 16px;
-  }
-}
-
-.inventory-grid-container {
-  display: grid;
-  height: $containerSize;
-  grid-template-columns: repeat($gridCols, $gridSize);
-  grid-auto-rows: $gridSize + 0.22vh;
-  gap: $gridGap;
-  overflow-y: scroll;
-}
-
-.tooltip-wrapper {
-  pointer-events: none;
-  display: flex;
-  background-color: $mainColor;
-  width: 200px;
-  padding: 8px;
-  flex-direction: column;
-  min-width: 200px;
-  color: $textColor;
-  font-family: $mainFont;
-  border-radius: 4px;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: inset;
-  border-width: 1px;
-  p {
-    font-size: 12px;
-    font-weight: 400;
-  }
-}
-
-.tooltip-header-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  p {
-    font-size: 15px;
-    font-weight: 400;
-  }
-}
-
-.tooltip-crafting-duration {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  svg {
-    padding-right: 3px;
-  }
-  p {
-    font-size: 14px;
-  }
-}
-
-.tooltip-ingredients {
-  padding-top: 5px;
-}
-
-.tooltip-ingredient {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  img {
-    width: 28px;
-    height: 28px;
-    padding-right: 5px;
-  }
-}
-
-// hotbar
+// the hotbar, for a moment at the bottom of the screen
 .hotbar-container {
   display: flex;
   align-items: center;
-  gap: 2px;
   justify-content: center;
+  gap: $gridGap;
   width: 100%;
   position: absolute;
   bottom: 2vh;
 }
 
-.hotbar-item-slot {
-  background-color: rgba(white, 0.05);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 2.5%;
-  image-rendering: -webkit-optimize-contrast;
-  position: relative;
-  background-size: 7vh;
-  color: white;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: inset;
-  border-width: 1px;
+.hotbar-slot {
   width: $gridSize;
   height: $gridSize;
 }
 
-.hotbar-slot-header-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-// item notifications
-
+// items gained or lost, in a row above it
 .item-notification-container {
   display: flex;
   overflow-x: hidden;
   flex-wrap: nowrap;
-  gap: 2px;
+  gap: $gridGap;
   position: absolute;
   bottom: 20vh;
   left: 50%;
   width: 100%;
-  margin-left: calc(50% - calc($gridSize/2));
+  margin-left: calc(50% - calc($gridSize / 2));
   transform: translate(-50%);
 }
 
-.item-notification-action-box {
-  width: 100%;
-  color: $textColor;
-  background-color: $secondaryColor;
-  text-transform: uppercase;
-  text-align: center;
-  border-top-left-radius: 0.25vh;
-  border-top-right-radius: 0.25vh;
-  font-family: $mainFont;
-  p {
-    font-size: 11px;
-    padding: 2px;
-    font-weight: 600;
-  }
-}
-
-.item-notification-item-box {
-  background-color: rgba(white, 0.05);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 2.5%;
-  image-rendering: -webkit-optimize-contrast;
-  position: relative;
-  background-size: 7vh;
-  color: white;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: inset;
-  border-width: 1px;
-  height: $gridSize;
+.item-notification-slot {
+  flex: none;
   width: $gridSize;
-}
-
-.durability-bar {
-  background: rgba(0, 0, 0, 0.5);
-  height: 3px;
-  overflow: hidden;
+  height: $gridSize;
 }
 
 .transition-fade-enter {
@@ -373,7 +150,7 @@ button:active {
 }
 
 .transition-slide-up-enter {
-  transform: translateY(200px)
+  transform: translateY(200px);
 }
 
 .transition-slide-up-enter-active {

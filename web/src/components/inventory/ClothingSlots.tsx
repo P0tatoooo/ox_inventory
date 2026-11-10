@@ -68,7 +68,7 @@ const ClothingSlot: React.FC<{ def: ClothingSlotDef; inventory: Inventory }> = (
   return (
     <div className="clothing-slot">
       {!worn && (
-        <div className="clothing-slot__empty">
+        <div className="mc-inv-slot-empty">
           <def.icon />
           <span>{def.label}</span>
         </div>
@@ -82,7 +82,7 @@ const ClothingSlot: React.FC<{ def: ClothingSlotDef; inventory: Inventory }> = (
       {lockable && (
         <button
           type="button"
-          className={`clothing-slot__lock${locked ? ' clothing-slot__lock--on' : ''}`}
+          className={`mc-inv-slot-lock${locked ? ' mc-inv-slot-lock--on' : ''}`}
           title={locked ? 'Verrouillé : reste porté sous une tenue' : 'Verrouiller : une tenue ne l’enlèvera pas'}
           onMouseDown={(event) => event.stopPropagation()}
           onClick={(event) => {
@@ -115,20 +115,20 @@ const Column: React.FC<{ defs: ClothingSlotDef[]; inventory: Inventory; classNam
  * top and bottom line up with the inventory's; the slots' size follows (ClothingSlots.scss).
  */
 const useSideBox = (ref: React.RefObject<HTMLDivElement>) => {
-  const [box, setBox] = useState<{ marginTop: number; height: number }>();
+  const [box, setBox] = useState<{ height: number }>();
 
   useLayoutEffect(() => {
     const self = ref.current;
     const side = self?.previousElementSibling as HTMLElement | null;
-    const row = self?.parentElement;
-    if (!side || !row) return;
+    if (!side) return;
     const measure = () => {
       const first = side.firstElementChild;
       const last = side.lastElementChild;
       if (!first || !last) return;
       const top = first.getBoundingClientRect().top;
       const bottom = last.getBoundingClientRect().bottom;
-      setBox({ marginTop: top - row.getBoundingClientRect().top, height: bottom - top });
+      // its top is the stylesheet's (the same fixed margin as the inventories'): only the height is measured
+      setBox({ height: bottom - top });
     };
     measure();
     const observer = new ResizeObserver(measure);

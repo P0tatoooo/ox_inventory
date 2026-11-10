@@ -28,6 +28,7 @@ import {
   useTransitionStyles,
   useTypeahead,
 } from '@floating-ui/react';
+import McIcon from '../McIcon';
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { useAppSelector } from '../../../store';
 
@@ -180,7 +181,7 @@ export const MenuComponent = React.forwardRef<HTMLButtonElement, MenuProps & Rea
             data-open={isOpen ? '' : undefined}
             data-nested={isNested ? '' : undefined}
             data-focus-inside={hasFocusInside ? '' : undefined}
-            className={isNested ? 'context-menu-item' : 'context-menu-list'}
+            className={isNested ? 'mc-menu-item' : 'mc-menu mc-menu--actions inventory-menu'}
             {...getReferenceProps(
               parent.getItemProps({
                 ...props,
@@ -194,8 +195,8 @@ export const MenuComponent = React.forwardRef<HTMLButtonElement, MenuProps & Rea
           >
             {label}
             {isNested && (
-              <span aria-hidden style={{ marginLeft: 10, fontSize: 10 }}>
-                ▶
+              <span className="inventory-menu__more">
+                <McIcon name="chevronRight" />
               </span>
             )}
           </button>
@@ -216,7 +217,7 @@ export const MenuComponent = React.forwardRef<HTMLButtonElement, MenuProps & Rea
                   <FloatingFocusManager context={context} modal={true} initialFocus={refs.floating}>
                     <div
                       ref={refs.setFloating}
-                      className="context-menu-list"
+                      className="mc-menu mc-menu--actions inventory-menu"
                       style={{ ...floatingStyles, ...styles }}
                       {...getFloatingProps()}
                     >
@@ -253,7 +254,7 @@ export const MenuItem = React.forwardRef<
       ref={useMergeRefs([item.ref, forwardedRef])}
       type="button"
       role="menuitem"
-      className="context-menu-item"
+      className="mc-menu-item"
       tabIndex={isActive ? 0 : -1}
       disabled={disabled}
       {...menu.getItemProps({
