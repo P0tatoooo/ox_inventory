@@ -3782,8 +3782,30 @@ return {
 		stack = true,
 		close = true,
 	},
-	['grinder'] = {
+	-- MyCity_Refinery : entretien des pompes à pétrole, à leur panneau de maintenance
+	-- la meuleuse qui retire la rouille des pompes (elle s'use de 1 % par tache, MyCity_Refinery) ; à ne pas confondre avec la
+	-- disqueuse `grinder` des activités illégales
+	['angle_grinder'] = {
 		label = 'Meuleuse',
+		weight = 300,
+		stack = false,
+		close = true,
+	},
+	['airfilter'] = {
+		label = 'Filtre à air',
+		weight = 600,
+		stack = true,
+		close = true,
+	},
+	['fuse'] = {
+		label = 'Fusible 30 A',
+		weight = 50,
+		stack = true,
+		close = true,
+	},
+	-- la disqueuse des activités illégales (conteneurs, train) ; la meuleuse de la raffinerie est `angle_grinder`
+	['grinder'] = {
+		label = 'Disqueuse',
 		weight = 300,
         consume = 0
 	},
