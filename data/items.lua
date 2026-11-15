@@ -2386,6 +2386,13 @@ return {
 		weight = 1000,
 		stack = false,
 	},
+	-- le poulet saigné au cône de l'abattoir (MyCity_Ranch) : il se plume et se découpe ensuite sur la table, qui rend une barquette (packaged_chicken)
+	['dead_chicken'] = {
+		label = 'Poulet mort',
+		weight = 1000,
+		stack = true,
+		close = true,
+	},
 
 	['spray'] = {
 		label = 'Bombe de peinture',
