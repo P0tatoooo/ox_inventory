@@ -3455,6 +3455,35 @@ return {
 		close = true,
 	},
 
+	-- atelier de la ferme (MyCity_Farmer, shared/workshop.lua)
+	['dough'] = {
+		label = 'Pâte à pain',
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
+	['butter'] = {
+		label = 'Beurre',
+		weight = 250,
+		stack = true,
+		close = true,
+	},
+
+	['curd'] = {
+		label = 'Caillé',
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
+	['canejuice'] = {
+		label = 'Jus de canne',
+		weight = 250,
+		stack = true,
+		close = true,
+	},
+
     -- Un chariot ou une palette rangés dans un camion (coffre) ou un conteneur
     -- (stockage) : clic droit sur l'objet dans cet inventaire pour le sortir
     -- derrière (MyCity_CoreV2, Client/Jobs/Transistep.lua). `otherInventory = true` :
