@@ -3206,6 +3206,14 @@ return {
         consume = 0,
 	},
 
+	-- la scierie du Youtool (MyCity_Youtool, shared/lumber.lua) : s'use à chaque coupe (métadonnée durability)
+	["chainsaw"] = {
+		label = "Tronçonneuse",
+		weight = 6000,
+		stack = false,
+		close = true,
+	},
+
 	["goldingot"] = {
 		label = "Lingot d\'Or",
 		weight = 1000,
